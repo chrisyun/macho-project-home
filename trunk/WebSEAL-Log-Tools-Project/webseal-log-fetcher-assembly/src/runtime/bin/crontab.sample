@@ -1,0 +1,4 @@
+#
+# Below for TCR (Staging XML data)
+0 * * * * /opt/IBM/Tivoli/CommonAuditService/server/bin/runstaging.sh incremental >> /opt/IBM/Tivoli/CommonAuditService/log/run_stag_inc.log
+40 5 * * 0 /opt/IBM/Tivoli/CommonAuditService/server/bin/clearXML.sh >> /opt/IBM/Tivoli/CommonAuditService/log/run_stag_inc.log
