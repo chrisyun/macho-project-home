@@ -1,0 +1,81 @@
+<CommonBaseEvent creationTime="2010-10-25T05:46:03.281193Z" extensionName="IBM_CBA_AUDIT_RESOURCE_ACCESS" globalInstanceId="CBA6011DFDFFBBEBF2741C9AC18A9054D5AA000003ABC00000173"
+  version="1.0.1">
+  <extendedDataElements name="outcome" type="string">
+    <values>CARSComplexType:CARSAuditOutcome</values>
+    <children name="result" type="string">
+      <values>SUCCESSFUL</values>
+    </children>
+    <children name="majorStatus" type="int">
+      <values>0</values>
+    </children>
+    <children name="minorStatus" type="int">
+      <values>0</values>
+    </children>
+  </extendedDataElements>
+  <extendedDataElements name="userInfo" type="string">
+    <values>CARSComplexType:CARSAuditUserInfo</values>
+    <children name="registryUserName" type="string">
+      <values>uid=tangjj,cn=users,dc=taikanglife</values>
+    </children>
+    <children name="appUserName" type="string">
+      <values>tangjj</values>
+    </children>
+    <children name="domain" type="string">
+      <values>Default</values>
+    </children>
+    <children name="location" type="string">
+      <values>10.50.18.226</values>
+    </children>
+    <children name="locationType" type="string">
+      <values>IPV4</values>
+    </children>
+    <children name="sessionId" type="string">
+      <values>059bc5fa-dffb-11df-bebf-18a9054d5aa0</values>
+    </children>
+    <children name="uniqueId" type="int">
+      <values>-99999</values>
+    </children>
+  </extendedDataElements>
+  <extendedDataElements name="resourceInfo" type="string">
+    <values>CARSComplexType:CARSAuditResourceInfo</values>
+    <children name="nameInApp" type="string">
+      <values>HTTP://10.9.2.100/eai/auth/images/ShowUserFile.gif</values>
+    </children>
+    <children name="nameInPolicy" type="string">
+      <values>Not Available</values>
+    </children>
+    <children name="type" type="string">
+      <values>url</values>
+    </children>
+  </extendedDataElements>
+  <extendedDataElements name="accessDecision" type="string">
+    <values>permitted</values>
+  </extendedDataElements>
+  <extendedDataElements name="permissionInfo" type="string">
+    <values>CARSComplexType:CARSAuditPermissionInfo</values>
+  </extendedDataElements>
+  <extendedDataElements name="action" type="string">
+    <values>httpRequest</values>
+  </extendedDataElements>
+  <extendedDataElements name="httpURLInfo" type="string">
+    <values>CARSComplexType:CARSAuditHTTPURLInfo</values>
+    <children name="url" type="string">
+      <values>HTTP://10.9.2.100/eai/auth/images/ShowUserFile.gif</values>
+    </children>
+    <children name="method" type="string">
+      <values>GET</values>
+    </children>
+    <children name="responseCode" type="int">
+      <values>304</values>
+    </children>
+  </extendedDataElements>
+  <extendedDataElements name="CARSEventVersion" type="string">
+    <values>6.0</values>
+  </extendedDataElements>
+  <sourceComponentId application="ITAMeB 6.1 - tivoli" component="IBM Tivoli Access Manager for e-business" componentIdType="ProductName"
+    instanceId="default-webseald-tivoli1" location="tivoli1" locationType="FQHostname" subComponent="webseald"
+    componentType="http://www.ibm.com/namespaces/autonomic/Tivoli_componentTypes" />
+  <situation categoryName="ReportSituation">
+    <situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="SECURITY"></situationType>
+  </situation>
+</CommonBaseEvent>

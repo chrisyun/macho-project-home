@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="server.rolling.file" class="org.apache.log4j.RollingFileAppender">
+		<param name="Threshold" value="DEBUG" />
+		<!-- The active file to log to -->
+		<param name="file" value="${webseal.tools.home}/logs/wblog.process.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxBackupIndex" value="5" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- The log message pattern -->
+			<param name="ConversionPattern" value="%d{ISO8601} %r %-5p [%F:%L] : %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="request.log.file" class="org.apache.log4j.RollingFileAppender">
+		<param name="Threshold" value="INFO" />
+		<!-- The active file to log to -->
+		<param name="file" value="${webseal.tools.home}/logs/request.upload.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxBackupIndex" value="5" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- The log message pattern -->
+			<param name="ConversionPattern" value="%m" />
+		</layout>
+	</appender>
+
+	<logger name="com.ibm.tivoli.cars" additivity="true">
+		<level value="debug" />
+		<appender-ref ref="server.rolling.file" />
+	</logger>
+
+	<logger name="org.apache" additivity="true">
+		<level value="info" />
+		<appender-ref ref="server.rolling.file" />
+	</logger>
+
+	<logger name="event.log.output" additivity="true">
+		<level value="info" />
+		<appender-ref ref="request.log.file" />
+	</logger>
+
+	<root>
+		<priority value="info" />
+	</root>
+
+</log4j:configuration>
