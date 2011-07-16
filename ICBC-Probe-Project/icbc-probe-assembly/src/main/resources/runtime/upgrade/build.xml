@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ICBC DNS/HTTP Monitoring Agent" default="usage" basedir="C:\icbc-probe">
+  <property file="upgrade.properties" />
+  <!-- Pick up the environment variables -->
+  <property environment="ENV" />
+
+  <property name="icbc.probe.home" value="C:\icbc-probe" />
+
+  <property name="download.dir" value="${icbc.probe.home}/upgrade/download"></property>
+  <property name="backup.dir" value="${icbc.probe.home}/upgrade/backup"></property>
+  <property name="tmp.dir" value="${icbc.probe.home}/tmp"></property>
+  <property name="download.dest.filename" value="icbc-probe-1.0.0-bin.zip"/>
+  
+  <property name="win.service.name" value="ICBC Probe Client"/>
+
+  <tstamp>
+    <format property="current.time"         pattern="yyyyMMddHHmmss"/>
+  </tstamp>
+
+  <target name="usage">
+    <echo message="ICBC DNS/HTTP Monitoring Agent Upgrade Program">
+    </echo>
+  </target>
+
+  <target name="init" depends="checkos">
+  	<taskdef name="getDownloadUrl" classname="com.ibm.tivoli.icbc.ant.GetDownloadUrlTask" classpath="${icbc.probe.home}/webapps/icbc-probe/WEB-INF/classes"/>
+    <taskdef name="getDownloadVersion" classname="com.ibm.tivoli.icbc.ant.CheckDownloadVersionTask" classpath="${icbc.probe.home}/webapps/icbc-probe/WEB-INF/classes"/>
+    <taskdef name="getLocalVersion" classname="com.ibm.tivoli.icbc.ant.CheckLocalVersionTask" classpath="${icbc.probe.home}/webapps/icbc-probe/WEB-INF/classes"/>
+
+    <taskdef name="checkAgentUpdate" classname="com.ibm.tivoli.icbc.ant.CheckSoftwareUpdateTask" classpath="${icbc.probe.home}/webapps/icbc-probe/WEB-INF/classes"/>
+
+    <mkdir dir="${download.dir}"/>
+    <mkdir dir="${backup.dir}"/>
+    <mkdir dir="${tmp.dir}"/>
+  </target>
+
+  <!-- Check software -->
+  <target name="check" depends="init">
+  	<getDownloadUrl path="/icbc-backend/services/agent/software" toProperty="icbc.probe.agent.backend.url"/>
+    <getLocalVersion toProperty="local.agent.version" metaInfoParentDir="../webapps/icbc-probe"/>
+    <getDownloadVersion url="${icbc.probe.agent.backend.url}/version" toProperty="download.agent.version"/>
+    
+    <checkAgentUpdate toUpdateFlagProperty="new.agent.version.availiable" toDownloadURLProperty="download.file.url" metaInfoParentDir="../webapps/icbc-probe" url="${icbc.probe.agent.backend.url}/version"/>
+    <echo message="Agent Update Flag: ${new.agent.version.availiable}"/>
+  </target>
+
+  <!-- Download software package -->
+  <target name="download" depends="check" if="new.agent.version.availiable">
+    <get dest="${download.dir}/${download.dest.filename}">
+      <url url="${download.file.url}"/> 
+    </get>
+  </target>
+
+  <!-- Download software package -->
+  <target name="backup" depends="init">
+    <tar destfile="${backup.dir}/icbc-probe-${current.time}.tar.gz" compression="gzip"
+         basedir="${icbc.probe.home}"
+         excludes="upgrade/download/**, upgrade/bakcup/**, tmp/**, logs/**, httpd/logs/**, httpd/temp/**, httpd/work/**"
+    />
+  </target>
+
+  <!-- Shutdown service -->
+  <target name="shutdown" depends="init">
+    <antcall target="httpd-stop-cmd"></antcall>
+    <antcall target="httpd-stop-win-svc"></antcall>
+    
+    <sleep seconds="30"/>
+  </target>
+
+  <!-- Startup service -->
+  <target name="startup">
+    <antcall target="httpd-start-cmd"></antcall>
+    <antcall target="httpd-start-win-svc"></antcall>
+  </target>
+
+  <!-- Upgrade -->
+  <target name="upgrade" depends="check" if="new.agent.version.availiable">
+    <antcall target="download">
+    </antcall>
+    <antcall target="backup">
+    </antcall>
+    <antcall target="shutdown">
+    </antcall>
+
+    <!-- Unzip Download file and copy file -->
+    <delete dir="${icbc.probe.home}/webapps"></delete>
+    <unzip dest="${tmp.dir}/${current.time}" src="${download.dir}/${download.dest.filename}" overwrite="true"/>
+    <copydir dest="${icbc.probe.home}/webapps" src="${tmp.dir}/${current.time}/icbc-probe/webapps" ></copydir>
+    <copydir dest="${icbc.probe.home}/conf" src="${tmp.dir}/${current.time}/icbc-probe/conf" ></copydir>
+  	
+  	<ant antfile="${tmp.dir}/${current.time}/icbc-probe/upgrade/add.upgrade.xml" target="do" />
+
+
+    <antcall target="teardown">
+    </antcall>
+  </target>
+  
+  <target name="teardown">
+    <delete dir="${tmp.dir}/${current.time}"></delete>
+  </target>
+
+  <!-- Sub Tasks -->
+  <target name="httpd-start-cmd" depends="checkos" if="isLinux">
+    <exec executable="${icbc.probe.home}/bin/probe.sh">
+      <arg value="start" />
+    </exec>
+  </target>
+
+  <target name="httpd-stop-cmd" depends="checkos" if="isLinux">
+    <exec executable="${icbc.probe.home}/bin/probe.sh">
+      <arg value="stop" />
+    </exec>
+  </target>
+
+  <!-- Windows Service Mode-->
+  <target name="httpd-start-win-svc" depends="checkos" if="isWindows">
+    <exec executable="net">
+      <arg value="start" />
+      <arg value="${win.service.name}" />
+    </exec>
+  </target>
+
+  <!-- Windows Service Mode-->
+  <target name="httpd-stop-win-svc" depends="checkos" if="isWindows">
+    <exec executable="net">
+      <arg value="stop" />
+      <arg value="${win.service.name}" />
+    </exec>
+  </target>
+
+  <target name="checkos">
+    <condition property="isWindows">
+      <os family="windows" />
+    </condition>
+
+    <condition property="isLinux">
+      <os family="unix" />
+    </condition>
+  </target>
+
+</project>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+D:\Tools\apache-maven-2.2.1\bin\mvn install:install-file -Dpackaging=jar -DgeneratePom=true -DgroupId=com.teamdev.jexplorer -DartifactId=comfyj -Dversion=2.7 -Dfile=comfyj-2.7.jar
+D:\Tools\apache-maven-2.2.1\bin\mvn install:install-file -Dpackaging=jar -DgeneratePom=true -DgroupId=com.teamdev.jexplorer -DartifactId=mshtml -Dversion=2.7 -Dfile=mshtml.jar
+D:\Tools\apache-maven-2.2.1\bin\mvn install:install-file -Dpackaging=jar -DgeneratePom=true -DgroupId=com.teamdev.jexplorer -DartifactId=jniwrap -Dversion=3.8.3 -Dfile=jniwrap-3.8.3.jar
+D:\Tools\apache-maven-2.2.1\bin\mvn install:install-file -Dpackaging=jar -DgeneratePom=true -DgroupId=com.teamdev.jexplorer -DartifactId=jexplorer -Dversion=2.5 -Dfile=jexplorer-2.5.jar
+D:\Tools\apache-maven-2.2.1\bin\mvn install:install-file -Dpackaging=jar -DgeneratePom=true -DgroupId=com.teamdev.jexplorer -DartifactId=winpack -Dversion=3.8.3 -Dfile=winpack-3.8.3.jar
+-->
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.teamdev.jxbrowser</groupId>
+  <artifactId>jxbrowser</artifactId>
+  <version>2.8</version>
+  <description>POM was created from install:install-file</description>
+	<dependencies>
+		<dependency>
+			<groupId>com.teamdev.jexplorer</groupId>
+			<artifactId>comfyj</artifactId>
+			<version>2.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.teamdev.jexplorer</groupId>
+			<artifactId>mshtml</artifactId>
+			<version>2.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.teamdev.jexplorer</groupId>
+			<artifactId>jniwrap</artifactId>
+			<version>3.8.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.teamdev.jexplorer</groupId>
+			<artifactId>winpack</artifactId>
+			<version>3.8.3</version>
+		</dependency>
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.16</version>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.6.1</version>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.6.1</version>
+</dependency>
+	</dependencies>
+</project>

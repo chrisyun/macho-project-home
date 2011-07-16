@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <comment>Config file for ICBC Probe Agent</comment>
+  <entry key="probe.agent.task.config.location">file:///${catalina.home}/conf/tasks.config.all.xml</entry>
+
+  <!-- Beijing Telcom 219.142.91.203  -->
+  <entry key="probe.agent.server.soap.url">http://219.142.91.203:80/EBankMonitor/services/ProbeServiceImplService</entry>
+</properties>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+  <!-- Create a bean for Spring JobDetail -->
+  <bean id="probe4TimeSynTask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+    <property name="targetObject" ref="taskLauncher"/>
+    <property name="targetMethod" value="run"/>
+    <property name="concurrent" value="false"/>
+  </bean>
+  <!-- Define Trigger parameters -->
+  <bean id="trigger4TimeSynTask" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+    <!-- see the example of method invoking job above --> 
+    <property name="jobDetail" ref="probe4TimeSynTask"/>
+    <!-- 10 seconds -->
+    <property name="startDelay" value="0"/>
+    <!-- repeat every 60 seconds -->
+    <property name="repeatInterval" value="1000"/>
+  </bean>
+  <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+    <property name="triggers">
+      <list>
+        <ref bean="trigger4TimeSynTask"/>
+      </list>
+     </property>
+  </bean>
+  
+</beans>
+

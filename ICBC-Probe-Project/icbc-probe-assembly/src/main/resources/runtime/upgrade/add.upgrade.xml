@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ICBC DNS/HTTP Monitoring Agent" default="do" basedir="C:\icbc-probe">
+  <target name="do">
+    <echo message="Replace old upgrade control file">
+    </echo>
+    <copyfile dest="${icbc.probe.home}/upgrade" src="${tmp.dir}/${current.time}/icbc-probe/upgrade/build.xml" />
+  </target>
+</project>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+  <bean id="taskConfigFactory" class="com.ibm.tivoli.icbc.probe.task.TaskConfigFactory"></bean>
+
+  <bean id="taskLauncher" class="com.ibm.tivoli.icbc.probe.task.TaskLauncher">
+    <property name="taskConfigFactory" ref="taskConfigFactory"></property>
+    <property name="taskContext" ref="taskContext"></property>
+    <property name="dataDispatcher" ref="dataDispatcher"></property>
+    <property name="resultFormater">
+      <bean class="com.ibm.tivoli.icbc.result.ResultFormaterV2"></bean>
+    </property>
+    <property name="imageFileExpiredInHour" value="2"></property>
+    <property name="killJExplorerProcess" value="false"></property>
+  </bean>
+
+  <!-- TaskContext Bean -->
+  <bean id="taskContext" class="com.ibm.tivoli.icbc.probe.task.TaskContext">
+    <property name="attributes">
+        <map>
+            <entry>
+                <key>
+                    <value>TASK_CONFIG_URL</value>
+                </key>
+                <value>${probe.agent.task.config.location}</value>
+            </entry>
+            <!--  Remove following entry will DISABLE Cache -->
+            <entry>
+                <key>
+                    <value>NAMESERVER_IP_ADDRESS_CACHE</value>
+                </key>
+                <ref bean="nameSereverLookup"/>
+            </entry>
+        </map>
+    </property>
+  </bean>
+  
+  <bean id="dataDispatcher" class="com.ibm.tivoli.icbc.probe.task.SoapDataDispatcher">
+    <property name="probeServiceFrondEnd" ref="probeServiceFrondEnd"></property>
+  </bean>
+  
+  <bean id="probeServiceFrondEnd" class="com.ibm.tivoli.icbc.ws.ProbeServiceFrontEndV2">
+    <property name="soapAddress" value="${probe.agent.server.soap.url}"></property>
+    <property name="maxRetry" value="3"></property>
+    <property name="retryInterval" value="1"></property>
+  </bean>
+
+  <!-- DNS_CNAME Probe Bean -->
+  <bean id="probe4DNS_CNAME" class="com.ibm.tivoli.icbc.probe.dns.CNameProbeV2" scope="prototype">
+  </bean>
+  
+  <!-- DNS_CNAME Probe Bean -->
+  <bean id="probe4DNS_NS" class="com.ibm.tivoli.icbc.probe.dns.NSProbe" scope="prototype">
+  </bean>
+  
+  <!-- DNS_CNAME Probe Bean -->
+  <bean id="probe4DNS_A" class="com.ibm.tivoli.icbc.probe.dns.NSAndARecordProbeV2" scope="prototype">
+  </bean>
+  
+  <!-- HTTP_DNS_MODE Probe Bean -->
+  <bean id="probe4HTTP_DNS_MODE" class="com.ibm.tivoli.icbc.probe.http.HttpProbeImpl" scope="prototype">
+  </bean>
+  
+  <!-- HTTPS_DNS_MODE Probe Bean -->
+  <bean id="probe4HTTPS_DNS_MODE" class="com.ibm.tivoli.icbc.probe.http.HttpProbeImpl" scope="prototype">
+  </bean>
+  
+  <!-- ICMP_PING Probe Bean -->
+  <bean id="probe4ICMP_PING" class="com.ibm.tivoli.icbc.probe.icmp.ICMPProbeImpl" scope="prototype">
+  </bean>
+  
+  <!-- DNS_A_NATIVE Probe Bean -->
+  <bean id="probe4DNS_A_NATIVE" class="com.ibm.tivoli.icbc.probe.dns.NativeARecordProbe" scope="prototype">
+  </bean>
+  
+  <!-- 页面元素下载检测器, 帮助完成页面下载元素的大小和下载最慢TopN的生成 -->
+  <bean id="realHtmlElementDetector" class="com.ibm.tivoli.icbc.probe.http.HtmlElementDetectorImpl"></bean>
+  <bean id="cacheHtmlElementDetector" class="com.ibm.tivoli.icbc.probe.http.HtmlElementDetectorCacheImpl">
+    <property name="cacheAgeInSeconds" value="3600"></property>
+    <property name="realDetector" ref="realHtmlElementDetector">
+    </property>
+  </bean>
+  <alias alias="htmlElementDetector" name="cacheHtmlElementDetector"/>
+  
+  <!-- HTTP_IE_BROWSER Probe Bean -->
+  <bean id="probe4IE_BROWSER" class="com.ibm.tivoli.icbc.probe.http.HttpProbeV2Impl" scope="prototype">
+    <property name="lastHttpTaskTimeTracker" ref="lastHttpTaskTimeTracker"></property>
+    <property name="htmlElementDetector" ref="htmlElementDetector"></property>
+  </bean>
+  
+  <bean id="lastHttpTaskTimeTracker" class="com.ibm.tivoli.icbc.probe.http.HttpTaskTracker">
+  </bean>
+  
+  <bean id="nameSereverLookup" class="com.ibm.tivoli.icbc.probe.dns.NameServerLookupImpl" scope="prototype"/>
+  
+</beans>
+

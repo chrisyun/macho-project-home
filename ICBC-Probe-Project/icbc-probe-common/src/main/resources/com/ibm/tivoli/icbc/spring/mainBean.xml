@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <!--
+      Set how to check system properties: as fallback, as override, or never. The default is "fallback": If not being able to resolve a placeholder with the
+      specified properties, a system property will be tried. "override" will check for a system property first, before trying the specified properties. "never"
+      will not check system properties at all.
+    -->
+    <!-- 系统属性总是优先, 即: JVM "-Dkey=value"方式设置的属性信息总是优先于在配置文件的设置. -->
+    <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+    <property name="ignoreResourceNotFound" value="true"></property>
+
+    <property name="locations">
+      <list>
+        <value>classpath:com/ibm/tivoli/icbc/spring/probe.xml</value>
+        <value>file:${catalina.home}/conf/probe.properties</value>
+        <value>file:${catalina.home}/conf/probe.xml</value>
+        <value>file:${icbc.probe.home}/config/probe.properties</value>
+        <value>file:${icbc.probe.home}/config/probe.xml</value>
+        <value>file:c:/icbc-probe/conf/probe.xml</value>
+      </list>
+    </property>
+  </bean>
+
+  <import resource="taskBean.xml" />
+
+  <import resource="scheduleBean.xml" />
+
+  <import resource="fileUploadScheduleBean.xml" />
+
+</beans>
+

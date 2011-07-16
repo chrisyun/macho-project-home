@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<taskconfig>
+  <scheduletime>
+    <!-- 任务的运行间隔, 单位秒  -->
+    <interval>300</interval>
+  </scheduletime>
+  <tasks>
+    <task>
+      <!-- 任务标识 -->
+      <id>DNS_A_NATIVE_01</id>
+      <!-- 任务名称 -->
+      <name>DNS_A_NATIVE www.icbc.com.cn</name>
+      <!-- 
+          任务类型: 可以取如下值
+          DNS_CNAME
+          DNS_NS
+          DNS_A
+          HTTP_DNS_MODE
+          HTTPS_DNS_MODE
+          ICMP_PING
+          DNS_A_NATIVE
+    -->
+      <type>DNS_A_NATIVE</type>
+      <btype>btype_dns_01</btype>
+      <!-- 
+         任务的运行模式, 可以取值: 
+         concurrent  - 并发模式运行
+         serial      - 串行模式运行
+    -->
+      <runmode>concurrent</runmode>
+      <!-- 
+         任务的运行时，延迟的时间（毫秒）
+    -->
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>target</name>
+          <!-- 参数值, 多值时提供多个<value></value>即可-->
+          <value>www.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+    
+    <task>
+      <id>DNS_A_NATIVE_02</id>
+      <name>DNS_A_NATIVE www.icbc-ltd.com</name>
+      <type>DNS_A_NATIVE</type>
+      <btype>btype_dns_02</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>target</name>
+          <value>www.icbc-ltd.com</value>
+        </parameter>
+      </parameters>
+    </task>
+
+  </tasks>
+</taskconfig>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taskconfig>
+  <scheduletime>
+    <!-- 任务的运行间隔, 单位秒  -->
+    <interval>300</interval>
+  </scheduletime>
+  <tasks>
+    <task>
+      <!-- 任务标识 -->
+      <id>DNS_01</id>
+      <!-- 任务名称 -->
+      <name>2.2.1.1 探测门户Cache站点DNS服务</name>
+      <!-- 
+          任务类型: 可以取如下值
+          DNS_CNAME
+          DNS_NS
+          DNS_A
+          HTTP_DNS_MODE
+          HTTPS_DNS_MODE
+    -->
+      <type>DNS_CNAME</type>
+      <btype>btype_dns_01</btype>
+      <!-- 
+         任务的运行模式, 可以取值: 
+         concurrent  - 并发模式运行
+         serial      - 串行模式运行
+    -->
+      <runmode>concurrent</runmode>
+      <!-- 
+         任务的运行时，延迟的时间（毫秒）
+    -->
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <!-- 参数值, 多值时提供多个<value></value>即可-->
+          <value>www.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+    
+    <task>
+      <id>DNS_02</id>
+      <name>2.2.1.2 探测国际化Cache站点DNS服务</name>
+      <type>DNS_CNAME</type>
+      <btype>btype_dns_02</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>www.icbc-ltd.com</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_03</id>
+      <name>2.2.1.3 探测NS记录</name>
+      <type>DNS_NS</type>
+      <btype>btype_dns_03</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_04</id>
+      <name>2.2.1.4 探测源站门户网银域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_04</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>www.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_05</id>
+      <name>2.2.1.5 探测源站个人网银域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_05</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>mybank.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_06</id>
+      <name>2.2.1.6 探测源站国际化网银域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_06</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>www.icbc-ltd.com</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_07</id>
+      <name>2.2.1.7 探测源站企业网银域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_07</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>corporbank.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_08</id>
+      <name>2.2.1.8 探测源站b2c网银域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_08</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>b2c.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_09</id>
+      <name>2.2.1.9 探测源站金融电脑杂志社网银域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_09</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>bbs.fcc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_10</id>
+      <name>2.2.1.10    探测源站银企互联网银域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_10</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>directbank.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_11</id>
+      <name>2.2.1.11    探测源站银企互联网银域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_11</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>directbank.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_12</id>
+      <name>2.2.1.12    探测源站MailRelay网银域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_12</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>mx1.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_13</id>
+      <name>2.2.1.13    探测源站WAP普通版业务域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_13</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>mywap.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_14</id>
+      <name>2.2.1.14    探测源站WAP 3G版业务域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_14</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>mywap2.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_15</id>
+      <name>2.2.1.15    探测源站BBS网银域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_15</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>service.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_16</id>
+      <name>2.2.1.16    探测源站贵宾室网银域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_16</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>vip.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_17</id>
+      <name>2.2.1.17    探测源站WAP普通版门户域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_17</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>wap.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>DNS_18</id>
+      <name>2.2.1.18    探测源站WAP 3G版门户域名a记录</name>
+      <type>DNS_A</type>
+      <btype>btype_dns_18</btype>
+      <runmode>concurrent</runmode>
+      <delay>0</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <value>wap2.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <!-- 任务标识 -->
+      <id>HTTP_01</id>
+      <!-- 任务名称 -->
+      <name>2.2.2.1 探测门户Cache站点HTTP服务</name>
+      <!-- 
+          任务类型: 可以取如下值
+          DNS_CNAME
+          DNS_NS
+          DNS_A
+          HTTP_DNS_MODE
+          HTTPS_DNS_MODE
+    -->
+      <type>HTTP_DNS_MODE</type>
+      <btype>HTTP_01</btype>
+      <!-- 
+         任务的运行模式, 可以取值: 
+         concurrent  - 并发模式运行
+         serial      - 串行模式运行
+    -->
+      <runmode>concurrent</runmode>
+      <!-- 
+         任务的运行时，延迟的时间（毫秒）
+    -->
+      <delay>1000</delay>
+      <parameters>
+        <parameter>
+          <name>targetUrls</name>
+          <!-- 参数值, 多值时提供多个<value></value>即可-->
+          <value>http://www.icbc.com.cn/icbc/html/guanggao/yuntongka/images/card_mdyt_04.gif</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>HTTP_02</id>
+      <name>2.2.2.2 探测国际化门户Cache站点HTTP服务</name>
+      <type>HTTP_DNS_MODE</type>
+      <btype>HTTP_02</btype>
+      <runmode>serial</runmode>
+      <delay>1000</delay>
+      <parameters>
+        <parameter>
+          <name>targetUrls</name>
+          <value>http://www.icbc.com.cn/icbc/html/guanggao/yuntongka/images/card_mdyt_04.gif</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>HTTP_03</id>
+      <name>2.2.2.3 探测源站门户网银HTTP服务</name>
+      <type>HTTP_DNS_MODE</type>
+      <btype>HTTP_03</btype>
+      <runmode>serial</runmode>
+      <delay>1000</delay>
+      <parameters>
+        <parameter>
+          <name>targetUrls</name>
+          <value>http://mybank.icbc.com.cn/icbc/html/guanggao/yuntongka/images/card_mdyt_04.gif</value>
+        </parameter>
+        <parameter>
+            <name>ipTables</name>
+            <value>202.108.88.8,202.99.30.209</value>
+            <value>219.142.91.12,219.142.91.11</value>
+            <value>211.95.81.2,211.95.81.1</value>
+            <value>61.129.61.130,61.129.61.129</value>
+            <value>60.247.99.2,60.247.99.1</value>
+            <value>123.127.121.2,123.127.121.1</value>
+        </parameter>
+      </parameters>
+    </task>
+
+    <task>
+      <id>HTTP_04</id>
+      <name>2.2.2.4 探测各银行网银及主流门户网站的首页</name>
+      <type>HTTP_DNS_MODE</type>
+      <btype>HTTP_04</btype>
+      <runmode>serial</runmode>
+      <delay>1000</delay>
+      <parameters>
+        <parameter>
+          <name>targetUrls</name>
+          <value>http://www.abchina.com/cn/</value>
+          <value>http://www.boc.cn</value>
+          <value>http://www.ccb.com</value>
+          <value>http://www.icbc.com.cn</value>
+          <value>http://www.sina.com.cn</value>
+          <value>http://www.sohu.com</value>
+        </parameter>
+      </parameters>
+    </task>
+    
+    <task>
+      <id>HTTPS_01</id>
+      <name>2.2.3.1 探测源站个人网银HTTPS服务</name>
+      <type>HTTPS_DNS_MODE</type>
+      <btype>HTTPS_01</btype>
+      <runmode>serial</runmode>
+      <delay>1000</delay>
+      <parameters>
+        <parameter>
+          <name>targetUrls</name>
+          <value>https://mybank.icbc.com.cn/icbc/newperbank/images/login_05.gif</value>
+        </parameter>
+      </parameters>
+    </task>
+    <task>
+      <id>HTTPS_02</id>
+      <name>2.2.3.2 探测源站贵宾网银HTTPS服务</name>
+      <type>HTTPS_DNS_MODE</type>
+      <btype>HTTPS_02</btype>
+      <runmode>serial</runmode>
+      <delay>1000</delay>
+      <parameters>
+        <parameter>
+          <name>targetUrls</name>
+          <value>https://vip.icbc.com.cn/icbc/newperbank/images/vip/logo.gif</value>
+        </parameter>
+      </parameters>
+    </task>
+    <task>
+      <id>HTTPS_03</id>
+      <name>2.2.3.3 3 探测源站B2C网银HTTPS服务</name>
+      <type>HTTPS_DNS_MODE</type>
+      <btype>HTTPS_03</btype>
+      <runmode>serial</runmode>
+      <delay>1000</delay>
+      <parameters>
+        <parameter>
+          <name>targetUrls</name>
+          <value>https://b2c.icbc.com.cn/icbc/newperbank/images/login_05.gif</value>
+        </parameter>
+      </parameters>
+    </task>
+
+  </tasks>
+</taskconfig>
+
