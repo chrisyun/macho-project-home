@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taskconfig>
+  <retry type="org.netm.www.ebankmonitor.data.Retry">
+    <delay>3</delay>
+    <times>3</times>
+  </retry>
+  <scheduletime type="org.netm.www.ebankmonitor.data.Scheduletime">
+    <interval>300</interval>
+  </scheduletime>
+  <tasks type="org.netm.www.ebankmonitor.data.Tasks">
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-pwap3g</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>wap2.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-pwap</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>wap.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-vip</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>vip.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-bbs</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>service.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-bwap3g</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>mywap2.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-bwap</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>mywap.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-mx1</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>mx1.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-directbank</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>directbank.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-fcc</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>bbs.fcc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-b2c</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>b2c.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-corp</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>corporbank.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-ltd</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>www.icbc-ltd.com</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-person</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>mybank.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-portal</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>www.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-A</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>c-ltd</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>www.icbc-ltd.com</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-C</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>c-portal</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>www.icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-C</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>ns</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>icbc.com.cn</value>
+        </parameter>
+      </parameters>
+      <runmode>concurrent</runmode>
+      <type>DNS-NS</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-portal</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>http://219.142.91.11/icbc/html/guanggao/yuntongka/images/card_mdyt_04.gif</value>
+        </parameter>
+      </parameters>
+      <runmode>serial</runmode>
+      <type>HTTP</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-portal</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>http://61.129.61.129/icbc/html/guanggao/yuntongka/images/card_mdyt_04.gif</value>
+        </parameter>
+      </parameters>
+      <runmode>serial</runmode>
+      <type>HTTP</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-portal</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>http://211.95.81.1/icbc/html/guanggao/yuntongka/images/card_mdyt_04.gif</value>
+        </parameter>
+      </parameters>
+      <runmode>serial</runmode>
+      <type>HTTP</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-portal</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>http://123.127.121.1/icbc/html/guanggao/yuntongka/images/card_mdyt_04.gif</value>
+        </parameter>
+      </parameters>
+      <runmode>serial</runmode>
+      <type>HTTP</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-portal</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>http://202.99.30.209/icbc/html/guanggao/yuntongka/images/card_mdyt_04.gif</value>
+        </parameter>
+      </parameters>
+      <runmode>serial</runmode>
+      <type>HTTP</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-portal</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>http://60.247.99.1/icbc/html/guanggao/yuntongka/images/card_mdyt_04.gif</value>
+        </parameter>
+      </parameters>
+      <runmode>serial</runmode>
+      <type>HTTP</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>c-ltd</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>http://www.icbc-ltd.com/do_not_delete/noc.gif</value>
+        </parameter>
+      </parameters>
+      <runmode>serial</runmode>
+      <type>HTTP</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>c-portal</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>http://www.icbc.com.cn/do_not_delete/noc.gif</value>
+        </parameter>
+      </parameters>
+      <runmode>serial</runmode>
+      <type>HTTP</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-vip</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>https://vip.icbc.com.cn/icbc/newperbank/images/vip/logo.gif</value>
+        </parameter>
+      </parameters>
+      <runmode>serial</runmode>
+      <type>HTTPS</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-b2c</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>https://b2c.icbc.com.cn/icbc/newperbank/images/login_05.gif</value>
+        </parameter>
+      </parameters>
+      <runmode>serial</runmode>
+      <type>HTTPS</type>
+    </task>
+    <task type="org.netm.www.ebankmonitor.data.Task">
+      <btype>s-person</btype>
+      <delay>0</delay>
+      <parameters type="org.netm.www.ebankmonitor.data.Parameters">
+        <parameter type="org.netm.www.ebankmonitor.data.TaskParam">
+          <name>request</name>
+          <value>https://mybank.icbc.com.cn/icbc/newperbank/images/login_05.gif</value>
+        </parameter>
+      </parameters>
+      <runmode>serial</runmode>
+      <type>HTTPS</type>
+    </task>
+  </tasks>
+</taskconfig>

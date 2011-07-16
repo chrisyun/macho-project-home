@@ -1,0 +1,39 @@
+<?xml version="1.0" charset="UTF-8" ?>
+<!DOCTYPE results PUBLIC "//UNKNOWN/" "unknown.dtd">
+<results>
+  <resolver>
+    <nameserver></nameserver>
+  </resolver>
+  
+  <lookup type="CNAME">
+    <target>www.icbc.com.cn.</target>
+    <responses>
+      <response>
+        <raw>www.icbc.com.cn. 5 IN CNAME cdn.icbc.com.chinacache.net.</raw>
+        
+        <lookup type="CNAME">
+          <request>cdn.icbc.com.chinacache.net.</request>
+          <responses>
+            <response>
+              <raw>cdn.icbc.com.chinacache.net. 5 IN CNAME cc00052.h.cnc.chinacache.net.</raw>
+              
+              <lookup type="A">
+                <request>cc00052.h.cnc.chinacache.net.</request>
+                <responses>
+                  <response>
+                    <raw>cc00052.h.cnc.chinacache.net. 5 IN A 123.125.162.58</raw>
+                  </response>
+                  <response>
+                    <raw>cc00052.h.cnc.chinacache.net. 5 IN A 202.108.251.34</raw>
+                  </response>
+                </responses>
+              </lookup>
+              
+            </response>
+          </responses>
+        </lookup>
+        
+      </response>
+    </responses>
+  </lookup>
+</results>

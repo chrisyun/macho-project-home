@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <comment>Config file for ICBC Probe Agent</comment>
+  <entry key="probe.agent.task.config.location">file:///${catalina.home}/conf/tasks.config.all.xml</entry>
+
+  <!-- 北京网通 202.106.83.84  -->
+  <entry key="probe.agent.server.soap.url">http://202.106.83.84:80/EBankMonitor/services/ProbeServiceImplService</entry>
+  <!-- 北京电信 219.142.91.203  -->
+  <!-- entry key="probe.agent.server.soap.url">http://219.142.91.203:80/EBankMonitor/services/ProbeServiceImplService</entry -->
+  <!-- 上海联通 211.95.81.203  -->
+  <!-- entry key="probe.agent.server.soap.url">http://211.95.81.203:80/EBankMonitor/services/ProbeServiceImplService</entry -->
+  <!-- 上海电信 61.129.61.203  -->
+  <!-- entry key="probe.agent.server.soap.url">http://61.129.61.203:80/EBankMonitor/services/ProbeServiceImplService</entry -->
+  <!-- 北京电信2 60.247.99.203  -->
+  <!-- entry key="probe.agent.server.soap.url">http://60.247.99.203:80/EBankMonitor/services/ProbeServiceImplService</entry -->
+  <!-- 北京网通2 123.127.121.203  -->
+  <!-- entry key="probe.agent.server.soap.url">http://123.127.121.203:80/EBankMonitor/services/ProbeServiceImplService</entry -->
+</properties>

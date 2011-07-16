@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TaskConfig>
+  <ScheduleTime>
+    <!-- 任务的运行间隔, 单位秒  -->
+    <Interval></Interval>
+  </ScheduleTime>
+  <Tasks>
+    <Task>
+      <!-- 任务标识 -->
+      <ID></ID>
+      <!-- 任务名称 -->
+      <Name></Name>
+      <!-- 
+          任务类型: 可以取如下值
+          DNS_CNAME
+          DNS_NS
+          DNS_A
+          HTTP_DNS_MODE
+          HTTPS_DNS_MODE
+    -->
+      <Type></Type>
+      <!-- 
+         任务的运行模式, 可以取值: 
+         concurrent  --- 并发模式运行
+         serial      --- 串行模式运行
+    -->
+      <RunMode>concurrent/serial</RunMode>
+      <!-- 
+         任务的运行时，延迟的时间（毫秒）
+    -->
+      <Delay>1000</Delay>
+      <Parameters>
+        <Parameter>
+          <Name></Name>
+          <!-- 参数值, 多值时提供多个<Value></Value>即可-->
+          <Value></Value>
+        </Parameter>
+      </Parameters>
+    </Task>
+  </Tasks>
+</TaskConfig>

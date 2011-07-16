@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+  <id>bin</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>true</includeBaseDirectory>
+  <!-- <baseDirectory>icbc-probe-1.0.0-SNAPSHOT</baseDirectory> -->
+  <baseDirectory>icbc-probe</baseDirectory>
+  <fileSets>
+    <!-- Pack Tomcat -->
+    <fileSet>
+      <directory>src/main/resources/apache-tomcat-${tomcat.version}</directory>
+      <outputDirectory>/</outputDirectory>
+      <includes>
+        <include>**</include>
+      </includes>
+      <fileMode>755</fileMode>
+    </fileSet>
+    <!-- Pack ANT -->
+    <fileSet>
+      <directory>src/main/resources/apache-ant-${ant.version}</directory>
+      <outputDirectory>/ant</outputDirectory>
+      <includes>
+        <include>**</include>
+      </includes>
+      <fileMode>755</fileMode>
+    </fileSet>
+    <!-- Pack Runtime -->
+    <fileSet>
+      <directory>src/main/resources/runtime</directory>
+      <outputDirectory>/</outputDirectory>
+      <includes>
+        <include>**</include>
+      </includes>
+      <fileMode>755</fileMode>
+    </fileSet>
+  </fileSets>
+  <dependencySets>
+    <!-- Pack WAR -->
+    <dependencySet>
+      <outputDirectory>/webapps/icbc-probe</outputDirectory>
+      <unpack>true</unpack>
+      <includes>
+        <include>*probe-web:war</include>
+      </includes>
+    </dependencySet>
+    <dependencySet>
+      <outputDirectory>/bin</outputDirectory>
+      <unpack>false</unpack>
+      <includes>
+        <include>*icbc-probe-bootstrap:jar</include>
+      </includes>
+    </dependencySet>
+  </dependencySets>
+</assembly>

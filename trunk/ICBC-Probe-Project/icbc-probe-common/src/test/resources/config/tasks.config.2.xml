@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taskconfig>
+  <scheduletime>
+    <!-- 任务的运行间隔, 单位秒  -->
+    <interval>120</interval>
+  </scheduletime>
+  <tasks>
+    <task>
+      <!-- 任务标识 -->
+      <id>1</id>
+      <!-- 任务名称 -->
+      <name>TASK_DNS_CNAME</name>
+      <!-- 
+          任务类型: 可以取如下值
+          DNS_CNAME
+          DNS_NS
+          DNS_A
+          HTTP_DNS_MODE
+          HTTPS_DNS_MODE
+    -->
+      <type>DNS_CNAME</type>
+      <btype>btype_1</btype>
+      <!-- 
+         任务的运行模式, 可以取值: 
+         concurrent  - 并发模式运行
+         serial      - 串行模式运行
+    -->
+      <runmode>concurrent</runmode>
+      <!-- 
+         任务的运行时，延迟的时间（毫秒）
+    -->
+      <delay>1000</delay>
+      <parameters>
+        <parameter>
+          <name>targets</name>
+          <!-- 参数值, 多值时提供多个<value></value>即可-->
+          <value>www.icbc.com.cn</value>
+          <value>www.icbc-ltd.com</value>
+        </parameter>
+      </parameters>
+    </task>
+    <task>
+      <!-- 任务标识 -->
+      <id>2</id>
+      <!-- 任务名称 -->
+      <name>TASK_HTTP_2</name>
+      <!-- 
+          任务类型: 可以取如下值
+          DNS_CNAME
+          DNS_NS
+          DNS_A
+          HTTP_DNS_MODE
+          HTTPS_DNS_MODE
+    -->
+      <type>HTTP_DNS_MODE</type>
+      <btype>btype_2</btype>
+      <!-- 
+         任务的运行模式, 可以取值: 
+         concurrent  - 并发模式运行
+         serial      - 串行模式运行
+    -->
+      <runmode>concurrent</runmode>
+      <!-- 
+         任务的运行时，延迟的时间（毫秒）
+    -->
+      <delay>1000</delay>
+      <parameters>
+        <parameter>
+          <name>targetUrls</name>
+          <!-- 参数值, 多值时提供多个<value></value>即可-->
+          <value>http://www.icbc.com.cn/icbc/html/guanggao/yuntongka/images/card_mdyt_04.gif</value>
+        </parameter>
+      </parameters>
+    </task>
+  </tasks>
+</taskconfig>

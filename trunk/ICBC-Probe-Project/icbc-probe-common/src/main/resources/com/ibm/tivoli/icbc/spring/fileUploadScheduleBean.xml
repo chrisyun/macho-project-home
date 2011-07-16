@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+  <bean id="uploadFileTask" class="com.ibm.tivoli.icbc.probe.task.FileUploadTask">
+    <property name="soapAddress" value="${probe.agent.server.soap.url}"></property>
+    <property name="sourceFile" value="c:/checkresult.txt"></property>
+    <property name="uploadUrl" value="/EBankMonitor/servlet/ClientEnvUpload"></property>
+  </bean>
+  
+  <!-- Create a bean for Spring JobDetail -->
+  <bean id="uploadFile4TimeSynTask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+    <property name="targetObject" ref="uploadFileTask"/>
+    <property name="targetMethod" value="execute"/>
+    <property name="concurrent" value="false"/>
+  </bean>
+  <!-- Define Trigger parameters -->
+  <bean id="uploadFile4Trigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+    <!-- see the example of method invoking job above --> 
+    <property name="jobDetail" ref="uploadFile4TimeSynTask"/>
+    <!-- 10 seconds -->
+    <property name="startDelay" value="0"/>
+    <!-- repeat every 15 minutes -->
+    <property name="repeatInterval" value="900000"/>
+  </bean>
+  <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+    <property name="triggers">
+      <list>
+        <ref bean="uploadFile4Trigger"/>
+      </list>
+     </property>
+  </bean>
+  
+</beans>
+
