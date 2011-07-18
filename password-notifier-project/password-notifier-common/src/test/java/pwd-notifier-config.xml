@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <comment>Config file for Unicom 4A Admin Console</comment>
+  
+  <!-- Resource Repository parameters -->
+  <entry key="resource.repository.ldap.server.url">ldap://192.168.2.129:3890</entry>
+  <entry key="resource.repository.ldap.server.bindDN">cn=root</entry>
+  <entry key="resource.repository.ldap.server.bindPassword">smartway</entry>
+
+  <entry key="user.repository.ldap.server.url">${resource.repository.ldap.server.url}</entry>
+  <entry key="user.repository.ldap.server.bindDN">${resource.repository.ldap.server.bindDN}</entry>
+  <entry key="user.repository.ldap.server.bindPassword">${resource.repository.ldap.server.bindPassword}</entry>
+  <entry key="user.repository.ldap.server.base">dc=jke,dc=com</entry>
+
+  <entry key="tam.repository.ldap.server.url">${resource.repository.ldap.server.url}</entry>
+  <entry key="tam.repository.ldap.server.bindDN">${resource.repository.ldap.server.bindDN}</entry>
+  <entry key="tam.repository.ldap.server.bindPassword">${resource.repository.ldap.server.bindPassword}</entry>
+  <entry key="tam.repository.ldap.server.base">SECAUTHORITY=DEFAULT</entry>
+
+</properties>
