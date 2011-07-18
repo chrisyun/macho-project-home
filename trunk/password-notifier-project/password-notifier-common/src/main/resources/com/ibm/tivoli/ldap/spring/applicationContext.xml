@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="propertyPlaceholderConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<!-- Set how to check system properties: as fallback, as override, or never. 
+			The default is "fallback": If not being able to resolve a placeholder with 
+			the specified properties, a system property will be tried. "override" will 
+			check for a system property first, before trying the specified properties. 
+			"never" will not check system properties at all. -->
+		<!-- 系统属性总是优先, 即: JVM "-Dkey=value"方式设置的属性信息总是优先于在配置文件的设置. -->
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="ignoreResourceNotFound" value="true"></property>
+
+		<property name="locations">
+			<list>
+				<value>classpath:com/talkweb/security/spring/config.xml</value>
+				<value>file:${pwd.notifier.home}/config/config.xml</value>
+				<value>classpath:pwd-notifier-config.xml</value>
+				<value>file:${user.home.dir}/pwd-notifier-config.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="dirContextValidator"
+		class="org.springframework.ldap.pool.validation.DefaultDirContextValidator" />
+
+	<bean id="userResourceContextSource"
+		class="org.springframework.ldap.pool.factory.PoolingContextSource">
+		<property name="contextSource">
+			<bean class="org.springframework.ldap.core.support.LdapContextSource">
+				<property name="url" value="${user.repository.ldap.server.url}" />
+				<property name="base" value="${user.repository.ldap.server.base}" />
+				<property name="userDn" value="${user.repository.ldap.server.bindDN}" />
+				<property name="password"
+					value="${user.repository.ldap.server.bindPassword}" />
+				<!-- Disable JNDI native pool -->
+				<property name="pooled" value="false" />
+			</bean>
+		</property>
+		<property name="dirContextValidator" ref="dirContextValidator" />
+		<property name="testOnBorrow" value="true" />
+		<property name="testWhileIdle" value="true" />
+	</bean>
+	<bean id="tamResourceContextSource"
+		class="org.springframework.ldap.pool.factory.PoolingContextSource">
+		<property name="contextSource">
+			<bean class="org.springframework.ldap.core.support.LdapContextSource">
+				<property name="url" value="${tam.repository.ldap.server.url}" />
+				<property name="base" value="${tam.repository.ldap.server.base}" />
+				<property name="userDn" value="${tam.repository.ldap.server.bindDN}" />
+				<property name="password" value="${tam.repository.ldap.server.bindPassword}" />
+				<!-- Disable JNDI native pool -->
+				<property name="pooled" value="false" />
+			</bean>
+		</property>
+		<property name="dirContextValidator" ref="dirContextValidator" />
+		<property name="testOnBorrow" value="true" />
+		<property name="testWhileIdle" value="true" />
+	</bean>
+
+	<bean id="daoFactory" class="com.ibm.tivoli.ldap.dao.SpringBasedDAOFactory">
+	</bean>
+
+	<bean id="inetOrgPersonDAO" class="com.ibm.tivoli.ldap.dao.InetOrgPersonDAOImpl"
+		scope="prototype">
+		<property name="ldapTemplate">
+			<bean class="org.springframework.ldap.core.LdapTemplate">
+				<constructor-arg ref="userResourceContextSource" />
+			</bean>
+		</property>
+		<property name="odmManager">
+			<bean
+				class="org.springframework.ldap.odm.core.impl.OdmManagerImplFactoryBean">
+				<property name="converterManager" ref="converterManager" />
+				<property name="contextSource" ref="userResourceContextSource" />
+				<property name="managedClasses">
+					<set>
+						<value>com.ibm.tivoli.ldap.entity.InetOrgPerson</value>
+					</set>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="tamSecUserDAO" class="com.ibm.tivoli.ldap.dao.TamSecUserDAOImpl"
+		scope="prototype">
+    <property name="ldapTemplate">
+      <bean class="org.springframework.ldap.core.LdapTemplate">
+        <constructor-arg ref="tamResourceContextSource" />
+      </bean>
+    </property>
+          <!-- 
+    <property name="odmManager">
+      <bean
+        class="org.springframework.ldap.odm.core.impl.OdmManagerImplFactoryBean">
+        <property name="converterManager" ref="converterManager" />
+        <property name="contextSource" ref="tamResourceContextSource" />
+        <property name="managedClasses">
+          <set>
+            <value>com.ibm.tivoli.ldap.entity.TamSecUser</value>
+          </set>
+        </property>
+      </bean>
+    </property>
+           -->
+	</bean>
+
+  <bean id="fromStringConverter"
+    class="org.springframework.ldap.odm.typeconversion.impl.converters.FromStringConverter" />
+  <bean id="toStringConverter"
+    class="org.springframework.ldap.odm.typeconversion.impl.converters.ToStringConverter" />
+  <bean id="converterManager"
+    class="org.springframework.ldap.odm.typeconversion.impl.ConverterManagerFactoryBean">
+    <property name="converterConfig">
+      <set>
+        <bean
+          class="org.springframework.ldap.odm.typeconversion.impl.ConverterManagerFactoryBean$ConverterConfig">
+          <property name="fromClasses">
+            <set>
+              <value>java.lang.String</value>
+            </set>
+          </property>
+          <property name="toClasses">
+            <set>
+              <value>java.lang.Byte</value>
+              <value>java.lang.Short</value>
+              <value>java.lang.Integer</value>
+              <value>java.lang.Long</value>
+              <value>java.lang.Float</value>
+              <value>java.lang.Double</value>
+              <value>java.lang.Boolean</value>
+            </set>
+          </property>
+          <property name="converter" ref="fromStringConverter" />
+        </bean>
+        <bean
+          class="org.springframework.ldap.odm.typeconversion.impl.ConverterManagerFactoryBean$ConverterConfig">
+          <property name="fromClasses">
+            <set>
+              <value>java.lang.Byte</value>
+              <value>java.lang.Short</value>
+              <value>java.lang.Integer</value>
+              <value>java.lang.Long</value>
+              <value>java.lang.Float</value>
+              <value>java.lang.Double</value>
+              <value>java.lang.Boolean</value>
+            </set>
+          </property>
+          <property name="toClasses">
+            <set>
+              <value>java.lang.String</value>
+            </set>
+          </property>
+          <property name="converter" ref="toStringConverter" />
+        </bean>
+      </set>
+    </property>
+  </bean>
+
+
+</beans>
+
