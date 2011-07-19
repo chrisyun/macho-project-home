@@ -100,6 +100,7 @@ public class Launcher {
     eventUploader.setCarsServiceURL(props.getProperty("wb.log.process.cars.soap.url"));
     eventUploader.setWebSEALUrl(props.getProperty("wb.log.process.webseal.base.url"));
     eventUploader.setWebSEALInstaceId(props.getProperty("wb.log.process.webseal.instance.id"));
+    eventUploader.setWebSEALNetworkId(props.getProperty("wb.log.process.webseal.network.id"));
     eventUploader.setWebSEALLocation(props.getProperty("wb.log.process.webseal.hostname"));
     eventUploader.setCarsUsername(props.getProperty("wb.log.process.cars.soap.username", null));
     eventUploader.setCarsPassword(props.getProperty("wb.log.process.cars.soap.password", null));

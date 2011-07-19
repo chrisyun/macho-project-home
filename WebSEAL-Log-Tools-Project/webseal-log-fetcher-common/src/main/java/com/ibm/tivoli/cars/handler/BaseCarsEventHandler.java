@@ -11,12 +11,15 @@ import java.util.List;
 import java.util.TimeZone;
 import java.util.UUID;
 
+import org.apache.commons.lang.StringUtils;
+
 import com.ibm.tivoli.cars.WebSEALRequestLogEvent;
 
 public abstract class BaseCarsEventHandler implements EventHandler {
 
   private String webSEALUrl = "HTTP://oa.tiakanglife.com";
   private String webSEALInstaceId = "default-webseald-tivoli1";
+  private String webSEALNetworkId = null;
   private String webSEALLocation = "tivoli1";
 
   public BaseCarsEventHandler() {
@@ -49,6 +52,20 @@ public abstract class BaseCarsEventHandler implements EventHandler {
 
   protected String getMessage(WebSEALRequestLogEvent logEvent) throws IOException {
     return this.getMessage(Arrays.asList(logEvent));
+  }
+
+  /**
+   * @return the webSEALNetworkId
+   */
+  public String getWebSEALNetworkId() {
+    return webSEALNetworkId;
+  }
+
+  /**
+   * @param webSEALNetworkId the webSEALNetworkId to set
+   */
+  public void setWebSEALNetworkId(String webSEALNetworkId) {
+    this.webSEALNetworkId = webSEALNetworkId;
   }
 
   protected String getMessage(List<WebSEALRequestLogEvent> logEvents) throws IOException {
@@ -147,7 +164,7 @@ public abstract class BaseCarsEventHandler implements EventHandler {
     output.write("    <values>CARSComplexType:CARSAuditPermissionInfo</values>\n");
     output.write("  </extendedDataElements>\n");
     output.write("  <extendedDataElements name=\"action\" type=\"string\">\n");
-    output.write("    <values>httpRequest</values>\n");
+    output.write("    <values>" + ((StringUtils.isEmpty(this.webSEALNetworkId))?"httpRequest":this.webSEALNetworkId) + "</values>\n");
     output.write("  </extendedDataElements>\n");
     output.write("  <extendedDataElements name=\"httpURLInfo\" type=\"string\">\n");
     output.write("    <values>CARSComplexType:CARSAuditHTTPURLInfo</values>\n");
