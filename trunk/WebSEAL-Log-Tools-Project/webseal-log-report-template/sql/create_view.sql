@@ -42,13 +42,14 @@ select
   RES_NAME_IN_PLCY as Application,
   src_instance_id as WebSEAL,
   access_dcn,
+  action,
   count(*) as total
 from 
    cars_t_event e inner join cars_t_res_access r on e.cars_seq_number=r.cars_seq_number
                   inner join v_cars_t_event_time t on e.cars_seq_number=t.cars_seq_number
 where 
      e.eventtype='AUDIT_RESOURCE_ACCESS' and e.APP_USR_NAME<>'Unauth'
-group by year, RES_NAME_IN_PLCY, src_instance_id, access_dcn;
+group by year, RES_NAME_IN_PLCY, src_instance_id, access_dcn, action;
 
 drop view v_app_request_month;
 create view v_app_request_month as
@@ -58,13 +59,14 @@ select
   RES_NAME_IN_PLCY as Application,
   src_instance_id as WebSEAL,
   access_dcn,
+  action,
   count(*) as total
 from 
    cars_t_event e inner join cars_t_res_access r on e.cars_seq_number=r.cars_seq_number
                   inner join v_cars_t_event_time t on e.cars_seq_number=t.cars_seq_number
 where 
      e.eventtype='AUDIT_RESOURCE_ACCESS' and e.APP_USR_NAME<>'Unauth'
-group by year, month, RES_NAME_IN_PLCY, src_instance_id, access_dcn;
+group by year, month, RES_NAME_IN_PLCY, src_instance_id, access_dcn, action;
 
 drop view v_app_request_day_of_month;
 create view v_app_request_day_of_month as
@@ -75,13 +77,14 @@ select
   RES_NAME_IN_PLCY as Application,
   src_instance_id as WebSEAL,
   access_dcn,
+  action,
   count(*) as total
 from 
    cars_t_event e inner join cars_t_res_access r on e.cars_seq_number=r.cars_seq_number
                   inner join v_cars_t_event_time t on e.cars_seq_number=t.cars_seq_number
 where 
      e.eventtype='AUDIT_RESOURCE_ACCESS' and e.APP_USR_NAME<>'Unauth'
-group by year, month, day_of_month, RES_NAME_IN_PLCY, src_instance_id, access_dcn;
+group by year, month, day_of_month, RES_NAME_IN_PLCY, src_instance_id, access_dcn, action;
 
 drop view v_app_request_hour;
 create view v_app_request_hour as
@@ -93,13 +96,14 @@ select
   RES_NAME_IN_PLCY as Application,
   src_instance_id as WebSEAL,
   access_dcn,
+  action,
   count(*) as total
 from 
    cars_t_event e inner join cars_t_res_access r on e.cars_seq_number=r.cars_seq_number
                   inner join v_cars_t_event_time t on e.cars_seq_number=t.cars_seq_number
 where 
      e.eventtype='AUDIT_RESOURCE_ACCESS' and e.APP_USR_NAME<>'Unauth'
-group by year, month, day_of_month, hour, RES_NAME_IN_PLCY, src_instance_id, access_dcn;
+group by year, month, day_of_month, hour, RES_NAME_IN_PLCY, src_instance_id, access_dcn, action;
 
 --------------------------------------------------------------------------------------------------
 -- 
@@ -124,6 +128,7 @@ select
   e.TIME_STAMP,
   r.RES_NAME_IN_PLCY,
   r.access_dcn,
+  action,
   r.RES_NAME_IN_APP
 from 
    cars_t_event e inner join cars_t_res_access r on e.cars_seq_number=r.cars_seq_number
@@ -140,3 +145,6 @@ select count(*) from v_app_request_hour_with_history
 select * from v_app_request_hour;
 
 select * from v_app_request_year order by year asc, Application asc, WebSEAL asc;
+
+-- update cars_t_res_access set action='Internal' where src_instance_id='webseal177'
+-- update cars_t_res_access set action='External' where src_instance_id='default-webseald-lmwebseal1'
