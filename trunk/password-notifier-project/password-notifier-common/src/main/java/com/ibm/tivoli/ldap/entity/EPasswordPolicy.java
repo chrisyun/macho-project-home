@@ -46,5 +46,13 @@ public final class EPasswordPolicy {
   public void setPasswordMaxAge(int passwordMaxAge) {
     this.passwordMaxAge = passwordMaxAge;
   }
+
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    return String.format("EPasswordPolicy [dn=%s, passwordMaxAge=%s]", dn, passwordMaxAge);
+  }
   
 }

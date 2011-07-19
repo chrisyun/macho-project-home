@@ -35,16 +35,40 @@ public class TamSecUserDAOImpl implements TamSecUserDAO {
       EPasswordPolicy entry = new EPasswordPolicy();
       if (attributes.get("passwordMaxAge") != null) {
         Attribute attribute = attributes.get("passwordMaxAge");
-        entry.setPasswordMaxAge(Integer.parseInt(attribute.get().toString()));
+        // DDD-hh:mm:ss
+        int pwdAgeInSeconds = parse(attribute.get().toString());
+        entry.setPasswordMaxAge(pwdAgeInSeconds);
       }
       return entry;
+    }
+
+    private int parse(String s) {
+      return Integer.parseInt(s);
+//      int end = (s.indexOf('-') > 0) ? s.indexOf('-') : s.length();
+//      int day = Integer.parseInt(s.substring(0, end));
+//      int hour = 0;
+//      int minute = 0;
+//      int second = 0;
+//      if (s.indexOf('-') > 0) {
+//        String t = s.substring(s.indexOf('-') + 1);
+//        String[] ss = StringUtils.split(t, ":");
+//        if (ss.length > 0) {
+//          hour = Integer.parseInt(ss[0]);
+//        }
+//        if (ss.length > 1) {
+//          minute = Integer.parseInt(ss[1]);
+//        }
+//        if (ss.length > 2) {
+//          second = Integer.parseInt(ss[2]);
+//        }
+//      }
+//      return (day * 24 * 3600 + hour * 3600 + minute * 60 + second);
     }
 
   }
 
   public class TamSecUserAttributesMapper implements AttributesMapper {
 
-    @Override
     public TamSecUser mapFromAttributes(Attributes attributes) throws NamingException {
 
       TamSecUser entry = new TamSecUser();
@@ -120,7 +144,7 @@ public class TamSecUserDAOImpl implements TamSecUserDAO {
   public void setOdmManager(OdmManager odmManager) {
     this.odmManager = odmManager;
   }
-  
+
   private int getDefaultPasswordMaxAge() {
     return getPolicy("cn=Default, cn=Policies");
   }
@@ -128,7 +152,7 @@ public class TamSecUserDAOImpl implements TamSecUserDAO {
   private int getPolicy(String dn) {
     try {
       EPasswordPolicyAttributesMapper mapper = new EPasswordPolicyAttributesMapper();
-      EPasswordPolicy policy = (EPasswordPolicy)this.ldapTemplate.lookup(dn, mapper);
+      EPasswordPolicy policy = (EPasswordPolicy) this.ldapTemplate.lookup(dn, mapper);
       if (policy != null) {
         return policy.getPasswordMaxAge();
       }
@@ -149,13 +173,13 @@ public class TamSecUserDAOImpl implements TamSecUserDAO {
     TamSecUserAttributesMapper mapper = new TamSecUserAttributesMapper();
     List<TamSecUser> result = new ArrayList<TamSecUser>(new HashSet<TamSecUser>(ldapTemplate.search(baseDN, filter, mapper)));
     if (result != null) {
-       for (TamSecUser entry: result) {
-           int passwordMaxAge = this.getUserPasswordMaxAge(entry.getDn());
-           if (passwordMaxAge < 0) {
-             passwordMaxAge = getDefaultPasswordMaxAge();
-           }
-           entry.setPasswordMaxAge(passwordMaxAge);
-       }
+      for (TamSecUser entry : result) {
+        int passwordMaxAge = getDefaultPasswordMaxAge();
+        if (entry.isSecHasPolicy()) {
+          passwordMaxAge = this.getUserPasswordMaxAge(entry.getDn());
+        }
+        entry.setPasswordMaxAge(passwordMaxAge);
+      }
     }
     return result;
   }

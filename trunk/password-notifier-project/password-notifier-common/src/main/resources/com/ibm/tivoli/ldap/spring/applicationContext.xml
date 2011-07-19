@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+  xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
-<beans>
+  <import resource="classpath:META-INF/cxf/cxf.xml" />
+  <import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+  <import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
 
 	<bean id="propertyPlaceholderConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -107,6 +112,17 @@
     </property>
            -->
 	</bean>
+	
+	<bean id="checker" class="com.ibm.tivoli.pwdnotifier.CheckerImpl">
+    <property name="tamSecUserDAO" ref="tamSecUserDAO"/>
+	  <property name="personDAO" ref="inetOrgPersonDAO"/>
+	  <property name="defaultDaysOfWebNotification" value="${password.notify.web.defaultDays}"></property>
+	</bean>
+	
+	<bean id="passwordPolicyService" class="com.ibm.tivoli.pwdnotifier.service.PasswordPolicyServiceImpl">
+	  <property name="checker" ref="checker"></property>
+	</bean>
+  <jaxws:endpoint id="pwdPolicyService" implementor="#passwordPolicyService" address="/passwordPolicyService" serviceName="PasswordPolicyService"/>
 
   <bean id="fromStringConverter"
     class="org.springframework.ldap.odm.typeconversion.impl.converters.FromStringConverter" />
