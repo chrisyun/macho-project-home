@@ -8,7 +8,13 @@
 	<name>Password-Notifier-Project</name>
 	<modules>
 		<module>password-notifier-common</module>
+		<module>password-notifier-web</module>
 	</modules>
+  <properties>
+    <spring.version>2.5.6</spring.version>
+    <spring.ldap.version>1.3.1.RELEASE</spring.ldap.version>
+    <cxf.version>2.3.3</cxf.version>
+  </properties>
 	<build>
 		<plugins>
 			<plugin>

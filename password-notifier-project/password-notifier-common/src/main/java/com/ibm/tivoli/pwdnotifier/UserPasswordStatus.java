@@ -28,15 +28,15 @@ public class UserPasswordStatus {
   /**
    * Time of last password modified
    */
-  private Date lastPasswordChangedTime = new Date();
+  private Date lastPasswordChangedTime = null;
   /**
-   * Seconds of password age for this user.
+   * Seconds of password max age for this user.
+   * 0 means "Unset"
    */
-  private long passwordAgeInSeconds = 0;
-  /**
-   * Time of last notified time 
-   */
-  private Date lastPasswordNotifiedTime = new Date(0);
+  private long passwordMaxAgeInSeconds = 0;
+  
+  private Date passwordExpireTime = null;
+
   /**
    * 
    */
@@ -92,28 +92,28 @@ public class UserPasswordStatus {
     this.lastPasswordChangedTime = lastPasswordChangedTime;
   }
   /**
-   * @return the passwordAgeInSeconds
+   * @return the passwordMaxAgeInSeconds
    */
-  public long getPasswordAgeInSeconds() {
-    return passwordAgeInSeconds;
+  public long getPasswordMaxAgeInSeconds() {
+    return passwordMaxAgeInSeconds;
   }
   /**
-   * @param passwordAgeInSeconds the passwordAgeInSeconds to set
+   * @param passwordMaxAgeInSeconds the passwordMaxAgeInSeconds to set
    */
-  public void setPasswordAgeInSeconds(long passwordAgeInSeconds) {
-    this.passwordAgeInSeconds = passwordAgeInSeconds;
+  public void setPasswordMaxAgeInSeconds(long passwordAgeInSeconds) {
+    this.passwordMaxAgeInSeconds = passwordAgeInSeconds;
+  }
+  
+  /**
+   * @param passwordExpireTime the passwordExpireTime to set
+   */
+  public void setPasswordExpireTime(Date passwordExpireTime) {
+    this.passwordExpireTime = passwordExpireTime;
   }
   /**
-   * @return the lastPasswordNotifiedTime
+   * @return the passwordExpireTime
    */
-  public Date getLastPasswordNotifiedTime() {
-    return lastPasswordNotifiedTime;
+  public Date getPasswordExpireTime() {
+    return passwordExpireTime;
   }
-  /**
-   * @param lastPasswordNotifiedTime the lastPasswordNotifiedTime to set
-   */
-  public void setLastPasswordNotifiedTime(Date lastPasswordNotifiedTime) {
-    this.lastPasswordNotifiedTime = lastPasswordNotifiedTime;
-  }
-
 }

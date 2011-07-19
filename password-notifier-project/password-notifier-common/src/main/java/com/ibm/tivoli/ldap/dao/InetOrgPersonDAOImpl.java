@@ -25,7 +25,6 @@ public class InetOrgPersonDAOImpl implements InetOrgPersonDAO {
 
   public class UserAttributesMapper implements AttributesMapper {
 
-    @Override
     public InetOrgPerson mapFromAttributes(Attributes attributes) throws NamingException {
 
       InetOrgPerson userObject = new InetOrgPerson();
