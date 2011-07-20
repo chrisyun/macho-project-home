@@ -4,11 +4,11 @@
 	<appender name="server.rolling.file" class="org.apache.log4j.RollingFileAppender">
 		<param name="Threshold" value="DEBUG" />
 		<!-- The active file to log to -->
-		<param name="file" value="${java.io.tmpdir}/wblog.process.log" />
+		<param name="file" value="${java.io.tmpdir}/pwdnotifier.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="UTF-8" />
 
-		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxFileSize" value="1MB" />
 		<param name="MaxBackupIndex" value="5" />
 
 		<layout class="org.apache.log4j.PatternLayout">

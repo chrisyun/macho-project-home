@@ -15,6 +15,7 @@ import com.ibm.tivoli.pwdnotifier.UserPasswordStatus;
 public class GetPwdStatusResp {
   private String code = null;
   private String message = null;
+  private boolean needToWebNotify = false;
   private UserPasswordStatus userPwdStatus = null;
 
   /**
@@ -74,6 +75,20 @@ public class GetPwdStatusResp {
    */
   public void setUserPwdStatus(UserPasswordStatus userPwdStatus) {
     this.userPwdStatus = userPwdStatus;
+  }
+
+  /**
+   * @return the needToWebNotify
+   */
+  public boolean isNeedToWebNotify() {
+    return needToWebNotify;
+  }
+
+  /**
+   * @param needToWebNotify the needToWebNotify to set
+   */
+  public void setNeedToWebNotify(boolean needToNotify) {
+    this.needToWebNotify = needToNotify;
   }
 
 }

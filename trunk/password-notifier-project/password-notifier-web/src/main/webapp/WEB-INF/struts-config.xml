@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+	</form-beans>
+
+	<global-exceptions>
+	</global-exceptions>
+
+	<global-forwards>
+	</global-forwards>
+
+	<action-mappings>
+		<action path="/user/show_pwd_status" type="com.ibm.tivoli.pwdnotifier.web.ShowPasswordStatusAction">
+			<forward name="success" path="/WEB-INF/jsp/show_pwd_status.jsp" />
+		</action>
+	</action-mappings>
+
+	<message-resources parameter="com.ibm.tivoli.pwdnotifier.ApplicationResources" null="true" />
+
+</struts-config>
