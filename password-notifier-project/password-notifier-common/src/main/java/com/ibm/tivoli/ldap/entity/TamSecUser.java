@@ -4,37 +4,25 @@ import java.util.Date;
 
 import javax.naming.Name;
 
-import org.springframework.ldap.odm.annotations.Attribute;
-import org.springframework.ldap.odm.annotations.Entry;
-import org.springframework.ldap.odm.annotations.Id;
-
 /**
  * TamSecUser对象对应的LDAP Objectclass为secUser
  * @author ZhaoDongLu
  *
  */
-@Entry(objectClasses = { "top", "secUser" })
 public final class TamSecUser {
-  @Id
   private String dn;
   
-  @Attribute
   private boolean secHasPolicy;
   
-  @Attribute
   // 20100913234410.0Z
   private Date secPwdLastChanaged;
 
-  @Attribute
   private boolean secAcctValid;
   
-  @Attribute
   private boolean secPwdValid;
   
-  @Attribute
   private String secAuthority;
   
-  @Attribute
   private String secDomainId;
   
   private int passwordMaxAge = 0;

@@ -21,9 +21,8 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
 		<property name="locations">
 			<list>
-				<value>classpath:com/talkweb/security/spring/config.xml</value>
-				<value>file:${pwd.notifier.home}/config/config.xml</value>
 				<value>classpath:pwd-notifier-config.xml</value>
+        <value>classpath:test/pwd-notifier-config.xml</value>
 				<value>file:${user.home.dir}/pwd-notifier-config.xml</value>
 			</list>
 		</property>
@@ -76,18 +75,6 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 				<constructor-arg ref="userResourceContextSource" />
 			</bean>
 		</property>
-		<property name="odmManager">
-			<bean
-				class="org.springframework.ldap.odm.core.impl.OdmManagerImplFactoryBean">
-				<property name="converterManager" ref="converterManager" />
-				<property name="contextSource" ref="userResourceContextSource" />
-				<property name="managedClasses">
-					<set>
-						<value>com.ibm.tivoli.ldap.entity.InetOrgPerson</value>
-					</set>
-				</property>
-			</bean>
-		</property>
 	</bean>
 
 	<bean id="tamSecUserDAO" class="com.ibm.tivoli.ldap.dao.TamSecUserDAOImpl"
@@ -97,20 +84,6 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
         <constructor-arg ref="tamResourceContextSource" />
       </bean>
     </property>
-          <!-- 
-    <property name="odmManager">
-      <bean
-        class="org.springframework.ldap.odm.core.impl.OdmManagerImplFactoryBean">
-        <property name="converterManager" ref="converterManager" />
-        <property name="contextSource" ref="tamResourceContextSource" />
-        <property name="managedClasses">
-          <set>
-            <value>com.ibm.tivoli.ldap.entity.TamSecUser</value>
-          </set>
-        </property>
-      </bean>
-    </property>
-           -->
 	</bean>
 	
 	<bean id="checker" class="com.ibm.tivoli.pwdnotifier.CheckerImpl">
@@ -123,59 +96,6 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 	  <property name="checker" ref="checker"></property>
 	</bean>
   <jaxws:endpoint id="pwdPolicyService" implementor="#passwordPolicyService" address="/passwordPolicyService" serviceName="PasswordPolicyService"/>
-
-  <bean id="fromStringConverter"
-    class="org.springframework.ldap.odm.typeconversion.impl.converters.FromStringConverter" />
-  <bean id="toStringConverter"
-    class="org.springframework.ldap.odm.typeconversion.impl.converters.ToStringConverter" />
-  <bean id="converterManager"
-    class="org.springframework.ldap.odm.typeconversion.impl.ConverterManagerFactoryBean">
-    <property name="converterConfig">
-      <set>
-        <bean
-          class="org.springframework.ldap.odm.typeconversion.impl.ConverterManagerFactoryBean$ConverterConfig">
-          <property name="fromClasses">
-            <set>
-              <value>java.lang.String</value>
-            </set>
-          </property>
-          <property name="toClasses">
-            <set>
-              <value>java.lang.Byte</value>
-              <value>java.lang.Short</value>
-              <value>java.lang.Integer</value>
-              <value>java.lang.Long</value>
-              <value>java.lang.Float</value>
-              <value>java.lang.Double</value>
-              <value>java.lang.Boolean</value>
-            </set>
-          </property>
-          <property name="converter" ref="fromStringConverter" />
-        </bean>
-        <bean
-          class="org.springframework.ldap.odm.typeconversion.impl.ConverterManagerFactoryBean$ConverterConfig">
-          <property name="fromClasses">
-            <set>
-              <value>java.lang.Byte</value>
-              <value>java.lang.Short</value>
-              <value>java.lang.Integer</value>
-              <value>java.lang.Long</value>
-              <value>java.lang.Float</value>
-              <value>java.lang.Double</value>
-              <value>java.lang.Boolean</value>
-            </set>
-          </property>
-          <property name="toClasses">
-            <set>
-              <value>java.lang.String</value>
-            </set>
-          </property>
-          <property name="converter" ref="toStringConverter" />
-        </bean>
-      </set>
-    </property>
-  </bean>
-
 
 </beans>
 

@@ -19,7 +19,6 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.ldap.NameNotFoundException;
 import org.springframework.ldap.core.AttributesMapper;
 import org.springframework.ldap.core.LdapTemplate;
-import org.springframework.ldap.odm.core.OdmManager;
 import org.springframework.util.StringUtils;
 
 import com.ibm.tivoli.ldap.entity.EPasswordPolicy;
@@ -121,8 +120,6 @@ public class TamSecUserDAOImpl implements TamSecUserDAO {
 
   private LdapTemplate ldapTemplate = null;
 
-  private OdmManager odmManager = null;
-
   private String baseSuffix = null;
 
   public TamSecUserDAOImpl() {
@@ -139,10 +136,6 @@ public class TamSecUserDAOImpl implements TamSecUserDAO {
 
   public void setLdapTemplate(LdapTemplate ldapTemplate) {
     this.ldapTemplate = ldapTemplate;
-  }
-
-  public void setOdmManager(OdmManager odmManager) {
-    this.odmManager = odmManager;
   }
 
   private int getDefaultPasswordMaxAge() {

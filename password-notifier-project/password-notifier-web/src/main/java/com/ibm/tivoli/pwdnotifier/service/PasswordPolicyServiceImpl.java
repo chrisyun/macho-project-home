@@ -53,6 +53,8 @@ public class PasswordPolicyServiceImpl implements PasswordPolicyService {
     try {
       UserPasswordStatus status = checker.getPasswordStatus(userid);
       if (status != null) {
+         boolean needToNotify = checker.checkWebNotifiyStatus(userid);
+         resp.setNeedToWebNotify(needToNotify);
          resp.setCode("success");
          resp.setUserPwdStatus(status);
       } else {

@@ -148,7 +148,7 @@ public class CheckerImpl implements Checker {
   public boolean checkWebNotifiyStatus(String userid, int daysOfNotification) throws Exception {
     UserPasswordStatus status = this.getPasswordStatus(userid);
     if (status != null && status.getPasswordMaxAgeInSeconds() > 0 && status.getLastPasswordChangedTime() != null) {
-       return (System.currentTimeMillis() - status.getLastPasswordChangedTime().getTime() >= status.getPasswordMaxAgeInSeconds() * 1000)?true:false; 
+       return (status.getPasswordExpireTime().getTime() - System.currentTimeMillis() >= defaultDaysOfWebNotification * 24 * 3600 * 1000)?false:true; 
     }
     return false;
   }

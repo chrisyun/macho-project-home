@@ -15,7 +15,6 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.ldap.NameNotFoundException;
 import org.springframework.ldap.core.AttributesMapper;
 import org.springframework.ldap.core.LdapTemplate;
-import org.springframework.ldap.odm.core.OdmManager;
 
 import com.ibm.tivoli.ldap.entity.InetOrgPerson;
 
@@ -50,18 +49,12 @@ public class InetOrgPersonDAOImpl implements InetOrgPersonDAO {
 
   private LdapTemplate ldapTemplate = null;
 
-  private OdmManager odmManager = null;
-
   public InetOrgPersonDAOImpl() {
     super();
   }
 
   public void setLdapTemplate(LdapTemplate ldapTemplate) {
     this.ldapTemplate = ldapTemplate;
-  }
-
-  public void setOdmManager(OdmManager odmManager) {
-    this.odmManager = odmManager;
   }
 
   public List<InetOrgPerson> findByFilter(String baseDN, String filter) throws DAOException {

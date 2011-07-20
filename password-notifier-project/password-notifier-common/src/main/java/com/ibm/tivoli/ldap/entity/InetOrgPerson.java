@@ -2,27 +2,18 @@ package com.ibm.tivoli.ldap.entity;
 
 import javax.naming.Name;
 
-import org.springframework.ldap.odm.annotations.Attribute;
-import org.springframework.ldap.odm.annotations.Entry;
-import org.springframework.ldap.odm.annotations.Id;
-
 /**
  * Resource对象对应的LDAP Objectclass为cu_resource
  * @author ZhaoDongLu
  *
  */
-@Entry(objectClasses = { "top", "inetOrgPerson" })
 public class InetOrgPerson {
-  @Id
   private Name dn;
   
-  @Attribute
   private String uid;
   
-  @Attribute 
   private String cn;
   
-  @Attribute 
   private String email;
   
   public InetOrgPerson() {

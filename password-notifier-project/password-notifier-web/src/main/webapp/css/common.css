@@ -1,0 +1,55 @@
+table.entityview {
+  border: 1px solid #afcbdf;
+  border-collapse: collapse;
+  font-size: 11.5px;
+  margin: 10px 0 10px 0 !important
+}
+
+table.entityview th {
+  border: 1px solid #afcbdf;
+  font-size: 11.5px;
+  padding: 2px 4px 2px 4px !important;
+  text-align: right;
+  vertical-align: top;
+  height: 23px;
+  vertical-align: middle;
+}
+
+table.entityview td {
+  border: 1px solid #afcbdf;
+  font-size: 11.5px;
+  padding: 2px 4px 2px 4px !important;
+  text-align: left;
+  vertical-align: top;
+  height: 23px;
+  vertical-align: middle;
+}
+
+table.entityview tbody tr th {
+  border: 1px solid #afcbdf;
+  padding: 2px 4px 2px 4px !important;
+  background-color: #e3edf4;
+  font-size: 11.5px;
+  height: 23px;
+  vertical-align: middle;
+}
+
+table.entityview tbody tr td {
+  border: 1px solid #afcbdf;
+  padding: 2px 4px 2px 4px !important;
+  font-size: 11.5px;
+  height: 23px;
+  vertical-align: middle;
+}
+
+table.entityview thead tr th {
+  border: 1px solid #afcbdf;
+  padding: 4px 4px 4px 4px !important;
+  font-size: 11.5px;
+  text-align: left;
+  height: 26px;
+  vertical-align: middle;
+    BACKGROUND-POSITION: right top; 
+    BACKGROUND-IMAGE: url(bg_dragndrop_header.gif); 
+    BACKGROUND-REPEAT: no-repeat; 
+}
