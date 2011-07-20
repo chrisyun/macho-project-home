@@ -20,12 +20,12 @@
 	<appender name="request.log.file" class="org.apache.log4j.RollingFileAppender">
 		<param name="Threshold" value="INFO" />
 		<!-- The active file to log to -->
-		<param name="file" value="${java.io.tmpdir}/request.upload.log" />
+		<param name="file" value="Z:/SGM/ExternalWebseal149/request.upload.log" />
 		<param name="append" value="true" />
 		<param name="encoding" value="UTF-8" />
 
 		<param name="MaxFileSize" value="100MB" />
-		<param name="MaxBackupIndex" value="5" />
+		<param name="MaxBackupIndex" value="50" />
 
 		<layout class="org.apache.log4j.PatternLayout">
 			<!-- The log message pattern -->

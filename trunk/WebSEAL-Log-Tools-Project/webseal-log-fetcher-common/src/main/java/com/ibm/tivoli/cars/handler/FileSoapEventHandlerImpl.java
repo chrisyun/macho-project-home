@@ -28,6 +28,9 @@ public class FileSoapEventHandlerImpl extends BaseCarsEventHandler implements Ev
    * @see com.ibm.tivoli.cars.EventUploaded#upload(com.ibm.tivoli.cars.WebSEALRequestLogEvent)
    */
   public void handle(String logLine, WebSEALRequestLogEvent logEvent) throws Exception {
+    if (logEvent == null) {
+      return;
+    }  
     Application application = logEvent.getApplication();
     if (application == null) {
        return;
@@ -35,6 +38,9 @@ public class FileSoapEventHandlerImpl extends BaseCarsEventHandler implements Ev
     Action action = logEvent.getAction();
     if (action == null || !action.isUploaded()) {
        return;
+    }
+    if (logEvent.getUserid().equals("Unauth")) {
+      return;
     }
     eventLog.info(logLine);
     
