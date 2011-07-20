@@ -36,6 +36,7 @@ import com.ibm.tivoli.cars.handler.SoapEventHandlerImpl;
 public class Launcher {
 
   private static Log log = LogFactory.getLog(Launcher.class);
+  private static final String FINISHED_FLAG = ".finished";
 
   private WebSEALRequestLogProcessor processor;
 
@@ -48,6 +49,9 @@ public class Launcher {
     }
 
     public boolean accept(File dir, String name) {
+      if (name.endsWith(FINISHED_FLAG)) {
+         return false;
+      }
       String p = StringUtils.replace(this.filenamePattern, ".", "\\.");
       p = StringUtils.replace(p, "-", "\\-");
       p = StringUtils.replace(p, "*", ".*");
@@ -111,7 +115,7 @@ public class Launcher {
         log.info("Finished log file: [" + logFile.getCanonicalPath() + "]");
         System.out.println("[" + (new Date()) + ":]Finished log file: [" + logFile.getCanonicalPath() + "]");
         // Rename
-        File destFile = new File(logFile.getParent(), "_" + logFile.getName());
+        File destFile = new File(logFile.getParent(), logFile.getName() + FINISHED_FLAG);
         boolean ok = logFile.renameTo(destFile);
         log.info("Rename log file to: [" + destFile.getCanonicalPath() + "]");
         System.out.println("[" + (new Date()) + ":]Rename log file to: [" + destFile.getCanonicalPath() + "]");
