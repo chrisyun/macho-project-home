@@ -46,7 +46,7 @@ public class ShowPasswordStatusAction extends Action {
     GetPwdStatusResp pwdStatus = service.getPasswordStatus(uid);
     if (pwdStatus != null) {
       request.setAttribute("passwordStatus", pwdStatus);
-      if (pwdStatus.getUserPwdStatus().getPasswordMaxAgeInSeconds() > 0) {
+      if (pwdStatus.getUserPwdStatus() != null && pwdStatus.getUserPwdStatus().getPasswordMaxAgeInSeconds() > 0) {
          if (pwdStatus.getUserPwdStatus().getLastPasswordChangedTime() == null || pwdStatus.getUserPwdStatus().getPasswordExpireTime().before(new Date())) {
             // Password expired!
             request.setAttribute("passwordExpired", new Boolean(true));
