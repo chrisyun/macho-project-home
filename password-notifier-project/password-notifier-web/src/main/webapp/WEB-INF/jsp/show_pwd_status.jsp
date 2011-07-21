@@ -47,7 +47,7 @@
       <tr>
         <th>Password max age:</th>
         <td>
-        <logic:equal name="passwordStatus" property="userPwdStatus.passwordMaxAgeInSeconds" value="0">Never expired!</logic:equal>
+        <logic:equal name="passwordStatus" property="userPwdStatus.passwordMaxAgeInSeconds" value="0">Never expire!</logic:equal>
         <logic:greaterThan name="passwordStatus" property="userPwdStatus.passwordMaxAgeInSeconds" value="0"><bean:write name="passwordStatus" property="userPwdStatus.passwordMaxAgeInSeconds" /></logic:greaterThan>
         </td>
       </tr>
