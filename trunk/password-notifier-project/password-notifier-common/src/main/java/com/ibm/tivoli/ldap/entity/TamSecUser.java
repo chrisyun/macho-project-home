@@ -156,4 +156,15 @@ public final class TamSecUser {
     this.passwordMaxAge = passwordMaxAge;
   }
 
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    return String
+        .format(
+            "TamSecUser [dn=%s, secHasPolicy=%s, secPwdLastChanaged=%s, secAcctValid=%s, secPwdValid=%s, secAuthority=%s, secDomainId=%s, passwordMaxAge=%s, principalName=%s]",
+            dn, secHasPolicy, secPwdLastChanaged, secAcctValid, secPwdValid, secAuthority, secDomainId, passwordMaxAge, principalName);
+  }
+
 }

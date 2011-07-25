@@ -22,7 +22,7 @@
 <title>Password Status</title>
 </head>
 <body>
-<logic:present name="passwordStatus">
+<logic:present name="userPwdStatus">
 	<table class="entityview" width="600">
 		<tbody>
 			<tr>
@@ -86,15 +86,16 @@
       <logic:equal name="passwordStatus" property="needToWebNotify" value="true">
       <tr>
         <td colspan="2" >
-          <font color="red">Please immediately change your password!</font>
+          <font color="red" size="+2" ><b><a href="/pkmspasswd.form">"Please click and immediately change your password!</a></b></font>
         </td>
       </tr>
       </logic:equal>
 		</tbody>
 	</table>
 </logic:present>
-<logic:notPresent name="passwordStatus">
-Could not load user information!
+<logic:notPresent name="userPwdStatus">
+<logic:present name="uid">Could not load user:[<b><bean:write name="uid"/></b>] information!</logic:present>
+<logic:notPresent name="uid">Could not found uid from Http Request!</logic:notPresent>
 </logic:notPresent>
 </body>
 </html>

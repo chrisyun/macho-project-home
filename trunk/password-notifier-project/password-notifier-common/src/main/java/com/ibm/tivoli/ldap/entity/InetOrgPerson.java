@@ -75,5 +75,13 @@ public class InetOrgPerson {
   public void setEmail(String email) {
     this.email = email;
   }
+
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    return String.format("InetOrgPerson [dn=%s, uid=%s, cn=%s, email=%s]", dn, uid, cn, email);
+  }
   
 }
