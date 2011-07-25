@@ -67,8 +67,10 @@ public class InetOrgPersonDAOImpl implements InetOrgPersonDAO {
   public InetOrgPerson getByUserID(String uid) throws DAOException {
     String filter = "(uid=" + uid + ")";
     try {
+      log.debug("finding ldap entry by filter: [" + filter + "]");
       List<InetOrgPerson> result = findByFilter("", filter);
       if (result != null && result.size() > 0) {
+        log.debug("found 1 ldap entry by filter: [" + filter + "]");
         return result.get(0);
       }
     } catch (NameNotFoundException ex) {

@@ -147,7 +147,10 @@ public class TamSecUserDAOImpl implements TamSecUserDAO {
       EPasswordPolicyAttributesMapper mapper = new EPasswordPolicyAttributesMapper();
       EPasswordPolicy policy = (EPasswordPolicy) this.ldapTemplate.lookup(dn, mapper);
       if (policy != null) {
+        log.debug("Load policy from: [" + dn + "], data: [" + policy + "]");
         return policy.getPasswordMaxAge();
+      } else {
+        log.debug("Not found policy from: [" + dn + "]");
       }
     } catch (NameNotFoundException e) {
     } catch (NumberFormatException e) {
@@ -161,6 +164,7 @@ public class TamSecUserDAOImpl implements TamSecUserDAO {
   }
 
   public List<TamSecUser> findByFilter(String baseDN, String filter) throws DAOException {
+    log.debug("Finding TAM Sec User, BaseDN: [" + baseDN + ", filter: [" + filter + "]");
     SearchControls controls = new SearchControls();
     controls.setSearchScope(SearchControls.SUBTREE_SCOPE);
     TamSecUserAttributesMapper mapper = new TamSecUserAttributesMapper();
@@ -170,6 +174,9 @@ public class TamSecUserDAOImpl implements TamSecUserDAO {
         int passwordMaxAge = getDefaultPasswordMaxAge();
         if (entry.isSecHasPolicy()) {
           passwordMaxAge = this.getUserPasswordMaxAge(entry.getDn());
+          log.debug("Found user defined password policy, max age: [" + passwordMaxAge + "]");
+        } else {
+          log.debug("Using global password policy, max age: [" + passwordMaxAge + "]");
         }
         entry.setPasswordMaxAge(passwordMaxAge);
       }

@@ -13,6 +13,7 @@ import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
+import org.mortbay.log.Log;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
@@ -38,14 +39,22 @@ public class ShowPasswordStatusAction extends Action {
     if (StringUtils.isEmpty(uid)) {
       // Not found uid, test only process
       uid = request.getParameter("__userid__");
+      Log.debug("Get userid from Http Request [__userid__]" + uid);
+    } else {
+      Log.debug("Get userid from HTTPHeader[iv-user]" + uid);
     }
 
+    request.setAttribute("uid", uid);
+    
     WebApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(this.getServlet().getServletContext());
     PasswordPolicyService service = (PasswordPolicyService) ctx.getBean("passwordPolicyService");
 
     GetPwdStatusResp pwdStatus = service.getPasswordStatus(uid);
     if (pwdStatus != null) {
       request.setAttribute("passwordStatus", pwdStatus);
+      if (pwdStatus.getUserPwdStatus() != null) {
+         request.setAttribute("userPwdStatus", pwdStatus.getUserPwdStatus());
+      }
       if (pwdStatus.getUserPwdStatus() != null && pwdStatus.getUserPwdStatus().getPasswordMaxAgeInSeconds() > 0) {
          if (pwdStatus.getUserPwdStatus().getLastPasswordChangedTime() == null || pwdStatus.getUserPwdStatus().getPasswordExpireTime().before(new Date())) {
             // Password expired!

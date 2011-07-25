@@ -90,6 +90,7 @@ public class CheckerImpl implements Checker {
    */
   public UserPasswordStatus getPasswordStatus(String userid) throws Exception {
     InetOrgPerson person = this.findUserInfo(userid);
+    log.debug("Found inetOrgPerson: " + person);
     return getPasswordStatus(person);
   }
 
@@ -105,8 +106,11 @@ public class CheckerImpl implements Checker {
     
     TamSecUser tamSecUser = this.getTamUserInfo(person.getUid());
     if (tamSecUser == null) {
+       log.debug("Not found TAM sec User!");
        return status;
     }
+    
+    log.debug("Found TAM Sec User: " + tamSecUser);
     // Load last pwd changed Time
     
     Date lastPasswordChangedTime = tamSecUser.getSecPwdLastChanaged();

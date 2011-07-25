@@ -113,5 +113,9 @@ public class DAOTest extends TestCase {
     Date d = f.parse(s);
     assertEquals("20100914074410+0800", (new SimpleDateFormat("yyyyMMddHHmmssZZZ")).format(d));
   }
+  
+  public void testDate() throws Exception {
+    Date now = new Date();
+  }
 
 }
