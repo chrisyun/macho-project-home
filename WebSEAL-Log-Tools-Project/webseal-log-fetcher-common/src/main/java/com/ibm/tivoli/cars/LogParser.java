@@ -31,8 +31,7 @@ public class LogParser {
       return null;
     }
     String[] p = StringUtils.split(line, '"');
-    // 10.17.76.4 - zougb1 [25/Oct/2010:14:27:51 +0800]
-    // "GET /oa/Login?event=LdapToOa HTTP/1.1" 302 261
+    // 10.17.76.4 - zougb1 [25/Oct/2010:14:27:51 +0800] "GET /oa/Login?event=LdapToOa HTTP/1.1" 302 261
     if (p.length != 3) {
       return null;
     }
