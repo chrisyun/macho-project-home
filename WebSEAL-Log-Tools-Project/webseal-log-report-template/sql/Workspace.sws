@@ -4,7 +4,8 @@
 
 <Workspace>
 	<Local Expanded="Yes">
-		<Model Expanded="Yes" ID="{509378B0-AE0D-4557-81C1-F60A28484BEB}" Name="CARS DB" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="CARS DB.pdm"/>
+		<Model Expanded="Yes" ID="{509378B0-AE0D-4557-81C1-F60A28484BEB}" Loaded="No" Name="CARS DB" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="CARS DB.pdm"/>
+		<Model Expanded="Yes" ID="{619F3549-515F-4D74-8FA9-2C6F212C9875}" Name="PhysicalDataModel_1" Selected="Yes" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="file:///E|/Temp/DOSS/DOSS.pdm"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>

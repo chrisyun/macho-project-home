@@ -119,6 +119,8 @@ select
   as avg_total  
 from v_app_request_hour a;
 
+--------------------------------------------------------------------------------------------------
+-- 
 drop view v_res_access_event_detail;
 create view v_res_access_event_detail as
 select
@@ -138,13 +140,14 @@ where
 ---------------------------------------------------------------------------------------------
 Testing SQL
 ---------------------------------------------------------------------------------------------
-select count(*) from cars_t_event
+-- select count(*) from cars_t_event
 
-select count(*) from v_app_request_hour_with_history
+-- select count(*) from v_app_request_hour_with_history
 
-select * from v_app_request_hour;
+-- select * from v_app_request_hour;
 
-select * from v_app_request_year order by year asc, Application asc, WebSEAL asc;
+-- select * from v_app_request_year order by year asc, Application asc, WebSEAL asc;
 
 -- update cars_t_res_access set action='Internal' where src_instance_id='webseal177'
 -- update cars_t_res_access set action='External' where src_instance_id='default-webseald-lmwebseal1'
+-- update cars_t_event set time_stamp=time_stamp + 8 hours
