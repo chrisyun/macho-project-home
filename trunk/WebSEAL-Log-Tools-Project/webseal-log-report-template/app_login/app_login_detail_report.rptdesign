@@ -111,11 +111,18 @@
                     <expression name="expression" type="javascript">dataSetRow["URL"]</expression>
                     <property name="dataType">string</property>
                 </structure>
+                <structure>
+                    <property name="name">NETWORK</property>
+                    <text-property name="displayName">NETWORK</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["NETWORK"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
             </list-property>
             <column id="42"/>
             <column id="43"/>
             <column id="44"/>
             <column id="45"/>
+            <column id="56"/>
             <column id="46"/>
             <column id="47"/>
             <header>
@@ -138,6 +145,11 @@
                     <cell id="16">
                         <label id="17">
                             <text-property name="text">USERNAME</text-property>
+                        </label>
+                    </cell>
+                    <cell id="53">
+                        <label id="57">
+                            <text-property name="text">NETWORK</text-property>
                         </label>
                     </cell>
                     <cell id="18">
@@ -178,6 +190,12 @@
                             <property name="resultSetColumn">USERNAME</property>
                         </data>
                     </cell>
+                    <cell id="54">
+                        <data id="58">
+                            <property name="whiteSpace">nowrap</property>
+                            <property name="resultSetColumn">NETWORK</property>
+                        </data>
+                    </cell>
                     <cell id="31">
                         <data id="32">
                             <property name="whiteSpace">nowrap</property>
@@ -198,6 +216,7 @@
                     <cell id="37"/>
                     <cell id="38"/>
                     <cell id="39"/>
+                    <cell id="55"/>
                     <cell id="40"/>
                     <cell id="41"/>
                 </row>
