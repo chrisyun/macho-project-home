@@ -99,9 +99,9 @@ public abstract class BaseCarsEventHandler implements EventHandler {
     Date ts = calendar.getTime();
 
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-    dateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
+    //dateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
     SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss.SSS");
-    timeFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
+    //timeFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
     String creationTime = dateFormat.format(ts) + "T" + timeFormat.format(ts) + "Z";
     output.write("<CommonBaseEvent creationTime=\"" + creationTime + "\" extensionName=\"IBM_CBA_AUDIT_RESOURCE_ACCESS\" globalInstanceId=\""
         + globalInstanceId + "\"\n");
