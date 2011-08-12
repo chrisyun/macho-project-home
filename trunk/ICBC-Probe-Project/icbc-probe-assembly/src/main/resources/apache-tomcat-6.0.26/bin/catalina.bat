@@ -79,7 +79,7 @@ rem $Id: catalina.bat 915073 2010-02-22 21:22:13Z markt $
 rem ---------------------------------------------------------------------------
 
 set JAVA_HOME=C:\icbc-probe\java
-set JAVA_OPTS=-Dicbc.probe.home=c:\icbc-probe
+set JAVA_OPTS=-Dicbc.probe.home=c:\icbc-probe -Xms512m -Xmx1024m
 
 rem Guess CATALINA_HOME if not defined
 set "CURRENT_DIR=%cd%"
