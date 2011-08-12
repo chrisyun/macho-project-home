@@ -24,13 +24,16 @@ import com.thoughtworks.xstream.io.xml.DomDriver;
 
 /**
  * @author zhaodonglu
- *
+ * 
  */
 public class CmdLineBrowserExecutorImpl implements BrowserExecutor {
-  
+
   private String javaHome = System.getProperty("java.home");
 
   private static Log log = LogFactory.getLog(CmdLineBrowserExecutorImpl.class);
+
+  private String workDir = "c:\\icbc-probe";
+
   /**
    * 
    */
@@ -38,49 +41,91 @@ public class CmdLineBrowserExecutorImpl implements BrowserExecutor {
     super();
   }
 
-  /* (non-Javadoc)
-   * @see com.ibm.tivoli.icbc.probe.http.BrowserExecutor#navigate(java.lang.String)
+  /**
+   * @return the javaHome
+   */
+  public String getJavaHome() {
+    return javaHome;
+  }
+
+  /**
+   * @param javaHome
+   *          the javaHome to set
+   */
+  public void setJavaHome(String javaHome) {
+    this.javaHome = javaHome;
+  }
+
+  /**
+   * @return the workDir
+   */
+  public String getWorkDir() {
+    return workDir;
+  }
+
+  /**
+   * @param workDir
+   *          the workDir to set
+   */
+  public void setWorkDir(String workDir) {
+    this.workDir = workDir;
+  }
+
+  /*
+   * (non-Javadoc)
+   * 
+   * @see
+   * com.ibm.tivoli.icbc.probe.http.BrowserExecutor#navigate(java.lang.String)
    */
   @Override
   public BrowserResult navigate(String url) {
     String command = "";
     BrowserResult rs = null;
+    Process p = null;
     try {
       String classpath = this.getClasspath();
-      command = this.javaHome + "/bin/java -classpath " + classpath + " " + JxBrowserExecutorImpl.class.getCanonicalName() + " " + url;
+      command = "\"" + this.javaHome + "\\bin\\java\" -classpath " + classpath + " -Duser.dir=" + workDir + "\\bin "
+          + JxBrowserExecutorImpl.class.getCanonicalName() + " " + url;
       log.info("Execute cmd: [" + command + "]");
-      Process p = Runtime.getRuntime().exec(command );
+      p = Runtime.getRuntime().exec(command);
       InputStream cmdOutput = p.getInputStream();
       String cmdOut = IOUtils.readStringFromStream(cmdOutput);
       log.info("Execute cmd: [" + command + "] with output: [" + cmdOut + "]");
       XStream xs = getXStream();
-      rs = (BrowserResult)xs.fromXML(cmdOut);
+      rs = (BrowserResult) xs.fromXML(cmdOut);
+
     } catch (IOException e) {
       log.error("Fail to execute cmd: [" + command + "]", e);
+    } finally {
+      if (p != null) {
+        p.destroy();
+      }
     }
     return rs;
   }
 
   private String getClasspath() throws IOException {
-    String classpath = "c:/icbc-probe/webapps/icbc-probe/WEB-INF/classes";
-    File libDir = new File("c:/icbc-probe/webapps/icbc-probe/WEB-INF/lib");
-    File[] jarFiles = libDir.listFiles(new FileFilter(){
+    String classpath = this.workDir + "/webapps/icbc-probe/WEB-INF/classes";
+    File libDir = new File(this.workDir + "/webapps/icbc-probe/WEB-INF/lib");
+    File[] jarFiles = libDir.listFiles(new FileFilter() {
 
       @Override
       public boolean accept(File name) {
-        return ((name.getName().toLowerCase().endsWith(".jar"))?true:false);
-      }});
-    
+        return ((name.getName().toLowerCase().endsWith(".jar")) ? true : false);
+      }
+    });
+
     if (jarFiles != null) {
-       for (File jar: jarFiles) {
-           classpath += File.pathSeparator + jar.getCanonicalPath();
-       }
+      for (File jar : jarFiles) {
+        classpath += File.pathSeparator + jar.getCanonicalPath();
+      }
     }
     return classpath;
   }
 
   /**
    * Create a XStream instance.
+   * 
    * @return
    */
   static XStream getXStream() {

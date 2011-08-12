@@ -123,6 +123,12 @@ public class HttpProbeV2Test extends TestCase {
     format.format(timestamp, new Result[] { result }, out);
     System.out.println(out.toString());
   }
+  
+  public void testForever() throws Exception {
+    for (int i = 0; i < 1000; i++) {
+        this.testCaseHttp();
+    }
+  }
 
   /**
    */

@@ -84,10 +84,14 @@
   </bean>
   <alias alias="htmlElementDetector" name="cacheHtmlElementDetector"/>
   
+  <bean id="jxBrowserExecutor" class="com.ibm.tivoli.icbc.probe.http.JxBrowserExecutorImpl"></bean>
+  <bean id="cmdBrowserExecutor" class="com.ibm.tivoli.icbc.probe.http.CmdLineBrowserExecutorImpl"></bean>
+  <alias alias="browserExecutor" name="cmdBrowserExecutor"/>
   <!-- HTTP_IE_BROWSER Probe Bean -->
   <bean id="probe4IE_BROWSER" class="com.ibm.tivoli.icbc.probe.http.HttpProbeV2Impl" scope="prototype">
     <property name="lastHttpTaskTimeTracker" ref="lastHttpTaskTimeTracker"></property>
     <property name="htmlElementDetector" ref="htmlElementDetector"></property>
+    <property name="browserExecutor" ref="browserExecutor"></property>
   </bean>
   
   <bean id="lastHttpTaskTimeTracker" class="com.ibm.tivoli.icbc.probe.http.HttpTaskTracker">

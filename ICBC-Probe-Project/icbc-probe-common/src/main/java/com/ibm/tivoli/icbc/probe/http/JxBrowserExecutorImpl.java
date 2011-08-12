@@ -60,6 +60,7 @@ public class JxBrowserExecutorImpl implements BrowserExecutor {
       browser.setEventHandler(new MyWebBrowserEventsHandler(result));
       browser.addNavigationListener(new MyNavigationEventAdapter(result));
 
+      log.info(url);
       browser.navigate(url);
       browser.waitReady();
 

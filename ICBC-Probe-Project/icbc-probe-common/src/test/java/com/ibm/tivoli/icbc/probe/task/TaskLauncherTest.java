@@ -60,7 +60,7 @@ public class TaskLauncherTest extends TestCase {
   public void testLauncherIEForever() throws Exception {
    for (int i = 0; i < 1000; i++) {
      this.testLauncherIE();
-     Thread.sleep(60 * 1000);
+     Thread.sleep(0 * 1000);
    }
   }
   

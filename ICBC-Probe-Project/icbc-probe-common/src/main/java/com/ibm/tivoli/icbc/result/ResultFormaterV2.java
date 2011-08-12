@@ -272,10 +272,10 @@ public class ResultFormaterV2 implements ResultFormater {
         writer.write("        <name>" + result.getTaskName() + "</name>\n");
       }
       writer.write("        <request>" + target + "</request>\n");
-      writer.write("        <result1>fail</result1>\n");
-      writer.write("        <result2>fail</result2>\n");
-      writer.write("        <result3>fail</result3>\n");
-      writer.write("        <result4>fail</result4>\n");
+      writer.write("        <result1></result1>\n");
+      writer.write("        <result2></result2>\n");
+      writer.write("        <result3></result3>\n");
+      writer.write("        <result4>100</result4>\n");
       writer.write("    </resultcontext>\n");
     } else {
       writer.write("    <resultcontext>\n");

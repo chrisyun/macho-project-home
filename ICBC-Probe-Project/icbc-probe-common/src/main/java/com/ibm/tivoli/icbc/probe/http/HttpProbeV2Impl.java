@@ -68,10 +68,12 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
   private Map<String, String> ipMap = new HashMap<String, String>();
 
   private int readTimeout = 60 * 1000;
-  
+
   private HttpTaskTracker lastHttpTaskTimeTracker = null;
-  
+
   private HtmlElementDetector htmlElementDetector = null;
+
+  private BrowserExecutor browserExecutor;
 
   private static class DefaultTrustManager implements X509TrustManager {
 
@@ -118,7 +120,8 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
   }
 
   /**
-   * @param maxTopNItem the maxTopNItem to set
+   * @param maxTopNItem
+   *          the maxTopNItem to set
    */
   public void setMaxTopNItem(int maxTopNItem) {
     this.maxTopNItem = maxTopNItem;
@@ -132,7 +135,8 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
   }
 
   /**
-   * @param htmlElementDetector the htmlElementDetector to set
+   * @param htmlElementDetector
+   *          the htmlElementDetector to set
    */
   public void setHtmlElementDetector(HtmlElementDetector htmlElementDetector) {
     this.htmlElementDetector = htmlElementDetector;
@@ -196,10 +200,25 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
   }
 
   /**
-   * @param lastHttpTaskTimeTracker the lastHttpTaskTimeTracker to set
+   * @param lastHttpTaskTimeTracker
+   *          the lastHttpTaskTimeTracker to set
    */
   public void setLastHttpTaskTimeTracker(HttpTaskTracker lastHttpTaskTimeTracker) {
     this.lastHttpTaskTimeTracker = lastHttpTaskTimeTracker;
+  }
+
+  /**
+   * @return the browserExecutor
+   */
+  public BrowserExecutor getBrowserExecutor() {
+    return browserExecutor;
+  }
+
+  /**
+   * @param browserExecutor the browserExecutor to set
+   */
+  public void setBrowserExecutor(BrowserExecutor browserExecutor) {
+    this.browserExecutor = browserExecutor;
   }
 
   private static boolean isIPAddress(String s) {
@@ -262,7 +281,7 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
         ipURLStr = StringUtils.replace(target, server, serverIP);
         log.info("HTTPProbe: Target URL:[" + target + "]:Open conn to IP URL:[" + ipURLStr + "]");
 
-        //URL ipURL = new URL(ipURLStr);
+        // URL ipURL = new URL(ipURLStr);
         long netBeginTime = System.currentTimeMillis();
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setReadTimeout(this.readTimeout);
@@ -317,13 +336,13 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
         in.close();
 
         // 模拟浏览器，获取页面加载时间
-        BrowserExecutor executor = new JxBrowserExecutorImpl();
-        //BrowserExecutor executor = new CmdLineBrowserExecutorImpl();
-        
-        BrowserResult r = executor.navigate(target);
+        // BrowserExecutor browserExecutor = new CmdLineBrowserExecutorImpl();
+        //browserExecutor = new JxBrowserExecutorImpl();
+
+        BrowserResult r = browserExecutor.navigate(target);
         long downloadTime = r.getElapseTime();
         log.info("HTTPProbe: Target URL:[" + target + "]:Download Time " + downloadTime + "ms");
-        
+
         // 处理页面元素的下载统计
         if (this.htmlElementDetector != null) {
           try {
@@ -334,7 +353,7 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
             log.error("fail to parsing content element", e);
           }
         }
-        
+
         URLAccessResult accessResult = new URLAccessResult(ipURLStr, dnsTime, netTime, downloadTime, r.getHttpCode(), total);
         if (needToSendScreenShot(target, r)) {
           accessResult.setImageFile(r.getImageFile());
@@ -363,7 +382,9 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
             + this.readTimeout + "ms");
         log.error("Fail to probe HTTP, cause: " + e.getMessage() + ", targetURL: " + target + ", resolved ip url: " + ipURLStr, e);
       } finally {
-        this.lastHttpTaskTimeTracker.touch(target);
+        if (this.lastHttpTaskTimeTracker != null) {
+          this.lastHttpTaskTimeTracker.touch(target);
+        }
       }
     }
     return result;
@@ -372,15 +393,15 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
   private boolean needToSendScreenShot(String targetURL, BrowserResult r) {
     String status = r.getHttpCode();
     if (this.uploadScreenshot == null) {
-       // Default 
-       return false;
+      // Default
+      return false;
     } else if (this.uploadScreenshot.equalsIgnoreCase("disable")) {
       return false;
     } else if (this.uploadScreenshot.equalsIgnoreCase("always")) {
       return true;
     } else if (this.uploadScreenshot.equalsIgnoreCase("error")) {
       if (status.equalsIgnoreCase("200")) {
-         return false;
+        return false;
       } else {
         return true;
       }
