@@ -18,7 +18,7 @@ public class ICMPResult extends Result {
   private long avg = 0;
   private long min = 0;
   private long max = 0;
-  private int lostPercent = 0;
+  private int lostPercent = 100;
   
   private String failMsg = null;
 
