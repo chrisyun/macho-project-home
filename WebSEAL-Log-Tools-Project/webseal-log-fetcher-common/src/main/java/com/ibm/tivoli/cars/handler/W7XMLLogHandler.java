@@ -12,9 +12,9 @@ import com.ibm.tivoli.cars.WebSEALRequestLogEvent;
  * @author zhaodonglu
  *
  */
-public class W7LogHandler implements EventHandler {
+public class W7XMLLogHandler implements EventHandler {
   
-  private static Log log = LogFactory.getLog(W7LogHandler.class);
+  private static Log log = LogFactory.getLog(W7XMLLogHandler.class);
 
   private String webSEALUrl = "HTTP://oa.tiakanglife.com";
   private String webSEALInstaceId = "default-webseald-tivoli1";
@@ -22,7 +22,7 @@ public class W7LogHandler implements EventHandler {
   /**
    * 
    */
-  public W7LogHandler() {
+  public W7XMLLogHandler() {
     super();
   }
 
