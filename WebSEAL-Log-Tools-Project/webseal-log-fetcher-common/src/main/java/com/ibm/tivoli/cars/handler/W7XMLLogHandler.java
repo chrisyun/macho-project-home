@@ -66,14 +66,16 @@ public class W7XMLLogHandler implements EventHandler {
    *   <what verb="${logEvent.action.name}" noun="${logEvent.application.name}" success="Success"/>
    *   <onwhat type="${logEvent.httpProtocol}" path="${logEvent.httpMethod}" name="${logEvent.resourceUrl}"/>
    *   <who logonname="${logEvent.uid}" realname="${logEvent.uid}"/>
-   *   <where type="" name="${webSEALInstaceId}"/>
-   *   <whereto type="application" name="${logEvent.application.name}"/>
+   *   <where type="websealid" name="${webSEALInstaceId}"/>
+   *   <whereto type="app" name="${logEvent.application.name}"/>
    *   <wherefrom type="ip" name="${logEvent.clientIP}"/>
    *   <info>httpcode: ${logEvent.httpCode}</info>
    * </event>
    * </pre>
    */
   public void handle(String logLine, WebSEALRequestLogEvent logEvent) throws Exception {
+    // String s = toXML(logEvent);
+    // log.info(s);
   }
 
 }
