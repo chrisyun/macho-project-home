@@ -34,7 +34,7 @@ public class JxBrowserExecutorImpl implements BrowserExecutor {
    * @see
    * com.ibm.tivoli.icbc.probe.http.BrowserExecutor#navigate(java.lang.String)
    */
-  private static WebBrowser browser = null;
+  //private WebBrowser browser = null;
   @Override
   public BrowserResult navigate(String url) {
     String html = null;
@@ -43,6 +43,7 @@ public class JxBrowserExecutorImpl implements BrowserExecutor {
     synchronized (JxBrowserExecutorImpl.class) {
       // Need singleton pattern for Browser
       //Browser browser = new Browser();
+      HeadlessBrowser browser = null;
       if (browser == null) {
          browser = new HeadlessBrowser();
       }
@@ -89,7 +90,7 @@ public class JxBrowserExecutorImpl implements BrowserExecutor {
 
   public static void main(String[] args) throws Exception {
     BrowserExecutor exec = new JxBrowserExecutorImpl();
-    BrowserResult r = exec.navigate("http://www.icbc.com.cn");
+    BrowserResult r = exec.navigate(args[0]);
     XStream xs = CmdLineBrowserExecutorImpl.getXStream();
     String xml = xs.toXML(r);
     System.out.println(xml);
