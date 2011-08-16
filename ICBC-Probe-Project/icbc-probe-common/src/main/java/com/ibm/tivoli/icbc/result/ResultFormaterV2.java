@@ -170,7 +170,7 @@ public class ResultFormaterV2 implements ResultFormater {
           writer.write("        <result1>" + record.getDnsTime() + "</result1>\n");
           writer.write("        <result2></result2>\n");
           writer.write("        <result3>" + record.getDownloadTime() + "</result3>\n");
-          writer.write("        <result4>" + record.getHttpCode() + "</result4>\n");
+          writer.write("        <result4>" + ((record.getHttpCode() == null)?"":record.getHttpCode()) + "</result4>\n");
           writer.write("        <result5>" + record.getDownloadElements() + "</result5>\n");
 
           // Size TopN
