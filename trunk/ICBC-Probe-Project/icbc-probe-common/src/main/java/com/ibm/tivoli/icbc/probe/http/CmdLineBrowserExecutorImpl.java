@@ -78,13 +78,13 @@ public class CmdLineBrowserExecutorImpl implements BrowserExecutor {
    * com.ibm.tivoli.icbc.probe.http.BrowserExecutor#navigate(java.lang.String)
    */
   @Override
-  public BrowserResult navigate(String url) {
+  public synchronized BrowserResult navigate(String url) {
     String command = "";
     BrowserResult rs = null;
     Process p = null;
     try {
       String classpath = this.getClasspath();
-      command = "\"" + this.javaHome + "\\bin\\java\" -classpath " + classpath + " -Duser.dir=" + workDir + "\\bin "
+      command = "\"" + this.javaHome + "\\bin\\java\" -classpath " + classpath + " -Duser.dir=" + workDir + "\\bin " + " -Djava.io.tmpdir=" + System.getProperty("java.io.tmpdir") + " "
           + JxBrowserExecutorImpl.class.getCanonicalName() + " " + url;
       log.info("Execute cmd: [" + command + "]");
       p = Runtime.getRuntime().exec(command);
@@ -144,7 +144,7 @@ public class CmdLineBrowserExecutorImpl implements BrowserExecutor {
 
   public static void main(String[] args) throws Exception {
     CmdLineBrowserExecutorImpl exec = new CmdLineBrowserExecutorImpl();
-    BrowserResult r = exec.navigate("http://www.icbc.com.cn");
+    BrowserResult r = exec.navigate(args[0]);
     XStream xs = getXStream();
     String xml = xs.toXML(r);
     System.out.println(xml);
