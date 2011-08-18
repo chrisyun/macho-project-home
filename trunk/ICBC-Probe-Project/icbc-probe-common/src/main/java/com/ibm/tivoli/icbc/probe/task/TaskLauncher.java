@@ -5,14 +5,18 @@ package com.ibm.tivoli.icbc.probe.task;
 
 import java.io.File;
 import java.io.FilenameFilter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.BeansException;
@@ -21,6 +25,7 @@ import org.springframework.context.ApplicationContextAware;
 
 import com.ibm.tivoli.icbc.probe.ProbeException;
 import com.ibm.tivoli.icbc.probe.dns.NameServerLookup;
+import com.ibm.tivoli.icbc.probe.http.JxBrowserExecutorImpl;
 import com.ibm.tivoli.icbc.result.ResultFormater;
 import com.ibm.tivoli.icbc.result.ResultFormaterV2;
 
@@ -201,14 +206,23 @@ public class TaskLauncher implements ApplicationContextAware {
 
   private void fireSubmitResultCycle(TaskContext context) throws ProbeException {
 
-    DataDispatcher dispatcher = this.dataDispatcher;
-    dispatcher.submit(new Date(), context, this.resultFormater, this.taskConfig);
-
     Writer writer = new StringWriter();
     resultFormater.format(new Date(), context.getTaskResults().values(), writer);
     if (log.isDebugEnabled()) {
       log.debug("Submit results: " + writer.toString());
     }
+    try {
+      File file = createTempFile();
+      log.debug("Output result XML to file: [" + file.getCanonicalPath() + "]");
+      FileUtils.writeStringToFile(file, writer.toString());
+    } catch (IOException e) {
+      log.error(e.getMessage(), e);
+    }
+
+    // Call Dispatcher and submit data
+    DataDispatcher dispatcher = this.dataDispatcher;
+    dispatcher.submit(new Date(), context, this.resultFormater, this.taskConfig);
+
   }
 
   private void fireLoadTaskConfigCycle(TaskContext context) {
@@ -228,6 +242,12 @@ public class TaskLauncher implements ApplicationContextAware {
     }
   }
 
+  private File createTempFile() throws IOException {
+    DateFormat df = new SimpleDateFormat("yyyy-MM-dd.HHmmss");
+    String timeStr = df.format(new Date());;
+    return new File(System.getProperty("java.io.tmpdir"), JxBrowserExecutorImpl.PROBE_TEMP_FILE_PREFIX + timeStr + "_result.xml");
+  }
+  
   /**
    * Start one task execution cycle
    * 
