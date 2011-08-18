@@ -94,8 +94,10 @@ public class ProbeRunnable implements Runnable {
       for (Parameter param: this.task.getParameters()) {
           String paramName = param.getName();
           if (paramName.equals("request")) {
-             if (taskType.startsWith("HTTP")) {
+             if (taskType.startsWith("HTTP") || taskType.startsWith("IE_BROWSER")) {
                paramName = "targetUrls";
+             } else if (taskType.startsWith("ICMP_PING") || taskType.startsWith("DNS_A_NATIVE")) {
+               paramName = "target";
              } else {
                paramName = "targets";
              }
