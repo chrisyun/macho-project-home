@@ -6,6 +6,8 @@ package com.ibm.tivoli.tuna.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.bind.annotation.XmlElement;
+
 /**
  * @author zhaodonglu
  *
@@ -35,6 +37,7 @@ public class Parameter {
   /**
    * @return the values
    */
+  @XmlElement(name = "value")
   public List<String> getValues() {
     return values;
   }

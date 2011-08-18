@@ -19,6 +19,12 @@ public class UserSubject {
     super();
   }
 
+  public UserSubject(String format, String nameID) {
+    super();
+    this.format = format;
+    this.nameID = nameID;
+  }
+
   /**
    * @return the format
    */

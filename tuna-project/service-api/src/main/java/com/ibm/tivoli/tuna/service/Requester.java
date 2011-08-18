@@ -3,14 +3,17 @@
  */
 package com.ibm.tivoli.tuna.service;
 
-import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * @author zhaodonglu
  *
  */
+@XmlRootElement(name = "requester")
 public class Requester {
   
   private List<ReuqestPrincipal> principals = new ArrayList<ReuqestPrincipal>();
@@ -23,6 +26,7 @@ public class Requester {
   /**
    * @return the principals
    */
+  @XmlElement(name = "principal")
   public List<ReuqestPrincipal> getPrincipals() {
     return principals;
   }

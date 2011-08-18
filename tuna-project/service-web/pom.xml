@@ -128,5 +128,10 @@
 			<version>2.6.2</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.ibm.tivoli.tuna</groupId>
+			<artifactId>service-impl</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
