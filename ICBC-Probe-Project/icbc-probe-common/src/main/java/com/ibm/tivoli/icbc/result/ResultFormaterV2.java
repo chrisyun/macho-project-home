@@ -177,33 +177,39 @@ public class ResultFormaterV2 implements ResultFormater {
           PageElementResult per = record.getPageElementResult();
           if (per != null && per.getTopN4Size() != null) {
              writer.write("        <result6>\n");
+             writer.write("        <![CDATA[\n");
              int maxTopNItem = result.getMaxTopNItem();
              for (PageElementItem e: per.getTopN4Size()) {
                  writer.write("          <record>\n");
                  writer.write("            <url>" + e.getUrl() + "</url>\n");
-                 writer.write("            <size>" + e.getDownloadSize() + "</size>\n");
+                 writer.write("            <!-- size in bytes -->\n");
+                 writer.write("            <value>" + e.getDownloadSize() + "</value>\n");
                  writer.write("          </record>\n");
                  maxTopNItem--;
                  if (maxTopNItem <= 0) {
                     break;
                  }
              }
+             writer.write("        ]]>\n");
              writer.write("        </result6>\n");
           }
           
           if (per != null && per.getTopN4Slow() != null) {
             writer.write("        <result7>\n");
+            writer.write("        <![CDATA[\n");
             int maxTopNItem = result.getMaxTopNItem();
             for (PageElementItem e: per.getTopN4Slow()) {
                 writer.write("          <record>\n");
                 writer.write("            <url>" + e.getUrl() + "</url>\n");
-                writer.write("            <elapseTime>" + e.getDownloadElapseTime() + "</elapseTime>\n");
+                writer.write("            <!-- elapse time in ms -->\n");
+                writer.write("            <value>" + e.getDownloadElapseTime() + "</value>\n");
                 writer.write("          </record>\n");
                 maxTopNItem--;
                 if (maxTopNItem <= 0) {
                   break;
                 }
             }
+            writer.write("        ]]>\n");
             writer.write("        </result7>\n");
           }
 
