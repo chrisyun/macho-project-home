@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+	<bean id="propertyPlaceholderConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<!-- Set how to check system properties: as fallback, as override, or never. 
+			The default is "fallback": If not being able to resolve a placeholder with 
+			the specified properties, a system property will be tried. "override" will 
+			check for a system property first, before trying the specified properties. 
+			"never" will not check system properties at all. -->
+		<!-- 系统属性总是优先, 即: JVM "-Dkey=value"方式设置的属性信息总是优先于在配置文件的设置. -->
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="ignoreResourceNotFound" value="true"></property>
+
+		<property name="locations">
+			<list>
+				<value>classpath:tuna-config.xml</value>
+				<value>classpath:test/tuna-config.xml</value>
+				<value>file:${user.home.dir}/tuna-config.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="requestManager4Test" class="com.ibm.tivoli.pim.service.SimpleRequestManagerImpl">
+	</bean>
+  <bean id="requestManager4WAS" class="com.ibm.tivoli.pim.service.RequestManagerImpl">
+    <property name="pimAccountProfileName" value="PIMProfileAccount" />
+    <property name="platformContext">
+      <bean class="${tim.server.platform.context.class}">
+        <constructor-arg>
+          <props>
+            <prop key="enrole.platform.contextFactory">${tim.server.platform.context.factory}</prop>
+            <prop key="enrole.appServer.url">${tim.server.platform.url}</prop>
+            <prop key="enrole.appServer.ejbuser.principal">${tim.server.platform.uid}</prop>
+            <prop key="enrole.appServer.ejbuser.credentials">${tim.server.platform.password}</prop>
+            <prop key="pimAccountProfileName">${pim.account.profile.name}</prop>
+          </props>
+        </constructor-arg>
+      </bean>
+    </property>
+  </bean>
+
+  <alias name="requestManager4Test" alias="requestManager"/>
+	<jaxws:endpoint id="requestManagerService" implementor="#requestManager" address="/requestManager" serviceName="RequestManager" />
+
+  <bean id="backendServiceBean" class="com.ibm.tivoli.pim.service.SimpleBackEndServiceImpl"></bean>
+  <jaxws:endpoint id="backendService" implementor="#backendServiceBean" address="/backendService" serviceName="BackendService"></jaxws:endpoint>
+</beans>
+
