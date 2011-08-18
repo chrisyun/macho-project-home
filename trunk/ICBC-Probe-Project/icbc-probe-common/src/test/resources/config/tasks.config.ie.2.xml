@@ -5,35 +5,6 @@
 		<interval>300</interval>
 	</scheduletime>
 	<tasks>
-		<task>
-			<!-- 任务标识 -->
-			<id>HTTP_IE_BROWSER_01</id>
-			<!-- 任务名称 -->
-			<name>HTTP_IE_BROWSER http://www.icbc.com.cn</name>
-			<!-- 任务类型: 可以取如下值 DNS_CNAME DNS_NS DNS_A HTTP_DNS_MODE HTTPS_DNS_MODE 
-				ICMP_PING DNS_A_NATIVE -->
-			<type>IE_BROWSER</type>
-			<btype>btype_dns_01</btype>
-			<!-- 任务的运行模式, 可以取值: concurrent - 并发模式运行 serial - 串行模式运行 -->
-			<runmode>concurrent</runmode>
-			<!-- 任务的运行时，延迟的时间（毫秒） -->
-			<delay>0</delay>
-			<parameters>
-        <parameter>
-          <name>targetUrls</name>
-          <value>http://www.icbc.com.cn
-          </value>
-        </parameter>
-        <parameter>
-          <name>uploadScreenshot</name>
-          <value>always</value>
-        </parameter>
-        <parameter>
-          <name>maxTopNItem</name>
-          <value>5</value>
-        </parameter>
-			</parameters>
-		</task>
 
 		<task>
 			<id>HTTP_IE_BROWSER_02</id>
@@ -45,7 +16,7 @@
 			<parameters>
 				<parameter>
 					<name>targetUrls</name>
-					<value>http://www.icbc-ltd.com
+					<value>http://www.google.com
 					</value>
 				</parameter>
         <parameter>

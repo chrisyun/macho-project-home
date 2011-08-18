@@ -192,4 +192,8 @@ public class HttpProbeV2Test extends TestCase {
     }
 
   }
+  
+  public void testJxBrowserExecutorMain() throws Exception {
+    JxBrowserExecutorImpl.main(new String[]{"http://www.icbc.com.cn", "200"});
+  }
 }
