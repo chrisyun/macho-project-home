@@ -35,7 +35,7 @@
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>SOAP Service Resources</web-resource-name>
-			<url-pattern>/services/soap/*</url-pattern>
+			<url-pattern>/_test/services/soap/*</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<!-- NOTE: This role is not present in the default users file -->

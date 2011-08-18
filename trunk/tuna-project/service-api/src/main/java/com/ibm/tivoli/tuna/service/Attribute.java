@@ -4,7 +4,10 @@
 package com.ibm.tivoli.tuna.service;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+
+import javax.xml.bind.annotation.XmlElement;
 
 /**
  * @author zhaodonglu
@@ -21,6 +24,27 @@ public class Attribute {
    */
   public Attribute() {
     super();
+  }
+
+  public Attribute(String name, String format, List<String> values) {
+    super();
+    this.name = name;
+    this.format = format;
+    this.values = values;
+  }
+
+  public Attribute(String name, String format, String value) {
+    super();
+    this.name = name;
+    this.format = format;
+    this.values.add(value);
+  }
+
+  public Attribute(String name, String format, String[] values) {
+    super();
+    this.name = name;
+    this.format = format;
+    this.values.addAll(Arrays.asList(values));
   }
 
   /**
@@ -54,6 +78,7 @@ public class Attribute {
   /**
    * @return the values
    */
+  @XmlElement(name = "value")
   public List<String> getValues() {
     return values;
   }

@@ -29,29 +29,8 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 		</property>
 	</bean>
 
-	<bean id="requestManager4Test" class="com.ibm.tivoli.pim.service.SimpleRequestManagerImpl">
+	<bean id="authenticationServiceBean" class="com.ibm.tivoli.tuna.service.AuthenticationServiceImpl">
 	</bean>
-  <bean id="requestManager4WAS" class="com.ibm.tivoli.pim.service.RequestManagerImpl">
-    <property name="pimAccountProfileName" value="PIMProfileAccount" />
-    <property name="platformContext">
-      <bean class="${tim.server.platform.context.class}">
-        <constructor-arg>
-          <props>
-            <prop key="enrole.platform.contextFactory">${tim.server.platform.context.factory}</prop>
-            <prop key="enrole.appServer.url">${tim.server.platform.url}</prop>
-            <prop key="enrole.appServer.ejbuser.principal">${tim.server.platform.uid}</prop>
-            <prop key="enrole.appServer.ejbuser.credentials">${tim.server.platform.password}</prop>
-            <prop key="pimAccountProfileName">${pim.account.profile.name}</prop>
-          </props>
-        </constructor-arg>
-      </bean>
-    </property>
-  </bean>
-
-  <alias name="requestManager4Test" alias="requestManager"/>
-	<jaxws:endpoint id="requestManagerService" implementor="#requestManager" address="/requestManager" serviceName="RequestManager" />
-
-  <bean id="backendServiceBean" class="com.ibm.tivoli.pim.service.SimpleBackEndServiceImpl"></bean>
-  <jaxws:endpoint id="backendService" implementor="#backendServiceBean" address="/backendService" serviceName="BackendService"></jaxws:endpoint>
+  <jaxws:endpoint id="authenticationService" implementor="#authenticationServiceBean" address="/authentication" serviceName="AuthenticationService"></jaxws:endpoint>
 </beans>
 

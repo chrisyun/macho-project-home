@@ -1,5 +1,7 @@
 package com.ibm.tivoli.tuna.service;
 
+import javax.xml.bind.annotation.XmlElement;
+
 public class Credential {
   /**
    * 
@@ -66,6 +68,7 @@ public class Credential {
   /**
    * @return the valueAsString
    */
+  @XmlElement(name = "value")
   public String getValueAsString() {
     return valueAsString;
   }

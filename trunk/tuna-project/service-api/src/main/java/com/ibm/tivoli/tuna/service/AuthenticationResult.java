@@ -18,6 +18,24 @@ public class AuthenticationResult {
     super();
   }
 
+  public AuthenticationResult(Status status, UserSubject issuer, UserSubject subject, AttributeStatement attributeStatement, Date timestamp) {
+    super();
+    this.status = status;
+    this.issuer = issuer;
+    this.subject = subject;
+    this.attributeStatement = attributeStatement;
+    this.timestamp = timestamp;
+  }
+
+
+  public AuthenticationResult(Status status, UserSubject issuer, UserSubject subject, AttributeStatement attributeStatement) {
+    super();
+    this.status = status;
+    this.issuer = issuer;
+    this.subject = subject;
+    this.attributeStatement = attributeStatement;
+  }
+  
   /**
    * @return the status
    */
