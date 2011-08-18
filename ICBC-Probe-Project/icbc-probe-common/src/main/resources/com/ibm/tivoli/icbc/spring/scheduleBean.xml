@@ -3,28 +3,51 @@
 
 <beans>
 
-  <!-- Create a bean for Spring JobDetail -->
-  <bean id="probe4TimeSynTask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-    <property name="targetObject" ref="taskLauncher"/>
-    <property name="targetMethod" value="run"/>
-    <property name="concurrent" value="false"/>
-  </bean>
-  <!-- Define Trigger parameters -->
-  <bean id="trigger4TimeSynTask" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
-    <!-- see the example of method invoking job above --> 
-    <property name="jobDetail" ref="probe4TimeSynTask"/>
-    <!-- 10 seconds -->
-    <property name="startDelay" value="0"/>
-    <!-- repeat every 60 seconds -->
-    <property name="repeatInterval" value="1000"/>
-  </bean>
-  <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
-    <property name="triggers">
-      <list>
-        <ref bean="trigger4TimeSynTask"/>
-      </list>
-     </property>
-  </bean>
-  
+	<!-- Create a bean for Spring JobDetail -->
+	<bean id="probe4TimeSynTask"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="taskLauncher" />
+		<property name="targetMethod" value="run" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<!-- Define Trigger parameters -->
+	<bean id="trigger4TimeSynTask" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<!-- see the example of method invoking job above -->
+		<property name="jobDetail" ref="probe4TimeSynTask" />
+		<!-- 10 seconds -->
+		<property name="startDelay" value="0" />
+		<!-- repeat every 60 seconds -->
+		<property name="repeatInterval" value="1000" />
+	</bean>
+
+	<!-- Define Trigger parameters -->
+	<bean id="trigger4ClearTempFileTask" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<!-- see the example of method invoking job above -->
+		<property name="jobDetail">
+			<bean	class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+				<property name="targetObject">
+				  <bean class="com.ibm.tivoli.icbc.probe.task.ClearTempFileTask">
+				    <property name="maxHour" value="24"></property>
+				  </bean>
+				</property>
+				<property name="targetMethod" value="execute" />
+				<property name="concurrent" value="false" />
+			</bean>
+		</property>
+		<!-- 10 seconds -->
+		<property name="startDelay" value="0" />
+		<!-- repeat every 60 seconds -->
+		<property name="repeatInterval" value="3600" />
+	</bean>
+	
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="trigger4TimeSynTask" />
+        <ref bean="trigger4ClearTempFileTask" />
+			</list>
+		</property>
+	</bean>
+
 </beans>
 
