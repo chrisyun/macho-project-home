@@ -358,7 +358,7 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
         if (needToSendScreenShot(target, r)) {
           accessResult.setImageFile(r.getImageFile());
         } else {
-          (new File(r.getImageFile())).delete();
+          //(new File(r.getImageFile())).delete();
         }
         accessResult.setPageElementResult(r.getPageElementResult());
         accessResult.setDownloadElements(r.getNumberOfDownloadElements());
