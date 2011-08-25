@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.tuna.tivoli.ibm.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:authentication>
+         <!--Optional:-->
+         <requester>
+            <!--Zero or more repetitions:-->
+            <principal>
+               <!--Optional:-->
+               <name>?</name>
+               <!--Optional:-->
+               <type>?</type>
+            </principal>
+         </requester>
+         <!--Optional:-->
+         <context>
+            <!--Zero or more repetitions:-->
+            <parameters>
+               <!--Optional:-->
+               <name>?</name>
+               <!--Zero or more repetitions:-->
+               <values>?</values>
+            </parameters>
+         </context>
+         <!--Optional:-->
+         <credentials>
+            <!--Zero or more repetitions:-->
+            <credentials>
+               <!--Optional:-->
+               <encode>?</encode>
+               <!--Optional:-->
+               <format>?</format>
+               <!--Optional:-->
+               <type>?</type>
+               <!--Optional:-->
+               <valueAsString>?</valueAsString>
+            </credentials>
+         </credentials>
+      </ser:authentication>
+   </soapenv:Body>
+</soapenv:Envelope>

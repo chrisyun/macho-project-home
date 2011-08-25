@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project name="Tuna-WS-Project" resourceRoot="" soapui-version="3.6.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AuthenticationServiceSoapBinding" type="wsdl" bindingName="{http://www.springframework.org/schema/beans}AuthenticationServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://127.0.0.1:18080/tuna-service-web/services/soap/authentication?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://127.0.0.1:18080/tuna-service-web/services/soap/authentication?wsdl"><con:part><con:url>http://127.0.0.1:18080/tuna-service-web/services/soap/authentication?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="AuthenticationService" targetNamespace="http://www.springframework.org/schema/beans" xmlns:ns1="http://service.tuna.tivoli.ibm.com/" xmlns:ns2="http://cxf.apache.org/bindings/xformat" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.springframework.org/schema/beans" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:import location="http://127.0.0.1:18080/tuna-service-web/services/soap/authentication?wsdl=AuthenticationService.wsdl" namespace="http://service.tuna.tivoli.ibm.com/"></wsdl:import>
+  <wsdl:binding name="AuthenticationServiceSoapBinding" type="ns1:AuthenticationService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="authentication">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="authentication">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="authenticationResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AuthenticationService">
+    <wsdl:port binding="tns:AuthenticationServiceSoapBinding" name="AuthenticationServiceImplPort">
+      <soap:address location="http://127.0.0.1:18080/tuna-service-web/services/soap/authentication"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://127.0.0.1:18080/tuna-service-web/services/soap/authentication?wsdl=AuthenticationService.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="AuthenticationService" targetNamespace="http://service.tuna.tivoli.ibm.com/" xmlns:ns1="http://service.tuna.tivoli.ibm.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.tuna.tivoli.ibm.com/" xmlns:tns="http://service.tuna.tivoli.ibm.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="authentication" type="tns:authentication"/>
+      <xs:element name="authenticationResponse" type="tns:authenticationResponse"/>
+      <xs:element name="requester" type="tns:requester"/>
+      <xs:complexType name="authentication">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="requester" type="tns:requester"/>
+          <xs:element minOccurs="0" name="context" type="tns:context"/>
+          <xs:element minOccurs="0" name="credentials" type="tns:credentials"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="requester">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="principal" type="tns:reuqestPrincipal"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="reuqestPrincipal">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="type" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="context">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="parameter" type="tns:parameter"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="parameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="value" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="credentials">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="credential" type="tns:credential"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="credential">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="encode" type="xs:string"/>
+          <xs:element minOccurs="0" name="format" type="xs:string"/>
+          <xs:element minOccurs="0" name="type" type="xs:string"/>
+          <xs:element minOccurs="0" name="value" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="authenticationResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AuthnResult" type="tns:authenticationResult"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="authenticationResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="attributeStatement" type="tns:attributeStatement"/>
+          <xs:element minOccurs="0" name="issuer" type="tns:userSubject"/>
+          <xs:element minOccurs="0" name="nonce" type="xs:string"/>
+          <xs:element minOccurs="0" name="status" type="tns:status"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="subjects" nillable="true" type="tns:userSubject"/>
+          <xs:element minOccurs="0" name="timestamp" type="xs:dateTime"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="attributeStatement">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="attributes" nillable="true" type="tns:attribute"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="attribute">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="format" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="value" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="userSubject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="format" type="xs:string"/>
+          <xs:element minOccurs="0" name="nameID" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="status">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code" type="xs:string"/>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="authenticationResponse">
+    <wsdl:part element="ns1:authenticationResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="authentication">
+    <wsdl:part element="ns1:authentication" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="AuthenticationService">
+    <wsdl:operation name="authentication">
+      <wsdl:input message="ns1:authentication" name="authentication"></wsdl:input>
+      <wsdl:output message="ns1:authenticationResponse" name="authenticationResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://127.0.0.1:18080/tuna-service-web/services/soap/authentication</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="authentication" bindingOperationName="authentication" type="Request-Response" outputName="authenticationResponse" inputName="authentication" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1:18080/tuna-service-web/services/soap/authentication</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.tuna.tivoli.ibm.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:authentication>
+         <requester>
+            <principal>
+               <type>application</type>
+               <name>SINOPEC-OA</name>
+            </principal>
+         </requester>
+         <context>
+            <parameter>
+               <name>LoginModuleName</name>
+               <value>LDAP-SIMPLE</value>
+            </parameter>
+         </context>
+         <credentials>
+            <!--Zero or more repetitions:-->
+            <credential>
+               <type>username</type>
+               <value>testUser</value>
+               <encode></encode>
+               <format></format>
+            </credential>
+            <credential>
+               <type>password</type>
+               <value>testPassword</value>
+               <encode></encode>
+               <format></format>
+            </credential>
+         </credentials>
+      </ser:authentication>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.springframework.org/schema/beans/AuthenticationService/authentication"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/></con:soapui-project>
