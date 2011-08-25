@@ -23,6 +23,19 @@ public class Credential {
     super();
   }
 
+  public Credential(String type, String valueAsString) {
+    super();
+    this.type = type;
+    this.valueAsString = valueAsString;
+  }
+
+  public Credential(String type, String format, String valueAsString) {
+    super();
+    this.type = type;
+    this.format = format;
+    this.valueAsString = valueAsString;
+  }
+
   /**
    * @return the type
    */

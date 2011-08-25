@@ -1,6 +1,8 @@
 package com.ibm.tivoli.tuna.service;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class AuthenticationResult {
   
@@ -8,11 +10,13 @@ public class AuthenticationResult {
   
   private UserSubject issuer = null;
   
-  private UserSubject subject = null;
+  private List<UserSubject> subjects = new ArrayList<UserSubject>();
   
   private AttributeStatement attributeStatement = null;
 
   private Date timestamp = new Date();
+  
+  private String nonce = null;
   
   public AuthenticationResult() {
     super();
@@ -22,7 +26,7 @@ public class AuthenticationResult {
     super();
     this.status = status;
     this.issuer = issuer;
-    this.subject = subject;
+    this.subjects.add(subject);
     this.attributeStatement = attributeStatement;
     this.timestamp = timestamp;
   }
@@ -32,10 +36,24 @@ public class AuthenticationResult {
     super();
     this.status = status;
     this.issuer = issuer;
-    this.subject = subject;
+    this.subjects.add(subject);
     this.attributeStatement = attributeStatement;
   }
   
+  public AuthenticationResult(Status status, UserSubject issuer, List<UserSubject> subjects, AttributeStatement attributeStatement) {
+    super();
+    this.status = status;
+    this.issuer = issuer;
+    this.subjects = subjects;
+    this.attributeStatement = attributeStatement;
+  }
+
+  public AuthenticationResult(Status status, UserSubject issuer) {
+    super();
+    this.status = status;
+    this.issuer = issuer;
+  }
+
   /**
    * @return the status
    */
@@ -65,17 +83,17 @@ public class AuthenticationResult {
   }
 
   /**
-   * @return the subject
+   * @return the subjects
    */
-  public UserSubject getSubject() {
-    return subject;
+  public List<UserSubject> getSubjects() {
+    return subjects;
   }
 
   /**
-   * @param subject the subject to set
+   * @param subjects the subjects to set
    */
-  public void setSubject(UserSubject subject) {
-    this.subject = subject;
+  public void setSubjects(List<UserSubject> subjects) {
+    this.subjects = subjects;
   }
 
   /**
@@ -104,6 +122,20 @@ public class AuthenticationResult {
    */
   public void setTimestamp(Date timestamp) {
     this.timestamp = timestamp;
+  }
+
+  /**
+   * @return the nonce
+   */
+  public String getNonce() {
+    return nonce;
+  }
+
+  /**
+   * @param nonce the nonce to set
+   */
+  public void setNonce(String nonce) {
+    this.nonce = nonce;
   }
 
 }

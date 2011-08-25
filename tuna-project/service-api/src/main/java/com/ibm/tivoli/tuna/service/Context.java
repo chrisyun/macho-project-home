@@ -37,5 +37,17 @@ public class Context {
   public void setParameters(List<Parameter> parameters) {
     this.parameters = parameters;
   }
+  
+  public Parameter getParameter(String name) {
+    if (this.parameters == null) {
+       return null;
+    }
+    for (Parameter p: this.parameters) {
+        if (p.getName().equals(name)) {
+           return p;
+        }
+    }
+    return null;
+  }
 
 }
