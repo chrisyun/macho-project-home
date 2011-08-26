@@ -17,6 +17,14 @@
       <fileMode>644</fileMode>
     </fileSet>
     <fileSet>
+      <directory>/pwd_policy</directory>
+      <outputDirectory>/pwd_policy</outputDirectory>
+      <includes>
+        <include>**</include>
+      </includes>
+      <fileMode>644</fileMode>
+    </fileSet>
+    <fileSet>
       <directory>/js</directory>
       <outputDirectory>/js</outputDirectory>
       <includes>
