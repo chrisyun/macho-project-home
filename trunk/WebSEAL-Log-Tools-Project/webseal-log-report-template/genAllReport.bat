@@ -28,4 +28,4 @@ call genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/hour_report_%Y
 
 call genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_login_detail_report_%YEAR%%MONTH%%DAY_OF_MONTH%.%REPORT_FORMAT% -F %REPORT_HOME%/app_login/app_login_detail_report.rptdesign
 
-call genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/pwd_exipired_time_%YEAR%%MONTH%%DAY_OF_MONTH%.%REPORT_FORMAT% -F %REPORT_HOME%/pwd_policy/pwd_exipired_time.rptdesign
+call genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/pwd_exipired_time_%YEAR%%MONTH%%DAY_OF_MONTH%.%REPORT_FORMAT% -p "UserID=%" -F %REPORT_HOME%/pwd_policy/pwd_expired_time.rptdesign
