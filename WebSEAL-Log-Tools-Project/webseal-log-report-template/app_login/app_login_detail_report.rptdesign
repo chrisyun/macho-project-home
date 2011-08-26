@@ -9,7 +9,7 @@
     <property name="imageDPI">96</property>
     <list-property name="libraries">
         <structure>
-            <property name="fileName">main.rptlibrary</property>
+            <property name="fileName">../main.rptlibrary</property>
             <property name="namespace">main</property>
         </structure>
     </list-property>
@@ -72,6 +72,12 @@
         </simple-master-page>
     </page-setup>
     <body>
+        <label id="186">
+            <property name="fontSize">14pt</property>
+            <property name="textAlign">center</property>
+            <property name="pageBreakBefore">always</property>
+            <text-property name="text">Application Login Report</text-property>
+        </label>
         <table id="8">
             <property name="dataSet">DS_RES_ACCESS_DETAIL</property>
             <list-property name="boundDataColumns">

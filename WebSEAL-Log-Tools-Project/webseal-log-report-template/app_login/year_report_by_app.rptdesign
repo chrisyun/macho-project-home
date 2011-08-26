@@ -9,7 +9,7 @@
     <property name="imageDPI">96</property>
     <list-property name="libraries">
         <structure>
-            <property name="fileName">main.rptlibrary</property>
+            <property name="fileName">../main.rptlibrary</property>
             <property name="namespace">main</property>
         </structure>
     </list-property>
@@ -1464,7 +1464,7 @@
                                 <list-property name="action">
                                     <structure>
                                         <property name="linkType">drill-through</property>
-                                        <property name="reportName">month_report.rptdesign</property>
+                                        <property name="reportName">month_report_by_app.rptdesign</property>
                                         <property name="targetWindow">_blank</property>
                                         <property name="targetFileType">report-design</property>
                                         <list-property name="paramBindings">
