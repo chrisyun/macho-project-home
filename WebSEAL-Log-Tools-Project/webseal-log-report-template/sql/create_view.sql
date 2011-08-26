@@ -138,7 +138,7 @@ where
      e.eventtype='AUDIT_RESOURCE_ACCESS' and e.APP_USR_NAME<>'Unauth';
      
 ---------------------------------------------------------------------------------------------
-Testing SQL
+-- Testing SQL
 ---------------------------------------------------------------------------------------------
 -- select count(*) from cars_t_event
 
