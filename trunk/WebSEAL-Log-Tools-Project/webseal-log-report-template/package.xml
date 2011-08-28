@@ -62,6 +62,8 @@
       <includes>
         <include>*.jsp</include>
         <include>*.rptlibrary</include>
+        <include>*.bat</include>
+        <include>*.sh</include>
       </includes>
       <fileMode>644</fileMode>
     </fileSet>

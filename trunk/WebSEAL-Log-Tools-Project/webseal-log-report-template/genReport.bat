@@ -35,8 +35,6 @@ REM     --locale /-l <locale>
 REM
 REM Locale: default is english
 
-set BIRT_HOME=D:\Tools\apache-tomcat-6.0.26\webapps\webseal-report\WEB-INF\platform
-
 IF not "%BIRT_HOME%" == "" GOTO runBirt
 ECHO "Please set BIRT_HOME first."
 GOTO end

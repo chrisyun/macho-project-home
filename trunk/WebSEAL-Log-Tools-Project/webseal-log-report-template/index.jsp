@@ -84,7 +84,11 @@
                              "308 出口车订单系统",
                              "GP50",
                              "RDS258",
-                             "EBMS"
+                             "EBMS",
+                             "HRMS",
+                             "JQ_PATAC_Mail",
+                             "DY_Mail",
+                             "SY_Mail"
                              ];
 
             
