@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APPROOT ver="1.0">
+	<PUBLIC>
+		<DATE>2010-10-25 14:23:01 +08:00</DATE>
+		<APPSNAME>应用简称</APPSNAME>
+		<FLAG>300</FLAG>
+		<TYPE>0</TYPE>
+		<SERVERIP>10.1.2.3</SERVERIP>
+		<INDEXTYPE>指标类别代码</INDEXTYPE>
+	</PUBLIC>
+	<PRIVATE>
+		<ROWSET>
+			<ROW>
+				<NAME>指标1</NAME>
+				<INFO>86</INFO>
+			</ROW>
+			<ROW>
+				<NAME>指标2</NAME>
+				<INFO>56</INFO>
+			</ROW>
+			<!--additional rows... -->
+		</ROWSET>
+	</PRIVATE>
+</APPROOT> 

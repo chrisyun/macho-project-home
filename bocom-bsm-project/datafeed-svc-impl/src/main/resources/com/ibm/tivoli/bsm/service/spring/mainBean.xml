@@ -1,0 +1,58 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+  xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<bean id="propertyPlaceholderConfigurer" class="com.ibm.tivoli.bsm.util.MyPropertyPlaceholderConfigurer">
+		<!-- Set how to check system properties: as fallback, as override, or never. 
+			The default is "fallback": If not being able to resolve a placeholder with 
+			the specified properties, a system property will be tried. "override" will 
+			check for a system property first, before trying the specified properties. 
+			"never" will not check system properties at all. -->
+		<!-- 系统属性总是优先, 即: JVM "-Dkey=value"方式设置的属性信息总是优先于在配置文件的设置. -->
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="ignoreResourceNotFound" value="true"></property>
+		<property name="locations">
+			<list>
+				<!-- Load properties from ROOT class path -->
+				<value>classpath:datafeed_svc_config.xml</value>
+				<value>classpath:datafeed_svc_config.properties</value>
+
+				<!-- For testing -->
+				<value>classpath:test/datafeed_svc_config.xml</value>
+				<value>classpath:test/datafeed_svc_config.properties</value>
+
+				<!-- For installation -->
+				<value>file:${user.home}/datafeed_svc_config.xml</value>
+				<value>file:${user.home}/datafeed_svc_config.properties</value>
+
+				<!-- For installation -->
+				<value>file:${user.home}/datafeed_svc_config.xml</value>
+				<value>file:${user.home}/datafeed_svc_config.properties</value>
+
+			</list>
+		</property>
+	</bean>
+
+	<!-- Data Feed -->
+	<bean id="dataFeedService" class="com.ibm.tivoli.bsm.service.SimpleDataFeedServiceImpl">
+		<property name="dataFeedProcessor" ref="dataFeedProcessor"></property>
+	</bean>
+
+	<bean id="dataFeedProcessor" class="com.ibm.tivoli.bsm.service.DataFeedProcessorImpl">
+		<property name="beanNameOfRecordDAO" value="recordDAO"></property>
+	</bean>
+
+	<bean id="recordDAO"
+		class="com.ibm.tivoli.bsm.service.JDBCAppRawDataRecordDAOImpl"
+		scope="prototype">
+		<property name="dataSourceName" value="${datafeed.database.datasource.name}"></property>
+		<!-- For JDBC Mode -->
+		<property name="jdbcDriverClass" value="${datafeed.database.jdbc.driver.class}"></property>
+		<property name="jdbcUrl" value="${datafeed.database.jdbc.url}"></property>
+		<property name="jdbcUser" value="${datafeed.database.jdbc.username}"></property>
+		<property name="jdbcPassword" value="${datafeed.database.jdbc.password}"></property>
+	</bean>
+
+</beans>
