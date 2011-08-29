@@ -22,6 +22,22 @@ public class Parameter {
   public Parameter() {
     super();
   }
+  
+  
+  public Parameter(String name, List<String> values) {
+    super();
+    this.name = name;
+    this.values = values;
+  }
+
+
+  public Parameter(String name, String value) {
+    super();
+    this.name = name;
+    this.values.add(value);
+  }
+
+
   /**
    * @return the name
    */

@@ -28,8 +28,13 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 			</list>
 		</property>
 	</bean>
+	
+	<bean id="loginContextConfigurationManager" class="com.ibm.tivoli.tuna.config.FileLoginContextConfigurationManager">
+	  <property name="configFile" value="c:/users/ibm_admin/workspace/tuna-project/service-impl/src/test/resources/sample_jaas.config"></property>
+	</bean>
 
 	<bean id="authenticationServiceBean" class="com.ibm.tivoli.tuna.service.AuthenticationServiceImpl">
+	  <property name="loginContextConfigManager" ref="loginContextConfigurationManager"></property>
 	</bean>
   <jaxws:endpoint id="authenticationService" implementor="#authenticationServiceBean" address="/authentication" serviceName="AuthenticationService"></jaxws:endpoint>
 </beans>

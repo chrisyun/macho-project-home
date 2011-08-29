@@ -5,6 +5,8 @@ package com.ibm.tivoli.tuna.service;
 
 import junit.framework.TestCase;
 
+import com.ibm.tivoli.tuna.config.FileLoginContextConfigurationManager;
+
 /**
  * @author zhaodonglu
  *
@@ -33,8 +35,13 @@ public class AuthenticationServiceTest extends TestCase {
   }
   
   public void testAuthentication() throws Exception {
-    AuthenticationService service = new AuthenticationServiceImpl();
+    AuthenticationServiceImpl service = new AuthenticationServiceImpl();
+    
+    LoginContextManager loginContextManager = new FileLoginContextConfigurationManager("c:/users/ibm_admin/workspace/tuna-project/service-impl/src/test/resources/sample_jaas.config");
+    service.setLoginContextConfigManager(loginContextManager );
+    
     Context context = new Context();
+    context.getParameters().add(new Parameter("LoginModuleName", "LDAP-SIMPLE"));
     Credentials credentials = new Credentials();
     credentials.getCredentials().add(new Credential("username", "testUser"));
     credentials.getCredentials().add(new Credential("password", "testPassword"));

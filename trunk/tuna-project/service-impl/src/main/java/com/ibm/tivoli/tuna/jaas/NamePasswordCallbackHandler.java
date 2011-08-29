@@ -17,19 +17,19 @@ import com.ibm.tivoli.tuna.service.Credential;
 import com.ibm.tivoli.tuna.service.Credentials;
 import com.ibm.tivoli.tuna.service.Requester;
 
-public class SimpleCallbackHandler implements CallbackHandler {
+public class NamePasswordCallbackHandler implements CallbackHandler {
   
-  private static Log log = LogFactory.getLog(SimpleCallbackHandler.class);
+  private static Log log = LogFactory.getLog(NamePasswordCallbackHandler.class);
   
   private Requester requester = null;
   private Context context = null;
   private Credentials credentials = null;
 
-  public SimpleCallbackHandler() {
+  public NamePasswordCallbackHandler() {
     super();
   }
 
-  public SimpleCallbackHandler(Requester requester, Context context, Credentials credentials) {
+  public NamePasswordCallbackHandler(Requester requester, Context context, Credentials credentials) {
     super();
     this.requester = requester;
     this.context = context;
