@@ -119,7 +119,7 @@
       <wsdl:output message="ns1:authenticationResponse" name="authenticationResponse"></wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://127.0.0.1:18080/tuna-service-web/services/soap/authentication</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="authentication" bindingOperationName="authentication" type="Request-Response" outputName="authenticationResponse" inputName="authentication" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1:18080/tuna-service-web/services/soap/authentication</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.tuna.tivoli.ibm.com/">
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://127.0.0.1:18080/tuna-service-web/services/soap/authentication</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="authentication" bindingOperationName="authentication" type="Request-Response" outputName="authenticationResponse" inputName="authentication" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Req-LDAP-Simple"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1:18080/tuna-service-web/services/soap/authentication</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.tuna.tivoli.ibm.com/">
    <soapenv:Header/>
    <soapenv:Body>
       <ser:authentication>
@@ -146,6 +146,33 @@
             <credential>
                <type>password</type>
                <value>testPassword</value>
+               <encode></encode>
+               <format></format>
+            </credential>
+         </credentials>
+      </ser:authentication>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.springframework.org/schema/beans/AuthenticationService/authentication"/><con:wsrmConfig version="1.2"/></con:call><con:call name="Req-Cred-LTPA"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1:18080/tuna-service-web/services/soap/authentication</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.tuna.tivoli.ibm.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:authentication>
+         <requester>
+            <principal>
+               <type>application</type>
+               <name>Application1</name>
+            </principal>
+         </requester>
+         <context>
+            <parameter>
+               <name>LoginModuleName</name>
+               <value>LTPA-Cred</value>
+            </parameter>
+         </context>
+         <credentials>
+            <!--Zero or more repetitions:-->
+            <credential>
+               <type>token</type>
+               <value>vT5Zt1Ptg228WednWr7PFXWlM/a3OiibNiqeHh1hZ50v/PjQMFGs6E8aZxx23n2PbjOYg8zpIbtW2pM0D+ZgpEcPSXwiE4RZiyYG+2otRO4xfUI38TCjhHsWOuUF3t1hnBfDQQalE7CmipOIzsWbmwuYRQxsmn4iweIB11f4ckc11xZqGWf1cTiYfgmOJwFCIG3mibI5I7wzo8+ed5DvNYPvuchhVggOjFUUEGaoqH+52r+K/RWBs6GmH9R53zWkDAAvs7CxNNOnuv6U+0UFJjxBcS88iJb9NuI2KsTCb/W8CFHrNU//Ex5g8/LoOx5zsTEBCPDzVWcEweWaQ4cWCctrLHfI4/EX</value>
                <encode></encode>
                <format></format>
             </credential>
