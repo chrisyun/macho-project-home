@@ -1,0 +1,36 @@
+            <!-- SGM Prod env
+            <property name="odaDriverClass">com.ibm.db2.jcc.DB2Driver</property>
+            <property name="odaURL">jdbc:db2://127.0.0.1:50000/evtxmldb</property>
+            <property name="odaUser">db2admin</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">cGFzc3cwcmQ=</encrypted-property>
+
+            <property name="odaDriverClass">com.ibm.db2.jcc.DB2Driver</property>
+            <property name="odaURL">jdbc:db2://210.75.67.212:50000/eventxml</property>
+            <property name="odaUser">db2admin</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">U0dNc3lzYWRtaW4wMDE=</encrypted-property>
+            -->
+            <!-- SGM Test env -->
+            <property name="odaDriverClass">com.ibm.db2.jcc.DB2Driver</property>
+            <property name="odaURL">jdbc:db2://210.75.71.39:50000/eventxml</property>
+            <property name="odaUser">itimuser</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">UGFzc3cwcmQ=</encrypted-property>
+
+
+
+
+            <!-- 
+            <property name="odaDriverClass">com.ibm.db2.jcc.DB2Driver</property>
+            <property name="odaURL">jdbc:db2://127.0.0.1:50000/tamldap1</property>
+            <property name="odaUser">tamldap</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">cGFzc3cwcmQ=</encrypted-property>
+
+            <property name="odaDriverClass">com.ibm.db2.jcc.DB2Driver</property>
+            <property name="odaURL">jdbc:db2://10.203.4.23:2708/tamldap</property>
+            <property name="odaUser">tamldap</property>
+            <encrypted-property name="odaPassword" encryptionID="base64"></encrypted-property>
+            -->
+            <!-- SGM Test Env -->
+            <property name="odaDriverClass">com.ibm.db2.jcc.DB2Driver</property>
+            <property name="odaURL">jdbc:db2://210.75.71.39:3708/tamldap</property>
+            <property name="odaUser">tamldap</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">UGFzc3cwcmQ=</encrypted-property>

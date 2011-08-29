@@ -21,5 +21,4 @@ public class LauncherTest extends TestCase {
   public void testExternal() throws Exception {
     Launcher.main(new String[]{"-c", "Z:/SGM/ExternalWebseal149/wblog.config.properties", "-d", "Z:/SGM/ExternalWebseal149/logs", "request.log.*"});
   }
-
 }

@@ -1,4 +1,4 @@
-set REPORT_HOME=E:\IBM\WebSphere\AppServer\profiles\TIMApp\installedApps\LMWAS1Cell01\webseal-report_war.ear\webseal-report.war
+set REPORT_HOME=E:\IBM\WebSphere\AppServer\profiles\IMS\installedApps\imsCell01\webseal-report_war.ear\webseal-report.war
 set REPORT_OUTPUT=E:\Temp\report
 
 REM -----------------------------------------------------------------
@@ -8,6 +8,10 @@ set BIRT_HOME=%REPORT_HOME%\WEB-INF\platform
 set YEAR=%date:~,4%
 set MONTH=%date:~5,2%
 set DAY_OF_MONTH=%date:~8,2%
+
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/pwd_exipired_time.%REPORT_FORMAT% -F %REPORT_HOME%/pwd_policy/pwd_expired_time.rptdesign
+
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/pwd_exipired_time.%REPORT_FORMAT% -F %REPORT_HOME%/user_login/user_login_last_time.rptdesign
 
 call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/year_report_by_app.%REPORT_FORMAT% -F %REPORT_HOME%/app_login/year_report_by_app.rptdesign
 call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/year_report_by_network.%REPORT_FORMAT% -F %REPORT_HOME%/app_login/year_report_by_net.rptdesign
@@ -31,4 +35,4 @@ call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/
 
 call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_login_detail_report_%YEAR%%MONTH%%DAY_OF_MONTH%.%REPORT_FORMAT% -F %REPORT_HOME%/app_login/app_login_detail_report.rptdesign
 
-call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/pwd_exipired_time_%YEAR%%MONTH%%DAY_OF_MONTH%.%REPORT_FORMAT% -p "UserID=%" -F %REPORT_HOME%/pwd_policy/pwd_expired_time.rptdesign
+
