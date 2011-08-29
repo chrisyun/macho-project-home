@@ -1,4 +1,8 @@
+drop view v_user_pwd_policy;
 DROP FUNCTION func_eval_password_max_age;
+DROP FUNCTION func_eval_pwd_expire_time;
+
+
 CREATE  FUNCTION func_eval_password_max_age (hasPolicy INTEGER, userPwdAge INTEGER, globalPwdAge INTEGER)
 RETURNS INTEGER
 ------------------------------------------------------------------------
@@ -16,7 +20,6 @@ RETURNS INTEGER
    globalPwdAge
 end;
 
-DROP FUNCTION func_eval_pwd_expire_time;
 CREATE  FUNCTION func_eval_pwd_expire_time (pwdAge INTEGER, PwdLastChanged TIMESTAMP)
 RETURNS TIMESTAMP
 ------------------------------------------------------------------------
@@ -48,7 +51,6 @@ where
 ;
 
 -- User password policy
-drop view v_user_pwd_policy;
 create view v_user_pwd_policy as 
 select   
     oc.EID as eid,  
@@ -78,5 +80,15 @@ where
      oc.OBJECTCLASS='SECUSER'
 ;
 
-
-
+drop view v_tamldap_user;
+create view v_tamldap_user as
+select   
+    oc.EID as eid,  
+    uid.uid as uid,
+    user_cn.cn as cn
+from 
+     tamldap.uid uid inner join tamldap.OBJECTCLASS oc on uid.eid=oc.eid  
+                     inner join tamldap.cn user_cn on user_cn.eid=uid.eid
+where 
+     oc.OBJECTCLASS='INETORGPERSON'
+;

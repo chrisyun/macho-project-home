@@ -1,21 +1,22 @@
-DROP FUNCTION func_convert2chars;
-CREATE  FUNCTION func_convert2chars (dd INTEGER)
-RETURNS VARCHAR(2)
+drop view v_user_last_login_time;
+drop FUNCTION func_logon_status;
+
+CREATE  FUNCTION func_logon_status (loginTime TIMESTAMP)
+RETURNS INTEGER
 ------------------------------------------------------------------------
--- FUNCTION£ºfunc_convert2chars
--- Description£ºconvert 0 to "00", 9 to "09"
+-- FUNCTION£ºfunc_eval_password_max_age
+-- Description£ºEvaluate password max age policy
 ------------------------------------------------------------------------
  NO EXTERNAL ACTION
  DETERMINISTIC
  LANGUAGE SQL
  CONTAINS SQL
  NULL CALL
- return case when (dd <= 9) then
-   '0'||char(dd)
+ return case when (loginTime is null) then
+   0
  else
-   char(dd)
+   1
 end;
-
 
 -- Create VIEW v_cars_t_event_time 
 DROP VIEW v_cars_t_event_time;
@@ -136,7 +137,27 @@ from
    cars_t_event e inner join cars_t_res_access r on e.cars_seq_number=r.cars_seq_number
 where 
      e.eventtype='AUDIT_RESOURCE_ACCESS' and e.APP_USR_NAME<>'Unauth';
-     
+
+---------------------------------------------------------------------------------------------
+drop view v_tusr_last_login_time;
+create view v_tusr_last_login_time as
+select
+ e.app_usr_name as username,
+ max(e.TIME_STAMP) as last_timestamp
+from V_RES_ACCESS_EVENT_DETAIL e
+group by 
+  e.APP_USR_NAME
+;
+
+create view v_user_last_login_time as
+select
+ user.UID as username,
+ user.CN as cn,
+ lt.last_timestamp as last_timestamp,
+ func_logon_status(lt.last_timestamp)as accessed
+from 
+  v_tamldap_user user left join v_tusr_last_login_time lt on user.uid=UPPER(lt.username) 
+;
 ---------------------------------------------------------------------------------------------
 -- Testing SQL
 ---------------------------------------------------------------------------------------------

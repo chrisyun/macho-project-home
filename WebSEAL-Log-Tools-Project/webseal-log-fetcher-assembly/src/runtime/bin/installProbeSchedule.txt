@@ -1,0 +1,1 @@
+AT 22:00 /every:M,T,W,TH,F,S,SU "E:\IBM\webseal-log-tool\bin\submit2cars.bat"

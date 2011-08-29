@@ -154,7 +154,8 @@
         <div>
           <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
             <input type="hidden" name="__report" value=""/>
-            <ul id="icons">
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
+            <ul id="icons">_
               <li><button onclick="this.form.__report.value='app_login/year_report_by_net.rptdesign';this.form.submit();"/>By Network</button></li>
               <li><button onclick="this.form.__report.value='app_login/year_report_by_app.rptdesign';this.form.submit();"/>By Application</button></li>
               <li><button onclick="this.form.__report.value='app_login/year_report_by_webseal.rptdesign';this.form.submit();"/>By WebSEAL</button></li>
@@ -168,6 +169,7 @@
         <div>
           <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
             <input type="hidden" name="__report" value=""/>
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
             <label for="tags">Year: </label><input id="year4monthlyReport" type="text" name="Year" value="<%=year%>"/>
             <ul id="icons">
               <li><button onclick="this.form.__report.value='app_login/month_report_by_net.rptdesign';this.form.submit();"/>By Network</button></li>
@@ -183,6 +185,7 @@
         <div>
           <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
             <input type="hidden" name="__report" value=""/>
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
             <label for="year4dailylyReport">Year: </label><input id="year4dailylyReport" type="text" name="Year" value="<%=year%>"/>&nbsp;&nbsp;
             <label for="month4dailylyReport">Month: </label><input id="month4dailylyReport" type="text" name="Month" value="<%=month%>"/>
             <ul id="icons">
@@ -199,6 +202,7 @@
         <div>
           <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
             <input type="hidden" name="__report" value=""/>
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
             <label for="year4hourlyReport">Year: </label><input id="year4hourlyReport" type="text" name="Year" value="<%=year%>"/>&nbsp;&nbsp;
             <label for="month4hourlyReport">Day: </label><input id="month4hourlyReport" type="text" name="Month" value="<%=month%>"/>&nbsp;&nbsp;
             <label for="hour4hourlyReport">Day: </label><input id="hour4hourlyReport" type="text" name="DAY_OF_MONTH" value="<%=day%>"/>
@@ -216,6 +220,7 @@
         <div>
           <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
             <input type="hidden" name="__report" value=""/>
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
             <label for="application4detail">Application: </label><input id="application4detail" type="text" name="Application" value="%"/><br/>
             <label for="uid4detail">Username: &nbsp;&nbsp;</label><input id="uid4detail" type="text" name="UserID" value="%"/><br/>
             <label for="from">Start Date: </label>
@@ -224,6 +229,29 @@
             <input type="text" id="to" name="EndTime" value="<%=tommorow.getMonth() +1%>/<%=tommorow.getDate() + 1%>/<%=tommorow.getYear() + 1900%>"/>
             <br/><br/>
             <button onclick="this.form.__report.value='app_login/app_login_detail_report.rptdesign';this.form.submit();"/>View Report</button>
+          </form>
+        </div>
+      </div>
+      <div>
+        <h3><a href="#">User Last Login Time Detail Report</a></h3>
+        <div>
+          <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
+            <input type="hidden" name="__report" value=""/>
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
+            <label for="uid4detail">Username: &nbsp;&nbsp;</label><input id="uid4detail" type="text" name="UserID" value="%"/><br/>
+            <br/><br/>
+            <button onclick="this.form.__report.value='user_login/user_login_last_time.rptdesign';this.form.submit();"/>View Report</button>
+          </form>
+        </div>
+      </div>
+      <div>
+        <h3><a href="#">User Password Expired Time Detail Report</a></h3>
+        <div>
+          <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
+            <input type="hidden" name="__report" value=""/>
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
+            <br/><br/>
+            <button onclick="this.form.__report.value='pwd_policy/pwd_expired_time.rptdesign';this.form.submit();"/>View Report</button>
           </form>
         </div>
       </div>
