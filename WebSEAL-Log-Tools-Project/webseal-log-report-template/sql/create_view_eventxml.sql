@@ -149,14 +149,14 @@ group by
   e.APP_USR_NAME
 ;
 
-create view v_user_last_login_time as
+create or replace view v_user_last_login_time as
 select
  user.UID as username,
  user.CN as cn,
  lt.last_timestamp as last_timestamp,
  func_logon_status(lt.last_timestamp)as accessed
 from 
-  v_tamldap_user user left join v_tusr_last_login_time lt on user.uid=UPPER(lt.username) 
+  v_tamldap_user user left join v_tusr_last_login_time lt on user.uid=lt.username 
 ;
 ---------------------------------------------------------------------------------------------
 -- Testing SQL

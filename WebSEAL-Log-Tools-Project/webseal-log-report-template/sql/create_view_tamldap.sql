@@ -37,8 +37,7 @@ end;
 
 
 -- Global Policy
-drop view v_global_pwd_policy;
-create view v_global_pwd_policy as 
+create or replace view v_global_pwd_policy as 
 select   
     oc.EID as eid,  
     passwordMaxAge.passwordMaxAge as passwordMaxAge,  
@@ -51,7 +50,7 @@ where
 ;
 
 -- User password policy
-create view v_user_pwd_policy as 
+create or replace view v_user_pwd_policy as 
 select   
     oc.EID as eid,  
     principalName.principalName as username,
@@ -80,15 +79,45 @@ where
      oc.OBJECTCLASS='SECUSER'
 ;
 
-drop view v_tamldap_user;
-create view v_tamldap_user as
+----------------------------------------------------------------------------------------------------------------
+-- create or replace view v_all_tam_node as
+-- WITH  RPL_ALL(peid, eid, dn) AS
+-- (
+--   SELECT ROOT.peid, ROOT.eid, ROOT.dn FROM LDAP_ENTRY ROOT WHERE ROOT.dn=upper('dc=tam,dc=sgmam,dc=com')
+--   UNION  ALL
+--   SELECT CHILD.peid, CHILD.eid, CHILD.dn FROM RPL_ALL PARENT, LDAP_ENTRY CHILD WHERE PARENT.eid=CHILD.peid
+-- )
+-- SELECT 
+--   DISTINCT peid, eid, dn
+-- FROM RPL_ALL
+-- ;
+-- 
+-- create or replace view v_all_tam_users_node as
+-- WITH  RPL_EXCL(peid, eid, dn) AS
+-- (
+--   SELECT ROOT.peid, ROOT.eid, ROOT.dn FROM LDAP_ENTRY ROOT WHERE ROOT.dn=upper('cn=users,dc=tam,dc=sgmam,dc=com')
+--   UNION  ALL
+--   SELECT CHILD.peid, CHILD.eid, CHILD.dn FROM RPL_EXCL PARENT, LDAP_ENTRY CHILD WHERE PARENT.eid=CHILD.peid
+-- )
+-- SELECT 
+--   DISTINCT peid, eid, dn
+-- FROM RPL_EXCL
+-- ;
+
+------------------------------------------------------------------------------------------------------------------
+create or replace view v_tamldap_user as
 select   
-    oc.EID as eid,  
-    uid.uid as uid,
-    user_cn.cn as cn
+    eid as eid,  
+    lower(username) as uid,
+    lower(cn) as cn
 from 
-     tamldap.uid uid inner join tamldap.OBJECTCLASS oc on uid.eid=oc.eid  
-                     inner join tamldap.cn user_cn on user_cn.eid=uid.eid
-where 
-     oc.OBJECTCLASS='INETORGPERSON'
-;
+    v_user_pwd_policy;
+--      tamldap.uid uid inner join tamldap.OBJECTCLASS oc on uid.eid=oc.eid  
+--                      inner join tamldap.cn user_cn on user_cn.eid=uid.eid
+-- where 
+--      oc.OBJECTCLASS='INETORGPERSON'
+--      and oc.eid in (
+--        select eid from v_all_tam_node
+--        except
+--        select eid from v_all_tam_users_node)
+-- ;
