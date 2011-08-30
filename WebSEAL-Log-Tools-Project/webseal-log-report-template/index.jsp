@@ -3,12 +3,10 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Welcome to Access App Login Report Page</title>
-    <base href="<%= request.getContextPath()%>" />
-    
-    <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.14.custom.css" rel="stylesheet" /> 
-    <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+    <title>Welcome to Access App Login Report Page</title>  
+    <link type="text/css" href="<%= request.getContextPath()%>/css/ui-lightness/jquery-ui-1.8.14.custom.css" rel="stylesheet" /> 
+    <script type="text/javascript" src="<%= request.getContextPath()%>/js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="<%= request.getContextPath()%>/js/jquery-ui-1.8.14.custom.min.js"></script>
     <%
     
     java.util.Date now = new java.util.Date();
