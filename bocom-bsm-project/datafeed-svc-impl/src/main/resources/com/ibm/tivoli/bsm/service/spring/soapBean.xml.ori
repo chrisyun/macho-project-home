@@ -4,6 +4,6 @@
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
-	<jaxws:endpoint id="dataFeed" implementor="#dataFeedService" address="/dataFeed" />
+	<jaxws:endpoint id="dataFeed" implementor="#dataFeedService" address="/dataFeed" serviceName="PasswordPolicyService"/>
 
 </beans>

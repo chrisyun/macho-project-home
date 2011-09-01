@@ -68,11 +68,13 @@ public class DataFeedProcessorImpl implements DataFeedProcessor, BeanFactoryAwar
       recordDAO.beginTransaction();
       for (AppRawDataGroup group : groups) {
         for (AppRawDataRecord r : group.getRecords()) {
-        	r.getTimestamp().setSeconds(0);
-        		//存入APP_RAW_DATA表
-            	String finalMetricID = r.getAppName()+"-"+r.getIndexType()+"-"+r.getMetricId();
-            	r.setMetricId(finalMetricID);
-            	recordDAO.save(r);
+          r.getTimestamp().setSeconds(0);
+          // 存入APP_RAW_DATA表
+          // String finalMetricID =
+          // r.getAppName()+"-"+r.getIndexType()+"-"+r.getMetricId();
+          String finalMetricID = r.getMetricId();
+          r.setMetricId(finalMetricID);
+          recordDAO.save(r);
         }
       }
       recordDAO.commit();
@@ -160,13 +162,13 @@ public class DataFeedProcessorImpl implements DataFeedProcessor, BeanFactoryAwar
     public void setType(String type) {
       this.type = type;
     }
-    
+
     public String getMonType() {
-    	return monType;
+      return monType;
     }
-    
+
     public void setMonType(String monType) {
-    	this.monType = monType;
+      this.monType = monType;
     }
 
     public String getServerIP() {

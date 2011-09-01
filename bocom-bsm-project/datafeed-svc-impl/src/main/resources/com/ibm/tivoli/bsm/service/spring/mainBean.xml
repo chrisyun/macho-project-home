@@ -4,6 +4,10 @@
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
+    <import resource="classpath:META-INF/cxf/cxf.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-extension-soap.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
+
 	<bean id="propertyPlaceholderConfigurer" class="com.ibm.tivoli.bsm.util.MyPropertyPlaceholderConfigurer">
 		<!-- Set how to check system properties: as fallback, as override, or never. 
 			The default is "fallback": If not being able to resolve a placeholder with 
@@ -22,10 +26,6 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 				<!-- For testing -->
 				<value>classpath:test/datafeed_svc_config.xml</value>
 				<value>classpath:test/datafeed_svc_config.properties</value>
-
-				<!-- For installation -->
-				<value>file:${user.home}/datafeed_svc_config.xml</value>
-				<value>file:${user.home}/datafeed_svc_config.properties</value>
 
 				<!-- For installation -->
 				<value>file:${user.home}/datafeed_svc_config.xml</value>
@@ -54,5 +54,6 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 		<property name="jdbcUser" value="${datafeed.database.jdbc.username}"></property>
 		<property name="jdbcPassword" value="${datafeed.database.jdbc.password}"></property>
 	</bean>
+  <jaxws:endpoint id="dataFeed" implementor="#dataFeedService" address="/dataFeed" serviceName="DataFeedService"/>
 
 </beans>
