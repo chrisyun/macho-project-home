@@ -11,5 +11,5 @@ rem set suffix=%current%.%hh%%mm%%ss%
 rem echo %suffix%
 rem ren C:\icbc-probe icbc-probe.%current%.%hh%%mm%%ss%
 
-regedit /s c:\icbc-probe\bin\apache.reg >> c:\icbc-probe\logs\install.log
-regedit /s c:\icbc-probe\bin\tomcat.reg >> c:\icbc-probe\logs\install.log
+rem regedit /s c:\icbc-probe\bin\apache.reg >> c:\icbc-probe\logs\install.log
+rem regedit /s c:\icbc-probe\bin\tomcat.reg >> c:\icbc-probe\logs\install.log
