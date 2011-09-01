@@ -53,7 +53,7 @@ where
 create or replace view v_user_pwd_policy as 
 select   
     oc.EID as eid,  
-    principalName.principalName as username,
+    lower(principalName.principalName) as username,
     user_cn.cn as cn,
     secHasPolicy.secHasPolicy as HasPolicy,  -- 1 means has policy 
     secPwdLastChanged.secPwdLastChanged as PwdLastChanged,  
@@ -105,7 +105,8 @@ where
 -- ;
 
 ------------------------------------------------------------------------------------------------------------------
-create or replace view v_tamldap_user as
+drop view v_tamldap_user;
+create view v_tamldap_user as
 select   
     eid as eid,  
     lower(username) as uid,
