@@ -24,5 +24,5 @@ public interface DataFeedService {
    * @param xml
    * @return
    */
-  public abstract DataFeedResponse submitXMLData(String xml);
+  //public abstract DataFeedResponse submitXMLData(String xml);
 }
