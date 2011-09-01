@@ -59,116 +59,6 @@ Section -post SEC0001
     WriteRegDWORD HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     
-    ; Processing [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tomcat6]
-    WriteRegDWORD HKEY_LOCAL_MACHINE SYSTEM\CurrentControlSet\Services\Tomcat6 Type 16
-    WriteRegDWORD HKEY_LOCAL_MACHINE SYSTEM\CurrentControlSet\Services\Tomcat6 Start 2
-    WriteRegDWORD HKEY_LOCAL_MACHINE SYSTEM\CurrentControlSet\Services\Tomcat6 ErrorControl 1
-    WriteRegStr HKEY_LOCAL_MACHINE SYSTEM\CurrentControlSet\Services\Tomcat6 ImagePath "C:\icbc-probe\bin\icbcprobe.exe //RS//Tomcat6"
-    WriteRegStr HKEY_LOCAL_MACHINE SYSTEM\CurrentControlSet\Services\Tomcat6 DisplayName "ICBC Probe Client"
-    WriteRegStr HKEY_LOCAL_MACHINE SYSTEM\CurrentControlSet\Services\Tomcat6 ObjectName LocalSystem
-    WriteRegStr HKEY_LOCAL_MACHINE SYSTEM\CurrentControlSet\Services\Tomcat6 Description "ICBC Probe Client"
-    
-    ; Processing [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tomcat6\Parameters]
-    Push $0
-    Push $1
-    ;HKEY_LOCAL_MACHINE = 0xffffffff80000002, REG_CREATE_SUBKEY = 0x0004
-    System::Call /NOUNLOAD "Advapi32::RegCreateKeyExA(i, t, i, t, i, i, i, *i, i) i(0xffffffff80000002, 'SYSTEM\CurrentControlSet\Services\Tomcat6\Parameters', 0, '', 0, 0x0004, 0, .r0, 0) .r1"
-    StrCmp $1 0 +2
-    SetErrors
-    StrCmp $0 0 +2
-    System::Call /NOUNLOAD "Advapi32::RegCloseKey(i) i(r0) .r1"
-    System::Free 0
-    Pop $1
-    Pop $0
-    
-    ; Processing [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tomcat6\Security]
-    WriteRegBin HKEY_LOCAL_MACHINE SYSTEM\CurrentControlSet\Services\Tomcat6\Security Security 01001480900000009c000000140000003000000002001c000100000002801400ff010f00010100000000000100000000020060000400000000001400fd01020001010000000000051200000000001800ff010f0001020000000000052000000020020000000014008d01020001010000000000050b00000000001800fd01020001020000000000052000000023020000010100000000000512000000010100000000000512000000
-    
-    ; Processing [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tomcat6\Enum]
-    WriteRegStr HKEY_LOCAL_MACHINE SYSTEM\CurrentControlSet\Services\Tomcat6\Enum 0 Root\LEGACY_TOMCAT6\0000
-    WriteRegDWORD HKEY_LOCAL_MACHINE SYSTEM\CurrentControlSet\Services\Tomcat6\Enum Count 1
-    WriteRegDWORD HKEY_LOCAL_MACHINE SYSTEM\CurrentControlSet\Services\Tomcat6\Enum NextInstance 1
-    
-    ; Processing [HKEY_LOCAL_MACHINE\SOFTWARE\Apache Software Foundation]
-    Push $0
-    Push $1
-    ;HKEY_LOCAL_MACHINE = 0xffffffff80000002, REG_CREATE_SUBKEY = 0x0004
-    System::Call /NOUNLOAD "Advapi32::RegCreateKeyExA(i, t, i, t, i, i, i, *i, i) i(0xffffffff80000002, 'SOFTWARE\Apache Software Foundation', 0, '', 0, 0x0004, 0, .r0, 0) .r1"
-    StrCmp $1 0 +2
-    SetErrors
-    StrCmp $0 0 +2
-    System::Call /NOUNLOAD "Advapi32::RegCloseKey(i) i(r0) .r1"
-    System::Free 0
-    Pop $1
-    Pop $0
-    
-    ; Processing [HKEY_LOCAL_MACHINE\SOFTWARE\Apache Software Foundation\Procrun 2.0]
-    Push $0
-    Push $1
-    ;HKEY_LOCAL_MACHINE = 0xffffffff80000002, REG_CREATE_SUBKEY = 0x0004
-    System::Call /NOUNLOAD "Advapi32::RegCreateKeyExA(i, t, i, t, i, i, i, *i, i) i(0xffffffff80000002, 'SOFTWARE\Apache Software Foundation\Procrun 2.0', 0, '', 0, 0x0004, 0, .r0, 0) .r1"
-    StrCmp $1 0 +2
-    SetErrors
-    StrCmp $0 0 +2
-    System::Call /NOUNLOAD "Advapi32::RegCloseKey(i) i(r0) .r1"
-    System::Free 0
-    Pop $1
-    Pop $0
-    
-    ; Processing [HKEY_LOCAL_MACHINE\SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6]
-    Push $0
-    Push $1
-    ;HKEY_LOCAL_MACHINE = 0xffffffff80000002, REG_CREATE_SUBKEY = 0x0004
-    System::Call /NOUNLOAD "Advapi32::RegCreateKeyExA(i, t, i, t, i, i, i, *i, i) i(0xffffffff80000002, 'SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6', 0, '', 0, 0x0004, 0, .r0, 0) .r1"
-    StrCmp $1 0 +2
-    SetErrors
-    StrCmp $0 0 +2
-    System::Call /NOUNLOAD "Advapi32::RegCloseKey(i) i(r0) .r1"
-    System::Free 0
-    Pop $1
-    Pop $0
-    
-    ; Processing [HKEY_LOCAL_MACHINE\SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters]
-    Push $0
-    Push $1
-    ;HKEY_LOCAL_MACHINE = 0xffffffff80000002, REG_CREATE_SUBKEY = 0x0004
-    System::Call /NOUNLOAD "Advapi32::RegCreateKeyExA(i, t, i, t, i, i, i, *i, i) i(0xffffffff80000002, 'SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters', 0, '', 0, 0x0004, 0, .r0, 0) .r1"
-    StrCmp $1 0 +2
-    SetErrors
-    StrCmp $0 0 +2
-    System::Call /NOUNLOAD "Advapi32::RegCloseKey(i) i(r0) .r1"
-    System::Free 0
-    Pop $1
-    Pop $0
-    
-    ; Processing [HKEY_LOCAL_MACHINE\SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Java]
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Java" Jvm C:\icbc-probe\java\jre\bin\client\jvm.dll
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Java" Classpath C:\icbc-probe\bin\bootstrap.jar
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Java" Options "-Dcatalina.home=C:\icbc-probe -Dcatalina.base=C:\icbc-probe -Djava.endorsed.dirs=C:\icbc-probe\endorsed -Djava.io.tmpdir=C:\icbc-probe\temp -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=C:\icbc-probe\conf\logging.properties"
-    WriteRegDWORD HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Java" JvmMs 0
-    WriteRegDWORD HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Java" JvmMx 0
-    WriteRegDWORD HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Java" JvmSs 0
-    
-    ; Processing [HKEY_LOCAL_MACHINE\SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Log]
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Log" Path C:\icbc-probe\logs
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Log" StdError auto
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Log" StdOutput auto
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Log" Level Info
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Log" Prefix probe_service_
-    
-    ; Processing [HKEY_LOCAL_MACHINE\SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Start]
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Start" WorkingPath C:\icbc-probe
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Start" Class org.apache.catalina.startup.Bootstrap
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Start" Params start
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Start" Mode jvm
-    
-    ; Processing [HKEY_LOCAL_MACHINE\SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Stop]
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Stop" WorkingPath C:\icbc-probe
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Stop" Class org.apache.catalina.startup.Bootstrap
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Stop" Params stop
-    WriteRegStr HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Stop" Mode jvm
-    WriteRegDWORD HKEY_LOCAL_MACHINE "SOFTWARE\Apache Software Foundation\Procrun 2.0\Tomcat6\Parameters\Stop" Timeout 0
-    
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -203,17 +93,22 @@ SectionEnd
 
 # Installer functions
 Function .onInstSuccess
-    Exec $\"C:\icbc-probe\bin\post_inst.bat$\"
-    
-    # Alert and reboot
-    MessageBox MB_YESNO|MB_ICONQUESTION|MB_TOPMOST "ÇëÁ¢¼´ÖØÐÂÆô¶¯ÏµÍ³, È·±£°²×°³ÌÐòÄÜ¹»ÕýÈ·Íê³É!" IDNO +2
+    #Exec $\"C:\icbc-probe\bin\post_inst.bat$\"
+    Exec 'regedit /s c:\icbc-probe\bin\install.reg'
+    MessageBox MB_YESNO|MB_ICONQUESTION|MB_TOPMOST "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³, È·ï¿½ï¿½ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½!" IDNO +2
     Reboot
 FunctionEnd
 
 Function .onInit
     InitPluginsDir
     StrCpy $StartMenuGroup "ICBC HTTP DNS Probe V2"
-    Exec $\"C:\icbc-probe\bin\uninst_v1.bat$\"
+    #Exec $\"net stop Tomcat6$\"
+    #Exec $\"net stop Tomcat6$\"
+    Exec 'net stop Tomcat6'
+    #DetailPrint "Waiting ..."
+    #Sleep 3000
+    RMDir /r C:\icbc-probe.uninstalled
+    Rename C:\icbc-probe C:\icbc-probe.uninstalled
 FunctionEnd
 
 # Uninstaller functions

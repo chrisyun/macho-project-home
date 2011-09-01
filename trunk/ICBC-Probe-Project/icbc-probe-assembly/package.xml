@@ -26,6 +26,15 @@
       </includes>
       <fileMode>755</fileMode>
     </fileSet>
+    <!-- Pack JDK -->
+    <fileSet>
+      <directory>src/main/resources/JDK1.6.0_18</directory>
+      <outputDirectory>/java</outputDirectory>
+      <includes>
+        <include>**</include>
+      </includes>
+      <fileMode>755</fileMode>
+    </fileSet>
     <!-- Pack Runtime -->
     <fileSet>
       <directory>src/main/resources/runtime</directory>
