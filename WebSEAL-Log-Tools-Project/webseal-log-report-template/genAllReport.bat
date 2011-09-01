@@ -11,7 +11,7 @@ set DAY_OF_MONTH=%date:~8,2%
 
 call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/pwd_exipired_time.%REPORT_FORMAT% -F %REPORT_HOME%/pwd_policy/pwd_expired_time.rptdesign
 
-call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/pwd_exipired_time.%REPORT_FORMAT% -F %REPORT_HOME%/user_login/user_login_last_time.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/user_login_last_time.%REPORT_FORMAT% -F %REPORT_HOME%/user_login/user_login_last_time.rptdesign
 
 call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/year_report_by_app.%REPORT_FORMAT% -F %REPORT_HOME%/app_login/year_report_by_app.rptdesign
 call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/year_report_by_network.%REPORT_FORMAT% -F %REPORT_HOME%/app_login/year_report_by_net.rptdesign
