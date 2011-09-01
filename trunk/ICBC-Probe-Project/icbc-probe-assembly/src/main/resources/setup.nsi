@@ -19,7 +19,7 @@ Var StartMenuGroup
 Page instfiles
 
 # Installer attributes
-OutFile setup.exe
+OutFile e:\temp\setup.exe
 InstallDir c:\icbc-probe
 CRCCheck on
 XPStyle on
