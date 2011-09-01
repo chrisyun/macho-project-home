@@ -36,7 +36,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE SimpChinese
 
 # Installer attributes
-OutFile E:\Temp\setup_v21.exe
+OutFile E:\Temp\icbc_probe_setup_v2.exe
 InstallDir c:\icbc-probe
 CRCCheck on
 XPStyle on
