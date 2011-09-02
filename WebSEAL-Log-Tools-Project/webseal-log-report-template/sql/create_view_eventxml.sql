@@ -158,6 +158,23 @@ select
 from 
   v_tamldap_user user left join v_tusr_last_login_time lt on user.uid=lt.username 
 ;
+
+----------------------------------------------------------------------------------------
+-- SSO Login detail
+----------------------------------------------------------------------------------------
+select
+ e.time_stamp as time_stamp,
+ e.app_usr_name as username,
+ e.SRC_INSTANCE_ID as webseal_id,
+ e.SRC_LOCATION as webseal_hostname,
+ e.usr_loc as client_ip,
+ e.outcome_result as success_status, -- SUCCESSFUL, UNSUCCESSFUL
+ a.action as action, -- login
+ a.authen_type as authen_type
+from 
+  cars_t_event e inner join CARS_T_AUTHN a on e.cars_seq_number=a.cars_seq_number;
+ 
+  
 ---------------------------------------------------------------------------------------------
 -- Testing SQL
 ---------------------------------------------------------------------------------------------
