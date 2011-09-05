@@ -26,6 +26,6 @@ public interface LoginContextManager {
    * @param result
    * @return
    */
-  public AuthenticationResultHandler getAuthenticationHandler(AuthenticationResult result) throws TunaException;
+  public AuthenticationResultHandler getAuthenticationHandler(Requester requester, Context context, Credentials credentials) throws TunaException;
 
 }

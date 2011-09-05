@@ -138,4 +138,14 @@ public class AuthenticationResult {
     this.nonce = nonce;
   }
 
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    final int maxLen = 100;
+    return String.format("AuthenticationResult [status=%s, issuer=%s, subjects=%s, attributeStatement=%s, timestamp=%s, nonce=%s]", status, issuer,
+        subjects != null ? subjects.subList(0, Math.min(subjects.size(), maxLen)) : null, attributeStatement, timestamp, nonce);
+  }
+
 }

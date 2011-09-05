@@ -38,4 +38,13 @@ public class Credentials {
     this.credentials = credentials;
   }
 
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    final int maxLen = 100;
+    return String.format("Credentials [credentials=%s]", credentials != null ? credentials.subList(0, Math.min(credentials.size(), maxLen)) : null);
+  }
+
 }

@@ -55,4 +55,12 @@ public class UserSubject {
     this.nameID = nameID;
   }
 
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    return String.format("UserSubject [format=%s, nameID=%s]", format, nameID);
+  }
+
 }

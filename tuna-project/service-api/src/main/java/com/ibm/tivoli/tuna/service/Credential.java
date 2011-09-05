@@ -93,5 +93,13 @@ public class Credential {
     this.valueAsString = valueAsString;
   }
 
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    return String.format("Credential [type=%s, format=%s, encode=%s, valueAsString=%s]", type, format, encode, valueAsString);
+  }
+
   
 }

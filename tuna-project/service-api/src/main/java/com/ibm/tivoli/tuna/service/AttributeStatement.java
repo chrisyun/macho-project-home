@@ -35,4 +35,13 @@ public class AttributeStatement {
     this.attributes = attributes;
   }
 
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    final int maxLen = 100;
+    return String.format("AttributeStatement [attributes=%s]", attributes != null ? attributes.subList(0, Math.min(attributes.size(), maxLen)) : null);
+  }
+
 }
