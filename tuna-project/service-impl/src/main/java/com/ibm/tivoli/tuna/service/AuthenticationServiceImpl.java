@@ -29,14 +29,14 @@ public class AuthenticationServiceImpl implements AuthenticationService {
   /**
    * @return the loginContextManager
    */
-  public LoginContextManager getLoginContextConfigManager() {
+  public LoginContextManager getLoginContextManager() {
     return loginContextManager;
   }
 
   /**
    * @param loginContextManager the loginContextManager to set
    */
-  public void setLoginContextConfigManager(LoginContextManager loginContextManager) {
+  public void setLoginContextManager(LoginContextManager loginContextManager) {
     this.loginContextManager = loginContextManager;
   }
 
@@ -50,15 +50,15 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     try {
       lc = this.loginContextManager.getLoginContext(requester, context, credentials);
     } catch (TunaException e) {
-      log.error("Cannot create LoginContext. " + e.getMessage());
+      log.error("Cannot create LoginContext. " + e.getMessage(), e);
       AuthenticationResult result = new AuthenticationResult(new Status("failure", e.getMessage()), issuer);
       return result;
     } catch (SecurityException e) {
-      log.error("Cannot create LoginContext. " + e.getMessage());
+      log.error("Cannot create LoginContext. " + e.getMessage(), e);
       AuthenticationResult result = new AuthenticationResult(new Status("failure", e.getMessage()), issuer);
       return result;
     } catch (Throwable e) {
-      log.error("Cannot create LoginContext. " + e.getMessage());
+      log.error("Cannot create LoginContext. " + e.getMessage(), e);
       AuthenticationResult result = new AuthenticationResult(new Status("failure", e.getMessage()), issuer);
       return result;
     }
@@ -71,7 +71,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
       // if we return with no exception, authentication succeeded
       AuthenticationResult result = new AuthenticationResult(new Status("success", "success"), issuer);
       
-      AuthenticationResultHandler resultHandler = this.loginContextManager.getAuthenticationHandler(result);
+      AuthenticationResultHandler resultHandler = this.loginContextManager.getAuthenticationHandler(requester, context, credentials);
       // Retrieve user info and fill into result.
       resultHandler.fullfill(lc, result);
       return result;

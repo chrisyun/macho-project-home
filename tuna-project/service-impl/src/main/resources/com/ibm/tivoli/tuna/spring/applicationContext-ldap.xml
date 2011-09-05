@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+  xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<!-- Ldap数据源 -->
+	<bean id="contextSourceTarget" class="org.springframework.ldap.core.support.LdapContextSource">
+		<property name="url" value="${login.module.LDAP.url}" />
+		<property name="userDn" value="${login.module.LDAP.user}" />
+		<property name="password" value="${login.module.LDAP.password}" />
+		<property name="pooled" value="${login.module.LDAP.pooled}" />
+	</bean>
+	<bean id="contextSource" class="org.springframework.ldap.pool.factory.MutablePoolingContextSource">
+		<property name="contextSource" ref="contextSourceTarget" />
+		<property name="maxTotal" value="${login.module.LDAP.maxTotal}" />
+	</bean>
+	<bean id="ldapTemplate" class="org.springframework.ldap.core.LdapTemplate">
+		<constructor-arg ref="contextSource" />
+	</bean>
+	
+	<!-- ldapDaoService -->
+	<bean id="ldapDaoService" class="com.ibm.tivoli.tuna.jaas.ldap.dao.LdapServiceDao">
+		<property name="ldapTemplate" ref="ldapTemplate" />
+		<property name="baseDN" value="${login.module.LDAP.baseDN}" />
+		<property name="userFields" value="${login.module.LDAP.userFields}" />
+	</bean>
+	
+</beans>
