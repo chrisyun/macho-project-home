@@ -80,7 +80,7 @@ from
                      left join TIMLDAP.UID uid on le.eid=uid.eid
                      left join TIMLDAP.CN cn on le.eid=cn.eid
                      left join TIMLDAP.ERPERSONSTATUS status on le.eid=status.eid
-left join TIMLDAP.O o on le.eid=o.eid
+					 left join TIMLDAP.O o on le.eid=o.eid
                      left join TIMLDAP.OU ou on le.eid=ou.eid
                      left join TIMLDAP.ERCREATEDATE cdate on le.eid=cdate.eid
                      left join TIMLDAP.TKOAORGCODEPATH oaorgcodepath on le.eid=oaorgcodepath.eid
