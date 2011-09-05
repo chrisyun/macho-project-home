@@ -10,6 +10,8 @@
   	<module>service-api</module>
   	<module>service-impl</module>
   	<module>service-web</module>
+  	<module>service-module-ldap</module>
+  	<module>service-module-ltpa</module>
   </modules>
   
   <properties>
