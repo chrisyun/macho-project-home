@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>-- Properties --</comment>
+	
+	<!--  For LDAP Login Module -->
+	<entry key="login.module.LDAP.url">ldap://10.246.1.151:389</entry>
+	<entry key="login.module.LDAP.user">cn=root</entry>
+	<entry key="login.module.LDAP.password">passw0rd</entry>
+	<entry key="login.module.LDAP.pooled">true</entry>
+	<entry key="login.module.LDAP.maxTotal">100</entry>
+
+	<entry key="login.module.LDAP.baseDN"></entry>
+	<entry key="login.module.LDAP.userFields">uid,employeenumber,cn,sn,cuentrystatus,givenname,displayname,o,cucompanynumber,ou,departmentnumber,mail,telephonenumber,mobile,managername,cumanagernumber,cuorder,cugender,cuposition,cupositionnumber,cupluralityoname,cupluralityonumber,cupluralitydname,cupluralitydnumber,cupluralitypname,cupluralitypnumber,cupluralitytitle,cupluralitytitlenumber,cupluralitydorder,cutransferstatus,cutransferoname,cutransferonumber,cutransferdname,cutransferdnumber,cutransferdorder,cutransferpname,cutransferpnumber,cutransfertitle,cutransfertitlenumber,cuemployeelevel,cuidentitynumber,title,cutitlenumber,cuallowshow,custarttime,cuendtime,employeetype,cumail,cuuserrole,curesource,cuarea,pinyinname,deptname,deptnumber</entry>
+
+
+</properties>
