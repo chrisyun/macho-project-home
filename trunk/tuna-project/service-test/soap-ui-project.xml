@@ -134,6 +134,10 @@
                <name>LoginModuleName</name>
                <value>LDAP-SIMPLE</value>
             </parameter>
+           <parameter>
+               <name>LDAP.SERVER</name>
+               <value>LDAP-SIMPLE</value>
+            </parameter>
          </context>
          <credentials>
             <!--Zero or more repetitions:-->
@@ -160,6 +164,10 @@
             <principal>
                <type>application</type>
                <name>Application1</name>
+            </principal>
+            <principal>
+               <type>arch</type>
+               <name>B/S</name>
             </principal>
          </requester>
          <context>
