@@ -55,4 +55,12 @@ public class Status {
     this.message = message;
   }
 
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    return String.format("Status [code=%s, message=%s]", code, message);
+  }
+
 }

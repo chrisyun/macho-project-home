@@ -90,4 +90,13 @@ public class Attribute {
     this.values = values;
   }
 
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    final int maxLen = 100;
+    return String.format("Attribute [name=%s, format=%s, values=%s]", name, format, values != null ? values.subList(0, Math.min(values.size(), maxLen)) : null);
+  }
+
 }

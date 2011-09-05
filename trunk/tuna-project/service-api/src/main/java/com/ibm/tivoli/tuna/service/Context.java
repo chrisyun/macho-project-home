@@ -50,4 +50,13 @@ public class Context {
     return null;
   }
 
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    final int maxLen = 100;
+    return String.format("Context [parameters=%s]", parameters != null ? parameters.subList(0, Math.min(parameters.size(), maxLen)) : null);
+  }
+
 }

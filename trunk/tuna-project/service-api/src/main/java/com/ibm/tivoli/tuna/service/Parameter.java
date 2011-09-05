@@ -64,4 +64,14 @@ public class Parameter {
     this.values = values;
   }
 
+
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    final int maxLen = 100;
+    return String.format("Parameter [name=%s, values=%s]", name, values != null ? values.subList(0, Math.min(values.size(), maxLen)) : null);
+  }
+
 }
