@@ -5,10 +5,6 @@
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
-	<import resource="classpath:META-INF/cxf/cxf.xml" />
-	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
-	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
-
 	<bean id="propertyPlaceholderConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<!-- Set how to check system properties: as fallback, as override, or never. 
@@ -28,14 +24,110 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 			</list>
 		</property>
 	</bean>
-	
-	<bean id="loginContextConfigurationManager" class="com.ibm.tivoli.tuna.config.FileLoginContextConfigurationManager">
-	  <property name="configFile" value="c:/users/ibm_admin/workspace/tuna-project/service-impl/src/test/resources/sample_jaas.config"></property>
+
+	<bean id="jaasConfiguration" class="com.ibm.tivoli.tuna.config.XMLConfiguration">
+		<constructor-arg>
+			<value type="java.lang.String">
+			<![CDATA[
+				<list>
+				  <!-- LDAP Login Module -->
+          <loginContext>
+            <name>LDAP-SIMPLE</name>
+            <callbackHandlerClass>com.ibm.tivoli.tuna.jaas.NamePasswordCallbackHandler</callbackHandlerClass>
+            <resultHandlerClass>com.ibm.tivoli.tuna.jaas.ldap.LdapAuthenticationResultHandler</resultHandlerClass>
+            <loginModules>
+              <loginModule>
+                <loginModuleClass>com.ibm.tivoli.tuna.jaas.ldap.LdapLoginModule</loginModuleClass>
+                <moduleFlag>REQUIRED</moduleFlag>
+                <moduleOptions>
+                  <moduleOption>
+                    <name>debug</name>
+                    <value>true</value>
+                  </moduleOption>
+                  <moduleOption>
+                    <name>ldapDaoBeanName</name>
+                    <value>ldapDaoService</value>
+                  </moduleOption>
+                </moduleOptions>
+              </loginModule>
+            </loginModules>
+          </loginContext>
+          
+          <!-- LTPA Login Module -->
+          <loginContext>
+            <name>LTPA-CRED</name>
+            <callbackHandlerClass>com.ibm.tivoli.tuna.module.ltpa.LtpaTokenCallbackHandler</callbackHandlerClass>
+            <resultHandlerClass>com.ibm.tivoli.tuna.jaas.sample.SampleResultHandler</resultHandlerClass>
+            <loginModules>
+              <loginModule>
+                <loginModuleClass>com.ibm.tivoli.tuna.module.ltpa.LTPALoginModule</loginModuleClass>
+                <moduleFlag>REQUIRED</moduleFlag>
+                <moduleOptions>
+                  <moduleOption>
+                    <name>debug</name>
+                    <value>true</value>
+                  </moduleOption>
+                  <moduleOption>
+                    <name>ltpa3DESKey</name>
+                    <value>n348FEYD96hB0bjV6i2rX+21lDCvT5DQWFNxYMEpC10=</value>
+                  </moduleOption>
+                  <moduleOption>
+                    <name>ltpaPassword</name>
+                    <value>passw0rd</value>
+                  </moduleOption>
+                </moduleOptions>
+              </loginModule>
+            </loginModules>
+          </loginContext>
+
+          <!-- Sample Login Module -->
+ 				  <loginContext>
+				    <name>SAMPLE</name>
+            <callbackHandlerClass>com.ibm.tivoli.tuna.jaas.NamePasswordCallbackHandler</callbackHandlerClass>
+            <resultHandlerClass>com.ibm.tivoli.tuna.jaas.sample.SampleResultHandler</resultHandlerClass>
+				    <loginModules>
+				      <loginModule>
+				        <loginModuleClass>com.ibm.tivoli.tuna.jaas.sample.SampleLoginModule</loginModuleClass>
+				        <moduleFlag>REQUIRED</moduleFlag>
+				        <moduleOptions>
+				          <moduleOption>
+				            <name>debug</name>
+				            <value>true</value>
+				          </moduleOption>
+				          <moduleOption>
+				            <name>server</name>
+				            <value>1.2.3.4</value>
+				          </moduleOption>
+				        </moduleOptions>
+				      </loginModule>
+				      <loginModule>
+                <loginModuleClass>com.ibm.tivoli.tuna.jaas.sample.SampleLoginModule</loginModuleClass>
+				        <moduleFlag>REQUIRED</moduleFlag>
+				        <moduleOptions>
+				          <moduleOption>
+				            <name>debug</name>
+				            <value>true</value>
+				          </moduleOption>
+				          <moduleOption>
+				            <name>server</name>
+				            <value>1.2.3.4</value>
+				          </moduleOption>
+				        </moduleOptions>
+				      </loginModule>
+				    </loginModules>
+				  </loginContext>
+				</list>
+				]]>
+			</value>
+		</constructor-arg>
+	</bean>
+
+	<bean id="loginContextManager" class="com.ibm.tivoli.tuna.config.LoginContextManagerImpl">
+		<property name="configuration" ref="jaasConfiguration"></property>
 	</bean>
 
 	<bean id="authenticationServiceBean" class="com.ibm.tivoli.tuna.service.AuthenticationServiceImpl">
-	  <property name="loginContextConfigManager" ref="loginContextConfigurationManager"></property>
+		<property name="loginContextManager" ref="loginContextManager"></property>
 	</bean>
-  <jaxws:endpoint id="authenticationService" implementor="#authenticationServiceBean" address="/authentication" serviceName="AuthenticationService"></jaxws:endpoint>
 </beans>
 

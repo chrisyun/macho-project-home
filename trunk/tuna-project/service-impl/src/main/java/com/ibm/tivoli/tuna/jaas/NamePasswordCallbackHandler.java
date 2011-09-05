@@ -13,11 +13,14 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.ibm.tivoli.tuna.service.Context;
+import com.ibm.tivoli.tuna.service.ContextAware;
 import com.ibm.tivoli.tuna.service.Credential;
 import com.ibm.tivoli.tuna.service.Credentials;
+import com.ibm.tivoli.tuna.service.CredentialsAware;
 import com.ibm.tivoli.tuna.service.Requester;
+import com.ibm.tivoli.tuna.service.RequesterAware;
 
-public class NamePasswordCallbackHandler implements CallbackHandler {
+public class NamePasswordCallbackHandler implements CallbackHandler, RequesterAware, ContextAware, CredentialsAware {
   
   private static Log log = LogFactory.getLog(NamePasswordCallbackHandler.class);
   
