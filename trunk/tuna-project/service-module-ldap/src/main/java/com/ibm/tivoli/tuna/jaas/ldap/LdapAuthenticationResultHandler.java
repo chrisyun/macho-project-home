@@ -20,7 +20,7 @@ public class LdapAuthenticationResultHandler implements AuthenticationResultHand
   /**
    * 
    */
-  private String ldapDaoBeanName = "ldapServiceDao";
+  private String ldapDaoBeanName = "ldapDaoService";
 
   public LdapAuthenticationResultHandler() {
     super();
@@ -77,7 +77,7 @@ public class LdapAuthenticationResultHandler implements AuthenticationResultHand
    * @see org.springframework.context.ApplicationContextAware#setApplicationContext(org.springframework.context.ApplicationContext)
    */
   public void setApplicationContext(ApplicationContext arg0) throws BeansException {
-    this.applicationContext  = applicationContext;    
+    this.applicationContext  = arg0;    
   }
 
 }
