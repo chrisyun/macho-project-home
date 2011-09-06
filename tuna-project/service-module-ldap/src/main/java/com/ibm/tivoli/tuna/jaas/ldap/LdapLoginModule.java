@@ -40,7 +40,6 @@
 
 package com.ibm.tivoli.tuna.jaas.ldap;
 
-import java.util.List;
 import java.util.Map;
 
 import javax.security.auth.Subject;
@@ -63,8 +62,7 @@ import org.springframework.dao.IncorrectResultSizeDataAccessException;
 
 import com.ibm.tivoli.tuna.jaas.NamePrincipal;
 import com.ibm.tivoli.tuna.jaas.ldap.dao.LdapServiceDao;
-import com.ibm.tivoli.tuna.service.Attribute;
-import com.ibm.tivoli.tuna.service.AttributeStatement;
+import com.ibm.tivoli.tuna.jaas.ldap.util.StringUtil;
 
 /**
  * <p>
@@ -196,52 +194,37 @@ public class LdapLoginModule<E> implements LoginModule, ApplicationContextAware 
     }
 
     // print debugging information
-    if (debug) {
-      log.info("\t\t[LdapLoginModule] " + "user entered user name: " + username);
-      log.info("\t\t[LdapLoginModule] " + "user entered password: ");
-    }
+     log.debug("\t\t[LdapLoginModule] " + "user entered user name: " + username);
+     log.debug("\t\t[LdapLoginModule] " + "user entered password: ");
 
     // verify the username/password
     //LdapServiceDao ldapService = new LdapServiceDao();
     boolean usernameCorrect = false;
-    boolean passwordCorrect = false;
-    
     try {
-      LdapServiceDao ldapService = (LdapServiceDao)this.applicationContext.getBean(this.ldapDaoBeanName);
-    	AttributeStatement attrState = ldapService.searchUserDNandPwdByAccount(username);
-    	List<Attribute> attrList = attrState.getAttributes();
-    	for (Attribute attr : attrList) {
-    		if("userpassword".equals(attr.getName().toLowerCase()) 
-    				&& password.toString().equals(attr.getValues().get(0))) {
-    			passwordCorrect = true;
-    			
-    			if (debug)
-    		        log.info("\t\t[LdapLoginModule] " + "authentication succeeded");
-    			
-    		} else if("userdn".equals(attr.getName().toLowerCase())) {
-    			usernameCorrect = true;
-    			
-    			UserDNPrincipal userDNPrincipal = new UserDNPrincipal(attr.getValues().get(0));
-    		    if (!subject.getPrincipals().contains(userDNPrincipal))
-    		        subject.getPrincipals().add(userDNPrincipal);
-    		}
+    	LdapServiceDao ldapService = (LdapServiceDao)this.applicationContext.getBean(this.ldapDaoBeanName);
+    	
+    	String userDn = ldapService.searchUserDNByAccount(username);
+    	if(!StringUtil.isNull(userDn)) {
+    		usernameCorrect = true;
     		
+    		//密码出错在异常中处理
+    		ldapService.authenticateUser(userDn, password);
+    		
+    		UserDNPrincipal userDNPrincipal = new UserDNPrincipal(userDn);
+		    if (!subject.getPrincipals().contains(userDNPrincipal))
+		        subject.getPrincipals().add(userDNPrincipal);
+		    
+		    log.debug("\t\t[LdapLoginModule] " + "authentication succeeded");
     	}
     	
-    	if(!usernameCorrect || !passwordCorrect) {
-       	 	if (debug)
-       	        log.info("\t\t[LdapLoginModule] " + "authentication failed");
-       	 	succeeded = false;
-       	 	username = null;
-       	 	for (int i = 0; i < password.length; i++)
-       	 		password[i] = ' ';
-       	 	password = null;
-       }
-       
        if(!usernameCorrect) {
+    	   	log.debug("\t\t[LdapLoginModule] " + "authentication failed");
+      	 	succeeded = false;
+      	 	username = null;
+      	 	for (int i = 0; i < password.length; i++)
+      	 		password[i] = ' ';
+      	 	password = null;
     	   throw new FailedLoginException("UserName Incorrect");
-       } else if(!passwordCorrect) {
-    	   throw new FailedLoginException("Password Incorrect");
        } else {
     	   succeeded = true;
     	   return true;
@@ -253,7 +236,10 @@ public class LdapLoginModule<E> implements LoginModule, ApplicationContextAware 
 	} catch(IncorrectResultSizeDataAccessException e){
 		succeeded = false;
 		throw new FailedLoginException("user found multi");
-	}
+	} catch (Exception e) {
+		succeeded = false;
+		throw new FailedLoginException("password is wrong");
+	} 
     
     
   }
@@ -292,9 +278,7 @@ public class LdapLoginModule<E> implements LoginModule, ApplicationContextAware 
       if (!subject.getPrincipals().contains(userPrincipal))
         subject.getPrincipals().add(userPrincipal);
 
-      if (debug) {
-        log.info("\t\t[LdapLoginModule] " + "added NamePrincipal to Subject");
-      }
+      log.debug("\t\t[LdapLoginModule] " + "added NamePrincipal to Subject");
 
       // in any case, clean out state
       username = null;
