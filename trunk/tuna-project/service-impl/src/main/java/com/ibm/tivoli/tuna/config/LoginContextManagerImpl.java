@@ -124,6 +124,10 @@ public class LoginContextManagerImpl implements LoginContextManager, Application
             ((CredentialsAware)handler).setCredentials(credentials);
             log.debug(String.format("CredentialsAware, set credentials: [%s]", credentials));       
           }
+          if (handler instanceof ApplicationContextAware) {
+              ((ApplicationContextAware)handler).setApplicationContext(this.applicationContext);
+              log.debug(String.format("ApplicationContextAware, set credentials: [%s]", credentials)); 
+           }
        }
        return handler;
     }
