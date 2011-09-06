@@ -22,6 +22,7 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 	<!-- ldapDaoService -->
 	<bean id="ldapDaoService" class="com.ibm.tivoli.tuna.jaas.ldap.dao.LdapServiceDao">
 		<property name="ldapTemplate" ref="ldapTemplate" />
+		<property name="contextSource" ref="contextSourceTarget"/>
 		<property name="baseDN" value="${login.module.LDAP.baseDN}" />
 		<property name="userFields" value="${login.module.LDAP.userFields}" />
 	</bean>
