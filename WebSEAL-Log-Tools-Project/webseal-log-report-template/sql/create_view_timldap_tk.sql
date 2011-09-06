@@ -41,6 +41,26 @@ select
     owner.OWNER as person_dn, -- 帐号所属的人员的DN
     app_map.app_name as app_name
 from
+    ERUID eu inner join OBJECTCLASS oc on eu.eid=oc.eid
+                     inner join app_acct_objectclass_map app_map on app_map.objectclass=oc.objectclass
+                     left join OWNER owner on eu.eid=owner.eid
+                     left join ERACCOUNTSTATUS status on eu.eid=status.eid
+                     left join cn cn on eu.eid=cn.eid
+                     left join erlaststatuschangedate on eu.eid=erlaststatuschangedate.eid
+                     left join ldap_entry entry on eu.eid=entry.eid
+;
+
+/*create view v_account as
+select
+    oc.EID,
+    eu.eruid uid, -- 帐号的UID
+    cn.cn as cn, -- 帐号的姓名
+    default_status(status.eraccountstatus) as status, -- 帐号的状态1表示禁用, 0表示启用
+    erlaststatuschangedate.ERLASTSTATUSCHAN, -- 表示帐号状态的变更日期
+    entry.create_timestamp as createTimestamp, -- 帐号创建时间
+    owner.OWNER as person_dn, -- 帐号所属的人员的DN
+    app_map.app_name as app_name
+from
     TIMLDAP.ERUID eu inner join TIMLDAP.OBJECTCLASS oc on eu.eid=oc.eid
                      inner join TIMLDAP.app_acct_objectclass_map app_map on app_map.objectclass=oc.objectclass
                      left join TIMLDAP.OWNER owner on eu.eid=owner.eid
@@ -48,7 +68,7 @@ from
                      left join TIMLDAP.cn cn on eu.eid=cn.eid
                      left join TIMLDAP.erlaststatuschangedate on eu.eid=TIMLDAP.erlaststatuschangedate.eid
                      left join TIMLDAP.ldap_entry entry on eu.eid=entry.eid
-;
+;*/
 
 
 -- ---------------------------------------------------
