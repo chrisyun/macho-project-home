@@ -50,26 +50,6 @@ from
                      left join ldap_entry entry on eu.eid=entry.eid
 ;
 
-/*create view v_account as
-select
-    oc.EID,
-    eu.eruid uid, -- 帐号的UID
-    cn.cn as cn, -- 帐号的姓名
-    default_status(status.eraccountstatus) as status, -- 帐号的状态1表示禁用, 0表示启用
-    erlaststatuschangedate.ERLASTSTATUSCHAN, -- 表示帐号状态的变更日期
-    entry.create_timestamp as createTimestamp, -- 帐号创建时间
-    owner.OWNER as person_dn, -- 帐号所属的人员的DN
-    app_map.app_name as app_name
-from
-    TIMLDAP.ERUID eu inner join TIMLDAP.OBJECTCLASS oc on eu.eid=oc.eid
-                     inner join TIMLDAP.app_acct_objectclass_map app_map on app_map.objectclass=oc.objectclass
-                     left join TIMLDAP.OWNER owner on eu.eid=owner.eid
-                     left join TIMLDAP.ERACCOUNTSTATUS status on eu.eid=status.eid
-                     left join TIMLDAP.cn cn on eu.eid=cn.eid
-                     left join TIMLDAP.erlaststatuschangedate on eu.eid=TIMLDAP.erlaststatuschangedate.eid
-                     left join TIMLDAP.ldap_entry entry on eu.eid=entry.eid
-;*/
-
 
 -- ---------------------------------------------------
 -- ---------------------------------------------------
@@ -113,7 +93,59 @@ where
 -- select count(*) from v_tkperson;
 -- select status, count(*) from v_tkperson group by status;
 
-
+-- ---------------------------------------------------
+-- Org View
+-- ---------------------------------------------------
+drop view V_ORG_VIEW;
+create view V_ORG_VIEW as 
+select
+    TKORGANIZATIONCODE.EID,
+    TKORGANIZATIONCODE.TKORGANIZATIONCO as HR_CODE, -- 
+    OU.OU as HR_NAME, -- 
+    TKORGCODEPATH.TKORGCODEPATH as HR_CODE_PATH,
+    TKORGNAMEPATH.TKORGNAMEPATH as HR_NAME_PATH,
+    TKORGANIZATIONIDOA.TKORGANIZATIONID as OA_CODE,
+    TKORGANIZATIONIDSAP.TKORGANIZATIONID as SAP_CODE,
+    TKORGANIZATIONIDBAS.TKORGANIZATIONID as BAS_CODE,
+    TKORGANIZATIONIDBPM.TKORGANIZATIONID as BPM_CODE,
+    TKORGANIZATIONIDCSC.TKORGANIZATIONID as CSC_CODE,
+    TKORGANIZATIONIDEBA.TKORGANIZATIONID as EBA_CODE,
+    TKORGANIZATIONIDCSCFE.TKORGANIZATIONID as CSCFE_CODE,
+    TKORGANIZATIONIDFAP.TKORGANIZATIONID as FAP_CODE,
+    TKORGANIZATIONIDFOL.TKORGANIZATIONID as FOL_CODE,
+    TKORGANIZATIONIDITSM.TKORGANIZATIONID as ITSM_CODE,
+    -- 0-公司, 1-机构, 2-部门, 3-虚拟组织
+    TKORGANIZATIONCATEGORY.TKORGANIZATIONCA as HR_ORG_CATEGORY,
+    -- 0 - 运营, 1 - 在筹, 2-撤销, 3-休眠
+    TKORGSTATUS.TKORGSTATUS as HR_ORG_STATUS, 
+    TKORGLOCATION.TKORGLOCATION as HR_ORG_LOCATION,
+    -- 创建时间
+    entry.create_timestamp as createTimestamp,
+    parent_entry.dn as parent_dn,
+    parent_ORG_CODE.TKORGANIZATIONCO as PARENT_ORG_CODE
+from
+    TKORGANIZATIONCODE
+    inner join TKORGNAMEPATH on TKORGANIZATIONCODE.EID=TKORGNAMEPATH.EID
+    inner join TKORGCODEPATH on TKORGANIZATIONCODE.EID=TKORGCODEPATH.EID
+    inner join ldap_entry entry on TKORGANIZATIONCODE.EID=entry.eid
+    left join OU on TKORGANIZATIONCODE.EID=OU.EID
+    left join TKORGANIZATIONIDOA on TKORGANIZATIONCODE.EID=TKORGANIZATIONIDOA.EID
+    left join TKORGANIZATIONIDBAS on TKORGANIZATIONCODE.EID=TKORGANIZATIONIDBAS.EID
+    left join TKORGANIZATIONIDBPM on TKORGANIZATIONCODE.EID=TKORGANIZATIONIDBPM.EID
+    left join TKORGANIZATIONIDCSC on TKORGANIZATIONCODE.EID=TKORGANIZATIONIDCSC.EID
+    left join TKORGANIZATIONIDCSCFE on TKORGANIZATIONCODE.EID=TKORGANIZATIONIDCSCFE.EID
+    left join TKORGANIZATIONIDEBA on TKORGANIZATIONCODE.EID=TKORGANIZATIONIDEBA.EID
+    left join TKORGANIZATIONIDFAP on TKORGANIZATIONCODE.EID=TKORGANIZATIONIDFAP.EID
+    left join TKORGANIZATIONIDFOL on TKORGANIZATIONCODE.EID=TKORGANIZATIONIDFOL.EID
+    left join TKORGANIZATIONIDITSM on TKORGANIZATIONCODE.EID=TKORGANIZATIONIDITSM.EID
+    left join TKORGANIZATIONIDSAP on TKORGANIZATIONCODE.EID=TKORGANIZATIONIDSAP.EID
+    left join TKORGANIZATIONCATEGORY on TKORGANIZATIONCODE.EID=TKORGANIZATIONCATEGORY.EID
+    left join TKORGSTATUS on TKORGANIZATIONCODE.EID=TKORGSTATUS.EID
+    left join TKORGLOCATION on TKORGANIZATIONCODE.EID=TKORGLOCATION.EID
+    left join ERPARENT parentdn on TKORGANIZATIONCODE.EID=parentdn.EID
+    left join ldap_entry parent_entry on parent_entry.DN=parentdn.ERPARENT
+    left join TKORGANIZATIONCODE parent_ORG_CODE on parent_ORG_CODE.EID=parent_entry.EID
+where TKORGANIZATIONCODE.TKORGANIZATIONCO like 'T%';
 
 
 
