@@ -9,7 +9,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-import com.ibm.tivoli.tuna.jaas.ldap.dao.LdapServiceDao;
+import com.ibm.tivoli.tuna.dao.ILdapUserDao;
 import com.ibm.tivoli.tuna.service.AttributeStatement;
 import com.ibm.tivoli.tuna.service.AuthenticationResult;
 import com.ibm.tivoli.tuna.service.AuthenticationResultHandler;
@@ -20,7 +20,7 @@ public class LdapAuthenticationResultHandler implements AuthenticationResultHand
   /**
    * 
    */
-  private String ldapDaoBeanName = "ldapDaoService";
+  private String ldapDaoBeanName = "ldapUserService";
 
   public LdapAuthenticationResultHandler() {
     super();
@@ -67,7 +67,7 @@ public class LdapAuthenticationResultHandler implements AuthenticationResultHand
     }
 
     //LdapServiceDao ldapService = new LdapServiceDao();
-    LdapServiceDao ldapService = (LdapServiceDao)this.applicationContext.getBean(this.ldapDaoBeanName);
+    ILdapUserDao ldapService = (ILdapUserDao)this.applicationContext.getBean(this.ldapDaoBeanName);
 
     AttributeStatement attributeStatment = ldapService.searchUserEntityByDN(userDN);
     result.setAttributeStatement(attributeStatment);
