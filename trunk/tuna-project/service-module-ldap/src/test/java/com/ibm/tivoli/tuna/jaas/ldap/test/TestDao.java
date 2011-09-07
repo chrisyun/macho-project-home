@@ -11,19 +11,18 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.ibm.tivoli.tuna.jaas.NamePrincipal;
 import com.ibm.tivoli.tuna.jaas.ldap.UserDNPrincipal;
-import com.ibm.tivoli.tuna.jaas.ldap.dao.LdapServiceDao;
 import com.ibm.tivoli.tuna.service.AttributeStatement;
 import com.ibm.tivoli.tuna.service.UserSubject;
 
 public class TestDao extends TestCase{
 	
-	public void testSearchDnAndPwd() {
-		ApplicationContext context = new ClassPathXmlApplicationContext("/com/ibm/tivoli/tuna/spring/applicationContext-ldap.xml");
-		LdapServiceDao service = (LdapServiceDao) context.getBean("ldapService");
-		
-		AttributeStatement attr = service.searchUserDNandPwdByAccount("angf");
-		
-	}
+//	public void testSearchDnAndPwd() {
+//		ApplicationContext context = new ClassPathXmlApplicationContext("/com/ibm/tivoli/tuna/spring/applicationContext-ldap.xml");
+//		LdapUserDaoImpl service = (LdapUserDaoImpl) context.getBean("ldapService");
+//		
+////		AttributeStatement attr = service.searchUserDNandPwdByAccount("angf");
+//		
+//	}
 	
 	public void testSubject() {
 		UserDNPrincipal userDNPrincipal = new UserDNPrincipal("dc=uid");
