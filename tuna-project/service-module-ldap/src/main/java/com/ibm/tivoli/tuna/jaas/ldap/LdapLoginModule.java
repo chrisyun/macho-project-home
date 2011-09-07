@@ -60,9 +60,9 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.dao.IncorrectResultSizeDataAccessException;
 
+import com.ibm.tivoli.tuna.dao.ILdapUserDao;
 import com.ibm.tivoli.tuna.jaas.NamePrincipal;
-import com.ibm.tivoli.tuna.jaas.ldap.dao.LdapServiceDao;
-import com.ibm.tivoli.tuna.jaas.ldap.util.StringUtil;
+import com.ibm.tivoli.tuna.util.StringUtil;
 
 /**
  * <p>
@@ -201,7 +201,7 @@ public class LdapLoginModule<E> implements LoginModule, ApplicationContextAware 
     //LdapServiceDao ldapService = new LdapServiceDao();
     boolean usernameCorrect = false;
     try {
-    	LdapServiceDao ldapService = (LdapServiceDao)this.applicationContext.getBean(this.ldapDaoBeanName);
+    	ILdapUserDao ldapService = (ILdapUserDao)this.applicationContext.getBean(this.ldapDaoBeanName);
     	
     	String userDn = ldapService.searchUserDNByAccount(username);
     	if(!StringUtil.isNull(userDn)) {
