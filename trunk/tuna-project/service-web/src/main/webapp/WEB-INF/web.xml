@@ -35,18 +35,18 @@
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>SOAP Service Resources</web-resource-name>
-			<url-pattern>/_test/services/soap/*</url-pattern>
+			<url-pattern>/services/soap/*</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<!-- NOTE: This role is not present in the default users file -->
-			<role-name>ServiceAccessRole</role-name>
+			<role-name>AuthenticationServiceAccessRole</role-name>
 		</auth-constraint>
 	</security-constraint>
 
 	<!-- Define the Login Configuration for this Application -->
 	<login-config>
 		<auth-method>BASIC</auth-method>
-		<realm-name>ServiceAccessRole</realm-name>
+		<realm-name>SOAP Service Access Realm</realm-name>
 	</login-config>
 
 	<!-- Security roles referenced by this web application -->
@@ -54,6 +54,6 @@
 		<description>
       The role that is required to log in to the Manager Application
     </description>
-		<role-name>ServiceAccessRole</role-name>
+		<role-name>AuthenticationServiceAccessRole</role-name>
 	</security-role>
 </web-app>
