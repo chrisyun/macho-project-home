@@ -10,5 +10,6 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
 
   <jaxws:endpoint id="authenticationService" implementor="#authenticationServiceBean" address="/authentication" serviceName="AuthenticationService"></jaxws:endpoint>
+	<jaxws:endpoint id="userService" implementor="#userServiceBean" address="/user" serviceName="UserService"></jaxws:endpoint>
 </beans>
 
