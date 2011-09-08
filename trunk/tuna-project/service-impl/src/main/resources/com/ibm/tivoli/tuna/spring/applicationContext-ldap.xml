@@ -27,4 +27,8 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 		<property name="userFields" value="${login.module.LDAP.userFields}" />
 	</bean>
 	
+	<bean id="userServiceBean" class="com.ibm.tivoli.tuna.service.UserServiceImpl">
+		<property name="ldapUser" ref="ldapUserService" />
+	</bean>
+	
 </beans>
