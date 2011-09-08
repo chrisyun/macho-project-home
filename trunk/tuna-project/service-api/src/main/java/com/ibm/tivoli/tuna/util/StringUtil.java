@@ -1,5 +1,9 @@
 package com.ibm.tivoli.tuna.util;
 
+import java.util.List;
+
+import com.ibm.tivoli.tuna.service.AttributeStatement;
+
 public class StringUtil {
 	
 	/**
@@ -48,5 +52,19 @@ public class StringUtil {
     		return false;
     	}
     }
+	
+	public static AttributeStatement[] splitPage(List<AttributeStatement> array, int startPage, int pageSize) {
+		int maxCount = array.size();
+		int maxIndex = (startPage+1)*pageSize;
+		
+		//取最小数
+		int endIndex = 	maxIndex > maxCount ? maxCount:maxIndex;
+		AttributeStatement[] resultArray = new AttributeStatement[endIndex-startPage*pageSize];
+		for (int i = 0; i < resultArray.length; i++) {
+    		resultArray[i] = array.get(startPage*pageSize+i);
+		}
+		
+		return resultArray;
+	}
 	
 }
