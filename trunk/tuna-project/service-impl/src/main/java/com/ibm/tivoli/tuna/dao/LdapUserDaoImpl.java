@@ -1,24 +1,13 @@
 package com.ibm.tivoli.tuna.dao;
 
-import java.util.List;
-
-import javax.naming.NameClassPair;
-import javax.naming.NamingEnumeration;
 import javax.naming.directory.DirContext;
 import javax.naming.directory.SearchControls;
-import javax.naming.ldap.Control;
-import javax.naming.ldap.LdapContext;
-import javax.naming.ldap.PagedResultsControl;
-import javax.naming.ldap.PagedResultsResponseControl;
-import javax.naming.ldap.SortControl;
-import javax.naming.ldap.SortKey;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.ldap.AuthenticationException;
 import org.springframework.ldap.control.PagedResultsCookie;
 import org.springframework.ldap.control.PagedResultsDirContextProcessor;
-import org.springframework.ldap.control.SortControlDirContextProcessor;
 import org.springframework.ldap.core.CollectingNameClassPairCallbackHandler;
 import org.springframework.ldap.core.ContextMapper;
 import org.springframework.ldap.core.ContextMapperCallbackHandler;
@@ -40,7 +29,7 @@ import com.ibm.tivoli.tuna.util.StringUtil;
 
 public class LdapUserDaoImpl implements ILdapUserDao {
 	
-	private static boolean is_server_page = false;
+	private static boolean is_server_page = true;
 	
 	private static Log log = LogFactory.getLog(LdapUserDaoImpl.class);
 	
@@ -102,23 +91,16 @@ public class LdapUserDaoImpl implements ILdapUserDao {
 			ldapTemplate.search(baseDN,filter,searchControls,handler,sortControl);
 		} catch (org.springframework.ldap.SizeLimitExceededException e) {
 		}
+		UserData[] userArray = new UserData[handler.getList().size()];
+		StringUtil.copyListToArray(handler.getList(), userArray);
 		
-		response.setCountSize(handler.getList().size());
-		
-		List<UserData> resList = (List<UserData>) handler.getList();
-		
-		UserData[] dataArray = new UserData[resList.size()];
-		for (int i = 0; i < resList.size(); i++) {
-			dataArray[i] = (UserData)resList.get(i);
-		}
-		resList.clear();
-		response.setResult(dataArray);
+		response.setResult(userArray);
 		
 		return response;
 	}
 	
 
-	public UserDataResponse searchUserArray(String filter, int startPage,
+	public UserDataResponse searchUserArray(String filter, byte[] pageCookie,
 			int pageSize, String sortAttributeName, boolean ascend) {
 		
 		UserDataResponse response = new UserDataResponse();
@@ -145,48 +127,42 @@ public class LdapUserDaoImpl implements ILdapUserDao {
 		
 		try {
 			if(is_server_page) {
-				PagedResultsCookie cookie = null;
+				PagedResultsCookie cookie = new PagedResultsCookie(pageCookie);
+				PagedResultsDirContextProcessor pageControl = new PagedResultsDirContextProcessor(pageSize,cookie);
 				
-				int tempPageSize = startPage*pageSize;
-				int temp = 1;
-				
-				do {
-					if(temp == 1 && tempPageSize == 0) {
-						tempPageSize = pageSize;
-					} 
-					
-					PagedResultsDirContextProcessor pageControl = new PagedResultsDirContextProcessor(tempPageSize,cookie);
-					
-					processor.addDirContextProcessor(pageControl);
-					
-					try {
-						ldapTemplate.search(baseDN, filter,searchControls,handler,processor);
-					} catch (org.springframework.ldap.SizeLimitExceededException e) {
-					}
-					
-					cookie = pageControl.getCookie();
-					int maxNum = pageControl.getResultSize();
-					
-				} while (cookie != null);
-				
-				
-			} else {
-				searchControls.setCountLimit(LdapConst.maxSearchRow);
+				processor.addDirContextProcessor(pageControl);
 				
 				try {
 					ldapTemplate.search(baseDN, filter,searchControls,handler,processor);
 				} catch (org.springframework.ldap.SizeLimitExceededException e) {
 				}
 				
-				response.setCountSize(handler.getList().size());
+				cookie = pageControl.getCookie();
+				log.debug("get search result size:" + pageControl.getResultSize());
 				
-				 //对数组内容进行分页，start:startPage*pageSize   end:(startPage+1)*pageSize-1
-		        AttributeStatement[] tempData = StringUtil.splitPage(handler.getList(), startPage, pageSize);
-		        userArray = new UserData[tempData.length];
-		        for (int i = 0; i < tempData.length; i++) {
-		        	userArray[i] = (UserData) tempData[i];
-				}
-		        response.setResult(userArray);
+				userArray = new UserData[handler.getList().size()];
+				StringUtil.copyListToArray(handler.getList(), userArray);
+				
+				response.setResult(userArray);
+				response.setPageCookie(StringUtil.byte2string(cookie.getCookie()));
+				
+			} else {
+//				searchControls.setCountLimit(LdapConst.maxSearchRow);
+//				
+//				try {
+//					ldapTemplate.search(baseDN, filter,searchControls,handler,processor);
+//				} catch (org.springframework.ldap.SizeLimitExceededException e) {
+//				}
+//				
+//				response.setCountSize(handler.getList().size());
+//				
+//				 //对数组内容进行分页，start:startPage*pageSize   end:(startPage+1)*pageSize-1
+//		        AttributeStatement[] tempData = StringUtil.splitPage(handler.getList(), startPage, pageSize);
+//		        userArray = new UserData[tempData.length];
+//		        for (int i = 0; i < tempData.length; i++) {
+//		        	userArray[i] = (UserData) tempData[i];
+//				}
+//		        response.setResult(userArray);
 			}
 		} catch (Exception e) {
 			log.error("人员查询出现异常，错误原因：", e);

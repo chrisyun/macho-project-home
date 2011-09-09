@@ -38,7 +38,7 @@ public interface ILdapUserDao {
 	 * @param ascend
 	 * @return
 	 */
-	public UserDataResponse searchUserArray(String filter, int startPage, int pageSize, String sortAttributeName, boolean ascend);
+	public UserDataResponse searchUserArray(String filter, byte[] pageCookie, int pageSize, String sortAttributeName, boolean ascend);
 	
 	/**
 	 * 根据过滤条件查找满足条件的用户对象，查找作了大小限制
