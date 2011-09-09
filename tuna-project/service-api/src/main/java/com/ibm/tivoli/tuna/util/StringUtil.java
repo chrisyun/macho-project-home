@@ -53,6 +53,44 @@ public class StringUtil {
     	}
     }
 	
+	/**
+	 * 
+	 * @param list
+	 * @param array
+	 */
+	public static void copyListToArray(List<? extends AttributeStatement> list, AttributeStatement[] array) {
+		for (int i = 0; i < array.length; i++) {
+			array[i] = list.get(i);
+		}
+		list.clear();
+	}
+	
+	public static String byte2string(byte[] byt) {
+		if(byt == null || byt.length == 0) {
+			return null;
+		}
+		
+		String res = "";
+		for(byte t : byt) {
+			res += t + ",";
+		}
+		return res.substring(0, res.length()-1);
+	}
+	
+	public static byte[] string2byte(String str) {
+		if(isNull(str)) {
+			return null;
+		}
+		
+		String[] temp = str.split(",");
+		byte[] res = new byte[temp.length];
+		for (int i = 0; i < temp.length; i++) {
+			res[i] = Byte.parseByte(temp[i]);
+		}
+		
+		return res;
+	}
+	
 	public static AttributeStatement[] splitPage(List<AttributeStatement> array, int startPage, int pageSize) {
 		int maxCount = array.size();
 		int maxIndex = (startPage+1)*pageSize;
