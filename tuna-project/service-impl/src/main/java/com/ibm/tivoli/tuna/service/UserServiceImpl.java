@@ -11,6 +11,7 @@ import org.springframework.ldap.filter.LikeFilter;
 
 import com.ibm.tivoli.tuna.dao.ILdapUserDao;
 import com.ibm.tivoli.tuna.entity.UserDataResponse;
+import com.ibm.tivoli.tuna.util.StringUtil;
 
 /**
  * @author ZhaoDongLu
@@ -38,12 +39,12 @@ public class UserServiceImpl implements UserService {
 	/* (non-Javadoc)
 	 * @see com.ibm.tivoli.service.UserService#searchAll(int, int, java.lang.String, boolean)
 	 */
-	public UserDataResponse searchAll(int startPage, int pageSize, String sortAttributeName, boolean ascend) {
+	public UserDataResponse searchAll(String pageCookie, int pageSize, String sortAttributeName, boolean ascend) {
 		AndFilter filter = new AndFilter();
 		filter.and(new LikeFilter("uid", "*"));
 		filter.and(new EqualsFilter("objectclass", "organizationalPerson"));
 		
-		return searchAllByFilter(filter.encode(), startPage, pageSize, sortAttributeName, ascend);
+		return searchAllByFilter(filter.encode(), pageCookie, pageSize, sortAttributeName, ascend);
 	}
 
 	/* (non-Javadoc)
@@ -60,10 +61,12 @@ public class UserServiceImpl implements UserService {
 	/* (non-Javadoc)
 	 * @see com.ibm.tivoli.service.UserService#searchAllByFilter(java.lang.String, int, int, java.lang.String, boolean)
 	 */
-	public UserDataResponse searchAllByFilter(String filter, int startPage, 
+	public UserDataResponse searchAllByFilter(String filter, String pageCookie, 
 			int pageSize, String sortAttributeName, boolean ascend) {
-		  
-		return ldapUser.searchUserArray(filter, startPage, pageSize, sortAttributeName, ascend);
+		
+		log.debug(String.format("print user searchbyFilter cookie[%s] and filter[%s]", String.valueOf(pageCookie),filter));
+		
+		return ldapUser.searchUserArray(filter, StringUtil.string2byte(pageCookie), pageSize, sortAttributeName, ascend);
 	}
 
 	public UserDataResponse searchUserByOrgid(String orgid,
