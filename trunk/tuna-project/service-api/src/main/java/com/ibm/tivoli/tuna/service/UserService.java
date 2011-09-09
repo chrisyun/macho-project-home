@@ -21,7 +21,7 @@ public interface UserService {
   
   /**
    * 查询所有的用户, 具体结果设定受查询最大结果的限制, 超过允许返回的做大数量时, 返回相应失败信息.
-   * @param startPage 以0开始的起始页
+   * @param pageCookie	LDAP分页cookie，第一次查询为null
    * @param pageSize
    * @param sortAttributeName  需要排序的属性
    * @param ascend  true表示已升序排序, false表示以降序排列
@@ -29,12 +29,12 @@ public interface UserService {
    */
   @WebMethod(operationName = "searchAll")
   @WebResult(name = "SearchAllResponse")
-  public UserDataResponse searchAll(@WebParam(name = "startPage")int startPage, @WebParam(name = "pageSize")int pageSize, @WebParam(name = "sortAttributeName")String sortAttributeName, @WebParam(name = "ascend")boolean ascend);
+  public UserDataResponse searchAll(@WebParam(name = "pageCookie")String pageCookie, @WebParam(name = "pageSize")int pageSize, @WebParam(name = "sortAttributeName")String sortAttributeName, @WebParam(name = "ascend")boolean ascend);
 
   /**
    * 查询所有的用户, 具体结果设定受查询最大结果的限制, 超过允许返回的做大数量时, 返回相应失败信息.
    * @param filter    LDAP查询过滤器
-   * @param startPage 以0开始的起始页
+   * @param pageCookie	LDAP分页cookie，第一次查询为null
    * @param pageSize
    * @param sortAttributeName  需要排序的属性
    * @param ascend  true表示已升序排序, false表示以降序排列
@@ -42,7 +42,7 @@ public interface UserService {
    */
   @WebMethod(operationName = "searchAllByFilter")
   @WebResult(name = "SearchAllByFilterResponse")
-  public UserDataResponse searchAllByFilter(@WebParam(name = "filter")String filter, @WebParam(name = "startPage")int startPage, @WebParam(name = "pageSize")int pageSize, @WebParam(name = "sortAttributeName")String sortAttributeName, @WebParam(name = "ascend")boolean ascend);
+  public UserDataResponse searchAllByFilter(@WebParam(name = "filter")String filter, @WebParam(name = "pageCookie")String pageCookie, @WebParam(name = "pageSize")int pageSize, @WebParam(name = "sortAttributeName")String sortAttributeName, @WebParam(name = "ascend")boolean ascend);
 
   /**
    * 按照用户标识查询用户数据
