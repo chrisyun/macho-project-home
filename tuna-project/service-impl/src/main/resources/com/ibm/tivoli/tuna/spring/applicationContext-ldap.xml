@@ -19,6 +19,11 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 		<constructor-arg ref="contextSource" />
 	</bean>
 	
+	<bean id="ldapConst" class="com.ibm.tivoli.tuna.util.LdapConst">
+		<property name="maxRowCount" value="${search.user.LDAP.maxRowCount}" />
+		<property name="maxSearchRow" value="${search.user.LDAP.maxSearchRow}" />
+	</bean>
+	
 	<!-- ldapDaoService -->
 	<bean id="ldapUserService" class="com.ibm.tivoli.tuna.dao.LdapUserDaoImpl">
 		<property name="ldapTemplate" ref="ldapTemplate" />
