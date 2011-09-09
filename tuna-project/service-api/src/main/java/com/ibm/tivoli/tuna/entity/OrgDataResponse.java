@@ -14,7 +14,7 @@ import com.ibm.tivoli.tuna.service.Status;
  */
 public class OrgDataResponse {
 	
-	private int countSize = 0;
+	private String pageCookie = null;
 	
 	private Status status = new Status();
 	
@@ -34,13 +34,13 @@ public class OrgDataResponse {
 		this.result = result;
 	}
 	
-	@XmlElement(name = "CountSize")
-	public int getCountSize() {
-		return countSize;
+	@XmlElement(name = "PageCookie")
+	public String getPageCookie() {
+		return pageCookie;
 	}
 
-	public void setCountSize(int countSize) {
-		this.countSize = countSize;
+	public void setPageCookie(String pageCookie) {
+		this.pageCookie = pageCookie;
 	}
 	
 	@XmlElement(name = "Status")
