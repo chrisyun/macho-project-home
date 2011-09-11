@@ -405,7 +405,7 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
       } else {
         return true;
       }
-    } else if (this.uploadScreenshot.startsWith(" schedule")) {
+    } else if (this.uploadScreenshot.startsWith("schedule")) {
       return isMatchSchedulePattern(targetURL, this.uploadScreenshot, r);
     } else {
       return false;
@@ -415,7 +415,10 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
   private boolean isMatchSchedulePattern(String targetURL, String uploadScreenshot, BrowserResult r) {
     SchedulePatternMatcher m = new SchedulePatternMatcher(this.uploadScreenshot);
     Date lastTime = this.lastHttpTaskTimeTracker.getLast(targetURL);
-    return m.match(lastTime, new Date());
+    Date currentTime = new Date();
+    boolean result = m.match(lastTime, currentTime);
+    log.debug(String.format("test match rule[%s] at [%s] with last time [%s]: [%s]", this.uploadScreenshot, currentTime, lastTime, result));
+    return result;
   }
 
   /**

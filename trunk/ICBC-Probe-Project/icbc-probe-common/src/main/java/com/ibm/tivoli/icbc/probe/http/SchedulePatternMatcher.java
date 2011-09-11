@@ -11,13 +11,17 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 public class SchedulePatternMatcher {
-
+  private static Log log = LogFactory.getLog(SchedulePatternMatcher.class);
   private Set<String> times = new TreeSet<String>();
+  private String pattern = null;
 
   public SchedulePatternMatcher(String pattern) {
     super();
+    this.pattern = pattern;
     expandPattern(pattern);
   }
 
@@ -89,12 +93,16 @@ public class SchedulePatternMatcher {
     DateFormat formatter = new SimpleDateFormat("HH:mm");
     String lt = formatter.format(lastTime);
     String ct = formatter.format(currentTime);
+    boolean result = false;
     for (String time : times) {
       if (time.compareTo(lt) >= 0 && time.compareTo(ct) <= 0) {
-        return true;
+        result = true;
+        break;
       }
     }
-    return false;
+    
+    log.debug(String.format("test match rule[%s] at [%s] with last time [%s]: [%s]", this.pattern, currentTime, lastTime, result));
+    return result;
   }
 
   /* (non-Javadoc)
