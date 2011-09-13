@@ -17,12 +17,29 @@ Name "ICBC HTTP DNS Probe V2.0"
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall-colorful.ico"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
+# Define customer page
+!define MUI_PAGE_CUSTOMFUNCTION_SHOW MyFinishShow
+!define MUI_PAGE_CUSTOMFUNCTION_LEAVE MyFinishLeave
+
+
 # Included files
 !include Sections.nsh
-!include MUI2.nsh
+!include MUI.nsh
+!include nsDialogs.nsh
+!include LogicLib.nsh
 
 # Variables
 Var StartMenuGroup
+
+Var Dialog
+Var Label
+Var RadioButton1
+Var RadioButton2
+Var RadioButton3
+Var RadioButton4
+Var RadioButton5
+Var RadioButton6
+Var networkid
 
 # Installer pages
 !insertmacro MUI_PAGE_WELCOME
@@ -36,13 +53,14 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE SimpChinese
 
 # Installer attributes
-OutFile E:\Temp\icbc_probe_setup_v2.exe
+OutFile E:\Temp\icbc_probe_setup_v2.0.exe
 InstallDir c:\icbc-probe
 CRCCheck on
 XPStyle on
 ShowInstDetails show
 InstallDirRegKey HKLM "${REGKEY}" Path
 ShowUninstDetails show
+
 
 # Installer sections
 Section -Main SEC0000
@@ -55,13 +73,16 @@ Section -Main SEC0000
     # ICBC: Move old version
     Exec 'net stop Tomcat6'
     Exec 'net stop Tomcat6'
-    DetailPrint "Waiting ..."
+    DetailPrint "Waiting service stop ..."
     Sleep 15000
-    RMDir /r C:\icbc-probe.uninstalled
+    DetailPrint "Rename old version directory files ..."
+    RmDir /r C:\icbc-probe.uninstalled
     Rename C:\icbc-probe C:\icbc-probe.uninstalled
+    RmDir /r c:\icbc-probe
     
     # Copy File
     File /r C:\Users\IBM_ADMIN\workspace\ICBC-Probe-Project\icbc-probe-assembly\target\icbc-probe\*
+    DetailPrint "Write registry for uninstall ..."
     WriteRegStr HKLM "${REGKEY}\Components" Main 1
 SectionEnd
 
@@ -82,7 +103,11 @@ Section -post SEC0001
     WriteRegDWORD HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     
     # ICBC
+    DetailPrint "Write registry for Windows service ..."
     Exec 'regedit /s c:\icbc-probe\bin\install.reg'
+    
+    # copy conf file based on networkid
+    CopyFiles c:\icbc-probe\conf\probe.xml.$networkid c:\icbc-probe\conf\probe.xml.ok
     
 SectionEnd
 
@@ -138,3 +163,71 @@ Function un.onInit
     !insertmacro SELECT_UNSECTION Main ${UNSEC0000}
 FunctionEnd
 
+Function MyFinishShow
+  nsDialogs::Create 1018
+  Pop $Dialog
+
+  ${If} $Dialog == error
+    Abort
+  ${EndIf}
+  
+  ${NSD_CreateLabel} 0 0 100% 12u "请选择互联网接入方式，将根据不同的接入方式，使用不同的数据接收服务器地址."
+  Pop $Label
+
+  ${NSD_CreateRadioButton} 0 20 100% 12u "北京网通"
+  Pop $RadioButton1
+  
+  ${NSD_CreateRadioButton} 0 30u 100% 12u "北京网通2"
+  Pop $RadioButton2
+ 
+  ${NSD_CreateRadioButton} 0 45u 100% 12u "北京电信"
+  Pop $RadioButton3
+   
+  ${NSD_CreateRadioButton} 0 60u 100% 12u "北京电信2"
+  Pop $RadioButton4
+  
+  ${NSD_CreateRadioButton} 0 75u 100% 12u "上海电信"
+  Pop $RadioButton5
+  
+  ${NSD_CreateRadioButton} 0 90u 100% 12u "上海联通"
+  Pop $RadioButton6
+  
+  nsDialogs::Show
+  
+FunctionEnd
+
+Function MyFinishLeave
+# Set default value
+strCpy $networkid "bj.unicom"
+${NSD_GetState} $RadioButton1 $0
+${If} $0 <> 0
+    strCpy $networkid "bj.unicom"
+    # MessageBox mb_ok "Custom radiobutton#1 was checked..."
+${EndIf}
+${NSD_GetState} $RadioButton2 $0
+${If} $0 <> 0
+    strCpy $networkid "bj.unicom2"
+    # MessageBox mb_ok "Custom radiobutton#2 was checked..."
+${EndIf}
+${NSD_GetState} $RadioButton3 $0
+${If} $0 <> 0
+    strCpy $networkid "bj.telcom"
+    # MessageBox mb_ok "Custom radiobutton#3 was checked..."
+${EndIf}
+${NSD_GetState} $RadioButton4 $0
+${If} $0 <> 0
+    strCpy $networkid "bj.telcom2"
+    # MessageBox mb_ok "Custom radiobutton#4 was checked..."
+${EndIf}
+${NSD_GetState} $RadioButton5 $0
+${If} $0 <> 0
+    strCpy $networkid "sh.telcom"
+    # MessageBox mb_ok "Custom radiobutton#5 was checked..."
+${EndIf}
+${NSD_GetState} $RadioButton6 $0
+${If} $0 <> 0
+    strCpy $networkid "sh.unicom"
+    # MessageBox mb_ok "Custom radiobutton#6 was checked..."
+${EndIf}
+# MessageBox mb_ok $networkid
+FunctionEnd
