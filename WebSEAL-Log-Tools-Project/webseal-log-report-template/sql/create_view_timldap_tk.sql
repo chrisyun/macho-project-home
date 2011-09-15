@@ -72,6 +72,7 @@ select
     oaorgcode.TKOAORGCODE as TKOAORGCODE,
     orgcodepath.TKORGCODEPATH as TKORGCODEPATH,
     departmentnumber.DEPARTMENTNUMBER as DEPARTMENTNUMBER,
+    tkaccounteba.tkaccounteba as tkaccounteba,
     le.dn as dn
 from
     TIMLDAP.LDAP_ENTRY le inner join TIMLDAP.OBJECTCLASS oc on le.eid=oc.eid 
@@ -80,13 +81,14 @@ from
                      left join TIMLDAP.UID uid on le.eid=uid.eid
                      left join TIMLDAP.CN cn on le.eid=cn.eid
                      left join TIMLDAP.ERPERSONSTATUS status on le.eid=status.eid
-					 left join TIMLDAP.O o on le.eid=o.eid
+					           left join TIMLDAP.O o on le.eid=o.eid
                      left join TIMLDAP.OU ou on le.eid=ou.eid
                      left join TIMLDAP.ERCREATEDATE cdate on le.eid=cdate.eid
                      left join TIMLDAP.TKOAORGCODEPATH oaorgcodepath on le.eid=oaorgcodepath.eid
                      left join TIMLDAP.TKOAORGCODE oaorgcode on le.eid=oaorgcode.eid
                      left join TIMLDAP.TKORGCODEPATH orgcodepath on le.eid=orgcodepath.eid
                      left join TIMLDAP.DEPARTMENTNUMBER departmentnumber on le.eid=departmentnumber.eid
+                     left join TIMLDAP.TKACCOUNTEBA tkaccounteba on le.eid=tkaccounteba.eid
 where 
  oc.OBJECTCLASS='TKPERSON';
 
