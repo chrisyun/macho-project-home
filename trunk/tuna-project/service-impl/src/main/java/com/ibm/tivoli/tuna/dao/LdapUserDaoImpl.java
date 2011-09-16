@@ -1,5 +1,7 @@
 package com.ibm.tivoli.tuna.dao;
 
+import javax.naming.NamingEnumeration;
+import javax.naming.NamingException;
 import javax.naming.directory.DirContext;
 import javax.naming.directory.SearchControls;
 
@@ -38,7 +40,7 @@ public class LdapUserDaoImpl implements ILdapUserDao {
 	private String baseDN;
 	private String userFields;
 	
-	public void authenticateUser(String userDn,char[] pwd) throws AuthenticationException {
+	public void authenticateUserByBind(String userDn,char[] pwd) throws AuthenticationException {
 		DirContext ctx = null;
 		try {
 			ctx = contextSource.getContext(userDn,String.valueOf(pwd));
@@ -48,6 +50,29 @@ public class LdapUserDaoImpl implements ILdapUserDao {
 			LdapUtils.closeContext(ctx);
 		}
 	}
+	
+	public void authenticateUser(String userDn,char[] pwd) throws AuthenticationException {
+		DirContext ctx = null;
+		
+		SearchControls cons = new SearchControls();
+		cons.setReturningAttributes(new String[0]);       // Return no attrs
+		cons.setSearchScope(SearchControls.OBJECT_SCOPE); // Search object only
+		
+		try {
+			ctx = ldapTemplate.getContextSource().getReadOnlyContext();
+			
+			NamingEnumeration answer = ctx.search(userDn, "(userpassword={0})", new Object[]{String.valueOf(pwd)}, cons);
+			if(answer == null || !answer.hasMoreElements()){
+				throw LdapUtils.convertLdapException(new NamingException("the password is wrong"));
+			}
+			answer.close();
+		} catch (NamingException e) {
+			throw LdapUtils.convertLdapException(e);
+		} finally {
+			LdapUtils.closeContext(ctx);
+		}
+	}
+	
 	
 	public String searchUserDNByAccount(String userName) {
 		AndFilter filter = new AndFilter();
