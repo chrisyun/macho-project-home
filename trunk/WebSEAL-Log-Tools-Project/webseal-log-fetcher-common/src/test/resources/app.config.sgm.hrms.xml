@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<Application>
+		<name>OA</name>
+		<junctions>
+			<string>/oa</string>
+		</junctions>
+		<actions>
+			<Action>
+				<urlPatterns>
+					<string>/oa/Login?event=LdapToOa</string>
+				</urlPatterns>
+				<name>Login</name>
+				<uploaded>true</uploaded>
+			</Action>
+		</actions>
+	</Application>
+  
+	<Application>
+		<name>HRMS</name>
+		<junctions>
+			<string>/hrms</string>
+		</junctions>
+		<actions>
+			<Action>
+				<urlPatterns>
+					<string>/hrms/psp/ps/\?cmd=start&amp;languageCd=*</string>
+				</urlPatterns>
+				<name>Login</name>
+				<uploaded>true</uploaded>
+			</Action>
+		</actions>
+	</Application>
+  
+	<Application>
+		<name>Root</name>
+		<junctions>
+			<string>/</string>
+		</junctions>
+		<actions />
+	</Application>
+
+</list>
