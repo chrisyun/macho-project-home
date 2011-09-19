@@ -211,4 +211,38 @@ public class ApplicationConfigHelperTest extends TestCase {
     Action action = configHelper.getMatchedAction(appAndJunction, resourceUrl);
     assertNotNull(action);
   }
+
+  public void testGetMatchedAction4OA() throws Exception {
+    ApplicationConfigHelper configHelper = new ApplicationConfigHelper(this.getClass().getResourceAsStream("/jmt.sgm.intranet.conf"), this.getClass()
+        .getResourceAsStream("/app.config.sgm.hrms.xml"));
+    List<Application> apps = configHelper.getApplications();
+    assertEquals(3, apps.size());
+
+    String line = "10.200.35.148 - skwaid [14/五月/2011:22:57:54 +0800] \"GET /oa/Login?event=LdapToOa HTTP/1.1\" 304 0";
+    LogParser parser = new LogParser();
+    WebSEALRequestLogEvent event = parser.parseWebSEALRequestLogEvent(line);
+    String resourceUrl = event.getResourceUrl();
+    ApplicationAndJunction appAndJunction = configHelper.getMatchedApplication(resourceUrl);
+    assertNotNull(appAndJunction);
+    assertNotSame("/", appAndJunction.getApplication().getJunctions().get(0));
+    Action action = configHelper.getMatchedAction(appAndJunction, resourceUrl);
+    assertNotNull(action);
+  }
+
+  public void testGetMatchedAction4HRMS() throws Exception {
+    ApplicationConfigHelper configHelper = new ApplicationConfigHelper(this.getClass().getResourceAsStream("/jmt.sgm.intranet.conf"), this.getClass()
+        .getResourceAsStream("/app.config.sgm.hrms.xml"));
+    List<Application> apps = configHelper.getApplications();
+    assertEquals(3, apps.size());
+
+    String line = "10.200.35.148 - skwaid [14/五月/2011:22:57:54 +0800] \"GET /hrms/psp/ps/?cmd=start&languageCd=ZHS HTTP/1.1\" 304 0";
+    LogParser parser = new LogParser();
+    WebSEALRequestLogEvent event = parser.parseWebSEALRequestLogEvent(line);
+    String resourceUrl = event.getResourceUrl();
+    ApplicationAndJunction appAndJunction = configHelper.getMatchedApplication(resourceUrl);
+    assertNotNull(appAndJunction);
+    assertNotSame("/", appAndJunction.getApplication().getJunctions().get(0));
+    Action action = configHelper.getMatchedAction(appAndJunction, resourceUrl);
+    assertNotNull(action);
+  }
 }
