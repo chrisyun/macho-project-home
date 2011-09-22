@@ -8,12 +8,12 @@
 	<entry key="login.module.LDAP.user">cn=root</entry>
 	<entry key="login.module.LDAP.password">passw0rd</entry>
 	<entry key="login.module.LDAP.pooled">true</entry>
-	<entry key="login.module.LDAP.maxTotal">100</entry>
+	<entry key="login.module.LDAP.maxTotal">200</entry>
 
 	<entry key="login.module.LDAP.baseDN">cn=users,dc=sinopec,dc=com</entry>
-	<entry key="login.module.LDAP.userFields">uid,employeenumber,cn,sn,cuentrystatus,givenname,displayname,o,cucompanynumber,ou,departmentnumber,mail,telephonenumber,mobile,managername,cumanagernumber,cuorder,cugender,cuposition,cupositionnumber,cupluralityoname,cupluralityonumber,cupluralitydname,cupluralitydnumber,cupluralitypname,cupluralitypnumber,cupluralitytitle,cupluralitytitlenumber,cupluralitydorder,cutransferstatus,cutransferoname,cutransferonumber,cutransferdname,cutransferdnumber,cutransferdorder,cutransferpname,cutransferpnumber,cutransfertitle,cutransfertitlenumber,cuemployeelevel,cuidentitynumber,title,cutitlenumber,cuallowshow,custarttime,cuendtime,employeetype,cumail,cuuserrole,curesource,cuarea,pinyinname,deptname,deptnumber</entry>
+	<entry key="login.module.LDAP.userFields">cn,sn,telephonenumber,seealso,description,title,ou,departmentnumber,employeenumber,employeetype,givenname,mail,manager,mobile,roomnumber,uid,displayname,o,sppinyinname,sppinyinshortname,spidentitytype,spidentitynumber,spbirthday,spgender,spcountry,spnation,sppoliticsstatus,spemployeehrnumber,spemployeeehrnumber,sporgshortname,sporgnumber,spdeptmanagername,spdeptmanagernumber,sppositionname,sppositionnumber,sppositionstatus,spemployeelevel,sptitlenumber,sptitlelevel,sptitlecategory,sppluralitystatus,sppluralityparents,sptransferstatus,sptransferparents,spstarttime,spendtime,spentrystatus,spappendstatus,spupdatedate,sprolelist,spallowshow,spparents</entry>
 	
-	<entry key="search.user.LDAP.maxRowCount"></entry>
-	<entry key="search.user.LDAP.maxSearchRow"></entry>
+	<entry key="search.user.LDAP.maxRowCount">100</entry>
+	<entry key="search.user.LDAP.maxSearchRow">500</entry>
 
 </properties>
