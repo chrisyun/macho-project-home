@@ -48,6 +48,18 @@ from
 where 
  oc.OBJECTCLASS='EPASSWORDPOLICY' and cn.cn='DEFAULT'
 ;
+----Global Policy----update by zhanghongxing 
+create view v_global_pwd_policy as 
+select   
+    oc.EID as eid,  
+    passwordMaxAge.passwordMaxAge as passwordMaxAge,  
+    cn.cn as cn 
+from 
+     cn cn inner join OBJECTCLASS oc on cn.eid=oc.eid  
+                     left join passwordMaxAge passwordMaxAge on oc.eid=passwordMaxAge.eid 
+where 
+ oc.OBJECTCLASS='EPASSWORDPOLICY' and cn.cn='DEFAULT'
+;
 
 -- User password policy
 create or replace view v_user_pwd_policy as 
@@ -75,6 +87,36 @@ from
                      left join tamldap.passwordMaxAge passwordMaxAge on policyEntry.eid=passwordMaxAge.eid 
                      inner join tamldap.ldap_entry user on user.dn=secDN.secDN
                      inner join tamldap.cn user_cn on user_cn.eid=user.eid
+where 
+     oc.OBJECTCLASS='SECUSER'
+;
+
+-----User password policy----update by zhanghongxing-----
+create view v_user_pwd_policy as 
+select   
+    oc.EID as eid,  
+    lower(principalName.principalName) as username,
+    user_cn.cn as cn,
+    secHasPolicy.secHasPolicy as HasPolicy,  -- 1 means has policy 
+    secPwdLastChanged.secPwdLastChanged as PwdLastChanged,  
+    passwordMaxAge.passwordMaxAge as userPasswordMaxAge,  
+    secAcctValid.secAcctValid as AcctValid,  
+    secDN.secDN as secDN,  
+    (select passwordMaxAge from v_global_pwd_policy) as globalPasswordMaxAge ,
+    func_eval_password_max_age(secHasPolicy.secHasPolicy, passwordMaxAge.passwordMaxAge, (select passwordMaxAge from v_global_pwd_policy)) as appled_pwd_max_age,
+    func_eval_pwd_expire_time(func_eval_password_max_age(secHasPolicy.secHasPolicy, passwordMaxAge.passwordMaxAge, (select passwordMaxAge from v_global_pwd_policy)), secPwdLastChanged.secPwdLastChanged) as pwd_expire_time
+from 
+     principalName principalName inner join OBJECTCLASS oc on principalName.eid=oc.eid  
+                     left join secDN secDN on oc.eid=secDN.eid 
+                     left join secHasPolicy secHasPolicy on oc.eid=secHasPolicy.eid 
+                     left join secPwdLastChanged secPwdLastChanged on oc.eid=secPwdLastChanged.eid 
+                     left join secAcctValid secAcctValid on oc.eid=secAcctValid.eid 
+                     left join ldap_entry entry on oc.eid=entry.eid 
+                     left join ldap_entry policieslEntry on policieslEntry.peid=entry.eid 
+                     left join ldap_entry policyEntry on policyEntry.peid=policieslEntry.eid 
+                     left join passwordMaxAge passwordMaxAge on policyEntry.eid=passwordMaxAge.eid 
+                     inner join ldap_entry user on user.dn=secDN.secDN
+                     inner join cn user_cn on user_cn.eid=user.eid
 where 
      oc.OBJECTCLASS='SECUSER'
 ;
