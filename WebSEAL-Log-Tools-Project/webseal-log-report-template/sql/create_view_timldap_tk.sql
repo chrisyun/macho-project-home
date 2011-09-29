@@ -39,6 +39,7 @@ select
     erlaststatuschangedate.ERLASTSTATUSCHAN, -- 表示帐号状态的变更日期
     entry.create_timestamp as createTimestamp, -- 帐号创建时间
     owner.OWNER as person_dn, -- 帐号所属的人员的DN
+    DESCRIPTION.DESCRIPTION as DESCRIPTION,
     app_map.app_name as app_name
 from
     ERUID eu inner join OBJECTCLASS oc on eu.eid=oc.eid
@@ -47,6 +48,7 @@ from
                      left join ERACCOUNTSTATUS status on eu.eid=status.eid
                      left join cn cn on eu.eid=cn.eid
                      left join erlaststatuschangedate on eu.eid=erlaststatuschangedate.eid
+                     left join DESCRIPTION on eu.eid=DESCRIPTION.eid
                      left join ldap_entry entry on eu.eid=entry.eid
 ;
 
