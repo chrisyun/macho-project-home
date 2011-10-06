@@ -25,6 +25,14 @@
       <fileMode>644</fileMode>
     </fileSet>
     <fileSet>
+      <directory>/app_unauth</directory>
+      <outputDirectory>/app_unauth</outputDirectory>
+      <includes>
+        <include>**</include>
+      </includes>
+      <fileMode>644</fileMode>
+    </fileSet>
+    <fileSet>
       <directory>/user_login</directory>
       <outputDirectory>/user_login</outputDirectory>
       <includes>
