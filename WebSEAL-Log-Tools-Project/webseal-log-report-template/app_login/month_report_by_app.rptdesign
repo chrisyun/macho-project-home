@@ -9,7 +9,7 @@
     <property name="imageDPI">96</property>
     <list-property name="libraries">
         <structure>
-            <property name="fileName">../main.rptlibrary</property>
+            <property name="fileName">../main.unauth.rptlibrary</property>
             <property name="namespace">main</property>
         </structure>
     </list-property>
@@ -91,7 +91,7 @@
             <property name="fontSize">14pt</property>
             <property name="textAlign">center</property>
             <property name="pageBreakBefore">always</property>
-            <text-property name="text">Application Login Summary By Application</text-property>
+            <text-property name="text">Application Unauth Summary By Application</text-property>
         </label>
         <extended-item extensionName="Chart" id="12">
             <xml-property name="xmlRepresentation"><![CDATA[<model:ChartWithAxes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attribute="http://www.birt.eclipse.org/ChartModelAttribute" xmlns:data="http://www.birt.eclipse.org/ChartModelData" xmlns:layout="http://www.birt.eclipse.org/ChartModelLayout" xmlns:model="http://www.birt.eclipse.org/ChartModel" xmlns:type="http://www.birt.eclipse.org/ChartModelType">
