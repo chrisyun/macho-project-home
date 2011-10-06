@@ -35,4 +35,24 @@ call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/
 
 call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_login_detail_report_%YEAR%%MONTH%%DAY_OF_MONTH%.%REPORT_FORMAT% -F %REPORT_HOME%/app_login/app_login_detail_report.rptdesign
 
+REM ------------------------------------------------------- Unauth -----------------------
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_year_report_by_app.%REPORT_FORMAT% -F %REPORT_HOME%/app_unauth/year_report_by_app.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_year_report_by_network.%REPORT_FORMAT% -F %REPORT_HOME%/app_unauth/year_report_by_net.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_year_report_by_webseal.%REPORT_FORMAT% -F %REPORT_HOME%/app_unauth/year_report_by_webseal.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_year_report.%REPORT_FORMAT% -F %REPORT_HOME%/app_unauth/year_report.rptdesign
+
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_month_report_by_app_%YEAR%.%REPORT_FORMAT% -p "Year=%YEAR%" -F %REPORT_HOME%/app_unauth/month_report_by_app.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_month_report_by_network_%YEAR%.%REPORT_FORMAT% -p "Year=%YEAR%" -F %REPORT_HOME%/app_unauth/month_report_by_net.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_month_report_by_webseal_%YEAR%.%REPORT_FORMAT% -p "Year=%YEAR%" -F %REPORT_HOME%/app_unauth/month_report_by_webseal.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_month_report_%YEAR%.%REPORT_FORMAT% -p "Year=%YEAR%" -F %REPORT_HOME%/app_unauth/month_report.rptdesign
+
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_day_report_by_app_%YEAR%%MONTH%.%REPORT_FORMAT% -p "Year=%YEAR%" -p "Month=%MONTH%" -F %REPORT_HOME%/app_unauth/day_of_month_report_by_app.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_day_report_by_network_%YEAR%%MONTH%.%REPORT_FORMAT% -p "Year=%YEAR%" -p "Month=%MONTH%" -F %REPORT_HOME%/app_unauth/day_of_month_report_by_net.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_day_report_by_webseal_%YEAR%%MONTH%.%REPORT_FORMAT% -p "Year=%YEAR%" -p "Month=%MONTH%" -F %REPORT_HOME%/app_unauth/day_of_month_report_by_webseal.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_day_report_%YEAR%%MONTH%.%REPORT_FORMAT% -p "Year=%YEAR%" -p "Month=%MONTH%" -F %REPORT_HOME%/app_unauth/day_of_month_report.rptdesign
+
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_hour_report_by_app_%YEAR%%MONTH%%DAY_OF_MONTH%.%REPORT_FORMAT% -p "Year=%YEAR%" -p "Month=%MONTH%" -p "DAY_OF_MONTH=%DAY_OF_MONTH%" -F %REPORT_HOME%/app_unauth/hour_report_by_app.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_hour_report_by_network_%YEAR%%MONTH%%DAY_OF_MONTH%.%REPORT_FORMAT% -p "Year=%YEAR%" -p "Month=%MONTH%" -p "DAY_OF_MONTH=%DAY_OF_MONTH%" -F %REPORT_HOME%/app_unauth/hour_report_by_net.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_hour_report_by_webseal_%YEAR%%MONTH%%DAY_OF_MONTH%.%REPORT_FORMAT% -p "Year=%YEAR%" -p "Month=%MONTH%" -p "DAY_OF_MONTH=%DAY_OF_MONTH%" -F %REPORT_HOME%/app_unauth/hour_report_by_webseal.rptdesign
+call %REPORT_HOME%\genReport -m runrender -f %REPORT_FORMAT% -o %REPORT_OUTPUT%/app_unauth_hour_report_%YEAR%%MONTH%%DAY_OF_MONTH%.%REPORT_FORMAT% -p "Year=%YEAR%" -p "Month=%MONTH%" -p "DAY_OF_MONTH=%DAY_OF_MONTH%" -F %REPORT_HOME%/app_unauth/hour_report.rptdesign
 
