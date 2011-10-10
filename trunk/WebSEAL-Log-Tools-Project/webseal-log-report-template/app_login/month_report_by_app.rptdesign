@@ -78,6 +78,9 @@
     </styles>
     <page-setup>
         <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">custom</property>
+            <property name="height">16in</property>
+            <property name="width">16in</property>
             <page-footer>
                 <text id="3">
                     <property name="contentType">html</property>
@@ -1199,8 +1202,8 @@
             <property name="outputFormat">SVG</property>
             <property name="inheritColumns">false</property>
             <property name="dataSet">DS_V_APP_REQUEST_MONTH_BY_APP</property>
-            <property name="height">5.427083333333333in</property>
-            <property name="width">7.958333333333333in</property>
+            <property name="height">10in</property>
+            <property name="width">14in</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">YEAR</property>
