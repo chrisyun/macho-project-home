@@ -36,6 +36,8 @@ public class SoapEventHandlerImpl extends BaseCarsEventHandler implements EventH
   private String carsUsername = null;
   private String carsPassword = null;
   
+  private boolean ignoreUnauth = false;
+  
   public SoapEventHandlerImpl() {
     super();
   }
@@ -64,6 +66,20 @@ public class SoapEventHandlerImpl extends BaseCarsEventHandler implements EventH
     this.carsPassword = carsPassword;
   }
 
+  /**
+   * @return the ignoreUnauth
+   */
+  public boolean isIgnoreUnauth() {
+    return ignoreUnauth;
+  }
+
+  /**
+   * @param ignoreUnauth the ignoreUnauth to set
+   */
+  public void setIgnoreUnauth(boolean ignoreUnauth) {
+    this.ignoreUnauth = ignoreUnauth;
+  }
+
   /* (non-Javadoc)
    * @see com.ibm.tivoli.cars.EventUploaded#upload(com.ibm.tivoli.cars.WebSEALRequestLogEvent)
    */
@@ -82,7 +98,7 @@ public class SoapEventHandlerImpl extends BaseCarsEventHandler implements EventH
     if (action == null || !action.isUploaded()) {
        return;
     }
-    if (logEvent.getUserid().equals("Unauth")) {
+    if (this.ignoreUnauth && logEvent.getUserid().equals("Unauth")) {
        return;
     }
     this.eventQueue.add(logEvent);

@@ -122,7 +122,7 @@ public abstract class BaseCarsEventHandler implements EventHandler {
     output.write("    <values>CARSComplexType:CARSAuditUserInfo</values>\n");
     output.write("    <children name=\"registryUserName\" type=\"string\">\n");
     // output.write("      <values>uid=tangjj,cn=users,dc=taikanglife</values>\n");
-    output.write("      <values>uid=" + logEvent.getUserid() + ",cn=users,dc=taikanglife</values>\n");
+    output.write("      <values>uid=" + logEvent.getUserid() + "</values>\n");
     output.write("    </children>\n");
     output.write("    <children name=\"appUserName\" type=\"string\">\n");
     output.write("      <values>" + logEvent.getUserid() + "</values>\n");
@@ -147,7 +147,7 @@ public abstract class BaseCarsEventHandler implements EventHandler {
     output.write("  <extendedDataElements name=\"resourceInfo\" type=\"string\">\n");
     output.write("    <values>CARSComplexType:CARSAuditResourceInfo</values>\n");
     output.write("    <children name=\"nameInApp\" type=\"string\">\n");
-    output.write("      <values>" + url + "</values>\n");
+    output.write("      <values><![CDATA[" + url + "]]></values>\n");
     output.write("    </children>\n");
     output.write("    <children name=\"nameInPolicy\" type=\"string\">\n");
     String appName = (logEvent.getApplication() != null) ? logEvent.getApplication().getName() : "";
@@ -169,7 +169,7 @@ public abstract class BaseCarsEventHandler implements EventHandler {
     output.write("  <extendedDataElements name=\"httpURLInfo\" type=\"string\">\n");
     output.write("    <values>CARSComplexType:CARSAuditHTTPURLInfo</values>\n");
     output.write("    <children name=\"url\" type=\"string\">\n");
-    output.write("      <values>" + url + "</values>\n");
+    output.write("      <values><![CDATA[" + url + "]]></values>\n");
     output.write("    </children>\n");
     output.write("    <children name=\"method\" type=\"string\">\n");
     output.write("      <values>" + logEvent.getHttpMethod() + "</values>\n");
