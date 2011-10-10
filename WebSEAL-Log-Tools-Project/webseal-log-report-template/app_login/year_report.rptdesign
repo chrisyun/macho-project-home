@@ -9,7 +9,7 @@
     <property name="imageDPI">96</property>
     <list-property name="libraries">
         <structure>
-            <property name="fileName">../main.unauth.rptlibrary</property>
+            <property name="fileName">../main.rptlibrary</property>
             <property name="namespace">main</property>
         </structure>
     </list-property>
@@ -93,7 +93,7 @@
                 </structure>
             </list-property>
             <xml-property name="queryText"><![CDATA[SELECT YEAR, APPLICATION, WEBSEAL, TOTAL
-  FROM V_APP_UNAUTH_YEAR
+  FROM V_APP_REQUEST_YEAR
   ORDER BY YEAR ASC, APPLICATION ASC, WEBSEAL ASC
 ]]></xml-property>
             <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
@@ -248,7 +248,7 @@
             <property name="fontSize">14pt</property>
             <property name="textAlign">center</property>
             <property name="pageBreakBefore">always</property>
-            <text-property name="text">Application Unauth Summary By Application and WebSEAL</text-property>
+            <text-property name="text">Application Login Summary By Application and WebSEAL</text-property>
         </label>
         <table id="58">
             <property name="dataSet">DS_V_APP_REQUEST_YEAR</property>

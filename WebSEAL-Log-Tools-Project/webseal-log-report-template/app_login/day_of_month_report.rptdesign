@@ -9,7 +9,7 @@
     <property name="imageDPI">96</property>
     <list-property name="libraries">
         <structure>
-            <property name="fileName">../main.unauth.rptlibrary</property>
+            <property name="fileName">../main.rptlibrary</property>
             <property name="namespace">main</property>
         </structure>
     </list-property>
@@ -80,7 +80,7 @@
             <property name="fontSize">14pt</property>
             <property name="textAlign">center</property>
             <property name="pageBreakBefore">always</property>
-            <text-property name="text">Application Unauth Summary By Application and WebSEAL</text-property>
+            <text-property name="text">Application Login Summary By Application and WebSEAL</text-property>
         </label>
         <table id="88">
             <property name="dataSet">DS_V_APP_REQUEST_DAY</property>
