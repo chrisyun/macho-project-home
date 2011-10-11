@@ -33,19 +33,19 @@
 		</layout>
 	</appender>
 
-  <appender name="w7.log.file" class="org.apache.log4j.RollingFileAppender">
+  <appender name="w7event.rolling.file" class="org.apache.log4j.RollingFileAppender">
     <param name="Threshold" value="INFO" />
     <!-- The active file to log to -->
-    <param name="file" value="${java.io.tmpdir}/w7.xml.log" />
+    <param name="file" value="${webseal.tools.home}/logs/w7.app.access.log" />
     <param name="append" value="true" />
     <param name="encoding" value="UTF-8" />
 
-    <param name="MaxFileSize" value="50MB" />
-    <param name="MaxBackupIndex" value="10" />
+    <param name="MaxFileSize" value="10MB" />
+    <param name="MaxBackupIndex" value="5" />
 
     <layout class="org.apache.log4j.PatternLayout">
       <!-- The log message pattern -->
-      <param name="ConversionPattern" value="%m" />
+      <param name="ConversionPattern" value="%m%n" />
     </layout>
   </appender>
 
@@ -54,10 +54,10 @@
 		<appender-ref ref="server.rolling.file" />
 	</logger>
 	
-  <logger name="com.ibm.tivoli.cars.handler.W7XMLLogHandler" additivity="true">
+  <logger name="w7.event.xml" additivity="true">
     <level value="info" />
-	  <appender-ref red="w7.log.file"/>
-	</logger>
+    <appender-ref ref="w7event.rolling.file" />
+  </logger>
 
 	<logger name="org.apache" additivity="true">
 		<level value="info" />
