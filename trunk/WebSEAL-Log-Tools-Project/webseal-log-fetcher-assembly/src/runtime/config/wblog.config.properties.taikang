@@ -1,7 +1,11 @@
 #
+# Event Handler
+#
+wb.log.process.class=com.ibm.tivoli.cars.handler.ChainEventHandler
+wb.log.process.chain.classes=com.ibm.tivoli.cars.handler.SoapEventHandlerImpl,com.ibm.tivoli.cars.handler.W7XMLLogHandler
+#
 # CARS service end-point settings
 #
-wb.log.process.cars.class=com.ibm.tivoli.cars.handler.SoapEventHandlerImpl
 wb.log.process.cars.soap.url=http\://10.1.16.53\:9080/CommonAuditService/services/Emitter
 wb.log.process.cars.soap.username=wasadmin
 wb.log.process.cars.soap.password=P@ssw0rd
