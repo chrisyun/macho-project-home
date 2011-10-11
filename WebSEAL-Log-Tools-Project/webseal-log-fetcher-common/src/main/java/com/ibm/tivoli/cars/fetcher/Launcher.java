@@ -27,6 +27,7 @@ import org.apache.commons.logging.LogFactory;
 import com.ibm.tivoli.cars.WebSEALRequestLogProcessor;
 import com.ibm.tivoli.cars.entity.ApplicationConfigHelper;
 import com.ibm.tivoli.cars.handler.EventHandler;
+import com.ibm.tivoli.cars.handler.PropertiesAware;
 import com.ibm.tivoli.cars.handler.SoapEventHandlerImpl;
 
 /**
@@ -138,22 +139,14 @@ public class Launcher {
     processor.process();
   }
 
-  private static EventHandler getEventHandler(Properties props) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
-    String className = props.getProperty("wb.log.process.cars.class", SoapEventHandlerImpl.class.getCanonicalName());
+  private static EventHandler getEventHandler(Properties props) throws Exception {
+    String className = props.getProperty("wb.log.process.cars.class", props.getProperty("wb.log.process.class", SoapEventHandlerImpl.class.getCanonicalName()));
     EventHandler handler = (EventHandler) Class.forName(className).newInstance();
-    if (handler instanceof SoapEventHandlerImpl) {
-      SoapEventHandlerImpl eventUploader = (SoapEventHandlerImpl) handler;
-      eventUploader.setCarsServiceURL(props.getProperty("wb.log.process.cars.soap.url"));
-      eventUploader.setWebSEALUrl(props.getProperty("wb.log.process.webseal.base.url"));
-      eventUploader.setWebSEALInstaceId(props.getProperty("wb.log.process.webseal.instance.id"));
-      eventUploader.setWebSEALNetworkId(props.getProperty("wb.log.process.webseal.network.id"));
-      eventUploader.setWebSEALLocation(props.getProperty("wb.log.process.webseal.hostname"));
-      eventUploader.setCarsUsername(props.getProperty("wb.log.process.cars.soap.username", null));
-      eventUploader.setCarsPassword(props.getProperty("wb.log.process.cars.soap.password", null));
-      return eventUploader;
-    } else {
-      return handler;
+    if (handler instanceof PropertiesAware) {
+       ((PropertiesAware)handler).setProperties(props);
     }
+    
+    return handler;
   }
 
   private static List<File> getLogFiles(String inputFilenameStr) {
