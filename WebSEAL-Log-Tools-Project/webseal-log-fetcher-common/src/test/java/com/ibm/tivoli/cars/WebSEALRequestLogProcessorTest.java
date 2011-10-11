@@ -10,6 +10,7 @@ import java.util.UUID;
 import junit.framework.TestCase;
 
 import com.ibm.tivoli.cars.handler.SoapEventHandlerImpl;
+import com.ibm.tivoli.cars.handler.W7XMLLogHandler;
 
 public class WebSEALRequestLogProcessorTest extends TestCase {
 
@@ -66,6 +67,19 @@ public class WebSEALRequestLogProcessorTest extends TestCase {
     WebSEALRequestLogProcessor processor = new WebSEALRequestLogProcessor();
     processor.setEventReader(new StringReader(lines));
     processor.setEventHandler(eventUploader);
+    processor.process();
+  }
+
+  public void testProcess3() throws Exception {
+    String lines = "10.200.35.148 - skwaid [14/ÎåÔÂ/2011:22:57:26 +0800] \"GET /universe/wps/themes/html/SGMUniverseSpecNav/heading_bg02.gif HTTP/1.1\" 304 0\n";
+
+    W7XMLLogHandler handler = new W7XMLLogHandler();
+    handler.setWebSEALUrl("http://10.9.2.100");
+    handler.setWebSEALInstaceId("webseal1");
+
+    WebSEALRequestLogProcessor processor = new WebSEALRequestLogProcessor();
+    processor.setEventReader(new StringReader(lines));
+    processor.setEventHandler(handler);
     processor.process();
   }
 
