@@ -6,6 +6,7 @@ package com.ibm.tivoli.cars.handler;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 import org.apache.commons.httpclient.Credentials;
 import org.apache.commons.httpclient.HttpClient;
@@ -25,7 +26,7 @@ import com.ibm.tivoli.cars.entity.Application;
  * @author ZhaoDongLu
  *
  */
-public class SoapEventHandlerImpl extends BaseCarsEventHandler implements EventHandler {
+public class SoapEventHandlerImpl extends BaseCarsEventHandler implements EventHandler, PropertiesAware {
   private static Log log = LogFactory.getLog(SoapEventHandlerImpl.class);
   
   private int numberOfGroupEvent = 1;
@@ -149,6 +150,19 @@ public class SoapEventHandlerImpl extends BaseCarsEventHandler implements EventH
       eventQueue.clear();
       method.releaseConnection();
     }
+  }
+
+  /* (non-Javadoc)
+   * @see com.ibm.tivoli.cars.handler.PropertiesAware#setProperties(java.util.Properties)
+   */
+  public void setProperties(Properties props) {
+    this.setCarsServiceURL(props.getProperty("wb.log.process.cars.soap.url"));
+    this.setWebSEALUrl(props.getProperty("wb.log.process.webseal.base.url"));
+    this.setWebSEALInstaceId(props.getProperty("wb.log.process.webseal.instance.id"));
+    this.setWebSEALNetworkId(props.getProperty("wb.log.process.webseal.network.id"));
+    this.setWebSEALLocation(props.getProperty("wb.log.process.webseal.hostname"));
+    this.setCarsUsername(props.getProperty("wb.log.process.cars.soap.username", null));
+    this.setCarsPassword(props.getProperty("wb.log.process.cars.soap.password", null));
   }
 
 }
