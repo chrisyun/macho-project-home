@@ -43,7 +43,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
   /* (non-Javadoc)
    * @see com.ibm.tivoli.tuna.service.AuthenticationService#authentication(com.ibm.tivoli.tuna.service.Requester, com.ibm.tivoli.tuna.service.Context, com.ibm.tivoli.tuna.service.Credentials)
    */
-  public AuthenticationResult authentication(Requester requester, Context context, Credentials credentials) {
+  public AuthenticationResult authenticate(Requester requester, Context context, Credentials credentials) {
     UserSubject issuer = new UserSubject("url", "http://idp.tivoli.ibm.com");
 
     LoginContext lc = null;
