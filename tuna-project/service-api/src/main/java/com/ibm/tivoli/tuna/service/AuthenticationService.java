@@ -15,8 +15,8 @@ import javax.jws.WebService;
 @WebService(targetNamespace="http://service.tuna.tivoli.ibm.com/")
 public interface AuthenticationService {
   
-  @WebMethod(operationName = "authentication")
+  @WebMethod(operationName = "authenticate")
   @WebResult(name="AuthnResult")
-  public abstract AuthenticationResult authentication(@WebParam(name = "requester")Requester requester, @WebParam(name = "context")Context context, @WebParam(name = "credentials")Credentials credentials);
+  public abstract AuthenticationResult authenticate(@WebParam(name = "requester")Requester requester, @WebParam(name = "context")Context context, @WebParam(name = "credentials")Credentials credentials);
 
 }
