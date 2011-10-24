@@ -50,7 +50,7 @@ public class LTPALoginModuleTest extends TestCase {
     Credentials credentials = new Credentials();
     credentials.getCredentials().add(new Credential("token", "vT5Zt1Ptg228WednWr7PFXWlM/a3OiibNiqeHh1hZ50v/PjQMFGs6E8aZxx23n2PbjOYg8zpIbtW2pM0D+ZgpEcPSXwiE4RZiyYG+2otRO4xfUI38TCjhHsWOuUF3t1hnBfDQQalE7CmipOIzsWbmwuYRQxsmn4iweIB11f4ckc11xZqGWf1cTiYfgmOJwFCIG3mibI5I7wzo8+ed5DvNYPvuchhVggOjFUUEGaoqH+52r+K/RWBs6GmH9R53zWkDAAvs7CxNNOnuv6U+0UFJjxBcS88iJb9NuI2KsTCb/W8CFHrNU//Ex5g8/LoOx5zsTEBCPDzVWcEweWaQ4cWCctrLHfI4/EX"));
     Requester requester = new Requester();
-    AuthenticationResult result = service.authentication(requester, context, credentials);
+    AuthenticationResult result = service.authenticate(requester, context, credentials);
     assertEquals("success", result.getStatus().getCode());
     //assertEquals("ids.hq.unicom.local\\:389", response.getCredential().getRealm());
     assertEquals("uid=000015181,cn=users,dc=hq,dc=unicom", result.getSubjects().get(0).getNameID());
