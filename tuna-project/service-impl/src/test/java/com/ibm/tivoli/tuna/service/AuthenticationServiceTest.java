@@ -48,7 +48,7 @@ public class AuthenticationServiceTest extends TestCase {
     credentials.getCredentials().add(new Credential("username", "testUser"));
     credentials.getCredentials().add(new Credential("password", "testPassword"));
     Requester requester = new Requester();
-    AuthenticationResult result = service.authentication(requester, context, credentials);
+    AuthenticationResult result = service.authenticate(requester, context, credentials);
     assertEquals("success", result.getStatus().getCode());
 
   }
