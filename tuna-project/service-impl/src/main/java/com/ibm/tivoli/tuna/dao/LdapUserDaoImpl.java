@@ -61,7 +61,8 @@ public class LdapUserDaoImpl implements ILdapUserDao {
 		try {
 			ctx = ldapTemplate.getContextSource().getReadOnlyContext();
 			
-			NamingEnumeration answer = ctx.search(userDn, "(userpassword={0})", new Object[]{String.valueOf(pwd)}, cons);
+			byte[] bytes = (pwd != null)?String.valueOf(pwd).getBytes("iso8859-1"):new byte[0];
+      NamingEnumeration answer = ctx.search(userDn, "(userpassword={0})", new Object[]{bytes}, cons);
 			if(answer == null || !answer.hasMoreElements()){
 				throw LdapUtils.convertLdapException(new NamingException("the password is wrong"));
 			}
