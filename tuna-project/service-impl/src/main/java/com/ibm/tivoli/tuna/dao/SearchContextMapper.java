@@ -18,78 +18,78 @@ import com.ibm.tivoli.tuna.service.AttributeStatement;
 import com.ibm.tivoli.tuna.util.StringUtil;
 
 public class SearchContextMapper implements ContextMapper {
-	private static Log log = LogFactory.getLog(SearchContextMapper.class);
-	
-	//å°è£…beanå¯¹è±¡æˆå‘˜å±æ€§
-	private String[] property = new String[0];
-	//æ‰€éœ€è¦æŸ¥æ‰¾çš„å±æ€§ï¼Œè‹¥ä¸ºç©ºåˆ™æŸ¥æ‰¾å…¨éƒ¨
-	private String[] arrShowField = new String[0];
-	//éœ€è¦å°è£…çš„bean
-	private Class appClass;
-	
-	/**
-	 * 
-	 * @param multivalued
-	 * @param appClass
-	 */
-	public SearchContextMapper(String[] arrShowField, Class appClass) {
-		super();
-		this.appClass = appClass;
-		this.arrShowField = arrShowField;
-		Field[] fields = appClass.getDeclaredFields();
-		
-		property = new String[fields.length];
-		for (int i = 0; i < fields.length; i++) {
-			property[i] = fields[i].getName();
-		}
-	}
-	
-	public Object mapFromContext(Object ctx) {
-		try{
-			AttributeStatement obj = (AttributeStatement) appClass.newInstance();
-			if(ctx == null) {
-				return obj;
-			} 
-			
-			DirContextAdapter context = (DirContextAdapter) ctx;
-			Attributes attrs = context.getAttributes();
-			NamingEnumeration results = attrs.getAll();
-			
-			while(results.hasMoreElements()) {
-				try {
-					Attribute attr = (Attribute) results.nextElement();
-					String name = attr.getID().toLowerCase();
-					
-					if(!StringUtil.isNullArray(property) && StringUtil.isExistElement(name, property)) {
-						//è¯¥å€¼ä¸ºå¯¹è±¡æˆå‘˜å±æ€§
-						String methodName = "set" + name.substring(0, 1).toUpperCase()
-							+ name.substring(1);
-						Method method = appClass.getDeclaredMethod(methodName, 
-								new Class[]{String.class});
-						method.invoke(obj, new Object[]{attr.get(0).toString()});
-					} else if(StringUtil.isNullArray(arrShowField) || StringUtil.isExistElement(name, arrShowField)) {
-						//ä¸åŒºåˆ†å•å€¼å’Œå¤šå€¼ï¼Œç»Ÿä¸€æŒ‰ç…§å¤šå€¼å»å–
-						List<String> buteValues=new ArrayList<String>();
-						NamingEnumeration repeatEnumer = attr.getAll();
-						while (repeatEnumer.hasMoreElements()) {
-							String value = (String) repeatEnumer.nextElement();
-							buteValues.add(value);
-						}
-						obj.getAttributes().add(
-								new com.ibm.tivoli.tuna.service.Attribute(name, "string", buteValues));
-					} 
-				} catch(Exception ex) {
-					log.error("Ldapå±æ€§è½¬æ¢å‡ºç°å¼‚å¸¸ï¼š", ex);
-				}
-			}
-			com.ibm.tivoli.tuna.service.Attribute userDN = 
-				new com.ibm.tivoli.tuna.service.Attribute("userdn", "String", context.getNameInNamespace());
-			obj.getAttributes().add(userDN);
-			return obj;
-		}catch(Exception e){
-			log.error("Ldapå¯¹è±¡è½¬æ¢å‡ºç°å¼‚å¸¸ï¼š", e);
-		}
-		return null;
-	}
-	
+  private static Log log = LogFactory.getLog(SearchContextMapper.class);
+  
+  //·â×°bean¶ÔÏó³ÉÔ±ÊôĞÔ
+  private String[] property = new String[0];
+  //ËùĞèÒª²éÕÒµÄÊôĞÔ£¬ÈôÎª¿ÕÔò²éÕÒÈ«²¿
+  private String[] arrShowField = new String[0];
+  //ĞèÒª·â×°µÄbean
+  private Class appClass;
+  
+  /**
+   * 
+   * @param multivalued
+   * @param appClass
+   */
+  public SearchContextMapper(String[] arrShowField, Class appClass) {
+    super();
+    this.appClass = appClass;
+    this.arrShowField = arrShowField;
+    Field[] fields = appClass.getDeclaredFields();
+    
+    property = new String[fields.length];
+    for (int i = 0; i < fields.length; i++) {
+      property[i] = fields[i].getName();
+    }
+  }
+  
+  public Object mapFromContext(Object ctx) {
+    try{
+      AttributeStatement obj = (AttributeStatement) appClass.newInstance();
+      if(ctx == null) {
+        return obj;
+      } 
+      
+      DirContextAdapter context = (DirContextAdapter) ctx;
+      Attributes attrs = context.getAttributes();
+      NamingEnumeration results = attrs.getAll();
+      
+      while(results.hasMoreElements()) {
+        try {
+          Attribute attr = (Attribute) results.nextElement();
+          String name = attr.getID().toLowerCase();
+          
+          if(!StringUtil.isNullArray(property) && StringUtil.isExistElement(name, property)) {
+            //¸ÃÖµÎª¶ÔÏó³ÉÔ±ÊôĞÔ
+            String methodName = "set" + name.substring(0, 1).toUpperCase()
+              + name.substring(1);
+            Method method = appClass.getDeclaredMethod(methodName, 
+                new Class[]{String.class});
+            method.invoke(obj, new Object[]{attr.get(0).toString()});
+          } else if(StringUtil.isNullArray(arrShowField) || StringUtil.isExistElement(name, arrShowField)) {
+            //²»Çø·Öµ¥ÖµºÍ¶àÖµ£¬Í³Ò»°´ÕÕ¶àÖµÈ¥È¡
+            List<String> buteValues=new ArrayList<String>();
+            NamingEnumeration repeatEnumer = attr.getAll();
+            while (repeatEnumer.hasMoreElements()) {
+              String value = (String) repeatEnumer.nextElement();
+              buteValues.add(value);
+            }
+            obj.getAttributes().add(
+                new com.ibm.tivoli.tuna.service.Attribute(name, "string", buteValues));
+          } 
+        } catch(Exception ex) {
+          log.error("LdapÊôĞÔ×ª»»³öÏÖÒì³££º", ex);
+        }
+      }
+      com.ibm.tivoli.tuna.service.Attribute userDN = 
+        new com.ibm.tivoli.tuna.service.Attribute("userdn", "String", context.getNameInNamespace());
+      obj.getAttributes().add(userDN);
+      return obj;
+    }catch(Exception e){
+      log.error("Ldap¶ÔÏó×ª»»³öÏÖÒì³££º", e);
+    }
+    return null;
+  }
+  
 }
