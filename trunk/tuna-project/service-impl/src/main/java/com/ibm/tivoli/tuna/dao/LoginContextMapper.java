@@ -17,61 +17,61 @@ import com.ibm.tivoli.tuna.util.StringUtil;
 
 
 public class LoginContextMapper implements ContextMapper {
-	private static Log log = LogFactory.getLog(LoginContextMapper.class);
-	
-	//æ‰€éœ€è¦æŸ¥æ‰¾çš„å±æ€§ï¼Œè‹¥ä¸ºç©ºåˆ™æŸ¥æ‰¾å…¨éƒ¨
-	private String[] arrShowField = new String[0];
+  private static Log log = LogFactory.getLog(LoginContextMapper.class);
+  
+  //ËùĞèÒª²éÕÒµÄÊôĞÔ£¬ÈôÎª¿ÕÔò²éÕÒÈ«²¿
+  private String[] arrShowField = new String[0];
 
-	
-	/**
-	 * 
-	 * @param multivalued
-	 * @param appClass
-	 */
-	public LoginContextMapper(String[] arrShowField) {
-		super();
-		this.arrShowField = arrShowField;
-	}
-	
-	public Object mapFromContext(Object ctx) {
-		try{
-			AttributeStatement obj = new AttributeStatement();
-			if(ctx == null) {
-				return obj;
-			} 
-			
-			DirContextAdapter context = (DirContextAdapter) ctx;
-			Attributes attrs = context.getAttributes();
-			NamingEnumeration results = attrs.getAll();
-			
-			while(results.hasMoreElements()) {
-				try {
-					Attribute attr = (Attribute) results.nextElement();
-					String name = attr.getID().toLowerCase();
-					
-					if(StringUtil.isNullArray(arrShowField) || StringUtil.isExistElement(name, arrShowField)) {
-						//ä¸åŒºåˆ†å•å€¼å’Œå¤šå€¼ï¼Œç»Ÿä¸€æŒ‰ç…§å¤šå€¼å»å–
-						List<String> buteValues=new ArrayList<String>();
-						NamingEnumeration repeatEnumer = attr.getAll();
-						while (repeatEnumer.hasMoreElements()) {
-							String value = (String) repeatEnumer.nextElement();
-							buteValues.add(value);
-						}
-						obj.getAttributes().add(
-								new com.ibm.tivoli.tuna.service.Attribute(name, "string", buteValues));
-					} 
-				} catch(Exception ex) {
-					log.error("Ldapå±æ€§è½¬æ¢å‡ºç°å¼‚å¸¸ï¼š", ex);
-				}
-			}
-			com.ibm.tivoli.tuna.service.Attribute userDN = 
-				new com.ibm.tivoli.tuna.service.Attribute("userdn", "String", context.getNameInNamespace());
-			obj.getAttributes().add(userDN);
-			return obj;
-		}catch(Exception e){
-			log.error("Ldapå¯¹è±¡è½¬æ¢å‡ºç°å¼‚å¸¸ï¼š", e);
-		}
-		return null;
-	}
-	
+  
+  /**
+   * 
+   * @param multivalued
+   * @param appClass
+   */
+  public LoginContextMapper(String[] arrShowField) {
+    super();
+    this.arrShowField = arrShowField;
+  }
+  
+  public Object mapFromContext(Object ctx) {
+    try{
+      AttributeStatement obj = new AttributeStatement();
+      if(ctx == null) {
+        return obj;
+      } 
+      
+      DirContextAdapter context = (DirContextAdapter) ctx;
+      Attributes attrs = context.getAttributes();
+      NamingEnumeration results = attrs.getAll();
+      
+      while(results.hasMoreElements()) {
+        try {
+          Attribute attr = (Attribute) results.nextElement();
+          String name = attr.getID().toLowerCase();
+          
+          if(StringUtil.isNullArray(arrShowField) || StringUtil.isExistElement(name, arrShowField)) {
+            //²»Çø·Öµ¥ÖµºÍ¶àÖµ£¬Í³Ò»°´ÕÕ¶àÖµÈ¥È¡
+            List<String> buteValues=new ArrayList<String>();
+            NamingEnumeration repeatEnumer = attr.getAll();
+            while (repeatEnumer.hasMoreElements()) {
+              String value = (String) repeatEnumer.nextElement();
+              buteValues.add(value);
+            }
+            obj.getAttributes().add(
+                new com.ibm.tivoli.tuna.service.Attribute(name, "string", buteValues));
+          } 
+        } catch(Exception ex) {
+          log.error("LdapÊôĞÔ×ª»»³öÏÖÒì³££º", ex);
+        }
+      }
+      com.ibm.tivoli.tuna.service.Attribute userDN = 
+        new com.ibm.tivoli.tuna.service.Attribute("userdn", "String", context.getNameInNamespace());
+      obj.getAttributes().add(userDN);
+      return obj;
+    }catch(Exception e){
+      log.error("Ldap¶ÔÏó×ª»»³öÏÖÒì³££º", e);
+    }
+    return null;
+  }
+  
 }
