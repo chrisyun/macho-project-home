@@ -137,4 +137,10 @@ public class XMLConfiguration extends Configuration implements LoginContextItemF
     return null;
   }
 
+  @Override
+  public void refresh() {
+    // TODO Auto-generated method stub
+    
+  }
+
 }
