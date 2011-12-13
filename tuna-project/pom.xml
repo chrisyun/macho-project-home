@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ibm.tivoli.tuna</groupId>
@@ -12,11 +13,12 @@
   	<module>service-web</module>
   	<module>service-module-ldap</module>
   	<module>service-module-ltpa</module>
+    <module>service-client</module>
   </modules>
   
   <properties>
-    <spring.version>2.5.6</spring.version>
-    <cxf.version>2.2.1</cxf.version>
+    <spring.version>3.0.5.RELEASE</spring.version>
+    <cxf.version>2.2.3</cxf.version>
   </properties>
 
   <build>
