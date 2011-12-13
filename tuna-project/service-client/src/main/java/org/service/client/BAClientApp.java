@@ -52,13 +52,15 @@ public class BAClientApp {
 		credentials.getCredentials().add(username);
 		credentials.getCredentials().add(password);
 		
+		//---------------------设置SSL需要测试-----------------------------
 		Client proxy = ClientProxy.getClient(client);   
 		HTTPConduit conduit = (HTTPConduit) proxy.getConduit();    
 		TLSClientParameters tls= new TLSClientParameters();    
+		//添加TrustAllX509TrustManager所在类jar包
 //		tls.setTrustManagers( new TrustManager[]{ new TrustAllX509TrustManager()});
-		tls.setTrustManagers( new TrustManager[]{ new X509T()});
 		tls.setDisableCNCheck(true);//接受服务器端的认证   
 		conduit.setTlsClientParameters(tls);    
+		//---------------------设置SSL-----------------------------
 		
 		AuthenticationResult ar = client.authenticate(requester, contexter, credentials);
 		
