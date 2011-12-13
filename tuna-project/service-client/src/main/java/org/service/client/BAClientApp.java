@@ -57,7 +57,7 @@ public class BAClientApp {
 		HTTPConduit conduit = (HTTPConduit) proxy.getConduit();    
 		TLSClientParameters tls= new TLSClientParameters();    
 		//添加TrustAllX509TrustManager所在类jar包
-//		tls.setTrustManagers( new TrustManager[]{ new TrustAllX509TrustManager()});
+		tls.setTrustManagers( new TrustManager[]{ new TrustAllX509TrustManager()});
 		tls.setDisableCNCheck(true);//接受服务器端的认证   
 		conduit.setTlsClientParameters(tls);    
 		//---------------------设置SSL-----------------------------
