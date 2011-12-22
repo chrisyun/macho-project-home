@@ -1,5 +1,5 @@
 cd C:\Users\IBM_ADMIN\workspace\ICBC-Probe-Project
-call mvn -Dmaven.test.skip package
+call mvn -Dmaven.test.skip clean package
 del /S /F /Q C:\Users\IBM_ADMIN\workspace\ICBC-Probe-Project\icbc-probe-assembly\target\icbc-probe
 
 unzip C:\Users\IBM_ADMIN\workspace\ICBC-Probe-Project\icbc-probe-assembly\target\icbc-probe-2.0.0-SNAPSHOT-bin.zip -d C:\Users\IBM_ADMIN\workspace\ICBC-Probe-Project\icbc-probe-assembly\target
