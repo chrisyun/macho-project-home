@@ -23,10 +23,10 @@ Name "ICBC HTTP DNS Probe V2.0"
 
 
 # Included files
-!include Sections.nsh
-!include MUI.nsh
-!include nsDialogs.nsh
-!include LogicLib.nsh
+#!include Sections.nsh
+!include MUI2.nsh
+#!include nsDialogs.nsh
+#!include LogicLib.nsh
 
 # Variables
 Var StartMenuGroup
@@ -107,6 +107,7 @@ Section -post SEC0001
     Exec 'regedit /s c:\icbc-probe\bin\install.reg'
     
     # copy conf file based on networkid
+    DetailPrint "Using config file: c:\icbc-probe\conf\probe.xml.$networkid"
     CopyFiles c:\icbc-probe\conf\probe.xml.$networkid c:\icbc-probe\conf\probe.xml.ok
     
 SectionEnd
@@ -164,33 +165,33 @@ Function un.onInit
 FunctionEnd
 
 Function MyFinishShow
-  nsDialogs::Create 1018
-  Pop $Dialog
-
-  ${If} $Dialog == error
-    Abort
-  ${EndIf}
-  
-  ${NSD_CreateLabel} 0 0 100% 12u "请选择互联网接入方式，将根据不同的接入方式，使用不同的数据接收服务器地址."
+  ${NSD_CreateLabel} 180 180 300 32 "请选择互联网接入方式，将根据不同的接入方式，使用不同的数据接收服务器地址."
   Pop $Label
+  SetCtlColors $Label "" "${MUI_BGCOLOR}"
 
-  ${NSD_CreateRadioButton} 0 20 100% 12u "北京网通"
+  ${NSD_CreateRadioButton} 180 220 90 24 "北京网通"
   Pop $RadioButton1
+  SetCtlColors $RadioButton1 "" "${MUI_BGCOLOR}"
   
-  ${NSD_CreateRadioButton} 0 30u 100% 12u "北京网通2"
+  ${NSD_CreateRadioButton} 180 240 90 24 "北京网通2"
   Pop $RadioButton2
+  SetCtlColors $RadioButton2 "" "${MUI_BGCOLOR}"
  
-  ${NSD_CreateRadioButton} 0 45u 100% 12u "北京电信"
+  ${NSD_CreateRadioButton} 180 260 90 24 "北京电信"
   Pop $RadioButton3
+  SetCtlColors $RadioButton3 "" "${MUI_BGCOLOR}"
    
-  ${NSD_CreateRadioButton} 0 60u 100% 12u "北京电信2"
+  ${NSD_CreateRadioButton} 330 220 90 24 "北京电信2"
   Pop $RadioButton4
+  SetCtlColors $RadioButton4 "" "${MUI_BGCOLOR}"
   
-  ${NSD_CreateRadioButton} 0 75u 100% 12u "上海电信"
+  ${NSD_CreateRadioButton} 330 240 90 24 "上海电信"
   Pop $RadioButton5
+  SetCtlColors $RadioButton5 "" "${MUI_BGCOLOR}"
   
-  ${NSD_CreateRadioButton} 0 90u 100% 12u "上海联通"
+  ${NSD_CreateRadioButton} 330 260 90 24 "上海联通"
   Pop $RadioButton6
+  SetCtlColors $RadioButton6 "" "${MUI_BGCOLOR}"
   
   nsDialogs::Show
   
