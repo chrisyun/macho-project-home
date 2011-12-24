@@ -56,7 +56,10 @@ Var networkid
 !insertmacro MUI_LANGUAGE SimpChinese
 
 # Installer attributes
-OutFile E:\Temp\icbc_probe_setup_v2.0.exe
+#OutFile E:\Temp\icbc_probe_setup_v2.0.exe
+OutFile C:\Users\IBM_ADMIN\workspace\ICBC-Probe-Project\icbc-probe-assembly\target\icbc_probe_setup_v2.0.exe
+
+
 InstallDir c:\icbc-probe
 CRCCheck on
 XPStyle on
@@ -111,7 +114,7 @@ Section -post SEC0001
     
     # copy conf file based on networkid
     DetailPrint "Using config file: c:\icbc-probe\conf\probe.xml.$networkid"
-    CopyFiles c:\icbc-probe\conf\probe.xml.$networkid c:\icbc-probe\conf\probe.xml.ok
+    CopyFiles c:\icbc-probe\conf\probe.xml.$networkid c:\icbc-probe\conf\probe.xml
     
 SectionEnd
 
@@ -236,11 +239,11 @@ ${EndIf}
 FunctionEnd
 
 Function MyFinishShowBySelectBox
-  ${NSD_CreateLabel} 180 180 100% 12u "请选择互联网接入方式，将根据不同的接入方式，使用不同的数据接收服务器地址:"
+  ${NSD_CreateLabel} 180 180 260 24u "请选择互联网接入方式，将根据不同的接入方式，使用不同的数据接收服务器地址:"
   Pop $Label
   SetCtlColors $Label "" "${MUI_BGCOLOR}"
 
-  ${NSD_CreateDropList} 180 260 160 12u ""
+  ${NSD_CreateDropList} 180 265 160 20u ""
   Pop $ListBox
   ${NSD_CB_AddString} $ListBox "北京网通  [202.106.83.84]"
   ${NSD_CB_AddString} $ListBox "北京网通2 [123.127.121.203]"
@@ -260,6 +263,10 @@ strCpy $networkid "bj.unicom"
 ${NSD_GetText} $ListBox $0
 #MessageBox mb_ok "Custom select: $0"
 
+${If} $0 == ""
+    MessageBox mb_ok "没有设置网络接入方式，使用: 北京网通  [202.106.83.84]"
+    strCpy $networkid "bj.unicom"
+${EndIf}
 ${If} $0 == "北京网通  [202.106.83.84]"
     strCpy $networkid "bj.unicom"
     # MessageBox mb_ok "Custom radiobutton#1 was checked..."
@@ -284,5 +291,5 @@ ${If} $0 == "上海联通  [211.95.81.203]"
     strCpy $networkid "sh.unicom"
     # MessageBox mb_ok "Custom radiobutton#6 was checked..."
 ${EndIf}
-MessageBox mb_ok "使用接入方式: $networkid"
+#MessageBox mb_ok "使用接入方式: $networkid"
 FunctionEnd
