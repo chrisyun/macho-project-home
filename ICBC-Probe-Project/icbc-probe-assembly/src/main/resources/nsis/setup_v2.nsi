@@ -18,8 +18,10 @@ Name "ICBC HTTP DNS Probe V2.0"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Define customer page
-!define MUI_PAGE_CUSTOMFUNCTION_SHOW MyFinishShow
-!define MUI_PAGE_CUSTOMFUNCTION_LEAVE MyFinishLeave
+#!define MUI_PAGE_CUSTOMFUNCTION_SHOW MyFinishShowByRadioBox
+#!define MUI_PAGE_CUSTOMFUNCTION_LEAVE MyFinishLeaveByRadioBox
+!define MUI_PAGE_CUSTOMFUNCTION_SHOW MyFinishShowBySelectBox
+!define MUI_PAGE_CUSTOMFUNCTION_LEAVE MyFinishLeaveBySelectBox
 
 
 # Included files
@@ -39,6 +41,7 @@ Var RadioButton3
 Var RadioButton4
 Var RadioButton5
 Var RadioButton6
+var ListBox
 Var networkid
 
 # Installer pages
@@ -164,40 +167,39 @@ Function un.onInit
     !insertmacro SELECT_UNSECTION Main ${UNSEC0000}
 FunctionEnd
 
-Function MyFinishShow
-  ${NSD_CreateLabel} 180 180 300 32 "请选择互联网接入方式，将根据不同的接入方式，使用不同的数据接收服务器地址."
+Function MyFinishShowByRadioBox
+  ${NSD_CreateLabel} 180 180 100% 12u "请选择互联网接入方式:"
   Pop $Label
   SetCtlColors $Label "" "${MUI_BGCOLOR}"
 
-  ${NSD_CreateRadioButton} 180 220 90 24 "北京网通"
+  ${NSD_CreateRadioButton} 180 200 100% 12u "北京网通"
   Pop $RadioButton1
   SetCtlColors $RadioButton1 "" "${MUI_BGCOLOR}"
   
-  ${NSD_CreateRadioButton} 180 240 90 24 "北京网通2"
+  ${NSD_CreateRadioButton} 180 220 100% 12u "北京网通2"
   Pop $RadioButton2
   SetCtlColors $RadioButton2 "" "${MUI_BGCOLOR}"
  
-  ${NSD_CreateRadioButton} 180 260 90 24 "北京电信"
+  ${NSD_CreateRadioButton} 180 240 100% 12u "北京电信"
   Pop $RadioButton3
   SetCtlColors $RadioButton3 "" "${MUI_BGCOLOR}"
    
-  ${NSD_CreateRadioButton} 330 220 90 24 "北京电信2"
+  ${NSD_CreateRadioButton} 180 260 100% 12u "北京电信2"
   Pop $RadioButton4
   SetCtlColors $RadioButton4 "" "${MUI_BGCOLOR}"
   
-  ${NSD_CreateRadioButton} 330 240 90 24 "上海电信"
+  ${NSD_CreateRadioButton} 180 300 100% 12u "上海电信"
   Pop $RadioButton5
   SetCtlColors $RadioButton5 "" "${MUI_BGCOLOR}"
   
-  ${NSD_CreateRadioButton} 330 260 90 24 "上海联通"
+  ${NSD_CreateRadioButton} 180 320 100% 12u "上海联通"
   Pop $RadioButton6
   SetCtlColors $RadioButton6 "" "${MUI_BGCOLOR}"
   
   nsDialogs::Show
-  
 FunctionEnd
 
-Function MyFinishLeave
+Function MyFinishLeaveByRadioBox
 # Set default value
 strCpy $networkid "bj.unicom"
 ${NSD_GetState} $RadioButton1 $0
@@ -231,4 +233,56 @@ ${If} $0 <> 0
     # MessageBox mb_ok "Custom radiobutton#6 was checked..."
 ${EndIf}
 # MessageBox mb_ok $networkid
+FunctionEnd
+
+Function MyFinishShowBySelectBox
+  ${NSD_CreateLabel} 180 180 100% 12u "请选择互联网接入方式，将根据不同的接入方式，使用不同的数据接收服务器地址:"
+  Pop $Label
+  SetCtlColors $Label "" "${MUI_BGCOLOR}"
+
+  ${NSD_CreateDropList} 180 260 160 12u ""
+  Pop $ListBox
+  ${NSD_CB_AddString} $ListBox "北京网通  [202.106.83.84]"
+  ${NSD_CB_AddString} $ListBox "北京网通2 [123.127.121.203]"
+  ${NSD_CB_AddString} $ListBox "北京电信  [219.142.91.203]"
+  ${NSD_CB_AddString} $ListBox "北京电信2 [60.247.99.203]"
+  ${NSD_CB_AddString} $ListBox "上海电信  [61.129.61.203]"
+  ${NSD_CB_AddString} $ListBox "上海联通  [211.95.81.203]"
+  
+  ${NSD_LB_SelectString} $ListBox "北京网通  [202.106.83.84]" 
+  
+  nsDialogs::Show
+FunctionEnd
+
+Function MyFinishLeaveBySelectBox
+# Set default value
+strCpy $networkid "bj.unicom"
+${NSD_GetText} $ListBox $0
+#MessageBox mb_ok "Custom select: $0"
+
+${If} $0 == "北京网通  [202.106.83.84]"
+    strCpy $networkid "bj.unicom"
+    # MessageBox mb_ok "Custom radiobutton#1 was checked..."
+${EndIf}
+${If} $0 == "北京网通2 [123.127.121.203]"
+    strCpy $networkid "bj.unicom2"
+    # MessageBox mb_ok "Custom radiobutton#2 was checked..."
+${EndIf}
+${If} $0 == "北京电信  [219.142.91.203]"
+    strCpy $networkid "bj.telcom"
+    # MessageBox mb_ok "Custom radiobutton#3 was checked..."
+${EndIf}
+${If} $0 == "北京电信2 [60.247.99.203]"
+    strCpy $networkid "bj.telcom2"
+    # MessageBox mb_ok "Custom radiobutton#4 was checked..."
+${EndIf}
+${If} $0 == "上海电信  [61.129.61.203]"
+    strCpy $networkid "sh.telcom"
+    # MessageBox mb_ok "Custom radiobutton#5 was checked..."
+${EndIf}
+${If} $0 == "上海联通  [211.95.81.203]"
+    strCpy $networkid "sh.unicom"
+    # MessageBox mb_ok "Custom radiobutton#6 was checked..."
+${EndIf}
+MessageBox mb_ok "使用接入方式: $networkid"
 FunctionEnd
