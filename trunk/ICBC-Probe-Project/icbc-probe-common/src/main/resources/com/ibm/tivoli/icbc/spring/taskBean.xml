@@ -72,7 +72,7 @@
   </bean>
   
   <!-- DNS_A_NATIVE Probe Bean -->
-  <bean id="probe4DNS_A_NATIVE" class="com.ibm.tivoli.icbc.probe.dns.NativeARecordProbe" scope="prototype">
+  <bean id="probe4DNS_A_NATIVE" class="com.ibm.tivoli.icbc.probe.dns.NativeARecordProbeV2" scope="prototype">
   </bean>
   
   <!-- 页面元素下载检测器, 帮助完成页面下载元素的大小和下载最慢TopN的生成 -->

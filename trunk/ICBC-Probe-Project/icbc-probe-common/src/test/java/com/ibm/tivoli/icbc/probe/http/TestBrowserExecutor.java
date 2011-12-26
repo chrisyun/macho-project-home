@@ -15,13 +15,6 @@ import com.ibm.tivoli.icbc.probe.http.BrowserExecutor.BrowserResult;
  */
 public class TestBrowserExecutor extends TestCase {
 
-  /**
-   * @param name
-   */
-  public TestBrowserExecutor(String name) {
-    super(name);
-  }
-
   /*
    * (non-Javadoc)
    * 
