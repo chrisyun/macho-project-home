@@ -63,9 +63,6 @@ public final class Lookup {
   private static final Name[] noAliases = new Name[0];
   
   
-  /**
-   * 当做A记录查询时，记录CNAME中间结果
-   */
   private List<CNAMERecord> cnames = new ArrayList<CNAMERecord>();
 
   /** The lookup was successful. */

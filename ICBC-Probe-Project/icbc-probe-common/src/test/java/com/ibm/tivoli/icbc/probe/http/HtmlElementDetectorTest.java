@@ -6,6 +6,7 @@ import junit.framework.TestCase;
 
 import com.ibm.tivoli.icbc.result.http.PageElementResult;
 
+
 public class HtmlElementDetectorTest extends TestCase {
 
   protected void setUp() throws Exception {
