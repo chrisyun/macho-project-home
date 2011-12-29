@@ -148,7 +148,7 @@ public class ResultFormaterV2 implements ResultFormater {
         writer.write("        <request>" + targetURL.getUrl() + "</request>\n");
         writer.write("        <result1>fail</result1>\n");
         if (!StringUtils.isEmpty(targetURL.getError())) {
-          writer.write("        <result2>" + targetURL.getError() + "</result2>\n");
+          writer.write("        <result2><![CDATA[" + targetURL.getError() + "]]></result2>\n");
         }
         writer.write("    </resultcontext>\n");
       } else {
@@ -166,7 +166,7 @@ public class ResultFormaterV2 implements ResultFormater {
           if (result.getTaskName() != null) {
             writer.write("        <name>" + result.getTaskName() + "</name>\n");
           }
-          writer.write("        <request>" + targetURL.getUrl() + "</request>\n");
+          writer.write("        <request><![CDATA[" + targetURL.getUrl() + "]]></request>\n");
           writer.write("        <result1>" + record.getDnsTime() + "</result1>\n");
           writer.write("        <result2></result2>\n");
           writer.write("        <result3>" + record.getDownloadTime() + "</result3>\n");
@@ -328,7 +328,7 @@ public class ResultFormaterV2 implements ResultFormater {
         writer.write("        <request>" + targetURL.getUrl() + "</request>\n");
         writer.write("        <result1>fail</result1>\n");
         if (!StringUtils.isEmpty(targetURL.getError())) {
-          writer.write("        <result2>" + targetURL.getError() + "</result2>\n");
+          writer.write("        <result2><![CDATA[" + targetURL.getError() + "]]></result2>\n");
         }
         writer.write("    </resultcontext>\n");
       } else {
@@ -346,7 +346,7 @@ public class ResultFormaterV2 implements ResultFormater {
           if (httpResult.getTaskName() != null) {
             writer.write("        <name>" + httpResult.getTaskName() + "</name>\n");
           }
-          writer.write("        <request>" + targetURL.getUrl() + "</request>\n");
+          writer.write("        <request><![CDATA[" + targetURL.getUrl() + "]]></request>\n");
           writer.write("        <result1>" + record.getDnsTime() + "</result1>\n");
           writer.write("        <result2>" + record.getNetTime() + "</result2>\n");
           writer.write("        <result3>" + record.getDownloadTime() + "</result3>\n");
