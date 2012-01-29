@@ -136,8 +136,47 @@ public class HttpProbeV2Test extends TestCase {
     HttpTaskTracker lastHttpTaskTimeTracker = new HttpTaskTracker();
 
     HttpProbeV2Impl probe = new HttpProbeV2Impl(new String[] { "http://www.icbc.com.cn" });
+    // 模拟浏览器，获取页面加载时间
+    // BrowserExecutor browserExecutor = new CmdLineBrowserExecutorImpl();
+    BrowserExecutor browserExecutor = new JxBrowserExecutorImpl();
+    probe.setBrowserExecutor(browserExecutor);
+    probe.setHtmlElementDetector(new HtmlElementDetectorImpl());
+    
     probe.setLastHttpTaskTimeTracker(lastHttpTaskTimeTracker);
     probe.setUploadScreenshot("always");
+    
+    Date timestamp = new Date();
+    Result result = probe.run();
+    StringWriter out = new StringWriter();
+    ResultFormater format = new ResultFormaterV2();
+    format.format(timestamp, new Result[] { result }, out);
+    System.err.println(out.toString());
+
+    Diff diff = new Diff("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" + "<dataresult>\n" + "    <ctime>1276950697</ctime>\n" + "    <resultcontext>\n"
+        + "        <ctime>1276950697</ctime>\n" + "        <type>null</type>\n" + "        <btype>null</btype>\n" + "        <businessId>null</businessId>\n"
+        + "        <name>null</name>\n" + "        <request>https://member.icbc.com.cn/icbc/html/main/images/wydl.gif</request>\n" + "        <result1>54</result1>\n"
+        + "        <result2>91</result2>\n" + "        <result3>1281</result3>\n" + "        <result4>200</result4>\n" + "        <result5>1383</result5>\n"
+        + "        <result6>https://211.95.81.1/icbc/html/main/images/wydl.gif</result6>\n" + "    </resultcontext>\n" + "</dataresult>\n", out.toString());
+
+    diff.overrideDifferenceListener(new IgnoreTextAndAttributeValuesDifferenceListener());
+
+    assertTrue("XML Similar " + diff.toString(), diff.similar());
+  }
+
+  /**
+   */
+  public void testCaseHttp500() throws Exception {
+    HttpTaskTracker lastHttpTaskTimeTracker = new HttpTaskTracker();
+
+    HttpProbeV2Impl probe = new HttpProbeV2Impl(new String[] { "http://localhost/lab4http500/index.jsp" });
+    // 模拟浏览器，获取页面加载时间
+    // BrowserExecutor browserExecutor = new CmdLineBrowserExecutorImpl();
+    BrowserExecutor browserExecutor = new JxBrowserExecutorImpl();
+    probe.setBrowserExecutor(browserExecutor);
+    
+    probe.setLastHttpTaskTimeTracker(lastHttpTaskTimeTracker);
+    //probe.setUploadScreenshot("always");
+    probe.setUploadScreenshot("error");
     
     Date timestamp = new Date();
     Result result = probe.run();

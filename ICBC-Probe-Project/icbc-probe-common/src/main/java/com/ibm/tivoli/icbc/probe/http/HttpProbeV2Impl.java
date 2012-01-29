@@ -281,59 +281,6 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
         ipURLStr = StringUtils.replace(target, server, serverIP);
         log.info("HTTPProbe: Target URL:[" + target + "]:Open conn to IP URL:[" + ipURLStr + "]");
 
-        // URL ipURL = new URL(ipURLStr);
-        long netBeginTime = System.currentTimeMillis();
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setReadTimeout(this.readTimeout);
-
-        // Add Header
-        conn.addRequestProperty("Host", server);
-        conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 ( .NET CLR 3.5.30729)");
-        conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-        conn.addRequestProperty("Accept-Language", "en-us,en;q=0.5");
-        conn.addRequestProperty("Accept-Encoding", "gzip,deflate");
-        conn.addRequestProperty("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.7");
-
-        if (conn instanceof HttpsURLConnection) {
-
-          HttpsURLConnection httpsConn = (HttpsURLConnection) conn;
-          httpsConn.setHostnameVerifier(new HostnameVerifier() {
-
-            @Override
-            public boolean verify(String hostname, SSLSession session) {
-              return true;
-            }
-          });
-        }
-
-        long downloadBeginTime = System.currentTimeMillis();
-        InputStream in = null;
-        while (true) {
-          try {
-            in = conn.getInputStream();
-            break;
-          } catch (Exception e) {
-            if (System.currentTimeMillis() - this.readTimeout > downloadBeginTime) {
-              throw e;
-            }
-            Thread.sleep(100);
-          }
-        }
-
-        int total = 0;
-        byte[] buf = new byte[512];
-        int len = in.read(buf);
-
-        long netEndTime = System.currentTimeMillis();
-        long netTime = netEndTime - netBeginTime;
-        log.info("HTTPProbe: Target URL:[" + target + "]:NET Time " + netTime + "ms");
-
-        while (len > 0) {
-          // System.out.print(new String(buf, 0, len));
-          total += len;
-          len = in.read(buf);
-        }
-        in.close();
 
         // 模拟浏览器，获取页面加载时间
         // BrowserExecutor browserExecutor = new CmdLineBrowserExecutorImpl();
@@ -354,7 +301,11 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
           }
         }
 
-        URLAccessResult accessResult = new URLAccessResult(ipURLStr, dnsTime, netTime, downloadTime, r.getHttpCode(), total);
+        //int[] rs = this.getNetTimeAndSize(target);
+        //long netTime = rs[0];
+        //int total = rs[1];
+        //URLAccessResult accessResult = new URLAccessResult(ipURLStr, dnsTime, netTime, downloadTime, r.getHttpCode(), total);
+        URLAccessResult accessResult = new URLAccessResult(ipURLStr, dnsTime, downloadTime, r.getHttpCode());
         if (needToSendScreenShot(target, r)) {
           accessResult.setImageFile(r.getImageFile());
         } else {
@@ -388,6 +339,67 @@ public class HttpProbeV2Impl implements Probe<IEBrowserResult> {
       }
     }
     return result;
+  }
+  
+  private int[] getNetTimeAndSize(String target) throws Exception {
+    URL url = new URL(target);
+    String server = url.getHost();
+
+    // URL ipURL = new URL(ipURLStr);
+    long netBeginTime = System.currentTimeMillis();
+    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+    conn.setReadTimeout(this.readTimeout);
+
+    // Add Header
+    conn.addRequestProperty("Host", server);
+    conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 ( .NET CLR 3.5.30729)");
+    conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+    conn.addRequestProperty("Accept-Language", "en-us,en;q=0.5");
+    conn.addRequestProperty("Accept-Encoding", "gzip,deflate");
+    conn.addRequestProperty("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.7");
+
+    if (conn instanceof HttpsURLConnection) {
+
+      HttpsURLConnection httpsConn = (HttpsURLConnection) conn;
+      httpsConn.setHostnameVerifier(new HostnameVerifier() {
+
+        @Override
+        public boolean verify(String hostname, SSLSession session) {
+          return true;
+        }
+      });
+    }
+
+    long downloadBeginTime = System.currentTimeMillis();
+    InputStream in = null;
+    while (true) {
+      try {
+        in = conn.getInputStream();
+        break;
+      } catch (Exception e) {
+        if (System.currentTimeMillis() - this.readTimeout > downloadBeginTime) {
+          throw e;
+        }
+        Thread.sleep(100);
+      }
+    }
+
+    int total = 0;
+    byte[] buf = new byte[512];
+    int len = in.read(buf);
+
+    long netEndTime = System.currentTimeMillis();
+    long netTime = netEndTime - netBeginTime;
+    log.info("HTTPProbe: Target URL:[" + target + "]:NET Time " + netTime + "ms");
+
+    while (len > 0) {
+      // System.out.print(new String(buf, 0, len));
+      total += len;
+      len = in.read(buf);
+    }
+    in.close();
+    return new int[]{(int)netTime, total};
+
   }
 
   private boolean needToSendScreenShot(String targetURL, BrowserResult r) {

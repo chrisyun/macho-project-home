@@ -51,6 +51,16 @@ public class URLAccessResult {
     this.downloadSize = downloadSize;
   }
 
+  public URLAccessResult(String url, long dnsTime, long downloadTime, String httpCode) {
+    super();
+    this.url = url;
+    this.dnsTime = dnsTime;
+    this.netTime = -1;
+    this.downloadTime = downloadTime;
+    this.httpCode = httpCode;
+    this.downloadSize = -1;
+  }
+
   public long getNetTime() {
     return netTime;
   }
