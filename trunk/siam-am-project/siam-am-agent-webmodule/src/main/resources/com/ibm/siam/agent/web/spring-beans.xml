@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context" xmlns:oxm="http://www.springframework.org/schema/oxm"
+  xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:ehcache="http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring/ehcache-spring-1.1.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+  <bean id="propertyPlaceholderConfigurer" class="com.ibm.tivoli.utils.SpringPropertyPlaceholderConfigurer">
+    <!-- Set how to check system properties: as fallback, as override, or never. The default is "fallback": If not being 
+      able to resolve a placeholder with the specified properties, a system property will be tried. "override" will check for a 
+      system property first, before trying the specified properties. "never" will not check system properties at all. -->
+    <!-- 系统属性总是优先, 即: JVM "-Dkey=value"方式设置的属性信息总是优先于在配置文件的设置. -->
+    <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+    <property name="ignoreResourceNotFound" value="true"></property>
+
+    <property name="locations">
+      <list>
+        <value>classpath:com/ibm/siam/agent/web/siam-sp-config.properties</value>
+        <value>file:${user.home}/spring-sp-config.properties</value>
+      </list>
+    </property>
+  </bean>
+  <bean name="configProperties" class="com.ibm.tivoli.utils.SpringPropertiesWrapper">
+    <constructor-arg>
+      <ref bean="propertyPlaceholderConfigurer" />
+    </constructor-arg>
+  </bean>
+
+  <bean id="siam.sp.TaskTimer" class="java.util.Timer" destroy-method="cancel">
+    <constructor-arg value="true" type="boolean" />
+  </bean>
+
+  <bean id="siam.sp.LogbackLogging" class="edu.internet2.middleware.shibboleth.common.log.LogbackLoggingService"
+    depends-on="siam.sp.TaskTimer">
+    <constructor-arg ref="siam.sp.TaskTimer" />
+    <constructor-arg
+      value="C:/Users/IBM_ADMIN/workspace/siam-am-project/siam-am-agent-webmodule/src/test/resources/logging.xml" />
+    <constructor-arg value="600000" />
+  </bean>
+
+  <!-- Spring configuration file that bootstraps OpenSAML -->
+  <bean id="siam.sp.OpensamlConfig" class="edu.internet2.middleware.shibboleth.common.config.OpensamlConfigBean"
+    depends-on="siam.sp.LogbackLogging">
+    <constructor-arg>
+      <list>
+        <bean id="shibMetadataExtensions" class="org.opensaml.util.resource.ClasspathResource">
+          <constructor-arg value="/shibboleth-saml-ext-config.xml" />
+        </bean>
+      </list>
+    </constructor-arg>
+    <property name="parserPool" ref="siam.sp.ParserPool" />
+  </bean>
+
+  <bean id="siam.sp.IdGenerator" class="org.opensaml.common.impl.SecureRandomIdentifierGenerator" depends-on="siam.sp.LogbackLogging">
+    <constructor-arg value="SHA1PRNG" />
+  </bean>
+
+  <bean id="siam.sp.VelocityEngine" class="org.springframework.ui.velocity.VelocityEngineFactoryBean" depends-on="siam.sp.LogbackLogging">
+    <property name="overrideLogging" value="false" />
+    <property name="velocityProperties">
+      <props>
+        <prop key="runtime.log.logsystem.class">
+          edu.internet2.middleware.shibboleth.common.util.Slf4JLogChute
+        </prop>
+        <prop key="resource.loader">classpath, string</prop>
+        <prop key="classpath.resource.loader.class">
+          org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+        </prop>
+        <prop key="string.resource.loader.class">
+          edu.internet2.middleware.shibboleth.common.util.StringResourceLoader
+        </prop>
+      </props>
+    </property>
+  </bean>
+
+  <bean id="siam.sp.ParserPool" class="org.opensaml.xml.parse.StaticBasicParserPool" depends-on="siam.sp.LogbackLogging"
+    init-method="initialize">
+    <property name="maxPoolSize" value="100" />
+    <property name="coalescing" value="true" />
+    <property name="ignoreComments" value="true" />
+    <property name="ignoreElementContentWhitespace" value="true" />
+    <property name="namespaceAware" value="true" />
+    <property name="builderAttributes">
+      <map>
+        <entry>
+          <key>
+            <value>http://apache.org/xml/properties/security-manager</value>
+          </key>
+          <bean id="shibboleth.XercesSecurityManager" class="org.apache.xerces.util.SecurityManager" />
+        </entry>
+      </map>
+    </property>
+    <property name="builderFeatures">
+      <map>
+        <entry>
+          <key>
+            <value>http://apache.org/xml/features/disallow-doctype-decl</value>
+          </key>
+          <util:constant static-field="java.lang.Boolean.TRUE" />
+        </entry>
+      </map>
+    </property>
+  </bean>
+
+  <bean id="siam.sp.handler.manager" class="com.ibm.siam.agent.web.SPProfileHandlerManager" init-method="initialize">
+    <property name="serviceConfigurations">
+      <list>
+        <bean class="org.opensaml.util.resource.ClasspathResource">
+          <constructor-arg value="/com/ibm/siam/agent/web/handlers.xml" />
+        </bean>
+      </list>
+    </property>
+  </bean>
+  
+  <!-- 
+  <bean id="siam.sp.metadata.provider" class="org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider"></bean>
+   -->
+   
+</beans>

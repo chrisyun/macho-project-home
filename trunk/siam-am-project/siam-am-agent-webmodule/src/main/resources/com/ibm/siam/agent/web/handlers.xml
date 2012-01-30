@@ -1,0 +1,42 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context" xmlns:oxm="http://www.springframework.org/schema/oxm"
+  xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:ehcache="http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring/ehcache-spring-1.1.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+        
+  <bean id="siam.sp.handler.Error" class="edu.internet2.middleware.shibboleth.common.profile.provider.JSPErrorHandler">
+    <constructor-arg value="/error.jsp"></constructor-arg>
+  </bean>
+  
+  <bean id="siam.sp.handler.Metadata" class="com.ibm.siam.agent.web.SAMLMetadataProfileHandler">
+    <constructor-arg value="C:/Users/IBM_ADMIN/workspace/siam-am-project/siam-am-agent-webmodule/src/test/resources/conf/sp-metadata.xml"></constructor-arg>
+    <constructor-arg ref="siam.sp.ParserPool"></constructor-arg>
+    <property name="requestPaths">
+      <list>
+        <value>/SSO/Metadata/SAML</value>
+      </list>
+    </property>
+  </bean>
+  
+  <bean id="siam.sp.handler.SAML2SSO.Checker" class="com.ibm.siam.agent.web.SAML2AuthRequestHandler">
+    <property name="requestPaths">
+      <list>
+        <value>/SSO/Login</value>
+      </list>
+    </property>
+    <property name="idGenerator" ref="siam.sp.IdGenerator"></property>
+  </bean>
+  
+  <bean id="siam.sp.handler.SAML2SSO.Response" class="com.ibm.siam.agent.web.SAML2AuthResponseHandler">
+    <property name="requestPaths">
+      <list>
+        <value>/SSO/SAML2/POST</value>
+      </list>
+    </property>
+  </bean>
+</beans>
