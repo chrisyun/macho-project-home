@@ -7,6 +7,8 @@
 <title>Welcome, <%=session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR) %></title>
 </head>
 <body>
-Welcome, <%=session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR) %>!
+Welcome, <%=((SSOPrincipal)session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR)).getUid() %> [<%=((SSOPrincipal)session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR)).getAuthenMethod() %>]!
+<br/><br/>
+<h3><a href="./SSO/SLO/Redirect">Logout</a></h3>
 </body>
 </html>

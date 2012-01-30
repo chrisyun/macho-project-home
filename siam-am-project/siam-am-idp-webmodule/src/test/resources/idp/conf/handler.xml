@@ -94,7 +94,7 @@
     
     <!--  Username/password login handler -->
     <!-- jaasConfigurationLocation will set into System property: "java.security.auth.login.config" -->
-    <!-- Eg: "file://idp/conf/login.config" or classpath:// -->
+    <!-- Eg: "file://idp/conf/login.config" -->
     <ph:LoginHandler xsi:type="ph:UsernamePassword" 
                   jaasConfigurationLocation="file:////c:/temp/login.config">
         <ph:AuthenticationMethod>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</ph:AuthenticationMethod>

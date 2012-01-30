@@ -29,15 +29,21 @@
     <url-pattern>/SSO/*</url-pattern>
   </filter-mapping>
 
+  <!-- Filter for protected resource -->
   <filter>
     <description>Authentication Filter</description>
     <display-name>com.ibm.siam.agent.web.AuthenticationFilter</display-name>
     <filter-name>com.ibm.siam.agent.web.AuthenticationFilter</filter-name>
     <filter-class>com.ibm.siam.agent.web.AuthenticationFilter</filter-class>
+    <init-param>
+      <description>Define authentication method for protected resources.</description>
+      <param-name>AuthenticationMethod</param-name>
+      <param-value>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</param-value>
+    </init-param>
   </filter>
   <filter-mapping>
     <filter-name>com.ibm.siam.agent.web.AuthenticationFilter</filter-name>
-    <url-pattern>/*</url-pattern>
+    <url-pattern>/main.jsp</url-pattern>
   </filter-mapping>
 
   <error-page>

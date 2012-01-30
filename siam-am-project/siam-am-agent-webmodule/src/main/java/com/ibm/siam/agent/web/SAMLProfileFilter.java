@@ -63,13 +63,6 @@ public class SAMLProfileFilter implements Filter {
     HttpServletRequest httpRequest = (HttpServletRequest)request;
     HttpServletResponse httpResponse = (HttpServletResponse)response;
 
-    HttpSession session = httpRequest.getSession();
-    if (session != null && session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR) != null) {
-      // Authenticated, do business
-      chain.doFilter(request, response);
-      return;
-    }
-    
     ApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(filterConfig.getServletContext());
     ProfileHandlerManager handlerManager = context.getBean("siam.sp.handler.manager", ProfileHandlerManager.class) ;
     ProfileHandler<HTTPInTransport, HTTPOutTransport> profileHandler = handlerManager.getProfileHandler(request);

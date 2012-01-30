@@ -23,7 +23,6 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import edu.internet2.middleware.shibboleth.common.profile.AbstractErrorHandler;
 import edu.internet2.middleware.shibboleth.common.profile.ProfileHandler;
-import edu.internet2.middleware.shibboleth.common.profile.ProfileHandlerManager;
 
 /**
  * Servlet Filter implementation class SAMLProfileFilter
@@ -31,7 +30,11 @@ import edu.internet2.middleware.shibboleth.common.profile.ProfileHandlerManager;
 public class AuthenticationFilter implements Filter {
   
   private static Log log = LogFactory.getLog(AuthenticationFilter.class);
+  
+  public final static String ATTR_NAME_AUTHEN_METHOD = "__AUTHEN_METHOD__";
+  
   private FilterConfig filterConfig;
+  private String authenticationMethod = "urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified";
 
   /**
    * Default constructor.
@@ -46,6 +49,7 @@ public class AuthenticationFilter implements Filter {
    */
   public void init(FilterConfig fConfig) throws ServletException {
     this.filterConfig = fConfig;
+    this.authenticationMethod = this.filterConfig.getInitParameter("AuthenticationMethod");
   }
 
   /**
@@ -64,8 +68,9 @@ public class AuthenticationFilter implements Filter {
     HttpServletResponse httpResponse = (HttpServletResponse)response;
 
     HttpSession session = httpRequest.getSession();
-    if (session != null && session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR) != null) {
-      // Authenticated, do business
+    if (session != null && session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR) != null 
+        && this.authenticationMethod.equals(((SSOPrincipal)session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR)).getAuthenMethod())) {
+      // Authenticated and matched authen method, do business
       chain.doFilter(request, response);
       return;
     }
@@ -90,6 +95,7 @@ public class AuthenticationFilter implements Filter {
     AbstractErrorHandler errorHandler = handlerManager.getErrorHandler();
 
     HTTPInTransport profileReq = new HttpServletRequestAdapter(httpRequest);
+    httpRequest.setAttribute(ATTR_NAME_AUTHEN_METHOD, this.authenticationMethod);
     HTTPOutTransport profileResp = new HttpServletResponseAdapter(httpResponse, httpRequest.isSecure());
     try {
       profileHandler.processRequest(profileReq, profileResp);
