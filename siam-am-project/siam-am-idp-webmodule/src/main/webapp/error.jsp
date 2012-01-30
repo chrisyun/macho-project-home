@@ -1,4 +1,6 @@
 <%@page import="edu.internet2.middleware.shibboleth.common.profile.AbstractErrorHandler"%>
+<%@ taglib uri="urn:mace:shibboleth:2.0:idp:ui" prefix="idpui" %>
+
 <html>
 <body>
 	<img src="<%= request.getContextPath() %>/images/logo.jpg" />

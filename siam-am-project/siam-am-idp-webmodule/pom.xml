@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>siam-am-project</artifactId>
@@ -6,13 +7,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>siam-am-agent-webmodule</artifactId>
+  <artifactId>siam-am-idp-webmodule</artifactId>
   <packaging>war</packaging>
-  <name>siam-am-agent-webmodule</name>
-  <description>SIAM AM Agent WebModule</description>
-  
+  <name>siam-am-idp-webmodule</name>
+  <description>SIAM AM IDP WebModule</description>
+
   <dependencies>
-  
     <!-- Common Libs -->
     <dependency>
       <groupId>commons-logging</groupId>
@@ -36,24 +36,15 @@
       <artifactId>spring-context-support</artifactId>
       <version>3.1.0.RELEASE</version>
     </dependency>
-    
+
+    <!-- Override BC version from xmltooling because 1.46 causes an issue with the IdP installer -->
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcprov-jdk15</artifactId>
+      <version>1.45</version>
+    </dependency>
+
     <!-- OpenSAML Libs -->
-    <dependency>
-      <groupId>org.opensaml</groupId>
-      <artifactId>openws</artifactId>
-      <version>1.4.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.opensaml</groupId>
-      <artifactId>opensaml</artifactId>
-      <version>2.5.1-1</version>
-      <exclusions>
-        <exclusion>
-          <artifactId>openws</artifactId>
-          <groupId>org.opensaml</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
     <dependency>
       <groupId>edu.internet2.middleware</groupId>
       <artifactId>shibboleth-common</artifactId>
@@ -90,14 +81,8 @@
       <version>2.0</version>
       <scope>provided</scope>
     </dependency>
-
+    
     <!-- Testing Libs -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
     <dependency>
       <groupId>xmlunit</groupId>
       <artifactId>xmlunit</artifactId>

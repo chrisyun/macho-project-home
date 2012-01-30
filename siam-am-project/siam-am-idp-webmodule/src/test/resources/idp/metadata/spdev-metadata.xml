@@ -1,0 +1,36 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_c54913c07ac3dcb1630ad2aeda0002507b80d808" entityID="https://spdev.saml.ibm.com/shibboleth">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://spdev.saml.ibm.com/sp/Login"/>
+      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://spdev.saml.ibm.com/sp/Login" index="1"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>localhost.localdomain</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=ZDL,OU=CDL,O=IBM,C=CN</ds:X509SubjectName>
+          <ds:X509Certificate>MIIBYDCCAQqgAwIBAgIETw1bVDANBgkqhkiG9w0BAQUFADA3MQswCQYDVQQGEwJD
+TjEMMAoGA1UEChMDSUJNMQwwCgYDVQQLEwNDREwxDDAKBgNVBAMTA1pETDAeFw0x
+MjAxMTEwOTUwMTJaFw0xMjA0MTAwOTUwMTJaMDcxCzAJBgNVBAYTAkNOMQwwCgYD
+VQQKEwNJQk0xDDAKBgNVBAsTA0NETDEMMAoGA1UEAxMDWkRMMFwwDQYJKoZIhvcN
+AQEBBQADSwAwSAJBAIwbdf/va5QP82dbQwIjYeUa/1C9jmGBAYgqxIm0GGb4yldC
+K25WAoljJpln58yHce6fkOvEcKYM4i+R+zbXvj0CAwEAATANBgkqhkiG9w0BAQUF
+AANBAHzfPtGzwygpVCHNgFhDkg5ajaijLMivGcffNXBmDDhbNmuHzQSbK2f5rVz+
+pl4DYJA7HxRUK4SYawNaKwlAxiE=
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://spdev.saml.ibm.com/sp/SSO/Artifact/SOAP" index="0"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://spdev.saml.ibm.com/sp/SSO/SLO/SOAP"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://spdev.saml.ibm.com/sp/SSO/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://spdev.saml.ibm.com/sp/SSO/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://spdev.saml.ibm.com/sp/SSO/SLO/Artifact"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://spdev.saml.ibm.com/sp/SSO/SAML2/POST" index="0"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://spdev.saml.ibm.com/sp/SSO/SAML2/POST-SimpleSign" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://spdev.saml.ibm.com/sp/SSO/SAML2/Artifact" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://spdev.saml.ibm.com/sp/SSO/SAML2/ECP" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://spdev.saml.ibm.com/sp/SSO/SAML/POST" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://spdev.saml.ibm.com/sp/SSO/SAML/Artifact" index="5"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor>
