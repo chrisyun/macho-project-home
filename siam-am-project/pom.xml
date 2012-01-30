@@ -1,0 +1,14 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ibm.siam.am</groupId>
+  <artifactId>siam-am-project</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>siam-am-project</name>
+  <description>SIAM AM Main Project</description>
+  <modules>
+    <module>siam-am-agent-common</module>
+    <module>siam-am-agent-webmodule</module>
+    <module>siam-am-common</module>
+  </modules>
+</project>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <display-name>siam-am-agent-webmodule</display-name>
+
+  <!-- Spring Parameters -->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>
+       classpath*:com/ibm/siam/agent/web/spring-beans*.xml
+    </param-value>
+  </context-param>
+  <!-- Spring Listener -->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+  </listener>
+
+  <filter>
+    <description>SAML Profile Filter</description>
+    <display-name>com.ibm.siam.agent.web.SAMLProfileFilter</display-name>
+    <filter-name>com.ibm.siam.agent.web.SAMLProfileFilter</filter-name>
+    <filter-class>com.ibm.siam.agent.web.SAMLProfileFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>com.ibm.siam.agent.web.SAMLProfileFilter</filter-name>
+    <url-pattern>/SSO/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <description>Authentication Filter</description>
+    <display-name>com.ibm.siam.agent.web.AuthenticationFilter</display-name>
+    <filter-name>com.ibm.siam.agent.web.AuthenticationFilter</filter-name>
+    <filter-class>com.ibm.siam.agent.web.AuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>com.ibm.siam.agent.web.AuthenticationFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <error-page>
+    <error-code>500</error-code>
+    <location>/error.jsp</location>
+  </error-page>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error-404.jsp</location>
+  </error-page>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
