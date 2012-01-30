@@ -21,6 +21,7 @@ import org.opensaml.saml2.binding.decoding.HTTPPostDecoder;
 import org.opensaml.saml2.core.Assertion;
 import org.opensaml.saml2.core.Attribute;
 import org.opensaml.saml2.core.AttributeStatement;
+import org.opensaml.saml2.core.AuthnStatement;
 import org.opensaml.saml2.core.EncryptedAssertion;
 import org.opensaml.saml2.core.Response;
 import org.opensaml.saml2.core.Status;
@@ -55,8 +56,12 @@ public class SAML2AuthResponseHandler extends BaseProfileHandler {
     super();
   }
 
-  /* (non-Javadoc)
-   * @see edu.internet2.middleware.shibboleth.common.profile.ProfileHandler#processRequest(org.opensaml.ws.transport.InTransport, org.opensaml.ws.transport.OutTransport)
+  /*
+   * (non-Javadoc)
+   * 
+   * @see edu.internet2.middleware.shibboleth.common.profile.ProfileHandler#
+   * processRequest(org.opensaml.ws.transport.InTransport,
+   * org.opensaml.ws.transport.OutTransport)
    */
   public void processRequest(HTTPInTransport inTransport, HTTPOutTransport outTransport) throws ProfileException {
     BasicSAMLMessageContext<SAMLObject, SAMLObject, SAMLObject> messageContext = new BasicSAMLMessageContext<SAMLObject, SAMLObject, SAMLObject>();
@@ -78,29 +83,54 @@ public class SAML2AuthResponseHandler extends BaseProfileHandler {
 
       HttpSession session = null;
       for (EncryptedAssertion encryptedAssertion : response.getEncryptedAssertions()) {
-          Decrypter decrypter = this.getDescryptor();
-          Assertion resp = decrypter .decrypt(encryptedAssertion);
-          XMLHelper.writeNode(resp.getDOM(), System.out);
-          System.out.println(XMLHelper.prettyPrintXML(resp.getDOM()));
-  
-          String transientNameId = resp.getSubject().getNameID().getValue();
-          for (AttributeStatement aStatement: resp.getAttributeStatements()) {
-              for (Attribute attr: aStatement.getAttributes()) {
-                  if ("uid".equalsIgnoreCase(attr.getFriendlyName())) {
-                    ServletRequestAttributes servletAttrs = (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
-                    session = servletAttrs.getRequest().getSession(true);
-                    session.setAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR, ((XSString)attr.getAttributeValues().get(0)).getValue());
-                  }
-              }
-              
+        Decrypter decrypter = this.getDescryptor();
+        Assertion resp = decrypter.decrypt(encryptedAssertion);
+        XMLHelper.writeNode(resp.getDOM(), System.out);
+        System.out.println(XMLHelper.prettyPrintXML(resp.getDOM()));
+
+        SSOPrincipal principal = new SSOPrincipal();
+
+        // Get NameID
+        String transientNameId = resp.getSubject().getNameID().getValue();
+
+        // Get AuthnStatment
+        String authenMethod = null;
+        for (AuthnStatement authnStatement : resp.getAuthnStatements()) {
+          authenMethod = authnStatement.getAuthnContext().getAuthnContextClassRef().getAuthnContextClassRef();
+          break;
+        }
+
+        // Get all attributes
+        String uid = null;
+        String cn = null;
+        for (AttributeStatement aStatement : resp.getAttributeStatements()) {
+          for (Attribute attr : aStatement.getAttributes()) {
+            if ("uid".equalsIgnoreCase(attr.getFriendlyName())) {
+              uid = ((XSString) attr.getAttributeValues().get(0)).getValue();
+            } else if ("cn".equalsIgnoreCase(attr.getFriendlyName())) {
+              cn = ((XSString) attr.getAttributeValues().get(0)).getValue();
+            }
+            // TODO need to hold array etc.
+            principal.setAttribute(attr.getFriendlyName(),  ((XSString) attr.getAttributeValues().get(0)).getValue());
           }
+
+        }
+        if (uid != null) {
+          principal.setAuthenMethod(authenMethod);
+          principal.setUid(uid);
+          principal.setCn(cn);
+          ServletRequestAttributes servletAttrs = (ServletRequestAttributes) RequestContextHolder
+              .currentRequestAttributes();
+          session = servletAttrs.getRequest().getSession(true);
+          session.setAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR, principal);
+        }
       }
       if (session != null && session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR) != null) {
-        outTransport.sendRedirect((String)session.getAttribute(SAML2AuthRequestHandler.URL_RETURN_TO_APP));
+        outTransport.sendRedirect((String) session.getAttribute(SAML2AuthRequestHandler.URL_RETURN_TO_APP));
         return;
       }
     } catch (MessageDecodingException e) {
-     throw new ProfileException(e);
+      throw new ProfileException(e);
     } catch (KeyStoreException e) {
       throw new ProfileException(e);
     } catch (NoSuchAlgorithmException e) {
@@ -120,20 +150,22 @@ public class SAML2AuthResponseHandler extends BaseProfileHandler {
     }
   }
 
-  private Decrypter getDescryptor() throws KeyStoreException, ProfileException, NoSuchAlgorithmException, CertificateException, IOException, UnrecoverableEntryException {
+  private Decrypter getDescryptor() throws KeyStoreException, ProfileException, NoSuchAlgorithmException,
+      CertificateException, IOException, UnrecoverableEntryException {
     KeyStore keyStore = KeyStore.getInstance("pkcs12");
     String keyStorePath = "/certs/mystore.p12";
     InputStream in = this.getClass().getResourceAsStream(keyStorePath);
     if (in == null) {
       throw new ProfileException(String.format("Could not load key store: %s", keyStorePath));
     }
-    
+
     String storeFilePass = "passw0rd";
     String keyPassword = "passw0rd";
     keyStore.load(in, storeFilePass.toCharArray());
 
     String alias = "my";
-    KeyStore.PrivateKeyEntry keyEntry = (KeyStore.PrivateKeyEntry) keyStore.getEntry(alias, new KeyStore.PasswordProtection(keyPassword.toCharArray()));
+    KeyStore.PrivateKeyEntry keyEntry = (KeyStore.PrivateKeyEntry) keyStore.getEntry(alias,
+        new KeyStore.PasswordProtection(keyPassword.toCharArray()));
     X509Certificate certificate = (X509Certificate) keyEntry.getCertificate();
     PrivateKey privateKey = keyEntry.getPrivateKey();
     BasicX509Credential credential = new BasicX509Credential();

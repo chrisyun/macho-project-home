@@ -96,7 +96,9 @@ public class SAML2AuthRequestHandler extends BaseProfileHandler implements SPAut
     conditions.getAudienceRestrictions().add(ar);
 
     AuthnContextClassRef classRef = (AuthnContextClassRef) buildXMLObject(AuthnContextClassRef.DEFAULT_ELEMENT_NAME);
-    classRef.setAuthnContextClassRef("urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport");
+    String authenMethod = (String)inTransport.getAttribute(AuthenticationFilter.ATTR_NAME_AUTHEN_METHOD);
+    //classRef.setAuthnContextClassRef("urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport");
+    classRef.setAuthnContextClassRef(authenMethod);
 
     RequestedAuthnContext rac = (RequestedAuthnContext) buildXMLObject(RequestedAuthnContext.DEFAULT_ELEMENT_NAME);
     rac.getAuthnContextClassRefs().add(classRef);

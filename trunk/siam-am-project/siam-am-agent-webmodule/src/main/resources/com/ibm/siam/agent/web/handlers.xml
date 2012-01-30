@@ -39,4 +39,13 @@
       </list>
     </property>
   </bean>
+
+  <bean id="siam.sp.handler.SAML2SSO.SLO" class="com.ibm.siam.agent.web.SAML2LogoutHandler">
+    <property name="requestPaths">
+      <list>
+        <value>/SSO/SLO/Redirect</value>
+      </list>
+    </property>
+  </bean>
+
 </beans>
