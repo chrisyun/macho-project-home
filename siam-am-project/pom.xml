@@ -12,6 +12,7 @@
     <module>siam-am-agent-webmodule</module>
     <module>siam-am-common</module>
     <module>siam-am-idp-webmodule</module>
+    <module>siam-am-idp-discovery-service</module>
   </modules>
 
   <dependencies>
