@@ -21,6 +21,8 @@ import javax.xml.namespace.QName;
 
 import org.w3c.dom.Element;
 
+import com.ibm.siam.am.idp.config.profile.ProfileHandlerNamespaceHandler;
+
 import edu.internet2.middleware.shibboleth.common.config.service.AbstractReloadableServiceBeanDefinitionParser;
 import edu.internet2.middleware.shibboleth.idp.profile.IdPProfileHandlerManager;
 

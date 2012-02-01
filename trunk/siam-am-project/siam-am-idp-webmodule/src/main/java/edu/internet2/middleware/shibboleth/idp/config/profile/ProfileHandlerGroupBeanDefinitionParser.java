@@ -30,6 +30,8 @@ import org.springframework.beans.factory.xml.BeanDefinitionParser;
 import org.springframework.beans.factory.xml.ParserContext;
 import org.w3c.dom.Element;
 
+import com.ibm.siam.am.idp.config.profile.ProfileHandlerNamespaceHandler;
+
 import edu.internet2.middleware.shibboleth.common.config.SpringConfigurationUtils;
 
 /** Spring bean definition parser for profile handler root element. */

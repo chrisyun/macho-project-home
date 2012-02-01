@@ -39,8 +39,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 
+import com.ibm.siam.am.idp.authn.AuthenticationEngine;
+
 import edu.internet2.middleware.shibboleth.common.session.SessionManager;
-import edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine;
 
 /**
  * A filter that adds the current users {@link Session} the request, if the user has a session.

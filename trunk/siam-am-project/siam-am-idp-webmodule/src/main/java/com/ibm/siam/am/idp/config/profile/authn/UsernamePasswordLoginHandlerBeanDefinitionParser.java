@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package edu.internet2.middleware.shibboleth.idp.config.profile.authn;
+package com.ibm.siam.am.idp.config.profile.authn;
 
 import javax.xml.namespace.QName;
 
-import org.opensaml.xml.util.XMLHelper;
+import org.opensaml.xml.util.DatatypeHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
@@ -27,39 +27,37 @@ import org.w3c.dom.Element;
 
 import com.ibm.siam.am.idp.config.profile.ProfileHandlerNamespaceHandler;
 
+import edu.internet2.middleware.shibboleth.idp.config.profile.authn.AbstractLoginHandlerBeanDefinitionParser;
+
 /**
- * Spring bean definition parser for previous session authentication handlers.
+ * Spring bean definition parser for username/password authentication handlers.
  */
-public class PreviousSessionLoginHandlerBeanDefinitionParser extends AbstractLoginHandlerBeanDefinitionParser {
+public class UsernamePasswordLoginHandlerBeanDefinitionParser extends AbstractLoginHandlerBeanDefinitionParser {
 
     /** Schema type. */
-    public static final QName SCHEMA_TYPE = new QName(ProfileHandlerNamespaceHandler.NAMESPACE, "PreviousSession");
+    public static final QName SCHEMA_TYPE = new QName(ProfileHandlerNamespaceHandler.NAMESPACE, "UsernamePassword");
 
     /** Class logger. */
-    private final Logger log = LoggerFactory.getLogger(PreviousSessionLoginHandlerBeanDefinitionParser.class);
+    private final Logger log = LoggerFactory.getLogger(UsernamePasswordLoginHandlerBeanDefinitionParser.class);
 
     /** {@inheritDoc} */
-    protected Class getBeanClass(Element arg0) {
-        return PreviousSessionLoginHandlerFactoryBean.class;
+    protected Class getBeanClass(Element element) {
+        return UsernamePasswordLoginHandlerFactoryBean.class;
     }
 
     /** {@inheritDoc} */
     protected void doParse(Element config, BeanDefinitionBuilder builder) {
         super.doParse(config, builder);
 
-        if (config.hasAttributeNS(null, "servletPath")) {
-            log.warn("The 'servletPath' configuration option has been deprecated and is no longer supported.");
-        }
-        
-        if (config.hasAttributeNS(null, "supportsPassiveAuthentication")) {
-            log.warn("The 'supportsPassiveAuthentication' configuration option has been deprecated and is no longer supported.");
+        if (config.hasAttributeNS(null, "authenticationServletURL")) {
+            builder.addPropertyValue("authenticationServletURL", DatatypeHelper.safeTrim(config.getAttributeNS(null,
+                    "authenticationServletURL")));
+        } else {
+            builder.addPropertyValue("authenticationServletURL", "/Authn/UserPassword");
         }
 
-        if (config.hasAttributeNS(null, "reportPreviousSessionAuthnMethod")) {
-            builder.addPropertyValue("reportPreviousSessionAuthnMethod", XMLHelper.getAttributeValueAsBoolean(config
-                    .getAttributeNodeNS(null, "reportPreviousSessionAuthnMethod")));
-        } else {
-            builder.addPropertyValue("reportPreviousSessionAuthnMethod", false);
-        }
+        String jaasConfigurationURL = DatatypeHelper.safeTrim(config.getAttributeNS(null, "jaasConfigurationLocation"));
+        log.debug("Setting JAAS configuration file to: {}", jaasConfigurationURL);
+        System.setProperty("java.security.auth.login.config", jaasConfigurationURL);
     }
 }

@@ -28,8 +28,9 @@ import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser;
 import org.w3c.dom.Element;
 
+import com.ibm.siam.am.idp.config.profile.ProfileHandlerNamespaceHandler;
+
 import edu.internet2.middleware.shibboleth.common.config.SpringConfigurationUtils;
-import edu.internet2.middleware.shibboleth.idp.config.profile.ProfileHandlerNamespaceHandler;
 
 /**
  * Base class for authentication handler definition parsers.
