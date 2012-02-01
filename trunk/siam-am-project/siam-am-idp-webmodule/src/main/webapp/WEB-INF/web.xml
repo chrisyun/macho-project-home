@@ -65,7 +65,7 @@
     <!-- Authentication Engine Entry Point -->
     <servlet>
         <servlet-name>AuthenticationEngine</servlet-name>
-        <servlet-class>edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine</servlet-class>
+        <servlet-class>com.ibm.siam.am.idp.authn.AuthenticationEngine</servlet-class>
 
         <!-- Whether public credentials returned by a login handler are retained in the subject. -->
         <!-- <init-param> <param-name>retainSubjectsPublicCredentials</param-name> <param-value>false</param-value> </init-param> -->
@@ -85,7 +85,7 @@
     <!-- Servlet protected by container used for RemoteUser authentication -->
     <servlet>
         <servlet-name>RemoteUserAuthHandler</servlet-name>
-        <servlet-class>edu.internet2.middleware.shibboleth.idp.authn.provider.RemoteUserAuthServlet</servlet-class>
+        <servlet-class>com.ibm.siam.am.idp.authn.provider.RemoteUserAuthServlet</servlet-class>
         <load-on-startup>3</load-on-startup>
     </servlet>
 
@@ -97,7 +97,7 @@
     <!-- Servlet for doing Username/Password authentication -->
     <servlet>
         <servlet-name>UsernamePasswordAuthHandler</servlet-name>
-        <servlet-class>edu.internet2.middleware.shibboleth.idp.authn.provider.UsernamePasswordLoginServlet</servlet-class>
+        <servlet-class>com.ibm.siam.am.idp.authn.provider.UsernamePasswordLoginServlet</servlet-class>
         <load-on-startup>3</load-on-startup>
     </servlet>
 

@@ -21,9 +21,9 @@
     <!-- ========================================== -->
     <!--      Relying Party Configurations          -->
     <!-- ========================================== -->
-    <rp:AnonymousRelyingParty provider="$IDP_ENTITY_ID$" defaultSigningCredentialRef="IdPCredential"/>
+    <rp:AnonymousRelyingParty provider="https://idp.saml.ibm.com/idp" defaultSigningCredentialRef="IdPCredential"/>
     
-    <rp:DefaultRelyingParty provider="$IDP_ENTITY_ID$" defaultSigningCredentialRef="IdPCredential">
+    <rp:DefaultRelyingParty provider="https://idp.saml.ibm.com/idp" defaultSigningCredentialRef="IdPCredential">
         <!-- 
             Each attribute in these profiles configuration is set to its default value,
             that is, the values that would be in effect if those attributes were not present.
@@ -94,6 +94,9 @@
         -->
         <metadata:MetadataProvider id="MyMetadataSPDev" xsi:type="metadata:ResourceBackedMetadataProvider">
             <metadata:MetadataResource xsi:type="resource:ClasspathResource" file="/idp/metadata/spdev-metadata.xml"/>
+        </metadata:MetadataProvider>
+        <metadata:MetadataProvider id="MyMetadataSP" xsi:type="metadata:ResourceBackedMetadataProvider">
+            <metadata:MetadataResource xsi:type="resource:ClasspathResource" file="/idp/metadata/sp-metadata.xml"/>
         </metadata:MetadataProvider>
         
     </metadata:MetadataProvider>
