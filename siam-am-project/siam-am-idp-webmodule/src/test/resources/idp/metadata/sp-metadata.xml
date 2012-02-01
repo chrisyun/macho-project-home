@@ -1,0 +1,48 @@
+
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_c54913c07ac3dcb1630ad2aeda0002507b80d806" entityID="https://sp.saml.ibm.com/shibboleth">
+
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://sp.saml.ibm.com/Shibboleth.sso/Login"/>
+      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://sp.saml.ibm.com/Shibboleth.sso/Login" index="1"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>localhost.localdomain</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=localhost.localdomain</ds:X509SubjectName>
+          <ds:X509Certificate>MIIDBjCCAe6gAwIBAgIJALsTdKPpYDN9MA0GCSqGSIb3DQEBBQUAMCAxHjAcBgNV
+BAMTFWxvY2FsaG9zdC5sb2NhbGRvbWFpbjAeFw0xMjAxMDQxNjAyMzhaFw0yMjAx
+MDExNjAyMzhaMCAxHjAcBgNVBAMTFWxvY2FsaG9zdC5sb2NhbGRvbWFpbjCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALnDkZk4ksOymktxv8k1gSjJwhHU
+hpifnCMqANXAWnlvjc7Xtv8cm2r09hGQaWwRTXd3OS8WewJPAFVaeA68DW9fA5tH
+IaF0I/nhtIC1sRXYZZOjbfN7QMD08rRixFJpZcLi3BSoQx9pTvmRk0xCyYa7jqOH
+yJ9zYDJqM3zWctebI6emiS8H2FrilvKdx3h5mD7F6O+K5Bzm4gJqkJT7mOpXiTen
+JtesVGQU1y4yivkCY3lo1L+v+JZnI9ekdiwcTBBEFdUgKagAetZL81UKUPQq3fau
+zguX4072l4rF20gTJF4c+Y4ggA2EIwpRfWRZtnPxON58yFyFWdsOSt+mHv0CAwEA
+AaNDMEEwIAYDVR0RBBkwF4IVbG9jYWxob3N0LmxvY2FsZG9tYWluMB0GA1UdDgQW
+BBTl4K8G1+iYgCQIOWaTSpEgz5l1xTANBgkqhkiG9w0BAQUFAAOCAQEAi5ABwYE4
+LJFxAKzvgZtmoidJ1wLl0j/dJpGfZ+PAytxcAyjQuxWDREhswBsSwJ9Rdm/RTAJw
+B7tOdlsYlMqagOsypQ+Cw8mXkBKGve3BotFFJRw5IcdLU1QuN5+jVyJf15LDE4Gc
+TneSQNrY5xvmZ4ir0MQ6H1C+AlILHdTiOgOxRaZJHtARU2QljdvPCnKuoeyw4f6P
+sAGFHZGAciLvqUYJMCerRKrUMlfyEA2kzWUK+0iisquNrWmzTbxNnu6eq2+WPDLQ
+osojIaHQWeaGVXd3jhsYKOBQ7SC4o4oCDs7uCVwZPSN4cvOx8YjtcVIBn+RVA79r
+lXqXlDEB7md+gg==
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp.saml.ibm.com/Shibboleth.sso/Artifact/SOAP" index="0"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://sp.saml.ibm.com/Shibboleth.sso/SLO/SOAP"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sp.saml.ibm.com/Shibboleth.sso/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.saml.ibm.com/Shibboleth.sso/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp.saml.ibm.com/Shibboleth.sso/SLO/Artifact"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sp.saml.ibm.com/Shibboleth.sso/SAML2/POST" index="0"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://sp.saml.ibm.com/Shibboleth.sso/SAML2/POST-SimpleSign" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://sp.saml.ibm.com/Shibboleth.sso/SAML2/Artifact" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://sp.saml.ibm.com/Shibboleth.sso/SAML2/ECP" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://sp.saml.ibm.com/Shibboleth.sso/SAML/POST" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://sp.saml.ibm.com/Shibboleth.sso/SAML/Artifact" index="5"/>
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor>

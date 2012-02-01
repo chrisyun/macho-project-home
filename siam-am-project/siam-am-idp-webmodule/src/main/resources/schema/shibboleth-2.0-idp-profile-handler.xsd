@@ -300,7 +300,7 @@
                     <xsd:annotation>
                         <xsd:documentation>
                             The servlet context path to the
-                            edu.internet2.middleware.shibboleth.idp.authn.provider.RemoteUserAuthServlet instance
+                            com.ibm.siam.am.idp.authn.provider.RemoteUserAuthServlet instance
                             protected by the container or web server.
                         </xsd:documentation>
                     </xsd:annotation>
