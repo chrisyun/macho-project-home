@@ -25,7 +25,8 @@ import org.opensaml.xml.util.DatatypeHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import edu.internet2.middleware.shibboleth.idp.authn.AuthenticationEngine;
+import com.ibm.siam.am.idp.authn.AuthenticationEngine;
+
 import edu.internet2.middleware.shibboleth.idp.authn.LoginHandler;
 import edu.internet2.middleware.shibboleth.idp.session.Session;
 

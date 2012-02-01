@@ -23,7 +23,8 @@ import org.opensaml.xml.util.DatatypeHelper;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.w3c.dom.Element;
 
-import edu.internet2.middleware.shibboleth.idp.config.profile.ProfileHandlerNamespaceHandler;
+import com.ibm.siam.am.idp.config.profile.ProfileHandlerNamespaceHandler;
+
 import edu.internet2.middleware.shibboleth.idp.profile.saml1.ShibbolethSSOProfileHandler;
 
 /**
