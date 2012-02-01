@@ -104,7 +104,7 @@ public class SAML2AuthRequestHandler extends BaseProfileHandler implements SPAut
     rac.getAuthnContextClassRefs().add(classRef);
 
     Issuer issuer = (Issuer)buildXMLObject(Issuer.DEFAULT_ELEMENT_NAME);
-    issuer.setValue("https://spdev.saml.ibm.com/shibboleth");
+    issuer.setValue("https://spdev.saml.ibm.com");
 
     SAMLObjectBuilder<AuthnRequest> responseBuilder = (SAMLObjectBuilder<AuthnRequest>) builderFactory.getBuilder(AuthnRequest.DEFAULT_ELEMENT_NAME);
     AuthnRequest authRequest = responseBuilder.buildObject();
