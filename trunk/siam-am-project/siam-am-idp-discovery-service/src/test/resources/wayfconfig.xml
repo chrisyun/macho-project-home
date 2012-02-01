@@ -69,7 +69,7 @@
      
 -->
 
-        <MetadataProvider displayName="Federation Name" identifier="FirstSite" url="file://$DS_HOME$/metadata/sites.xml"/>
+        <MetadataProvider displayName="Federation Name" identifier="FirstSite" url="file://C:\Users/IBM_ADMIN/workspace/siam-am-project/siam-am-idp-discovery-service/src/test/resources/sites.xml"/>
 
 <!-- If the DS is to handle data from more than one metadata source
      then more metadataproviders can be provided, as below
