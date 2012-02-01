@@ -183,7 +183,8 @@ public class IdPSiteSet implements ObservableMetadataProvider.Observer {
 
             URL url = new URL(location);
             if ("file".equalsIgnoreCase(url.getProtocol())) {
-                FilesystemMetadataProvider provider = new FilesystemMetadataProvider(new File(url.getFile()));
+                String filePath = location.substring("file://".length());
+                FilesystemMetadataProvider provider = new FilesystemMetadataProvider(new File(filePath));
                 provider.setParserPool(parserPool);
                 if (null != filterChain) {
                     provider.setMetadataFilter(filterChain);
