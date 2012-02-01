@@ -7,11 +7,11 @@
 		<servlet-class>edu.internet2.middleware.shibboleth.wayf.WayfService</servlet-class>
 		<init-param>
 			<param-name>WAYFConfigFileLocation</param-name>
-			<param-value>$DS_HOME$/conf/wayfconfig.xml</param-value>
+			<param-value>C:/Users/IBM_ADMIN/workspace/siam-am-project/siam-am-idp-discovery-service/src/test/resources/wayfconfig.xml</param-value>
 		</init-param>
 		<init-param>
 			<param-name>WAYFLogConfig</param-name>
-			<param-value>$DS_HOME$/conf/logging.xml</param-value>
+			<param-value>C:/Users/IBM_ADMIN/workspace/siam-am-project/siam-am-idp-discovery-service/src/test/resources/logging.xml</param-value>
 		</init-param>
         <init-param>
             <param-name>WAYFLogConfigPollFrequency</param-name>
