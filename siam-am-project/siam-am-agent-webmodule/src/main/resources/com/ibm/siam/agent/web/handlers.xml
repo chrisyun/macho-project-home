@@ -13,7 +13,7 @@
     <constructor-arg value="/error.jsp"></constructor-arg>
   </bean>
   
-  <bean id="siam.sp.handler.Metadata" class="com.ibm.siam.agent.web.SAMLMetadataProfileHandler">
+  <bean id="siam.sp.handler.Metadata" class="com.ibm.siam.agent.sp.handler.SAMLMetadataProfileHandler">
     <constructor-arg value="file://C:/Users/IBM_ADMIN/workspace/siam-am-project/siam-am-agent-webmodule/src/test/resources/conf/sp-metadata.xml"></constructor-arg>
     <constructor-arg ref="siam.sp.ParserPool"></constructor-arg>
     <property name="requestPaths">
@@ -23,7 +23,7 @@
     </property>
   </bean>
   
-  <bean id="siam.sp.handler.SAML2SSO.Checker" class="com.ibm.siam.agent.web.SAML2AuthRequestHandler">
+  <bean id="siam.sp.handler.SAML2SSO.Checker" class="com.ibm.siam.agent.sp.handler.SAML2AuthRequestHandler">
     <property name="requestPaths">
       <list>
         <value>/SSO/Login</value>
@@ -32,7 +32,7 @@
     <property name="idGenerator" ref="siam.sp.IdGenerator"></property>
   </bean>
   
-  <bean id="siam.sp.handler.SAML2SSO.Response" class="com.ibm.siam.agent.web.SAML2AuthResponseHandler">
+  <bean id="siam.sp.handler.SAML2SSO.Response" class="com.ibm.siam.agent.sp.handler.SAML2AuthResponseHandler">
     <property name="requestPaths">
       <list>
         <value>/SSO/SAML2/POST</value>

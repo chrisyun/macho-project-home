@@ -11,6 +11,8 @@ import org.opensaml.ws.transport.http.HTTPOutTransport;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+import com.ibm.siam.agent.sp.handler.BaseProfileHandler;
+
 import edu.internet2.middleware.shibboleth.common.profile.ProfileException;
 
 /**
