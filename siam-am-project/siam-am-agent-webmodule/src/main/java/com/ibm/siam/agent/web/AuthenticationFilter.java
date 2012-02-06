@@ -61,32 +61,33 @@ public class AuthenticationFilter implements Filter {
   /**
    * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
    */
-  public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException,
-      ServletException {
+  public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
     
     HttpServletRequest httpRequest = (HttpServletRequest)request;
     HttpServletResponse httpResponse = (HttpServletResponse)response;
 
-    HttpSession session = httpRequest.getSession();
-    if (session != null && session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR) != null 
-        && this.authenticationMethod.equals(((SSOPrincipal)session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR)).getAuthenMethod())) {
-      // Authenticated and matched authen method, do business
-      chain.doFilter(request, response);
-      return;
-    }
-    
-    String uri = ((HttpServletRequest) request).getRequestURI().toString();
-    String contextPath = ((HttpServletRequest) request).getContextPath();
-    String requestPath = uri;
-    if (!contextPath.equals("/")) {
-      requestPath = requestPath.substring(contextPath.length());
-    }
-    if (requestPath.startsWith("/SSO")) {
+    if (isIgnoreUrl(httpRequest)) {
       // Handled by SPProfileHandler, do business
       chain.doFilter(request, response);
       return;
     }
     
+    // Need to authenticate?
+    if (needToAuthenticate(httpRequest)) {
+      doAuthentication(httpRequest, httpResponse);
+      return;
+    }
+    // Authenticated and matched authen method, do business
+    chain.doFilter(request, response);
+    return;
+  }
+
+
+  /**
+   * @param httpRequest
+   * @param httpResponse
+   */
+  private void doAuthentication(HttpServletRequest httpRequest, HttpServletResponse httpResponse) {
     // Un-authenticate, send saml authen request.
     ApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(filterConfig.getServletContext());
     SPProfileHandlerManager handlerManager = context.getBean("siam.sp.handler.manager", SPProfileHandlerManager.class) ;
@@ -102,10 +103,36 @@ public class AuthenticationFilter implements Filter {
       return;
     } catch (Exception e) {
       //throw new IOException(e);
-      request.setAttribute(AbstractErrorHandler.ERROR_KEY, e);
+      httpRequest.setAttribute(AbstractErrorHandler.ERROR_KEY, e);
       log.error("Failure to process http request, cause: " + e.getMessage(), e);
     }
     errorHandler.processRequest(profileReq, profileResp);
     return;
+  }
+
+
+  /**
+   * @param session
+   * @return
+   */
+  private boolean needToAuthenticate(HttpServletRequest httpRequest) {
+    HttpSession session = httpRequest.getSession(false);
+    return session == null || session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR) == null 
+        || !this.authenticationMethod.equals(((SSOPrincipal)session.getAttribute(SSOPrincipal.NAME_OF_SESSION_ATTR)).getAuthenMethod());
+  }
+
+
+  /**
+   * @param httpRequest
+   * @return
+   */
+  private boolean isIgnoreUrl(HttpServletRequest httpRequest) {
+    String uri = httpRequest.getRequestURI().toString();
+    String contextPath = httpRequest.getContextPath();
+    String requestPath = uri;
+    if (!contextPath.equals("/")) {
+      requestPath = requestPath.substring(contextPath.length());
+    }
+    return requestPath.startsWith("/SSO");
   }
 }

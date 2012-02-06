@@ -41,64 +41,69 @@ import edu.internet2.middleware.shibboleth.common.profile.ProfileException;
 import edu.internet2.middleware.shibboleth.common.profile.provider.AbstractRequestURIMappedProfileHandler;
 
 /**
- * A simple profile handler that serves up the IdP's metadata. Eventually this handler should auto generate the metadata
- * but, for now, it just provides information from a static file.
+ * A simple profile handler that serves up the IdP's metadata. Eventually this
+ * handler should auto generate the metadata but, for now, it just provides
+ * information from a static file.
  */
 public class SAMLMetadataProfileHandler extends AbstractRequestURIMappedProfileHandler {
 
-    /** Class logger. */
-    private final Logger log = LoggerFactory.getLogger(SAMLMetadataProfileHandler.class);
+  /** Class logger. */
+  private final Logger log = LoggerFactory.getLogger(SAMLMetadataProfileHandler.class);
 
-    /** Metadata provider. */
-    private FilesystemMetadataProvider metadataProvider;
+  /** Metadata provider. */
+  private FilesystemMetadataProvider metadataProvider;
 
-    /**
-     * Constructor.
-     * 
-     * @param metadataFile the IdPs metadata file
-     * @param pool pool of XML parsers used to parse the metadata
-     */
-    public SAMLMetadataProfileHandler(String metadataFile, ParserPool pool) {
-        try {
-            metadataProvider = new FilesystemMetadataProvider(new File(metadataFile));
-            metadataProvider.setParserPool(pool);
-            metadataProvider.setRequireValidMetadata(false);
-            metadataProvider.initialize();
-        } catch (Exception e) {
-            log.error("Unable to read metadata file " + metadataFile, e);
-        }
+  /**
+   * Constructor.
+   * 
+   * @param metadataFile
+   *          the IdPs metadata file
+   * @param pool
+   *          pool of XML parsers used to parse the metadata
+   */
+  public SAMLMetadataProfileHandler(String metadataFile, ParserPool pool) {
+    try {
+      if (metadataFile.startsWith("file://")) {
+        metadataProvider = new FilesystemMetadataProvider(new File(metadataFile.substring("file://".length())));
+      }
+      metadataProvider.setParserPool(pool);
+      metadataProvider.setRequireValidMetadata(false);
+      metadataProvider.initialize();
+    } catch (Exception e) {
+      log.error("Unable to read metadata file " + metadataFile, e);
+    }
+  }
+
+  /** {@inheritDoc} */
+  public void processRequest(InTransport in, OutTransport out) throws ProfileException {
+    XMLObject metadata;
+
+    HttpServletRequest httpRequest = ((HttpServletRequestAdapter) in).getWrappedRequest();
+    HttpServletResponse httpResponse = ((HttpServletResponseAdapter) out).getWrappedResponse();
+
+    String acceptHeder = DatatypeHelper.safeTrimOrNullString(httpRequest.getHeader("Accept"));
+    if (acceptHeder != null && !acceptHeder.contains("application/samlmetadata+xml")) {
+      httpResponse.setContentType("application/xml");
+    } else {
+      httpResponse.setContentType("application/samlmetadata+xml");
     }
 
-    /** {@inheritDoc} */
-    public void processRequest(InTransport in, OutTransport out) throws ProfileException {
-        XMLObject metadata;
+    try {
+      String requestedEntity = DatatypeHelper.safeTrimOrNullString(((HttpServletRequestAdapter) in)
+          .getParameterValue("entity"));
+      if (requestedEntity != null) {
+        metadata = metadataProvider.getEntityDescriptor(requestedEntity);
+      } else {
+        metadata = metadataProvider.getMetadata();
+      }
 
-        HttpServletRequest httpRequest = ((HttpServletRequestAdapter)in).getWrappedRequest();
-        HttpServletResponse httpResponse = ((HttpServletResponseAdapter)out).getWrappedResponse();
-        
-        String acceptHeder = DatatypeHelper.safeTrimOrNullString(httpRequest.getHeader("Accept"));
-        if(acceptHeder != null && !acceptHeder.contains("application/samlmetadata+xml")){
-            httpResponse.setContentType("application/xml");
-        }else{
-            httpResponse.setContentType("application/samlmetadata+xml");
-        }
-        
-        try {
-            String requestedEntity = DatatypeHelper.safeTrimOrNullString(((HttpServletRequestAdapter) in)
-                    .getParameterValue("entity"));
-            if (requestedEntity != null) {
-                metadata = metadataProvider.getEntityDescriptor(requestedEntity);
-            } else {
-                metadata = metadataProvider.getMetadata();
-            }
-
-            if (metadata != null) {
-                Marshaller marshaller = Configuration.getMarshallerFactory().getMarshaller(metadata);
-                XMLHelper.writeNode(marshaller.marshall(metadata), new OutputStreamWriter(out.getOutgoingStream()));
-            }
-        } catch (Exception e) {
-            log.error("Unable to retrieve and return metadata", e);
-            throw new ProfileException(e);
-        }
+      if (metadata != null) {
+        Marshaller marshaller = Configuration.getMarshallerFactory().getMarshaller(metadata);
+        XMLHelper.writeNode(marshaller.marshall(metadata), new OutputStreamWriter(out.getOutgoingStream()));
+      }
+    } catch (Exception e) {
+      log.error("Unable to retrieve and return metadata", e);
+      throw new ProfileException(e);
     }
+  }
 }
