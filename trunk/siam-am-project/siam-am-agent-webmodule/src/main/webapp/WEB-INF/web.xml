@@ -33,9 +33,9 @@
   <!-- Filter for protected resource -->
   <filter>
     <description>Authentication Filter</description>
-    <display-name>com.ibm.siam.agent.web.AuthenticationFilter</display-name>
-    <filter-name>com.ibm.siam.agent.web.AuthenticationFilter</filter-name>
-    <filter-class>com.ibm.siam.agent.web.AuthenticationFilter</filter-class>
+    <display-name>com.ibm.siam.agent.web.AccessEnforcer</display-name>
+    <filter-name>com.ibm.siam.agent.web.AccessEnforcer</filter-name>
+    <filter-class>com.ibm.siam.agent.web.AccessEnforcer</filter-class>
     <init-param>
       <description>Define authentication method for protected resources.</description>
       <param-name>AuthenticationMethod</param-name>
@@ -43,7 +43,7 @@
     </init-param>
   </filter>
   <filter-mapping>
-    <filter-name>com.ibm.siam.agent.web.AuthenticationFilter</filter-name>
+    <filter-name>com.ibm.siam.agent.web.AccessEnforcer</filter-name>
     <url-pattern>/main.jsp</url-pattern>
   </filter-mapping>
 

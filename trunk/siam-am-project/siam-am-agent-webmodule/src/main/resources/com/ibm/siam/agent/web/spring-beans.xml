@@ -107,7 +107,7 @@
     </property>
   </bean>
 
-  <bean id="siam.sp.handler.manager" class="com.ibm.siam.agent.web.SPProfileHandlerManager" init-method="initialize">
+  <bean id="siam.sp.handler.manager" class="com.ibm.siam.agent.sp.handler.SPProfileHandlerManager" init-method="initialize">
     <property name="serviceConfigurations">
       <list>
         <bean class="org.opensaml.util.resource.ClasspathResource">
