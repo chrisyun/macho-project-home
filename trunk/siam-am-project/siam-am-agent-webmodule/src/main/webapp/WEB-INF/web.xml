@@ -18,6 +18,7 @@
     <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
   </listener>
 
+  <!-- Filter for SAML handler -->
   <filter>
     <description>SAML Profile Filter</description>
     <display-name>com.ibm.siam.agent.web.SAMLProfileFilter</display-name>

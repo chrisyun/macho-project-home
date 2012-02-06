@@ -1,33 +1,17 @@
-<SPConfig xmlns="urn:mace:shibboleth:2.0:native:sp:config"
-    xmlns:conf="urn:mace:shibboleth:2.0:native:sp:config"
-    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+<SPConfig xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
     xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"    
     xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
     clockSkew="180">
 
-    <!--
-    By default, in-memory StorageService, ReplayCache, ArtifactMap, and SessionCache
-    are used. See example-shibboleth2.xml for samples of explicitly configuring them.
-    -->
-
-    <!--
-    To customize behavior for specific resources on Apache, and to link vhosts or
-    resources to ApplicationOverride settings below, use web server options/commands.
-    See https://spaces.internet2.edu/display/SHIB2/NativeSPConfigurationElements for help.
-    
-    For examples with the RequestMap XML syntax instead, see the example-shibboleth2.xml
-    file, and the https://spaces.internet2.edu/display/SHIB2/NativeSPRequestMapHowTo topic.
-    -->
-
-    <!-- The ApplicationDefaults element is where most of Shibboleth's SAML bits are defined. -->
-    <ApplicationDefaults entityID="https://sp.saml.ibm.com/shibboleth"
+    <!-- The ApplicationDefaults element is where most of SAML bits are defined. -->
+    <ApplicationDefaults entityID="https://spdev.saml.ibm.com"
                          REMOTE_USER="eppn persistent-id targeted-id">
 
         <!--
         Controls session lifetimes, address checks, cookie handling, and the protocol handlers.
         You MUST supply an effectively unique handlerURL value for each of your applications.
-        The value defaults to /Shibboleth.sso, and should be a relative path, with the SP computing
-        a relative value based on the virtual host. Using handlerSSL="true", the default, will force
+        The value defaults to /SSO, and should be a relative path, with the SP computing
+        a relative value based on the Web Module. Using handlerSSL="true", the default, will force
         the protocol to be https. You should also add a cookieProps setting of "; path=/; secure"
         in that case. Note that while we default checkAddress to "false", this has a negative
         impact on the security of the SP. Stealing cookies/sessions is much easier with this disabled.
@@ -37,14 +21,18 @@
             <!--
             Configures SSO for a default IdP. To allow for >1 IdP, remove
             entityID property and adjust discoveryURL to point to discovery service.
-            (Set discoveryProtocol to "WAYF" for legacy Shibboleth WAYF support.)
-            You can also override entityID on /Login query string, or in RequestMap/htaccess.
+            (Set discoveryProtocol to "WAYF" for legacy Shibboleth WAYF support.).
             -->
             <SSO entityID="https://idp.saml.ibm.com/idp/shibboleth"
                  discoveryProtocol="SAMLDS" discoveryURL="https://ds.example.org/DS/WAYF">
               SAML2 SAML1
             </SSO>
-
+            <!-- 
+            <SSO discoveryProtocol="SAMLDS" discoveryURL="https://idp.saml.ibm.com/idp-ds/WAYF?isPassive=true">
+              SAML2 SAML1
+            </SSO>
+            -->
+             
             <!-- SAML and local-only logout. -->
             <Logout>SAML2 Local</Logout>
             

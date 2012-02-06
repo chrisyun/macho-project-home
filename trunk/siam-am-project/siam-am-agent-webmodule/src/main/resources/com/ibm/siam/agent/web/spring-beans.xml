@@ -21,7 +21,7 @@
     <property name="locations">
       <list>
         <value>classpath:com/ibm/siam/agent/web/siam-sp-config.properties</value>
-        <value>file:${user.home}/spring-sp-config.properties</value>
+        <value>file:${user.home}/siam-sp-config.properties</value>
       </list>
     </property>
   </bean>

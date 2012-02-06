@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" entityID="https://idp.saml.ibm.com/idp">
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                  entityID="https://idp.saml.ibm.com/idp">
 
     <IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
 
         <Extensions>
-            <shibmd:Scope regexp="false">$IDP_SCOPE$</shibmd:Scope>
+            <shibmd:Scope regexp="false">saml.ibm.com</shibmd:Scope>
         </Extensions>
 
         <KeyDescriptor>
             <ds:KeyInfo>
                 <ds:X509Data>
                     <ds:X509Certificate>
-$IDP_CERTIFICATE$
-                    </ds:X509Certificate>
+                    MIIDJzCCAg+gAwIBAgIULrTdWt5KXg2DKrdQsmtqmb5LZDMwDQYJKoZIhvcNAQEF
+                    BQAwGjEYMBYGA1UEAxMPaWRwLmV4YW1wbGUub3JnMB4XDTEyMDEwNjA5MzIxNVoX
+                    DTMyMDEwNjA5MzIxNVowGjEYMBYGA1UEAxMPaWRwLmV4YW1wbGUub3JnMIIBIjAN
+                    BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkZofRdgCWFKrQ1ZyAC6qa0a5nrJ2
+                    hN9h1RzT9I+qRDkVw0bJvhMAfXvCcGVhpzpxxz6LdV0XpfUJ9K8HnLE3jRMJmOWb
+                    JQZnvBPxkDm9c+MMRfSIreyKTqs5EloR1rJWZWS+B4VRQ3RH+eHg2mxim/KAH273
+                    DqELkHcXplMoPoXlnvsBtJIjqrwpdVeJ6wLxHChVx/HYe6VHgoGAdLaqaYEOFRkz
+                    vJ3X8/azLTUuvyWilFu1u0L4o7DchBha6flSmpuDFNmhM+tRDIl0VbA0b3S3Qyd9
+                    PODN+kZTLBAq4nwWmHBIA5HMxq8/3TYbxnQQAzA+MKk2WkccCXEVB3N8FQIDAQAB
+                    o2UwYzBCBgNVHREEOzA5gg9pZHAuZXhhbXBsZS5vcmeGJmh0dHBzOi8vaWRwLmV4
+                    YW1wbGUub3JnL2lkcC9zaGliYm9sZXRoMB0GA1UdDgQWBBTkMoa5F2yiKIXKgHa0
+                    DCE1+C7cZzANBgkqhkiG9w0BAQUFAAOCAQEAOecWweGQXPg6ErOglqwnN4kurbYL
+                    Kzw3osAZkMG17rb32cZOE4Chj1rykzzzrYa7iPs3B/77sjPS+mWkuemNeikCTruS
+                    DUFKXMXAEPv04mlb8soZ8pQmU+uMfhrSHSmbpIqRY4OwDo8zpEtwEixiA6lmmRuY
+                    YYIpe4wKRtJmDWBzXrnz7z8KbUdzu5qeuoqHOZzzdMq9geQPEXBEyThB1Rt44H2Z
+                    a0I7CbUMHvWJMjWuvscpolE+umotdPUiUcCIZZvfROALlpDq2tl2dkns7xoqNaya
+                    aX9D0Zy//4I74lZCwMTVKyXgT3aJh8zEvosrDbaEmucyZPNMTz1j2cY1Fw==
+                  </ds:X509Certificate>
                 </ds:X509Data>
             </ds:KeyInfo>
         </KeyDescriptor>
@@ -36,14 +53,30 @@ $IDP_CERTIFICATE$
     <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
 
         <Extensions>
-            <shibmd:Scope regexp="false">$IDP_SCOPE$</shibmd:Scope>
+            <shibmd:Scope regexp="false">saml.ibm.com</shibmd:Scope>
         </Extensions>
 
         <KeyDescriptor>
             <ds:KeyInfo>
                 <ds:X509Data>
                     <ds:X509Certificate>
-$IDP_CERTIFICATE$
+                    MIIDJzCCAg+gAwIBAgIULrTdWt5KXg2DKrdQsmtqmb5LZDMwDQYJKoZIhvcNAQEF
+                    BQAwGjEYMBYGA1UEAxMPaWRwLmV4YW1wbGUub3JnMB4XDTEyMDEwNjA5MzIxNVoX
+                    DTMyMDEwNjA5MzIxNVowGjEYMBYGA1UEAxMPaWRwLmV4YW1wbGUub3JnMIIBIjAN
+                    BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkZofRdgCWFKrQ1ZyAC6qa0a5nrJ2
+                    hN9h1RzT9I+qRDkVw0bJvhMAfXvCcGVhpzpxxz6LdV0XpfUJ9K8HnLE3jRMJmOWb
+                    JQZnvBPxkDm9c+MMRfSIreyKTqs5EloR1rJWZWS+B4VRQ3RH+eHg2mxim/KAH273
+                    DqELkHcXplMoPoXlnvsBtJIjqrwpdVeJ6wLxHChVx/HYe6VHgoGAdLaqaYEOFRkz
+                    vJ3X8/azLTUuvyWilFu1u0L4o7DchBha6flSmpuDFNmhM+tRDIl0VbA0b3S3Qyd9
+                    PODN+kZTLBAq4nwWmHBIA5HMxq8/3TYbxnQQAzA+MKk2WkccCXEVB3N8FQIDAQAB
+                    o2UwYzBCBgNVHREEOzA5gg9pZHAuZXhhbXBsZS5vcmeGJmh0dHBzOi8vaWRwLmV4
+                    YW1wbGUub3JnL2lkcC9zaGliYm9sZXRoMB0GA1UdDgQWBBTkMoa5F2yiKIXKgHa0
+                    DCE1+C7cZzANBgkqhkiG9w0BAQUFAAOCAQEAOecWweGQXPg6ErOglqwnN4kurbYL
+                    Kzw3osAZkMG17rb32cZOE4Chj1rykzzzrYa7iPs3B/77sjPS+mWkuemNeikCTruS
+                    DUFKXMXAEPv04mlb8soZ8pQmU+uMfhrSHSmbpIqRY4OwDo8zpEtwEixiA6lmmRuY
+                    YYIpe4wKRtJmDWBzXrnz7z8KbUdzu5qeuoqHOZzzdMq9geQPEXBEyThB1Rt44H2Z
+                    a0I7CbUMHvWJMjWuvscpolE+umotdPUiUcCIZZvfROALlpDq2tl2dkns7xoqNaya
+                    aX9D0Zy//4I74lZCwMTVKyXgT3aJh8zEvosrDbaEmucyZPNMTz1j2cY1Fw==
                     </ds:X509Certificate>
                 </ds:X509Data>
             </ds:KeyInfo>
