@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+
+<!--
+  * $Header: /home/master/nWave-DM-Build/build4cvs.xml,v 1.20 2008/09/09 09:37:22 chenlei Exp $
+  * $Revision: 1.20 $
+  * $Date: 2008/09/09 09:37:22 $
+-->
+<project name="OTAS.DM.CVS" default="checkout" basedir=".">
+  <property environment="env"/>
+  
+  <property name="cvsroot" value="${default.cvsroot}"/>
+  
+  <!-- Target directory -->
+  <property name="cvs.output.dir" value="${otas.base.dir}"/>
+  
+  <!-- Tagging information -->
+  <property name="build.tag.info" value="${tagging.build.prefix}_${build.number}_${package.tagdate}"/>
+  <property name="release.tag.info" value="${tagging.release.prefix}_${build.number}_${package.tagdate}"/>
+  
+  <!-- Local properties -->
+  <condition property="flag.perform.build.rtagging">
+    <equals arg1="${build.mode}" arg2="true"/>
+  </condition>
+  <condition property="flag.perform.release.rtagging">
+    <equals arg1="${release.mode}" arg2="true"/>
+  </condition>
+  
+  <!-- Init task -->
+  <target name="init">
+    <mkdir dir="${cvs.output.dir}" />
+  </target>
+  
+  <target depends="init" name="checkout"
+          description="Update or checkout required sources from CVS">
+
+    <echo level="info"
+        message="If the checkout fails, run `cvs -d ${cvsroot} login` and try again. The password for the anonymous CVS access is `anoncvs`" />
+
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.dm.library.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.dm.library.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />
+
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.dm.framework.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.dm.framework.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />
+
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.dm.common.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.dm.common.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />
+
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.dm.server.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.dm.server.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />
+
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.dm.webadmin.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.dm.webadmin.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />
+
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.setup.common.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.setup.common.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />
+
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.sms.common.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.sms.common.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />
+
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.sms.gateway.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.sms.gateway.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />
+
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.dm.report.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.dm.report.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />
+
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.dm.myportal.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.dm.myportal.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />
+         
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.dm.portal.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.dm.portal.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />         
+
+    <echo level="info"
+          message="Checkout or Update ${cvsroot}/${otas.dm.tools.cvs.module.name}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="checkout -P ${otas.dm.tools.cvs.module.name}"
+         dest="${cvs.output.dir}" compression="true" />
+
+  </target>
+  
+  <!--  Tagging source code for build status -->
+  <target name="build_src_tagging" if="flag.perform.build.rtagging"
+          description="Tagging sources in CVS for build status">
+
+    <echo level="info"
+        message="If the tagging fails, run `cvs -d ${cvsroot} login` and try again. The password for the anonymous CVS access is `anoncvs`" />
+    
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.library.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.dm.library.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.framework.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.dm.framework.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.common.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.dm.common.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.server.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.dm.server.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.webadmin.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.dm.webadmin.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.setup.common.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.setup.common.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.sms.common.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.sms.common.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.sms.gateway.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.sms.gateway.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.report.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.dm.report.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.myportal.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.dm.myportal.cvs.module.name}"
+         />
+         
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.portal.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.dm.portal.cvs.module.name}"
+         />         
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.tools.cvs.module.name} tag:${build.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${build.tag.info} ${otas.dm.tools.cvs.module.name}"
+         />
+
+  </target>
+  
+  <!--  Tagging source code for release status -->
+  <target name="release_src_tagging" if="flag.perform.release.rtagging"
+          description="Tagging sources in CVS for release status">
+
+    <echo level="info"
+        message="If the tagging fails, run `cvs -d ${cvsroot} login` and try again. The password for the anonymous CVS access is `anoncvs`" />
+    
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.library.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.dm.library.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.framework.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.dm.framework.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.common.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.dm.common.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.server.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.dm.server.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.webadmin.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.dm.webadmin.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.setup.common.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.setup.common.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.sms.common.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.sms.common.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.sms.gateway.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.sms.gateway.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.report.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.dm.report.cvs.module.name}"
+         />
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.myportal.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.dm.myportal.cvs.module.name}"
+         />
+         
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.portal.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.dm.portal.cvs.module.name}"
+         />         
+
+    <echo level="info"
+          message="Tagging source ${cvsroot}/${otas.dm.tools.cvs.module.name} tag:${release.tag.info}"/>
+    <cvs cvsroot="${cvsroot}" quiet="true"
+         command="rtag -F ${release.tag.info} ${otas.dm.tools.cvs.module.name}"
+         />
+
+  </target>
+   
+  <!-- =============================================== -->
+  <!-- CLEAN                                           -->
+  <!-- =============================================== -->
+
+  <target name="clean" depends="init">
+  </target>
+  
+</project>
