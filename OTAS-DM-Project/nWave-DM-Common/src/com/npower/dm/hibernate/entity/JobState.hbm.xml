@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/JobState.hbm.xml,v 1.5 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.5 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.JobState" table="NW_DM_JOB_STATE">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="JOB_STATE_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="toImage" class="com.npower.dm.hibernate.entity.ImageEntity" fetch="select">
+            <column name="TO_IMAGE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="installingImage" class="com.npower.dm.hibernate.entity.ImageEntity" fetch="select">
+            <column name="INSTALLING_IMAGE" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="jobAdapter" class="com.npower.dm.hibernate.entity.JobAdapter" fetch="select">
+            <column name="JOB_ADAPTER_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="commandPackage" class="com.npower.dm.hibernate.entity.DMCommandPackage" fetch="select">
+            <column name="COMMAND_PACKAGE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="provisionRequest" class="com.npower.dm.hibernate.entity.ProvisionRequest" fetch="select">
+            <column name="JOB_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="device" class="com.npower.dm.hibernate.entity.DeviceEntity" fetch="select">
+            <column name="DEVICE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="oldCurrentImage" class="com.npower.dm.hibernate.entity.ImageEntity" fetch="select">
+            <column name="OLD_CURRENT_IMAGE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <property name="jobStateType" type="string">
+            <column name="JOB_STATE_TYPE" not-null="true" />
+        </property>
+        <property name="workflowEntryId" type="long">
+            <column name="WORKFLOW_ENTRY_ID" precision="16" scale="0" />
+        </property>
+        <property name="askInterval" type="long">
+            <column name="ASK_INTERVAL" precision="16" scale="0" />
+        </property>
+        <property name="askCount" type="long">
+            <column name="ASK_COUNT" precision="16" scale="0" />
+        </property>
+        <property name="askBeforeApply" type="boolean">
+            <column name="ASK_BEFORE_APPLY" precision="1" scale="0" />
+        </property>
+        <property name="askBeforeDown" type="boolean">
+            <column name="ASK_BEFORE_DOWN" precision="1" scale="0" />
+        </property>
+        <property name="pathIndex" type="long">
+            <column name="PATH_INDEX" precision="16" scale="0" />
+        </property>
+        <property name="installationState" type="string">
+            <column name="INSTALLATION_STATE" />
+        </property>
+        <property name="workflowState" type="string">
+            <column name="WORKFLOW_STATE" length="10" />
+        </property>
+        <property name="uiMode" type="string">
+            <column name="UI_MODE" />
+        </property>
+        <property name="askUser" type="boolean">
+            <column name="ASK_USER" precision="1" scale="0" />
+        </property>
+        <set name="deviceProvisionRequests" inverse="true">
+            <key>
+                <column name="JOB_STATE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DeviceProvisionRequestEntity" />
+        </set>
+        <set name="nodesToDiscovers" inverse="true">
+            <key>
+                <column name="DEV_PROV_REQ_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.NodeToDiscover" />
+        </set>
+        <set name="jobAssignmentses" inverse="true" order-by="ASSIGNMENT_INDEX asc">
+            <key>
+                <column name="JOB_STATE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.JobAssignments" />
+        </set>
+        <set name="jobAdapters" inverse="true">
+            <key>
+                <column name="JOB_STATE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.JobAdapter" />
+        </set>
+        <set name="jobExecClients" inverse="true">
+            <key>
+                <column name="WORKFLOW_JOB_STATE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.JobExecClient" />
+        </set>
+        <set name="jobUpdatePaths" inverse="true">
+            <key>
+                <column name="FW_JOB_STATE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.FirmwareJobUpdatePath" />
+        </set>
+        <set name="discJobStNodes" inverse="true">
+            <key>
+                <column name="DISCOVERY_JOB_STATE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DiscoveryJobStateNode" />
+        </set>
+    </class>
+</hibernate-mapping>

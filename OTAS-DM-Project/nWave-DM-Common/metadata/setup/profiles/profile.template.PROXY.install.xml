@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.template.PROXY.install.xml,v 1.2 2007/03/14 10:03:58 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2007/03/14 10:03:58 $
+-->
+<ProfileMetaData>
+    <AttributeTypes>
+        <!-- Using by Proxy Template -->
+        <AttributeType>
+        	<Name>PROXY PPGAUTH-TYPE</Name>
+        	<Description>The PPGAUTH-TYPE parameter links the PROXY-ID and PROXY-PW to an authentication method.</Description>
+        	<Values>
+        		<Value>HTTP-BASIC</Value>
+        		<Value>HTTP-DIGEST</Value>
+        	</Values>
+        </AttributeType>
+
+        <AttributeType>
+        	<Name>PROXY PXADDRTYPE</Name>
+        	<Description>The PXADDRTYPE indicates the format and the interpretation of the PXADDR attribute.</Description>
+        	<Values>
+        		<Value>IPV4</Value>
+        		<Value>IPV6</Value>
+        		<Value>E164</Value>
+        		<Value>ALPHA</Value>
+        	</Values>
+        </AttributeType>
+        <AttributeType>
+        	<Name>PROXY PXAUTH-TYPE</Name>
+        	<Description>The PXAUTH-TYPE indicates the proxy authentication method: HTTP proxy authentication or WTLS methods.</Description>
+        	<Values>
+        		<Value>HTTP-BASIC</Value>
+        		<Value>HTTP-DIGEST</Value>
+        		<Value>WTLS-SS</Value>
+        	</Values>
+        </AttributeType>
+        <AttributeType>
+        	<Name>PXLOGICAL SERVICE</Name>
+        	<Description>The SERVICE parameter specifies which service is available behind this particular port number.</Description>
+        	<Values>
+        		<Value>CL-WSP</Value>
+        		<Value>CO-WSP</Value>
+        		<Value>CL-SEC-WSP</Value>
+        		<Value>CO-SEC-WSP</Value>
+        		<Value>CO-SEC-WTA</Value>
+        		<Value>CL-SEC-WTA</Value>
+        		<Value>OTA-HTTP-TO</Value>
+        		<Value>OTA-HTTP-TLS-TO</Value>
+        		<Value>OTA-HTTP-PO</Value>
+        		<Value>OTA-HTTP-TLS-PO</Value>
+        	</Values>
+        </AttributeType>
+        <AttributeType>
+        	<Name>PXPHYSICAL SERVICE</Name>
+        	<Description>The SERVICE parameter specifies which service is available behind this particular port number.</Description>
+        	<Values>
+        		<Value>CL-WSP</Value>
+        		<Value>CO-WSP</Value>
+        		<Value>CL-SEC-WSP</Value>
+        		<Value>CO-SEC-WSP</Value>
+        		<Value>CO-SEC-WTA</Value>
+        		<Value>CL-SEC-WTA</Value>
+        		<Value>OTA-HTTP-TO</Value>
+        		<Value>OTA-HTTP-TLS-TO</Value>
+        		<Value>OTA-HTTP-PO</Value>
+        		<Value>OTA-HTTP-TLS-PO</Value>
+        	</Values>
+        </AttributeType>
+    </AttributeTypes>
+
+    <ProfileTemplates>
+        <!-- Default NAP Template defined from OMA CP NAP Profile -->
+        <ProfileTemplate>
+            <CategoryName>Proxy</CategoryName>
+            <Name>Proxy Default Template</Name>
+            <NeedsNAP>true</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>NAME</Name>
+                    <DisplayName>Name</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The NAME indicates a logical, user readable, identity (property) of the configuration element.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>STARTPAGE</Name>
+                    <DisplayName>Startpage</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The STARTPAGE parameter MUST be an absolute URI [RFC2396] and defines the homepage or start page
+associated with the services accessible from the proxy.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXADDRTYPE</Name>
+                    <DisplayName>Proxy Addr Type</DisplayName>
+                    <TypeName>PROXY PXADDRTYPE</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>IPV4</DefaultValue>
+                    <Description>The PXADDRTYPE indicates the format and the interpretation of the PXADDR attribute. The PXADDRTYPE can
+indicate an IP address, a phone number according to the E164 scheme, or a generic alphanumeric address format. If
+the parameter is not present or if no value is given, the default value IPV4 should be assumed.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXADDR</Name>
+                    <DisplayName>Proxy Address</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The PXADDR can store addresses of different kinds, for example an IP address or a SME number. The type of
+address in the field is defined by the PXADDRTYPE parameter.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXPHYSICAL PORTNBR</Name>
+                    <DisplayName>Proxy Port</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>8080</DefaultValue>
+                    <Description>The PORTNBR parameter contains the value of the port number. The port number must be given as a decimal
+number and must fit within the range of a 16 bit unsigned integer.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXAUTH-TYPE</Name>
+                    <DisplayName>Proxy Auth Type</DisplayName>
+                    <TypeName>PROXY PXAUTH-TYPE</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The PXAUTH-TYPE indicates the proxy authentication method: HTTP proxy authentication or WTLS methods.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXAUTH-ID</Name>
+                    <DisplayName>Proxy Auth Name</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The PXAUTH-ID indicates the proxy authentication identifier.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXAUTH-PW</Name>
+                    <DisplayName>Proxy Auth Passwd</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The PXAUTH-PW indicates the proxy authentication secret. The usage of the parameter is defined by the
+PXAUTH-TYPE.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXPHYSICAL DOMAIN</Name>
+                    <DisplayName>Proxy Domain</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>true</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The DOMAIN parameter indicates a domain, for which the proxy is responsible. The proxy might support multiple
+domains.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>TO-NAPID</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>APLink</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>This parameter refers to a network access point with a matching NAPID parameter. It is only possible to refer to
+network access points defined within the same provisioning document.</Description>
+                </Attribute>
+                
+                <!-- PXLOGICAL DOMAIN and PXPHYSICAL SERVICE required by Motorola -->
+                <Attribute>
+                    <Name>PXLOGICAL DOMAIN</Name>
+                    <DisplayName>Proxy Domain</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>true</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The DOMAIN parameter indicates a domain, for which the proxy is responsible.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXPHYSICAL SERVICE</Name>
+                    <DisplayName>Proxy Service</DisplayName>
+                    <TypeName>PXPHYSICAL SERVICE</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>true</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The SERVICE parameter specifies which service is available behind this particular port number.</Description>
+                </Attribute>
+                
+                <!-- Unused Attribute -->
+                <!-- 
+                <Attribute>
+                    <Name>PROXY-ID</Name>
+                    <DisplayName>PROXY-ID</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The PROXY-ID is used to define one logical WAP proxy entity. It is also used to link a proxy to session and
+security contexts. A PROXY-ID MUST be globally unique.</Description>
+                </Attribute>
+                 -->
+                <!-- 
+                <Attribute>
+                    <Name>PROXY-PW</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The PROXY-PW indicates the authentication password for the proxy. PROXY-ID and PROXY-PW are used as
+authentication parameters for push proxy authentication to the client. </Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PPGAUTH-TYPE</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>PROXY PPGAUTH-TYPE</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The PPGAUTH-TYPE parameter links the PROXY-ID and PROXY-PW to an authentication method.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PROXY-PROVIDER-ID</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The PROXY-PROVIDER-ID is used to verify the identity of a proxy when using certificate based server
+authentication. If server certificate authentication is used, and the PROXY-PROVIDER-ID has been defined, then
+service credentials of the certificate MUST match the PROXY-PROVIDER-ID.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>TRUST</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The TRUST can be used to define that a particular proxy is trusted.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>MASTER</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The MASTER is used to define that a particular proxy is allowed to send navigation documents to the device, using
+the Proxy Navigation Mechanism defined in [E2ESEC]. The parameter does not take a value.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>BASAUTH-ID</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The BASAUTH-ID indicates the basic authentication identifier for the startpage.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>BASAUTH-PW</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The BASAUTH-PW indicates the basic authentication password for the startpage.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXLOGICAL WSP-VERSION</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The WSP-VERSION indicates the WSP encoding version that the proxy in question supports. The format of this
+parameter is an integer representing the major version number followed by and an integer representing the
+minor version number. If the parameter is not present or if no value is given, then the default value 1.2 should be
+assumed.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXLOGICAL PUSHENABLED</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>This parameter takes one of the values 0 or 1. If the value is 1 for a given logical proxy, this proxy will support push.
+The ME is consequently advised to enable push. If the value is 0 for a given logical proxy, this proxy will not
+support push. If the parameter is not present or if no value is given, then the default value 0 should be assumed.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXLOGICAL PULLENABLED</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>This parameter takes one of the values 0 or 1. If the value is 1 for a given logical proxy, this proxy will support pull.
+If the value is 0 for a given logical proxy, this proxy will not support pull. If the parameter is not present or if no
+value is given, then the default value 1 should be assumed. The parameter is advisory only and an ME might
+override the recommendation. In particular, it MUST be ignored, if a SERVICE associated with the proxy always
+supports pull.</Description>
+                </Attribute>
+                
+                <Attribute>
+                    <Name>PXLOGICAL PORTNBR</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The PORTNBR parameter contains the value of the port number. The port number must be given as a decimal
+number and must fit within the range of a 16 bit unsigned integer. The PORTNBR MUST be unique within its
+enclosed structure.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXLOGICAL SERVICE</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>PXLOGICAL SERVICE</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>true</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The SERVICE parameter specifies which service is available behind this particular port number.</Description>
+                </Attribute>
+                
+                <Attribute>
+                    <Name>PHYSICAL-PROXY-ID</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The PHYSICAL-PROXY-ID is used to define one physical WAP proxy entity. The PHYSICAL-PROXY-ID MUST
+be unique within its enclosed structure,</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXADDR-FQDN</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The PXADDR-FQDN parameter can store a proxy address given as a fully qualified domain name. A PXADDRFQDN
+MUST be a fully qualified Internet domain name.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXPHYSICAL WSP-VERSION</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The WSP-VERSION indicates the WSP encoding version that the proxy in question supports. The format of this
+parameter is an integer representing the major version number followed by a and an integer representing the
+minor version number. If no WSP-VERSION parameter is supplied for a physical proxy definition, the
+corresponding parameter value from the logical proxy definition is assumed to apply for the physical proxy as well.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXPHYSICAL PUSHENABLED</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>This parameter takes one of the values 0 or 1. If the value is 1 for a given physical proxy, this physical proxy will
+support push. The ME is consequently advised to enable push. If the value is 0 for a given physical proxy, this proxy
+will not support push. If no PUSHENABLED parameter is supplied for a physical proxy definition,</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>PXPHYSICAL PULLENABLED</Name>
+                    <DisplayName></DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>This parameter takes one of the values 0 or 1. If the value is 1 for a given physical proxy, this physical proxy will
+support pull. If the value is 0 for a given physical proxy, this proxy will not support pull. If no PULLENABLED
+parameter is supplied for a physical proxy definition, the corresponding parameter value from the logical proxy
+definition is assumed to apply for the physical proxy as well.</Description>
+                </Attribute>
+                 -->
+            </Attributes>
+        </ProfileTemplate>
+
+    </ProfileTemplates>
+</ProfileMetaData>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ModelDDFTree.hbm.xml,v 1.4 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.4 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ModelDDFTree" table="NW_DM_MODEL_DDF_TREE">
+        <composite-id name="ID" class="com.npower.dm.hibernate.entity.ModelDDFTreeID">
+            <key-property name="deviceModelId" type="long">
+                <column name="DEVICE_MODEL_ID" precision="16" scale="0" />
+            </key-property>
+            <key-property name="ddfTreeId" type="long">
+                <column name="DDF_TREE_ID" precision="16" scale="0" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="ddfTree" class="com.npower.dm.hibernate.entity.DDFTreeEntity" update="false" insert="false" fetch="select">
+            <column name="DDF_TREE_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="model" class="com.npower.dm.hibernate.entity.ModelEntity" update="false" insert="false" fetch="select">
+            <column name="DEVICE_MODEL_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

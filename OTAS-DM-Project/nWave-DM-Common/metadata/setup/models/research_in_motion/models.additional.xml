@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Research In Motion -->
+<Models>
+
+  <!--  Model: BlackBerry 6280 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>BlackBerry 6280</Name>
+    <ExternalID>BlackBerry 6280</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/research_in_motion/icons/blackberry6280.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: BlackBerry 7100g -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>BlackBerry 7100g</Name>
+    <ExternalID>BlackBerry 7100g</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/research_in_motion/icons/blackberry7100g.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: BlackBerry 7130c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>BlackBerry 7130c</Name>
+    <ExternalID>BlackBerry 7130c</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/research_in_motion/icons/blackberry7130c.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: BlackBerry 8700c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>BlackBerry 8700c</Name>
+    <ExternalID>BlackBerry 8700c</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/research_in_motion/icons/blackberry8700c.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: BlackBerry 8700r -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>BlackBerry 8700r</Name>
+    <ExternalID>BlackBerry 8700r</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/research_in_motion/icons/blackberry8700r.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+
+</Models>
+</Setup>

@@ -1,0 +1,58 @@
+
+<wurfl_patch>
+  <devices>
+<!-- 
+    <device user_agent="" fall_back="root" id="generic">
+      <group id="xhtml_ui">
+	<capability name="xhtmlmp_preferred_mime_type" value="text/html"/>
+      </group>
+    </device>
+-->
+    <device user_agent="test_ua_xhtml_gif_opwv_bigscreen" fall_back="opwv_v6_generic" id="test_ua_xhtml_gif_opwv_bigscreen">
+      <group id="display">
+	<capability name="resolution_width" value="120"/>
+      </group>	
+    </device>
+
+    <device user_agent="test_ua_xhtml_gif_opwv_hugescreen" fall_back="opwv_v6_generic" id="test_ua_xhtml_gif_opwv_hugescreen">
+      <group id="display">
+	<capability name="resolution_width" value="160"/>
+      </group>	
+    </device>
+
+
+    <device user_agent="test_ua_xhtml_gif_opwv_smallscreen" fall_back="opwv_v6_generic" id="test_ua_xhtml_gif_opwv_smallscreen">
+      <group id="display">
+	<capability name="resolution_width" value="80"/>
+      </group>	
+    </device>
+
+    <device user_agent="test_ua_wml_nogif_opwv" fall_back="uptext_generic" id="test_ua_wml_nogif_opwv"/>
+
+    <device user_agent="test_ua_imode_eu_bigscreen" fall_back="portalmmm_ver1" id="test_ua_imode_eu_bigscreen">
+      <group id="display">
+	<capability name="resolution_width" value="120"/>
+      </group>	
+    </device>
+
+    <device user_agent="test_ua_imode_eu_smallscreen" fall_back="portalmmm_ver1" id="test_ua_imode_eu_smallscreen">
+      <group id="display">
+	<capability name="resolution_width" value="80"/>
+      </group>	
+    </device>
+
+
+    <device user_agent="test_ua_imode_ja_bigscreen" fall_back="docomo_generic_jap_ver2" id="test_ua_imode_ja_bigscreen">
+      <group id="display">
+	<capability name="resolution_width" value="120"/>
+      </group>	
+    </device>
+
+    <device user_agent="test_ua_imode_ja_smallscreen" fall_back="docomo_generic_jap_ver2" id="test_ua_imode_ja_smallscreen">
+      <group id="display">
+	<capability name="resolution_width" value="80"/>
+      </group>	
+    </device>
+
+  </devices>
+</wurfl_patch>

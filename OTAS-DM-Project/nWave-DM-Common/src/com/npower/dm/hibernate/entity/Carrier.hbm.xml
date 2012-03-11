@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/Carrier.hbm.xml,v 1.9 2009/02/17 03:38:59 zhao Exp $
+  * $Revision: 1.9 $
+  * $Date: 2009/02/17 03:38:59 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.CarrierEntity" table="NW_DM_CARRIER">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="CARRIER_ID" precision="16" scale="0" />
+            <generator class="com.npower.dm.hibernate.entity.CarrierIdentifierGenerator">
+            </generator>
+        </id>
+        <many-to-one name="country" class="com.npower.dm.hibernate.entity.CountryEntity" fetch="select">
+            <column name="COUNTRY_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="externalID" type="string">
+            <column name="CARRIER_EXTERNAL_ID" length="32" not-null="true" unique="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" not-null="true" />
+        </property>
+        <property name="phoneNumberPolicy" type="string">
+            <column name="PHONE_NUMBER_POLICY" not-null="false" />
+        </property>
+        <many-to-one name="parent" class="com.npower.dm.hibernate.entity.CarrierEntity" fetch="select">
+            <column name="PARENT_CARRIER_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="bootstrapNapProfile" class="com.npower.dm.hibernate.entity.ProfileConfigEntity" fetch="select">
+            <column name="NAP_FOR_BOOTSTRAP_ID" precision="20" scale="0" />
+        </many-to-one>
+        <many-to-one name="bootstrapDmProfile" class="com.npower.dm.hibernate.entity.ProfileConfigEntity" fetch="select">
+            <column name="DM_FOR_BOOTSTRAP_ID" precision="20" scale="0" />
+        </many-to-one>
+        <property name="serverAuthType" type="string">
+            <column name="SERVER_AUTH_TYPE" length="100" not-null="true" />
+        </property>
+        <property name="defaultBootstrapPinType" type="string">
+            <column name="DEFAULT_BOOTSTRAP_PIN_TYPE" length="100" not-null="true" />
+        </property>
+        <property name="defaultBootstrapUserPin" type="string">
+            <column name="DEFAULT_BOOTSTRAP_USER_PIN" length="100" not-null="true" />
+        </property>
+        <property name="bootstrapTimeout" type="long">
+            <column name="BOOTSTRAP_TIMEOUT" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="bootstrapMaxRetries" type="int">
+            <column name="BOOTSTRAP_MAX_RETRIES" precision="5" scale="0" not-null="true" />
+        </property>
+        <property name="notificationType" type="string">
+            <column name="NOTIFICATION_TYPE" length="10" not-null="true" />
+        </property>
+        <property name="notificationProperties" type="string">
+            <column name="NOTIFICATION_PROPERTIES" length="1000" />
+        </property>
+        <property name="notificationStateTimeout" type="long">
+            <column name="NOTIFICATION_STATE_TIMEOUT" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="notificationMaxNumRetries" type="long">
+            <column name="NOTIFICATION_MAX_NUM_RETRIES" precision="5" scale="0" not-null="true" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="4000" />
+        </property>
+        <property name="defaultJobExpiredTimeInSeconds" type="long">
+            <column name="JOB_EXPIRED_TIME" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+        <set name="profileConfigs" inverse="true" order-by="name asc">
+            <key>
+                <column name="CARRIER_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileConfigEntity" />
+        </set>
+        <set name="imageCarrierses" inverse="true">
+            <key>
+                <column name="CARRIER_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.Image4Carrier" />
+        </set>
+        <set name="subscribers" inverse="true">
+            <key>
+                <column name="CARRIER_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.SubscriberEntity" />
+        </set>
+        <set name="subscribersForNewCarrierId" inverse="true">
+            <key>
+                <column name="NEW_CARRIER_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.SubscriberEntity" />
+        </set>
+        <set name="prElements" inverse="true">
+            <key>
+                <column name="CARRIER_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.Element4Provision" />
+        </set>
+        <set name="updateCarrierses" inverse="true">
+            <key>
+                <column name="CARRIER_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.Update4Carrier" />
+        </set>
+    </class>
+</hibernate-mapping>

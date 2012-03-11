@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Modelabs -->
+<Models>
+
+  <!--  Model: MTV 3.0 -->
+  <Model>
+    <Name>MTV 3.0</Name>
+    <ExternalID>MTV 3.0</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/modelabs/icons/mtv 3.0.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: Virgin_1 -->
+  <Model>
+    <Name>Virgin_1</Name>
+    <ExternalID>Virgin_1</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/modelabs/icons/virgin_1.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: myway-slim -->
+  <Model>
+    <Name>myway-slim</Name>
+    <ExternalID>myway-slim</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/modelabs/icons/myway-slim.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+
+</Models>
+</Setup>

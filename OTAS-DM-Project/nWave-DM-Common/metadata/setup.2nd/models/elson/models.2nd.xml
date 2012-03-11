@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Elson -->
+<Models>
+
+  <!--  Model: EL490 -->
+  <Model>
+    <Name>EL490</Name>
+    <ExternalID>EL490</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/elson/icons/el490.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: ESL808 -->
+  <Model>
+    <Name>ESL808</Name>
+    <ExternalID>ESL808</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/elson/icons/esl808.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: MP500 -->
+  <Model>
+    <Name>MP500</Name>
+    <ExternalID>MP500</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/elson/icons/mp500.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+
+</Models>
+</Setup>

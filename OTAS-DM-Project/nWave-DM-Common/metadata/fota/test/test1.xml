@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<updates>
+
+  <update>
+    <model-name>S65</model-name>
+    <manufacturer-external-id>SIEMENS</manufacturer-external-id>
+    <from-image-external-id>version.1.00</from-image-external-id>
+    <to-image-external-id>version.2.00</to-image-external-id>
+    <bytes filename="test1_image_1_to_2.whr"/>
+  </update>
+	
+  <update>
+    <model-name>S65</model-name>
+    <manufacturer-external-id>SIEMENS</manufacturer-external-id>
+    <from-image-external-id>version.2.00</from-image-external-id>
+    <to-image-external-id>version.1.00</to-image-external-id>
+    <bytes filename="test1_image_2_to_1.whr"/>
+  </update>
+	
+</updates>

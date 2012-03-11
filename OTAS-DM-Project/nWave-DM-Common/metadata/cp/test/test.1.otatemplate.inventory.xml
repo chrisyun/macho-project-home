@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ota-templates>
+  <manufacturer>
+    <id>nokia</id>
+    <name>Nokia</name>
+    <description>Nokia Manufacturer</description>
+    <model>
+      <id>6620</id>
+      <name>6620C</name>
+      <description>Nokia 6620</description>
+      <template>
+        <id>SyncDS_OMA_CP</id>
+        <name>OMA CP SyncDS Settings</name>
+        <category>OMA_SyncDS</category>
+        <description>This template based on OMA CP used for SyncDS settings.</description>
+        <attributes>
+          <attribute>
+            <id></id>
+            <name></name>
+            <label></label>
+            <type>input,generator,list,password</type>
+          </attribute>
+        </attributes>
+        <content filename="">content</content>
+      </template>
+    </model>
+    <model>
+      <id>6681</id>
+      <name>6681C</name>
+      <description>Nokia 6681</description>
+      <template>
+        <id>SyncDS_NOKIA_CP</id>
+        <name>Nokia OTA SyncDS Settings</name>
+        <category>NOKIA 7.0 OTA SyncDS</category>
+        <description>This template based on Nokia OTA 7.0 used for SyncDS settings.</description>
+        <attributes>
+          <attribute>
+            <id></id>
+            <name></name>
+            <label></label>
+            <type>input,generator,list,password</type>
+          </attribute>
+        </attributes>
+        <content filename="template.1.xml"></content>
+      </template>
+    </model>
+  </manufacturer>
+</ota-templates>

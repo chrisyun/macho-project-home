@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ProfileMapping.hbm.xml,v 1.10 2008/12/12 04:16:10 zhao Exp $
+  * $Revision: 1.10 $
+  * $Date: 2008/12/12 04:16:10 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ProfileMappingEntity" table="NW_DM_PROFILE_MAPPING">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="PROFILE_MAPPING_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="rootDDFNode" class="com.npower.dm.hibernate.entity.DDFNodeEntity" fetch="select">
+            <column name="PROFILE_ROOT_NODE_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="profileTemplate" class="com.npower.dm.hibernate.entity.ProfileTemplateEntity" fetch="select">
+            <column name="TEMPLATE_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="rootNodePath" type="string">
+            <column name="ROOT_NODE_PATH" length="400" />
+        </property>
+        <property name="shareRootNode" type="boolean">
+            <column name="SHARE_ROOT_NODE" precision="1" scale="0" />
+        </property>
+        <property name="assignToDevice" type="boolean">
+            <column name="ASSIGN_TO_DEVICE" precision="1" scale="0" />
+        </property>
+        <property name="linkedProfileType" type="string">
+            <column name="LINKED_PROFILE_TYPE" length="30" />
+        </property>
+        <property name="needToDiscovery" type="boolean" not-null="true">
+            <column name="NEED_TO_DISCOVERY" precision="1" scale="0" />
+        </property>
+        <property name="discoveryNodePaths" type="string">
+            <column name="DISCOVERY_NODE_PATHS" length="4000" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+        <set name="modelProfileMaps" inverse="true">
+            <key>
+                <column name="PROFILE_MAPPING_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ModelProfileMap" />
+        </set>
+        <set name="profileNodeMappings" inverse="true" order-by="PARAM_INDEX ASC, NODE_MAPPING_ID ASC">
+            <key>
+                <column name="PROFILE_MAPPING_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileNodeMappingEntity" />
+        </set>
+        <set name="mappingNodeNames" inverse="true">
+            <key>
+                <column name="PROFILE_MAPPING_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileMappingNodeName" />
+        </set>
+    </class>
+</hibernate-mapping>

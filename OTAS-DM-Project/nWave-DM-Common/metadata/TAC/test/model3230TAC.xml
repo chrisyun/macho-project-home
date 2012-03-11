@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Manufacturers>
+  <Manufacturer>
+    <Name>NOKIA</Name>
+    <ExternalID>NOKIA</ExternalID>
+    <Model>
+      <Name>3230</Name>
+      <ExternalID>3230</ExternalID>
+      <TACS>
+        <TAC>33333300</TAC>
+        <TAC>11111100</TAC>
+        <TAC>22222200</TAC>
+      </TACS>
+    </Model>
+  </Manufacturer>
+</Manufacturers>

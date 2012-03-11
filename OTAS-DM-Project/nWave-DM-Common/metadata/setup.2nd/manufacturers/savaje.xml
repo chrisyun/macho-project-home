@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>SavaJe</Name>
+<ExternalID>SavaJe</ExternalID>
+<Description>SavaJe</Description>
+<Models filename="./models/savaje/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Elite</Name>
+<ExternalID>Elite</ExternalID>
+<Description>Elite</Description>
+<Models filename="./models/elite/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

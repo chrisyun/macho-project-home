@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Manufacturers>
+  <Manufacturer>
+    <Name>Motorola</Name>
+    <ExternalID>Motorola</ExternalID>
+    <Model>
+      <Name>V280</Name>
+      <ExternalID>V280</ExternalID>
+      <TACS>
+        <TAC>11144400</TAC>
+      </TACS>
+    </Model>
+  </Manufacturer>
+</Manufacturers>

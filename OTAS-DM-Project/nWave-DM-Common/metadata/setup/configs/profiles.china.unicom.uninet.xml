@@ -1,0 +1,74 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        NAP Profiles 
+      ***********************************************************************************
+   -->
+  <!-- NAP Profile: UNINET -->
+  <Profile>
+    <ProfileName>UNINET</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>UNINET</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>uninet</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://wap.uni-info.com.cn</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <Profile>
+    <ID>China.Unicom.NAP.UNINET</ID>
+    <ProfileName>移动互联网</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>移动互联网</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>uninet</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://wap.uni-info.com.cn</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+</Profiles>
+</Setup>

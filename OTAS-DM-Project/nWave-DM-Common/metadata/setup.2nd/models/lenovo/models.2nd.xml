@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Lenovo -->
+<Models>
+
+  <!--  Model: E307 -->
+  <Model>
+    <Name>E307</Name>
+    <ExternalID>E307</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/lenovo/icons/e307.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: P708 -->
+  <Model>
+    <Name>P708</Name>
+    <ExternalID>P708</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/lenovo/icons/p708.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+
+</Models>
+</Setup>

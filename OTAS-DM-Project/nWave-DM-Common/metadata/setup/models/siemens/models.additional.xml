@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Siemens -->
+<Models>
+
+  <!--  Model: 1168 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>1168</Name>
+    <ExternalID>1168</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/1168.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: 2118 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>2118</Name>
+    <ExternalID>2118</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/2118.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: 2128 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>2128</Name>
+    <ExternalID>2128</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/2128.gif</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: 3508 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>3508</Name>
+    <ExternalID>3508</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/3508.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: 3508i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>3508i</Name>
+    <ExternalID>3508i</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/3508i.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: 3518i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>3518i</Name>
+    <ExternalID>3518i</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/3518i.gif</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: 3568i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>3568i</Name>
+    <ExternalID>3568i</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/3568i.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: 3618 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>3618</Name>
+    <ExternalID>3618</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/3618.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: 6618 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6618</Name>
+    <ExternalID>6618</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/6618.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: 6686i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6686i</Name>
+    <ExternalID>6686i</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/6686i.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: 6688I -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6688I</Name>
+    <ExternalID>6688I</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/6688i.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: A50 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>A50</Name>
+    <ExternalID>A50</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/a50.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: A51 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>A51</Name>
+    <ExternalID>A51</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/a51.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: A55 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>A55</Name>
+    <ExternalID>A55</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/a55.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: A57 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>A57</Name>
+    <ExternalID>A57</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/a57.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: A60 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>A60</Name>
+    <ExternalID>A60</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/a60.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: A62 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>A62</Name>
+    <ExternalID>A62</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/a62.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: AL21 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>AL21</Name>
+    <ExternalID>AL21</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/al21.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: AX72 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>AX72</Name>
+    <ExternalID>AX72</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/ax72.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: AX75 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>AX75</Name>
+    <ExternalID>AX75</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/ax75.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: C45 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>C45</Name>
+    <ExternalID>C45</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/c45.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: C55 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>C55</Name>
+    <ExternalID>C55</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/c55.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: C62 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>C62</Name>
+    <ExternalID>C62</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/c62.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: C65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>C65</Name>
+    <ExternalID>C65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/c65.gif</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: C65V -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>C65V</Name>
+    <ExternalID>C65V</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/c65v.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: C66 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>C66</Name>
+    <ExternalID>C66</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/c66.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: C70 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>C70</Name>
+    <ExternalID>C70</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/c70.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: C72V -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>C72V</Name>
+    <ExternalID>C72V</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/c72v.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: C75 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>C75</Name>
+    <ExternalID>C75</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/c75.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: C75V -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>C75V</Name>
+    <ExternalID>C75V</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/c75v.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CF110 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CF110</Name>
+    <ExternalID>CF110</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cf110.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CF62T -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CF62T</Name>
+    <ExternalID>CF62T</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cf62t.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CFX65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CFX65</Name>
+    <ExternalID>CFX65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cfx65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CT65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CT65</Name>
+    <ExternalID>CT65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/ct65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CT70 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CT70</Name>
+    <ExternalID>CT70</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/ct70.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CT71 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CT71</Name>
+    <ExternalID>CT71</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/ct71.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CV65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CV65</Name>
+    <ExternalID>CV65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cv65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CV70 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CV70</Name>
+    <ExternalID>CV70</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cv70.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CV71 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CV71</Name>
+    <ExternalID>CV71</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cv71.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CV75 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CV75</Name>
+    <ExternalID>CV75</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cv75.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CX65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CX65</Name>
+    <ExternalID>CX65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cx65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CX65V -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CX65V</Name>
+    <ExternalID>CX65V</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cx65v.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CX70 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CX70</Name>
+    <ExternalID>CX70</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cx70.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CX70E -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CX70E</Name>
+    <ExternalID>CX70E</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cx70e.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CX70V -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CX70V</Name>
+    <ExternalID>CX70V</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cx70v.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CX75 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CX75</Name>
+    <ExternalID>CX75</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cx75.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CXT65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CXT65</Name>
+    <ExternalID>CXT65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cxt65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CXT70 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CXT70</Name>
+    <ExternalID>CXT70</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cxt70.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CXV65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>CXV65</Name>
+    <ExternalID>CXV65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/cxv65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: EL71 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>EL71</Name>
+    <ExternalID>EL71</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/el71.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: M35 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>M35</Name>
+    <ExternalID>M35</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/m35.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: M35I -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>M35I</Name>
+    <ExternalID>M35I</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/m35i.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: M50 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>M50</Name>
+    <ExternalID>M50</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/m50.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: M65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>M65</Name>
+    <ExternalID>M65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/m65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: M65v -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>M65v</Name>
+    <ExternalID>M65v</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/m65v.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: M75 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>M75</Name>
+    <ExternalID>M75</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/m75.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: MC60 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>MC60</Name>
+    <ExternalID>MC60</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/mc60.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: ME45 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>ME45</Name>
+    <ExternalID>ME45</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/me45.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: ME75 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>ME75</Name>
+    <ExternalID>ME75</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/me75.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: MT50 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>MT50</Name>
+    <ExternalID>MT50</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/mt50.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: S35 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>S35</Name>
+    <ExternalID>S35</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/s35.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: S35I -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>S35I</Name>
+    <ExternalID>S35I</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/s35i.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: S45 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>S45</Name>
+    <ExternalID>S45</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/s45.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: S65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>S65</Name>
+    <ExternalID>S65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/s65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: S65V -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>S65V</Name>
+    <ExternalID>S65V</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/s65v.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: SF65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SF65</Name>
+    <ExternalID>SF65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/sf65.gif</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: SK65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SK65</Name>
+    <ExternalID>SK65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/sk65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: SL42 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SL42</Name>
+    <ExternalID>SL42</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/sl42.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: SL45 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SL45</Name>
+    <ExternalID>SL45</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/sl45.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: SL45i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SL45i</Name>
+    <ExternalID>SL45i</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/sl45i.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: SL65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SL65</Name>
+    <ExternalID>SL65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/sl65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: SL65Escada -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SL65Escada</Name>
+    <ExternalID>SL65Escada</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/sl65escada.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: SP65 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SP65</Name>
+    <ExternalID>SP65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/sp65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: ST60 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>ST60</Name>
+    <ExternalID>ST60</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/st60.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: SX1 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SX1</Name>
+    <ExternalID>SX1</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/sx1.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: SX1McLaren -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SX1McLaren</Name>
+    <ExternalID>SX1McLaren</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/siemens/icons/sx1mclaren.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+</Models>
+</Setup>

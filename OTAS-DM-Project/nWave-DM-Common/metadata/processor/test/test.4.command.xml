@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE Script SYSTEM "../script_1_0.dtd" -->
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/processor/test/test.4.command.xml,v 1.1 2006/05/12 15:52:18 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2006/05/12 15:52:18 $
+-->
+
+<!-- ********** Test #4 - Delete ********** -->
+<Script>
+  <Delete>
+    <Target>./Email/MyPushEmail/AAA</Target>
+  </Delete>
+  <Delete>
+    <Target>./Email/MyPushEmail/CCC</Target>
+  </Delete>
+  <Delete>
+    <Target>./Email/MyPushEmail/DDD</Target>
+  </Delete>
+</Script>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Voxtel</Name>
+<ExternalID>Voxtel</ExternalID>
+<Description>Voxtel</Description>
+<Models filename="./models/voxtel/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

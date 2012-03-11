@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Toplux -->
+<Models>
+
+  <!--  Model: AG280 -->
+  <Model>
+    <Name>AG280</Name>
+    <ExternalID>AG280</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/toplux/icons/ag280.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: CG360 -->
+  <Model>
+    <Name>CG360</Name>
+    <ExternalID>CG360</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/toplux/icons/cg360.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+
+</Models>
+</Setup>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE Script SYSTEM "../script_1_0.dtd" -->
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/command/test/test.get.xml,v 1.4 2006/04/30 03:07:07 zhao Exp $
+  * $Revision: 1.4 $
+  * $Date: 2006/04/30 03:07:07 $
+-->
+
+<!-- ********** Test #1 - Get ********** -->
+<Script>
+  <Get>
+      <Target>./SCTNode/DMv</Target>
+  </Get>
+  <Get>
+      <Target>./SCTNode/FWv</Target>
+  </Get>
+</Script>
+
+

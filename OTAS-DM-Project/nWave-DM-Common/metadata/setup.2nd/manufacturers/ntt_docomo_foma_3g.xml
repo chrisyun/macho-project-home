@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>NTT DoCoMo FOMA 3G</Name>
+<ExternalID>NTT DoCoMo FOMA 3G</ExternalID>
+<Description>NTT DoCoMo FOMA 3G</Description>
+<Models filename="./models/ntt_docomo_foma_3g/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

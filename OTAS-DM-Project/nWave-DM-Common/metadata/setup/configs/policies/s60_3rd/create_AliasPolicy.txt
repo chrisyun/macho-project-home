@@ -1,0 +1,41 @@
+<Package>
+	<Operation
+		action_id = "Add"
+		target_id = "cert_mapping_policy">
+	<Data>
+		<![CDATA[
+	<Rule
+		RuleId="cert_mapping_policy_rule_1"
+		Effect="Permit">
+		<Target>
+		<Subjects>
+			<Subject>
+			<SubjectMatch
+				MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+			<AttributeValue
+				DataType="http://www.w3.org/2001/XMLSchema#string">
+MIICDzCCAXgCCQCA+5yR1jARwjANBgkqhkiG9w0BAQQFADB9MQswCQYDVQQGEwJGSTENMAsGA1UECBMET3VsdTENMAsGA1UEBxMEVEFSTTENMAsGA1UEChMEVEFSTTENMAsGA1UECxMEVEFSTTENMAsGA1UEAxMEVEFSTTEjMCEGCSqGSIb3DQEJARYUbWFzaWlyYUBwYWp1Lm91bHUuZmkwHhcNMDUwNTIzMDkxMTU1WhcNMDUwNTI0MDkxMTU1WjBfMQswCQYDVQQGEwJGSTENMAsGA1UECBMET3VsdTENMAsGA1UEBxMET3VsdTENMAsGA1UEChMEVEFSTTENMAsGA1UECxMEVEFSTTEUMBIGA1UEAxMLd3d3LnRhcm0uZmkwXDANBgkqhkiG9w0BAQEFAANLADBIAkEAsM7GsCaX/Do9XbrWDJ/pDEC1ArRmE98NCj3OMUYQKU9W/WZD0hZaqU4buzIIU0y1sw0oqBxzxuD5Jnk2G4YNawIDAQABMA0GCSqGSIb3DQEBBAUAA4GBAET5bdTuPmxF8jofzw9QvUjPTXs8wfBx5644M89Hn8dJbPGybHrm48OYY6DSCJwg2PvGw5TiTkd4fQYL9Vxz6WfUE3Ff28injlHh12eM8PgjzdthrwZke38UU7LWRakd1rFxmveEcVwXRZ3nAR3dcTikckQ3htxrPJcwMDFSKyV0
+</AttributeValue>
+				<ResourceAttributeDesignator
+				AttributeId="certificate_id"
+				DataType="http://www.w3.org/2001/XMLSchema#string"/>
+			</SubjectMatch>
+			<SubjectMatch
+				MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+				<AttributeValue
+				DataType="http://www.w3.org/2001/XMLSchema#string">
+				COMCOM
+				</AttributeValue>
+				<ResourceAttributeDesignator
+				AttributeId="alias_id"
+				DataType="http://www.w3.org/2001/XMLSchema#string"/>
+			</SubjectMatch>
+			</Subject>
+		</Subjects>
+		</Target>
+	</Rule>
+		]]>
+		</Data>
+	</Operation>
+</Package>
+

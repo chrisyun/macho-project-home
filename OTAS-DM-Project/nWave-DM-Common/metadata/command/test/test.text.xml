@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE Script SYSTEM "../script_1_0.dtd" -->
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/command/test/test.text.xml,v 1.6 2006/05/29 06:51:13 zhao Exp $
+  * $Revision: 1.6 $
+  * $Date: 2006/05/29 06:51:13 $
+-->
+
+<!-- ********** Test #7 - Large Text Object ********** -->
+<Script>
+  <Add>
+   <LeafNode>
+    <Target>./SCTSLrgObjText</Target>
+    <Charset>GBK</Charset>
+    <TextFile>D:/Zhao/MyWorkspace/nWave-DM-Common/metadata/command/test/textfile.1.txt</TextFile>
+   </LeafNode>
+  </Add>
+  <Replace>
+   <LeafNode>
+    <Target>./SCTSLrgObjText</Target>
+    <Charset>GBK</Charset>
+    <TextFile>D:/Zhao/MyWorkspace/nWave-DM-Common/metadata/command/test/textfile.2.txt</TextFile>
+   </LeafNode>
+  </Replace>
+</Script>

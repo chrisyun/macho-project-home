@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Asus</Name>
+<ExternalID>Asus</ExternalID>
+<Description>Asus</Description>
+<Models filename="./models/asus/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

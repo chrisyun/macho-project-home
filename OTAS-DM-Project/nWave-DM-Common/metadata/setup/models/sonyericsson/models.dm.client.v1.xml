@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: DM Client Version 1.0 -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: SonyEricsson DM Client Ver 1.0                           -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_sonyericsson_dm_ver_1.0</ExternalID>
+    <Name>SonyEricsson DM Client Ver 1.0</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1.2</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF filename="ddf/sonyericsson/sonyericsson_ddf_1.0.xml" />
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value="DM Client Version 1.0"/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: K600i -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>K600i</Name>
+    <ExternalID>K600i</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_k600.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC>35461400</TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K608i -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>K608i</Name>
+    <ExternalID>K608i</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_k608.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V600i -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>V600i</Name>
+    <ExternalID>V600i</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_v600.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K750i -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>K750i</Name>
+    <ExternalID>K750i</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_k750i.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K750c -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>K750c</Name>
+    <ExternalID>K750c</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_k750i.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K758c -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>K758c</Name>
+    <ExternalID>K758c</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_k750i.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: D750i -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>D750i</Name>
+    <ExternalID>D750i</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_d750i.jpg</IconFile>
+
+    <!-- TACs -->
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W700i -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>W700i</Name>
+    <ExternalID>W700i</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_w700.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, April"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W700c -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>W700c</Name>
+    <ExternalID>W700c</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_w700.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, April"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W800c -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>W800c</Name>
+    <ExternalID>W800c</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_w800.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W800i -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>W800i</Name>
+    <ExternalID>W800i</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_w800.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z525a -->
+  <Model family="family_sonyericsson_dm_ver_1.0">
+    <Name>Z525a</Name>
+    <ExternalID>Z525a</ExternalID>
+    <Description>DM Client Version 1.0</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_z525.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, April"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

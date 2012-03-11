@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Vertu</Name>
+<ExternalID>Vertu</ExternalID>
+<Description>Vertu</Description>
+<Models filename="./models/vertu/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

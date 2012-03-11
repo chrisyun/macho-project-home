@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>NTT DoCoMo</Name>
+<ExternalID>NTT DoCoMo</ExternalID>
+<Description>NTT DoCoMo</Description>
+<Models filename="./models/ntt_docomo/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

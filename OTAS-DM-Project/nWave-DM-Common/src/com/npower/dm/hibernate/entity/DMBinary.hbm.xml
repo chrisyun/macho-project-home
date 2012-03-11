@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DMBinary.hbm.xml,v 1.6 2008/04/02 06:24:24 zhao Exp $
+  * $Revision: 1.6 $
+  * $Date: 2008/04/02 06:24:24 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DMBinary" table="NW_DM_BLOB">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="BLOB_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <property name="binaryBlob" type="blob">
+            <column name="BITS" not-null="true" />
+        </property>
+        <property name="filename" type="string">
+            <column name="FILENAME" length="255" not-null="false"/>
+        </property>
+        <property name="MimeType" type="string">
+            <column name="MIME_TYPE" length="255" not-null="false"/>
+        </property>
+        <property name="creationDate" type="java.util.Date">
+            <column name="CREATION_DATE" length="7" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="10" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <set name="updates" inverse="true">
+            <key>
+                <column name="BLOB_ID" precision="16" scale="0" unique="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.UpdateEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

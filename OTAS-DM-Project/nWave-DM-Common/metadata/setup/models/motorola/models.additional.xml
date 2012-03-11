@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Motorola -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Motorola P2K Platform                                    -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_motorola_p2k_unkown</ExternalID>
+    <Name>Motorola P2K Platform</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/motorola/ota.templates.java.ap.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.proxy.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.mms.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.syncml.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.dm.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.email.xml"/>
+        
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Motorola P2K"/>
+      <Specification category="general" name="developer.platform" value=""/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: A388 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>A388</Name>
+    <ExternalID>A388</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a388.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: A630 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>A630</Name>
+    <ExternalID>A630</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a630.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: A668 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>A668</Name>
+    <ExternalID>A668</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a668.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: A830 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>A830</Name>
+    <ExternalID>A830</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a830.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: A835 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>A835</Name>
+    <ExternalID>A835</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a835.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: A840 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>A840</Name>
+    <ExternalID>A840</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a840.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: A845 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>A845</Name>
+    <ExternalID>A845</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a845.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C350 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>C350</Name>
+    <ExternalID>C350</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c350.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C350i -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>C350i</Name>
+    <ExternalID>C350i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c350i.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C390 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>C390</Name>
+    <ExternalID>C390</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c390.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C450 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>C450</Name>
+    <ExternalID>C450</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c450.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C550 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>C550</Name>
+    <ExternalID>C550</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c550.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C698p -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>C698p</Name>
+    <ExternalID>C698p</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c698p.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C975 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>C975</Name>
+    <ExternalID>C975</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c975.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C980 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>C980</Name>
+    <ExternalID>C980</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c980.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E1000 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>E1000</Name>
+    <ExternalID>E1000</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/e1000.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E1070 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>E1070</Name>
+    <ExternalID>E1070</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/e1070.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E550 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>E550</Name>
+    <ExternalID>E550</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/e550.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E770v -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>E770v</Name>
+    <ExternalID>E770v</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/e770v.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: ROKER1 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>ROKER1</Name>
+    <ExternalID>ROKER1</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/roker1.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V1050 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V1050</Name>
+    <ExternalID>V1050</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v1050.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V1075 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V1075</Name>
+    <ExternalID>V1075</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v1075.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V1100 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V1100</Name>
+    <ExternalID>V1100</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v1100.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V150 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V150</Name>
+    <ExternalID>V150</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v150.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V197 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V197</Name>
+    <ExternalID>V197</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v197.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V226 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V226</Name>
+    <ExternalID>V226</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v226.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V361 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V361</Name>
+    <ExternalID>V361</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v361.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V365 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V365</Name>
+    <ExternalID>V365</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v365.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V505 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V505</Name>
+    <ExternalID>V505</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v505.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V535 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V535</Name>
+    <ExternalID>V535</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v535.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V545 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V545</Name>
+    <ExternalID>V545</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v545.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V547 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V547</Name>
+    <ExternalID>V547</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v547.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V550 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V550</Name>
+    <ExternalID>V550</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v550.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V690 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V690</Name>
+    <ExternalID>V690</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v690.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V6PEBL -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V6PEBL</Name>
+    <ExternalID>V6PEBL</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v6pebl.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V6V -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V6V</Name>
+    <ExternalID>V6V</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v6v.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V750 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V750</Name>
+    <ExternalID>V750</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v750.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V872 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V872</Name>
+    <ExternalID>V872</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v872.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V878 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V878</Name>
+    <ExternalID>V878</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v878.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V975 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V975</Name>
+    <ExternalID>V975</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v975.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V980 -->
+  <Model family="family_motorola_p2k_unkown">
+    <Name>V980</Name>
+    <ExternalID>V980</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v980.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

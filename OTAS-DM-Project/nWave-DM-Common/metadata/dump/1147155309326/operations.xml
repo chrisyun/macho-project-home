@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_06" class="java.beans.XMLDecoder"> 
+ <object class="java.util.ArrayList"> 
+  <void method="add"> 
+   <object class="sync4j.framework.engine.dm.AddManagementOperation"> 
+    <void property="nodes"> 
+     <void method="put"> 
+      <string>./Email/INSG5/Mrcv</string> 
+      <object class="sync4j.framework.engine.dm.TreeNode"> 
+       <void property="format"> 
+        <string>chr</string> 
+       </void> 
+       <void property="name"> 
+        <string>./Email/INSG5/Mrcv</string> 
+       </void> 
+       <void property="value"> 
+        <string>www.iei.com</string> 
+       </void> 
+      </object> 
+     </void> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="sync4j.framework.engine.dm.ReplaceManagementOperation"> 
+    <void property="nodes"> 
+     <void method="put"> 
+      <string>./Email/INSG5/Msnd</string> 
+      <object class="sync4j.framework.engine.dm.TreeNode"> 
+       <void property="format"> 
+        <string>chr</string> 
+       </void> 
+       <void property="name"> 
+        <string>./Email/INSG5/Msnd</string> 
+       </void> 
+       <void property="value"> 
+        <string>www.replace.com</string> 
+       </void> 
+      </object> 
+     </void> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="sync4j.framework.engine.dm.DeleteManagementOperation"> 
+    <void property="nodes"> 
+     <void method="put"> 
+      <string>./Email/INSG5/PW</string> 
+      <string></string> 
+     </void> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="sync4j.framework.engine.dm.UserAlertManagementOperation"> 
+    <void property="alertCode"> 
+     <int>1100</int> 
+    </void> 
+    <void property="alerts"> 
+     <array class="java.lang.String" length="1"> 
+      <void index="0"> 
+       <string>Sync4j DM Demo</string> 
+      </void> 
+     </array> 
+    </void> 
+    <void property="echoType"> 
+     <char> </char> 
+    </void> 
+    <void property="inputType"> 
+     <char> </char> 
+    </void> 
+    <void property="maxDisplayTime"> 
+     <int>15</int> 
+    </void> 
+    <void property="maxLength"> 
+     <int>-1</int> 
+    </void> 
+    <void property="minDisplayTime"> 
+     <int>5</int> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

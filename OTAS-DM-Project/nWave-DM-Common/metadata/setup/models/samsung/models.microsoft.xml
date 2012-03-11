@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: I300 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>I300</Name>
+    <ExternalID>I300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/i300.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: I300x -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>I300x</Name>
+    <ExternalID>I300x</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/i300.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: I310 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>I310</Name>
+    <ExternalID>I310</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/i310.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: I320 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>I320</Name>
+    <ExternalID>I320</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/i320.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: I320N -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>I320N</Name>
+    <ExternalID>I320N</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/i320n.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SCH-i600 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>SCH-i600</Name>
+    <ExternalID>SCH-i600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/samsung_sch_i600.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs></TACs>
+  
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, December"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: SGH-i600 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>SGH-i600</Name>
+    <ExternalID>i600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/samsung_i600.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs></TACs>
+  
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, December"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: SGH-i607 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>BlackJack</Name>
+    <ExternalID>i607</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/blackjack.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs></TACs>
+  
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, December"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: SGH-i620 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>SGH-i620</Name>
+    <ExternalID>i620</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghi620.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-i620v -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>SGH-i620v</Name>
+    <ExternalID>i620v</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghi620v.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-i640v -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>SGH-i640v</Name>
+    <ExternalID>i640v</ExternalID>
+    <Description>Vodafone</Description>
+    <IconFile>./models/samsung/icons/sghi640v.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: I700 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>I700</Name>
+    <ExternalID>i700</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/i700.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: I710 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>I710</Name>
+    <ExternalID>I710</ExternalID>
+    <Description>Samsung i718 - Chinese version</Description>
+    <IconFile>./models/samsung/icons/i710.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: I718 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>I718</Name>
+    <ExternalID>I718</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/i710.gif</IconFile>
+        
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: I750 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>I750</Name>
+    <ExternalID>I750</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/i750.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: I780 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>I780</Name>
+    <ExternalID>I780</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/i780.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, September"/>
+    </Specifications>
+  </Model>
+
+</Models>
+

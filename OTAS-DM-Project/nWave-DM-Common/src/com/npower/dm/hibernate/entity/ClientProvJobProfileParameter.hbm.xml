@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ClientProvJobProfileParameter.hbm.xml,v 1.1 2008/02/18 10:10:22 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2008/02/18 10:10:22 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ClientProvJobProfileParameter" table="NW_CP_JOB_PROFILE_PARAMETER">
+        <id name="name" type="string">
+            <column name="NAME" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="profile" class="com.npower.dm.hibernate.entity.ClientProvJobProfile" fetch="select">
+            <column name="ID" precision="20" scale="0" />
+        </many-to-one>
+        <property name="value" type="blob">
+            <column name="VALUE" />
+        </property>
+    </class>
+</hibernate-mapping>

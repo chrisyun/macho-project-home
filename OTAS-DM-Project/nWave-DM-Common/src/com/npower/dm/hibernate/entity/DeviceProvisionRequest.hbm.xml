@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DeviceProvisionRequest.hbm.xml,v 1.11 2008/03/08 10:40:52 zhao Exp $
+  * $Revision: 1.11 $
+  * $Date: 2008/03/08 10:40:52 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DeviceProvisionRequestEntity" table="NW_DM_DEVICE_PROV_REQ">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="DEV_PROV_REQ_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="provisionElement" class="com.npower.dm.hibernate.entity.Element4Provision" fetch="select">
+            <column name="PR_ELEMENT_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="toImage" class="com.npower.dm.hibernate.entity.ImageEntity" fetch="select">
+            <column name="TO_IMAGE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="installingImage" class="com.npower.dm.hibernate.entity.ImageEntity" fetch="select">
+            <column name="INSTALLING_IMAGE" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="device" class="com.npower.dm.hibernate.entity.DeviceEntity" fetch="select">
+            <column name="DEVICE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="jobState" class="com.npower.dm.hibernate.entity.JobState" fetch="select">
+            <column name="JOB_STATE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="oldCurrentImage" class="com.npower.dm.hibernate.entity.ImageEntity" fetch="select">
+            <column name="OLD_CURRENT_IMAGE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="targetSoftware" class="com.npower.dm.hibernate.entity.SoftwareEntity" fetch="select">
+            <column name="TARGET_SOFTWARE_ID" precision="20" scale="0" />
+        </many-to-one>
+        <property name="state" type="string">
+            <column name="STATE" length="20" not-null="true" />
+        </property>
+        <!-- Cause information for Job status -->
+        <property name="cause" type="string">
+            <column name="CAUSE" length="2000" not-null="false" />
+        </property>
+        <property name="readyToNotify" type="boolean">
+            <column name="READY_TO_NOTIFY" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="pathIndex" type="long">
+            <column name="PATH_INDEX" precision="4" scale="0" />
+        </property>
+        <property name="askPermissionOnTrigger" type="boolean">
+            <column name="ASK_PERMISSION_ON_TRIGGER" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="scheduledTime" type="java.util.Date">
+            <column name="SCHEDULED_TIME" length="7" not-null="true" />
+        </property>
+        <property name="notificationStartTime" type="double">
+            <column name="NOTIFICATION_START_TIME" precision="4" not-null="true" />
+        </property>
+        <property name="notificationEndTime" type="double">
+            <column name="NOTIFICATION_END_TIME" precision="4" not-null="true" />
+        </property>
+        <property name="rate" type="long">
+            <column name="RATE" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="uiMode" type="string">
+            <column name="UI_MODE" length="15" not-null="true" />
+        </property>
+        <property name="lastNotificationTime" type="java.util.Date">
+            <column name="LAST_NOTIFICATION_TIME" length="7" not-null="false" />
+        </property>
+        <property name="askCount" type="long">
+            <column name="ASK_COUNT" precision="5" scale="0" />
+        </property>
+        <property name="askInterval" type="long">
+            <column name="ASK_INTERVAL" precision="7" scale="0" />
+        </property>
+        <property name="askBeforeDown" type="boolean">
+            <column name="ASK_BEFORE_DOWN" precision="1" scale="0" />
+        </property>
+        <property name="askBeforeApply" type="boolean">
+            <column name="ASK_BEFORE_APPLY" precision="1" scale="0" />
+        </property>
+        <property name="pendingDeviceJobIndex" type="long">
+            <column name="PENDING_DEVICE_JOB_INDEX" precision="16" scale="0" />
+        </property>
+        <property name="pendingDeviceId" type="long">
+            <column name="PENDING_DEVICE_ID" precision="16" scale="0" />
+        </property>
+        <property name="workflowEntryId" type="long">
+            <column name="WORKFLOW_ENTRY_ID" precision="16" scale="0" />
+        </property>
+        <property name="currentJobAdapterId" type="long">
+            <column name="CURRENT_JOB_ADAPTER_ID" precision="16" scale="0" />
+        </property>
+        <property name="installationState" type="string">
+            <column name="INSTALLATION_STATE" length="30" not-null="false" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <set name="jobExecClients" inverse="true">
+            <key>
+                <column name="DEVICE_JOB_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.JobExecClient" />
+        </set>
+        <set name="devices" inverse="true">
+            <key>
+                <column name="IN_PROGRESS_DPR" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DeviceEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

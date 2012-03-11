@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Motorola basic models -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Motorola P2K Platform                                    -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_motorola_p2k_1st_e398</ExternalID>
+    <Name>Motorola P2K Platform 1st</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF filename="ddf/motorola/DDF-Motorola-Basic.xml" />
+    </DDFs>
+    
+    <!-- OMA DM ProfileMappings Stage -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/motorola/mapping.basic.xml" />
+    </ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/motorola/ota.templates.java.ap.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.proxy.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.mms.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.syncml.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.dm.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.email.xml"/>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Motorola P2K 1st"/>
+      <Specification category="general" name="developer.platform" value=""/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: E375 -->
+  <Model family="family_motorola_p2k_1st_e398">
+    <Name>E375</Name>
+    <ExternalID>E375</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/e375.jpg</IconFile>
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E398 -->
+  <Model family="family_motorola_p2k_1st_e398">
+    <Name>E398</Name>
+    <ExternalID>E398</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/e398.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V80 -->
+  <Model family="family_motorola_p2k_1st_e398">
+    <Name>V80</Name>
+    <ExternalID>V80</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v80.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

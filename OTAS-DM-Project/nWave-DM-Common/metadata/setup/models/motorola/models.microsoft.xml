@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: MPx100 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>MPx100</Name>
+    <ExternalID>MPX100</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/mpx100.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Smartphone 2003"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: MPx200 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>MPx200</Name>
+    <ExternalID>MPX200</ExternalID>
+    <Description>Also known as Motorola V700.</Description>
+    <IconFile>./models/motorola/icons/mpx200.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Smartphone 2002"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2003, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: MPx220 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>MPx220</Name>
+    <ExternalID>MPX220</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/mpx220.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Smartphone 2003"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: MPx -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>MPx</Name>
+    <ExternalID>MPX</ExternalID>
+    <Description>Also known as MPx300</Description>
+    <IconFile>./models/motorola/icons/mpx300.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft PocketPC 2003 SE"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: MPx300 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>MPx300</Name>
+    <ExternalID>MPX300</ExternalID>
+    <Description>Also known as MPx300</Description>
+    <IconFile>./models/motorola/icons/mpx300.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft PocketPC 2003 SE"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Q 8 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Q 8</Name>
+    <ExternalID>Q8</ExternalID>
+    <Description>Also known as MOTO Q gsm.</Description>
+    <IconFile>./models/motorola/icons/q8.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, July"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Q 9 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Q 9</Name>
+    <ExternalID>Q9</ExternalID>
+    <Description>Also known as Motorola Q q9, AT&amp;T version is called Q 9h global and has GPS and WCDMA 850/1900 support</Description>
+    <IconFile>./models/motorola/icons/q_q9.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Q 9h -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Q 9h</Name>
+    <ExternalID>Q9h</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/q_q9.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Q 9q -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Q 9q</Name>
+    <ExternalID>Q9q</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/q_q9.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

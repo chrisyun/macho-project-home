@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Airness</Name>
+<ExternalID>Airness</ExternalID>
+<Description>Airness</Description>
+<Models filename="./models/airness/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

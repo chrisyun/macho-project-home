@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE Script SYSTEM "../script_1_0.dtd" -->
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/command/test/test.alert.xml,v 1.1 2007/03/29 08:16:33 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2007/03/29 08:16:33 $
+-->
+
+<!-- ********** Test #2 - Alert ********** -->
+<Script>
+  <!-- Display -->
+  <Display>
+    <Text>Management in progress</Text>
+    <!-- Minimum display time in seconds (-1 for not specified) -->
+    <MinDisplayTime>60</MinDisplayTime>
+    <!-- Maximum display time in seconds (-1 for not specified) -->
+    <MaxDisplayTime>120</MaxDisplayTime>
+  </Display>
+  
+  <!-- Confirm -->
+  <Confirm>
+    <Text>Do you want to add the CNN access point?</Text>
+    <!-- Minimum display time in seconds (-1 for not specified) -->
+    <MinDisplayTime>30</MinDisplayTime>
+    <!-- Maximum display time in seconds (-1 for not specified) -->
+    <MaxDisplayTime>60</MaxDisplayTime>
+  </Confirm>
+
+  <!-- User Input -->
+  <Input>
+    <Text>Type in the name of the service you would like to configure</Text>
+    <!-- Minimum display time in seconds (-1 for not specified) -->
+    <MinDisplayTime>30</MinDisplayTime>
+    <!-- Maximum display time in seconds (-1 for not specified) -->
+    <MaxDisplayTime>60</MaxDisplayTime>
+    <!-- 
+     * The DR value is the originally highlighted choice item; 
+     * e.g. value between 1 and the number of items in the selection list.
+    -->
+    <DefaultResponse>1234</DefaultResponse>
+    <!-- Max Length: -1 for not specified -->
+    <MaxLength>6</MaxLength>
+    <!-- 
+     * Input type (' ' for not specified). See protocol for content meaning.
+     * Possible values are here summarized:
+     *  A - alphanumeric
+     *  N - numeric
+     *  D - date in the form DDMMYYYY
+     *  T - time in the form hhmmss
+     *  P - phone number (the following chars included: "+", "p", "w", "s")
+     *  I - IP address in the form xxx.yyy.www.zzz
+    -->
+    <InputType>N</InputType>
+    <!-- 
+     * Echo type (' ' for not specified). One of the following values:
+     *  T - text
+     *  P - password
+    -->
+    <EchoType>T</EchoType>
+  </Input>
+
+  <!-- User Single Choice -->
+  <SingleChoice>
+    <Text>Select service to configure</Text>
+    <Options>
+      <Option>CNN</Option>
+      <Option>Mobilbank</Option>
+      <Option>Game Channel</Option>
+    </Options>
+    <!-- Minimum display time in seconds (-1 for not specified) -->
+    <MinDisplayTime>10</MinDisplayTime>
+    <!-- Maximum display time in seconds (-1 for not specified) -->
+    <MaxDisplayTime>60</MaxDisplayTime>
+    <DefaultResponse>1</DefaultResponse>
+  </SingleChoice>
+
+  <!-- User Multiple Choice -->
+  <MultipleChoice>
+    <Text>Select service to configure</Text>
+    <Options>
+      <Option>CNN</Option>
+      <Option>Mobilbank</Option>
+      <Option>Game Channel</Option>
+    </Options>
+    <!-- Minimum display time in seconds (-1 for not specified) -->
+    <MinDisplayTime>10</MinDisplayTime>
+    <!-- Maximum display time in seconds (-1 for not specified) -->
+    <MaxDisplayTime>60</MaxDisplayTime>
+    <DefaultResponse>2-3</DefaultResponse>
+  </MultipleChoice>
+</Script>
+
+
+
+
+
+
+
+
+
+

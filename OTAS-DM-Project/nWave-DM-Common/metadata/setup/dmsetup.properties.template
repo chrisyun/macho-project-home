@@ -1,0 +1,14 @@
+#
+# Please rename or copy this file to "dmsetup.properties" and 
+# please modify and set parameters for your installation.
+#
+#----------------------------------------------------------------------------
+# Database parameter
+#----------------------------------------------------------------------------
+jdbc.driver.class=oracle.jdbc.driver.OracleDriver
+jdbc.url=jdbc:oracle:thin:@<database server ip>:<database server port>:<database server sid>
+jdbc.autoCommit=false
+jdbc.super.user=system
+jdbc.super.password=<password of system>
+jdbc.dmuser.user=<database username for otasdm tablespace>
+jdbc.dmuser.password=<database username for otasdm tablespace>

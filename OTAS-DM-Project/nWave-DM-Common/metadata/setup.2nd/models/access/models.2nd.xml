@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Access -->
+<Models>
+
+  <!--  Model: NetFront Ver. 3.0 -->
+  <Model>
+    <Name>NetFront Ver. 3.0</Name>
+    <ExternalID>NetFront Ver. 3.0</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/access/icons/netfront ver. 3.0.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+  <!--  Model: NetFront Ver. 3.4 -->
+  <Model>
+    <Name>NetFront Ver. 3.4</Name>
+    <ExternalID>NetFront Ver. 3.4</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/access/icons/netfront ver. 3.4.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+
+</Models>
+</Setup>

@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<!--
+    * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/hibernate.cfg.xml,v 1.28 2008/12/24 10:02:49 hcp Exp $
+    * $Revision: 1.28 $
+    * $Date: 2008/12/24 10:02:49 $
+-->
+<hibernate-configuration>
+
+    <session-factory>
+        <!-- Properties   *************************************************************************  -->
+        <!-- <property name="hibernate.show_sql">False</property> -->
+
+        <!-- Data Dictionary              ********************************************************** -->
+        <mapping resource="com/npower/dm/hibernate/entity/Carrier.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/Country.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ServiceProvider.hbm.xml" />
+
+        <!-- Related with ProfileTemplate ********************************************************** -->
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileCategory.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/AttributeTypeValue.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileAttributeType.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileAttribute.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileTemplate.hbm.xml" />
+
+        <!-- Related with Model ******************************************************************** -->
+        <mapping resource="com/npower/dm/hibernate/entity/Manufacturer.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/Model.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ModelTAC.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMBootstrapProperty.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ModelDMProperty.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ModelCharacter.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ModelFamily.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ModelClassification.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/PredefinedModelSelector.hbm.xml" />
+
+        <!--  Related with DDFTree **************************************************************** -->
+        <mapping resource="com/npower/dm/hibernate/entity/DDFTree.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DDFNodeMIMEType.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DDFNodeAccessType.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DDFNode.hbm.xml" />
+        <!--  Link Models to DDFTrees ************************************************************* -->
+        <mapping resource="com/npower/dm/hibernate/entity/ModelDDFTree.hbm.xml" />
+
+        <!--  Related with ProfileMapping ********************************************************* -->
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileMapping.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileNodeMapping.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ModelProfileMap.hbm.xml" />
+
+        <!-- Related with ProfileConfig *********************************************************** -->
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileConfig.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileValueMap.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileAttributeValue.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileValueItem.hbm.xml" />
+
+        <!-- Related with the Devices ************************************************************* -->
+        <mapping resource="com/npower/dm/hibernate/entity/Subscriber.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/Device.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/Device4DeviceGroup.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DeviceGroup.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DeviceTree.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DeviceTreeNode.hbm.xml" />
+
+        <!-- Related with the ProfileAssignment *************************************************** -->
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileAssignment.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileAssignmentValue.hbm.xml" />
+
+        <!-- Related with Update and Image  ******************************************************* -->
+        <mapping resource="com/npower/dm/hibernate/entity/Update.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/Image.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMBinary.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ImageUpdateStatus.hbm.xml" />
+        <!-- Related with tracking device log ***************************************************** -->
+        <mapping resource="com/npower/dm/hibernate/entity/DeviceLog.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DeviceLogAction.hbm.xml" />
+
+        <!-- Related with provisioning job ******************************************************** -->
+        <mapping resource="com/npower/dm/hibernate/entity/ProvisionRequest.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/Element4Provision.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DeviceProvisionRequest.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/Node4DiscoveryJob.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/JobState.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/JobAssignments.hbm.xml" />
+
+        <!-- Related with automatic provisioning job ********************************************************   -->
+        <mapping resource="com/npower/dm/hibernate/entity/AutoJobNodesDiscover.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/AutoJobProfileConfig.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/AutoProvisionJob.hbm.xml" />
+
+        <!-- Related with Audit Log ********************************************************   -->
+        <mapping resource="com/npower/dm/hibernate/entity/AuditLogAction.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/AuditLogTargetEntity.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/AuditLogEntity.hbm.xml" />
+
+        <!-- Related with ClientProv Templates ********************************************************   -->
+        <mapping resource="com/npower/dm/hibernate/entity/ClientProvTemplate.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ModelClientProvMap.hbm.xml" />
+
+        <!-- No implement ManagementBean for these entities    -->
+        <mapping resource="com/npower/dm/hibernate/entity/Update4Carrier.hbm.xml" />
+
+        <mapping resource="com/npower/dm/hibernate/entity/AttributeTranslations.hbm.xml" />
+
+        <!-- When the assignment job done, save the value and nodepath into the following table -->
+        <mapping resource="com/npower/dm/hibernate/entity/NodeToDiscover.hbm.xml" />
+
+        <!-- Related with CP Audit log -->
+        <mapping resource="com/npower/dm/hibernate/entity/ClientProvAuditLogEntity.hbm.xml" />
+
+        <!-- Related with software management -->
+        <mapping resource="com/npower/dm/hibernate/entity/SoftwareCategoryEntity.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/SoftwareScreenShotEntity.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/SoftwareEntity.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/SoftwareVendor.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/SoftwarePackageEntity.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/SoftwareRatingEntity.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/SoftwarePackageModelEntity.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/SoftwareCategories.hbm.xml"/>
+        <mapping resource="com/npower/dm/hibernate/entity/SoftwareRecommend.hbm.xml"/>
+        <mapping resource="com/npower/dm/hibernate/entity/SoftwareTrackingLog.hbm.xml"/>
+        <mapping resource="com/npower/dm/hibernate/entity/VSoftwareTrackLogAll.hbm.xml"/>
+        <mapping resource="com/npower/dm/hibernate/entity/VSoftwareTrackLogDaily.hbm.xml"/>
+        <mapping resource="com/npower/dm/hibernate/entity/VSoftwareTrackLogMonthly.hbm.xml"/>
+        <mapping resource="com/npower/dm/hibernate/entity/VSoftwareTrackLogWeekly.hbm.xml"/>
+        <mapping resource="com/npower/dm/hibernate/entity/VSoftwareTrackLogYearly.hbm.xml"/>
+        <mapping resource="com/npower/dm/hibernate/entity/SoftwareEvaluateEntity.hbm.xml"/>
+        <mapping resource="com/npower/unicom/VCPCDRLog.hbm.xml"/>
+        
+        <!-- Related with ClientProv Job management -->
+        <mapping resource="com/npower/dm/hibernate/entity/ClientProvJobTargetDevice.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ClientProvJobProfile.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ClienProvJob.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ClientProvJobProfileParameter.hbm.xml" />
+
+        <!-- Related with Access Log -->
+        <mapping resource="com/npower/dm/hibernate/entity/AccessLog.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/AccessLogHeader.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/AccessLogParameter.hbm.xml" />
+        <!-- Related with DM Job Tracking Log    -->
+        <mapping resource="com/npower/dm/hibernate/entity/DmTrackingLogHttp.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DmTrackingLogJob.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DmTrackingLogSum.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DmTrackingLogDetail.hbm.xml" />
+        <!-- Related with Device Auto Enroll Log    -->
+        <mapping resource="com/npower/dm/hibernate/entity/DmDeviceChangeLog.hbm.xml" />
+        <!-- Related with Favorite  -->
+        <mapping resource="com/npower/dm/hibernate/entity/Favorite.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/FavoriteDevice.hbm.xml" />
+        
+        <mapping resource="com/npower/dm/hibernate/entity/ProvisionsPhoneNumber.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileParameter.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ProfileMappingNodeName.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/PathElement.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMCommand.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMPackageSender.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMPackageHandler.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMCMDResponse.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/FirmwareJobUpdatePath.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMPkgSenderCMDIDs.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMSession.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/JobExecClient.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/ReplaceCommandItem.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/JobAdapter.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/UpdateWorkflow.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/SessionAuth.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/Image4Carrier.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/PrevPkgResp.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMPkgRespProc.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMCommandSession.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/Steps.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMCommandPackage.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DMResultsMap.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/GetCommandItem.hbm.xml" />
+        <mapping resource="com/npower/dm/hibernate/entity/DiscoveryJobStateNode.hbm.xml" />
+    </session-factory>
+
+</hibernate-configuration>

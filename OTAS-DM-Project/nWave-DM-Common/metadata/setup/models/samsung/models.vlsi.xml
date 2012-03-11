@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Models: Samsung VLSI platform -->
+<Models>
+  
+  <!--  Model: SGH-N100 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-N100</Name>
+    <ExternalID>N100</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghn100.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2000"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-N400 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-N400</Name>
+    <ExternalID>N400</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghn400.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2001"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-N500 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-N500</Name>
+    <ExternalID>N500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghn500.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2002"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-N620 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-N620</Name>
+    <ExternalID>N620</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghn620.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2002"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-N620E -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-N620E</Name>
+    <ExternalID>N620E</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghn620e.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+</Models>

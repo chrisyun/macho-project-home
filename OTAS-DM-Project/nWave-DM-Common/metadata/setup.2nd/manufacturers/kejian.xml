@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Kejian</Name>
+<ExternalID>Kejian</ExternalID>
+<Description>Kejian</Description>
+<Models filename="./models/kejian/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

@@ -1,0 +1,1166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Models: Samsung Agere platform -->
+<Models>
+  
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Samsung Agere platform                                   -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_samsung_agere_platform_basic</ExternalID>
+    <Name>Samsung Agere Family</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/samsung/ota.templates.agere.platform.ap.xml"/>
+    <CPTemplates filename="./models/samsung/ota.templates.agere.platform.proxy.xml"/>
+    <CPTemplates filename="./models/samsung/ota.templates.agere.platform.mms.xml"/>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Samsung AGERE"/>
+      <Specification category="general" name="developer.platform" value=""/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Samsung Agere platform                                   -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_samsung_agere_platform_U_serial</ExternalID>
+    <Name>Samsung Agere Family</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/samsung/ota.templates.agere.platform.ap.xml"/>
+    <CPTemplates filename="./models/samsung/ota.templates.agere.platform.proxy.xml"/>
+    <CPTemplates filename="./models/samsung/ota.templates.agere.platform.mms.xml"/>
+    <CPTemplates filename="./models/samsung/ota.templates.agere.platform.email.xml"/>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Samsung AGERE"/>
+      <Specification category="general" name="developer.platform" value=""/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: SGH-C200 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-C200</Name>
+    <ExternalID>C200</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghc200.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-C200C -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-C200C</Name>
+    <ExternalID>C200C</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghc200c.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-C200N -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-C200N</Name>
+    <ExternalID>C200N</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghc200n.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-C200S -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-C200S</Name>
+    <ExternalID>C200S</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghc200s.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-C208 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-C208</Name>
+    <ExternalID>C208</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghc208.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-C225 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-C225</Name>
+    <ExternalID>C225</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghc225.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-D520 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-D520</Name>
+    <ExternalID>D520</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghd520.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E105 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E105</Name>
+    <ExternalID>E105</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe105.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E300 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E300</Name>
+    <ExternalID>E300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe300.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E310 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E310</Name>
+    <ExternalID>E310</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe310.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E315 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E315</Name>
+    <ExternalID>E315</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe315.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E318 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E318</Name>
+    <ExternalID>E318</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe318.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E360 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E360</Name>
+    <ExternalID>E360</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe360.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E400 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E400</Name>
+    <ExternalID>E400</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe400.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E418 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E418</Name>
+    <ExternalID>E418</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe418.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E530 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E530</Name>
+    <ExternalID>E530</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe530.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E600 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E600</Name>
+    <ExternalID>E600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe600.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E600C -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E600C</Name>
+    <ExternalID>E600C</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe600c.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E610 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E610</Name>
+    <ExternalID>E610</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe610.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E610C -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E610C</Name>
+    <ExternalID>E610C</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe610c.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E618 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E618</Name>
+    <ExternalID>E618</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe618.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E620 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E620</Name>
+    <ExternalID>E620</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe620.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E620C -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E620C</Name>
+    <ExternalID>E620C</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe620.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E628 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E628</Name>
+    <ExternalID>E628</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe628.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E710 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E710</Name>
+    <ExternalID>E710</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe710.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E720 -->
+  <Model family="family_samsung_agere_platform_U_serial">
+    <Name>SGH-E720</Name>
+    <ExternalID>E720</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe720.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E720C -->
+  <Model family="family_samsung_agere_platform_U_serial">
+    <Name>SGH-E720C</Name>
+    <ExternalID>E720C</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe720c.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC>35626300</TAC>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E728 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E728</Name>
+    <ExternalID>E728</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe728.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E818 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E818</Name>
+    <ExternalID>E818</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe818.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E860 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E860</Name>
+    <ExternalID>E860</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe860.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E860V -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-E860V</Name>
+    <ExternalID>E860V</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe860v.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-F300 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-F300</Name>
+    <ExternalID>F300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghf300.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC>35255101</TAC>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, December"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-F308 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-F308</Name>
+    <ExternalID>F308</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghf300.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P408 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-P408</Name>
+    <ExternalID>P408</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp408.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P710 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-P710</Name>
+    <ExternalID>P710</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp710.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P730 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-P730</Name>
+    <ExternalID>P730</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp730.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P730C -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-P730C</Name>
+    <ExternalID>P730C</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp730c.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P738 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-P738</Name>
+    <ExternalID>P738</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp738.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-S300M -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-S300M</Name>
+    <ExternalID>S300M</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghs300m.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-U600 -->
+  <Model family="family_samsung_agere_platform_U_serial">
+    <Name>SGH-U600</Name>
+    <ExternalID>U600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghu600.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-U608 -->
+  <Model family="family_samsung_agere_platform_U_serial">
+    <Name>SGH-U608</Name>
+    <ExternalID>U608</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghu600.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC>35599801</TAC>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-U700 -->
+  <Model family="family_samsung_agere_platform_U_serial">
+    <Name>SGH-U700</Name>
+    <ExternalID>U700</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghu700v.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-U700V -->
+  <Model family="family_samsung_agere_platform_U_serial">
+    <Name>SGH-U700V</Name>
+    <ExternalID>U700V</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghu700v.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-U708 -->
+  <Model family="family_samsung_agere_platform_U_serial">
+    <Name>SGH-U708</Name>
+    <ExternalID>U708</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghu700v.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-V200 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-V200</Name>
+    <ExternalID>V200</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghv200.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-V208 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-V208</Name>
+    <ExternalID>V208</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghv208.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X105 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X105</Name>
+    <ExternalID>X105</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx105.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X120 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X120</Name>
+    <ExternalID>X120</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx120.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X200 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X200</Name>
+    <ExternalID>X200</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx200.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X400 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X400</Name>
+    <ExternalID>X400</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx400.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X430 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X430</Name>
+    <ExternalID>X430</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx430.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X450 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X450</Name>
+    <ExternalID>X450</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx450.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X458 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X458</Name>
+    <ExternalID>X458</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx458.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X468 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X468</Name>
+    <ExternalID>X468</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx468.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X475 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X475</Name>
+    <ExternalID>X475</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx475.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X610 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X610</Name>
+    <ExternalID>X610</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx610.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X640 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X640</Name>
+    <ExternalID>X640</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx640.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X640C -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X640C</Name>
+    <ExternalID>X640C</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx640c.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X640S -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X640S</Name>
+    <ExternalID>X640S</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx640s.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X660 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X660</Name>
+    <ExternalID>X660</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx660.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X660V -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X660V</Name>
+    <ExternalID>X660V</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx660v.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X710 -->
+  <Model family="family_samsung_agere_platform_basic">
+    <Name>SGH-X710</Name>
+    <ExternalID>X710</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx710.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 3Q"/>
+    </Specifications>
+  </Model>
+
+</Models>

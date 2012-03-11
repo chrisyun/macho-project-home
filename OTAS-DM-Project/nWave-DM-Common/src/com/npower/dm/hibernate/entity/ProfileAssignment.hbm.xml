@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ProfileAssignment.hbm.xml,v 1.5 2008/12/10 05:24:20 zhao Exp $
+  * $Revision: 1.5 $
+  * $Date: 2008/12/10 05:24:20 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ProfileAssignmentEntity" table="NW_DM_PROFILE_ASSIGNMENT">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="PROFILE_ASSIGNMENT_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <version name="changeVersion" column="CHANGE_VERSION" type="long" />
+        <many-to-one name="profileConfig" class="com.npower.dm.hibernate.entity.ProfileConfigEntity" fetch="select">
+            <column name="PROFILE_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="device" class="com.npower.dm.hibernate.entity.DeviceEntity" fetch="select">
+            <column name="DEVICE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <property name="profileRootNodePath" type="string">
+            <column name="PROFILE_ROOT_NODE_PATH" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="30" not-null="true" />
+        </property>
+        <property name="lastSentToDevice" type="java.util.Date">
+            <column name="LAST_SENT_TO_DEVICE" length="7" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="assignmentIndex" type="long">
+            <column name="ASSIGNMENT_INDEX" precision="16" scale="0" />
+        </property>
+        <!-- 
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+        -->
+        <set name="profileParameters" inverse="true">
+            <key>
+                <column name="PROFILE_ASSIGNMENT_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileParameterEntity" />
+        </set>
+        <set name="profileAssignValues" inverse="true" order-by="PROFILE_ASSIGNMENT_ID asc">
+            <key>
+                <column name="PROFILE_ASSIGNMENT_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileAssignmentValue" />
+        </set>
+        <set name="jobAssignmentses" inverse="true">
+            <key>
+                <column name="PROFILE_ASSIGNMENT_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.JobAssignments" />
+        </set>
+    </class>
+</hibernate-mapping>

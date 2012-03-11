@@ -1,0 +1,158 @@
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.template.EMAIL.install.xml,v 1.6 2007/09/18 10:18:11 zhao Exp $
+  * $Revision: 1.6 $
+  * $Date: 2007/09/18 10:18:11 $
+-->
+<ProfileMetaData>
+
+    <ProfileTemplates>
+
+        <ProfileTemplate>
+            <CategoryName>Email</CategoryName>
+            <Name>Email Default Template</Name>
+            <NeedsNAP>true</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Display Name</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <ValueUnique>true</ValueUnique>
+                </Attribute>
+                <Attribute>
+                    <Name>Username</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Password</Name>
+                    <TypeName>Password</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Email Address</Name>
+                    <TypeName>Email</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Reply To Address</Name>
+                    <TypeName>Email</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>User Display Name</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Receiving Server Address</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Receiving Server Port</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Use SSL Receiving Service</Name>
+                    <TypeName>Boolean</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Sending Server Address</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Sending Server Port</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Use SSL Sending Service</Name>
+                    <TypeName>Boolean</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Use SMTP authentication</Name>
+                    <TypeName>Boolean</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>SMTP authentication ID</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>SMTP authentication PW</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Mailbox Protocol</Name>
+                    <TypeName>Mailbox Protocol</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <DefaultValue>POP</DefaultValue>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>APLink</Name>
+                    <TypeName>APLink</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+    </ProfileTemplates>
+</ProfileMetaData>

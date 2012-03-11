@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/SoftwareVendor.hbm.xml,v 1.3 2008/01/28 10:30:12 zhao Exp $
+  * $Revision: 1.3 $
+  * $Date: 2008/01/28 10:30:12 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.SoftwareVendorEntity" table="NW_DM_SOFTWARE_VENDOR">
+        <id name="id" type="long">
+            <column name="VENDOR_ID" precision="20" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="webSite" type="string">
+            <column name="WEB_SITE" />
+        </property>
+        <set name="softwares" inverse="true">
+            <key>
+                <column name="VENDOR_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.SoftwareEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Apple</Name>
+<ExternalID>Apple</ExternalID>
+<Description>Apple</Description>
+<Models filename="./models/apple/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: K728 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>K728</Name>
+    <ExternalID>K728</ExternalID>
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description>Windows Mobile 5.0 for Smartphone Edition</Description>
+    <IconFile>./models/okwap/icons/okwap_k728.jpg</IconFile>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+    </TACs>
+  </Model>
+  
+</Models>
+</Setup>

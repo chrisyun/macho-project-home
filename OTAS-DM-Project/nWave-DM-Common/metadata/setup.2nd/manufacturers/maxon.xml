@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Maxon</Name>
+<ExternalID>Maxon</ExternalID>
+<Description>Maxon</Description>
+<Models filename="./models/maxon/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

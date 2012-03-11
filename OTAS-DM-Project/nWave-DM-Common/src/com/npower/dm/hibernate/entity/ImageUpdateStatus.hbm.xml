@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ImageUpdateStatus.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ImageUpdateStatusEntity" table="NW_DM_IMAGE_UPDATE_STATUS">
+        <id name="statusId" type="long" unsaved-value="0">
+            <column name="STATUS_ID" precision="16" scale="0" />
+            <generator class="assigned"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <version name="changeVersion" column="CHANGE_VERSION" type="long" />
+        <property name="name" type="string">
+            <column name="NAME" length="20" not-null="true" />
+        </property>
+        <set name="updates" inverse="true">
+            <key>
+                <column name="STATUS_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.UpdateEntity" />
+        </set>
+        <set name="updateCarrierses" inverse="true">
+            <key>
+                <column name="STATUS_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.Update4Carrier" />
+        </set>
+        <set name="imageCarrierses" inverse="true">
+            <key>
+                <column name="STATUS_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.Image4Carrier" />
+        </set>
+        <set name="images" inverse="true">
+            <key>
+                <column name="STATUS_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ImageEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

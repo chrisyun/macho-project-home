@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Pantech</Name>
+<ExternalID>Pantech</ExternalID>
+<Description>Pantech</Description>
+<Models filename="./models/pantech/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

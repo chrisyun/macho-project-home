@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Benefon</Name>
+<ExternalID>Benefon</ExternalID>
+<Description>Benefon</Description>
+<Models filename="./models/benefon/models.additional.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

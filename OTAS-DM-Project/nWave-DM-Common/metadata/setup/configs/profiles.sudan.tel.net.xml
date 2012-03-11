@@ -1,0 +1,141 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        NAP Profiles 
+      ***********************************************************************************
+   -->
+  <!-- NAP Profile: Sudan WAP -->
+  <Profile>
+    <ID>SudanWap</ID>
+    <ProfileName>Sudan WAP</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>SudanTel</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>Sudan WAP</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>sudaniwap</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value></Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- NAP Profile: Sudan MMS AP -->
+  <Profile>
+    <ID>Sudan_MMS_AP</ID>
+    <ProfileName>Sudan MMS</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>SudanTel</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>Sudan MMS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>sudanimms</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://10.50.182.30:38090/was</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- NAP Profile: Sudan MTV AP -->
+  <Profile>
+    <ID>Sudan_MTV_AP</ID>
+    <ProfileName>Sudan MTV</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>SudanTel</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>Sudan MTV</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>sudanimtv</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value></Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- NAP Profile: Sudan POC AP -->
+  <Profile>
+    <ID>Sudan_POC_AP</ID>
+    <ProfileName>Sudan POC</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>SudanTel</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>Sudan POC</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>sudanipoc</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value></Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+</Profiles>
+</Setup>

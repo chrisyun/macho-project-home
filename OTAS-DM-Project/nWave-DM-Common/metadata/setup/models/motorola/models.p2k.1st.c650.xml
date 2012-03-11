@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Motorola basic models -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Motorola P2K Platform                                    -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_motorola_p2k_1st_c650</ExternalID>
+    <Name>Motorola P2K Platform 1st</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF filename="ddf/motorola/DDF-Motorola-Basic.xml" />
+    </DDFs>
+    
+    <!-- OMA DM ProfileMappings Stage -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/motorola/mapping.basic.xml" />
+    </ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/motorola/ota.templates.java.ap.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.proxy.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.mms.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.syncml.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.dm.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.email.xml"/>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Motorola P2K 1st"/>
+      <Specification category="general" name="developer.platform" value=""/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: V180 -->
+  <Model family="family_motorola_p2k_1st_c650">
+    <Name>V180</Name>
+    <ExternalID>V180</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v180.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V220 -->
+  <Model family="family_motorola_p2k_1st_c650">
+    <Name>V220</Name>
+    <ExternalID>V220</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v220.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C380 -->
+  <Model family="family_motorola_p2k_1st_c650">
+    <Name>C380</Name>
+    <ExternalID>C380</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c380.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C381 -->
+  <Model family="family_motorola_p2k_1st_c650">
+    <Name>C381</Name>
+    <ExternalID>C381</ExternalID>
+    <Description>Motorola C380/C385 - Chinese version</Description>
+    <IconFile>./models/motorola/icons/c381.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C385 -->
+  <Model family="family_motorola_p2k_1st_c650">
+    <Name>C385</Name>
+    <ExternalID>C385</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c385.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C650 -->
+  <Model family="family_motorola_p2k_1st_c650">
+    <Name>C650</Name>
+    <ExternalID>C650</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c650.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C651 -->
+  <Model family="family_motorola_p2k_1st_c650">
+    <Name>C651</Name>
+    <ExternalID>C651</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/c651.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>Huawei</Name>
+      <ExternalID>Huawei</ExternalID>
+      <Description></Description>
+      
+      <Models filename="models/huawei/models.xml"/>
+      
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

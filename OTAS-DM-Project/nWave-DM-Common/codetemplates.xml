@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates><template id="org.eclipse.jdt.ui.text.codetemplates.gettercomment" name="gettercomment" description="Comment for getter method" context="gettercomment_context" enabled="true" deleted="false" autoinsert="true">/**
+ * @return Returns the ${bare_field_name}.
+ */</template><template id="org.eclipse.jdt.ui.text.codetemplates.settercomment" name="settercomment" description="Comment for setter method" context="settercomment_context" enabled="true" deleted="false" autoinsert="true">/**
+ * @param ${param} The ${bare_field_name} to set.
+ */</template><template id="org.eclipse.jdt.ui.text.codetemplates.constructorcomment" name="constructorcomment" description="Comment for created constructors" context="constructorcomment_context" enabled="true" deleted="false" autoinsert="true">/**
+ * ${tags}
+ */</template><template id="org.eclipse.jdt.ui.text.codetemplates.filecomment" name="filecomment" description="Comment for created Java files" context="filecomment_context" enabled="true" deleted="false" autoinsert="false">/**
+  * $$Header: /home/master/nWave-DM-Common/codetemplates.xml,v 1.4 2006/05/12 02:55:43 zhao Exp $$
+  * $$Revision: 1.4 $$
+  * $$Date: 2006/05/12 02:55:43 $$
+  *
+  * ===============================================================================================
+  * License, Version 1.1
+  *
+  * Copyright (c) 1994-2006 NPower Network Software Ltd.  All rights reserved.
+  *
+  * This SOURCE CODE FILE, which has been provided by NPower as part
+  * of a NPower product for use ONLY by licensed users of the product,
+  * includes CONFIDENTIAL and PROPRIETARY information of NPower.
+  *
+  * USE OF THIS SOFTWARE IS GOVERNED BY THE TERMS AND CONDITIONS
+  * OF THE LICENSE STATEMENT AND LIMITED WARRANTY FURNISHED WITH
+  * THE PRODUCT.
+  *
+  * IN PARTICULAR, YOU WILL INDEMNIFY AND HOLD NPower, ITS RELATED
+  * COMPANIES AND ITS SUPPLIERS, HARMLESS FROM AND AGAINST ANY CLAIMS
+  * OR LIABILITIES ARISING OUT OF THE USE, REPRODUCTION, OR DISTRIBUTION
+  * OF YOUR PROGRAMS, INCLUDING ANY CLAIMS OR LIABILITIES ARISING OUT OF
+  * OR RESULTING FROM THE USE, MODIFICATION, OR DISTRIBUTION OF PROGRAMS
+  * OR FILES CREATED FROM, BASED ON, AND/OR DERIVED FROM THIS SOURCE
+  * CODE FILE.
+  * ===============================================================================================
+  */</template><template id="org.eclipse.jdt.ui.text.codetemplates.typecomment" name="typecomment" description="Comment for created types" context="typecomment_context" enabled="true" deleted="false" autoinsert="false">/**
+ * @author Zhao DongLu
+ * @version $$Revision: 1.4 $$ $$Date: 2006/05/12 02:55:43 $$
+ * ${tags}
+ */</template><template id="org.eclipse.jdt.ui.text.codetemplates.fieldcomment" name="fieldcomment" description="Comment for fields" context="fieldcomment_context" enabled="true" deleted="false" autoinsert="true">/**
+ * 
+ */</template><template id="org.eclipse.jdt.ui.text.codetemplates.methodcomment" name="methodcomment" description="Comment for non-overriding methods" context="methodcomment_context" enabled="true" deleted="false" autoinsert="true">/**
+ * ${tags}
+ */</template><template id="org.eclipse.jdt.ui.text.codetemplates.overridecomment" name="overridecomment" description="Comment for overriding methods" context="overridecomment_context" enabled="true" deleted="false" autoinsert="true">/* (non-Javadoc)
+ * ${see_to_overridden}
+ */</template></templates>

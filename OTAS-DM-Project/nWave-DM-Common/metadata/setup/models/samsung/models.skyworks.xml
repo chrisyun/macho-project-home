@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Models: Samsung Skyworks platform -->
+<Models>
+  
+  <!--  Model: SGH-A500 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-A500</Name>
+    <ExternalID>A500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sgha500.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2002"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P510 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-P510</Name>
+    <ExternalID>P510</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp510.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P518 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-P518</Name>
+    <ExternalID>P518</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp518.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+</Models>

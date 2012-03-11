@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ota-templates xmlns:xi="http://www.w3.org/2001/XInclude">
+  <manufacturer>
+    <id>nokia</id>
+    <name>Nokia</name>
+    <description>Nokia Manufacturer</description>
+    <model>
+      <id>6620</id>
+      <name>6620</name>
+      <compatible>6621,6622,6623, 6624</compatible>
+      <description>Nokia 6620</description>
+      <template>
+        <id>SyncDS_OMA_CP</id>
+        <name>OMA CP SyncDS Settings</name>
+        <category>SyncDS</category>
+        <description>This template based on OMA CP used for SyncDS settings.</description>
+        <content filename="test.3.template.settings.xml"/>
+      </template>
+    </model>
+  </manufacturer>
+</ota-templates>

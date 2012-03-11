@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/processor/test/test.3.results.xml,v 1.2 2006/05/12 15:56:46 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/05/12 15:56:46 $
+-->
+<java version="1.5.0_06" class="java.beans.XMLDecoder">
+
+	<object class="java.util.ArrayList">
+		<void method="add">
+
+			<object class="java.util.ArrayList">
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Replace</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyPushEmail/AAA</string>
+								<string>aaaaaa</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+				<!-- TestCase: Return code 404 Not Found                                  -->
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Replace</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./EmailXXX/MyPushEmail/BBB</string>
+								<string>bbbbbb</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>404</int>
+						</void>
+					</object>
+				</void>
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Replace</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyPushEmail/CCC</string>
+								<string>cccccc</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+				<!-- TestCase: Return code 418 Already exists                                  -->
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Replace</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyPushEmail/DDD</string>
+								<string>dddddd</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Alert</string>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+			</object>
+
+		</void>
+	</object>
+</java>

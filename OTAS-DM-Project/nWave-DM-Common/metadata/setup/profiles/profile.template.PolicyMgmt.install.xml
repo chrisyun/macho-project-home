@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.template.PolicyMgmt.install.xml,v 1.1 2008/12/03 10:26:34 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2008/12/03 10:26:34 $
+-->
+<ProfileMetaData>
+    <AttributeTypes>
+        <!-- Using by PolicyMgmt Template -->
+    </AttributeTypes>
+
+    <ProfileTemplates>
+        <!-- Default PolicyMgmt Template -->
+        <ProfileTemplate>
+            <CategoryName>PolicyMgmt</CategoryName>
+            <Name>PolicyMgmt Default Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Policy</Name>
+                    <TypeName>Binary</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+    </ProfileTemplates>
+</ProfileMetaData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>DBTEL</Name>
+<ExternalID>DBTEL</ExternalID>
+<Description>DBTEL</Description>
+<Models filename="./models/dbtel/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

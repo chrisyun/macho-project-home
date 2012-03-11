@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: W600 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>W600</Name>
+    <ExternalID>W600</ExternalID>
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/hisense/icons/hisense_w600.jpg</IconFile>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+    </TACs>
+  </Model>
+  
+</Models>
+</Setup>

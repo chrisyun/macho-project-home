@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: S40 3rdd Edition -->
+<Models>
+
+  <!--  Model: 3500 classic -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>3500 classic</Name>
+    <ExternalID>3500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3500.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 2"/>
+      <Specification category="general" name="announced" value="18-Jun-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8600 Luna -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>8600 Luna</Name>
+    <ExternalID>8600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/8600.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="31-May-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3109 classic -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>3109 classic</Name>
+    <ExternalID>3109c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3109c.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 2"/>
+      <Specification category="general" name="announced" value="18-May-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3110 classic -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>3110 classic</Name>
+    <ExternalID>3110c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3110.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 2"/>
+      <Specification category="general" name="announced" value="12-Feb-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6131 NFC -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6131 NFC</Name>
+    <ExternalID>6131NFC</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6131.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="08-Jan-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6300 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6300</Name>
+    <ExternalID>6300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6300.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 2"/>
+      <Specification category="general" name="announced" value="28-Nov-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6086 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6086</Name>
+    <ExternalID>6086</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6086.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 2"/>
+      <Specification category="general" name="announced" value="28-Nov-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6133 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6133</Name>
+    <ExternalID>6133</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6133.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="23-Oct-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5300 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>5300</Name>
+    <ExternalID>5300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/5300.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC>35277201</TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 2"/>
+      <Specification category="general" name="announced" value="27-Sep-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5200 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>5200</Name>
+    <ExternalID>5200</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/5200.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 2"/>
+      <Specification category="general" name="announced" value="27-Sep-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6288 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6288</Name>
+    <ExternalID>6288</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6288.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="20-Sep-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6085 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6085</Name>
+    <ExternalID>6085</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6085.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 2"/>
+      <Specification category="general" name="announced" value="13-Sep-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7373 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>7373</Name>
+    <ExternalID>7373</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7373.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 2"/>
+      <Specification category="general" name="announced" value="04-Sep-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8800 Sirocco Edition -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>8800 Sirocco</Name>
+    <ExternalID>8800Scirocco</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/8800scirocco.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="04-Sep-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7390 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>7390</Name>
+    <ExternalID>7390</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7390.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 2"/>
+      <Specification category="general" name="announced" value="04-Sep-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6275i -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6275i</Name>
+    <ExternalID>6275i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6275i.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="20-Jun-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6275 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6275</Name>
+    <ExternalID>6275</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6275.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition"/>
+      <Specification category="general" name="announced" value="19-Jun-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6151 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6151</Name>
+    <ExternalID>6151</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6151.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="19-Jun-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 2865 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>2865</Name>
+    <ExternalID>2865</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/2865.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition"/>
+      <Specification category="general" name="announced" value="05-Apr-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6126 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6126</Name>
+    <ExternalID>6126</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6126.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="05-Apr-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 2865i -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>2865i</Name>
+    <ExternalID>2865i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/2865i.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="05-Apr-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6131 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6131</Name>
+    <ExternalID>6131</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6131.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="13-Feb-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6136 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6136</Name>
+    <ExternalID>6136</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6136.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="13-Feb-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6125 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6125</Name>
+    <ExternalID>6125</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6125.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="16-Jan-06"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6282 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6282</Name>
+    <ExternalID>6282</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6282.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="02-Dec-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6233 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6233</Name>
+    <ExternalID>6233</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6233.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="01-Dec-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6234 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6234</Name>
+    <ExternalID>6234</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6234.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="01-Dec-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6165 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6165</Name>
+    <ExternalID>6165</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6165.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition"/>
+      <Specification category="general" name="announced" value="26-Oct-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7370 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>7370</Name>
+    <ExternalID>7370</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7370.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition"/>
+      <Specification category="general" name="announced" value="19-Oct-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6280 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6280</Name>
+    <ExternalID>6280</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6280.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="04-Jul-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6265i -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6265i</Name>
+    <ExternalID>6265i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6265i.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="17-Jun-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6265 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6265</Name>
+    <ExternalID>6265</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6265.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="17-Jun-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6111 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6111</Name>
+    <ExternalID>6111</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6111.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition"/>
+      <Specification category="general" name="announced" value="14-Jun-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6270 -->
+  <Model family="family_nokia_s40_3rd">
+    <Name>6270</Name>
+    <ExternalID>6270</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6270.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2005-06-14"/>
+    </Specifications>
+  </Model>
+
+
+</Models>
+</Setup>

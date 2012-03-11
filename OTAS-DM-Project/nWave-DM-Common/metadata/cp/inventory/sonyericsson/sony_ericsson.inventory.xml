@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ota-templates xmlns:xi="http://www.w3.org/2001/XInclude">
+  <manufacturer>
+    <id>SonyEricsson</id>
+    <name>SonyEricsson</name>
+    <description>SonyEricsson Manufacturer</description>
+    <model>
+      <id>default</id>
+      <name>default</name>
+      <compatible>D750, D750i, D750i,
+                  K600, K600i, K600c,
+                  K608, K608i, K608i,
+                  K750, K750i, K750c, 
+                  K758, K758i, K758c,
+                  V600, V600i, V600c,
+                  W700, W700i, W700c,
+                  W800, W800i, W800c
+      </compatible>
+      <description>SonyEricsson Default</description>
+      <template>
+        <id>NAP</id>
+        <name>NAP</name>
+        <category>NAP</category>
+        <description>NAP template for Nokia phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v1.0.def.vm"/>
+      </template>
+      <template>
+        <id>Proxy</id>
+        <name>Proxy</name>
+        <category>Proxy</category>
+        <description>Proxy template for Nokia phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v1.0.def.vm"/>
+      </template>
+      <template>
+        <id>MMS</id>
+        <name>MMS</name>
+        <category>MMS</category>
+        <description>MMS template for Nokia phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v1.0.def.vm"/>
+      </template>
+      <template>
+        <id>SyncDS</id>
+        <name>SyncDS</name>
+        <category>SyncDS</category>
+        <description>SyncDS template for Nokia phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v1.0.def.vm"/>
+      </template>
+      <template>
+        <id>DM</id>
+        <name>DM</name>
+        <category>DM</category>
+        <description>DM template for Nokia phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v1.0.def.vm"/>
+      </template>
+      <template>
+        <id>SyncDS</id>
+        <name>SyncDS</name>
+        <category>SyncDS</category>
+        <description>SyncDS template for Nokia phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v1.0.def.vm"/>
+      </template>
+      <template>
+        <id>Email</id>
+        <name>Email</name>
+        <category>Email</category>
+        <description>Email template for Nokia phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v1.0.def.vm"/>
+      </template>
+      <!-- IMPS Template -->
+      <template>
+        <id>IMPS Settings</id>
+        <name>IMPS Settings</name>
+        <category>IMPS</category>
+        <description>This template used to IMPS settings.</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v1.0.def.vm"></content>
+      </template>
+      <!-- POC Template -->
+      <template>
+        <id>POC Settings</id>
+        <name>POC Settings</name>
+        <category>POC</category>
+        <description>This template used to POC settings.</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v1.0.def.vm"></content>
+      </template>
+    </model>
+    <model>
+      <id>W810</id>
+      <name>W810</name>
+      <compatible>K310, K310a, K310c, K310i,
+                  K510, K510a, K510c, K510i,
+                  W300, W300c, W300i,
+                  W550, W550c, W550i,
+                  W600, W600i, 
+                  W810, W810a, W810c, W810i,
+                  W900, W900c, W900i,
+                  Z530, Z530c, Z530i,
+                  Z550, Z550c, Z550i,
+                  K610, K610c, K610i,
+                  K790, K790c, K790i, K790a,
+                  K800, K800c, K800i,
+                  W710, W710c, W710i,
+                  W850, W850c, W850i
+      </compatible>
+      <description>SonyEricsson Default</description>
+      <template>
+        <id>NAP</id>
+        <name>NAP</name>
+        <category>NAP</category>
+        <description>NAP template for SonyEricsson phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v2.0.def.vm"/>
+      </template>
+      <template>
+        <id>Proxy</id>
+        <name>Proxy</name>
+        <category>Proxy</category>
+        <description>Proxy template for SonyEricsson phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v2.0.def.vm"/>
+      </template>
+      <template>
+        <id>MMS</id>
+        <name>MMS</name>
+        <category>MMS</category>
+        <description>MMS template for SonyEricsson phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v2.0.def.vm"/>
+      </template>
+      <template>
+        <id>SyncDS</id>
+        <name>SyncDS</name>
+        <category>SyncDS</category>
+        <description>SyncDS template for SonyEricsson phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v2.0.def.vm"/>
+      </template>
+      <template>
+        <id>DM</id>
+        <name>DM</name>
+        <category>DM</category>
+        <description>DM template for SonyEricsson phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v2.0.def.vm"/>
+      </template>
+      <template>
+        <id>Email</id>
+        <name>Email</name>
+        <category>Email</category>
+        <description>Email template for SonyEricsson phone</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v2.0.def.vm"/>
+      </template>
+      <!-- IMPS Template -->
+      <template>
+        <id>IMPS Settings</id>
+        <name>IMPS Settings</name>
+        <category>IMPS</category>
+        <description>This template used to IMPS settings.</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v2.0.def.vm"></content>
+      </template>
+      <!-- POC Template -->
+      <template>
+        <id>POC Settings</id>
+        <name>POC Settings</name>
+        <category>POC</category>
+        <description>This template used to POC settings.</description>
+        <content filename="sonyericsson/omacp.template.oma.dm.client.v2.0.def.vm"></content>
+      </template>
+    </model>
+  </manufacturer>
+</ota-templates>

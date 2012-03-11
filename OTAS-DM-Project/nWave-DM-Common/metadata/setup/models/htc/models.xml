@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: HTC -->
+<Models>
+
+  <!--  Model: Advantage X7500 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>Advantage X7500</Name>
+    <ExternalID>Advantage X7500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/advantage.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: MTeoR -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>MTeoR</Name>
+    <ExternalID>MTeoR</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/mteor.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P3300 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>P3300</Name>
+    <ExternalID>P3300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/p3300.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P3350 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>P3350</Name>
+    <ExternalID>P3350</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/p3350.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P3400 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>P3400</Name>
+    <ExternalID>P3400</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/p3400.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P3600 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>P3600</Name>
+    <ExternalID>P3600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/p3600.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P3600i -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>P3600i</Name>
+    <ExternalID>P3600i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/p3600i.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P4350 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>P4350</Name>
+    <ExternalID>P4350</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/p4350.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P6300 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>P6300</Name>
+    <ExternalID>P6300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/p6300.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, May"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P6500 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>P6500</Name>
+    <ExternalID>P6500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/p6500.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: S630 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>S630</Name>
+    <ExternalID>S630</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/s630.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: S710 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>S710</Name>
+    <ExternalID>S710</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/s710.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: S730 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>S730</Name>
+    <ExternalID>S730</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/s730.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Shift -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Shift</Name>
+    <ExternalID>Shift</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/shift.gif</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Vista Business OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Touch -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Touch</Name>
+    <ExternalID>Touch</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/touch.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Touch Cruise -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Touch Cruise</Name>
+    <ExternalID>Touch Cruise</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/touch_cruise.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Touch Dual -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Touch Dual</Name>
+    <ExternalID>Touch Dual</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/touch_dual.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: TyTN -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>TyTN</Name>
+    <ExternalID>TyTN</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/tytn.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: TyTN II -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>TyTN II</Name>
+    <ExternalID>TyTN II</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/tytn_ii.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, July"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

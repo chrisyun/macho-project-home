@@ -1,0 +1,1439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MgmtTree SYSTEM "http://www.openmobilealliance.org/tech/DTD/OMA-SyncML-DMDDFDTD-V1_1_2-20030508-D.dtd" >
+<MgmtTree>
+  <!-- rdmtree><version>1.02</version> -->
+  <VerDTD>1.1.2</VerDTD>
+  <Man>Redbend</Man>
+  <Mod>1000</Mod>
+  <Node>
+    <NodeName>.</NodeName>
+    <DFProperties>
+      <AccessType>
+        <Add />
+        <Get />
+        <Replace />
+      </AccessType>
+      <!--acl>Replace=*&amp;Add=*&amp;Delete=*&amp;Get=*&amp;Exec=*</acl -->
+      <DFFormat>
+        <node></node>
+      </DFFormat>
+      <Scope>
+        <Permanent></Permanent>
+      </Scope>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+    </DFProperties>
+    <Node>
+      <NodeName>Ext</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <DFFormat>
+          <node></node>
+        </DFFormat>
+        <Scope>
+          <Permanent></Permanent>
+        </Scope>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>LastSessionID</NodeName>
+        <DFProperties>
+          <!-- value>4D<value-->
+        </DFProperties>
+      </leaf>
+    </Node>
+    <DFType>
+      <DDFName></DDFName>
+    </DFType>
+    </DFProperties>
+    <Node>
+      <NodeName>DMAcc</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Get />
+        </AccessType>
+        <!--acl>Add=*&amp;Delete=*&amp;Exec=*&amp;Get=*&amp;Replace=*</acl -->
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>Sample</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+          </AccessType>
+          <Get />
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>AppID</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>w7<value-->
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>ServerID</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>OTASDM<value-->
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>Name</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>OTASDM<value-->
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>PrefConRef</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>SrvAddr<value-->
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>ToConRef</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>SrvAddr</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFType>
+                <DDFName></DDFName>
+              </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>ConRef</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+              </DFProperties>
+            </leaf>
+          </Node>
+        </Node>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AppAddr</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>SrvAddr</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFType>
+                <DDFName></DDFName>
+              </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>Addr</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <!-- value>http://dm.otas.mobi/otasdm/dm<value-->
+              </DFProperties>
+            </leaf>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>AddrType</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <!-- value>URI<value-->
+              </DFProperties>
+            </leaf>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+            </DFProperties>
+            <Node>
+              <NodeName>Port</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFType>
+                  <DDFName></DDFName>
+                </DFType>
+              </DFProperties>
+              <Node>
+                <NodeName>Port</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                    <Replace />
+                  </AccessType>
+                  <DFType>
+                    <DDFName></DDFName>
+                  </DFType>
+                </DFProperties>
+                <leaf>
+                  <NodeName>PortNbr</NodeName>
+                  <DFProperties>
+                    <AccessType>
+                      <Get />
+                      <Replace />
+                    </AccessType>
+                    <DFFormat>
+                      <chr />
+                    </DFFormat>
+                    <!-- value>8080<value-->
+                  </DFProperties>
+                </leaf>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>AAuthPref</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AppAuth</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>serverAuth</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFType>
+                <DDFName></DDFName>
+              </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>AAuthLevel</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <!-- value>SRVCRED<value-->
+              </DFProperties>
+            </leaf>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>AAuthType</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <!-- value>DIGEST<value-->
+              </DFProperties>
+            </leaf>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>AAuthSecret</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <!-- value>OTASDM<value-->
+              </DFProperties>
+            </leaf>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>AAuthData</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <bin />
+                </DFFormat>
+                <!-- value>gjG8Wxxxxxxxxx<value-->
+              </DFProperties>
+            </leaf>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>AAuthName</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <!-- value>OTASDM<value-->
+              </DFProperties>
+            </leaf>
+          </Node>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>clientAuth</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFType>
+                <DDFName></DDFName>
+              </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>AAuthLevel</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <!-- value>CLCRED<value-->
+              </DFProperties>
+            </leaf>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>AAuthType</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <!-- value>DIGEST<value-->
+              </DFProperties>
+            </leaf>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>AAuthSecret</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <!-- value>OTASDM<value-->
+              </DFProperties>
+            </leaf>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>AAuthData</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <bin />
+                </DFFormat>
+                <!-- value>KkY3cD40xxxxxxxxxx<value-->
+              </DFProperties>
+            </leaf>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+            </DFProperties>
+            <leaf>
+              <NodeName>AAuthName</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <!-- value>OTASDM<value-->
+              </DFProperties>
+            </leaf>
+          </Node>
+        </Node>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>Con</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+        </Node>
+      </Node>
+    </Node>
+    <DFType>
+      <DDFName></DDFName>
+    </DFType>
+    </DFProperties>
+    <Node>
+      <NodeName>Settings</NodeName>
+      <DFProperties>
+        <Scope>
+          <Permanent></Permanent>
+        </Scope>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>PIM</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>Addr</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>http://pim.monternet.com<value-->
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>ConnProfile</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>CMWap<value-->
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>AddressBookURI</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>./contact<value-->
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>CalendarURI</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>./calendar<value-->
+          </DFProperties>
+        </leaf>
+      </Node>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>DM</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>ConnProfile</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Replace />
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>CMWap<value-->
+          </DFProperties>
+        </leaf>
+      </Node>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>MMS</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>MMSC</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <type>text/plain</type>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>ConnProfile</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <type>text/plain</type>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+          </DFProperties>
+        </leaf>
+      </Node>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>WAP</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>ConnProfile</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>CMWap<value-->
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>StartPage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>http://wap.monternet.com<value-->
+          </DFProperties>
+        </leaf>
+      </Node>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>GPRS</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>CMWap</NodeName>
+          <DFProperties>
+            <Scope>
+              <Permanent></Permanent>
+            </Scope>
+            <Get />
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <leaf>
+            <NodeName>APN</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <!-- value>CMWap<value-->
+            </DFProperties>
+          </leaf>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+          </DFProperties>
+          <leaf>
+            <NodeName>UserName</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+            </DFProperties>
+          </leaf>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+          </DFProperties>
+          <leaf>
+            <NodeName>PassWord</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+            </DFProperties>
+          </leaf>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+          </DFProperties>
+          <leaf>
+            <NodeName>Proxyaddr</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <!-- value>10.0.0.172<value-->
+            </DFProperties>
+          </leaf>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+          </DFProperties>
+          <leaf>
+            <NodeName>ProxyPortNbr</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <!-- value>80<value-->
+            </DFProperties>
+          </leaf>
+        </Node>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>CMNet</NodeName>
+          <DFProperties>
+            <Scope>
+              <Permanent></Permanent>
+            </Scope>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <leaf>
+            <NodeName>APN</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <!-- value>CMNet<value-->
+            </DFProperties>
+          </leaf>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+          </DFProperties>
+          <leaf>
+            <NodeName>Proxyaddr</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+            </DFProperties>
+          </leaf>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+          </DFProperties>
+          <leaf>
+            <NodeName>ProxyPortNbr</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+            </DFProperties>
+          </leaf>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+          </DFProperties>
+          <leaf>
+            <NodeName>PassWord</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+            </DFProperties>
+          </leaf>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+          </DFProperties>
+          <leaf>
+            <NodeName>UserName</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+            </DFProperties>
+          </leaf>
+        </Node>
+      </Node>
+    </Node>
+    <DFType>
+      <DDFName></DDFName>
+    </DFType>
+    </DFProperties>
+    <Node>
+      <NodeName>FwUpdate</NodeName>
+      <DFProperties>
+        <Get />
+        <!--acl>Add=*&amp;Delete=*&amp;Exec=*&amp;Get=*&amp;Replace=*</acl -->
+        <type>urn:oma:mo:oma:fumo:1.0</type>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>Ext</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Copy />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+      </Node>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>State</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <int />
+          </DFFormat>
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>DownloadAndUpdate</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Exec />
+          </AccessType>
+          <Get />
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>PkgURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Get />
+              <Replace />
+            </AccessType>
+            <type>text/plain</type>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <!-- value>http://xxxxxxxxx<value-->
+          </DFProperties>
+        </leaf>
+      </Node>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>Update</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Exec />
+            <Get />
+          </AccessType>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>PkgData</NodeName>
+          <DFProperties>
+            <Replace />
+            <DFFormat>
+              <bin />
+            </DFFormat>
+          </DFProperties>
+        </leaf>
+      </Node>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>Download</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Exec />
+            <Get />
+          </AccessType>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>PkgURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Get />
+              <Replace />
+            </AccessType>
+            <!-- value>http://xxxxxxxxx<value-->
+          </DFProperties>
+        </leaf>
+      </Node>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>PkgVersion</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Get />
+            <Replace />
+          </AccessType>
+          <!-- value>4<value-->
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>PkgName</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Get />
+            <Replace />
+          </AccessType>
+          <!-- value>1 to 2<value-->
+        </DFProperties>
+      </leaf>
+    </Node>
+    <DFType>
+      <DDFName></DDFName>
+    </DFType>
+    </DFProperties>
+    <Node>
+      <NodeName>Con</NodeName>
+      <DFProperties>
+        <Scope>
+          <Permanent></Permanent>
+        </Scope>
+        <AccessType>
+          <Get />
+        </AccessType>
+    </Node>
+    <DFType>
+      <DDFName></DDFName>
+    </DFType>
+    </DFProperties>
+    <Node>
+      <NodeName>DevDetail</NodeName>
+      <DFProperties>
+        <Scope>
+          <Permanent></Permanent>
+        </Scope>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>URI</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>MaxSegLen</NodeName>
+          <DFProperties>
+            <Scope>
+              <Permanent></Permanent>
+            </Scope>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <!-- value>31<value-->
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>MaxTotLen</NodeName>
+          <DFProperties>
+            <Scope>
+              <Permanent></Permanent>
+            </Scope>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <!-- value>255<value-->
+          </DFProperties>
+        </leaf>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+        </DFProperties>
+        <leaf>
+          <NodeName>MaxDepth</NodeName>
+          <DFProperties>
+            <Scope>
+              <Permanent></Permanent>
+            </Scope>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <!-- value>16<value-->
+          </DFProperties>
+        </leaf>
+      </Node>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>SwV</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>OEM</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <!-- value>OEM Name<value-->
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>LrgObj</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <bool />
+          </DFFormat>
+          <!-- value>true<value-->
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>HwV</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <!-- value>ARMxxxx<value-->
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>FwV</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>DevTyp</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <!-- value>Device<value-->
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>Ext</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+      </Node>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>Bearer</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+      </Node>
+    </Node>
+    <DFType>
+      <DDFName></DDFName>
+    </DFType>
+    </DFProperties>
+    <Node>
+      <NodeName>DevInfo</NodeName>
+      <DFProperties>
+        <Scope>
+          <Permanent></Permanent>
+        </Scope>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <DFType>
+          <DDFName></DDFName>
+        </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>Mod</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <!-- value>Phone1<value-->
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>Man</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <!-- value>OEM<value-->
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>Lang</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <!-- value>en-us<value-->
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>DmV</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <leaf>
+        <NodeName>DevId</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <!-- value>IMEI:111111111111111<value-->
+        </DFProperties>
+      </leaf>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>Ext</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+      </Node>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>Bearer</NodeName>
+        <DFProperties>
+          <Scope>
+            <Permanent></Permanent>
+          </Scope>
+          <AccessType>
+            <Get />
+          </AccessType>
+      </Node>
+    </Node>
+  </Node>
+  <!-- /rdmtree -->
+</MgmtTree>

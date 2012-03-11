@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ClienProvJob.hbm.xml,v 1.2 2008/02/20 10:32:49 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2008/02/20 10:32:49 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ClientProvJobEntity" table="NW_CP_JOB">
+        <id name="id" type="long">
+            <column name="JOB_ID" precision="20" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" />
+        </property>
+        <property name="type" type="string">
+            <column name="TYPE" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="2048" />
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" not-null="true" />
+        </property>
+        <property name="scheduleTime" type="java.util.Date">
+            <column name="SCHEDULE_TIME" length="7" />
+        </property>
+        <property name="maxRetries" type="long">
+            <column name="MAX_RETRIES" precision="2" scale="0" />
+        </property>
+        <property name="maxDuration" type="long">
+            <column name="MAX_DURATION" precision="6" scale="0" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="CREATED_TIME" length="7" not-null="true" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="CREATED_BY" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" />
+        </property>
+        <set name="targetDevices" inverse="true">
+            <key>
+                <column name="JOB_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ClientProvJobTargetDeviceEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Motorola UIQ 2.1 Paltform -->
+<Models>
+
+  <!--  Model: A1000 -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>A1000</Name>
+    <ExternalID>A1000</ExternalID>
+    <Description>Symbian OS v7.0, User Interface: UIQ 2.1</Description>
+    <IconFile>./models/motorola/icons/motorola_a1010.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: A1010 -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>A1010</Name>
+    <ExternalID>A1010</ExternalID>
+    <Description>Symbian OS v7.0, User Interface: UIQ 2.1</Description>
+    <IconFile>./models/motorola/icons/motorola_a1010.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: A920 -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>A920</Name>
+    <ExternalID>A920</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a920.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: A925 -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>A925</Name>
+    <ExternalID>A925</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a925.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

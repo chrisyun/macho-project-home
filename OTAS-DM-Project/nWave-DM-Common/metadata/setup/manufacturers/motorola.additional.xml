@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Motorola</Name>
+<ExternalID>Motorola</ExternalID>
+<Description>Motorola</Description>
+<Models filename="./models/motorola/models.additional.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

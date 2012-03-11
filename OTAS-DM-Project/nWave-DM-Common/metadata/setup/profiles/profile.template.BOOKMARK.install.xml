@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.template.BOOKMARK.install.xml,v 1.2 2008/12/01 11:29:04 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2008/12/01 11:29:04 $
+-->
+<ProfileMetaData>
+    <AttributeTypes>
+        <!-- Using by Bookmark Template -->
+    </AttributeTypes>
+
+    <ProfileTemplates>
+        <!-- Default Bookmark Template -->
+        <ProfileTemplate>
+            <CategoryName>Bookmark</CategoryName>
+            <Name>Bookmark Default Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Name</Name>
+                    <DisplayName>Name</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The NAME indicates a name of URL.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>URL</Name>
+                    <DisplayName>URL</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The URL parameter MUST be an absolute URI [RFC2396] and defines the homepage or start page.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>Folder</Name>
+                    <DisplayName>Folder</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>Folder in which the bookmark is grouped.</Description>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+    </ProfileTemplates>
+</ProfileMetaData>

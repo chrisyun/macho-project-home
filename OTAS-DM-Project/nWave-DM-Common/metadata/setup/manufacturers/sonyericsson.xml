@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>SonyEricsson</Name>
+      <ExternalID>SonyEricsson</ExternalID>
+      <Description>SonyEricsson</Description>
+      <Models filename="./models/sonyericsson/models.dm.client.v1.xml" />
+      <Models filename="./models/sonyericsson/models.dm.client.v2.xml" />
+      <Models filename="./models/sonyericsson/models.dm.client.v3.0.xml" />
+      <Models filename="./models/sonyericsson/models.dm.client.v3.1.xml" />
+      <Models filename="./models/sonyericsson/models.dm.client.v3.2.xml" />
+      <Models filename="./models/sonyericsson/models.dm.client.v3.3.xml" />
+      <Models filename="./models/sonyericsson/models.dm.client.v4.0.xml" />
+      <Models filename="./models/sonyericsson/models.dm.client.v4.1.xml" />
+      <Models filename="./models/sonyericsson/models.dm.client.v4.2.xml" />
+      <Models filename="./models/sonyericsson/models.dm.client.v5.0.xml" />
+      <Models filename="./models/sonyericsson/models.uiq.v2.1.xml" />
+      <Models filename="./models/sonyericsson/models.uiq.v3.xml" />
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

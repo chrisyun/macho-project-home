@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DeviceLog.hbm.xml,v 1.5 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.5 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DeviceLogEntity" table="NW_DM_DEVICE_LOG">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="DEVICE_LOG_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="logAction" class="com.npower.dm.hibernate.entity.DeviceLogActionEntity" fetch="select">
+            <column name="ACTION" length="40" not-null="true" />
+        </many-to-one>
+        <many-to-one name="provReq" class="com.npower.dm.hibernate.entity.ProvisionRequest" fetch="select">
+            <column name="JOB_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="device" class="com.npower.dm.hibernate.entity.DeviceEntity" fetch="select">
+            <column name="DEVICE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <property name="creationDate" type="java.util.Date">
+            <column name="CREATION_DATE" length="7" not-null="true" />
+        </property>
+        <property name="deviceExternalId" type="string">
+            <column name="DEVICE_EXTERNAL_ID" length="30" not-null="true" />
+        </property>
+        <property name="subscriberPhoneNumber" type="string">
+            <column name="SUBSCRIBER_PHONE_NUMBER" length="32" />
+        </property>
+        <property name="jobType" type="string">
+            <column name="JOB_TYPE" length="25" />
+        </property>
+        <property name="message" type="string">
+            <column name="MESSAGE" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ModelClientProvMap.hbm.xml,v 1.2 2007/05/24 06:01:02 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2007/05/24 06:01:02 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ModelClientProvMapEntity" table="NW_DM_MODEL_CLIENT_PROV_MAP">
+        <composite-id name="id" class="com.npower.dm.hibernate.entity.ModelClientProvMapId">
+            <key-property name="modelId" type="long">
+                <column name="MODEL_ID" precision="20" scale="0" />
+            </key-property>
+            <key-property name="templateId" type="long">
+                <column name="TEMPLATE_ID" precision="20" scale="0" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="clientProvTemplate" class="com.npower.dm.hibernate.entity.ClientProvTemplateEntity" update="false" insert="false" fetch="select">
+            <column name="TEMPLATE_ID" precision="20" scale="0" />
+        </many-to-one>
+        <many-to-one name="model" class="com.npower.dm.hibernate.entity.ModelEntity" update="false" insert="false" fetch="select">
+            <column name="MODEL_ID" precision="20" scale="0" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

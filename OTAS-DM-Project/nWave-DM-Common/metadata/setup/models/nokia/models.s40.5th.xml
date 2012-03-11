@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: S40 5th Edition -->
+<Models>
+
+  <!--  Model: 8800 Arte -->
+  <Model family="family_nokia_s40_5th">
+    <Name>8800 Arte </Name>
+    <ExternalID>8800arte</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/8800arte.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 5th Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="13-Nov-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6301 -->
+  <Model family="family_nokia_s40_5th">
+    <Name>6301</Name>
+    <ExternalID>6301</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6301.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 5th Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="20-Sep-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5610 XpressMusic -->
+  <Model family="family_nokia_s40_5th">
+    <Name>5610 XpressMusic</Name>
+    <ExternalID>5610</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/5610.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 5th Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="29-Aug-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5310 XpressMusic -->
+  <Model family="family_nokia_s40_5th">
+    <Name>5310 XpressMusic</Name>
+    <ExternalID>5310</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/5310.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 5th Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="29-Aug-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6555 -->
+  <Model family="family_nokia_s40_5th">
+    <Name>6555</Name>
+    <ExternalID>6555</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6555.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 5th Edition"/>
+      <Specification category="general" name="announced" value="21-Aug-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7500 Prism -->
+  <Model family="family_nokia_s40_5th">
+    <Name>7500 Prism</Name>
+    <ExternalID>7500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7500.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 5th Edition"/>
+      <Specification category="general" name="announced" value="07-Aug-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7900 Prism -->
+  <Model family="family_nokia_s40_5th">
+    <Name>7900 Prism</Name>
+    <ExternalID>7900 Prism</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7900.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 5th Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="07-Aug-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6267 -->
+  <Model family="family_nokia_s40_5th">
+    <Name>6267</Name>
+    <ExternalID>6267</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6267.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 5th Edition"/>
+      <Specification category="general" name="announced" value="18-Jun-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6500 classic -->
+  <Model family="family_nokia_s40_5th">
+    <Name>6500 classic</Name>
+    <ExternalID>6500c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6500c.jpg</IconFile>
+      
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 5th Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="31-May-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6500 slide -->
+  <Model family="family_nokia_s40_5th">
+    <Name>6500 slide</Name>
+    <ExternalID>6500s</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6500s.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 5th Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="31-May-07"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.template.Customization.install.xml,v 1.2 2008/12/14 06:06:24 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2008/12/14 06:06:24 $
+-->
+<ProfileMetaData>
+    <AttributeTypes>
+        <!-- Using by Customization Template -->
+    </AttributeTypes>
+
+    <ProfileTemplates>
+        <!-- Startup Template -->
+        <ProfileTemplate>
+            <CategoryName>LookAndFeel</CategoryName>
+            <Name>Startup Screen</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>WelcomeGraphics</Name>
+                    <DisplayName>Welcome Graphics</DisplayName>
+                    <TypeName>Binary</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>WelcomeText</Name>
+                    <DisplayName>Welcome Text</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- Shutdown Template -->
+        <ProfileTemplate>
+            <CategoryName>LookAndFeel</CategoryName>
+            <Name>Shutdown Screen</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>ShutdownGraphics</Name>
+                    <DisplayName>Shutdown Graphics</DisplayName>
+                    <TypeName>Binary</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- Operator Logo Template -->
+        <ProfileTemplate>
+            <CategoryName>LookAndFeel</CategoryName>
+            <Name>Operator Logo</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Logo</Name>
+                    <DisplayName>Logo Graphics</DisplayName>
+                    <TypeName>Binary</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- Wallpaper Template -->
+        <ProfileTemplate>
+            <CategoryName>LookAndFeel</CategoryName>
+            <Name>Wallpaper</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Wallpaper</Name>
+                    <DisplayName>Wallpaper</DisplayName>
+                    <TypeName>Binary</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- Scheme Template -->
+        <ProfileTemplate>
+            <CategoryName>LookAndFeel</CategoryName>
+            <Name>Scheme</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>ID</Name>
+                    <DisplayName>ID</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Name</Name>
+                    <DisplayName>Name</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Version</Name>
+                    <DisplayName>Version</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Data</Name>
+                    <DisplayName>Scheme Package</DisplayName>
+                    <TypeName>Binary</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>NodeName</Name>
+                    <TypeName>SelfName</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- SceenSaver Template -->
+        <ProfileTemplate>
+            <CategoryName>LookAndFeel</CategoryName>
+            <Name>ScreenSaver</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>ID</Name>
+                    <DisplayName>ID</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Name</Name>
+                    <DisplayName>Name</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Description</Name>
+                    <DisplayName>Description</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Version</Name>
+                    <DisplayName>Version</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Data</Name>
+                    <DisplayName>Scheme Package</DisplayName>
+                    <TypeName>Binary</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>CustomProperty</Name>
+                    <DisplayName>Custom Property</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>NodeName</Name>
+                    <TypeName>SelfName</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+    </ProfileTemplates>
+</ProfileMetaData>

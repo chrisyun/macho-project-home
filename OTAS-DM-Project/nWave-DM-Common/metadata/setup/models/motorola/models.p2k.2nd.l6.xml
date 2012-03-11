@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Motorola basic models -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Motorola P2K Platform                                    -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_motorola_p2k_2nd_l6</ExternalID>
+    <Name>Motorola P2K Platform 2nd</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF filename="ddf/motorola/P044_DDF_File.xml" />
+    </DDFs>
+    
+    <!-- OMA DM ProfileMappings Stage -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/motorola/mapping.basic.xml" />
+    </ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/motorola/ota.templates.java.ap.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.proxy.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.mms.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.syncml.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.dm.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.email.xml"/>
+        
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Motorola P2K 2nd"/>
+      <Specification category="general" name="developer.platform" value=""/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: L2 -->
+  <Model family="family_motorola_p2k_2nd_l6">
+    <Name>L2</Name>
+    <ExternalID>L2</ExternalID>
+    <Description>Also known as Motorola L2. There are quad-band and tri-band versions.</Description>
+    <IconFile>./models/motorola/icons/motorola_v270.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: L6 -->
+  <Model family="family_motorola_p2k_2nd_l6">
+    <Name>L6</Name>
+    <ExternalID>L6</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/l6.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V270 -->
+  <Model family="family_motorola_p2k_2nd_l6">
+    <Name>V270</Name>
+    <ExternalID>V270</ExternalID>
+    <Description>Also known as Motorola L2. There are quad-band and tri-band versions.</Description>
+    <IconFile>./models/motorola/icons/motorola_v270.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V280 -->
+  <Model family="family_motorola_p2k_2nd_l6">
+    <Name>V280</Name>
+    <ExternalID>V280</ExternalID>
+    <Description>Also known as Motorola L6i i-mode version</Description>
+    <IconFile>./models/motorola/icons/motorola_v280.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

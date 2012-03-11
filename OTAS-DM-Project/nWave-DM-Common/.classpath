@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Oracle 10g JDBC"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Jakarta Common"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/P6Spy"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Jibx Runtime"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/BeanShell 2.0b1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Velocity 1.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3.8.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OTAS-SMS-Common"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OTAS-SMS-Client"/>
+	<classpathentry kind="con" path="com.genuitec.eclipse.j2eedt.core.J2EE14_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/XOM 1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OTAS-DM-Framework"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate 3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Common-Http-Client-3.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Jakarta-TagLibs"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/XMLUnit 1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OTAS-Setup-Common"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.cross.easystruts.eclipse.STRUTS12_CONTAINER"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

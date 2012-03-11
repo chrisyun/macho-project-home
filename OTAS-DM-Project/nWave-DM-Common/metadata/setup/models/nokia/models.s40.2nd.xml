@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: S40 2nd Edition -->
+<Models>
+
+  <!--  Model: 5070 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>5070</Name>
+    <ExternalID>5070</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/5070.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-03-29"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 2626 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>2626</Name>
+    <ExternalID>2626</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/2626.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006-11-28"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: 6080 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>6080</Name>
+    <ExternalID>6080</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/6080.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006-06-19"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 2610 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>2610</Name>
+    <ExternalID>2610</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/2610.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC>35275101</TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006-03-30"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6070 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>6070</Name>
+    <ExternalID>6070</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/6070.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006-02-13"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6102i -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>6102i</Name>
+    <ExternalID>6102i</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/6102i.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006-01-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6103 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>6103</Name>
+    <ExternalID>6103</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/6103.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006-01-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 2855 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>2855</Name>
+    <ExternalID>2855</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/2855.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006-10-26"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7360 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>7360</Name>
+    <ExternalID>7360</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/7360.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005-10-19"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5140i -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>5140i</Name>
+    <ExternalID>5140i</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/5140i.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005-04-26"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8801 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>8801</Name>
+    <ExternalID>8801</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/8801.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005-04-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6030 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>6030</Name>
+    <ExternalID>6030</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/6030.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005-05-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6101 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>6101</Name>
+    <ExternalID>6101</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/6101.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005-01-14"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6102 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>6102</Name>
+    <ExternalID>6102</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/6102.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005-01-14"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6230 -->
+  <Model family="family_nokia_s40_2nd">
+    <Name>6230</Name>
+    <ExternalID>6230</ExternalID>
+    <Description>Series 40 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/6230.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003-10-27"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

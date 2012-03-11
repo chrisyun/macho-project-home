@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: A632 MyPal -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>A632 MyPal</Name>
+    <ExternalID>A632 MyPal</ExternalID>
+    <Description>Windows Mobile 5.0 for Pocket PC</Description>
+    <IconFile>./models/asus/icons/asus_a632_mypal.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: A636 MyPal -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>A636 MyPal</Name>
+    <ExternalID>A636 MyPal</ExternalID>
+    <Description>Windows Mobile 5.0 for Pocket PC</Description>
+    <IconFile>./models/asus/icons/asus_a636_mypal.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: A639 MyPal -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>A639 MyPal</Name>
+    <ExternalID>A639 MyPal</ExternalID>
+    <Description>Windows Mobile 5.0 for Pocket PC</Description>
+    <IconFile>./models/asus/icons/asus_a639_mypal.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: M530w -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>M530w</Name>
+    <ExternalID>M530w</ExternalID>
+    <Description></Description>
+    <IconFile>./models/asus/icons/m530w.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="announced" value="2007, May"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: P305 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>P305</Name>
+    <ExternalID>P305</ExternalID>
+    <Description>Windows Mobile 5.0 for Pocket PC</Description>
+    <IconFile>./models/asus/icons/asus_p305.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: P505 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>P505</Name>
+    <ExternalID>P505</ExternalID>
+    <Description></Description>
+    <IconFile>./models/asus/icons/p505.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="announced" value="2005, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P525 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>P525</Name>
+    <ExternalID>P525</ExternalID>
+    <Description>Windows Mobile 5.0 for Pocket PC</Description>
+    <IconFile>./models/asus/icons/asus_p525.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="announced" value="2006, March"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: P526 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>P526</Name>
+    <ExternalID>P526</ExternalID>
+    <Description></Description>
+    <IconFile>./models/asus/icons/p526.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="announced" value="2007, March"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: P527 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>P527</Name>
+    <ExternalID>P527</ExternalID>
+    <Description></Description>
+    <IconFile>./models/asus/icons/p527.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="announced" value="2007, September"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: P535 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>P535</Name>
+    <ExternalID>P535</ExternalID>
+    <Description>Windows Mobile 5.0 for Pocket PC</Description>
+    <IconFile>./models/asus/icons/asus_p535.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="announced" value="2006, November"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: P735 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>P735</Name>
+    <ExternalID>P735</ExternalID>
+    <Description>Windows Mobile 5.0 for Pocket PC</Description>
+    <IconFile>./models/asus/icons/asus_p735.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="announced" value="2007, January"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: P750 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>P750</Name>
+    <ExternalID>P750</ExternalID>
+    <Description></Description>
+    <IconFile>./models/asus/icons/p750.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="announced" value="P750"/>
+    </Specifications>
+  </Model>
+  
+</Models>
+</Setup>

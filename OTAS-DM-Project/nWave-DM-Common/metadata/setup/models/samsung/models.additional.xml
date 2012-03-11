@@ -1,0 +1,2647 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Samsung -->
+<Models>
+
+  <!--  Model: SGH-A300 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-A300</Name>
+    <ExternalID>A300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sgha300.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2001"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-A411 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-A411</Name>
+    <ExternalID>A411</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sgha411.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-A501 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-A501</Name>
+    <ExternalID>A501</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sgha501.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGHA-701 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-A701</Name>
+    <ExternalID>A701</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sgha701.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-A711 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-A711</Name>
+    <ExternalID>A711</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sgha711.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-A801 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-A801</Name>
+    <ExternalID>A801</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sgha801.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-A821 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-A821</Name>
+    <ExternalID>A821</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sgha821.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-C130 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-C130</Name>
+    <ExternalID>C130</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghc130.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, May"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-C260 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-C260</Name>
+    <ExternalID>C260</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghc260.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-C300 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-C300</Name>
+    <ExternalID>C300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghc300.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-D300 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-D300</Name>
+    <ExternalID>D300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghd300.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-D830 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-D830</Name>
+    <ExternalID>D830</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghd830.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-D840 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-D840</Name>
+    <ExternalID>D840</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghd840.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-D900 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-D900</Name>
+    <ExternalID>D900</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghd900.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E250 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-E250</Name>
+    <ExternalID>E250</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe250.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E308 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-E308</Name>
+    <ExternalID>E308</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe308.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E317 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-E317</Name>
+    <ExternalID>E317</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe317.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E320 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-E320</Name>
+    <ExternalID>E320</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe320.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E370 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-E370</Name>
+    <ExternalID>E370</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe370.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E570v -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-E570v</Name>
+    <ExternalID>E570v</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe570v.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E810 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-E810</Name>
+    <ExternalID>E810</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe810.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E810C -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-E810C</Name>
+    <ExternalID>E810C</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe810c.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E830 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-E830</Name>
+    <ExternalID>E830</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe830.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-E900 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-E900</Name>
+    <ExternalID>E900</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghe900.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-F700V -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-F700V</Name>
+    <ExternalID>F700V</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghf700v.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-G600 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-G600</Name>
+    <ExternalID>G600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghg600.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, July"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-J600v -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-J600v</Name>
+    <ExternalID>SGH-J600v</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghj600v.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-L400v -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-L400v</Name>
+    <ExternalID>L400v</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghl400v.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-L760v -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-L760v</Name>
+    <ExternalID>L760v</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghl760v.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P107 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-P107</Name>
+    <ExternalID>P107</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp107.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P310 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-P310</Name>
+    <ExternalID>P310</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp310.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P700 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-P700</Name>
+    <ExternalID>P700</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp700.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P705 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-P705</Name>
+    <ExternalID>P705</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp705.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P716 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-P716</Name>
+    <ExternalID>P716</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp716.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-P735 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-P735</Name>
+    <ExternalID>P735</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghp735.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-T519 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-T519</Name>
+    <ExternalID>SGH-T519</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sght519.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-T529 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-T529</Name>
+    <ExternalID>T529</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sght529.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-T619 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-T619</Name>
+    <ExternalID>T619</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sght619.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-T629 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-T629</Name>
+    <ExternalID>T629</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sght629.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-V206 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-V206</Name>
+    <ExternalID>V206</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghv206.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X160 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X160</Name>
+    <ExternalID>X160</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx160.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X427 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X427</Name>
+    <ExternalID>X427</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx427.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X478 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X478</Name>
+    <ExternalID>X478</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx478.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X480 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X480</Name>
+    <ExternalID>X480</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx480.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X480C -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X480C</Name>
+    <ExternalID>X480C</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx480c.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X496 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X496</Name>
+    <ExternalID>SGH-X496</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx496.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X506 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X506</Name>
+    <ExternalID>X506</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx506.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X510 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X510</Name>
+    <ExternalID>X510</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx510.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X648 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X648</Name>
+    <ExternalID>X648</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx648.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X650 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X650</Name>
+    <ExternalID>X650</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx650.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X680 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X680</Name>
+    <ExternalID>X680</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx680.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X718 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X718</Name>
+    <ExternalID>X718</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx718.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-X820 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-X820</Name>
+    <ExternalID>X820</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghx820.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, May"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-Z100 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-Z100</Name>
+    <ExternalID>Z100</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghz100.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2003, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-Z150 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-Z150</Name>
+    <ExternalID>Z150</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghz150.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-Z400 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-Z400</Name>
+    <ExternalID>Z400</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghz400.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-Z400V -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-Z400V</Name>
+    <ExternalID>Z400V</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghz400v.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-Z520V -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-Z520V</Name>
+    <ExternalID>Z520V</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/z520.gif</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-Z540 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-Z540</Name>
+    <ExternalID>Z540</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghz540.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-Z560 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-Z560</Name>
+    <ExternalID>Z560</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghz560.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-Z720 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-Z720</Name>
+    <ExternalID>Z720</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghz720.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-Z720V -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-Z720V</Name>
+    <ExternalID>Z720V</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghz720v.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-ZV40 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-ZV40</Name>
+    <ExternalID>ZV40</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghzv40.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, July"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-ZV50 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-ZV50</Name>
+    <ExternalID>ZV50</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghzv50.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-ZV560 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-ZV560</Name>
+    <ExternalID>ZV560</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghzv560.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-i601 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-i601</Name>
+    <ExternalID>i601</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/sghi601.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

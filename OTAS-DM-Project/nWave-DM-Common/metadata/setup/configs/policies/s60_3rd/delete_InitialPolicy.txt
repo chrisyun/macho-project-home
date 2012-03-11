@@ -1,0 +1,7 @@
+<Package>
+	<Operation
+		action_id = "Remove"
+		target_id = "roles_mapping_policy_rule1"
+		remove_server_id = "*">
+	</Operation>
+</Package>

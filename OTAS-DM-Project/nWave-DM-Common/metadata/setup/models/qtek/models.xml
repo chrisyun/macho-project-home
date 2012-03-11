@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Qtek -->
+<Models>
+
+  <!--  Model: 1010 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>1010</Name>
+    <ExternalID>1010</ExternalID>
+    <Description>Produced by HTC. Functionally identical to O2 XDA.</Description>
+    <IconFile>./models/qtek/icons/1010.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2002 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2003"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 2020 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>2020</Name>
+    <ExternalID>2020</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate Pocket PC, O2 XDA II, T-Mobile MDA II and Orange SPV M1000. </Description>
+    <IconFile>./models/qtek/icons/2020.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 2020i -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>2020i</Name>
+    <ExternalID>2020i</ExternalID>
+    <Description>Produced by HTC. Functionally identical to O2 XDA IIi.</Description>
+    <IconFile>./models/qtek/icons/2020i.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7070 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>7070</Name>
+    <ExternalID>7070</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate Smartphone and Orange SPV E100.</Description>
+    <IconFile>./models/qtek/icons/7070.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2002 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8010 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>8010</Name>
+    <ExternalID>8010</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate SP3 and Orange SPV C500.</Description>
+    <IconFile>./models/qtek/icons/8010.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8020 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>8020</Name>
+    <ExternalID>8020</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate SP3i, O2 Xphone II and T-Mobile SDA.</Description>
+    <IconFile>./models/qtek/icons/8020.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8060 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>8060</Name>
+    <ExternalID>8060</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Orange SPV.</Description>
+    <IconFile>./models/qtek/icons/8060.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8080 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>8080</Name>
+    <ExternalID>8080</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate Smartphone2, O2 Xphone and Orange SPV E200.</Description>
+    <IconFile>./models/qtek/icons/8080.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8100 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>8100</Name>
+    <ExternalID>8100</ExternalID>
+    <Description>Produced by HTC. Functionally identical to O2 Xphone IIm and T-Mobile SDA Music. </Description>
+    <IconFile>./models/qtek/icons/8100.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Smartphone 2003 SE"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8300 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>8300</Name>
+    <ExternalID>8300</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate SP5m.</Description>
+    <IconFile>./models/qtek/icons/8300.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8310 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>8310</Name>
+    <ExternalID>8310</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate SP5 and O2 XDA Orion.</Description>
+    <IconFile>./models/qtek/icons/8310.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8500 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>8500</Name>
+    <ExternalID>8500</ExternalID>
+    <Description>Produced by HTC. </Description>
+    <IconFile>./models/qtek/icons/8500.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8600 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>8600</Name>
+    <ExternalID>8600</ExternalID>
+    <Description>Produced by HTC. Renamed to HTC MTeoR.</Description>
+    <IconFile>./models/qtek/icons/8600.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 9000 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>9000</Name>
+    <ExternalID>9000</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate JASJAR, O2 XDA Exec and T-Mobile MDA IV .</Description>
+    <IconFile>./models/qtek/icons/9000.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 9090 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>9090</Name>
+    <ExternalID>9090</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate PDA2k, O2 XDA IIs, T-Mobile MDA III and Orange SPV M2000.</Description>
+    <IconFile>./models/qtek/icons/9090.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 9100 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>9100</Name>
+    <ExternalID>9100</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate K-JAM, O2 XDA mini S, T-Mobile MDA Vario.</Description>
+    <IconFile>./models/qtek/icons/9100.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 9600 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>9600</Name>
+    <ExternalID>9600</ExternalID>
+    <Description>Produced by HTC. Renamed to HTC TyTN. Functionally identical to O2 XDA Trion.</Description>
+    <IconFile>./models/qtek/icons/9600.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: S100 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>S100</Name>
+    <ExternalID>S100</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate JAM, O2 XDA II mini and T-Mobile MDA Compact.</Description>
+    <IconFile>./models/qtek/icons/s100.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: S110 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>S110</Name>
+    <ExternalID>S110</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate JAM Black, T-Mobile MDA Compact II.</Description>
+    <IconFile>./models/qtek/icons/s110.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: S200 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>S200</Name>
+    <ExternalID>S200</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate JAMin, O2 XDA Neo.</Description>
+    <IconFile>./models/qtek/icons/s200.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Modelabs</Name>
+<ExternalID>Modelabs</ExternalID>
+<Description>Modelabs</Description>
+<Models filename="./models/modelabs/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

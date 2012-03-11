@@ -1,0 +1,3033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: SonyEricsson -->
+<Models>
+
+  <!--  Model: F500i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>F500i</Name>
+    <ExternalID>F500i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/f500i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: J200c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>J200c</Name>
+    <ExternalID>J200c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/j200c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: J200i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>J200i</Name>
+    <ExternalID>J200i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/j200i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: J210c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>J210c</Name>
+    <ExternalID>J210c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/j210c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: J210i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>J210i</Name>
+    <ExternalID>J210i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/j210i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: J230c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>J230c</Name>
+    <ExternalID>J230c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/j230c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: J230i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>J230i</Name>
+    <ExternalID>J230i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/j230i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: J300a -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>J300a</Name>
+    <ExternalID>J300a</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/j300a.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: J300c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>J300c</Name>
+    <ExternalID>J300c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/j300c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: J300i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>J300i</Name>
+    <ExternalID>J300i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/j300i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K500c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>K500c</Name>
+    <ExternalID>K500c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/k500c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K500i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>K500i</Name>
+    <ExternalID>K500i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/k500i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K508c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>K508c</Name>
+    <ExternalID>K508c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/k508c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K506c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>K506c</Name>
+    <ExternalID>K506c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/k506c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K700c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>K700c</Name>
+    <ExternalID>K700c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/k700c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K700i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>K700i</Name>
+    <ExternalID>K700i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/k700i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K750a -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>K750a</Name>
+    <ExternalID>K750a</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/k750a.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: S700a -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>S700a</Name>
+    <ExternalID>S700a</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/s700a.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: S700c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>S700c</Name>
+    <ExternalID>S700c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/s700c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: S700i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>S700i</Name>
+    <ExternalID>S700i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/s700i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T100 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T100</Name>
+    <ExternalID>T100</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t100.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T102 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T102</Name>
+    <ExternalID>T102</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t102.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T105 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T105</Name>
+    <ExternalID>T105</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t105.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T106 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T106</Name>
+    <ExternalID>T106</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t106.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T200 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T200</Name>
+    <ExternalID>T200</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t200.gif</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T202 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T202</Name>
+    <ExternalID>T202</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t202.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T226 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T226</Name>
+    <ExternalID>T226</ExternalID>
+    <Description>Sony Ericsson T230: T226 in North America</Description>
+    <IconFile>./models/sonyericsson/icons/t220.gif</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T226s -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T226s</Name>
+    <ExternalID>T226s</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t220.gif</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T230 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T230</Name>
+    <ExternalID>T230</ExternalID>
+    <Description>T226 in North America, T238 in Asia</Description>
+    <IconFile>./models/sonyericsson/icons/t230.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T237 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T237</Name>
+    <ExternalID>T237</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t237.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T238 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T238</Name>
+    <ExternalID>T238</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t238.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T250i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T250i</Name>
+    <ExternalID>T250i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t250i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T290I -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T290I</Name>
+    <ExternalID>T290I</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t290i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T290a -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T290a</Name>
+    <ExternalID>T290a</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t290a.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T290c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T290c</Name>
+    <ExternalID>T290c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t290c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T300 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T300</Name>
+    <ExternalID>T300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t300.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T306 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T306</Name>
+    <ExternalID>T306</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t306.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T316 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T316</Name>
+    <ExternalID>T316</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t316.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T600 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T600</Name>
+    <ExternalID>T600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t600.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T602 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T602</Name>
+    <ExternalID>T602</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t602.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T610 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T610</Name>
+    <ExternalID>T610</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t610.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T616 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T616</Name>
+    <ExternalID>T616</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t616.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T618 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T618</Name>
+    <ExternalID>T618</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t618.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T61z -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T61z</Name>
+    <ExternalID>T61z</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t61z.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T628 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T628</Name>
+    <ExternalID>T628</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t628.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T62u -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T62u</Name>
+    <ExternalID>T62u</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t62u.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T630 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T630</Name>
+    <ExternalID>T630</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t630.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T637 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T637</Name>
+    <ExternalID>T637</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t637.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T68I -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T68I</Name>
+    <ExternalID>T68I</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t68i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: T68m -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>T68m</Name>
+    <ExternalID>T68m</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/t68m.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V630i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>V630i</Name>
+    <ExternalID>V630i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/v630i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V800 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>V800</Name>
+    <ExternalID>V800</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/v800.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V800i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>V800i</Name>
+    <ExternalID>V800i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/v800i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W200i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>W200i</Name>
+    <ExternalID>W200i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/w200i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W710a -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>W710a</Name>
+    <ExternalID>W710a</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/w710a.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W850a -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>W850a</Name>
+    <ExternalID>W850a</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/w850a.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W888 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>W888</Name>
+    <ExternalID>W888</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/w888.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z1010 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z1010</Name>
+    <ExternalID>Z1010</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z1010.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC>35345600</TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z200 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z200</Name>
+    <ExternalID>Z200</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z200.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z208 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z208</Name>
+    <ExternalID>Z208</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z208.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z300c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z300c</Name>
+    <ExternalID>Z300c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z300c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z300i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z300i</Name>
+    <ExternalID>Z300i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z300i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z500a -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z500a</Name>
+    <ExternalID>Z500a</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z500a.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z500c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z500c</Name>
+    <ExternalID>Z500c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z500c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z500i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z500i</Name>
+    <ExternalID>Z500i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z500i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z520a -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z520a</Name>
+    <ExternalID>Z520a</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z520a.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z520c -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z520c</Name>
+    <ExternalID>Z520c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z520c.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z520i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z520i</Name>
+    <ExternalID>Z520i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z520i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z550a -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z550a</Name>
+    <ExternalID>Z550a</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z550a.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z600 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z600</Name>
+    <ExternalID>Z600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z600.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z608 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z608</Name>
+    <ExternalID>Z608</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z608.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Z800i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Z800i</Name>
+    <ExternalID>Z800i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/z800i.jpg</IconFile>
+
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.1.0.xml" />
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+
+</Models>
+</Setup>
+

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: O2 -->
+<Models>
+
+  <!--  Model: Cosmo -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>Cosmo</Name>
+    <ExternalID>Cosmo</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/cosmo.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Xphone II -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>Xphone II</Name>
+    <ExternalID>Xphone II</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 8020, i-mate SP3i and T-Mobile SDA.</Description>
+    <IconFile>./models/o2/icons/xphone2.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Smartphone 2003 SE OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Xphone IIm -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>Xphone IIm</Name>
+    <ExternalID>Xphone IIm</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 8100 and T-Mobile SDA Music.</Description>
+    <IconFile>./models/o2/icons/xphoneIIm.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Smartphone 2003 SE"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA phone -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA phone</Name>
+    <ExternalID>Xda phone</ExternalID>
+    <Description>Produced by HTC. Functionally identical to i-mate SP4m.</Description>
+    <IconFile>./models/o2/icons/xda_phone.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Atom -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Atom</Name>
+    <ExternalID>Xda Atom</ExternalID>
+    <Description>Produced by Quanta Computer. Functionally identical to HP iPAQ rw6815.</Description>
+    <IconFile>./models/o2/icons/xda_atom.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Atom Exec -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Atom Exec</Name>
+    <ExternalID>Xda Atom Exec</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_atom_exec.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Atom Life -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Atom Life</Name>
+    <ExternalID>Xda Atom Life</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_atom_life.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, January"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Graphite -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Graphite</Name>
+    <ExternalID>Xda Graphite</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_graphite.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, December"/>
+    </Specifications>
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+  </Model>
+    
+  <!--  Model: XDA II -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>XDA II</Name>
+    <ExternalID>Xda II</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 2020, i-mate Pocket PC, T-Mobile MDA II and Orange SPV M1000.</Description>
+    <IconFile>./models/o2/icons/xda_ii.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2003"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA II mini -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>XDA II mini</Name>
+    <ExternalID>XDA II mini</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek S100, i-mate JAM and T-Mobile MDA Compact.</Description>
+    <IconFile>./models/o2/icons/xda_ii_mini.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+
+  <!--  Model: XDA IIi -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>XDA IIi</Name>
+    <ExternalID>XDA IIi</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 2020i.</Description>
+    <IconFile>./models/o2/icons/xda_iii.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA IIs -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>XDA IIs</Name>
+    <ExternalID>XDA IIs</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 9090, i-mate PDA2k, T-Mobile MDA III and Orange SPV M2000.</Description>
+    <IconFile>./models/o2/icons/xda_iis.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Zinc -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Zinc</Name>
+    <ExternalID>Xda Zinc</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_zinc.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, December"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Stellar -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>XDA Stellar</Name>
+    <ExternalID>Xda Stellar</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_stellar.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Orbit -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Orbit</Name>
+    <ExternalID>Xda Orbit</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_orbit.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Orbit II -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>XDA Orbit II</Name>
+    <ExternalID>Xda Orbit II</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_orbit_ii.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Comet -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>XDA Comet</Name>
+    <ExternalID>Xda Comet</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_comet.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Nova -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>XDA Nova</Name>
+    <ExternalID>Xda Nova</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_nova.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Terra -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Terra</Name>
+    <ExternalID>Xda Terra</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_terra.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, March"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Argon -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Argon</Name>
+    <ExternalID>Xda Argon</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_argon.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, May"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Star -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>XDA Star</Name>
+    <ExternalID>Xda Star</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_star.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Flame -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Flame</Name>
+    <ExternalID>Xda Flame</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_flame.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Stealth -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Stealth</Name>
+    <ExternalID>Xda Stealth</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_stealth.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Trion -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Trion</Name>
+    <ExternalID>Xda Trion</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_trion.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, May"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Neo -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Neo</Name>
+    <ExternalID>Xda Neo</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_neo.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Orion -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Orion</Name>
+    <ExternalID>Xda Orion</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 8310 and i-mate SP5. Also known as O2 XDA IQ</Description>
+    <IconFile>./models/o2/icons/xda_orion.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, October"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: XDA Exec -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA Exec</Name>
+    <ExternalID>Xda Exec</ExternalID>
+    <Description></Description>
+    <IconFile>./models/o2/icons/xda_exec.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, August"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: XDA mini S -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>XDA mini S</Name>
+    <ExternalID>Xda mini S</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 9100, i-mate K-JAM, T-Mobile MDA Vario.</Description>
+    <IconFile>./models/o2/icons/xda_mini_s.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 3Q"/>
+    </Specifications>
+  </Model>
+  
+</Models>
+</Setup>

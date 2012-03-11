@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Motorola Linux Platform -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Motorola Linux Platform                                  -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_motorola_linux_ezx_3rd</ExternalID>
+    <Name>Motorola Linux EzX Platform 3rd</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF/>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/motorola/ota.templates.linux.xml" />
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Linux EzX"/>
+      <Specification category="general" name="developer.platform" value="Linux EzX 3rd"/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: ROKR E2 -->
+  <Model family="family_motorola_linux_ezx_3rd">
+    <Name>ROKR E2</Name>
+    <ExternalID>E2</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/e2.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, January"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

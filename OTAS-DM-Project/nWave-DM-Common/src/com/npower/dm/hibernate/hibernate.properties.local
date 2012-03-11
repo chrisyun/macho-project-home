@@ -1,0 +1,26 @@
+#
+#  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/hibernate.properties.local,v 1.2 2008/10/19 13:27:35 zhao Exp $
+#  * $Revision: 1.2 $
+#  * $Date: 2008/10/19 13:27:35 $
+#
+# ########################################################################
+#  1. Define Data source properties
+# ########################################################################
+#hibernate.dialect=org.hibernate.dialect.Oracle9Dialect
+hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+# connection.driver_class=com.p6spy.engine.spy.P6SpyDriver
+hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver
+#hibernate.connection.url=jdbc:oracle:thin:@10.4.60.3:1521:orcl
+#hibernate.connection.url=jdbc:oracle:thin:@192.168.0.4:1521:orcl
+hibernate.connection.url=jdbc:oracle:thin:@127.0.0.1:1521:orcl
+#hibernate.connection.username=chenlei
+#hibernate.connection.password=chenlei
+hibernate.connection.username=otasdm
+hibernate.connection.password=otasdm
+#hibernate.connection.username=zhaowx
+#hibernate.connection.password=zhaowx
+
+# ########################################################################
+#  2. Define Debug properties
+# ########################################################################
+hibernate.show_sql=true

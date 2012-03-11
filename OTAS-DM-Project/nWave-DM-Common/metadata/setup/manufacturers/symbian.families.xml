@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>Symbian</Name>
+      <ExternalID>Symbian</ExternalID>
+      <Description>Symbian Mobile Families</Description>
+      <Models filename="./models/symbian/models.families.xml"/>
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

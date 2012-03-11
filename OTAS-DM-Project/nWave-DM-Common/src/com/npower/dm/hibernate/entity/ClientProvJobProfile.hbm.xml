@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ClientProvJobProfile.hbm.xml,v 1.1 2008/02/18 10:10:22 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2008/02/18 10:10:22 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ClientProvJobProfile" table="NW_CP_JOB_PROFILE">
+        <id name="id" type="long">
+            <column name="ID" precision="20" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="targetDevice" class="com.npower.dm.hibernate.entity.ClientProvJobTargetDeviceEntity" fetch="select">
+            <column name="TARGET_DEVICE_ID" precision="20" scale="0" />
+        </many-to-one>
+        <property name="profileExternalId" type="string">
+            <column name="PROFILE_EXTERNAL_ID" not-null="true" />
+        </property>
+        <set name="parameters" inverse="true">
+            <key>
+                <column name="ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ClientProvJobProfileParameter" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE Script SYSTEM "../script_1_0.dtd" -->
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/command/test/test.binary.xml,v 1.6 2006/05/29 06:51:13 zhao Exp $
+  * $Revision: 1.6 $
+  * $Date: 2006/05/29 06:51:13 $
+-->
+
+<!-- ********** Test #8 - Large binary Object ********** -->
+<Script>
+  <Add>
+   <LeafNode>
+    <Target>./SCTSLrgObjBin</Target>
+    <!--  <Format>b64</Format> -->
+    <BinaryFile>D:/Zhao/MyWorkspace/nWave-DM-Common/metadata/command/test/binary.1.jpg</BinaryFile>
+   </LeafNode>
+  </Add>
+ 
+  <Replace>
+   <LeafNode>
+    <Target>./SCTSLrgObjBin</Target>
+    <BinaryFile>D:/Zhao/MyWorkspace/nWave-DM-Common/metadata/command/test/binary.1.jpg</BinaryFile>
+   </LeafNode>
+  </Replace>
+
+</Script>

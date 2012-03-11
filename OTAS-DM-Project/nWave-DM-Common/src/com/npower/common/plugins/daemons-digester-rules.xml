@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<digester-rules>
+  <object-create-rule pattern="daemons" classname="java.util.ArrayList" />
+  <pattern value="daemons/plug-in">
+    <object-create-rule attrname="className"/>
+    <set-property-rule pattern="set-property" name="property" value="value"/>
+    <set-next-rule methodname="add" />
+  </pattern>
+</digester-rules>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ServiceProvider.hbm.xml,v 1.1 2008/06/16 10:11:15 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2008/06/16 10:11:15 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ServiceProviderEntity" table="nW_DM_SERVICE_PROVIDER">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="SERVICE_PROVIDER_ID" precision="16" scale="0" />
+            <generator class="com.npower.dm.hibernate.entity.ServiceProviderIdentifierGenerator">
+            </generator>
+        </id>
+        <property name="externalID" type="string">
+            <column name="EXTERNAL_ID" length="200" not-null="true" unique="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" not-null="true" length="200"/>
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="4000" />
+        </property>
+        <set name="subscribers" inverse="true">
+            <key>
+                <column name="SERVICE_PROVIDER_ID" precision="20" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.SubscriberEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

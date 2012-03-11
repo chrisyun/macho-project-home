@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/models/motorola/ota.templates.linux.xml,v 1.1 2007/11/30 04:18:22 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2007/11/30 04:18:22 $
+-->
+<ProfileMetaData>
+
+    <CPTemplates>
+        <CPTemplate>
+          <ID>NAP</ID>
+          <Name>NAP</Name>
+          <Category>NAP</Category>
+          <Description>NAP template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/omacp/omacp.template.def.vm"/>
+        </CPTemplate>
+        <CPTemplate>
+          <ID>Proxy</ID>
+          <Name>Proxy</Name>
+          <Category>Proxy</Category>
+          <Description>Proxy template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/omacp/omacp.template.def.vm"/>
+        </CPTemplate>
+        <CPTemplate>
+          <ID>MMS</ID>
+          <Name>MMS</Name>
+          <Category>MMS</Category>
+          <Description>MMS template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/omacp/omacp.template.def.vm"/>
+        </CPTemplate>
+        <CPTemplate>
+          <ID>SyncDS</ID>
+          <Name>SyncDS</Name>
+          <Category>SyncDS</Category>
+          <Description>SyncDS template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/omacp/omacp.template.def.vm"/>
+        </CPTemplate>
+        <CPTemplate>
+          <ID>DM</ID>
+          <Name>DM</Name>
+          <Category>DM</Category>
+          <Description>DM template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/omacp/omacp.template.def.vm"/>
+        </CPTemplate>
+        <CPTemplate>
+          <ID>Email</ID>
+          <Name>Email</Name>
+          <Category>Email</Category>
+          <Description>Email template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/omacp/omacp.template.def.vm"/>
+        </CPTemplate>
+        <CPTemplate>
+          <ID>POC</ID>
+          <Name>POC</Name>
+          <Category>POC</Category>
+          <Description>POC template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/omacp/omacp.template.def.vm"/>
+        </CPTemplate>
+        <CPTemplate>
+          <ID>IMPS</ID>
+          <Name>IMPS</Name>
+          <Category>IMPS</Category>
+          <Description>IMPS template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/omacp/omacp.template.def.vm"/>
+        </CPTemplate>
+    </CPTemplates>
+
+</ProfileMetaData>

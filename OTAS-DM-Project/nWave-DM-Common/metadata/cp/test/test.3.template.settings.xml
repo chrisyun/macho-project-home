@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+##
+ -->
+<wap-provisioningdoc version="1.1">
+#foreach( $PxLogic in $profile.PXLogicalElements )
+    <characteristic type="PXLOGICAL">
+        <parm name="PROXY-ID" value="$!{PxLogic.proxyID}"/>
+        <parm name="NAME" value="$!{PxLogic.name}"/>
+        <parm name="STARTPAGE" value="$!{PxLogic.startPage}"/>
+        #foreach ( $PXAuthInfo in $PxLogic.PxAuthInfos )
+        <characteristic type="PXAUTHINFO">
+            <parm name="PXAUTH-TYPE" value="HTTP-BASIC"/>
+            <parm name="PXAUTH-ID" value="$!{PXAuthInfo.PxAuthID}"/>
+            <parm name="PXAUTH-PW" value="$!{PXAuthInfo.PxAuthPW}"/>
+        </characteristic>
+        #end
+        
+        #foreach ( $PxPhysical in $PxLogic.PxPhysicals )
+        <characteristic type="PXPHYSICAL">
+            <parm name="PHYSICAL-PROXY-ID" value="$!{PxPhysical.PhysicalProxyID}"/>
+            <parm name="PXADDR" value="$!{PxPhysical.PxAddr}"/>
+            <parm name="PXADDRTYPE" value="$!{PxPhysical.PxAddrType}"/>
+            #foreach ( $ToNapID in $PxPhysical.ToNAPIDs )
+            <parm name="TO-NAPID" value="$!{ToNapID}"/>
+            #end
+            #foreach ( $Port in $PxPhysical.Ports ) 
+            <characteristic type="PORT">
+                <parm name="PORTNBR" value="$!{Port.portNBR}"/>
+                #foreach ( $service in $Port.Services )
+                <parm name="SERVICE" value="$!{service}"/>
+                #end
+            </characteristic>
+            #end
+        </characteristic>
+        #end
+    </characteristic>
+#end
+
+#foreach ($NapDef in $profile.NapDefElements )
+    <characteristic type="NAPDEF">
+        <parm name="NAPID" value="$!{NapDef.NapID}"/>
+        #foreach ( $Bearer in $NapDef.Bearers)
+        <parm name="BEARER" value="$!{Bearer}"/>
+        #end
+        <parm name="NAME" value="$!{NapDef.Name}"/>
+        <parm name="NAP-ADDRESS" value="$!{NapDef.NapAddress}"/>
+        <parm name="NAP-ADDRTYPE" value="$!{NapDef.NapAddrType}"/>
+        #foreach ( $NapAuthInfo in $NapDef.NapAuthInfos)
+        <characteristic type="NAPAUTHINFO">
+            <parm name="AUTHTYPE" value="$!{NapAuthInfo.AuthType}"/>
+            <parm name="AUTHNAME" value="$!{NapAuthInfo.AuthName}"/>
+            <parm name="AUTHSECRET" value="$!{NapAuthInfo.AuthSecret}"/>
+        </characteristic>
+        #end
+    </characteristic>
+#end
+
+#foreach ( $Application in $profile.ApplicationElements ) 
+    <characteristic type="APPLICATION">
+        <parm name="APPID" value="$!{Application.AppID}"/>
+        <parm name="NAME" value="$!{Application.Name}"/>
+        #foreach ( $ToProxyID in $ToProxies)
+        <parm name="TO-PROXY" value="$!{ToProxyID}"/>
+        #end
+        #foreach ( $ToNAPID in $ToNAPIDs)
+        <parm name="TO-NAPID" value="$!{ToNAPID}"/>
+        #end
+        #foreach ( $Address in $Application.Addrs )
+        <characteristic type="APPADDR">
+            <parm name="ADDR" value="$!{Address}"/>
+        </characteristic>
+        #end
+        #foreach ( $AppAuthElement in $Application.AppAuthElements )
+        <characteristic type="APPAUTH">
+            <parm name="AAUTHNAME" value="$!{AppAuthElement.AppAuthName}"/>
+            <parm name="AAUTHSECRET" value="$!{AppAuthElement.AppAuthSecret}"/>
+        </characteristic>
+        #end
+        #foreach ( $ResourceElement in $Application.ResourceElements )
+        <characteristic type="RESOURCE">
+            <parm name="URI" value="$!{ResourceElement.Uri}"/>
+            <parm name="NAME" value="$!{ResourceElement.Name}"/>
+            <parm name="AACCEPT" value="$!{ResourceElement.AppAccept}"/>
+        </characteristic>
+        #end
+    </characteristic>
+#end
+
+</wap-provisioningdoc>

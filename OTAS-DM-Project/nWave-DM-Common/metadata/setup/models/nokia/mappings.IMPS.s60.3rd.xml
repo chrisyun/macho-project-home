@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/models/nokia/mappings.IMPS.s60.3rd.xml,v 1.1 2007/03/16 14:16:37 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2007/03/16 14:16:37 $
+-->
+<ProfileMetaData>
+
+    <ProfileMappings>
+    
+        <!-- IMPS Default Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>IMPS Default Template</TemplateName>
+            <RootNodePath>./IMPS/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>IMPS Server</AttributeName>
+                    <NodeRelativePath>PrefAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Username</AttributeName>
+                    <NodeRelativePath>AppAuth/${NodeName}/AAuthName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Password</AttributeName>
+                    <NodeRelativePath>AppAuth/${NodeName}/AAuthSecret</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Application ID</AttributeName>
+                    <NodeRelativePath>AppID</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>APLink</AttributeName>
+                    <NodeRelativePath>PrefConRef</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+    </ProfileMappings>
+
+</ProfileMetaData>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+ <!--  Carriers: China -->
+ <Carriers>
+
+  <!--  Carrier: China Mobile -->
+  <Carrier>
+    <Name>中国移动</Name>
+    <ExternalID>ChinaMobile</ExternalID>
+    <Country>CN</Country>
+    <PhoneNumberPolicy>139,138,137,136,135,134,159</PhoneNumberPolicy>
+    <SMSCProperties></SMSCProperties>
+    <AuthType>syncml:auth-basic</AuthType>
+    <NotificationType>wapPush</NotificationType>
+    <NotificationTimeout>3600</NotificationTimeout>
+    <NotificationMaxRetries>3</NotificationMaxRetries>
+    <!-- Ext ID of NAP Profile -->
+    <BootstrapNapProfile>China.Mobile.NAP.CMNET</BootstrapNapProfile>
+    <!-- Ext ID of DM Profile -->
+    <BootstrapDmProfile>China.Mobile.DM.OTAS.DM.Service</BootstrapDmProfile>
+    <BootstrapTimeout>3600</BootstrapTimeout>
+    <BootstrapMaxRetries>3</BootstrapMaxRetries>
+    <DefaultBootstrapPinType>USERPIN</DefaultBootstrapPinType>
+    <DefaultBootstrapUserPin>1234</DefaultBootstrapUserPin>    
+  </Carrier>
+  
+  <!--  Carrier: China Unicom -->
+  <Carrier>
+    <Name>中国联通</Name>
+    <ExternalID>ChinaUnicom</ExternalID>
+    <Country>CN</Country>
+    <BootstrapNAPProfile></BootstrapNAPProfile>
+    <PhoneNumberPolicy>130,131,132,133,155,156</PhoneNumberPolicy>
+    <SMSCProperties></SMSCProperties>
+    <AuthType>syncml:auth-basic</AuthType>
+    <NotificationType>wapPush</NotificationType>
+    <NotificationTimeout>3600</NotificationTimeout>
+    <NotificationMaxRetries>3</NotificationMaxRetries>
+    <!-- Ext ID of NAP Profile -->
+    <BootstrapNapProfile>China.Unicom.NAP.UNINET</BootstrapNapProfile>
+    <!-- Ext ID of DM Profile -->
+    <BootstrapDmProfile>China.Unicom.DM.OTAS.DM.Service</BootstrapDmProfile>
+    <BootstrapTimeout>3600</BootstrapTimeout>
+    <BootstrapMaxRetries>3</BootstrapMaxRetries>
+    <DefaultBootstrapPinType>USERPIN</DefaultBootstrapPinType>
+    <DefaultBootstrapUserPin>1234</DefaultBootstrapUserPin>    
+  </Carrier>  
+ </Carriers>
+</Setup>

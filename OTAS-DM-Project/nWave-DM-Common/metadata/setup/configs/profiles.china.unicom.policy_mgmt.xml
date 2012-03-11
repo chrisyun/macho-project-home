@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        PolicyMgmt Profiles 
+      ***********************************************************************************
+   -->
+  <!-- PolicyMgmt Profile: Initial Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Initial.Policy</ID>
+    <ProfileName>Initial Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Initial Policy for Nokia S60 3rd. </Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/InitialPolicy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Initial Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Delete.Initial.Policy</ID>
+    <ProfileName>Delete Initial Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Delete Initial Policy for Nokia S60 3rd. </Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/delete_InitialPolicy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Grant Terminal Security -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Terminal.Security.Right.Policy</ID>
+    <ProfileName>Terminal Security Right Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Grant Terminal Security Policy for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/TerminalSecurity_right_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Delete Terminal Security Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Delete.Terminal.Security.Right.Policy</ID>
+    <ProfileName>Delete Terminal Security Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Delete Terminal Security Policy for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/delete_TerminalSecurity_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Grant Customization Right Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Customization.Right.Policy</ID>
+    <ProfileName>Customization Right Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Grant Customization Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/customization_right_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Delete Customization Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Delete.Customization.Policy</ID>
+    <ProfileName>Delete Customization Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Delete Customization Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/delete_customization_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Application Management Right Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Application.Management.Right.Policy</ID>
+    <ProfileName>Application Management Right Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Grant Application Management Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/am_right_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Delete Application Management Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Delete.Application.Management.Policy</ID>
+    <ProfileName>Delete Application Management Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Delete Application Management Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/delete_am_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Access Point Right Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Access.Point.Right.Policy</ID>
+    <ProfileName>Access Point Right Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Grant Access Point Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/ap_right_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Access Point Right Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Delete.Access.Point.Right.Policy</ID>
+    <ProfileName>Delete Access Point Right Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Delete Access Point Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/delete_ap_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Create Alias Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Create.Alias.Policy</ID>
+    <ProfileName>Create Alias Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Grant Create Alias Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/create_AliasPolicy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Delete Alias Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Delete.Alias.Policy</ID>
+    <ProfileName>Delete Alias Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Delete Alias Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/deleteAliasPolicy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Data Sync Right Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Data.Sync.Right.Policy</ID>
+    <ProfileName>Data Sync Right Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Grant Data Sync Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/datasync_right_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- PolicyMgmt Profile: Delete Data Sync Right Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Delete.Data.Sync.Policy</ID>
+    <ProfileName>Delete Data Sync Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Delete Data Sync Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/delete_datasync_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- PolicyMgmt Profile: Device Management Right Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Device.Mgmt.Right.Policy</ID>
+    <ProfileName>Device Management Right Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Grant Device Management Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/Device_Management_right_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- PolicyMgmt Profile: Delete Device Management Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Delete.Device.Mgmt.Right.Policy</ID>
+    <ProfileName>Delete Device Management Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Delete Device Management Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/delete_Device_Management_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- PolicyMgmt Profile: Email Right Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Email.Right.Policy</ID>
+    <ProfileName>Email Right Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Grant Email Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/Emaill_right_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- PolicyMgmt Profile: Delete Email Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Delete.Email.Policy</ID>
+    <ProfileName>Delete Email Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Delete Email Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/delete_email_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- PolicyMgmt Profile: Instance Messaging Right Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Instance.Messaging.Right.Policy</ID>
+    <ProfileName>Instance Messaging Right Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Grant Instance Messaging Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/InstantMessaging_right_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- PolicyMgmt Profile: Delete Instance Messaging Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Delete.Instance.Messaging.Policy</ID>
+    <ProfileName>Delete Instance Messaging Right Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Delete Instance Messaging Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/delete_IM_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- PolicyMgmt Profile: Wireless LAN Right Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Wireless.LAN.Right.Policy</ID>
+    <ProfileName>Wireless LAN Right Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Grant Wireless LAN Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/WLAN_right_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- PolicyMgmt Profile: Delete Wireless LAN Policy -->
+  <Profile>
+    <ID>ChinaUnicom.PolicyMgmt.Delete.Wireless.LAN.Right.Policy</ID>
+    <ProfileName>Delete Wireless LAN Policy</ProfileName>
+    <Template>PolicyMgmt Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Delete Wireless LAN Right for Nokia S60 3rd</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Policy</Name>
+         <Value filename="./configs/policies/s60_3rd/delete_wlan_policy.txt"/>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+</Profiles>
+</Setup>

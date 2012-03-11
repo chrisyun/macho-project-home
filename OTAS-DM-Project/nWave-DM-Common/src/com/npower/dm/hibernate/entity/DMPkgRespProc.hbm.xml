@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DMPkgRespProc.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DMPkgRespProc" table="NW_DM_DM_PKG_RESP_PROC">
+        <id name="dmPkgRespProcId" type="long" unsaved-value="0">
+            <column name="DM_PKG_RESP_PROC_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="nwDmDmPkgSender" class="com.npower.dm.hibernate.entity.DMPackageSender" fetch="select">
+            <column name="PACKAGE_SENDER_ID" precision="16" scale="0" />
+        </many-to-one>
+        <set name="nwDmDmPkgHandlers" inverse="true">
+            <key>
+                <column name="COMMAND_RESPONSE_BUILDER_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DMPackageHandler" />
+        </set>
+        <set name="nwDmDmCmdResponses" inverse="true">
+            <key>
+                <column name="PKG_RESPONSE_PROC_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DMCMDResponse" />
+        </set>
+    </class>
+</hibernate-mapping>

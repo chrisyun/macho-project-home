@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/Device.hbm.xml,v 1.13 2008/03/09 05:39:03 zhao Exp $
+  * $Revision: 1.13 $
+  * $Date: 2008/03/09 05:39:03 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DeviceEntity" table="NW_DM_DEVICE">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="DEVICE_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        
+        <many-to-one name="cuurentImage" class="com.npower.dm.hibernate.entity.ImageEntity" fetch="select">
+            <column name="CURRENT_IMAGE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="update" class="com.npower.dm.hibernate.entity.UpdateEntity" fetch="select">
+            <column name="CURRENT_UPDATE" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="subscriber" class="com.npower.dm.hibernate.entity.SubscriberEntity" fetch="select">
+            <column name="SUBSCRIBER_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="model" class="com.npower.dm.hibernate.entity.ModelEntity" fetch="select">
+            <column name="MODEL_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="inProgressDeviceProvReq" class="com.npower.dm.hibernate.entity.DeviceProvisionRequestEntity" fetch="select">
+            <column name="IN_PROGRESS_DPR" precision="20" scale="0" />
+        </many-to-one>
+        <many-to-one name="prElement" class="com.npower.dm.hibernate.entity.Element4Provision" fetch="select">
+            <column name="PR_ELEMENT_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="deviceTree" class="com.npower.dm.hibernate.entity.DeviceTreeEntity" fetch="select">
+            <column name="DEVICE_TREE_ID" precision="16" scale="0" />
+        </many-to-one>
+        
+        <property name="externalId" type="string">
+            <column name="DEVICE_EXTERNAL_ID" length="30" not-null="true" unique="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="4000" />
+        </property>
+        <property name="SMSState" type="string">
+            <column name="SMS_STATE" length="50" not-null="true" />
+        </property>
+        <property name="isActivated" type="boolean">
+            <column name="IS_ACTIVATED" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="booted" type="boolean">
+            <column name="IS_BOOTED" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="bootstrapAskCounter" type="int">
+            <column name="BOOTSTAP_ASK_COUNTER" precision="4" scale="0" not-null="true" />
+        </property>
+        <property name="lastBootstrapTime" type="java.util.Date">
+            <column name="LAST_BOOTSTRAP_TIME" length="7"  not-null="false"/>
+        </property>
+        <property name="bootstrapPinType" type="string">
+            <column name="BOOTSTRAP_PIN_TYPE" length="100" not-null="false" />
+        </property>
+        <property name="bootstrapUserPin" type="string">
+            <column name="BOOTSTRAP_USER_PIN" length="100" not-null="false" />
+        </property>
+        <property name="noSMSRetries" type="long">
+            <column name="NO_SMS_RETRIES" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="SMSMessageId" type="string">
+            <column name="SMS_MESSAGE_ID" length="32" unique="true" />
+        </property>
+        <property name="timeSmsStateLastUpdated" type="java.util.Date">
+            <column name="TIME_SMS_STATE_LAST_UPDATED" length="7" />
+        </property>
+        <property name="daVersion" type="string">
+            <column name="DA_VERSION" length="6" not-null="true" />
+        </property>
+        <property name="uaVersion" type="string">
+            <column name="UA_VERSION" length="6" not-null="true" />
+        </property>
+        <property name="pedigreeId" type="string">
+            <column name="PEDIGREE_ID" length="15" />
+        </property>
+        
+        <property name="OMAServerNonce" type="string">
+            <column name="OMA_SERVER_NONCE" />
+        </property>
+        <property name="OMAClientNonce" type="string">
+            <column name="OMA_CLIENT_NONCE" />
+        </property>
+        <property name="OMAServerPassword" type="string">
+            <column name="OMA_SERVER_PASSWORD" />
+        </property>
+        <property name="OMAClientPassword" type="string">
+            <column name="OMA_CLIENT_PASSWORD" />
+        </property>
+        <property name="OMAClientUsername" type="string">
+            <column name="OMA_CLIENT_USERNAME" />
+        </property>
+        <property name="OMAClientAuthScheme" type="string">
+            <column name="OMA_CLIENT_AUTH_SCHEME" />
+        </property>
+        
+        <property name="guidCounter" type="long">
+            <column name="GUID_COUNTER" precision="5" scale="0" not-null="true" />
+        </property>
+        <property name="manufacturerName" type="string">
+            <column name="MANUFACTURER_NAME" not-null="true" />
+        </property>
+        <property name="modelName" type="string">
+            <column name="MODEL_NAME" not-null="true" />
+        </property>
+        <property name="manufacturerId" type="long">
+            <column name="MANUFACTURER_ID" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="subscriberPhoneNumber" type="string">
+            <column name="SUBSCRIBER_PHONE_NUMBER" length="32" not-null="true" />
+        </property>
+        <property name="subscriberPassword" type="string">
+            <column name="SUBSCRIBER_PASSWORD" length="32" not-null="true" />
+        </property>
+        <property name="subscriberState" type="string">
+            <column name="SUBSCRIBER_STATE" length="32" not-null="true" />
+        </property>
+        <property name="subscriberAskPermTrig" type="boolean">
+            <column name="SUBSCRIBER_ASK_PERM_TRIG" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="subscriberCarrierId" type="long">
+            <column name="SUBSCRIBER_CARRIER_ID" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="subscriberIsActivated" type="boolean">
+            <column name="SUBSCRIBER_IS_ACTIVATED" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="subscriberCarrierName" type="string">
+            <column name="SUBSCRIBER_CARRIER_NAME" length="32" not-null="true" />
+        </property>
+        
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="CREATED_TIME" length="7" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+
+        <set name="profileAssignments" inverse="true">
+            <key>
+                <column name="DEVICE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileAssignmentEntity" />
+        </set>
+        <set name="jobStates" inverse="true">
+            <key>
+                <column name="DEVICE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.JobState" />
+        </set>
+        <set name="jobAdapters" inverse="true">
+            <key>
+                <column name="DEVICE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.JobAdapter" />
+        </set>
+        <set name="provisionJobStatus" inverse="true">
+            <key>
+                <column name="DEVICE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DeviceProvisionRequestEntity" />
+        </set>
+        <set name="deviceLogs" inverse="true">
+            <key>
+                <column name="DEVICE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DeviceLogEntity" />
+        </set>
+        <set name="sessionAuths" inverse="true">
+            <key>
+                <column name="DEVICE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.SessionAuth" />
+        </set>
+        <set name="deviceGroupDevices" inverse="true">
+            <key>
+                <column name="DEVICE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.Device4DeviceGroup" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DMCMDResponse.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DMCMDResponse" table="NW_DM_DM_CMD_RESPONSE">
+        <id name="dmCmdResponseId" type="long" unsaved-value="0">
+            <column name="DM_CMD_RESPONSE_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="nwDmDmPkgRespProc" class="com.npower.dm.hibernate.entity.DMPkgRespProc" fetch="select">
+            <column name="PKG_RESPONSE_PROC_ID" precision="16" scale="0" />
+        </many-to-one>
+        <property name="responseType" type="string">
+            <column name="RESPONSE_TYPE" />
+        </property>
+        <property name="parentCommandResponseId" type="long">
+            <column name="PARENT_COMMAND_RESPONSE_ID" precision="16" scale="0" />
+        </property>
+        <property name="childIndex" type="long">
+            <column name="CHILD_INDEX" precision="16" scale="0" />
+        </property>
+        <property name="urlRef" type="string">
+            <column name="URL_REF" />
+        </property>
+        <property name="statuscode" type="long">
+            <column name="STATUSCODE" precision="16" scale="0" />
+        </property>
+        <property name="responseIndex" type="long">
+            <column name="RESPONSE_INDEX" precision="16" scale="0" />
+        </property>
+        <set name="nwDmDmResultsMaps" inverse="true">
+            <key>
+                <column name="DM_CMD_RESPONSE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DMResultsMap" />
+        </set>
+    </class>
+</hibernate-mapping>

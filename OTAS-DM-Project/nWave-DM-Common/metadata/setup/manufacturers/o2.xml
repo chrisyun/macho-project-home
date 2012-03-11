@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+ <Manufacturers>
+
+  <Manufacturer>
+   <Name>O2</Name>
+   <ExternalID>O2</ExternalID>
+   <Description>O2</Description>
+   <Models filename="./models/o2/models.microsoft.xml" />
+   <Models filename="./models/o2/models.other.xml" />
+  </Manufacturer>
+
+ </Manufacturers>
+</Setup>

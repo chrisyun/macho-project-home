@@ -1,0 +1,78 @@
+<!ELEMENT wap-provisioningdoc (characteristic*, characteristic-query*, nocharacteristic*, characteristic-query-error*, nocharacteristic-error*)>
+<!ATTLIST wap-provisioningdoc
+   version CDATA #IMPLIED
+>
+<!ELEMENT characteristic (characteristic*, parm*, noparm*, nocharacteristic*,characteristic-query*, parm-query*, characteristic-error*, parm-error*, noparm-error*, nocharacteristic-error*, characteristic-query-error*, parm-query-error*)>
+<!ATTLIST characteristic
+   type CDATA #REQUIRED 
+   translation CDATA #IMPLIED
+   mwid CDATA #IMPLIED
+>
+<!ELEMENT parm EMPTY>
+<!ATTLIST parm
+      name CDATA #REQUIRED
+   value CDATA #IMPLIED
+   datatype (integer|string|float|boolean|binary|multiplestring) #IMPLIED
+   semantic-type CDATA #IMPLIED
+      maxvalue CDATA #IMPLIED
+      minvalue CDATA #IMPLIED
+      maxlength CDATA #IMPLIED
+      options CDATA #IMPLIED
+      multiple (1|0) #IMPLIED
+   rw-access (1|2|3) "3"
+   label CDATA #IMPLIED
+   nooverwrite (1|0) "0"
+   access-role CDATA #IMPLIED 
+   translation CDATA #IMPLIED
+>
+<!ELEMENT nocharacteristic EMPTY >
+<!ATTLIST nocharacteristic
+      type CDATA #REQUIRED
+      mwid CDATA #IMPLIED
+>
+<!ELEMENT noparm EMPTY>
+<!ATTLIST noparm
+      name CDATA #REQUIRED
+   value CDATA #IMPLIED
+>
+<!ELEMENT characteristic-query EMPTY >
+<!ATTLIST characteristic-query
+      type CDATA #REQUIRED
+   recursive CDATA #IMPLIED
+   mwid CDATA #IMPLIED
+>
+<!ELEMENT parm-query EMPTY>
+<!ATTLIST parm-query
+      name CDATA #REQUIRED
+>
+<!ELEMENT characteristic-error EMPTY>
+<!ATTLIST characteristic-error
+      type CDATA #REQUIRED
+      desc CDATA #IMPLIED
+>
+<!ELEMENT parm-error EMPTY>
+<!ATTLIST parm-error
+      name CDATA #REQUIRED
+      value CDATA #IMPLIED
+      desc CDATA #IMPLIED
+>
+<!ELEMENT noparm-error EMPTY>
+<!ATTLIST noparm-error
+      name CDATA #REQUIRED
+   desc CDATA #IMPLIED
+>
+<!ELEMENT nocharacteristic-error EMPTY>
+<!ATTLIST nocharacteristic-error
+      type CDATA #REQUIRED
+      desc CDATA #IMPLIED
+>
+<!ELEMENT characteristic-query-error EMPTY>
+<!ATTLIST characteristic-query-error
+      type CDATA #REQUIRED
+      desc CDATA #IMPLIED
+>
+<!ELEMENT parm-query-error EMPTY>
+<!ATTLIST parm-query-error
+      name CDATA #REQUIRED
+      desc CDATA #IMPLIED
+>      

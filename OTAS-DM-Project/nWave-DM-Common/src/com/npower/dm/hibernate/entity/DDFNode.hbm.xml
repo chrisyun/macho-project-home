@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DDFNode.hbm.xml,v 1.6 2008/12/10 05:24:20 zhao Exp $
+  * $Revision: 1.6 $
+  * $Date: 2008/12/10 05:24:20 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DDFNodeEntity" table="NW_DM_DDF_NODE">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="DDF_NODE_ID" precision="16" scale="0" />
+            <generator class="native">
+              <param name="sequence">nwavedm_global_sequence</param>
+            </generator>
+        </id>
+        <many-to-one name="ddfTree" class="com.npower.dm.hibernate.entity.DDFTreeEntity" fetch="select">
+            <column name="DDF_TREE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="parentDDFNode" class="com.npower.dm.hibernate.entity.DDFNodeEntity" fetch="select">
+            <column name="PARENT_NODE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <property name="isLeafNode" type="boolean">
+            <column name="IS_LEAF_NODE" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="4000" />
+        </property>
+        <property name="title" type="string">
+            <column name="TITLE" />
+        </property>
+        <property name="format" type="string">
+            <column name="FORMAT" />
+        </property>
+        <property name="occurrence" type="string">
+            <column name="OCCURRENCE" />
+        </property>
+        <property name="maxOccurrence" type="long">
+            <column name="MAX_OCCURRENCE" precision="16" scale="0" />
+        </property>
+        <property name="isDynamic" type="boolean">
+            <column name="IS_DYNAMIC" precision="1" scale="0" />
+        </property>
+        <property name="ddfDocumentName" type="string">
+            <column name="DDF_DOCUMENT_NAME" />
+        </property>
+        <property name="value" type="string">
+            <column name="VALUE" />
+        </property>
+        <property name="defaultValue" type="string">
+            <column name="DEFAULT_VALUE" />
+        </property>
+        <set name="ddfNodeMIMETypes" inverse="true" lazy="false">
+            <key>
+                <column name="DDF_NODE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DDFNodeMIMETypeEntity" />
+        </set>
+        <set name="ddfNodeAccessTypes" inverse="true" lazy="false">
+            <key>
+                <column name="DDF_NODE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DDFNodeAccessTypeEntity" />
+        </set>
+        <set name="children" inverse="true" lazy="false">
+            <key>
+                <column name="PARENT_NODE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DDFNodeEntity" />
+        </set>
+        <set name="profileParameters" inverse="true">
+            <key>
+                <column name="LEAF_DDF_NODE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileParameterEntity" />
+        </set>
+        <set name="mappingNodeNames" inverse="true">
+            <key>
+                <column name="DDF_NODE_ID" precision="16" scale="0" not-null="true" unique="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileMappingNodeName" />
+        </set>
+        <set name="profileNodeMappings" inverse="true">
+            <key>
+                <column name="DDF_NODE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileNodeMappingEntity" />
+        </set>
+        <set name="profileMappings" inverse="true">
+            <key>
+                <column name="PROFILE_ROOT_NODE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileMappingEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

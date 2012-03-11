@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>Default</Name>
+      <ExternalID>Default</ExternalID>
+      <Description>Default Manufacturer</Description>
+      
+      <Models filename="models/omacp/default.xml"/>
+      
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

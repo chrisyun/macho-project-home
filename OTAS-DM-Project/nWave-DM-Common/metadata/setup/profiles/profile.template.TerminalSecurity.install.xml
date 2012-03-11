@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.template.TerminalSecurity.install.xml,v 1.5 2008/12/12 08:42:31 zhao Exp $
+  * $Revision: 1.5 $
+  * $Date: 2008/12/12 08:42:31 $
+-->
+<ProfileMetaData>
+    <AttributeTypes>
+        <!-- Using by Terminal Security Template -->
+        <AttributeType>
+          <Name>Terminal Security Lock Level</Name>
+          <Description>LockLevel tells whether the lock is enabled and what type of lock it is. Value: 0 / 1 (disabled / enabled)</Description>
+          <Values>
+            <Value>0</Value>
+            <Value>1</Value>
+          </Values>
+        </AttributeType>
+    </AttributeTypes>
+
+    <ProfileTemplates>
+        <!-- Lock Terminal Template -->
+        <ProfileTemplate>
+            <CategoryName>TerminalSecurity</CategoryName>
+            <Name>Lock Terminal Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>MaxAutoLockPeriod</Name>
+                    <DisplayName>Max Auto Lock Period</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>10</DefaultValue>
+                    <Description>Value is in minutes, 0 - 999. It is an integer that identifies the maximum autolock period that a user can select.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>AutoLockPeriod</Name>
+                    <DisplayName>Auto Lock Period</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>10</DefaultValue>
+                    <Description>Value is in minutes, 0 - 999. It is an integer that defines the AutoLockPeriod that a user can select. The value should be smaller than the MaxAutoLockPeriod value.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockLevel</Name>
+                    <DisplayName>Lock Level</DisplayName>
+                    <TypeName>Terminal Security Lock Level</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>1</DefaultValue>
+                    <Description>LockLevel tells whether the lock is enabled and what type of lock it is; for example, typically a user lock means that the user interface is locked until a proper lock code is given. Value: 0 / 1 (disabled / enabled)</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCode</Name>
+                    <DisplayName>Lock Code</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>LockCode is the character sequence that is needed to open a locked device.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeMinLength</Name>
+                    <DisplayName>Lock Code Min Length</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>4</DefaultValue>
+                    <Description>Depends on device. Range from 4 – 256. It is an integer that tells the minimum required length for the lock code.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeMaxLength</Name>
+                    <DisplayName>Lock Code Max Length</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>255</DefaultValue>
+                    <Description>Depends on device. Range from 4 – 256. It is an integer that tells the maximum required length for the lock code.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeRequireUpperAndLower</Name>
+                    <DisplayName>Lock Code Require Upper And Lower</DisplayName>
+                    <TypeName>Boolean</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>false</DefaultValue>
+                    <Description>LockCodeRequireUpperAndLower tells if both upper and lower case letters are required for the lock code.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeRequireCharsAndNumbers</Name>
+                    <DisplayName>Lock Code Require Chars And Numbers</DisplayName>
+                    <TypeName>Boolean</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>false</DefaultValue>
+                    <Description>LockCodeRequireCharsAndNumbers tells if both characters and numbers are required in the lock code.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeMaxRepeatedCharacters</Name>
+                    <DisplayName>Lock Code Require Chars And Numbers</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>0</DefaultValue>
+                    <Description>Value: 0 and 1-4. 0 = no restriction, 1-4 single character cannot be used more than x times. It tells the maximum amount of repeated characters.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeHistoryBuffer</Name>
+                    <DisplayName>Lock Code History Buffer</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>0</DefaultValue>
+                    <Description>Value: 0 and 1-65535. 0 = no restriction. It is used to check that the new lock code does not match the X previous lock codes.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeExpiration</Name>
+                    <DisplayName>Lock Code Expiration</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>0</DefaultValue>
+                    <Description>Value: 0 and 1-365. 0 = no restriction. 1-365 = days before expiry. It tells the time in days when the lock code expires.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeMinChangeTolerance</Name>
+                    <DisplayName>Lock Code Min Change Tolerance</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>0</DefaultValue>
+                    <Description>Value: 0-8 = the lock code can be changed only X times before LockCodeMinChangeInterval hours has passed. Default value is 0. It tells how many times the user can change the lock code before LockCodeMinChangeInterval hours has passed.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeMinChangeInterval</Name>
+                    <DisplayName>Lock Code Min Change Interval</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>0</DefaultValue>
+                    <Description>Value: 0 – 1000. 0 = no restriction, 1-1000 = time in hours. The user cannot change the password more than x times in hours.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeCheckSpecificStrings</Name>
+                    <DisplayName>Lock Code Check Specific Strings</DisplayName>
+                    <TypeName>Boolean</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>false</DefaultValue>
+                    <Description>Disable or enable whether to check specific lock code strings. If enabled the lock code may not be any
+of the strings defined by the LockCodeDisallowSpecific setting. Additionally if enabled the passcode
+may contain special strings given by LockCodeAllowSpecific property.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeDisallowSpecific</Name>
+                    <DisplayName>Lock Code Disallow Specific</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>LockCodeDisallowSpecific specifies the lock code strings that are not accepted. Multiple strings can be
+separated by ‘;’ mark.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeAllowSpecific</Name>
+                    <DisplayName>Lock Code Allow Specific</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>LockCodeAllowSpecific specifies special lock code strings that are accepted. Multiple strings can be
+separated by ‘;’ mark. This should be mainly used to negate certain previously disallowed lock code
+strings.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeMaxAttempts</Name>
+                    <DisplayName>Lock Code Max Attempts</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>0</DefaultValue>
+                    <Description>Value: 0 and 3 – 100. 0=no restriction, 3-100 = amount of consecutive lock code failures. It describes how many times the user can try to give the lock code. The device is
+“hard” reset if the user has consecutively failed more than LockCodeMaxAttempts.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockCodeConsecutiveNumbers</Name>
+                    <DisplayName>Lock Code Consecutive Numbers</DisplayName>
+                    <TypeName>Boolean</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>false</DefaultValue>
+                    <Description>LockCodeConsecutiveNumbers describes if the lock code may contain two consecutive numbers.</Description>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- Unlock Terminal Template -->
+        <ProfileTemplate>
+            <CategoryName>TerminalSecurity</CategoryName>
+            <Name>Unlock Terminal Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>MaxAutoLockPeriod</Name>
+                    <DisplayName>Max Auto Lock Period</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>0</DefaultValue>
+                    <Description>Value is in minutes, 0 - 999. It is an integer that identifies the maximum autolock period that a user can select.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>AutoLockPeriod</Name>
+                    <DisplayName>Auto Lock Period</DisplayName>
+                    <TypeName>Integer</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>0</DefaultValue>
+                    <Description>Value is in minutes, 0 - 999. It is an integer that defines the AutoLockPeriod that a user can select. The value should be smaller than the MaxAutoLockPeriod value.</Description>
+                </Attribute>
+
+                <Attribute>
+                    <Name>LockLevel</Name>
+                    <DisplayName>Lock Level</DisplayName>
+                    <TypeName>Terminal Security Lock Level</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>0</DefaultValue>
+                    <Description>LockLevel tells whether the lock is enabled and what type of lock it is; for example, typically a user lock means that the user interface is locked until a proper lock code is given. Value: 0 / 1 (disabled / enabled)</Description>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- Wipe Data Template -->
+        <ProfileTemplate>
+            <CategoryName>TerminalSecurity</CategoryName>
+            <Name>Wipe Data Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Description>Executing this task will wipe out device data, after which the device is completely reset; thus, all
+nonpermanent data is lost. Also, DM settings are lost (unless they were part of the factory
+configuration or permanent data). In DeviceWipe, inserted memory card data will also be completely
+erased.</Description>
+            <Attributes>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- Reboot Terminal Template -->
+        <ProfileTemplate>
+            <CategoryName>TerminalSecurity</CategoryName>
+            <Name>Reboot Terminal Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Description>This task causes the device to be restarted after the end of the current management
+session.</Description>
+            <Attributes>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- Get File System Template -->
+        <ProfileTemplate>
+            <CategoryName>TerminalSecurity</CategoryName>
+            <Name>Get File System Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Description>Executing this task will cause a file scan to be performed.</Description>
+            <Attributes>
+                <Attribute>
+                    <Name>Folder</Name>
+                    <DisplayName>Folder to scan</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>c:\ -r</DefaultValue>
+                    <Description>Folder to scan, for example c:\data, and –r option for recursive scan.</Description>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- Delete File Template -->
+        <ProfileTemplate>
+            <CategoryName>TerminalSecurity</CategoryName>
+            <Name>Delete File Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Description>Executing this task will cause a file or a empty folder to be deleted.</Description>
+            <Attributes>
+                <Attribute>
+                    <Name>FileOrFolder</Name>
+                    <DisplayName>File or Folder</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue></DefaultValue>
+                    <Description>Folder or File wanted to delete, for example c:\data.</Description>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- Start Application Template -->
+        <ProfileTemplate>
+            <CategoryName>TerminalSecurity</CategoryName>
+            <Name>Start Application Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Description>This Task causes the device to start an application. The data inside the 'Application' item
+data refers to the application inventory (Tree Node) or executable to be started.</Description>
+            <Attributes>
+                <Attribute>
+                    <Name>Application</Name>
+                    <DisplayName>Application</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue></DefaultValue>
+                    <Description>URI to application management or executable file. Refers to the application inventory (Tree Node) or executable to be started. Eg: "c:\sys\bin\bare.exe" or "./SCM/Inventory/Deployed/App1".</Description>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <!-- Stop Application Template -->
+        <ProfileTemplate>
+            <CategoryName>TerminalSecurity</CategoryName>
+            <Name>Stop Application Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Description>This Task causes the device to stop an application. The data inside the 'Application' item
+data refers to the application inventory (Tree Node) or executable to be started.</Description>
+            <Attributes>
+                <Attribute>
+                    <Name>Application</Name>
+                    <DisplayName>Application</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue></DefaultValue>
+                    <Description>URI to application management or executable file. Refers to the application inventory (Tree Node) or executable to be stopped. Eg: "c:\sys\bin\bare.exe" or "./SCM/Inventory/Deployed/App1".</Description>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+    </ProfileTemplates>
+</ProfileMetaData>

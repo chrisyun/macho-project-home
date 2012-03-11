@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ProfileNodeMapping.hbm.xml,v 1.5 2008/12/12 10:33:35 zhao Exp $
+  * $Revision: 1.5 $
+  * $Date: 2008/12/12 10:33:35 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ProfileNodeMappingEntity" table="NW_DM_PROFILE_NODE_MAPPING">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="NODE_MAPPING_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="profileMapping" class="com.npower.dm.hibernate.entity.ProfileMappingEntity" fetch="select">
+            <column name="PROFILE_MAPPING_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="profileAttribute" class="com.npower.dm.hibernate.entity.ProfileAttributeEntity" fetch="select">
+            <column name="ATTRIBUTE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="ddfNode" class="com.npower.dm.hibernate.entity.DDFNodeEntity" fetch="select">
+            <column name="DDF_NODE_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        
+        <!-- MappingType: Attribute, value ********************************************************* -->
+        <property name="mappingType" type="string">
+            <column name="MAPPING_TYPE" length="10" not-null="true" />
+        </property>
+        
+        <!-- value for MappingType: value  ********************************************************* -->
+        <property name="value" type="string">
+            <column name="VALUE" length="30" />
+        </property>
+        
+        <!-- value format for MappingType: valueFormat  ********************************************************* -->
+        <property name="valueFormat" type="string">
+            <column name="VALUE_FORMAT" length="30" not-null="false"/>
+        </property>
+        
+        <!-- value format for MappingType: defaultValueMimeType  ********************************************************* -->
+        <property name="defaultValueMimeType" type="string">
+            <column name="VALUE_DEFAULT_MIME_TYPE" length="200" not-null="false"/>
+        </property>
+        
+        <!-- command for MappingType: command  ********************************************************* -->
+        <property name="command" type="string">
+            <column name="COMMAND" length="30" not-null="false"/>
+        </property>
+        
+        <!-- Display Name for MappingType: value  ************************************************** -->
+        <property name="displayName" type="string">
+            <column name="DISPLAY_NAME" length="30" />
+        </property>
+
+        <!-- Relative Node Path  ********************************************************* -->
+        <property name="nodeRelativePath" type="string">
+            <column name="RELATIVE_NODE_PATH" length="400" />
+        </property>
+        
+        <!-- Reserved field, always NULL  ********************************************************** -->
+        <property name="categoryName" type="string">
+            <column name="CATEGORY_NAME" length="10" />
+        </property>
+        
+        <property name="paramIndex" type="long">
+            <column name="PARAM_INDEX" precision="16" scale="0" />
+        </property>
+        <set name="attribTranslationses" inverse="true">
+            <key>
+                <column name="NODE_MAPPING_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.AttributeTranslations" />
+        </set>
+    </class>
+</hibernate-mapping>

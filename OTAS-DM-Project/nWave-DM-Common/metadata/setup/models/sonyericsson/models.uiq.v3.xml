@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: UIQ 3.0 platform -->
+<Models>
+
+  <!--  Model: M600i -->
+  <Model family="family_symbian_uiq_3.0">
+    <Name>M600i</Name>
+    <ExternalID>M600i</ExternalID>
+    <Description>UIQ Version 3</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_m600i.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: M600c -->
+  <Model family="family_symbian_uiq_3.0">
+    <Name>M600c</Name>
+    <ExternalID>M600c</ExternalID>
+    <Description>UIQ Version 3</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_m600i.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: M608c -->
+  <Model family="family_symbian_uiq_3.0">
+    <Name>M608c</Name>
+    <ExternalID>M608c</ExternalID>
+    <Description>UIQ Version 3</Description>
+    <IconFile>./models/sonyericsson/icons/m600.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, May"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P990i -->
+  <Model family="family_symbian_uiq_3.0">
+    <Name>P990i</Name>
+    <ExternalID>P990i</ExternalID>
+    <Description>UIQ Version 3</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_p990.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P990c -->
+  <Model family="family_symbian_uiq_3.0">
+    <Name>P990c</Name>
+    <ExternalID>P990c</ExternalID>
+    <Description>UIQ Version 3</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_p990.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W950i -->
+  <Model family="family_symbian_uiq_3.0">
+    <Name>W950i</Name>
+    <ExternalID>W950i</ExternalID>
+    <Description>UIQ Version 3</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_w950.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W950c -->
+  <Model family="family_symbian_uiq_3.0">
+    <Name>W950c</Name>
+    <ExternalID>W950c</ExternalID>
+    <Description>UIQ Version 3</Description>
+    <IconFile>./models/sonyericsson/icons/sony_ericsson_w950.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W960i -->
+  <Model family="family_symbian_uiq_3.0">
+    <Name>W960i</Name>
+    <ExternalID>W960i</ExternalID>
+    <Description>UIQ Version 3</Description>
+    <IconFile>./models/sonyericsson/icons/w960.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P1i -->
+  <Model family="family_symbian_uiq_3.0">
+    <Name>P1i</Name>
+    <ExternalID>P1i</ExternalID>
+    <Description>UIQ Version 3</Description>
+    <IconFile>./models/sonyericsson/icons/p1i.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, May"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P1c -->
+  <Model family="family_symbian_uiq_3.0">
+    <Name>P1c</Name>
+    <ExternalID>P1c</ExternalID>
+    <Description>UIQ Version 3</Description>
+    <IconFile>./models/sonyericsson/icons/p1c.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, May"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

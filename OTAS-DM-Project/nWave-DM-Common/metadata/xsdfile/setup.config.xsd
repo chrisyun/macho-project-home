@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Setup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Manufacturers"/>
+        <xs:element minOccurs="0" ref="Models"/>
+        <xs:element minOccurs="0" ref="Carriers"/>
+        <xs:element minOccurs="0" ref="Profiles"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Manufacturers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Manufacturer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Manufacturer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:element ref="ExternalID"/>
+        <xs:element ref="Description"/>
+        <xs:element maxOccurs="unbounded" ref="Models"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Carriers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Carrier"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Profiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Profile"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Profile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ProfileName"/>
+        <xs:element ref="Template"/>
+        <xs:element ref="Carrier"/>
+        <xs:element ref="NAPProfile"/>
+        <xs:element ref="ProxyProfile"/>
+        <xs:element ref="Description"/>
+        <xs:element ref="Attributes"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Name" type="xs:string"/>
+  <xs:element name="ExternalID" type="xs:string"/>
+  <xs:element name="Description" type="xs:string"/>
+  <xs:element name="Models">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Model"/>
+      </xs:sequence>
+      <xs:attribute name="filename"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Model">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Name"/>
+        <xs:element minOccurs="0" ref="ExternalID"/>
+        <xs:element minOccurs="0" ref="Description"/>
+        <xs:element minOccurs="0" ref="DDFs"/>
+        <xs:element minOccurs="0" ref="ProfileMappings"/>
+        <xs:element minOccurs="0" ref="TACs"/>
+      </xs:sequence>
+      <xs:attribute name="filename" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DDFs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="DDF"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DDF">
+    <xs:complexType>
+      <xs:attribute name="filename" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProfileMappings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ProfileMapping"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProfileMapping">
+    <xs:complexType>
+      <xs:attribute name="filename" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TACs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="TAC"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TAC">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="Carrier">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ExternalID"/>
+        <xs:element ref="Name"/>
+        <xs:element ref="AuthType"/>
+        <xs:element ref="BootstrapNAPProfile"/>
+        <xs:element ref="BootstrapTimeout"/>
+        <xs:element ref="Country"/>
+        <xs:element ref="NotificationMaxRetries"/>
+        <xs:element ref="NotificationTimeout"/>
+        <xs:element ref="NotificationType"/>
+        <xs:element ref="PhoneNumberPolicy"/>
+        <xs:element ref="SMSCProperties"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthType" type="xs:NMTOKEN"/>
+  <xs:element name="BootstrapNAPProfile">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="ProfileName"/>
+        <xs:element ref="Template"/>
+        <xs:element ref="NAPProfile"/>
+        <xs:element ref="ProxyProfile"/>
+        <xs:element ref="Attributes"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BootstrapTimeout" type="xs:integer"/>
+  <xs:element name="Country" type="xs:NCName"/>
+  <xs:element name="NotificationMaxRetries" type="xs:integer"/>
+  <xs:element name="NotificationTimeout" type="xs:integer"/>
+  <xs:element name="NotificationType" type="xs:NCName"/>
+  <xs:element name="PhoneNumberPolicy" type="xs:string"/>
+  <xs:element name="SMSCProperties">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="ProfileName" type="xs:string"/>
+  <xs:element name="Template" type="xs:string"/>
+  <xs:element name="NAPProfile" type="xs:string"/>
+  <xs:element name="ProxyProfile" type="xs:string"/>
+  <xs:element name="Attributes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Attribute"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Attribute">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:element ref="Value"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Value">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:anyURI">
+          <xs:attribute name="filename" type="xs:anyURI"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

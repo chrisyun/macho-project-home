@@ -1,0 +1,68 @@
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/profile/profile_meta_1_0.dtd,v 1.5 2007/03/14 10:03:58 zhao Exp $
+  * $Revision: 1.5 $
+  * $Date: 2007/03/14 10:03:58 $
+-->
+
+<!ELEMENT ProfileMetaData (ProfileCategories?, AttributeTypes?, ProfileTemplates?, ProfileMappings?) >
+
+<!-- ProfileCategories DTD -->
+<!ELEMENT ProfileCategories (ProfileCategory)+ >
+<!ELEMENT ProfileCategory (Name, Description) >
+<!ELEMENT Name (#PCDATA) >
+<!ELEMENT Description (#PCDATA) >
+
+<!-- AttributeTypes DTD -->
+<!ELEMENT AttributeTypes (AttributeType)+ >
+<!ELEMENT AttributeType (Name, Description, Values) >
+<!ELEMENT Name (#PCDATA) >
+<!ELEMENT Description (#PCDATA) >
+<!ELEMENT Values (Value)+ >
+<!ELEMENT Value (#PCDATA) >
+
+<!-- ProfileTemplates DTD -->
+<!ELEMENT ProfileTemplates (ProfileTemplate)+ >
+<!ELEMENT ProfileTemplate (CategoryName, Name, NeedsNAP, NeedsProxy, Attributes) >
+<!ELEMENT CategoryName (#PCDATA) >
+<!ELEMENT Name (#PCDATA) >
+<!ELEMENT NeedsNAP (#PCDATA) >
+<!ELEMENT NeedsProxy (#PCDATA) >
+<!ELEMENT Attributes (Attribute)+ >
+<!ELEMENT Attribute (Name, DisplayName, TypeName, IsRequired, IsUserAttribute, IsMultiValued, DisplayValue, DefaultValue, Description) >
+<!ELEMENT Name (#PCDATA) >
+<!ELEMENT DisplayName (#PCDATA) >
+<!ELEMENT TypeName (#PCDATA) >
+<!ELEMENT IsRequired (#PCDATA) >
+<!ELEMENT IsUserAttribute (#PCDATA) >
+<!ELEMENT IsMultiValued (#PCDATA) >
+<!ELEMENT DisplayValue (#PCDATA) >
+<!ELEMENT DefaultValue (#PCDATA) >
+<!ELEMENT Description (#PCDATA) >
+
+
+<!-- ProfileMappings DTD -->
+<!ELEMENT ProfileMappings (ProfileMapping)+ >
+<!ELEMENT ProfileMapping (ManufacturerExternalId?, ModelName?, TemplateName, 
+                          RootNodePath, ShareRootNode, LinkedProfileCategoryName?, 
+                          NodeMappings, CanAssignToDevice) >
+<!ELEMENT ModelName (#PCDATA) >
+<!ELEMENT ManufacturerExternalId (#PCDATA) >
+<!ELEMENT TemplateName (#PCDATA) >
+<!ELEMENT RootNodePath (#PCDATA) >
+<!ELEMENT ShareRootNode (#PCDATA) >
+<!ELEMENT LinkedProfileCategoryName (#PCDATA) >
+<!ELEMENT CanAssignToDevice (#PCDATA) >
+
+<!ELEMENT NodeMappings (AttributeMapping | ValueMapping)+ >
+<!ELEMENT AttributeMapping (LinkedProfileCategoryName?, AttributeName, NodeRelativePath, ValueTranslations?) >
+<!ELEMENT ValueMapping (Name, Value, NodeRelativePath) >
+
+<!ELEMENT AttributeName (#PCDATA) >
+<!ELEMENT NodeRelativePath (#PCDATA) >
+<!ELEMENT Name (#PCDATA) >
+<!ELEMENT Value (#PCDATA) >
+
+<!ELEMENT ValueTranslations (ValueTranslation+) >
+<!ELEMENT ValueTranslation (Value, DeviceValue) >
+<!ELEMENT DeviceValue (#PCDATA) >
+

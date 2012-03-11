@@ -1,0 +1,145 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        Proxy Profiles 
+      ***********************************************************************************
+   -->
+  <!-- Proxy Profile: Sudan WAP -->
+  <Profile>
+    <ID>Sudan_WAP_Pxy</ID>
+    <ProfileName>Sudan WAP</ProfileName>
+    <Template>Proxy Default Template</Template>
+    <Carrier>SudanTel</Carrier>
+    <NAPProfile>Sudan WAP</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>Sudan WAP Prof</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://10.50.188.177/portal/index.html</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDRTYPE</Name>
+         <Value>IPV4</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDR</Name>
+         <Value>10.50.188.114</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXPHYSICAL PORTNBR</Name>
+         <Value>8080</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Proxy Profile: Sudan MMS -->
+  <Profile>
+    <ID>Sudan_MMS_Pxy</ID>
+    <ProfileName>Sudan MMS</ProfileName>
+    <Template>Proxy Default Template</Template>
+    <Carrier>SudanTel</Carrier>
+    <NAPProfile>Sudan MMS</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>Sudan MMS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://10.50.182.30:38090/was</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDRTYPE</Name>
+         <Value>IPV4</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDR</Name>
+         <Value>10.50.188.114</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXPHYSICAL PORTNBR</Name>
+         <Value>8080</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Proxy Profile: Sudan MTV -->
+  <Profile>
+    <ID>Sudan_MTV_Pxy</ID>
+    <ProfileName>Sudan MTV</ProfileName>
+    <Template>Proxy Default Template</Template>
+    <Carrier>SudanTel</Carrier>
+    <NAPProfile>Sudan MTV</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>Sudan MTV</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://10.50.188.177/portal/index.html</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDRTYPE</Name>
+         <Value>IPV4</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDR</Name>
+         <Value>10.50.188.114</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXPHYSICAL PORTNBR</Name>
+         <Value>8080</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Proxy Profile: Sudan POC -->
+  <Profile>
+    <ID>Sudan_POC_Pxy</ID>
+    <ProfileName>Sudan POC</ProfileName>
+    <Template>Proxy Default Template</Template>
+    <Carrier>SudanTel</Carrier>
+    <NAPProfile>Sudan POC</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>Sudan POC</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDRTYPE</Name>
+         <Value>IPV4</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDR</Name>
+         <Value>10.50.188.114</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXPHYSICAL PORTNBR</Name>
+         <Value>8080</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+</Profiles>
+</Setup>

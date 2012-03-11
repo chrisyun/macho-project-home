@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MgmtTree SYSTEM "http://www.openmobilealliance.org/tech/DTD/OMA-SyncML-DMDDFDTD-V1_1_2-20030508-D.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/ddf/test/test.basic.xml,v 1.4 2006/04/13 11:22:02 zhao Exp $
+  * $Revision: 1.4 $
+  * $Date: 2006/04/13 11:22:02 $
+-->
+<MgmtTree>
+		<!-- Test Case #1 -->
+	<VerDTD>1.1</VerDTD>
+	<Man>--Nokia--</Man>
+	<Mod>--The device model--</Mod>
+	<!-- Test Case #2 -->
+	<Node>
+		<NodeName>AP</NodeName>
+		<!--The Path element must be used here so that the AP object can be correctly positioned in the management tree.-->
+		<Path>./</Path>
+		<DFProperties>
+			<AccessType>
+				<Get/>
+				<Replace/>
+			</AccessType>
+      <DefaultValue>80</DefaultValue>
+			<Description>Access Point settings</Description>
+			<DFFormat>
+				<node/>
+			</DFFormat>
+			<Occurrence>
+				<One/>
+			</Occurrence>
+			<Scope>
+				<Permanent/>
+			</Scope>
+			<DFTitle>Access Point object</DFTitle>
+			<DFType>
+				<DDFName/>
+			</DFType>
+
+		</DFProperties>
+		
+		<!-- Test Case #3 -->
+		<Node>
+			<NodeName>NAPID_CHR</NodeName>
+			<DFProperties>
+				<AccessType>
+					<Get/>
+				</AccessType>
+				<DFFormat>
+					<chr/>
+				</DFFormat>
+				<Occurrence>
+					<One/>
+				</Occurrence>
+				<Scope>
+					<Dynamic/>
+				</Scope>
+				<DFTitle>Network Access Point ID</DFTitle>
+				<DFType>
+					<MIME>text/plain</MIME>
+				</DFType>
+			</DFProperties>
+			
+			<!-- Test Case #4 -->
+			<Node>
+				<NodeName>NAPID_B64</NodeName>
+				<DFProperties>
+					<AccessType>
+						<Copy/>
+						<Delete/>
+						<Exec/>
+						<Get/>
+					</AccessType>
+					<DFFormat>
+						<b64/>
+					</DFFormat>
+					<Occurrence>
+						<ZeroOrOne/>
+					</Occurrence>
+					<Scope>
+						<Dynamic/>
+					</Scope>
+					<DFTitle>Network Access Point ID</DFTitle>
+					<DFType>
+						<MIME>text/plain</MIME>
+					</DFType>
+				</DFProperties>
+
+				<!-- Test Case #5 -->
+				<Node>
+					<NodeName>NAPID_BIN</NodeName>
+					<DFProperties>
+						<AccessType>
+							<Get/>
+						</AccessType>
+						<DFFormat>
+							<bin/>
+						</DFFormat>
+						<Occurrence>
+							<ZeroOrMore/>
+						</Occurrence>
+						<Scope>
+							<Dynamic/>
+						</Scope>
+						<DFTitle>Network Access Point ID</DFTitle>
+						<DFType>
+							<MIME>text/plain</MIME>
+						</DFType>
+					</DFProperties>
+
+					<!-- Test Case #6 -->
+					<Node>
+						<NodeName>NAPID_BOOL</NodeName>
+						<DFProperties>
+							<AccessType>
+								<Get/>
+							</AccessType>
+							<DFFormat>
+								<bool/>
+							</DFFormat>
+							<Occurrence>
+								<OneOrMore/>
+							</Occurrence>
+							<Scope>
+								<Dynamic/>
+							</Scope>
+							<DFTitle>Network Access Point ID</DFTitle>
+							<DFType>
+								<MIME>text/plain</MIME>
+							</DFType>
+						</DFProperties>
+
+						<!-- Test Case #7 -->
+						<Node>
+							<NodeName>NAPID_INT</NodeName>
+							<DFProperties>
+								<AccessType>
+									<Get/>
+								</AccessType>
+								<DFFormat>
+									<int/>
+								</DFFormat>
+								<Occurrence>
+									<ZeroOrN/>
+								</Occurrence>
+								<Scope>
+									<Dynamic/>
+								</Scope>
+								<DFTitle>Network Access Point ID</DFTitle>
+								<DFType>
+									<MIME>text/plain</MIME>
+								</DFType>
+							</DFProperties>
+
+							<!-- Test Case #8 -->
+							<Node>
+								<NodeName>NAPID_XML</NodeName>
+								<DFProperties>
+									<AccessType>
+										<Get/>
+									</AccessType>
+									<DFFormat>
+										<xml/>
+									</DFFormat>
+									<Occurrence>
+										<OneOrN/>
+									</Occurrence>
+									<Scope>
+										<Dynamic/>
+									</Scope>
+									<DFTitle>Network Access Point ID</DFTitle>
+									<DFType>
+										<MIME>text/plain</MIME>
+									</DFType>
+								</DFProperties>
+
+								<!-- Test Case #9 -->
+								<Node>
+									<NodeName>NAPID_NULL</NodeName>
+									<DFProperties>
+										<AccessType>
+											<Add/>
+											<Copy/>
+											<Delete/>
+											<Exec/>
+											<Get/>
+											<Replace/>
+										</AccessType>
+										<DFFormat>
+											<null/>
+										</DFFormat>
+										<Occurrence>
+											<One/>
+										</Occurrence>
+										<Scope>
+											<Dynamic/>
+										</Scope>
+										<DFTitle>Network Access Point ID</DFTitle>
+										<DFType>
+											<MIME>text/xml</MIME>
+										</DFType>
+									</DFProperties>
+								</Node>
+	
+							</Node>
+
+						</Node>
+
+					</Node>
+	
+				</Node>
+
+			</Node>
+
+		</Node>
+
+		<!-- Test Case # -->
+	</Node>
+</MgmtTree>

@@ -1,0 +1,67 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        NAP Profiles 
+      ***********************************************************************************
+   -->
+
+  <!--  
+      ***********************************************************************************
+        Proxy Profiles 
+      ***********************************************************************************
+   -->
+
+  <!--  
+      ***********************************************************************************
+        SyncDS Profiles 
+      ***********************************************************************************
+   -->
+  <!-- SyncDS Profile: OTAS PIM -->
+  <Profile>
+    <ProfileName>OTAS PIM</ProfileName>
+    <Template>SyncDS Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile>CMWAP</ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>OTAS PIM</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Server Address</Name>
+         <Value>http://www.otas.mobi/otasds/ds</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Contacts DB</Name>
+         <Value>./card</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Contacts DB ContentType</Name>
+         <Value>text/x-vcard</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Calendar DB</Name>
+         <Value>./cal</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Calendar DB ContentType</Name>
+         <Value>text/x-vcalendar</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Notes DB</Name>
+         <Value>./notes</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Notes DB ContentType</Name>
+         <Value>text/plain</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+</Profiles>
+</Setup>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/SoftwareEntity.hbm.xml,v 1.9 2008/09/02 07:15:23 chenlei Exp $
+  * $Revision: 1.9 $
+  * $Date: 2008/09/02 07:15:23 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.SoftwareEntity" table="NW_DM_SOFTWARE">
+        <id name="id" type="long">
+            <column name="SOFTWARE_ID" precision="20" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="vendor" class="com.npower.dm.hibernate.entity.SoftwareVendorEntity" fetch="select">
+            <column name="VENDOR_ID" precision="20" scale="0" not-null="true"/>
+        </many-to-one>
+        <property name="externalId" type="string">
+            <column name="EXTERNAL_ID" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" not-null="true"/>
+        </property>
+        <property name="version" type="string">
+            <column name="VERSION" />
+        </property>
+        <property name="licenseType" type="string">
+            <column name="LICENSE_TYPE" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="CREATED_BY" length="30" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="CREATED_TIME" length="7" not-null="true"/>
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" not-null="true"/>
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="6" scale="0" not-null="true" />
+        </property>
+        <set name="packages" inverse="true" order-by="SOFTWARE_ID asc">
+            <key>
+                <column name="SOFTWARE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.SoftwarePackageEntity" />
+        </set>
+        <set name="softwareCategoriesSet" inverse="true" order-by="priority asc">
+            <key>
+                <column name="SOFTWARE_ID" precision="20" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.SoftwareCategoriesEntity" />
+        </set>
+        <set name="recommends" inverse="true" order-by="priority asc">
+            <key>
+                <column name="SOFTWARE_ID" precision="20" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.SoftwareRecommendEntity" />
+        </set>
+        <set name="screenShoots" inverse="true" order-by="SCREEN_SHOOT_ID asc">
+            <key>
+                <column name="SOFTWARE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.SoftwareScreenShotEntity" />
+        </set>
+        <set name="ratings" inverse="true" lazy="true">
+            <key>
+                <column name="SOFTWARE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.VSoftwareTrackLogAll" />
+        </set>
+        <set name="ratingsDaily" inverse="true" lazy="true">
+            <key>
+                <column name="SOFTWARE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.VSoftwareTrackLogDaily" />
+        </set>
+        <set name="ratingsWeekly" inverse="true" lazy="true">
+            <key>
+                <column name="SOFTWARE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.VSoftwareTrackLogWeekly" />
+        </set>
+        <set name="ratingsMonthly" inverse="true" lazy="true">
+            <key>
+                <column name="SOFTWARE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.VSoftwareTrackLogMonthly" />
+        </set>
+        <set name="ratingsYearly" inverse="true" lazy="true">
+            <key>
+                <column name="SOFTWARE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.VSoftwareTrackLogYearly" />
+        </set>
+        <set name="softwareEvaluate" inverse="true" lazy="true">
+            <key>
+                <column name="SOFTWARE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.SoftwareEvaluateEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

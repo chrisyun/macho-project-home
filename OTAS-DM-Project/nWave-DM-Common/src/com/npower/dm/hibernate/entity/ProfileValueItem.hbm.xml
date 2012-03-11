@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ProfileValueItem.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ProfileValueItem" table="NW_DM_PROFILE_VALUE_ITEM">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="PROFILE_VALUE_ITEM_ID" precision="20" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="profileAttribValue" class="com.npower.dm.hibernate.entity.ProfileAttributeValueEntity" fetch="select">
+            <column name="PROFILE_ATTRIBUTE_VALUE_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="itemDataKind" type="string">
+            <column name="ITEM_DATA_KIND" length="20" />
+        </property>
+        <property name="updateId" type="string">
+            <column name="UPDATE_ID" />
+        </property>
+        <property name="rawData" type="clob">
+            <column name="RAW_DATA" />
+        </property>
+        <property name="binaryData" type="blob">
+            <column name="BINARY_DATA" />
+        </property>
+        <property name="MFormat" type="string">
+            <column name="M_FORMAT" />
+        </property>
+        <property name="MType" type="string">
+            <column name="M_TYPE" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

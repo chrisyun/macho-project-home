@@ -1,0 +1,218 @@
+package com.npower.unicom.sync.model;
+
+import java.io.File;
+import java.util.Date;
+
+import com.npower.unicom.sync.FileSyncItemWriter;
+import com.npower.unicom.sync.SyncItem;
+
+public class FileSyncModelItemWriter extends FileSyncItemWriter {
+
+  public FileSyncModelItemWriter(File file, Date fromDate, Date toDate) {
+    super(file, fromDate, toDate);
+  }
+  
+  private void print(StringBuffer buf, String s) {
+    buf.append((s == null)?"":s);
+  }
+
+  @Override
+  protected String convertToString(SyncItem item) {
+    StringBuffer buf = new StringBuffer();
+    if (item == null) {
+      return buf.toString();
+    }
+    buf.append(item.getId());
+    buf.append('\t');
+    buf.append(item.getAction().getValue());
+    if (item instanceof SyncModelItem) {
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getCompanyName());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getTerminalModel());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getOs());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getOsVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getUaProf());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getGprs());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getWcdma());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getHsdpa());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getHsupa());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getWap());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getWapVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getBrowserVendor());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getBrowserVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getInternetBrowser());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getInternetBrowserVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getHttpDownload());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getOmaDownload());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getDmClient());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getDmVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getReleaseData());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getIsTouchScreen());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getIsColorScreen());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getScreenHeight());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getScreenWidth());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getColums());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getRows());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getGreyscale());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getGif());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getJpg());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getBmp());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getGif_animated());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getRingtoneDownload());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getRingtone_wav());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getRingtone_mp3());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getVideo());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getVideoFamat());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getBlueTooth());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getBlueToothVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getIrDa());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getUsb());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getUsbVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getFm());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getSpeaker());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getCamera());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getCameraResolutionpixels());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getCameraNum());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getCameraFlash());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getExtMemory());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getExtMemoryType());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getExtMemoryMaxSize());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getOmadrm());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getDrmVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getStreaming());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getStreamingH263());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getStreamingH264());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getStreamingACC());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getStreamingMP4());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getStreaming3gpp());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getStreamingWMV());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getStreamingMOV());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getSteamingRM8());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getStreamingRM10());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getJ2me());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getJ2meDownload());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getJarDLMaxSize());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getJavaCLDCVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getJavaMIDPVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getMms());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getMms3gpp());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getMmsWBXML());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getMmspng());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getMmsWML());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getMmsVideo());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getMmsMaxSize());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getMmsForward());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getFlash());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getVt());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getVtH263());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getVtH264());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getVtMP4());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getImap4());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getPop3());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getEmailClient());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getEmailClientName());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getEmailClientVersion());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getAgps());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getBarRecog());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getSip());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getPim());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getSycML());
+      buf.append('\t');
+      this.print(buf, ((SyncModelItem) item).getVideoSharing());
+      buf.append('\n');
+    }
+    return buf.toString();
+  }
+
+}

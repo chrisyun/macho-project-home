@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Wonu</Name>
+<ExternalID>Wonu</ExternalID>
+<Description>Wonu</Description>
+<Models filename="./models/wonu/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Haier</Name>
+<ExternalID>Haier</ExternalID>
+<Description>Haier</Description>
+<Models filename="./models/haier/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

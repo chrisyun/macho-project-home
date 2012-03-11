@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script>
+  <!-- Step #1 -->
+  <Sequence>
+    <Add>
+      <InteriorNode>
+        <Target>./SCM/Download/BareApp</Target>
+      </InteriorNode>
+    </Add>
+    <Add>
+      <LeafNode>
+        <Target>./SCM/Download/BareApp/Name</Target>
+        <Data format="chr">Bare</Data>
+      </LeafNode>
+    </Add>
+    <Add>
+      <LeafNode>
+        <Target>./SCM/Download/BareApp/Version</Target>
+        <Data format="chr">1.0</Data>
+      </LeafNode>
+    </Add>
+  </Sequence>
+  
+  <!-- Step #2 -->
+  <Replace>
+    <LeafNode>
+      <Target>./SCM/Download/BareApp/URI</Target>
+      <Data format="chr">http://www.otas.mobi:8080/download/msn_mobile_3.5_for_nokia_6120_544.sisx</Data>
+    </LeafNode>
+  </Replace>
+  
+  <Replace>
+    <LeafNode>
+      <Target>./SCM/Download/BareApp/InstallOpts</Target>
+      <Data format="chr" type="text/xml"><![CDATA[ <InstOpts>
+<StdOpt name="drive" value="!"/>
+<StdOpt name="lang" value="*" />
+<StdOpt name="upgrade" value="yes"/>
+<StdOpt name="kill" value="yes"/>
+<StdSymOpt name="pkginfo" value="yes"/>
+<StdSymOpt name="optionals" value="yes"/>
+<StdSymOpt name="ocsp" value="yes"/>
+<StdSymOpt name="capabilities" value="yes"/>
+<StdSymOpt name="untrusted" value="yes"/>
+<StdSymOpt name="ignoreocspwarn" value="yes"/>
+<StdSymOpt name="ignorewarn" value="yes"/>
+<StdSymOpt name="fileoverwrite" value="yes"/>
+</InstOpts> ]]></Data>
+    </LeafNode>
+  </Replace>
+  
+  <!-- Step #3 -->
+  <Exec>
+    <Item>
+      <Target>./SCM/Download/BareApp/Operations/DownloadAndInstallAndActivate</Target>
+    </Item>
+  </Exec>
+  
+</Script>
+

@@ -1,0 +1,699 @@
+<Setup>
+  <Name>OTAS DM Setup</Name>
+  <Description>OTAS DM Setup</Description>
+  <Properties>
+    <!-- Please customize the following properties -->
+    <!-- 
+        CAUTION: You can set following properties in dmsetup.properties file!!!
+    <Property key="jdbc.driver.class"
+              value="oracle.jdbc.driver.OracleDriver" />
+    <Property key="jdbc.url"
+              value="jdbc:oracle:thin:@[Database server]:1521:[Database SID]" />
+    <Property key="jdbc.autoCommit"
+              value="false" />
+    <Property key="jdbc.super.user"
+              value="[Database System User" />
+    <Property key="jdbc.super.password"
+              value="[Database System Password]" />
+    <Property key="jdbc.dmuser.user"
+              value="[DM Database User]" />
+    <Property key="jdbc.dmuser.password"
+              value="[DM Database Password]" />
+    -->
+              
+    <!-- Do not modified the following properties -->
+    <!-- Database connection parameters -->
+    <Property key="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+    <Property key="hibernate.connection.driver_class" value="${jdbc.driver.class}"/>
+    <Property key="hibernate.connection.url" value="${jdbc.url}"/>
+    <Property key="hibernate.connection.username" value="${jdbc.dmuser.user}"/>
+    <Property key="hibernate.connection.password" value="${jdbc.dmuser.password}"/>
+    
+    <!-- Model library parameters -->
+    <Property key="model.default.icon.file" value="./models/default_model.jpg"/>
+    
+  </Properties>
+ 
+  <Console class="com.npower.setup.console.ConsoleImpl"></Console>
+ 
+  <Tasks>
+    <!-- Step#1: Create table space -->
+    <Task class="com.npower.setup.task.JDBCTask" disable="true">
+      <Name>Create table space</Name>
+      <Description>Create table space</Description>
+      <Properties>
+        <Property key="jdbc.username" value="${jdbc.super.user}" />
+        <Property key="jdbc.password" value="${jdbc.super.password}" />
+        <Property key="jdbc.sql.files" value="./schema/oracle10g/drop_space.sql, 
+                                              ./schema/oracle10g/create_space.sql" />
+      </Properties>
+    </Task>
+    
+    <!-- Step#2: Create User and Grant Permissions -->
+    <Task class="com.npower.setup.task.JDBCTask" disable="true">
+      <Name>Create User and Grant Permissions</Name>
+      <Description>Create User and Grant Permissions</Description>
+      <Properties>
+        <Property key="jdbc.username" value="${jdbc.super.user}" />
+        <Property key="jdbc.password" value="${jdbc.super.password}" />
+        <Property key="jdbc.sql.files" value="./schema/oracle10g/drop_user.sql, 
+                                              ./schema/oracle10g/create_user.sql" />
+      </Properties>
+    </Task>
+    
+    <!-- Step#3: Create tables and initialize database -->
+    <Task class="com.npower.setup.task.JDBCTask" disable="true">
+      <Name>Create tables and initialize database</Name>
+      <Description>Create tables and initialize database</Description>
+      <Properties>
+        <Property key="jdbc.username" value="${jdbc.dmuser.user}" />
+        <Property key="jdbc.password" value="${jdbc.dmuser.password}" />
+        <Property key="jdbc.sql.files" value="./schema/oracle10g/create_sequence.sql, 
+                                              ./schema/oracle10g/create_tables.sql,
+                                              ./schema/oracle10g/init.data.sql,
+                                              ./schema/oracle10g/create_functions.sql,
+                                              ./schema/oracle10g/create_views.sql,
+                                              ./schema/oracle10g/create_view4reports.sql,
+                                              ./schema/oracle10g/create_lexer.sql" />
+      </Properties>
+    </Task>
+
+    <!-- Step#3: Import Profile Categories -->
+    <Task class="com.npower.dm.setup.task.ProfileCategoryTask" disable="false">
+      <Name>Import Profile Categories</Name>
+      <Description>Import Profile Categories.</Description>
+      <Properties>
+         <Property key="import.files" value="./profiles/profile.meta.install.xml,
+                                             ./profiles/profile.template.NAP.install.xml,
+                                             ./profiles/profile.template.PROXY.install.xml,
+                                             ./profiles/profile.template.MMS.install.xml,
+                                             ./profiles/profile.template.EMAIL.install.xml,
+                                             ./profiles/profile.template.SyncDS.install.xml,
+                                             ./profiles/profile.template.DM.install.xml,
+                                             ./profiles/profile.template.POC.install.xml,
+                                             ./profiles/profile.template.IMPS.install.xml,
+                                             ./profiles/profile.template.BOOKMARK.install.xml,
+                                             ./profiles/profile.template.PolicyMgmt.install.xml,
+                                             ./profiles/profile.template.TerminalSecurity.install.xml,
+                                             ./profiles/profile.template.Streaming.install.xml,
+                                             ./profiles/profile.template.Customization.install.xml
+                                             " />
+      </Properties>
+    </Task>
+
+    <!-- Step#4: Import Profile Attribute Types -->
+    <Task class="com.npower.dm.setup.task.AttributeTypeTask" disable="false">
+      <Name>Import Profile Attribute Types</Name>
+      <Description>Import Profile Attribute Types.</Description>
+      <Properties>
+         <Property key="import.files" value="./profiles/profile.meta.install.xml,
+                                             ./profiles/profile.template.NAP.install.xml,
+                                             ./profiles/profile.template.PROXY.install.xml,
+                                             ./profiles/profile.template.MMS.install.xml,
+                                             ./profiles/profile.template.EMAIL.install.xml,
+                                             ./profiles/profile.template.SyncDS.install.xml,
+                                             ./profiles/profile.template.DM.install.xml,
+                                             ./profiles/profile.template.POC.install.xml,
+                                             ./profiles/profile.template.IMPS.install.xml,
+                                             ./profiles/profile.template.BOOKMARK.install.xml,
+                                             ./profiles/profile.template.PolicyMgmt.install.xml,
+                                             ./profiles/profile.template.TerminalSecurity.install.xml,
+                                             ./profiles/profile.template.Streaming.install.xml,
+                                             ./profiles/profile.template.Customization.install.xml" />
+      </Properties>
+    </Task>
+
+    <!-- Step#5: Import Profile Templates -->
+    <Task class="com.npower.dm.setup.task.ProfileTemplateTask" disable="false">
+      <Name>Import Profile Templates</Name>
+      <Description>Import Profile Templates.</Description>
+      <Properties>
+         <Property key="import.files" value="./profiles/profile.meta.install.xml,
+                                             ./profiles/profile.template.NAP.install.xml,
+                                             ./profiles/profile.template.PROXY.install.xml,
+                                             ./profiles/profile.template.MMS.install.xml,
+                                             ./profiles/profile.template.EMAIL.install.xml,
+                                             ./profiles/profile.template.SyncDS.install.xml,
+                                             ./profiles/profile.template.DM.install.xml,
+                                             ./profiles/profile.template.POC.install.xml,
+                                             ./profiles/profile.template.IMPS.install.xml,
+                                             ./profiles/profile.template.BOOKMARK.install.xml,
+                                             ./profiles/profile.template.PolicyMgmt.install.xml,
+                                             ./profiles/profile.template.TerminalSecurity.install.xml,
+                                             ./profiles/profile.template.Streaming.install.xml,
+                                             ./profiles/profile.template.Customization.install.xml
+                                             " />
+      </Properties>
+    </Task>
+
+    <!-- Step#6: Import Manufacturers and Models -->
+    <Task disable="false">
+      <Name>Setup DM Data</Name>
+      <Description>Setup Data</Description>
+       
+      <!-- Import Manufacturers -->
+      <Task class="com.npower.dm.setup.task.ManufacturerTask" disable="false">
+        <Name>Import Manufacturers</Name>
+        <Description>Import Manufacturers</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/default.xml, 
+                                              ./manufacturers/alcatel.xml,
+                                              ./manufacturers/amoi.xml,
+                                              ./manufacturers/asus.xml,
+                                              ./manufacturers/benefon.xml,
+                                              ./manufacturers/benq_siemens.xml,
+                                              ./manufacturers/dopod.xml,
+                                              ./manufacturers/ericsson.xml,
+                                              ./manufacturers/eten.xml,
+                                              ./manufacturers/hisense.xml,
+                                              ./manufacturers/hp.xml,
+                                              ./manufacturers/htc.xml,
+                                              ./manufacturers/huawei.xml,
+                                              ./manufacturers/i_mate.xml,
+                                              ./manufacturers/kyocera.xml,
+                                              ./manufacturers/lenovo.xml,
+                                              ./manufacturers/lexibook.xml,
+                                              ./manufacturers/lg.xml,
+                                              ./manufacturers/mitsubishi.xml,
+                                              ./manufacturers/motorola.xml,
+                                              ./manufacturers/nec.xml,
+                                              ./manufacturers/nokia.xml, 
+                                              ./manufacturers/o2.xml,
+                                              ./manufacturers/okwap.xml, 
+                                              ./manufacturers/panasonic.xml, 
+                                              ./manufacturers/philips.xml, 
+                                              ./manufacturers/qtek.xml,
+                                              ./manufacturers/research_in_motion.xml, 
+                                              ./manufacturers/sagem.xml, 
+                                              ./manufacturers/samsung.xml,
+                                              ./manufacturers/sanyo.xml, 
+                                              ./manufacturers/sendo.xml, 
+                                              ./manufacturers/sharp.xml, 
+                                              ./manufacturers/siemens.xml,
+                                              ./manufacturers/sonyericsson.xml,
+                                              ./manufacturers/tcl.xml,
+                                              ./manufacturers/tatung.xml,
+                                              ./manufacturers/telit.xml,
+                                              ./manufacturers/toshiba.xml,
+                                              ./manufacturers/vkmobile.xml,
+                                              ./manufacturers/zte.xml
+                                              " />
+        </Properties>
+      </Task>
+       
+      <!-- Parsing Common Model Families -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Parsing Common Model Families</Name>
+        <Description>Parsing Common Model Families</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/omacp.families.xml,
+                                              ./manufacturers/microsoft.families.xml,
+                                              ./manufacturers/nokia.families.xml,
+                                              ./manufacturers/symbian.families.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Default Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Default Models</Name>
+        <Description>Import Default Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/default.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Alcatel Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Alcatel Models</Name>
+        <Description>Import Alcatel Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/alcatel.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Amoi Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Amoi Models</Name>
+        <Description>Import Amoi Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/amoi.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Asus Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Asus Models</Name>
+        <Description>Import Asus Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/asus.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Benefon Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Benefon Models</Name>
+        <Description>Import Benefon Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/benefon.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Benq-Siemens Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Benq-Siemens Models</Name>
+        <Description>Import Benq-Siemens Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/benq_siemens.xml,
+                                              ./manufacturers/benq_siemens.additional.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Dopod Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Dopod Models</Name>
+        <Description>Import Dopod Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/dopod.xml" />
+        </Properties>
+      </Task>
+
+      <!-- Import Ericsson Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Ericsson Models</Name>
+        <Description>Import Ericsson Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/ericsson.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import ETEN Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import ETEN Models</Name>
+        <Description>Import ETEN Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/eten.xml" />
+        </Properties>
+      </Task>
+
+      <!-- Import HiSense Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import HiSense Models</Name>
+        <Description>Import HiSense Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/hisense.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import HP Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import HP Models</Name>
+        <Description>Import HP Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/hp.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import HTC Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import HTC Models</Name>
+        <Description>Import HTC Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/htc.xml" />
+        </Properties>
+      </Task>
+
+      <!-- Import Huawei Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Huawei Models</Name>
+        <Description>Import Huawei Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/huawei.xml" />
+        </Properties>
+      </Task>
+
+      <!-- Import i-mate Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import i-mate Models</Name>
+        <Description>Import i-mate Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/i_mate.xml" />
+        </Properties>
+      </Task>
+
+      <!-- Import Kyocera Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Kyocera Models</Name>
+        <Description>Import Kyocera Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/kyocera.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Lenovo Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Lenovo Models</Name>
+        <Description>Import Lenovo Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/lenovo.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Lexibook Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Lexibook Models</Name>
+        <Description>Import Lexibook Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/lexibook.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import LG Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import LG Models</Name>
+        <Description>Import LG Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/lg.xml,
+                                              ./manufacturers/lg.additional.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Mitsubishi Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Mitsubishi Models</Name>
+        <Description>Import Mitsubishi Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/mitsubishi.xml,
+                                              ./manufacturers/mitsubishi.additional.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Motorola Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Motorola Models</Name>
+        <Description>Import Motorola Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/motorola.xml,
+                                              ./manufacturers/motorola.additional.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import NEC Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import NEC Models</Name>
+        <Description>Import NEC Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/nec.xml,
+                                              ./manufacturers/nec.additional.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Nokia Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Nokia Models</Name>
+        <Description>Import Nokia Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/nokia.xml,
+                                              ./manufacturers/nokia.additional.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import O2 Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import O2 Models</Name>
+        <Description>Import O2 Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/o2.xml" />
+        </Properties>
+      </Task>
+
+      <!-- Import Okwap Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Okwap Models</Name>
+        <Description>Import Okwap Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/okwap.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Panasonic Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Panasonic Models</Name>
+        <Description>Import Panasonic Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/panasonic.xml,
+                                              ./manufacturers/panasonic.additional.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Philips Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Philips Models</Name>
+        <Description>Import Philips Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/philips.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Qtek Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Qtek Models</Name>
+        <Description>Import Qtek Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/qtek.xml" />
+        </Properties>
+      </Task>
+
+      <!-- Import Research_In_Motion Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Research_In_Motion Models</Name>
+        <Description>Import Research_In_Motion Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/research_in_motion.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Sagem Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Sagem Models</Name>
+        <Description>Import Sagem Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/sagem.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Samsung Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Samsung Models</Name>
+        <Description>Import Samsung Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/samsung.xml,
+                                              ./manufacturers/samsung.additional.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Sanyo Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Sanyo Models</Name>
+        <Description>Import Sanyo Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/sanyo.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Sendo Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Sendo Models</Name>
+        <Description>Import Sendo Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/sendo.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Sharp Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Sharp Models</Name>
+        <Description>Import Sharp Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/sharp.xml,
+                                              ./manufacturers/sharp.additional.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Siemens Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Siemens Models</Name>
+        <Description>Import Siemens Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/siemens.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import SonyEricsson Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import SonyEricsson Models</Name>
+        <Description>Import SonyEricsson Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/sonyericsson.xml,
+                                              ./manufacturers/sonyericsson.additional.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import TCL Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import TCL Models</Name>
+        <Description>Import TCL Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/tcl.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Tatung Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Tatung Models</Name>
+        <Description>Import Tatung Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/tatung.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Telit Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Telit Models</Name>
+        <Description>Import Telit Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/telit.xml" />
+        </Properties>
+      </Task>
+       
+      <!-- Import Toshiba Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Toshiba Models</Name>
+        <Description>Import Toshiba Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/toshiba.xml,
+                                              ./manufacturers/toshiba.additional.xml" />
+        </Properties>
+      </Task>
+
+      <!-- Import Vkmobile Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import Vkmobile Models</Name>
+        <Description>Import Vkmobile Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/vkmobile.xml" />
+        </Properties>
+      </Task>
+
+      <!-- Import ZTE Models -->
+      <Task class="com.npower.dm.setup.task.ModelTask" disable="false">
+        <Name>Import ZTE Models</Name>
+        <Description>Import ZTE Models</Description>
+        <Properties>
+          <Property key="import.files" value="./manufacturers/zte.xml" />
+        </Properties>
+      </Task>
+
+      <!-- Import Model Characters -->
+      <Task class="com.npower.dm.setup.task.ModelFetchTask" disable="false">
+        <Name>Import Model Characters</Name>
+        <Description>Import Model Characters</Description>
+        <Properties>
+            <Property key="import.files" value="./models/characters.xml,
+                                                ./models/characters_s60_3rd_fp1.xml,      
+                                                ./models/characters_s60_3rd_fp2.xml" />        
+        </Properties>
+      </Task>
+    </Task>
+    
+    <!-- Step#7: Import Carriers -->
+    <Task class="com.npower.dm.setup.task.CarrierTask" disable="false">
+      <Name>Import Carriers</Name>
+      <Description>Import Carriers</Description>
+      <Properties>
+        <Property key="import.files" value="./carriers/carrier.china.xml,
+                                            ./carriers/carrier.sudan.xml" />
+      </Properties>
+    </Task>
+    
+    <!-- Step#8: Import Profiles -->
+    <Task class="com.npower.dm.setup.task.ProfileConfigTask" disable="false">
+      <Name>Import Profiles</Name>
+      <Description>Import Profiles</Description>
+      <Properties>
+        <Property key="import.files" value="./configs/profiles.china.mobile.cmnet.xml,
+                                            ./configs/profiles.china.mobile.cmwap.xml,
+                                            ./configs/profiles.china.mobile.mms.xml,
+                                            ./configs/profiles.china.mobile.syncds.xml,
+                                            ./configs/profiles.china.mobile.dm.xml,
+                                            ./configs/profiles.china.mobile.email.xml,
+                                            ./configs/profiles.china.mobile.policy_mgmt.xml,
+                                            ./configs/profiles.china.mobile.terminal_security.xml,
+                                            ./configs/profiles.china.unicom.uninet.xml,
+                                            ./configs/profiles.china.unicom.uniwap.xml,
+                                            ./configs/profiles.china.unicom.mms.xml,
+                                            ./configs/profiles.china.unicom.syncds.xml,
+                                            ./configs/profiles.china.unicom.dm.xml,
+                                            ./configs/profiles.china.unicom.email.xml,
+                                            ./configs/profiles.china.unicom.policy_mgmt.xml,
+                                            ./configs/profiles.china.unicom.terminal_security.xml,
+                                            ./configs/profiles.sudan.tel.net.xml,
+                                            ./configs/profiles.sudan.tel.wap.xml,
+                                            ./configs/profiles.sudan.tel.mms.xml,
+                                            ./configs/profiles.sudan.tel.streaming.xml,
+                                            ./configs/profiles.sudan.tel.dm.xml" />
+      </Properties>
+    </Task>
+    
+    <!-- Step#9: Import Bootstrap profiles for carrier -->
+    <Task class="com.npower.dm.setup.task.CarrierTask4BootstrapProfile" disable="false">
+      <Name>Import Bootstrap profiles for carriers</Name>
+      <Description>Import Bootstrap profiles for carriers</Description>
+      <Properties>
+        <Property key="import.files" value="./carriers/carrier.china.xml,
+                                            ./carriers/carrier.sudan.xml" />
+      </Properties>
+    </Task>
+    
+    <!-- Step#10: Create or Update Model Classifications -->
+    <Task disable="false">
+      <Name>Create or Update Model Classifications</Name>
+      <Description>Create or Update Model Classifications.</Description>
+      
+      <!-- Step#10.1: Create Model Classes for DM Families -->
+      <Task class="com.npower.dm.setup.task.ModelClassificationTask4DMFaimly" disable="false">
+        <Name>Create Model Classes for DM Families</Name>
+        <Description>Create Model Classes for DM Families.</Description>
+      </Task>
+
+      <!-- Step#10.2: Create Model Classes for Java MIDP -->
+      <Task class="com.npower.dm.setup.task.ModelClassificationTask4Midp" disable="false">
+        <Name>Create Model Classes for Java MIDP</Name>
+        <Description>Create Model Classes for Java MIDP.</Description>
+      </Task>
+
+      <!-- Step#10.3: Create Model Classes for Nokia S60 -->
+      <Task class="com.npower.dm.setup.task.ModelClassificationTask4NokiaS60" disable="false">
+        <Name>Create Model Classes for Nokia S60</Name>
+        <Description>Create Model Classes for Nokia S60.</Description>
+      </Task>
+
+      <!-- Step#10.4: Create Model Classes for Microsoft Windows Mobile -->
+      <Task class="com.npower.dm.setup.task.ModelClassificationTask4WindowsMobile" disable="false">
+        <Name>Create Model Classes for Microsoft Windows Mobile</Name>
+        <Description>Create Model Classes for Microsoft Windows Mobile.</Description>
+      </Task>
+
+    </Task>
+    
+    <!-- Step#11: Import TACs -->
+    <Task class="com.npower.dm.setup.task.TacTask" disable="false">
+      <Name>Import TACs</Name>
+      <Description>Import TACs</Description>
+      <Properties>
+        <!--Property key="import.files" value="./tac/www.STADTAUS.com_TW06_IMEI_csv_v0810.csv" -->
+        <Property key="import.files" value="./tac/www.STADTAUS.com_TW06_IMEI_csv_v0811.csv" />
+      </Properties>
+    </Task>
+    
+  </Tasks>
+</Setup>

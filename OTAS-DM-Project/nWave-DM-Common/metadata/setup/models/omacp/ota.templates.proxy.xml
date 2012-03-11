@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/models/omacp/ota.templates.proxy.xml,v 1.1 2007/12/25 09:01:33 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2007/12/25 09:01:33 $
+-->
+<ProfileMetaData>
+
+    <CPTemplates>
+        <CPTemplate>
+          <ID>Proxy</ID>
+          <Name>Proxy</Name>
+          <Category>Proxy</Category>
+          <Description>Proxy template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/omacp/omacp.template.def.vm"/>
+        </CPTemplate>
+    </CPTemplates>
+
+</ProfileMetaData>

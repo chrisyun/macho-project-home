@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: HTC -->
+<Models>
+
+  <!--  Model: 2125 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>2125</Name>
+    <ExternalID>2125</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/2125.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3100 (Star Trek) -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>3100 (Star Trek)</Name>
+    <ExternalID>3100 (Star Trek)</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/3100_star_trek.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8500 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>8500</Name>
+    <ExternalID>8500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/8500.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 9090 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>9090</Name>
+    <ExternalID>9090</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/9090.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Apache, PPC 6700 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Apache, PPC 6700</Name>
+    <ExternalID>Apache, PPC 6700</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/apache_ppc_6700.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Artist -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Artist</Name>
+    <ExternalID>Artist</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/artist.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Cingular 8125 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Cingular 8125</Name>
+    <ExternalID>Cingular 8125</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/cingular_8125.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Elf, P3450 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Elf, P3450</Name>
+    <ExternalID>Elf, P3450</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/elf_p3450.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Gemini -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Gemini</Name>
+    <ExternalID>Gemini</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/gemini.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Hermes -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Hermes</Name>
+    <ExternalID>Hermes</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/hermes.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: MDA Compact -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>MDA Compact</Name>
+    <ExternalID>MDA Compact</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/mda_compact.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P4550 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>P4550</Name>
+    <ExternalID>P4550</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/p4550.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Prophet -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Prophet</Name>
+    <ExternalID>Prophet</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/prophet.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: S411 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>S411</Name>
+    <ExternalID>S411</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/s411.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: S621 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>S621</Name>
+    <ExternalID>S621</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/s621.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SDA -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SDA</Name>
+    <ExternalID>SDA</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/sda.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Trinity -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Trinity</Name>
+    <ExternalID>Trinity</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/trinity.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Wizard -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>Wizard</Name>
+    <ExternalID>Wizard</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/wizard.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: XDA Trion -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>XDA Trion</Name>
+    <ExternalID>XDA Trion</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/xda_trion.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: v1605 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>v1605</Name>
+    <ExternalID>v1605</ExternalID>
+    <Description></Description>
+    <IconFile>./models/htc/icons/v1605.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

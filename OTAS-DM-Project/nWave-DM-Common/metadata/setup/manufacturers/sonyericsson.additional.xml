@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>SonyEricsson</Name>
+<ExternalID>SonyEricsson</ExternalID>
+<Description>SonyEricsson</Description>
+<Models filename="./models/sonyericsson/models.additional.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

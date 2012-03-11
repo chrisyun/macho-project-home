@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/SoftwareScreenShotEntity.hbm.xml,v 1.2 2008/01/28 10:30:12 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2008/01/28 10:30:12 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.SoftwareScreenShotEntity" table="NW_DM_SOFTWARE_SCREEN_SHOOT">
+        <id name="id" type="long">
+            <column name="SCREEN_SHOOT_ID" precision="20" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="binary" class="com.npower.dm.hibernate.entity.DMBinary" fetch="select">
+            <column name="BLOB_ID" precision="20" scale="0" />
+        </many-to-one>
+        <many-to-one name="software" class="com.npower.dm.hibernate.entity.SoftwareEntity" fetch="select">
+            <column name="SOFTWARE_ID" precision="20" scale="0" not-null="true"/>
+        </many-to-one>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" />
+        </property>
+    </class>
+</hibernate-mapping>

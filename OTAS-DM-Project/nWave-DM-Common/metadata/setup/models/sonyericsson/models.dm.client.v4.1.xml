@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  
+    Models: DM Client Version 4.1 
+    Based on SonyEricsson dg_device_mgmnt(v4)_r3a.pdf
+-->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: SonyEricsson DM Client Ver 4.1                           -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_sonyericsson_dm_ver_4.1</ExternalID>
+    <Name>SonyEricsson DM Client Ver 4.1</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.2</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- OMA FOTA stage -->    
+    <SupportedDownloadMethods>true</SupportedDownloadMethods>
+    <FirmwareVersionNode>./DevDetail/SwV</FirmwareVersionNode>
+    <FirmwareUpdateNode>./Fw/OTASDL/Update</FirmwareUpdateNode>
+    <FirmwareDownloadNode>./Fw/OTASDL/Download</FirmwareDownloadNode>
+    <FirmwareDownloadAndUpdateNode>./Fw/OTASDL/DownloadAndUpdate</FirmwareDownloadAndUpdateNode>
+    <FirmwareStatusNode>./Fw/OTASDL/State</FirmwareStatusNode>
+
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF filename="ddf/sonyericsson/sonyericsson_ddf_4.1.xml" />
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <!-- 
+    <ProfileMappings>
+      <ProfileMapping filename="models/sonyericsson/mappings.dm.client.v3.0.xml"/>
+    </ProfileMappings>
+     -->
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.4.0.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value="DM Client Version 4.1"/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: K660 -->
+  <Model family="family_sonyericsson_dm_ver_4.1">
+    <Name>K660</Name>
+    <ExternalID>K660</ExternalID>
+    <Description>DM Client Version 4.1</Description>
+    <IconFile>./models/sonyericsson/icons/k660.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W890i -->
+  <Model family="family_sonyericsson_dm_ver_4.1">
+    <Name>W890i</Name>
+    <ExternalID>W890i</ExternalID>
+    <Description>DM Client Version 4.1</Description>
+    <IconFile>./models/sonyericsson/icons/w890i.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: W890c -->
+  <Model family="family_sonyericsson_dm_ver_4.1">
+    <Name>W890c</Name>
+    <ExternalID>W890c</ExternalID>
+    <Description>DM Client Version 4.1</Description>
+    <IconFile>./models/sonyericsson/icons/w890c.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, November"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

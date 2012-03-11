@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Siemens</Name>
+<ExternalID>Siemens</ExternalID>
+<Description>Siemens</Description>
+<Models filename="./models/siemens/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

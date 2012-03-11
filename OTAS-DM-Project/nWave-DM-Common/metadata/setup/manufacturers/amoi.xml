@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>Amoi</Name>
+      <ExternalID>Amoi</ExternalID>
+      <Description>Amoi</Description>
+      <Models filename="./models/amoi/models.xml"/>
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

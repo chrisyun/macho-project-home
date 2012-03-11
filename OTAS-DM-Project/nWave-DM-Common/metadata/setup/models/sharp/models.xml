@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: 705SH -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>705SH</Name>
+    <ExternalID>705SH</ExternalID>
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/sharp/icons/sharp_705sh.jpg</IconFile>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+    </TACs>
+  </Model>
+  
+  <!--  Model: 810SH -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>810SH</Name>
+    <ExternalID>810SH</ExternalID>
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/sharp/icons/sharp_810sh.jpg</IconFile>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+    </TACs>
+  </Model>
+  
+  <!--  Model: 811SH -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>811SH</Name>
+    <ExternalID>811SH</ExternalID>
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/sharp/icons/sharp_811sh.jpg</IconFile>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+    </TACs>
+  </Model>
+  
+  <!--  Model: 904SH -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>904SH</Name>
+    <ExternalID>904SH</ExternalID>
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/sharp/icons/sharp_904sh.jpg</IconFile>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+    </TACs>
+  </Model>
+  
+  <!--  Model: 905SH -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>905SH</Name>
+    <ExternalID>905SH</ExternalID>
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/sharp/icons/sharp_905sh.jpg</IconFile>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+    </TACs>
+  </Model>
+  
+  <!--  Model: 910SH -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>910SH</Name>
+    <ExternalID>910SH</ExternalID>
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/sharp/icons/sharp_910sh.jpg</IconFile>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+    </TACs>
+  </Model>
+  
+  
+</Models>

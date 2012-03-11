@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: S60 3rd Edition  -->
+<Models>
+  <!--  Model: N77 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N77</Name>
+    <ExternalID>N77</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n77.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2007-02-12"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model:  E61i -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E61i</Name>
+    <ExternalID>E61i</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_e61.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2007-02-12"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E65 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E65</Name>
+    <ExternalID>E65</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_e65.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2007-02-12"/>
+    </Specifications>
+  </Model>
+
+
+  <!--  Model: N93i -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N93i</Name>
+    <ExternalID>N93i</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n93.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2007-01-08"/>
+    </Specifications>
+  </Model>
+
+
+  <!--  Model: N75 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N75</Name>
+    <ExternalID>N75</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n75.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2006-09-26"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N91 8GB -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N91 8GB</Name>
+    <ExternalID>N91-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n91.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2006-09-26"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E62 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E62</Name>
+    <ExternalID>E62</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_e62.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2006-08-16"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E50 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E50</Name>
+    <ExternalID>E50</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_e50.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2006-05-18"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5500 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>5500</Name>
+    <ExternalID>5500</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_5500_sport.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2006-05-10"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N93 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N93</Name>
+    <ExternalID>N93</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n93.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2006-04-25"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N73 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N73</Name>
+    <ExternalID>N73</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n73.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2006-04-25"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N71 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N71</Name>
+    <ExternalID>N71</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n71.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2005-11-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N80  -->
+  <!--  Tested in CNC DM project -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N80</Name>
+    <ExternalID>N80</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n80.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC>00440074</TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2005-11-02"/>
+    </Specifications>
+    
+    <!-- Firmwares -->
+    <Firmwares>
+      <Firmware>
+        <FromVersion>RM-92 V 4.0630.0.2-RD 501</FromVersion>
+        <ToVersion>RM-92 V 4.0630.0.2_A-RD 501</ToVersion>
+        <Status>1007</Status>
+        <Filename>firmwares/nokia/N80/RM-92_4.0630.0.2-RD_4.0630.0.2_A-RD_501_598.bin</Filename>
+      </Firmware>
+      <Firmware>
+        <FromVersion>RM-92 V 4.0630.0.2_A-RD 501</FromVersion>
+        <ToVersion>RM-92 V 4.0630.0.2-RD 501</ToVersion>
+        <Status>1007</Status>
+        <Filename>firmwares/nokia/N80/RM-92_4.0630.0.2_A-RD_4.0630.0.2-RD_501_382.bin</Filename>
+      </Firmware>
+    </Firmwares>
+  </Model>
+
+  <!--  Model: N92 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N92</Name>
+    <ExternalID>N92</ExternalID>
+    <IconFile>./models/nokia/icons/nokia_n92.jpg</IconFile>
+    <Description>S60 3rd Edition</Description>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2005-11-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E70 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E70</Name>
+    <ExternalID>E70</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_e70.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2005-10-12"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E60 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E60</Name>
+    <ExternalID>E60</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_e60.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2005-10-12"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E61 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E61</Name>
+    <ExternalID>E61</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_e61.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2005-10-12"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3250 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>3250</Name>
+    <ExternalID>3250</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_3250.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition (initial release)"/>
+      <Specification category="general" name="announced" value="2005-09-26"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N91 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N91</Name>
+    <ExternalID>N91</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n91.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2005-04-27"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E61-1 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E61-1</Name>
+    <ExternalID>E61-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/e61-1.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2005-10-12"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E70-1 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E70-1</Name>
+    <ExternalID>E70-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/e70-1.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2005-10-12"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N71-1 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N71-1</Name>
+    <ExternalID>N71-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/e71-1.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2005-11-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N80-1 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N80-1</Name>
+    <ExternalID>N80-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/n80-1.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2005-11-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N73-1 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N73-1</Name>
+    <ExternalID>N73-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/n73-1.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2006-04-25"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N93-1 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>N93-1</Name>
+    <ExternalID>N93-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/n93-1.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2006-04-25"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5500d -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>5500d</Name>
+    <ExternalID>5500d</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/5500d.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2006-05-10"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E50-1 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E50-1</Name>
+    <ExternalID>E50-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/e50-1.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2006-05-18"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E65-1 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E65-1</Name>
+    <ExternalID>E65-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/e65-1.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2007-02-12"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E61i-1 -->
+  <Model family="family_nokia_s60_3rd">
+    <Name>E61i-1</Name>
+    <ExternalID>E61i-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/e61i-1.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition"/>
+      <Specification category="general" name="announced" value="2007-02-12"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

@@ -1,0 +1,3870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="../xsl/DevInfo_tree.xsl"?>
+<!-- <!DOCTYPE MgmtTree SYSTEM "http://www.openmobilealliance.org/documents.html"> -->
+<!DOCTYPE MgmtTree SYSTEM "http://www.openmobilealliance.org/tech/DTD/OMA-SyncML-DMDDFDTD-V1_1_2-20030508-D.dtd">
+
+<MgmtTree>
+ <VerDTD>1.1.2</VerDTD>
+  
+ <Man>--Motorola--</Man>
+ <Mod>--V360,V360v,V557p,V557,V230,V235,V270,V280,V190,V191,V8,V8v,V8 iTunes,V6,V3i,V3--</Mod>
+
+   <Node>
+     <NodeName>SyncML</NodeName>
+     <Path>.</Path>
+     <DFProperties>
+       <AccessType>
+         <Get/>
+       </AccessType>
+       <Description>SyncML settings</Description>
+       <DFFormat>
+         <node/>
+       </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+       <Scope>
+         <Permanent/>
+       </Scope>
+       <DFTitle>SyncML node</DFTitle>
+       <DFType>
+         <DDFName></DDFName>
+       </DFType>
+       </DFProperties>
+   
+     <!---Start DMAcc -->
+     <Node>
+       <NodeName>DMAcc</NodeName>
+       <DFProperties>
+       <AccessType>
+         <Add/>
+         <Get/>
+       </AccessType>
+       <Description>DM Account</Description>
+       <DFFormat>
+         <node/>
+       </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+       <Scope>
+         <Permanent/>
+       </Scope>
+       <DFTitle>A collection of all SyncML DM accounts</DFTitle>
+       <DFType>
+         <DDFName></DDFName>
+       </DFType>
+       </DFProperties>
+  
+       <Node>
+         <!-- The GUID and all nodes under it are Specific to the Scts tool -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+             Placeholder for DM Account
+             A maximum of 3 DM accounts is supported.
+             Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>A Unique ID of each DM Account</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+  
+         <Node>
+           <NodeName>Addr</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               Maximum String Length supported for 
+               this node value is 256 characters.
+               Ex :"http://121.121.121.121/ABC"
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Host address of the SyncML server, IP or URL
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+  
+         <Node>
+           <NodeName>AddrType</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               Maximum String Length supported for this node name is 3 characters.
+               The possible values are : "1" for HTTP ; "2" for WSP ; "3" OBEX
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               The type of address specified in the Addr node
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+  
+         <Node>
+           <NodeName>PortNbr</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <DefaultValue>80</DefaultValue>
+             <Description>
+               The value has to be between 1 and 65535
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <ZeroOrOne/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>SyncML Server port</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+         
+         <Node>
+           <!-- If ConRef is not Provided use the default web session server -->
+           <NodeName>ConRef</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               Maximum String Length supported for this node value is 32 characters.
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Logical reference to a connectivity node
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+         <Node>
+           <NodeName>ServerId</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+             </AccessType>
+             <Description>
+               Maximum String Length supported for this node value is 32 characters.
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>The "ServerId" value for this server</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+  
+         <Node>
+           <NodeName>ServerPW</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               Maximum String Length supported for this node value is 32 characters.
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               The password or secret that the server will use to authenticate
+               itself to the client
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+  
+         <Node>
+           <NodeName>ServerNonce</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               Maximum String Length supported for this node value is 32 characters.
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               The next nonce that the server will use to authenticate itself
+               to the client
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>    
+  
+         <Node>
+           <NodeName>UserName</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               Maximum String Length supported for this node value is 32 characters.
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>The username of the device (or user)</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+  
+         <Node>
+           <NodeName>ClientPW</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               Maximum String Length supported for this node value is 32 characters.
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               The password or secret that the client will use to 
+               authenticate itself to the server
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+  
+         <Node>
+           <NodeName>ClientNonce</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               Maximum String Length supported for this node value is 32 characters.
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               The next nonce that the client will use to authenticate itself 
+               to the server
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+
+         <Node>
+           <NodeName>AuthPref</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               Maximum String Length supported for this node value is 32 characters.
+               The value has to be 
+               "syncml:auth-basic" or 
+               "syncml:auth-MAC"   or 
+               "syncml:auth-md5"
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <ZeroOrOne/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>The authentication type that this server prefers                 
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+           <AccessType>
+             <Add/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+             Maximum String Length supported for this node value is 32 characters.
+           </Description>
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>Displayable name for the SyncML DM settings
+           </DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+           </DFProperties>
+         </Node>
+       </Node>
+     </Node>
+     <!-- END DMAcc Node / Start Con node -->  
+
+     <Node>
+       <NodeName>Con</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Add/> 
+           <Get/>
+           <Replace/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+         <Occurrence>
+           <One/>
+         </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>
+           A collection of connectivity nodes for SyncML DM
+         </DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+        <!-- GUID node, Everything underthis node is not needed 
+        if you do not have a conref node in under DMAcc-->
+       <Node> 
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/> 
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+             It can support 3 Connectivity nodes    
+             Maximum String Length supported for this node value is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>
+             A Unique ID of each Connectivity Object
+           </DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <!-- Ext Node Start -->
+         <Node>
+           <NodeName>Ext</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/> 
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <DFFormat>
+               <node/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFType>
+               <DDFName></DDFName>
+             </DFType>
+           </DFProperties>
+  
+           <Node>
+             <NodeName>Service</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Get/>
+                 <Replace/>
+               </AccessType>
+               <Description>The values should be
+                "1" -WAP
+                "2" -WAP_CONNECTIONLESS
+                "3" -WAP_SECURE
+                "4" -WAP_SECURE_CONNECTIONLESS
+                "5" -HTTP
+                "6" -HTTP_SECURE
+               <!-- Revisit description if other service types 
+                 need to be supported.-->         
+               </Description>
+               <DFFormat>
+                 <chr/>
+               </DFFormat>
+               <Occurrence>
+                 <One/>
+               </Occurrence>
+               <Scope>
+                 <Dynamic/>
+               </Scope>
+               <DFTitle>Ext setting holder</DFTitle>
+               <DFType>
+                 <MIME>text/plain</MIME>
+               </DFType>
+             </DFProperties>
+           </Node>
+           
+           <Node>
+             <NodeName>DNS</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Get/>
+                 <Replace/>
+               </AccessType>
+               <Description>       
+               </Description>
+               <DFFormat>
+                 <chr/>
+               </DFFormat>
+               <Occurrence>
+                 <One/>
+               </Occurrence>
+               <Scope>
+                 <Dynamic/>
+               </Scope>
+               <DFTitle>Domain name Server IP</DFTitle>
+               <DFType>
+                 <MIME>text/plain</MIME>
+               </DFType>
+             </DFProperties>
+           </Node>
+
+           
+       
+         </Node> 
+         <!-- Ext Node End -->
+  
+         <Node>
+           <NodeName>NAP</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/> 
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               The network access point used to connect to a server.
+             </Description>
+             <DFFormat>
+               <node/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFType>
+               <DDFName></DDFName>
+             </DFType>
+           </DFProperties>
+  
+           <Node>
+             <NodeName>Bearer</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Get/>
+                 <Replace/>
+               </AccessType>
+               <Description>
+                 Current Implementation supports CSD and GPRS.  
+                 Value is "10" for CSD and "11" for GPRS 
+               </Description>
+               <DFFormat>
+                 <chr/>
+               </DFFormat>
+               <Occurrence>
+                 <One/>
+               </Occurrence>
+               <Scope>
+                 <Dynamic/>
+               </Scope>
+               <DFTitle>The specified bearer to use</DFTitle>
+               <DFType>
+                 <MIME>text/plain</MIME>
+               </DFType>
+             </DFProperties>
+           </Node>
+  
+           <Node>
+             <NodeName>AddrType</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Get/>
+                 <Replace/>
+               </AccessType>
+               <Description>
+                 The current implementation supports "IPV4" only.
+                 The value has to be a string representation.
+                 The value has to be "1" for IPV4.
+               </Description>
+               <DFFormat>
+                 <chr/>
+               </DFFormat>
+               <Occurrence>
+                 <One/>
+               </Occurrence>
+               <Scope>
+                 <Dynamic/>
+               </Scope>
+               <DFTitle>The type of address specified</DFTitle>
+               <DFType>
+                 <MIME>text/plain</MIME>
+               </DFType>
+             </DFProperties>
+           </Node>
+  
+           <Node>
+             <NodeName>Addr</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Get/>
+                 <Replace/>
+               </AccessType>
+               <Description>
+                 If the Bearer is CSD the Maximum
+                 String length of this data has to be 32 characters.
+                 Ex for CSD Addr:  "123-555-1212"
+                 If the Bearer is GPRS 
+                 the Maximum String length of this data has to be 100 characters
+                 Ex for GPRS Addr: "http://www.messagelabs.com"
+               </Description>
+               <DFFormat>
+                 <chr/>
+               </DFFormat>
+               <Occurrence>
+                 <One/>
+               </Occurrence>
+               <Scope>
+                 <Dynamic/>
+               </Scope>
+               <DFTitle>The NAP address</DFTitle>
+               <DFType>
+                 <MIME>text/plain</MIME>
+               </DFType>
+             </DFProperties>
+           </Node>
+  
+           <Node>
+             <NodeName>Auth</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Get/>
+                 <Replace/>
+               </AccessType>
+               <DFFormat>
+                 <node/>
+               </DFFormat>
+               <Occurrence>
+                 <ZeroOrOne/>
+               </Occurrence>
+               <Scope>
+                 <Dynamic/>
+               </Scope>
+               <DFTitle>Authentication data for this NAP</DFTitle>
+               <DFType>
+                 <DDFName></DDFName>
+               </DFType>
+             </DFProperties>
+  
+             <Node>
+               <NodeName>PAP</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                   <Replace/>
+                 </AccessType>
+                 <Description>
+                   The "name" node for one set of authentication data.
+                   The value should be either "PAP" or "CHAP".
+                 </Description>
+                 <DFFormat>
+                   <node/>
+                 </DFFormat>
+                 <Occurrence>
+                   <OneOrMore/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>
+                   One set of authentication data.Id-Secret pair
+                 </DFTitle>
+                 <DFType>
+                   <DDFName></DDFName>
+                 </DFType>
+               </DFProperties>
+  
+               <Node>
+                 <NodeName>Id</NodeName>
+                 <DFProperties>
+                   <AccessType>
+                     <Add/>
+                     <Get/>
+                     <Replace/>
+                   </AccessType>
+                   <Description>
+                     Maximum String length of this data has to be 32 characters.
+                   </Description>
+                   <DFFormat>
+                     <chr/>
+                   </DFFormat>
+                   <Occurrence>
+                     <One/>
+                   </Occurrence>
+                   <Scope>
+                     <Dynamic/>
+                   </Scope>
+                   <DFTitle>Id (or username) </DFTitle>
+                   <DFType>
+                     <MIME>text/plain</MIME>
+                   </DFType>
+                 </DFProperties>
+               </Node>
+  
+               <Node>
+                 <NodeName>Secret</NodeName>
+                 <DFProperties>
+                   <AccessType>
+                     <Add/>
+                     <Replace/>
+                   </AccessType>
+                   <Description>
+                     Maximum String length of this data has to be 16 characters.
+                   </Description>
+                   <DFFormat>
+                     <chr/>
+                   </DFFormat>
+                   <Occurrence>
+                     <One/>
+                   </Occurrence>
+                   <Scope>
+                     <Dynamic/>
+                   </Scope>
+                   <DFTitle>Secret (or password) for this Id</DFTitle>
+                   <DFType>
+                     <MIME>text/plain</MIME>
+                   </DFType>
+                 </DFProperties>
+               </Node>
+             </Node>
+           </Node>
+         </Node>
+         
+         <!---End NAP node --> 
+         <Node>
+           <NodeName>PX</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <DFFormat>
+               <node/>
+             </DFFormat>
+             <Occurrence>
+               <ZeroOrOne/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFType>
+               <DDFName></DDFName>
+             </DFType>
+           </DFProperties>
+  
+           <Node>
+             <NodeName>PortNbr</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Get/>
+                 <Replace/>
+               </AccessType>
+               <DefaultValue>80</DefaultValue>
+               <Description>
+                 The value has to between 1 and 65535
+               </Description>
+               <DFFormat>
+                 <chr/>
+               </DFFormat>
+               <Occurrence>
+                 <One/>
+               </Occurrence>
+               <Scope>
+                 <Dynamic/>
+               </Scope>
+               <DFTitle>The port number to use for this proxy or gateway
+               </DFTitle>
+               <DFType>
+                 <MIME>text/plain</MIME>
+               </DFType>
+             </DFProperties>
+           </Node>
+   
+           <Node>
+             <NodeName>AddrType</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Get/>
+                 <Replace/>
+               </AccessType>
+               <Description>
+                 The current implementation supports "IPV4" only.
+                 The value has to be a string representation.
+                 The value has to be "1" for IPV4.
+               </Description>
+               <DFFormat>
+                 <chr/>
+               </DFFormat>
+               <Occurrence>
+                 <One/>
+               </Occurrence>
+               <Scope>
+                 <Dynamic/>
+               </Scope>
+               <DFTitle>The type of address specified</DFTitle>
+               <DFType>
+                 <MIME>text/plain</MIME>
+               </DFType>
+             </DFProperties>
+           </Node>
+  
+           <Node>
+             <NodeName>Addr</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Get/>
+                 <Replace/>
+               </AccessType>
+               <Description>
+                 The proxy IP or gateway address.
+                 The Value has to be a valid IP Address.
+                 Ex: "121.121.21.21"
+               </Description>
+               <DFFormat>
+                 <chr/>
+               </DFFormat>
+               <Occurrence>
+                 <One/>
+               </Occurrence>
+               <Scope>
+                 <Dynamic/>
+               </Scope>
+               <DFTitle>The proxy or gateway address</DFTitle>
+               <DFType>
+                 <MIME>text/plain</MIME>
+               </DFType>
+             </DFProperties>
+           </Node>
+         </Node> <!-- PX node -->
+     </Node> <!-- GUID node -->
+     </Node> <!-- Con node -->
+   </Node> <!-- SyncML node -->
+
+   <Node>
+     <NodeName>DevInfo</NodeName>
+     <Path>.</Path>
+     <DFProperties>
+       <AccessType>
+         <Get/>
+       </AccessType>
+       <DFFormat>
+         <node/>
+       </DFFormat>
+       <Scope>
+         <Permanent/>
+       </Scope>
+       <DFTitle>The interior node holding all devinfo objects
+       </DFTitle>
+       <DFType>
+         <DDFName></DDFName>
+       </DFType>
+     </DFProperties>
+  
+     <Node>
+       <NodeName>Ext</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Add/> 
+           <Get/>
+         </AccessType>
+         <DFFormat>
+          <node/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The extendable DevInfo branch</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+     </Node> <!-- Ext Node -->
+   
+       <!-- There is a limit to the number of nodes that
+             can go here or only leaf nodes -->     
+     <Node>
+       <NodeName>DevId</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <!--Here the manufacturer must fill in the device ID 
+          (serial number) of the device.-->
+         <Description>A unique device identifier.</Description>
+         <DFFormat>
+           <chr/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The unique device identifier</DFTitle>
+         <DFType>
+           <MIME>text/plain</MIME>
+         </DFType>
+       </DFProperties>
+     </Node> <!-- DevId Node -->
+
+     <Node>
+       <NodeName>Man</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <DefaultValue>Motorola CE, Copyright 2000</DefaultValue>
+         <DFFormat>
+           <chr/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The name of the device manufacturer</DFTitle>
+         <DFType>
+           <MIME>text/plain</MIME>
+         </DFType>
+       </DFProperties>
+     </Node>
+     
+     <Node>
+       <NodeName>Mod</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <Description>The name of the device model</Description>
+         <DFFormat>
+           <chr/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>Model name</DFTitle>
+         <DFType>
+           <MIME>text/plain</MIME>
+         </DFType>
+       </DFProperties>
+     </Node>
+     
+     <Node>
+       <NodeName>DmV</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <DefaultValue>1.1.1</DefaultValue>
+         <!--Here the manufacturer must fill in the 
+           management client revision of the device.-->
+         <Description>
+           The management client revision of the device.
+         </Description>
+         <DFFormat>
+          <chr/>
+         </DFFormat>
+         <Scope>
+          <Permanent/>
+         </Scope>
+         <DFTitle>
+           The current management client revision of the device
+         </DFTitle>
+         <DFType>
+          <MIME>text/plain</MIME>
+         </DFType>
+       </DFProperties>
+     </Node>  
+    
+     <Node>
+       <NodeName>Lang</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+           <Replace/> 
+         </AccessType>
+         <DefaultValue>en</DefaultValue>
+         <Description>
+           The current language setting of the device.
+         </Description>
+         <DFFormat>
+           <chr/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>Current language</DFTitle>
+         <DFType>
+           <MIME>text/plain</MIME>
+         </DFType>
+       </DFProperties>
+     </Node>
+   </Node> <!-- Devinfo Node -->
+
+   <Node>
+     <NodeName>DevDetail</NodeName>
+     <Path>.</Path>
+    <DFProperties>
+      <AccessType>
+        <Get/>
+      </AccessType>
+      <DFFormat>
+        <node/>
+      </DFFormat>
+      <Scope>
+        <Permanent/>
+      </Scope>
+      <DFTitle>The interior node holding all DevDetail nodes</DFTitle>
+      <DFType>
+        <DDFName></DDFName>
+      </DFType>
+    </DFProperties>
+  
+     <Node>
+       <NodeName>Ext</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The extended DevDetail branch</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+     
+       <Node>
+         <NodeName>Links</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+           </AccessType>
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Display the Applications that support Dynamic URL Links</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+ 
+       <Node>
+         <NodeName>Hardware</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+           </AccessType>
+           <Description>
+             The hardware information of the device.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Hardware information</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>    
+  
+         <Node>
+           <NodeName>DispSize</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Get/>
+             </AccessType>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Scope>
+               <Permanent/>
+             </Scope>
+             <DFTitle>Display Size</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+  
+         <Node>
+           <NodeName>DispColor</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Get/>
+             </AccessType>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Scope>
+               <Permanent/>
+             </Scope>
+             <DFTitle>Display color</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>   
+       </Node>
+  
+       <Node>
+         <NodeName>Software</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+           </AccessType>
+           <Description>
+             The software information of the device.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Software information</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+        <Node>
+           <NodeName>SoftwareUpdate</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Get/>
+             </AccessType>
+             <Description>
+               The OTA Software Update information
+             </Description>
+             <DFFormat>
+               <node/>
+             </DFFormat>      
+             <Scope>
+               <Permanent/>
+             </Scope>
+             <DFTitle>OTA Software Update</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+
+           <Node>
+             <NodeName>URL</NodeName>
+              <RTProperties> 
+                <ACL>Replace=*&amp;Get=*&amp;Exec=*</ACL>
+                <Format>
+                  <chr/>
+                </Format>
+                <Name>URL</Name>
+             </RTProperties>
+             <DFProperties>
+               <AccessType>
+                 <Exec/> 
+                 <Get/>
+                 <Replace/>
+               </AccessType>
+               <Description>
+                 The URL of the descriptor file for the software update patch
+               </Description>
+               <DFFormat>
+                 <chr/>
+               </DFFormat>      
+               <Scope>
+                 <Permanent/>
+               </Scope>
+               <DFTitle>OTA Software Update descriptor file URL</DFTitle>
+               <DFType>
+                 <MIME>text/plain</MIME>
+               </DFType>
+             </DFProperties>
+           </Node>
+
+           <Node>
+             <NodeName>FreeMem</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Get/>
+               </AccessType>
+               <Description>
+                 The URL of the descriptor file for the software update patch
+               </Description>
+               <DFFormat>
+                 <int/>
+               </DFFormat>      
+               <Scope>
+                 <Permanent/>
+               </Scope>
+               <DFTitle>Free memory for OTA Software Update</DFTitle>
+               <DFType>
+                 <MIME>text/plain</MIME>
+               </DFType>
+             </DFProperties>
+           </Node>
+
+           <Node>
+             <NodeName>Status</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Get/>
+               </AccessType>
+               <Description>
+                 The status information pertaining to a software update process 
+               </Description>
+               <DFFormat>
+                 <chr/>
+               </DFFormat>      
+               <Scope>
+                 <Permanent/>
+               </Scope>
+               <DFTitle>OTA Software Update status</DFTitle>
+               <DFType>
+                 <MIME>text/plain</MIME>
+               </DFType>
+             </DFProperties>
+           </Node>
+
+         </Node>
+
+         <Node>
+           <NodeName>BootloaderV</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Get/>
+             </AccessType>
+             <Description>
+               The bootloader version 
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>      
+             <Scope>
+               <Permanent/>
+             </Scope>
+             <DFTitle>Bootloader version</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+
+         <Node>
+           <NodeName>UpdateAgentV</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Get/>
+             </AccessType>
+             <Description>
+               The Update Agent version 
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>      
+             <Scope>
+               <Permanent/>
+             </Scope>
+             <DFTitle>Update Agent version</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+
+         <Node>
+           <NodeName>UpdatePkgFmtV</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Get/>
+             </AccessType>
+             <Description>
+               The update package format version
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>      
+             <Scope>
+               <Permanent/>
+             </Scope>
+             <DFTitle>Update Package Format version</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+         <Node>
+           <NodeName>AppEnable</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Get/>
+             </AccessType>
+             <Description>
+               Specify the downloadable applications, Java, Brew,TrueSync,
+               Phonebook,Datebook, KJava. SMS, MMS, MP3 and native
+               that are currently installed.
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>      
+             <Scope>
+               <Permanent/>
+             </Scope>
+             <DFTitle>Apps enabled</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+  
+         <Node>
+           <NodeName>FlexV</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Get/>
+             </AccessType>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Scope>
+               <Permanent/>
+             </Scope>
+             <DFTitle>Flex version</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>
+       
+       <Node>
+         <NodeName>Personal</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+           </AccessType>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Personal information</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+ 
+         <Node>
+           <NodeName>CarName</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Get/>
+             </AccessType>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Scope>
+               <Permanent/>
+             </Scope>
+             <DFTitle>Carrier name</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+
+         <Node>
+           <NodeName>PhNum</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Get/>
+             </AccessType>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Scope>
+               <Permanent/>
+             </Scope>
+             <DFTitle>Mobile phone number</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>
+     </Node>
+
+     <Node>
+       <NodeName>Bearer</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The bearer specific DevDetail branch</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+       <Node>
+         <NodeName>GSM</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+           </AccessType>
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Extended bearer node</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+     </Node>
+
+     <Node>
+       <NodeName>URI</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The tree limitations branch</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+       <Node>
+         <NodeName>MaxDepth</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+           </AccessType>
+           <DefaultValue>8</DefaultValue>
+           <Description>
+             Maximum tree depth supported by the device.
+           </Description>
+           <DFFormat>
+             <int/>
+           </DFFormat>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Maximum tree depth</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+
+       <Node>
+         <NodeName>MaxTotLen</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+           </AccessType>
+           <DefaultValue>127</DefaultValue>
+           <Description>
+             Maximum total URI length supported by the device.
+           </Description>
+           <DFFormat>
+             <int/>
+           </DFFormat>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Maximum URI length</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+       
+       <Node>
+         <NodeName>MaxSegLen</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+           </AccessType>
+           <DefaultValue>32</DefaultValue>
+           <Description>
+             Maximum URI segment length supported by the device.
+           </Description>
+           <DFFormat>
+             <int/>
+           </DFFormat>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Maximum URI segment length</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+     </Node>
+ 
+     <Node>
+       <NodeName>DevTyp</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <DefaultValue>Phone</DefaultValue>
+         <Description>The type of the device.</Description>
+         <DFFormat>
+           <chr/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The device type</DFTitle>
+         <DFType>
+           <MIME>text/plain</MIME>
+         </DFType>
+       </DFProperties>
+     </Node>
+     
+     <Node>
+       <NodeName>OEM</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <Description>
+           The name of the device manufacturer.
+         </Description>
+         <DFFormat>
+           <chr/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>
+           The name of the device manufacturer device type
+         </DFTitle>
+         <DFType>
+           <MIME>text/plain</MIME>
+         </DFType>
+       </DFProperties>
+     </Node>
+
+     <Node>
+       <NodeName>FwV</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <Description>
+           The firmware revision of the device.
+         </Description>
+         <DFFormat>
+           <chr/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>
+           The current firmware revision of the device
+         </DFTitle>
+         <DFType>
+           <MIME>text/plain</MIME>
+         </DFType>
+       </DFProperties>
+     </Node>
+     
+     <Node>
+       <NodeName>SwV</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <Description>
+           The software revision of the device.
+         </Description>
+         <DFFormat>
+           <chr/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>
+           The current software revision of the device
+         </DFTitle>
+         <DFType>
+           <MIME>text/plain</MIME>
+         </DFType>
+       </DFProperties>
+     </Node>
+     
+     <Node>
+       <NodeName>HwV</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <Description>
+           The hardware revision of the device.
+         </Description>
+         <DFFormat>
+           <chr/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>
+           The current hardware revision of the device
+         </DFTitle>
+         <DFType>
+           <MIME>text/plain</MIME>
+         </DFType>
+       </DFProperties>
+     </Node>
+     
+     <Node>
+       <NodeName>LrgObj</NodeName>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <DefaultValue>False</DefaultValue>
+         <Description>
+           Large object handling supported if value is true.
+         </Description>
+         <DFFormat>
+           <bool/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>Large object handling flag</DFTitle>
+         <DFType>
+           <MIME>text/plain</MIME>
+         </DFType>
+       </DFProperties>
+     </Node>
+   </Node> <!-- DevDetail Node -->
+
+   <Node> <!-- Application Node Start -->
+     <NodeName>Application</NodeName>
+     <Path>.</Path>
+     <DFProperties>
+       <AccessType>
+         <Get/>
+       </AccessType>
+       <DFFormat>
+         <node/>
+       </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+       <Scope>
+         <Permanent/>
+       </Scope>
+       <DFTitle>
+         The interior node holding all information about 
+         Provisioning parameters.
+       </DFTitle>
+       <DFType>
+         <DDFName></DDFName>
+       </DFType>
+     </DFProperties>
+     <!-- PXLOGICAL Node Start -->
+     <Node>
+       <NodeName>PXLOGICAL</NodeName>
+       <Path>./Application</Path>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+         <Occurrence>
+           <One/>
+         </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>
+           The interior node holding all information about Web Session.
+         </DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+       <Node> <!-- GUID Node Start -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+            Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>10</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>Specify GUID Globally unique ID</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               User friendly name of the web session. 
+               Maximum string length supported
+               for this node value is 16 characters
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Specify User friendly name for Web Session.
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+ 
+         <Node>
+           <NodeName>HomePage</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               The start Page URL for the web session/ Browser.
+               Maximum string length supported for this node value is 100 characters
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify Home page URL</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+
+         <Node>
+           <NodeName>Linger</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               Inactivity timeout period for a connection.
+               UTF8 string expected values are "1 Minute", "2 Minutes", "5 Minutes",
+               "10 Minutes", "15 Minutes".
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify Time out period.</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+
+         <Node>
+           <NodeName>PXPHYSICAL</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+             </AccessType>
+             <DFFormat>
+               <node/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Place holder for  PXPHYSICAL - 
+               this interior node holds information of the gateways.
+             </DFTitle>
+             <DFType>
+               <DDFName></DDFName>
+             </DFType>
+           </DFProperties>
+
+           <Node>
+           <!-- UID Place Holder-->
+             <NodeName/>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Delete/>
+                 <Get/>
+                 <Replace/>
+               </AccessType>
+               <Description>
+                 Maximum String Length supported for this node name is 32 characters.
+               </Description>
+               <DFFormat>
+                 <node/>
+               </DFFormat>
+               <Occurrence>
+                 <OneOrN>2</OneOrN>
+               </Occurrence>
+               <Scope>
+                 <Dynamic/>
+               </Scope>
+               <DFTitle>
+                 Unique ID, this node will act as placeholder 
+                 for one or more gateways or proxyies
+               </DFTitle>
+               <DFType>
+                 <DDFName></DDFName>
+               </DFType>
+             </DFProperties>
+     
+             <Node>
+               <NodeName>Addr</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                   <Replace/>
+                 </AccessType>
+                 <Description>
+                   This node contains information on the Address of the
+                   proxy/gateway UTF8 string. The current implementation 
+                   supports IPV4 format value only, for eg. 10.1.1.1
+                 </Description>
+                 <DFFormat>
+                   <chr/>
+                 </DFFormat>
+                 <Occurrence>
+                   <One/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify gateway address</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>
+     
+             <Node>
+               <NodeName>AddrType</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                   <Replace/>
+                 </AccessType>
+                 <DefaultValue>IPV4</DefaultValue>
+                 <Description>
+                   AddressType of the proxy/gateway. UTF8 String,
+                   the current implementation supports "IPV4" only.
+                 </Description>
+                 <DFFormat>
+                   <chr/>
+                 </DFFormat>
+                 <Occurrence>
+                   <One/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify proxy/gateway address type.</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>     
+
+             <Node>
+               <NodeName>Service</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                   <Replace/>
+                 </AccessType>
+                 <Description>The values should be
+                    "1" -WAP
+                    "2" -WAP_CONNECTIONLESS
+                    "3" -WAP_SECURE
+                    "4" -WAP_SECURE_CONNECTIONLESS
+                    "5" -HTTP
+                    "6" -HTTP_SECURE
+                 </Description>
+                 <DFFormat>
+                   <chr/>
+                 </DFFormat>
+                 <Occurrence>
+                   <One/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify service used over proxy/gateway.</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>    
+           
+             <Node>
+               <NodeName>PortNbr</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                   <Replace/>
+                 </AccessType>
+                 <DefaultValue>80</DefaultValue>
+                 <Description>
+                   This node contains information about the port number
+                   on which the service is communicating.(The value has
+                   to between 1 and 65535)
+                 </Description>
+                 <DFFormat>
+                   <int/>
+                 </DFFormat>
+                 <Occurrence>
+                   <ZeroOrOne/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify Port number.</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>     
+             <Node>
+               <NodeName>Domain</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                   <Replace/>
+                 </AccessType>
+                 <Description>
+                   Name of the domain (UTF8 string for eg. www.operator.com).
+                   Maximum string length supported for this node value is
+                   100 characters.
+                 </Description>
+                 <DFFormat>
+                   <chr/>
+                 </DFFormat>
+                 <Occurrence>
+                   <ZeroOrOne/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify domain name.</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>  
+           </Node> <!-- UID Node End-->
+         </Node> <!-- PXPHYISICAL node -->
+         <Node>
+         <!-- NAPDEF Place Holder-->
+           <NodeName>NAPDEF</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+             </AccessType>
+             <DFFormat>
+               <node/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Place holder for network access point.</DFTitle>
+             <DFType>
+               <DDFName></DDFName>
+             </DFType>
+           </DFProperties>
+                
+           <Node> <!-- UID Place Holder-->
+             <NodeName/>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Delete/>
+                 <Get/>
+                 <Replace/>                    
+               </AccessType>
+               <Description>
+                 Unique ID. Maximum of 3 ID's are allowed. Two for CSD type
+                 and one for GPRS type connection. They are: "gprs", "csd0", "csd1"
+               </Description>
+               <DFFormat>
+                 <node/>
+               </DFFormat>
+               <Occurrence>
+                 <OneOrN>3</OneOrN>
+               </Occurrence>
+               <Scope>
+                 <Dynamic/>
+               </Scope>
+               <DFTitle>Only one entry for GPRS is allowed.</DFTitle>
+               <DFType>
+                 <DDFName></DDFName>
+               </DFType>
+             </DFProperties>
+     
+             <Node>
+               <NodeName>Addr</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                   <Replace/>
+                 </AccessType>
+                 <Description>
+                   This node contains the address of NAP. UTF 8 String
+                   for eg 555-1212, 10.1.1.1. For CSD type maximum string
+                   length is 32 characters. For GPRS type connection maximum
+                   string length is 100 characters.
+                 </Description>
+                 <DFFormat>
+                   <chr/>
+                 </DFFormat>
+                 <Occurrence>
+                   <One/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify address</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>
+
+             <Node>
+               <NodeName>AddrType</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                 </AccessType>
+                 <Description>
+                   AddrType of NAP. UTF8 string expected values are
+                   "GPRS"/"CSD".
+                 </Description>
+                 <DFFormat>
+                   <chr/>
+                 </DFFormat>
+                 <Occurrence>
+                   <One/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify address type of NAP.</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>
+     
+             <Node>
+               <NodeName>UserName</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                   <Replace/>
+                 </AccessType>
+                 <Description>
+                   This node contains username information for authentication.
+                   UTF 8 string. Maximum string length 32 characters.
+                 </Description>
+                 <DFFormat>
+                   <chr/>
+                 </DFFormat>
+                 <Occurrence>
+                   <ZeroOrOne/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify User Name.</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>
+
+             <Node>
+               <NodeName>PassWD</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Replace/>
+                 </AccessType>
+                 <Description>
+                   This node contains password information for authentication.
+                   UTF 8 string. Maximum string length of 16 characters.
+                 </Description>
+                 <DFFormat>
+                   <chr/>
+                 </DFFormat>
+                 <Occurrence>
+                   <ZeroOrOne/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify password.</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>
+
+             <Node>
+               <!-- This node is only for CSD -->
+               <NodeName>Speed</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                   <Replace/>
+                 </AccessType>
+                 <Description>
+                   This node contains information about the speed of the
+                   connection. UTF8 string expected values are
+                   "2400bps"/"4800bps"/"9600bps"/"14400bps".
+                 </Description>
+                 <DFFormat>
+                   <chr/>
+                 </DFFormat>
+                 <Occurrence>
+                   <ZeroOrOne/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify speed of the connection.</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>
+
+             <Node>
+               <NodeName>LineType</NodeName>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                   <Replace/>
+                 </AccessType>
+                 <Description>
+                   Only for CSD connection. UTF8 string expected values are
+                   "Modem"/ "ISDN".
+                 </Description>
+                 <DFFormat>
+                   <chr/>
+                 </DFFormat>
+                 <Occurrence>
+                   <ZeroOrOne/>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify type of connection.</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>
+             <!-- End of UID -->
+           </Node>
+
+           <Node>
+             <NodeName>DNS</NodeName>
+             <DFProperties>
+               <AccessType>
+                 <Add/>
+                 <Get/>
+               </AccessType>
+               <DFFormat>
+                 <node/>
+               </DFFormat>
+               <Scope>
+                 <Permanent/>
+               </Scope>
+               <DFTitle>DNS Server IP Address.</DFTitle>
+               <DFType>
+                 <DDFName></DDFName>
+               </DFType>
+             </DFProperties>
+     
+             <Node>
+             <!-- UID -->
+               <NodeName/>
+               <DFProperties>
+                 <AccessType>
+                   <Add/>
+                   <Get/>
+                   <Replace/>
+                 </AccessType>
+                 <Description>
+                   Unique Id for DNS IP Address. The value needs to be in "IPV4" format
+                 </Description>
+                 <DFFormat>
+                   <chr/>
+                 </DFFormat>
+                 <Occurrence>
+                   <ZeroOrN>2</ZeroOrN>
+                 </Occurrence>
+                 <Scope>
+                   <Dynamic/>
+                 </Scope>
+                 <DFTitle>Specify DNS IP ADDRESS.</DFTitle>
+                 <DFType>
+                   <MIME>text/plain</MIME>
+                 </DFType>
+               </DFProperties>
+             </Node>  <!-- UID Node End -->
+           </Node> <!-- DNS Node -->
+         </Node> <!-- NAPDEF Node -->
+       </Node><!-- GUID Node -->
+
+     </Node>   <!-- PXLOGICAL Node -->
+    
+     <Node> <!-- MMS Node Start -->
+       <NodeName>MMS</NodeName>
+       <Path>./Application</Path>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+         <Occurrence>
+           <One/>
+         </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding all MMS objects</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+       <Node> <!-- GUID Node Start -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+            Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>GUID Globally unique ID UTF 8 String</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <Node>
+           <NodeName>To-Proxy</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               This node contains a reference to the PXLOGICAL GUID,
+               which is required for the MMS application. The Max.
+               value of To-Proxy is 32 characters.
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Specify proxy address UTF8 string for eg www.proxy.com.
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+ 
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/> 
+             </AccessType>
+             <Description>
+                 MMS setting user friendly name. Max string length is 31 characters.
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify user friendly name.</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+
+         <Node>
+           <NodeName>URI</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description>
+               The URL of MSC. UTF8 string for 
+               eg www.mmsservername.com
+               Max URI string length is 256 characters.
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify MMS server address.</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>  <!-- GUID Node End -->
+     </Node> <!-- MMS Node End-->
+     <Node> <!-- Email Node -->
+       <NodeName>EMAIL</NodeName>
+       <Path>./Application</Path>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding all Email objects</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+    
+       <Node>
+         <NodeName>NAP-Addr</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+             This node contains the address of NAP. UTF 8 String
+             for eg 555-1212, 10.1.1.1. For CSD type maximum string
+             length is 32 characters. For GPRS type connection maximum
+             string length is 100 characters.
+           </Description>
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Network access point Address</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+       
+       <Node>
+         <NodeName>NAP-AddrType</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Network access point Address</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+       
+       <Node>
+         <NodeName>NAP-UserName</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>The Max. NAP-UserName is 48 characters.</Description>             
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Network access point username</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+       
+       <Node>
+         <NodeName>NAP-PassWD</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Replace/>
+           </AccessType>
+           <Description>The Max. NAP-PassWD is 40 characters.</Description>
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Network access point password</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+       
+       <Node>
+         <NodeName>RecvHost</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <DefaultValue/>
+           <Description>The Max. RecvHost is 20 characters.</Description>              
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Host Address</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+       
+       <Node>
+         <NodeName>RecvPort</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>The Max. range on the RecvPort is 1 to 65535.</Description>
+           <DFFormat>
+             <int/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Receiving port</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+
+       <Node>
+         <NodeName>SendHost</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>The Max. SendHost is 20 characters.</Description>     
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Send Host</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+       
+       <Node>
+         <NodeName>SendPort</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>The Max. range on the SendPort is 1 to 65535.</Description>
+           <DFFormat>
+             <int/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Send Port</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+       
+       <Node>
+         <!-- The replace on Service, Revice Port, and Send Port all go
+         together (If you change one you must change them all) -->
+         <NodeName>Service</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>
+               Protocol type required for receiving mails.Expected Values: "IMAP4",
+             "POP3" only.
+           </DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+
+       <Node>
+         <NodeName>UserName</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>E-mail user name Max String length is 48 characters</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+       
+       <Node>
+         <NodeName>PassWD</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Replace/>
+           </AccessType>
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Email account password Max string length is 40 characters</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+       
+       <Node>
+         <NodeName>ReplyAddr</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>
+             E-Mail return address. The maximum length of this node is 50 characters,
+             and this has to be a valid Email Address. 
+           </DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+
+       <Node>
+           <NodeName>DNS</NodeName>
+         <DFProperties>
+           <AccessType>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <DFFormat>
+             <chr/>
+           </DFFormat>
+           <Occurrence>
+             <One/>
+           </Occurrence>
+           <Scope>
+             <Permanent/>
+           </Scope>
+           <DFTitle>Domain name Server IP</DFTitle>
+           <DFType>
+             <MIME>text/plain</MIME>
+           </DFType>
+         </DFProperties>
+       </Node>
+   
+     </Node> <!-- EMAIL Node End -->
+	
+     <Node> <!-- DynamicURL Node -->
+       <NodeName>DynamicURL</NodeName>
+       <Path>./Application</Path>
+       <DFProperties>
+         <AccessType>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding all Dynamic URL  objects</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+       <Node> <!-- MessageCenter Node -->
+       <NodeName>MessageCenter</NodeName>
+       <Path>./Application/DynamicURL</Path>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding Message Center Inet Links</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+       <Node> <!-- GUID Node Start -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+            Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>GUID Globally unique ID UTF 8 String</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description> 
+              Name for this Inet Link Maximum of 25 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Specify the Name of the Inet Link 
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+ 
+         <Node>
+           <NodeName>URL</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/> 
+             </AccessType>
+             <Description>
+                 URL of the Inet Link. Maximum of 128 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify URL for this Inet Link</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>  <!-- GUID Node End -->
+
+       </Node><!-- MessageCenter End -->
+
+       <Node> <!-- Themes Node -->
+       <NodeName>Themes</NodeName>
+       <Path>./Application/DynamicURL</Path>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding Themes Inet Links</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+
+       <Node> <!-- GUID Node Start -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+            Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>GUID Globally unique ID UTF 8 String</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description> 
+              Name for this Inet Link Maximum of 25 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Specify the Name of the Inet Link 
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+ 
+         <Node>
+           <NodeName>URL</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/> 
+             </AccessType>
+             <Description>
+                 URL of the Inet Link. Maximum of 128 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify URL for this Inet Link</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>  <!-- GUID Node End -->
+
+     </Node><!-- Themes  End-->
+
+     <Node> <!-- JavaTools Node -->
+       <NodeName>JavaTools</NodeName>
+       <Path>./Application/DynamicURL</Path>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding all JavaTools Inet Links</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+
+       <Node> <!-- GUID Node Start -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+            Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>GUID Globally unique ID UTF 8 String</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description> 
+              Name for this Inet Link Maximum of 25 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Specify the Name of the Inet Link 
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+ 
+         <Node>
+           <NodeName>URL</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/> 
+             </AccessType>
+             <Description>
+                 URL of the Inet Link. Maximum of 128 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify URL for this Inet Link</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>  <!-- GUID Node End -->
+
+      </Node>     <!-- JavaTools End -->
+
+        <Node> <!-- IM Node -->
+       <NodeName>IM</NodeName>
+       <Path>./Application/DynamicURL</Path>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding all Instant Messaging Inet Links</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+
+       <Node> <!-- GUID Node Start -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+            Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>GUID Globally unique ID UTF 8 String</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description> 
+              Name for this Inet Link Maximum of 25 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Specify the Name of the Inet Link 
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+ 
+         <Node>
+           <NodeName>URL</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/> 
+             </AccessType>
+             <Description>
+                 URL of the Inet Link. Maximum of 128 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify URL for this Inet Link</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>  <!-- GUID Node End -->
+
+    </Node>        <!-- IM End -->
+
+    <Node> <!-- Pictures Node -->
+       <NodeName>Pictures</NodeName>
+       <Path>./Application/DynamicURL</Path>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding all Pictures Inet Links</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+       <Node> <!-- GUID Node Start -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+            Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>GUID Globally unique ID UTF 8 String</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description> 
+              Name for this Inet Link Maximum of 25 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Specify the Name of the Inet Link 
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+ 
+         <Node>
+           <NodeName>URL</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/> 
+             </AccessType>
+             <Description>
+                 URL of the Inet Link. Maximum of 128 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify URL for this Inet Link</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>  <!-- GUID Node End -->
+
+    </Node>        <!-- Pictures End -->
+
+        <Node> <!-- Video Node -->
+       <NodeName>Video</NodeName>
+       <Path>./Application/DynamicURL</Path>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding all Video Inet Links</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+       <Node> <!-- GUID Node Start -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+            Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>GUID Globally unique ID UTF 8 String</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description> 
+              Name for this Inet Link Maximum of 25 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Specify the Name of the Inet Link 
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+ 
+         <Node>
+           <NodeName>URL</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/> 
+             </AccessType>
+             <Description>
+                 URL of the Inet Link. Maximum of 128 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify URL for this Inet Link</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>  <!-- GUID Node End -->
+
+    </Node>        <!-- Video End -->
+
+    <Node> <!-- Audio Node -->
+       <NodeName>Audio</NodeName>
+       <Path>./Application/DynamicURL</Path>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding all Audio Inet Links</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+       <Node> <!-- GUID Node Start -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+            Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>GUID Globally unique ID UTF 8 String</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description> 
+              Name for this Inet Link Maximum of 25 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Specify the Name of the Inet Link 
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+ 
+         <Node>
+           <NodeName>URL</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/> 
+             </AccessType>
+             <Description>
+                 URL of the Inet Link. Maximum of 128 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify URL for this Inet Link</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>  <!-- GUID Node End -->
+
+    </Node>        <!-- Audio End -->
+
+    <Node> <!-- GamesAndApps Node -->
+       <NodeName>GamesAndApps</NodeName>
+       <Path>./Application/DynamicURL</Path>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding all GamesAndApps Inet Links</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+       <Node> <!-- GUID Node Start -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+            Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>GUID Globally unique ID UTF 8 String</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description> 
+              Name for this Inet Link Maximum of 25 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Specify the Name of the Inet Link 
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+ 
+         <Node>
+           <NodeName>URL</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/> 
+             </AccessType>
+             <Description>
+                 URL of the Inet Link. Maximum of 128 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify URL for this Inet Link</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>  <!-- GUID Node End -->
+
+    </Node>        <!-- GamesAndApps End -->
+       <Node> <!-- MainMenu Application Node -->
+       <NodeName>MainMenu</NodeName>
+       <Path>./Application/DynamicURL</Path>
+       <DFProperties>
+         <AccessType>
+           <Add/>
+           <Get/>
+         </AccessType>
+         <DFFormat>
+           <node/>
+         </DFFormat>
+       <Occurrence>
+         <One/>
+       </Occurrence>
+         <Scope>
+           <Permanent/>
+         </Scope>
+         <DFTitle>The interior node holding Main Menu Inet Links</DFTitle>
+         <DFType>
+           <DDFName></DDFName>
+         </DFType>
+       </DFProperties>
+
+       <Node> <!-- GUID Node Start -->
+         <NodeName/>
+         <DFProperties>
+           <AccessType>
+             <Add/>
+             <Delete/>
+             <Get/>
+             <Replace/>
+           </AccessType>
+           <Description>
+            Maximum String Length supported for this node name is 32 characters.
+           </Description>
+           <DFFormat>
+             <node/>
+           </DFFormat>
+           <Occurrence>
+             <ZeroOrN>3</ZeroOrN>
+           </Occurrence>
+           <Scope>
+             <Dynamic/>
+           </Scope>
+           <DFTitle>GUID Globally unique ID UTF 8 String</DFTitle>
+           <DFType>
+             <DDFName></DDFName>
+           </DFType>
+         </DFProperties>
+
+         <Node>
+           <NodeName>Name</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/>
+             </AccessType>
+             <Description> 
+              Name for this Inet Link Maximum of 25 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>
+               Specify the Name of the Inet Link 
+             </DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+ 
+         <Node>
+           <NodeName>URL</NodeName>
+           <DFProperties>
+             <AccessType>
+               <Add/>
+               <Get/>
+               <Replace/> 
+             </AccessType>
+             <Description>
+                 URL of the Inet Link. Maximum of 255 UTF-8 chars
+             </Description>
+             <DFFormat>
+               <chr/>
+             </DFFormat>
+             <Occurrence>
+               <One/>
+             </Occurrence>
+             <Scope>
+               <Dynamic/>
+             </Scope>
+             <DFTitle>Specify URL for this Inet Link</DFTitle>
+             <DFType>
+               <MIME>text/plain</MIME>
+             </DFType>
+           </DFProperties>
+         </Node>
+       </Node>  <!-- GUID Node End -->
+
+       </Node><!-- MainMenu Application End -->
+
+   </Node>  <!-- DynamicURL Node End -->
+   
+</Node> <!-- Application -->
+ </MgmtTree>

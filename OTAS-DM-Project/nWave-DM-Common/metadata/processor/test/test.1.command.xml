@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE Script SYSTEM "../script_1_0.dtd" -->
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/processor/test/test.1.command.xml,v 1.1 2006/05/12 12:37:12 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2006/05/12 12:37:12 $
+-->
+
+<!-- ********** Test #1 - Get ********** -->
+<Script>
+  <Get>
+      <Target>./Email/MyEmail/Name</Target>
+  </Get>
+  <Get>
+      <Target>./Email/MyEmail/SMTPSrv</Target>
+  </Get>
+  <Get>
+      <Target>./Email/MyEmail/POPSrv</Target>
+  </Get>
+  <Get>
+      <Target>./Email/MyEmail/Username</Target>
+  </Get>
+  <Get>
+      <Target>./Email/MyEmail/Password</Target>
+  </Get>
+</Script>
+
+

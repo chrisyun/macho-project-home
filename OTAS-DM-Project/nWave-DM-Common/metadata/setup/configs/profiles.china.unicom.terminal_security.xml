@@ -1,0 +1,167 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        NAP Profiles 
+      ***********************************************************************************
+   -->
+
+  <!--  
+      ***********************************************************************************
+        Proxy Profiles 
+      ***********************************************************************************
+   -->
+
+  <!--  
+      ***********************************************************************************
+        Terminal Security Profiles 
+      ***********************************************************************************
+   -->
+  <!-- Terminal Security Profile: Lock Device -->
+  <Profile>
+    <ID>ChinaUnicom.TerminalSecurity.Lock.Phone.ZH</ID>
+    <ProfileName>设置手机锁定参数</ProfileName>
+    <Template>Lock Terminal Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>到达指定的空闲时间后, 手机将自动被锁定, 除非输入正确的密码, 否则手机将无法使用.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>MaxAutoLockPeriod</Name>
+         <Value>30</Value>
+      </Attribute>
+      <Attribute>
+         <Name>AutoLockPeriod</Name>
+         <Value>10</Value>
+      </Attribute>
+      <Attribute>
+         <Name>LockLevel</Name>
+         <Value>1</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <Profile>
+    <ID>ChinaUnicom.TerminalSecurity.Unlock.Phone.ZH</ID>
+    <ProfileName>解除手机锁定参数</ProfileName>
+    <Template>Unlock Terminal Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>到达指定的空闲时间后, 手机将自动被锁定, 除非输入正确的密码, 否则手机将无法使用.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>MaxAutoLockPeriod</Name>
+         <Value>0</Value>
+      </Attribute>
+      <Attribute>
+         <Name>AutoLockPeriod</Name>
+         <Value>0</Value>
+      </Attribute>
+      <Attribute>
+         <Name>LockLevel</Name>
+         <Value>0</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <Profile>
+    <ID>ChinaUnicom.TerminalSecurity.Wipe.Phone.ZH</ID>
+    <ProfileName>擦除终端数据</ProfileName>
+    <Template>Wipe Data Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>本操作将擦除手机上所有的数据, 包括闪存卡上的数据.</Description>
+    <Attributes>
+    </Attributes>
+  </Profile>
+
+  <Profile>
+    <ID>ChinaUnicom.TerminalSecurity.Reboot.Phone.ZH</ID>
+    <ProfileName>重新启动终端</ProfileName>
+    <Template>Reboot Terminal Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>本操作将引起手机重新启动.</Description>
+    <Attributes>
+    </Attributes>
+  </Profile>
+
+  <Profile>
+    <ID>ChinaUnicom.TerminalSecurity.FileScan.ZH</ID>
+    <ProfileName>采集终端文件信息</ProfileName>
+    <Template>Get File System Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>本操作将采集手机上文件系统的信息.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Folder</Name>
+         <Value>c:\ -r</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <Profile>
+    <ID>ChinaUnicom.TerminalSecurity.FileDelete.ZH</ID>
+    <ProfileName>删除终端文件</ProfileName>
+    <Template>Delete File Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>本操作将删除手机指定的文件或空白文件夹.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>FileOrFolder</Name>
+         <Value>c:\</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <Profile>
+    <ID>ChinaUnicom.TerminalSecurity.StartApp.ZH</ID>
+    <ProfileName>启动程序</ProfileName>
+    <Template>Start Application Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>本操作将在手机上启动指定的应用程序.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Application</Name>
+         <Value></Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <Profile>
+    <ID>ChinaUnicom.TerminalSecurity.StopApp.ZH</ID>
+    <ProfileName>终止程序</ProfileName>
+    <Template>Stop Application Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>本操作将在手机上终止指定的应用程序.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Application</Name>
+         <Value></Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+</Profiles>
+</Setup>

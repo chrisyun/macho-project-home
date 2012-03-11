@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Dai Telecom</Name>
+<ExternalID>Dai Telecom</ExternalID>
+<Description>Dai Telecom</Description>
+<Models filename="./models/dai_telecom/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

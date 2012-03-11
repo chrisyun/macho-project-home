@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: S80 2nd Edition -->
+<Models>
+
+  <!--  Model: 9500 -->
+  <Model family="family_nokia_s80_2nd">
+    <Name>9500</Name>
+    <ExternalID>9500</ExternalID>
+    <Description>S80 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_9500.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value="Series 80 2nd Edition"/>
+      <Specification category="general" name="announced" value="2004-01-23"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 9300 -->
+  <Model family="family_nokia_s80_2nd">
+    <Name>9300</Name>
+    <ExternalID>9300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/9300.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value="Series 80 2nd Edition"/>
+      <Specification category="general" name="announced" value="08-Sep-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 9300i -->
+  <Model family="family_nokia_s80_2nd">
+    <Name>9300i</Name>
+    <ExternalID>9300i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/9300i.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value="Series 80 2nd Edition"/>
+      <Specification category="general" name="announced" value="29-Nov-05"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: IP-830w -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>IP-830w</Name>
+    <ExternalID>IP-830w</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/samsung_ip_830w.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    </DDFs>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <ProfileMappings>
+    </ProfileMappings>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+    <TACs>
+    </TACs>
+  </Model>
+  
+  <!--  Model: IP-A790 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>IP-A790</Name>
+    <ExternalID>IP-A790</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/samsung_ip_a790.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs></DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings></ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs></TACs>
+  
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: MM-A700 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>MM-A700</Name>
+    <ExternalID>MM-A700</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/samsung_mm_a700.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs></DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings></ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs></TACs>
+  
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: PM-A740 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>PM-A740</Name>
+    <ExternalID>PM-A740</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/samsung_pm_a740.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs></DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings></ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs></TACs>
+  
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: SGH-T609 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>SGH-T609</Name>
+    <ExternalID>T609</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/samsung_t609.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs></DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings></ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates/>
+    
+    <!-- TACs -->
+    <TACs></TACs>
+  
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+</Models>

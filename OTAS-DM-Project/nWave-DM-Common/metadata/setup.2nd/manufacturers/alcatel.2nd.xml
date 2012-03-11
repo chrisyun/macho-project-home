@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Alcatel</Name>
+<ExternalID>Alcatel</ExternalID>
+<Description>Alcatel</Description>
+<Models filename="./models/alcatel/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

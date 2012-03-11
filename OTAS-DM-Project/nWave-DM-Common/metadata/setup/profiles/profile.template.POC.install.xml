@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.template.POC.install.xml,v 1.1 2007/03/16 14:17:12 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2007/03/16 14:17:12 $
+-->
+<ProfileMetaData>
+    <AttributeTypes>
+        <!-- Using by POC Template -->
+    </AttributeTypes>
+
+    <ProfileTemplates>
+        <!-- Default POC Template -->
+        <ProfileTemplate>
+            <CategoryName>POC</CategoryName>
+            <Name>POC Default Template</Name>
+            <NeedsNAP>true</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Display Name</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>IMPS Server Addr Type</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>IPv4</DefaultValue>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>IMPS Server Addr</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>http://poc.service.com</DefaultValue>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>IMPS Server Port</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>5060</DefaultValue>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Auth Name</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>username@domain.com</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Auth Secret</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Auth Date</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>Realm Information</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Application ID</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>w9002</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>APLink</Name>
+                    <TypeName>APLink</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+    </ProfileTemplates>
+</ProfileMetaData>

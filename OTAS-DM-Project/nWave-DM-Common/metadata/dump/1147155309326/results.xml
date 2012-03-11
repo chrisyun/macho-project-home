@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_06" class="java.beans.XMLDecoder"> 
+ <object class="java.util.ArrayList"> 
+  <void method="add"> 
+   <object class="sync4j.framework.engine.dm.ManagementOperationResult"> 
+    <void property="command"> 
+     <string>Add</string> 
+    </void> 
+    <void property="nodes"> 
+     <void method="put"> 
+      <string>./Email/INSG5/Mrcv</string> 
+      <string></string> 
+     </void> 
+    </void> 
+    <void property="statusCode"> 
+     <int>418</int> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="sync4j.framework.engine.dm.ManagementOperationResult"> 
+    <void property="command"> 
+     <string>Replace</string> 
+    </void> 
+    <void property="nodes"> 
+     <void method="put"> 
+      <string>./Email/INSG5/Msnd</string> 
+      <string></string> 
+     </void> 
+    </void> 
+    <void property="statusCode"> 
+     <int>200</int> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="sync4j.framework.engine.dm.ManagementOperationResult"> 
+    <void property="command"> 
+     <string>Delete</string> 
+    </void> 
+    <void property="nodes"> 
+     <void method="put"> 
+      <string>./Email/INSG5/PW</string> 
+      <string></string> 
+     </void> 
+    </void> 
+    <void property="statusCode"> 
+     <int>405</int> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="sync4j.framework.engine.dm.ManagementOperationResult"> 
+    <void property="command"> 
+     <string>Alert</string> 
+    </void> 
+    <void property="statusCode"> 
+     <int>200</int> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

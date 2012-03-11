@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>ETEN</Name>
+<ExternalID>ETEN</ExternalID>
+<Description>ETEN</Description>
+<Models filename="./models/eten/models.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

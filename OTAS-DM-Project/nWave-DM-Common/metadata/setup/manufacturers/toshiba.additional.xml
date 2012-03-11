@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Toshiba</Name>
+<ExternalID>Toshiba</ExternalID>
+<Description>Toshiba</Description>
+<Models filename="./models/toshiba/models.additional.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

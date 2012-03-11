@@ -1,0 +1,1425 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        NAP Profiles 
+      ***********************************************************************************
+   -->
+
+  <!--  
+      ***********************************************************************************
+        Proxy Profiles 
+      ***********************************************************************************
+   -->
+
+  <!--  
+      ***********************************************************************************
+        Email Profiles 
+      ***********************************************************************************
+   -->
+  <!-- Email Profile: GMail-->
+  <Profile>
+    <ProfileName>GMail</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Google Email服务, 该服务的详细情况请访问GMail服务提供商的网站http://www.gmail.com</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>GMail</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value>@gmail.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@gmail.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.gmail.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>995</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.gmail.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>465</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- Email Profile: OTAS Email-->
+  <Profile>
+    <ProfileName>OTAS Email</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>OTAS Email服务</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>OTAS Email</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@otas.cn</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>mail.otas.cn</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>mail.otas.cn</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- Email Profile: 126.com Email Profile-->
+  <Profile>
+    <ProfileName>126.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>126.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>126.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@126.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.126.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.126.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: 163.com Email Profile-->
+  <Profile>
+    <ProfileName>163.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>163.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>163.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@163.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.163.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.163.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: VIP.163.com Email Profile-->
+  <Profile>
+    <ProfileName>VIP.163.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>VIP.163.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>VIP.163.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@vip.163.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.vip.163.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.vip.163.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: 188.com Email Profile-->
+  <Profile>
+    <ProfileName>188.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>188.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>188.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@188.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.188.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.188.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: yeah.net Email Profile-->
+  <Profile>
+    <ProfileName>Yeah.net</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>yeah.net 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>Yeah.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@yeah.net</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.yeah.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.yeah.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: netease.com Email Profile-->
+  <Profile>
+    <ProfileName>Netease.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>netease.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>Netease.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@netease.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.netease.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.netease.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: Tom.com Email Profile-->
+  <Profile>
+    <ProfileName>Tom.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Tom.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>Tom.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@tom.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.tom.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.tom.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: 163.net Email Profile-->
+  <Profile>
+    <ProfileName>163.net</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>163.net 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>163.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@163.net</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.163.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.163.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: yahoo.com.cn Email Profile-->
+  <Profile>
+    <ProfileName>Yahoo.com.cn</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Yahoo.com.cn 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>Yahoo.com.cn</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@yahoo.com.cn</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.mail.yahoo.com.cn</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>995</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.mail.yahoo.com.cn</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: sina.com Email Profile-->
+  <Profile>
+    <ProfileName>Sina.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>sina.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>Sina.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@sina.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.sina.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.sina.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: vip.sina.com Email Profile-->
+  <Profile>
+    <ProfileName>Vip.sina.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Vip.sina.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>vip.sina.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@vip.sina.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop3.vip.sina.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.vip.sina.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: Sohu.com Email Profile-->
+  <Profile>
+    <ProfileName>Sohu.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>Sohu.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>Sohu.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@sohu.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop3.sohu.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.sohu.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: vip.sohu.com Email Profile-->
+  <Profile>
+    <ProfileName>Vip.sohu.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>vip.sohu.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>Vip.sohu.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@vip.sohu.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop3.vip.sohu.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.vip.sohu.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: 21cn.com Email Profile-->
+  <Profile>
+    <ProfileName>21cn.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>21cn.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>21cn.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@21cn.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.21cn.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.21cn.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: 21cn.net (POP) Email Profile-->
+  <Profile>
+    <ProfileName>21cn.net (POP)</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>21cn.net 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>21cn.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@21cn.net</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.21cn.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.21cn.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: 21cn.net (IMAP) Email Profile-->
+  <Profile>
+    <ProfileName>21cn.net (IMAP)</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>21cn.net 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>21cn.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@21cn.net</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>imap.21cn.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>143</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.21cn.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>IMAP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: 263.net Email Profile-->
+  <Profile>
+    <ProfileName>263.net</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>263.net 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>263.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@263.net</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>263.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.263.net </Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: x263.net Email Profile-->
+  <Profile>
+    <ProfileName>X263.net</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>x263.net 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>X263.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@x263.net</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.x263.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.x263.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: 263.net.cn Email Profile-->
+  <Profile>
+    <ProfileName>263.net.cn</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>263.net.cn 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>263.net.cn</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@263.net.cn</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>263.net.cn</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>263.net.cn</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: 263xmail.com Email Profile-->
+  <Profile>
+    <ProfileName>263xmail.com</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>263xmail.com 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>263xmail.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@263xmail.com</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>pop.263xmail.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>smtp.263xmail.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Email Profile: 96590.net Email Profile-->
+  <Profile>
+    <ProfileName>96590.net</ProfileName>
+    <Template>Email Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNINET</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>96590.net 电子邮件配置.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>96590.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Username</Name>
+         <Value></Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Email Address</Name>
+         <Value>@96590.net</Value>
+      </Attribute>    
+      <Attribute>
+         <Name>Reply To Address</Name>
+         <Value></Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Address</Name>
+         <Value>mail.96590.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Receiving Server Port</Name>
+         <Value>110</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Receiving Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Address</Name>
+         <Value>mail.96590.net</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Sending Server Port</Name>
+         <Value>25</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SSL Sending Service</Name>
+         <Value>false</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Use SMTP authentication</Name>
+         <Value>true</Value>
+      </Attribute>
+      <Attribute>
+         <Name>Mailbox Protocol</Name>
+         <Value>POP</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+</Profiles>
+</Setup>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DMPackageHandler.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DMPackageHandler" table="NW_DM_DM_PKG_HANDLER">
+        <id name="dmPkgHandlerId" type="long" unsaved-value="0">
+            <column name="DM_PKG_HANDLER_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="nwDmDmPkgSender" class="com.npower.dm.hibernate.entity.DMPackageSender" fetch="select">
+            <column name="PACKAGE_SENDER_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="nwDmDmPkgRespProc" class="com.npower.dm.hibernate.entity.DMPkgRespProc" fetch="select">
+            <column name="COMMAND_RESPONSE_BUILDER_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="nwDmDmCmdPkg" class="com.npower.dm.hibernate.entity.DMCommandPackage" fetch="select">
+            <column name="COMMAND_PACKAGE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="nwDmDmSession" class="com.npower.dm.hibernate.entity.DMSession" fetch="select">
+            <column name="DM_SESSION_ID" precision="16" scale="0" />
+        </many-to-one>
+        <property name="handlerType" type="string">
+            <column name="HANDLER_TYPE" not-null="true" />
+        </property>
+        <set name="nwDmDmSessions" inverse="true">
+            <key>
+                <column name="CUR_PKG_HANDLER_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DMSession" />
+        </set>
+    </class>
+</hibernate-mapping>

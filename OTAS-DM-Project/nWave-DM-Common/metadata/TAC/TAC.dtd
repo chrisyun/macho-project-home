@@ -1,0 +1,7 @@
+<!ELEMENT Manufacturers (Manufacturer)+>
+<!ELEMENT Manufacturer (Name,ExternalID,Model+)>
+<!ELEMENT Name (#PCDATA) >
+<!ELEMENT ExternalID (#PCDATA) >
+<!ELEMENT Model (Name,ExternalID,TACs+)>
+<!ELEMENT TACs (TAC)+>
+<!ELEMENT TAC (#PCDATA) >
