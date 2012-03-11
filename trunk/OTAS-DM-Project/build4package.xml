@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<!--
+  * $Header: /home/master/nWave-DM-Build/build4package.xml,v 1.5 2009/02/13 09:04:14 zhao Exp $
+  * $Revision: 1.5 $
+  * $Date: 2009/02/13 09:04:14 $
+-->
+<project name="OTAS.DM.package" default="bin" basedir=".">
+  <property environment="env"/>
+  
+  <!-- Source directory -->
+  <property name="package.input.dir" value="${otas.dm.builder.dir}/output/runtime"/>
+  
+  <!-- Target directory -->
+  <property name="package.output.dir" value="${otas.dm.builder.dir}/output/release"/>
+  
+  <!-- Build runtime directory -->
+  <target name="init">
+    <mkdir dir="${otas.dm.builder.dir}/output/release" />
+  </target>
+
+  <target name="copy_files" depends="init">
+  </target>
+
+  <target name="bin" depends="copy_files">
+    <tar tarfile="${otas.dm.builder.dir}/output/release/OTAS-DM-Server-${build.version}.${build.number}.tar.gz"
+         longfile="gnu"
+         compression="gzip" >
+      <tarfileset dir="${package.input.dir}" mode="644">
+        <include name="**/*" />
+        <exclude name="**/bin/*.sh" />
+        <exclude name="**/report/ReportEngine/*.sh" />
+      </tarfileset>
+      <tarfileset dir="${package.input.dir}" mode="755">
+        <include name="**/bin/*.sh" />
+        <include name="**/bin/ant" />
+        <include name="**/bin/run.conf" />
+        <include name="**/report/ReportEngine/*.sh" />
+      </tarfileset>
+    </tar>
+  </target>
+  
+    <!-- =============================================== -->
+    <!-- CLEAN                                           -->
+    <!-- =============================================== -->
+
+    <target name="clean" depends="init">
+        <delete dir="${otas.dm.builder.dir}/output/release" />
+    </target>
+  
+</project>
