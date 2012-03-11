@@ -1,0 +1,704 @@
+<?xml version="1.0"?>
+<!--
+  * $Header: /home/master/nWave-DM-Build/build.xml,v 1.32 2009/02/13 07:22:24 zhao Exp $
+  * $Revision: 1.32 $
+  * $Date: 2009/02/13 07:22:24 $
+-->
+<project default="help" >
+
+  <!-- we do allow for account specific properties -->
+  <property file="~/otasdm.build.properties" />
+  <property file="../otasdm.build.properties" />
+
+  <!-- Define youself properties and overwrite build.properties and build.default.properties -->
+  <property file="build.local.properties"/>
+
+  <!-- property values you must customize for successful building!!!  -->
+  <property file="build.properties"/>
+  <property file="build.default.properties"/>
+	
+  
+  <property name="otas.dm.builder.dir" 
+            value="${otas.base.dir}/${otas.dm.builder.cvs.module.name}"/>
+  <property name="otas.dm.library.dir" 
+            value="${otas.base.dir}/${otas.dm.library.cvs.module.name}"/>
+  <property name="otas.dm.framework.dir" 
+            value="${otas.base.dir}/${otas.dm.framework.cvs.module.name}"/>
+  <property name="otas.dm.common.dir" 
+            value="${otas.base.dir}/${otas.dm.common.cvs.module.name}"/>
+  <property name="otas.dm.server.dir" 
+            value="${otas.base.dir}/${otas.dm.server.cvs.module.name}"/>
+  <property name="otas.dm.webadmin.dir" 
+            value="${otas.base.dir}/${otas.dm.webadmin.cvs.module.name}"/>
+  <property name="otas.dm.report.dir" 
+            value="${otas.base.dir}/${otas.dm.report.cvs.module.name}"/>
+  <property name="otas.sms.common.dir" 
+            value="${otas.base.dir}/${otas.sms.common.cvs.module.name}"/>
+  <property name="otas.sms.client.dir" 
+            value="${otas.base.dir}/${otas.sms.gateway.cvs.module.name}"/>
+  <property name="otas.setup.common.dir" 
+            value="${otas.base.dir}/${otas.setup.common.cvs.module.name}"/>
+  <property name="otas.sms.common.dir" 
+            value="${otas.base.dir}/${otas.sms.common.cvs.module.name}"/>
+  <property name="otas.sms.gateway.dir" 
+            value="${otas.base.dir}/${otas.sms.gateway.cvs.module.name}"/>
+  <property name="otas.dm.myportal.dir" 
+            value="${otas.base.dir}/${otas.dm.myportal.cvs.module.name}"/>
+  <property name="otas.dm.tools.dir" 
+            value="${otas.base.dir}/${otas.dm.tools.cvs.module.name}"/>
+  <property name="otas.dm.portal.dir" 
+            value="${otas.base.dir}/${otas.dm.portal.cvs.module.name}"/>            
+
+  <property name="build.version"
+  	        value="${otas.dm.server.version.major}.${otas.dm.server.version.minor}"></property>
+  <!-- Notification Ant subtask, the build task is fired-up from nWave-DM_Builder -->
+  <property name="Global.Build.Flag" value="true"/>
+	
+  <!-- Project Properties -->
+  <tstamp>
+    <format property="package.builddate"         pattern="yyyy-MM-dd"/>
+  </tstamp>
+  
+  <tstamp>
+    <format property="package.buildtime"         pattern="HH:mm:ss"/>
+  </tstamp>
+
+	<tstamp>
+    <format property="package.tagdate"         pattern="yyyyMMddHHmm"/>
+  </tstamp>
+
+  <!-- Local properties -->
+  <condition property="flag.perform.commit.buildnumber">
+    <equals arg1="${release.mode}" arg2="true"/>
+  </condition>
+	
+  <echo message="BuildDate: ${package.builddate}"/>
+  <echo message="BuildTime: ${package.buildtime}"/>
+  
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!--    Global Classpath definition                                                            -->
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <path id="XFire.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/xbean-spring-2.8.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/xfire-jsr181-api-1.0-M1.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/XmlSchema-1.1.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/activation-1.1.jar"/>
+      <!-- <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/commons-beanutils-1.7.0.jar"/> -->
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/commons-codec-1.3.jar"/>
+      <!-- <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/commons-logging-1.0.4.jar"/> -->
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/jaxen-1.1-beta-9.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/jaxws-api-2.0.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/jdom-1.0.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/mail-1.4.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/saaj-api-1.3.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/saaj-impl-1.3.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/spring-1.2.6.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/stax-api-1.0.1.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/wsdl4j-1.6.1.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/wstx-asl-3.2.0.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/xbean-2.2.0.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/commons-httpclient-3.0.jar"/>
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/xfire-all-1.2.6.jar"/>
+  </path>
+
+  <path id="common.http.client.3.0.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/xfire-1.2.6/lib/commons-httpclient-3.0.jar"/>
+  </path>
+
+  <path id="Hibernate.3.lib.classpath">
+    <!-- Hibernate 3.0.4
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/antlr-2.7.5H3.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/asm.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/asm-attrs.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/c3p0-0.8.5.2.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/cglib-2.1.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/cleanimports.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/concurrent-1.3.2.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/connector.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/dom4j-1.6.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/ehcache-1.1.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/hibernate3.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/jaas.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/jacc-1_0-fr.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/jdbc2_0-stdext.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/jgroups-2.2.7.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/jta.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/log4j-1.2.9.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/oscache-2.1.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/proxool-0.8.3.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/swarmcache-1.0rc2.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/xerces-2.6.2.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.0.4/lib/xml-apis.jar"/>
+    -->
+    
+    <!-- Hibernate 3.2 -->
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/antlr-2.7.6.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/asm.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/asm-attrs.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/c3p0-0.9.1.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/cglib-2.1.3.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/checkstyle-all.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/cleanimports.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/concurrent-1.3.2.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/connector.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/dom4j-1.6.1.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/ehcache-1.2.3.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/hibernate3.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/jaas.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/jacc-1_0-fr.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/javassist.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/jaxen-1.1-beta-7.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/jdbc2_0-stdext.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/jgroups-2.2.8.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/jta.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/log4j-1.2.11.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/oscache-2.1.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/proxool-0.8.3.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/swarmcache-1.0rc2.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/xerces-2.6.2.jar"/>
+    <pathelement location="${otas.dm.library.dir}/hibernate-3.2/lib/xml-apis.jar"/>
+    
+  </path>
+
+  <path id="Oracle.JDBC.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/oracle10g/nls_charset12.jar"/>
+      <pathelement location="${otas.dm.library.dir}/oracle10g/ojdbc14.jar"/>
+      <pathelement location="${otas.dm.library.dir}/oracle10g/orai18n.jar"/>
+  </path>
+
+  <path id="j2ee.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/1.4/activation.jar"/>
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/1.4/javax.servlet.jar"/>
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/1.4/javax.servlet.jsp.jar"/>
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/1.4/jboss-j2ee.jar"/>
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/1.4/jboss-jaxrpc.jar"/>
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/1.4/jboss-jsr77.jar"/>
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/1.4/jboss-saaj.jar"/>
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/1.4/mail.jar"/>
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/1.4/namespace.jar"/>
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/1.4/xml-apis.jar"/>
+  </path>
+  <path id="jstl.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/JSTL1.1/lib/jstl.jar"/>
+      <pathelement location="${otas.dm.library.dir}/J2EE 1.4/JSTL1.1/lib/standard.jar"/>
+  </path>
+
+  <path id="JUnit.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/JUnit-3.8.1/junit.jar"/>
+  </path>
+  <path id="JFreeChart.classpath">
+      <pathelement location="${otas.dm.library.dir}/jfreechart-1.0.4/lib/swtgraphics2d.jar"/>
+      <pathelement location="${otas.dm.library.dir}/jfreechart-1.0.4/lib/itext-1.4.8.jar"/>
+      <pathelement location="${otas.dm.library.dir}/jfreechart-1.0.4/lib/jcommon-1.0.8.jar"/>
+      <pathelement location="${otas.dm.library.dir}/jfreechart-1.0.4/lib/jfreechart-1.0.4.jar"/>
+      <pathelement location="${otas.dm.library.dir}/jfreechart-1.0.4/lib/jfreechart-1.0.4-experimental.jar"/>
+      <pathelement location="${otas.dm.library.dir}/jfreechart-1.0.4/lib/jfreechart-1.0.4-swt.jar"/>
+  </path>
+  <path id="AspectJ.Runtime.classpath">
+      <pathelement location="${otas.dm.library.dir}/aspectj1.5/lib/aspectjrt.jar"/>
+  </path>
+  <path id="Jibx.Runtime.classpath">
+      <pathelement location="${otas.dm.library.dir}/Jibx/jibx-run.jar"/>
+      <pathelement location="${otas.dm.framework.dir}/lib/xpp3.jar"/>
+  </path>
+  <path id="XOM.classpath">
+      <pathelement location="${otas.dm.library.dir}/XOM/xom-1.0.jar"/>
+  </path>
+  <path id="DisplayTag.lib.classpath">
+      <!-- <pathelement location="${otas.dm.library.dir}/displaytag-1.1/itext-1.3.jar"/> -->
+      <pathelement location="${otas.dm.library.dir}/displaytag-1.1/displaytag-1.1.jar"/>
+      <pathelement location="${otas.dm.library.dir}/displaytag-1.1/displaytag-export-poi-1.1.jar"/>
+  </path>
+  <path id="Jakarta.Common.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/commons-beanutils-1.7.0/commons-beanutils.jar"/>
+      <pathelement location="${otas.dm.library.dir}/commons-beanutils-1.7.0/commons-beanutils-bean-collections.jar"/>
+      <pathelement location="${otas.dm.library.dir}/commons-beanutils-1.7.0/commons-beanutils-core.jar"/>
+      <pathelement location="${otas.dm.library.dir}/commons-collections-3.2/commons-collections-3.2.jar"/>
+      <pathelement location="${otas.dm.library.dir}/commons-digester-1.7/commons-digester-1.7.jar"/>
+      <pathelement location="${otas.dm.library.dir}/commons-fileupload-1.1/commons-fileupload-1.1.jar"/>
+      <pathelement location="${otas.dm.library.dir}/commons-lang-2.1/commons-lang-2.1.jar"/>
+      <pathelement location="${otas.dm.library.dir}/commons-logging-1.1/commons-logging-1.1.jar"/>
+      <pathelement location="${otas.dm.library.dir}/commons-logging-1.1/commons-logging-adapters-1.1.jar"/>
+      <pathelement location="${otas.dm.library.dir}/commons-logging-1.1/commons-logging-api-1.1.jar"/>
+      <pathelement location="${otas.dm.library.dir}/commons-modeler-1.1/commons-modeler.jar"/>
+  </path>
+  <path id="Jakarta.ORO.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/jakarta-oro-2.0.8/jakarta-oro-2.0.8.jar"/>
+  </path>
+  <path id="P6Spy.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/p6spy-install/p6spy.jar"/>
+  </path>
+  <path id="Struts.Menu.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/struts-menu-2.4.2/avalon-logkit-2.1.jar"/>
+      <pathelement location="${otas.dm.library.dir}/struts-menu-2.4.2/struts-menu-2.4.2.jar"/>
+      <pathelement location="${otas.dm.library.dir}/struts-menu-2.4.2/velocity-1.4.jar"/>
+      <pathelement location="${otas.dm.library.dir}/struts-menu-2.4.2/velocity-tools-view-1.0.jar"/>
+  </path>
+  <path id="Jakarta.CommonIO.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/commons-io-1.2/commons-io-1.2.jar"/>
+  </path>
+  <path id="bean.shell.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/BeanShell/bsh-2.0b1.jar"/>
+  </path>
+  <path id="Velocity.1.4.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/velocity-1.4/velocity-1.4.jar"/>
+  </path>
+  <path id="XMLUnit.1.0.lib.classpath">
+      <pathelement location="${otas.dm.library.dir}/xmlunit1.0/xmlunit/lib/xmlunit1.0.jar"/>
+  </path>
+  <path id="otas.dm.common.classpath">
+      <pathelement location="${otas.dm.common.dir}/output/${otas-dm-common-jarfilename}"/>
+  </path>
+  <path id="otas.dm.framework.classpath">
+      <pathelement location="${otas.dm.framework.dir}/output/${sync4j-framework-jarfilename}"/>
+      <pathelement location="${otas.dm.framework.dir}/ext/output/${otas-dm-ext-jar-filename}"/>
+  </path>
+  <path id="otas.sms.client.classpath">
+      <pathelement location="${otas.sms.client.dir}/output/otas-sms-client-1.0alpha.jar"/>
+  </path>
+  <path id="otas.sms.common.classpath">
+      <pathelement location="${otas.sms.common.dir}/output/${otas-sms-common-jar-filename}"/>
+  </path>
+  <path id="otas.setup.common.classpath">
+      <pathelement location="${otas.setup.common.dir}/runtime/lib/otas-setup-common.jar"/>
+  </path>
+  <path id="struts.lib.classpath">
+      <pathelement location="${otas.dm.webadmin.dir}/WebRoot/WEB-INF/lib/struts.jar"/>
+  </path>
+
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!--    Global Target                                                            -->
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <!-- Checkout or update from CVS repository  -->
+  <target name="cvs"  depends="init"
+          description="CVS task, checkout or update the source codes">
+    <ant antfile="build4cvs.xml" dir="${otas.dm.builder.dir}" target="checkout"/>
+  </target>
+
+  <!-- Make all of module   -->
+  <target name="make-all" depends="init, 
+                                   make-dm-framework, 
+                                   make-dm-common, 
+                                   make-dm-server, 
+                                   make-dm-webadmin, 
+                                   make-dm-myportal, 
+                                   make-otas-setup-common, 
+                                   make-sms-gateway,
+                                   make-otas-dm-report,
+                                   make-dm-tools,
+                                   make-dm-portal"
+         description="Make all of models">
+  	<!-- Tagging sources for build status -->
+    <ant antfile="build4cvs.xml" dir="${otas.dm.builder.dir}" target="build_src_tagging"/>
+  </target>
+  
+  <!-- Test all of module   -->
+  <target name="test-all" depends="test-dm-common"
+         description="Test all of models">
+  </target>
+
+  <target name="javadoc-all" depends="init, javadoc-dm-framework, javadoc-dm-common, javadoc-dm-server, javadoc-dm-webadmin"
+         description="Generate java docs for all of models">
+  </target>
+
+  <!-- Rebuild all of module   -->
+  <target name="rebuild-all" depends="clean-all, make-all"
+          description="Rebuild all of models">
+  </target>
+  
+  <!-- build all of runtime   -->
+  <target name="runtime-all" depends="runtime-dm-server"
+          description="make runtime">
+  </target>
+
+  <!-- package   -->
+  <target name="package-all" depends="package-dm-server, make-all"
+          description="make package">
+  	<!-- Tagging sources for release status -->
+    <ant antfile="build4cvs.xml" dir="${otas.dm.builder.dir}" target="release_src_tagging"/>
+  </target>
+
+  <!-- Release   -->
+  <target name="release-all" depends="package-dm-server, make-all"
+          description="make package, and release it">
+    <!-- Tagging sources for release status -->
+    <property name="flag.perform.release.rtagging" value="true"/>
+    <ant antfile="build4cvs.xml" dir="${otas.dm.builder.dir}" target="release_src_tagging"/>
+  </target>
+
+  <!-- all of tasks   -->
+  <target name="all" depends="package-all, javadoc-all"
+          description="Run all of tasks">
+  </target>
+
+  <!-- Clean all of module   -->
+  <target name="clean-all" depends="clean-dm-framework, 
+                                    clean-dm-common, 
+                                    clean-dm-server, 
+                                    clean-dm-webadmin,
+                                    clean-dm-myportal,
+                                    clean-runtime-dm-server,
+                                    clean-package-dm-server,
+                                    clean-otas-setup-common,
+																    clean-sms-common,
+																    clean-sms-client,
+																    clean-sms-gateway,
+    																clean-otas-dm-report,
+                                    clean-dm-tools,
+                                    clean-dm-portal"
+         description="Clean all of models">
+    <delete dir="${otas.dm.builder.dir}/output" />
+  </target>
+
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!--    Internal Target                                                          -->
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <!-- Initialize the build directories -->
+  <target name="init" depends="make_directories, init_buildnumber, commit_build_number"
+  	      description="Initialize build process.">
+  </target>
+	
+  <target name="init_buildnumber">
+    <buildnumber file="build.number"/>
+  </target>
+	
+  <target name="make_directories">
+    <mkdir dir="${otas.dm.builder.dir}/output" />
+    <mkdir dir="${otas.dm.builder.dir}/output/binary" />
+    <mkdir dir="${otas.dm.builder.dir}/output/docs" />
+    <mkdir dir="${otas.dm.builder.dir}/output/docs/javadocs" />
+  </target>
+	
+  <target name="commit_build_number" if="flag.perform.commit.buildnumber"
+	      description="">
+  	<!-- Overide and commit -->
+    <cvs command="ci -m -l ${otas.dm.builder.dir}/build.number"></cvs>
+  	<!-- Overide and update -->
+  	<!-- cvs update -C -l -d -P "/nWave-DM-Build/build.number" -->
+  </target>
+
+  <!-- Make OTAS DM Framework -->
+  <target name="make-dm-framework" 
+          description="Make the DM Framework">
+    <ant antfile="build.xml" dir="${otas.dm.framework.dir}" target="bin" inheritrefs="true"/>
+    <!-- Copy into Builder  -->
+    <copy file="${otas.dm.framework.dir}/output/${sync4j-framework-jarfilename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+    <copy file="${otas.dm.framework.dir}/ext/output/${otas-dm-ext-jar-filename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <!-- Make OTAS DM Common -->
+  <target name="make-dm-common" depends="make-dm-framework, make-sms-common, make-sms-client,make-otas-setup-common"
+          description="Make the DM Common">
+    <ant antfile="build.xml" dir="${otas.dm.common.dir}" target="bin" inheritrefs="true"/>
+    <!-- Copy into Builder  -->
+    <copy file="${otas.dm.common.dir}/output/${otas-dm-common-jarfilename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+    <copy file="${otas.dm.common.dir}/output/otas-dm-setup.jar"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <!-- Make OTAS DM Server -->
+  <target name="make-dm-server"  depends="make-dm-framework, make-dm-common"
+          description="Make the DM Server">
+    <ant antfile="build.xml" dir="${otas.dm.server.dir}" target="bin" inheritrefs="true"/>
+    <!-- Copy into Builder  -->
+    <copy file="${otas.dm.server.dir}/output/${syncserver-earfilename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <!-- Make OTAS DM WebAdmin -->
+  <target name="make-dm-webadmin"  depends="make-dm-framework, make-dm-common, make-sms-common, make-sms-client"
+          description="Make the DM WebAdmin">
+    <ant antfile="build.xml" dir="${otas.dm.webadmin.dir}" target="bin" inheritrefs="true"/>
+    <!-- Copy into Builder  -->
+    <copy file="${otas.dm.webadmin.dir}/output/${otas-dm-webadmin-warfilename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+    <copy file="${otas.dm.webadmin.dir}/output/${otas-dm-webadmin-jarfilename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+    <copy file="${otas.dm.webadmin.dir}/output/${otas-dm-soap-client-jarfilename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <!-- Make OTAS DM MyPortal -->
+  <target name="make-dm-myportal"  depends="make-dm-framework, make-dm-common, make-sms-common, make-sms-client, make-dm-webadmin"
+          description="Make the DM MyPortal">
+    <ant antfile="build.xml" dir="${otas.dm.myportal.dir}" target="bin" inheritrefs="true"/>
+    <!-- Copy into Builder  -->
+    <copy file="${otas.dm.myportal.dir}/output/${otas-dm-myportal-jarfilename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+    <copy file="${otas.dm.myportal.dir}/output/${otas-dm-myportal-warfilename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+  
+    <!-- Make OTAS DM Portal -->
+  <target name="make-dm-portal"  depends="make-dm-framework, make-dm-common, make-sms-common, make-sms-client, make-dm-webadmin"
+          description="Make the DM Portal">
+    <ant antfile="build.xml" dir="${otas.dm.portal.dir}" target="bin" inheritrefs="true"/>
+    <!-- Copy into Builder  -->
+    <copy file="${otas.dm.portal.dir}/output/${otas-dm-portal-jarfilename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+    <copy file="${otas.dm.portal.dir}/output/${otas-dm-portal-warfilename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <!-- Make the OTAS Setup Common -->
+  <target name="make-otas-setup-common"
+          description="Make the OTAS Setup Common">
+    <ant antfile="build.xml" dir="${otas.setup.common.dir}/" target="make" inheritrefs="true"/>
+    <!-- Copy into Builder  -->
+    <copy file="${otas.setup.common.dir}/runtime/lib/otas-setup-common.jar"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <!-- Make the OTAS DM Report -->
+  <target name="make-otas-dm-report" 
+          description="Make the OTAS DM Report">
+    <ant antfile="build.xml" dir="${otas.dm.report.dir}/" target="bin" inheritrefs="true"/>
+    <copy file="${otas.dm.report.dir}/output/otas-dm-report.war"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+    <copy file="${otas.dm.report.dir}/output/otas-dm-runtime.zip"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <!-- Make OTAS SMS Common -->
+  <target name="make-sms-common"
+          description="Make the SMS Common">
+    <ant antfile="build.xml" dir="${otas.sms.common.dir}/" target="binary" inheritrefs="true"/>
+    <copy file="${otas.sms.common.dir}/output/${otas-sms-common-jar-filename}"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <!-- Make OTAS SMS Client -->
+  <target name="make-sms-client" depends="make-sms-common"
+          description="Make the SMS Client">
+    <ant antfile="build-client.xml" dir="${otas.sms.gateway.dir}/" target="binary" inheritrefs="true"/>
+    <copy file="${otas.sms.gateway.dir}/output/otas-sms-client-1.0alpha.jar"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <!-- Make OTAS SMS Gateway -->
+  <target name="make-sms-gateway" depends="make-sms-client"
+          description="Make the SMS Gateway">
+    <ant antfile="build-war.xml" dir="${otas.sms.gateway.dir}/" target="binary" inheritrefs="true"/>
+    <copy filtering="true" file="${otas.sms.gateway.dir}/output/otas-sms-gateway-1.0alpha.jar"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+    <copy file="${otas.sms.gateway.dir}/output/OTAS-SMS-Gateway.war"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <!-- Make the OTAS DM Tools -->
+  <target name="make-dm-tools" depends="make-dm-common,make-sms-common"
+          description="Make the OTAS DM Tools">
+    <ant antfile="build.xml" dir="${otas.dm.tools.dir}/" target="make" inheritrefs="true"/>
+    <copy file="${otas.dm.tools.dir}/output/otas-dm-tools.jar"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <target name="test-dm-common" depends="make-dm-common"
+          description="Test the DM Common Module">
+    <ant antfile="build.xml" dir="${otas.dm.common.dir}" target="test" inheritrefs="true"/>
+  </target>
+  
+  <!-- Javadoc individule models -->
+  <target name="javadoc-dm-framework" 
+          description="Make the DM Framework">
+    <ant antfile="build.xml" dir="${otas.dm.framework.dir}" target="javadocs"/>
+    <!-- Copy into Output  -->
+    <copy todir="${otas.dm.builder.dir}/output/docs/javadocs/otas-dm-framework/api">
+      <fileset dir="${otas.dm.framework.dir}/output/javadoc"/>
+    </copy>
+  </target>
+
+  <target name="javadoc-dm-common" depends="make-dm-framework"
+          description="Make the DM Common">
+    <ant antfile="build.xml" dir="${otas.dm.common.dir}" target="javadocs"/>
+    <!-- Copy into Output  -->
+    <copy todir="${otas.dm.builder.dir}/output/docs/javadocs/otas-dm-common/api">
+      <fileset dir="${otas.dm.common.dir}/output/javadoc"/>
+    </copy>
+  </target>
+
+  <target name="javadoc-dm-server"  depends="make-dm-framework, make-dm-common"
+          description="Make the DM Server">
+    <ant antfile="build.xml" dir="${otas.dm.server.dir}" target="javadocs"/>
+    <copy todir="${otas.dm.builder.dir}/output/docs/javadocs/otas-dm-server/api">
+      <fileset dir="${otas.dm.server.dir}/output/javadoc"/>
+    </copy>
+  </target>
+
+  <target name="javadoc-dm-webadmin"  depends="make-dm-framework, make-dm-common"
+          description="Make the DM WebAdmin">
+    <ant antfile="build.xml" dir="${otas.dm.webadmin.dir}" target="javadocs"/>
+    <copy todir="${otas.dm.builder.dir}/output/docs/javadocs/otas-dm-webadmin/api">
+      <fileset dir="${otas.dm.webadmin.dir}/output/javadoc"/>
+    </copy>
+  </target>
+  
+  <!-- Build runtime individule models -->
+  <target name="runtime-dm-server"  depends="make-all, package-otas-setup-common,package-dm-tools"
+          description="Make DM Server Runtime enviroment ">
+    <ant antfile="build4runtime.xml" dir="${otas.dm.builder.dir}" target="bin"/>
+  </target>
+
+  <!-- Package DM Server -->
+  <target name="package-dm-server"  depends="runtime-all"
+          description="Make DM Server Runtime package ">
+    <ant antfile="build4package.xml" dir="${otas.dm.builder.dir}" target="bin"/>
+  </target>
+
+  <!-- Package the OTAS Setup Common -->
+  <target name="package-otas-setup-common" depends="make-otas-setup-common,make-dm-common"
+          description="Make the OTAS Setup Common">
+    <!-- Copy DM Common into Setup endorsed library -->
+    <copy file="${otas.dm.common.dir}/output/${otas-dm-common-jarfilename}"
+          todir="${otas.setup.common.dir}/runtime/lib/endorsed/"></copy>
+    <!-- Copy DM Setup into Setup endorsed library -->
+    <copy file="${otas.dm.common.dir}/output/otas-dm-setup.jar"
+          todir="${otas.setup.common.dir}/runtime/lib/endorsed/"></copy>
+    <!-- Copy SMS Common into Setup endorsed library -->
+    <copy file="${otas.sms.common.dir}/output/${otas-sms-common-jar-filename}"
+          todir="${otas.setup.common.dir}/runtime/lib/endorsed/"></copy>
+    
+    <ant antfile="build.xml" dir="${otas.setup.common.dir}" target="release"/>
+    <!-- Copy into Builder  -->
+    <copy file="${otas.setup.common.dir}/output/OTAS-SETUP.tar.gz"
+          todir="${otas.dm.builder.dir}/output/binary"/>
+  </target>
+
+  <!-- Package the OTAS DM Tools -->
+  <target name="package-dm-tools"  depends="make-dm-tools"
+          description="Make DM Tools Runtime enviroment ">
+    <ant antfile="build.xml" dir="${otas.dm.tools.dir}" target="release"/>
+    <copy file="${otas.dm.tools.dir}/output/otas-dm-tools.tar.gz"
+          todir="${otas.dm.builder.dir}/output/binary"></copy>
+  </target>
+
+  <!-- Clean individule models -->
+  <target name="clean-dm-framework"
+          description="Clean the DM Framework">
+    <ant antfile="build.xml" dir="${otas.dm.framework.dir}" target="clean"/>
+  </target>
+
+  <target name="clean-dm-common"
+          description="Clean the DM Common">
+    <ant antfile="build.xml" dir="${otas.dm.common.dir}" target="clean"/>
+  </target>
+
+  <target name="clean-dm-server"
+          description="Clean the DM Server">
+    <ant antfile="build.xml" dir="${otas.dm.server.dir}" target="clean"/>
+  </target>
+
+  <target name="clean-dm-webadmin"
+          description="Clean the DM WebAdmin">
+    <ant antfile="build.xml" dir="${otas.dm.webadmin.dir}" target="clean"/>
+  </target>
+
+  <target name="clean-dm-myportal"
+          description="Clean the DM MyPortal">
+    <ant antfile="build.xml" dir="${otas.dm.myportal.dir}" target="clean"/>
+  </target>
+  
+  <target name="clean-dm-portal"
+          description="Clean the DM Portal">
+    <ant antfile="build.xml" dir="${otas.dm.portal.dir}" target="clean"/>
+  </target>
+
+  <target name="clean-runtime-dm-server"
+          description="Clean DM Server Runtime enviroment ">
+    <ant antfile="build4runtime.xml" dir="${otas.dm.builder.dir}" target="clean"/>
+  </target>
+  
+  <target name="clean-package-dm-server"
+          description="Clean DM Server Runtime package ">
+    <ant antfile="build4package.xml" dir="${otas.dm.builder.dir}" target="clean"/>
+  </target>
+  
+  <target name="clean-otas-setup-common"
+          description="Clean the OTAS Setup Common">
+    <ant antfile="build.xml" dir="${otas.setup.common.dir}" target="clean"/>
+  </target>
+
+  <target name="clean-otas-dm-report"
+          description="Clean the OTAS DM Report">
+    <ant antfile="build.xml" dir="${otas.dm.report.dir}" target="clean"/>
+  </target>
+
+  <!-- Clean OTAS SMS Common -->
+  <target name="clean-sms-common"
+          description="Clean the SMS Common">
+    <ant antfile="build.xml" dir="${otas.sms.common.dir}/" target="clean"/>
+  </target>
+
+  <!-- Clean OTAS SMS Client -->
+  <target name="clean-sms-client"
+          description="Clean the SMS Client">
+    <ant antfile="build-client.xml" dir="${otas.sms.gateway.dir}/" target="clean"/>
+  </target>
+
+  <!-- Clean OTAS SMS Gateway -->
+  <target name="clean-sms-gateway"
+          description="Clean the SMS Gateway">
+    <ant antfile="build-war.xml" dir="${otas.sms.gateway.dir}/" target="clean"/>
+  </target>
+
+  <!-- Clean OTAS DM Tools -->
+  <target name="clean-dm-tools"
+          description="Clean the DM Tools">
+    <ant antfile="build.xml" dir="${otas.dm.tools.dir}/" target="clean"/>
+  </target>
+
+  <target name="help">
+     <echo message=""/>
+     <echo message=""/>
+     <echo message="The available target for the OTAS DM enviroment are:"/>
+     <echo message=""/>
+     <echo message=" - cvs  --> check out sources"/>
+     <echo message=" - make-all  --> builds the complete set of components."/>
+     <echo message="   The components can be seperately build with:"/>
+     <echo message=""/>
+     <echo message="   - make-dm-framework  --> builds only OTAS DM Framework components"/>
+     <echo message="   - make-dm-common     --> builds only OTAS DM Common components"/>
+     <echo message="   - make-dm-server     --> builds only OTAS DM Server components"/>
+     <echo message="   - make-dm-webadmin   --> builds only OTAS DM WebAdmin components"/>
+     <echo message="   - make-dm-myportal   --> builds only OTAS DM MyPortal components"/>
+     <echo message="   - make-dm-portal     --> builds only OTAS DM Portal components"/>
+     <echo message="   - make-sms-common    --> builds only OTAS SMS Common components"/>
+     <echo message="   - make-sms-client    --> builds only OTAS SMS Gateway Client components"/>
+     <echo message="   - make-sms-gateway   --> builds only OTAS SMS Gateway components"/>
+     <echo message="   - make-otas-setup-common  --> builds only OTAS Setup Common components"/>
+     <echo message="   - make-otas-dm-report     --> builds only OTAS DM Report components"/>
+     <echo message="   - make-dm-tools      --> builds only OTAS DM Tools components"/>
+     <echo message=""/>
+     <echo message=" - runtime-all  --> builds the runtime enviroment."/>
+     <echo message=" - rebuild-all  --> clean-all and make-all."/>
+     <echo message=" - javadoc-all  --> generate docs for complete set of components"/>
+     <echo message=" - test-all     --> Run all of testcases"/>
+     <echo message=" - package-all  --> package binary"/>
+     <echo message=" - release-all  --> package binary, release and tag it"/>
+     <echo message=" - all          --> execute 'package-all' and 'javadoc-all'"/>
+     <echo message=" - clean-all    --> clean all of outputs"/>
+     <echo message="   The components can be seperately build with:"/>
+     <echo message=""/>
+     <echo message="   - clean-dm-framework  --> clean only OTAS DM Framework components"/>
+     <echo message="   - clean-dm-common     --> clean only OTAS DM Common components"/>
+     <echo message="   - clean-dm-server     --> clean only OTAS DM Server components"/>
+     <echo message="   - clean-dm-webadmin   --> clean only OTAS DM WebAdmin components"/>
+     <echo message="   - clean-dm-myportal   --> clean only OTAS DM MyPortal components"/>
+     <echo message="   - clean-dm-portal     --> clean only OTAS DM Portal components"/>     
+     <echo message="   - clean-sms-common    --> clean only OTAS SMS Common components"/>
+     <echo message="   - clean-sms-client    --> clean only OTAS SMS Gateway Client components"/>
+     <echo message="   - clean-sms-gateway   --> clean only OTAS SMS Gateway components"/>
+     <echo message="   - clean-otas-setup-common    --> clean only OTAS Setup Common components"/>
+     <echo message="   - clean-otas-dm-report       --> clean only OTAS DM Report components"/>
+     <echo message="   - clean-dm-tools      --> clean only OTAS DM Tools components"/>
+     <echo message=""/>
+     <echo message=""/>
+  </target>
+
+</project>
