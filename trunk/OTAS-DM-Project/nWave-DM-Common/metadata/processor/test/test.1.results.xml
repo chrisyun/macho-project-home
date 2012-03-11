@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/processor/test/test.1.results.xml,v 1.2 2006/05/12 15:56:46 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/05/12 15:56:46 $
+-->
+<java version="1.5.0_06" class="java.beans.XMLDecoder">
+
+	<object class="java.util.ArrayList">
+		<void method="add">
+
+			<object class="java.util.ArrayList">
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Get</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyEmail/Name</string>
+								<string>MyPushMail</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Get</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyEmail/SMTPSrv</string>
+								<string>smtp.mail.com</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Get</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyEmail/POPSrv</string>
+								<string>pop3.mail.com</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Get</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyEmail/Username</string>
+								<string>zhaodonglu</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Get</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyEmail/Password</string>
+								<string>guessit</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+				<!-- TestCase: Return code 404 Not found                                  -->
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Get</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyEmail/EmailAddress</string>
+								<string>zhao@otas.cn</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>404</int>
+						</void>
+					</object>
+				</void>
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Alert</string>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+			</object>
+
+		</void>
+	</object>
+</java>

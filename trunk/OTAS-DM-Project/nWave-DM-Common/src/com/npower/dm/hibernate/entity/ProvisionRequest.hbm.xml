@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ProvisionRequest.hbm.xml,v 1.25 2009/02/17 03:38:59 zhao Exp $
+  * $Revision: 1.25 $
+  * $Date: 2009/02/17 03:38:59 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ProvisionRequest" table="NW_DM_PROV_REQ">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="PROV_REQ_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="updateWorkflow" class="com.npower.dm.hibernate.entity.UpdateWorkflow" fetch="select">
+            <column name="WORKFLOW_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="targetImage" class="com.npower.dm.hibernate.entity.ImageEntity" fetch="select">
+            <column name="TARGET_IMAGE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="targetSoftware" class="com.npower.dm.hibernate.entity.SoftwareEntity" fetch="select">
+            <column name="TARGET_SOFTWARE_ID" precision="20" scale="0" />
+        </many-to-one>
+        <many-to-one name="parent" class="com.npower.dm.hibernate.entity.ProvisionRequest" fetch="select">
+            <column name="PARENT_PROV_REQ_ID" precision="20" scale="0" not-null="false" />
+        </many-to-one>
+        <property name="jobMode" type="string">
+            <column name="JOB_MODE" length="20" not-null="true" />
+        </property>
+        <property name="targetType" type="string">
+            <column name="TYPE" length="30" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="1000" not-null="false" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="2000" not-null="false" />
+        </property>
+        <property name="running" type="boolean">
+            <column name="RUNNING" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="targetImageDescription" type="string">
+            <column name="TARGET_IMAGE_DESCRIPTION" length="300" />
+        </property>
+        <property name="targetSoftwareDescription" type="string">
+            <column name="TARGET_SOFTWARE_DESCRIPTION" length="300" />
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" length="20" not-null="true" />
+        </property>
+        <property name="scheduledTime" type="java.util.Date">
+            <column name="SCHEDULED_TIME" not-null="true" />
+        </property>
+        <property name="expiredTime" type="java.util.Date">
+            <column name="EXPIRED_TIME" not-null="false" />
+        </property>
+        <property name="concurrentSize" type="long">
+            <column name="CONCURRENT_SIZE" precision="10" scale="0" not-null="true" />
+        </property>
+        <property name="concurrentInterval" type="long">
+            <column name="CONCURRENT_INTERVAL" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="criteria" type="string">
+            <column name="CRITERIA" length="100" />
+        </property>
+        <property name="priority" type="int">
+            <column name="RATE" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="askPermissionOnTrigger" type="boolean">
+            <column name="ASK_PERMISSION_ON_TRIGGER" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="requiredNotification" type="boolean">
+            <column name="REQUIRED_NOTIFICATION" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="notificationStartTime" type="double">
+            <column name="NOTIFICATION_START_TIME" precision="4" not-null="true" />
+        </property>
+        <property name="notificationEndTime" type="double">
+            <column name="NOTIFICATION_END_TIME" precision="4" not-null="true" />
+        </property>
+        <property name="uiMode" type="string">
+            <column name="UI_MODE" length="64" not-null="true" />
+        </property>
+        <property name="askCount" type="long">
+            <column name="ASK_COUNT" precision="5" scale="0" not-null="true" />
+        </property>
+        <property name="askInterval" type="long">
+            <column name="ASK_INTERVAL" precision="7" scale="0" not-null="true" />
+        </property>
+        <property name="askBeforeDown" type="boolean">
+            <column name="ASK_BEFORE_DOWN" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="askBeforeApply" type="boolean">
+            <column name="ASK_BEFORE_APPLY" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="jobType" type="string">
+            <column name="JOB_TYPE" length="64" not-null="true" />
+        </property>
+        <property name="jobTypeForDisplay" type="string">
+            <column name="JOB_TYPE_FOR_DISPLAY" length="100" not-null="true" />
+        </property>
+        <property name="commandPackageId" type="long">
+            <column name="COMMAND_PACKAGE_ID" precision="16" scale="0" />
+        </property>
+        <property name="script" type="string">
+            <column name="SCRIPT" />
+        </property>
+        <property name="appLanguage" type="string">
+            <column name="APP_LANGUAGE" length="50" />
+        </property>
+        <property name="workflowName" type="string">
+            <column name="WORKFLOW_NAME" length="100" />
+        </property>
+        <property name="maxRetries" type="long">
+            <column name="MAX_RETRIES" precision="2" scale="0" />
+        </property>
+        <property name="maxDuration" type="long">
+            <column name="MAX_DURATION" precision="6" scale="0" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="CREATED_TIME" length="7" not-null="true" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="CREATED_BY" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" />
+        </property>
+        <property name="prompt4Beginning" type="boolean" not-null="true">
+            <column name="IS_PROMPT_FOR_BEGINNING"  precision="1"/>
+        </property>   
+        <property name="promptType4Beginning" type="string">
+            <column name="PROMPT_TYPE_FOR_BEGINNING" />
+        </property> 
+        <property name="promptText4Beginning" type="string">
+            <column name="PROMPT_TEXT_FOR_BEGINNING" />
+        </property> 
+        <property name="prompt4Finished" type="boolean" not-null="true">
+            <column name="IS_PROMPT_FOR_FINISHED"  precision="1"/>
+        </property> 
+        <property name="promptType4Finished" type="string">
+            <column name="PROMPT_TYPE_FOR_FINISHED" />
+        </property> 
+        <property name="promptText4Finished" type="string">
+            <column name="PROMPT_TEXT_FOR_FINISHED" />
+        </property>                                              
+        <set name="otaTargetDevices" inverse="true">
+            <key>
+                <column name="PROV_REQ_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ClientProvJobTargetDeviceEntity" />
+        </set>
+        <set name="jobStates" inverse="true">
+            <key>
+                <column name="JOB_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.JobState" />
+        </set>
+        <set name="deviceLogs" inverse="true">
+            <key>
+                <column name="JOB_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DeviceLogEntity" />
+        </set>
+        <set name="discoveryJobNodes" inverse="true" order-by="ROOT_NODE asc">
+            <key>
+                <column name="DISCOVERY_JOB_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.Node4DiscoveryJob" />
+        </set>
+        <set name="provisionPhoneNumbers" inverse="true">
+            <key>
+                <column name="PR_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProvisionsPhoneNumber" />
+        </set>
+        <set name="provisionElements" inverse="true">
+            <key>
+                <column name="PROV_REQ_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.Element4Provision" />
+        </set>
+        <set name="children" inverse="true" order-by="PROV_REQ_ID asc">
+            <key>
+                <column name="PARENT_PROV_REQ_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProvisionRequest" />
+        </set>
+    </class>
+</hibernate-mapping>

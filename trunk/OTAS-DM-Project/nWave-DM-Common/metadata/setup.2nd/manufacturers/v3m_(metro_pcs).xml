@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>V3m (Metro PCS)</Name>
+<ExternalID>V3m (Metro PCS)</ExternalID>
+<Description>V3m (Metro PCS)</Description>
+<Models filename="./models/v3m_(metro_pcs)/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

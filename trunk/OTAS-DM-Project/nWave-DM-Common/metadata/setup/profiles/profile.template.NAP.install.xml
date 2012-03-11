@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.template.NAP.install.xml,v 1.2 2007/12/15 11:24:08 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2007/12/15 11:24:08 $
+-->
+<ProfileMetaData>
+    <AttributeTypes>
+        <!-- Using by NAP Template -->
+        
+        <AttributeType>
+        	<Name>NAP BEARER</Name>
+        	<Description>The BEARER indicates which network type (in addition to address type) the definition is valid for.</Description>
+        	<Values>
+                <Value>GSM-GPRS</Value>
+                <Value>GSM-CSD</Value>
+        		<Value>GSM-USSD</Value>
+        		<Value>GSM-SMS</Value>
+        		<Value>ANSI-136-GUTS</Value>
+        		<Value>IS-95-CDMA-SMS</Value>
+        		<Value>IS-95-CDMA-CSD</Value>
+        		<Value>IS-95-CDMA-PACKET</Value>
+        		<Value>ANSI-136-CSD</Value>
+        		<Value>ANSI-136-GPRS</Value>
+        		<Value>AMPS-CDPD</Value>
+        		<Value>PDC-CSD</Value>
+        		<Value>PDC-PACKET</Value>
+        		<Value>IDEN-SMS</Value>
+        		<Value>IDEN-CSD</Value>
+        		<Value>IDEN-PACKET</Value>
+        		<Value>FLEX/REFLEX</Value>
+        		<Value>PHS-SMS</Value>
+        		<Value>PHS-CSD</Value>
+        		<Value>TETRA-SDS</Value>
+        		<Value>TETRA-PACKET</Value>
+        		<Value>ANSI-136-GHOST</Value>
+        		<Value>MOBITEX MPAK</Value>
+        		<Value>CDMA2000-1X-SIMPLE-IP</Value>
+        		<Value>CDMA2000-1X-MOBILE-IP</Value>
+        	</Values>
+        </AttributeType>
+        <AttributeType>
+        	<Name>NAP ADDRTYPE</Name>
+        	<Description>The NAP-ADDRTYPE indicates the format of the address in the NAP-ADDRESS.</Description>
+        	<Values>
+        		<Value>IPV4</Value>
+        		<Value>IPV6</Value>
+        		<Value>E164</Value>
+        		<Value>ALPHA</Value>
+        		<Value>APN</Value>
+        		<Value>SCODE</Value>
+        		<Value>TETRA-ITSI</Value>
+        		<Value>MAN</Value>
+        	</Values>
+        </AttributeType>
+        <AttributeType>
+        	<Name>NAP CALLTYPE</Name>
+        	<Description>Some bearers may support different types of calls or different protocols to be used for data exchange. The
+        CALLTYPE parameter is used to define this protocol or call type. If the parameter is not present or if no value is
+        given, the default value ANALOG-MODEM should be assumed.</Description>
+        	<Values>
+        		<Value>ANALOG-MODEM</Value>
+        		<Value>V.120</Value>
+        		<Value>V.110</Value>
+        		<Value>X.31</Value>
+        		<Value>BIT-TRANSPARENT</Value>
+        		<Value>DIRECT-ASYNCHRONOUS-DATA-SERVICE</Value>
+        	</Values>
+        </AttributeType>
+        <AttributeType>
+        	<Name>NAP LOCAL-ADDRTYPE</Name>
+        	<Description>The LOCAL-ADDRTYPE indicates the format of the address in the LOCAL-ADDR parameter.</Description>
+        	<Values>
+        		<Value>IPV4</Value>
+        		<Value>IPV6</Value>
+        	</Values>
+        </AttributeType>
+        <AttributeType>
+        	<Name>NAP AUTHTYPE</Name>
+        	<Description>The AUTHTYPE is a parameter indicating the authentication protocol.</Description>
+        	<Values>
+        		<Value>PAP</Value>
+        		<Value>CHAP</Value>
+        		<Value>MD5</Value>
+        	</Values>
+        </AttributeType>
+        <AttributeType>
+        	<Name>NAP AUTH-ENTITY</Name>
+        	<Description>The parameter defines entity to which NAPAUTHINFO credentials are valid.</Description>
+        	<Values>
+        		<Value>AAA</Value>
+        		<Value>HA</Value>
+        	</Values>
+        </AttributeType>
+        
+    </AttributeTypes>
+
+    <ProfileTemplates>
+        <!-- Default NAP Template defined from OMA CP NAP Profile -->
+        <ProfileTemplate>
+            <CategoryName>NAP</CategoryName>
+            <Name>NAP Default Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <!-- 
+                <Attribute>
+                    <Name>NAPID</Name>
+                    <DisplayName>NAPID</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The NAPID is used to link to the TO-NAPID parameter of the PXPHYSICAL characteristic.</Description>
+                </Attribute>
+                 -->
+                <Attribute>
+                    <Name>NAME</Name>
+                    <DisplayName>NAME</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The NAME indicates a logical, user readable, identity (property) of the configuration element.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>BEARER</Name>
+                    <DisplayName>BEARER</DisplayName>
+                    <TypeName>NAP BEARER</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>true</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>GSM-GPRS</DefaultValue>
+                    <Description>The BEARER indicates which network type (in addition to address type) the definition is valid for.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>NAP-ADDRTYPE</Name>
+                    <DisplayName>NAP Addr Type</DisplayName>
+                    <TypeName>NAP ADDRTYPE</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>APN</DefaultValue>
+                    <Description>The NAP-ADDRTYPE indicates the format of the address in the NAP-ADDRESS.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>NAP-ADDRESS</Name>
+                    <DisplayName>NAP Address</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The NAP-ADDRESS Contains all the digits and pauses needed to communicate with a remote entity and is defined in [GENFORM]. The
+                format and the content of the parameter depend on the bearer type.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>DNS-ADDR</Name>
+                    <DisplayName>DNS Adddress</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>true</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <DefaultValue>0.0.0.0</DefaultValue>
+                    <Description>The DNS-ADDR can store the address of a DNS server.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>STARTPAGE</Name>
+                    <DisplayName>Startpage</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The STARTPAGE parameter MUST be an absolute URI [RFC2396] and defines the homepage or start page
+associated with the services accessible from the proxy.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>AUTHTYPE</Name>
+                    <DisplayName>NAP Auth Type</DisplayName>
+                    <TypeName>NAP AUTHTYPE</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The AUTHTYPE is a parameter indicating the authentication protocol.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>AUTHNAME</Name>
+                    <DisplayName>NAP Auth Name</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The AUTHNAME parameter can contain the id (plaintext) needed to authenticate the user. This parameter is only
+                needed if the AUTHTYPE parameter takes one of the values PAP or CHAP or MD5.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>AUTHSECRET</Name>
+                    <DisplayName>NAP Auth Secret</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The AUTHSECRET parameter can contain the password (plaintext) needed to authenticate the user. This parameter
+                is only needed if the AUTHTYPE parameter takes one of the values PAP or CHAP or MD5.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>LOCAL-ADDRTYPE</Name>
+                    <DisplayName>Local Addr Type</DisplayName>
+                    <TypeName>NAP LOCAL-ADDRTYPE</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The LOCAL-ADDRTYPE indicates the format of the address in the LOCAL-ADDR parameter.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>LOCAL-ADDR</Name>
+                    <DisplayName>Local Address</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>If this parameter is provided, it defines the local address of the WAP Client according to the format specified by the
+                LOCAL-ADDRTYPE parameter.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>CALLTYPE</Name>
+                    <DisplayName>NAP Call Type</DisplayName>
+                    <TypeName>NAP CALLTYPE</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>Some bearers may support different types of calls or different protocols to be used for data exchange. The
+                CALLTYPE parameter is used to define this protocol or call type. If the parameter is not present or if no value is
+                given, the default value ANALOG-MODEM should be assumed.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>LINKSPEED</Name>
+                    <DisplayName>Linkspeed</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>Defines the speed on the up-link channel and optionally the down-link channel for circuit switched bearers.Possible
+                values are "autobauding" or a number (baud in decimal format).</Description>
+                </Attribute>
+                
+                <!-- Un-used attribute               -->
+                <!-- 
+                <Attribute>
+                    <Name>AUTH-ENTITY</Name>
+                    <DisplayName>AUTH-ENTITY</DisplayName>
+                    <TypeName>NAP AUTH-ENTITY</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>true</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The AUTH-ENTITY parameter defines entity to which NAPAUTHINFO credentials are valid.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>DNLINKSPEED</Name>
+                    <DisplayName>DNLINKSPEED</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>Defines the speed on the down-link channel for circuit switched bearers. Possible values are "autobauding" or a
+                number (baud in decimal format).</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>SPI</Name>
+                    <DisplayName>SPI</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The parameter defines whether Security Parameter Index is used between mobile and the AUTH-ENTITY.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>LINGER</Name>
+                    <DisplayName>LINGER</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The LINGER parameter is used to define how long a connection should be kept active without any traffic. The
+                parameter value is a decimal value expressed in seconds.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>INTERNET</Name>
+                    <DisplayName>INTERNET</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>This parameter does not take any values. If it is present, it indicates that the network access point can be used to
+                access proxies that are located on an IP-routable network segment, which is generic within the scope of the
+                configuration context. The existence of the parameter does not imply that the IP routable network that can be
+                accessed is similar in scope to the world wide Internet.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>DELIVERY-ERR-SDU</Name>
+                    <DisplayName>DELIVERY-ERR-SDU</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The DELIVERY-ERR-SDU parameter indicates whether SDUs detected as erroneous shall be delivered or
+                discarded. Values are defined in [3GPP24008] and are represented as hexadecimal numbers.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>DELIVERY-ORDER</Name>
+                    <DisplayName>DELIVERY-ORDER</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The DELIVERY-ORDER parameter indicates whether the PDP context bearer shall provide in-sequence SDU
+                delivery or not. Values are defined in [3GPP24008] and are represented as hexadecimal numbers.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>TRAFFIC-CLASS</Name>
+                    <DisplayName>TRAFFIC-CLASS</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The TRAFFIC-CLASS defines the type of application for which the PDP context bearer service is optimised.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>MAX-SDU-SIZE</Name>
+                    <DisplayName>MAX-SDU-SIZE</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The MAX-SDU-SIZE parameter defines the maximum allowed SDU size and is used for admission control and
+                policing. Values are defined in [3GPP24008] and are represented as hexadecimal numbers.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>MAX-BITRATE-UPLINK</Name>
+                    <DisplayName>MAX-BITRATE-UPLINK</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The MAX-BITRATE-UPLINK parameter defines the maximum number of bits delivered during a period of time in
+                uplink. Values are defined in [3GPP24008] and are represented as hexadecimal numbers.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>MAX-BITRATE-DNLINK</Name>
+                    <DisplayName>MAX-BITRATE-DNLINK</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The MAX-BITRATE-DNLINK parameter defines the maximum number of bits delivered during a period of time in
+                downlink. Values are defined in [3GPP24008] and are represented as hexadecimal numbers.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>RESIDUAL-BER</Name>
+                    <DisplayName>RESIDUAL-BER</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The RESIDUAL-BER parameter indicates the undetected bit error ratio in the delivered SDUs. Values are defined
+                in [3GPP24008] and are represented as hexadecimal numbers. Bits not part of the RESIDUAL-BER parameter are
+                set to zero, e.g. the value "1*10-5" is represented as 0x70.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>SDU-ERROR-RATIO</Name>
+                    <DisplayName>SDU-ERROR-RATIO</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The SDU-ERROR-RATIO parameter indicates the fraction of SDUs lost or detected as erroneous and is defined
+                only for conforming traffic. Values are defined in [3GPP24008] and are represented as hexadecimal numbers.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>TRAFFIC-HANDL-PRIO</Name>
+                    <DisplayName>TRAFFIC-HANDL-PRIO</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The TRAFFIC-HANDL-PRIO parameter specifies the relative importance for handling of all SDUs belonging to the
+                PDP context bearer compared to the SDUs of other bearers. Values are defined in [3GPP24008] and are represented
+                as hexadecimal numbers.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>TRANSFER-DELAY</Name>
+                    <DisplayName>TRANSFER-DELAY</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The TRANSFER-DELAY parameter indicates the maximum delay for 95th percentile of the distribution of delay for
+                all delivered SDUs during the lifetime of a bearer service. Delay for an SDU is defined as the time from a request to
+                transfer an SDU at one SAP to its delivery at the other SAP. Values are defined in [3GPP24008] and are represented
+                as hexadecimal numbers. Bits not part of the TRANSFER-DELAY parameter are set to zero, e.g. the value "300
+                ms" is represented as 0x48.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>GUARANTEED-BITRATE-UPLINK</Name>
+                    <DisplayName>GUARANTEED-BITRATE-UPLINK</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The GUARANTEED-BITRATE-UPLINK parameter indicates the guaranteed number of bits delivered by the PDP
+                context at a SAP within a period of time, divided by the duration of the period. Values are defined in [3GPP24008]
+                and are represented as hexadecimal numbers.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>GUARANTEED-BITRATE-DNLINK</Name>
+                    <DisplayName>GUARANTEED-BITRATE-DNLINK</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The GUARANTEED-BITRATE-DNLINK parameter indicates the guaranteed number of bits delivered by the PDP
+                context at a SAP within a period of time, divided by the duration of the period. Values are defined in [3GPP24008]
+                and are represented as hexadecimal numbers.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>MAX-NUM-RETRY</Name>
+                    <DisplayName>MAX-NUM-RETRY</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The MAX-NUM-RETRY parameter defines maximum Number of Retry for the MobileIP Registration. Values are
+                represented as hexadecimal numbers. Valid values are 1-3. See [IS683B], section 3.5.8.6 for additional details. If the
+                bearer value CDMA2000-1X-MOBILE-IP is supported then this parameter MUST be supported.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>FIRST-RETRY-TIMEOUT</Name>
+                    <DisplayName>FIRST-RETRY-TIMEOUT</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The FIRST-RETRY-TIMEOUT parameter defines the amount of time elapsed, in units of 250ms, between the first
+                and second MobileIP Registration Requests, while the mobile station did not receive the MobileIP Registration
+                Reply. Values are represented as hexadecimal numbers. Valid values are 1-7. See [IS683B], section 3.5.8.6 for
+                additional details. If the bearer value CDMA2000-1X-MOBILE-IP is supported then this parameter MUST be
+                supported.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>REREG-THRESHOLD</Name>
+                    <DisplayName>REREG-THRESHOLD</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The REREG-THRESHOLD parameter defines time, in units of minute, before the expiration of the registration
+                lifetime that the mobile will try to reregister. Values are represented as hexadecimal numbers. Valid values are 1-63.
+                See [IS683B], section 3.5.8.6 for additional details. If the bearer value CDMA2000-1X-MOBILE-IP is supported
+                then this parameter MUST be supported.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>T-BIT</Name>
+                    <DisplayName>T-BIT</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The T-BIT parameter defines if reverse tunneling is required. There are no values for this parameter. Presence of the
+                parameter indicates that reverse tunnelling is required. Parameter is omitted otherwise. See [IS683B], section 3.5.8.6
+                for additional details. If the bearer value CDMA2000-1X-MOBILE-IP is supported then this parameter MUST be
+                supported.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>COUNTRY</Name>
+                    <DisplayName>COUNTRY</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The COUNTRY indicates a Mobile Country Code as defined by ITU-T [E212].</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>NETWORK</Name>
+                    <DisplayName>NETWORK</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The NETWORK indicates a list of comma separated Mobile Network Codes in decimal format as defined by ITUT
+                [E212]. The parameter is used to identify what resources the mobile should use when it is registered to a particular
+                network.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>SID</Name>
+                    <DisplayName>SID</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The SID indicates a list of comma separated System IDs in decimal format as defined by [TIA/EIA-136-005A]. The
+                parameter is used to identify what resources the mobile should use when it is registered to a particular network.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>SOC</Name>
+                    <DisplayName>SOC</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>The SOC indicates a System Operator Code as defined by [TIA/EIA-136-005A]. The parameter is used to identify
+                what resources the mobile should use when it is registered to a particular network. The SOC MUST be unique
+                within its enclosed structure, i.e. within the NAPDEF characteristic.</Description>
+                </Attribute>
+                <Attribute>
+                    <Name>VALIDUNTIL</Name>
+                    <DisplayName>VALIDUNTIL</DisplayName>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <Description>Defines the end of the (time) period of validity. The parameter is expressed in seconds, from the time it is received
+                by the client device.</Description>
+                </Attribute>
+                 -->
+            </Attributes>
+        </ProfileTemplate>
+
+    </ProfileTemplates>
+</ProfileMetaData>

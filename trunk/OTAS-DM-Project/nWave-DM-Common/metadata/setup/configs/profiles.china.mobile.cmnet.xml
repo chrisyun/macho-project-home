@@ -1,0 +1,74 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        NAP Profiles 
+      ***********************************************************************************
+   -->
+  <!-- NAP Profile: CMNET -->
+  <Profile>
+    <ProfileName>CMNET</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>CMNET</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>cmnet</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://www.monternet.com</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <Profile>
+    <ID>China.Mobile.NAP.CMNET</ID>
+    <ProfileName>移动互联网</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>移动互联网</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>cmnet</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://www.monternet.com</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+</Profiles>
+</Setup>

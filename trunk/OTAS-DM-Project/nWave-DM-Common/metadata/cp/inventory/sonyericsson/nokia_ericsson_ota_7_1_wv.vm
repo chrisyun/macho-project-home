@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Wireless Villedge Settings
+  Defined in SonyEricsson Over The Air Settings Specification
+  Approved version: 7.1 15 09 2003
+ -->
+<WVSettings>
+  <WVOTAVersion>1.0</WVOTAVersion>
+  <WVCommon>
+    <WVSettingsName>Radionera WV SMS and HTTP settings</WVSettingsName>
+    <WVRefName>Radionera</WVRefName>
+    <WVSupportedVersion>1.0</WVSupportedVersion>
+    <WVSupportedVersion>1.1</WVSupportedVersion>
+    <WVUserID>wvuser</WVUserID>
+    <WVPassword>wvpass</WVPassword>
+    <WVPreferredProtocol />
+  </WVCommon>
+  <WVSMS>
+    <WVSAPMobileNumber>+123456789</WVSAPMobileNumber>
+    <WVSAPFourWaySupported>F</WVSAPFourWaySupported>
+    <WVSMSCMobileNumber>+987654321</WVSMSCMobileNumber>
+  </WVSMS>
+  <WVHTTP>
+    <WVSAPURI>http://www.sap.com:9876/Path/SAP</WVSAPURI>
+    <WVSAPFourWaySupported>T</WVSAPFourWaySupported>
+    <WVProxy>
+      <WVProxyAddress>proxy.company.com</WVProxyAddress>
+      <WVProxyPort>6789</WVProxyPort>
+      <WVProxyUser>proxyuser</WVProxyUser>
+      <WVProxyPassword>proxypass</WVProxyPassword>
+    </WVProxy>
+  </WVHTTP>
+</WVSettings>

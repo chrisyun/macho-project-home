@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/AttributeTranslations.hbm.xml,v 1.4 2007/03/22 11:03:10 zhao Exp $
+  * $Revision: 1.4 $
+  * $Date: 2007/03/22 11:03:10 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.AttributeTranslations" table="NW_DM_ATTRIB_TRANSLATIONS">
+        <composite-id name="ID" class="com.npower.dm.hibernate.entity.AttributeTranslationsID">
+            <key-property name="nodeMappingId" type="long">
+                <column name="NODE_MAPPING_ID" precision="16" scale="0" />
+            </key-property>
+            <key-property name="originalValue" type="string">
+                <column name="VALUE" length="50" />
+            </key-property>
+            <key-property name="value" type="string">
+                <column name="TRANSLATION" length="50" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="profileNodeMapping" class="com.npower.dm.hibernate.entity.ProfileNodeMappingEntity" update="false" insert="false" fetch="select">
+            <column name="NODE_MAPPING_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

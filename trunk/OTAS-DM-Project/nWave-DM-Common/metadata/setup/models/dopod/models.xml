@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Dopod -->
+<Models>
+
+  <!--  Model: 310 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>310</Name>
+    <ExternalID>310</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/310.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 515 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>515</Name>
+    <ExternalID>515</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/515.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Smartphone 2003 OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2002,Q2"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 535 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>535</Name>
+    <ExternalID>535</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/535.gif</IconFile>
+        
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Smartphone 2003 OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2003, Q3"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 565 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>565</Name>
+    <ExternalID>565</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/565.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 566 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>566</Name>
+    <ExternalID>566</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/566.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 575 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>575</Name>
+    <ExternalID>575</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/575.gif</IconFile>
+        
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Smartphone 2003 SE OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 577W -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>577W</Name>
+    <ExternalID>577W</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/577w.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 585 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>585</Name>
+    <ExternalID>585</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/585.gif</IconFile>
+        
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Smartphone 2003 SE"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 586 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>586</Name>
+    <ExternalID>586</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/586.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 586W -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>586W</Name>
+    <ExternalID>586W</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/586w.gif</IconFile>
+        
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 595 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>595</Name>
+    <ExternalID>595</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/595.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 686 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>686</Name>
+    <ExternalID>686</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/686.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2003"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 696 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>696</Name>
+    <ExternalID>696</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/696.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2003"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 696i -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>696i</Name>
+    <ExternalID>696i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/696i.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 700 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>700</Name>
+    <ExternalID>700</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/700.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 818 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>818</Name>
+    <ExternalID>818</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/818.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 818 Pro -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>818 Pro</Name>
+    <ExternalID>818 Pro</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/818_pro.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 828 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>828</Name>
+    <ExternalID>828</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/828.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 838 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>838</Name>
+    <ExternalID>838</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/838.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 838 Pro -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>838 Pro</Name>
+    <ExternalID>838 Pro</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/838_pro.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, May"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 900 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>900</Name>
+    <ExternalID>900</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/900.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C500 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>C500</Name>
+    <ExternalID>C500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/c500.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C720W -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>C720W</Name>
+    <ExternalID>C720W</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/c720w.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C800 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>C800</Name>
+    <ExternalID>C800</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/c800.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: C858 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>C858</Name>
+    <ExternalID>C858</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/c858.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: CHT 9000 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>CHT 9000</Name>
+    <ExternalID>CHT 9000</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/cht_9000.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: CHT 9100 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>CHT 9100</Name>
+    <ExternalID>CHT 9100</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/cht_9100.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: D600 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>D600</Name>
+    <ExternalID>D600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/d600.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: D810 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>D810</Name>
+    <ExternalID>D810</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/d810.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: M700 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>M700</Name>
+    <ExternalID>M700</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/m700.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P800W -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>P800W</Name>
+    <ExternalID>P800W</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/p800w.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: s300 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>s300</Name>
+    <ExternalID>s300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/s300.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: U1000 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>U1000</Name>
+    <ExternalID>U1000</ExternalID>
+    <Description></Description>
+    <IconFile>./models/dopod/icons/u1000.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

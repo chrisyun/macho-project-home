@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Sharp</Name>
+<ExternalID>Sharp</ExternalID>
+<Description>Sharp</Description>
+<Models filename="./models/sharp/models.additional.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

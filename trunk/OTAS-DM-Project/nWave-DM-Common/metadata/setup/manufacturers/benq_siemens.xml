@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>BenQ-Siemens</Name>
+      <ExternalID>BenQ-Siemens</ExternalID>
+      <Description>BenQ-Siemens</Description>
+      <Models filename="./models/benq_siemens/models.xml"/>
+      <Models filename="./models/benq_siemens/models.microsoft.xml"/>
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

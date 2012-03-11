@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.template.Streaming.install.xml,v 1.1 2008/12/14 10:25:08 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2008/12/14 10:25:08 $
+-->
+<ProfileMetaData>
+    <AttributeTypes>
+        <!-- Using by Streaming Template -->
+    </AttributeTypes>
+
+    <ProfileTemplates>
+        <!-- Default Streaming Template -->
+        <ProfileTemplate>
+            <CategoryName>Streaming</CategoryName>
+            <Name>3GPP Streaming Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>true</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Name</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>MAX-BANDWIDTH</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>128000</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>MIN-UDP-PORT</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>6970</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>MAX-UDP-PORT</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>32000</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <!-- APLink mode for Nokia phones -->
+                <Attribute>
+                    <Name>APLink</Name>
+                    <TypeName>APLink</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+    </ProfileTemplates>
+</ProfileMetaData>

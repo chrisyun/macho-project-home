@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ota-templates xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- OMA ClientProv 1.1 Phone -->
+  <import filename="omacp/oma.cp.import.xml"/>
+  
+  <!-- Nokia Phone -->
+  <import filename="nokia/nokia.s60.inventory.xml"/>
+  
+  <!-- SonyEricsson Phone -->
+  <import filename="sonyericsson/sony_ericsson.inventory.xml"/>
+  
+</ota-templates>

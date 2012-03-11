@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/profile/mapping/test/mapping.test.1.xml,v 1.11 2007/03/15 04:02:26 zhao Exp $
+  * $Revision: 1.11 $
+  * $Date: 2007/03/15 04:02:26 $
+-->
+<ProfileMetaData>
+    <ProfileMappings>
+    
+        <!--  TestCase #1 ********************************************************* -->
+        <ProfileMapping>
+            <ModelName>TEST.MODEL</ModelName>
+            <ManufacturerExternalId>TEST.MANUFACTUER</ManufacturerExternalId>
+            <TemplateName>Test.Proxy Template</TemplateName>
+            <RootNodePath>./AP/${NodeName}</RootNodePath>
+            <ShareRootNode>true</ShareRootNode>
+            <LinkedProfileCategoryName>NAP</LinkedProfileCategoryName>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Proxy Address</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/PxAddr</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Name>Test Start Page</Name>
+                    <Value>http://www.otas.com</Value>
+                    <NodeRelativePath>Px/${NodeName}/Startpg</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>Test Port Number</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/Port/${NodeName}/PortNbr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Test Domain</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/Domain</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!--  TestCase #2 ********************************************************* -->
+        <ProfileMapping>
+            <ModelName>TEST.MODEL</ModelName>
+            <ManufacturerExternalId>TEST.MANUFACTUER</ManufacturerExternalId>
+            <TemplateName>TEST.Profile Template#1</TemplateName>
+            <RootNodePath>./AP/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>TEST NAP Address Type</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAddrTy</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST Display Name</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/Name</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Name>Bearer Type</Name>
+                    <Value>GSM-GPRS</Value>
+                    <NodeRelativePath>NAPDef/${NodeName}/Bearer/${NodeName}/BearerL</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST Bearer Direction</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/Bearer/${NodeName}/Direction</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST NAP Address</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST DNS Address</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/DNSAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST Authentication Username</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAuthInf/${NodeName}/AuthName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST Authentication Password</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAuthInf/${NodeName}/AuthSecr</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>false</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!--  TestCase #3 ********************************************************* -->
+        <ProfileMapping>
+            <ModelName>TEST.MODEL</ModelName>
+            <ManufacturerExternalId>TEST.MANUFACTUER</ManufacturerExternalId>
+            <TemplateName>TEST.CSD NAP Template</TemplateName>
+            <RootNodePath>./AP/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>TEST Display Name</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/Name</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Name>Bearer Type</Name>
+                    <Value>GSM-CSD</Value>
+                    <NodeRelativePath>NAPDef/${NodeName}/Bearer/${NodeName:Bearer01}/BearerL</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST Bearer Direction</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/Bearer/${NodeName:Bearer01}/Direction</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST NAP Address</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST NAP Address Type</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAddrTy</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST Link Speed</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/LnkSpeed</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST DNS Address</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/DNSAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST Authentication Username</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAuthInf/${NodeName:Auth01}/AuthName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TEST Authentication Password</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAuthInf/${NodeName:Auth01}/AuthSecr</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!--  TestCase #4 ********************************************************* -->
+        <ProfileMapping>
+            <ModelName>TEST.MODEL</ModelName>
+            <ManufacturerExternalId>TEST.MANUFACTUER</ManufacturerExternalId>
+            <TemplateName>TEST.Email Template</TemplateName>
+            <RootNodePath>./Email/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <LinkedProfileCategoryName>NAP</LinkedProfileCategoryName>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Username</AttributeName>
+                    <NodeRelativePath>UID</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Password</AttributeName>
+                    <NodeRelativePath>PW</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Email Address</AttributeName>
+                    <NodeRelativePath>UAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>User Display Name</AttributeName>
+                    <NodeRelativePath>UName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Receiving Server Address</AttributeName>
+                    <NodeRelativePath>Mrcv</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Sending Server Address</AttributeName>
+                    <NodeRelativePath>Msnd</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Mailbox Protocol</AttributeName>
+                    <NodeRelativePath>Mpro</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>APLink</AttributeName>
+                    <NodeRelativePath>ToNapID</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!--  TestCase #5 ********************************************************* -->
+        <ProfileMapping>
+            <ModelName>TEST.MODEL</ModelName>
+            <ManufacturerExternalId>TEST.MANUFACTUER</ManufacturerExternalId>
+            <TemplateName>TEST.MMS Template</TemplateName>
+            <RootNodePath>./MMS/MMSAcc</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <LinkedProfileCategoryName>Proxy</LinkedProfileCategoryName>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                    <ValueTranslations>
+                      <ValueTranslation>
+                        <Value>ANALOG-MODEM</Value>
+                        <DeviceValue>Modem</DeviceValue>
+                      </ValueTranslation>
+                      <ValueTranslation>
+                        <Value>ISDN V.110</Value>
+                        <DeviceValue>ISDN</DeviceValue>
+                      </ValueTranslation>
+                      <ValueTranslation>
+                        <Value>ISDN V.120</Value>
+                        <DeviceValue>ISDN</DeviceValue>
+                      </ValueTranslation>
+                    </ValueTranslations>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Start Page</AttributeName>
+                    <NodeRelativePath>Con/DCon/MMSSAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>APLink</AttributeName>
+                    <NodeRelativePath>Con/DCon/MToNapID/Primary/MToNapIDL</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+
+    </ProfileMappings>
+
+</ProfileMetaData>
+        

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>AlphaCell Wireless</Name>
+<ExternalID>AlphaCell Wireless</ExternalID>
+<Description>AlphaCell Wireless</Description>
+<Models filename="./models/alphacell_wireless/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

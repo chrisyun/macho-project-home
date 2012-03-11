@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: DreamPhone -->
+<Models>
+
+  <!--  Model: G500i -->
+  <Model>
+    <Name>G500i</Name>
+    <ExternalID>G500i</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/dreamphone/icons/g500i.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+
+</Models>
+</Setup>

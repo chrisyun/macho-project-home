@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Danger</Name>
+<ExternalID>Danger</ExternalID>
+<Description>Danger</Description>
+<Models filename="./models/danger/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

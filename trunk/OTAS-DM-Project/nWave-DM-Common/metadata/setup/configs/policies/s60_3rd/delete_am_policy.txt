@@ -1,0 +1,16 @@
+<Package>
+	<Operation
+		action_id = "Replace"
+		target_id = "application_management_enforcement_policy_rule1">
+	<Data>
+		<![CDATA[
+<Rule
+	RuleId="application_management_enforcement_policy_rule1"
+	Effect="Permit">
+	<Target>
+	</Target>
+</Rule>
+]]>
+	</Data>
+	</Operation>
+</Package>

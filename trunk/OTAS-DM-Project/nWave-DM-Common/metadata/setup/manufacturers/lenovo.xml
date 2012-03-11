@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>Lenovo</Name>
+      <ExternalID>Lenovo</ExternalID>
+      <Description>Lenovo</Description>
+      <Models filename="./models/lenovo/models.xml"/>
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

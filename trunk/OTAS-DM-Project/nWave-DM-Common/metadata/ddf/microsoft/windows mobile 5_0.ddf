@@ -1,0 +1,284 @@
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/ddf/microsoft/windows\040mobile\0405_0.ddf,v 1.2 2006/04/10 11:18:23 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/04/10 11:18:23 $
+-->
+<MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
+    <VerDTD>1.1.2</VerDTD>
+    <Node>
+        <NodeName>DevDetail</NodeName>
+        <Path>.</Path>
+        <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <DFFormat>
+                <node />
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <MSFT:RWAccess>3</MSFT:RWAccess>
+            <MSFT:MinValue></MSFT:MinValue>
+            <MSFT:MaxValue></MSFT:MaxValue>
+            <MSFT:MaxLength></MSFT:MaxLength>
+            <Description></Description>
+        </DFProperties>
+        <Node>
+            <NodeName>DevTyp</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                </AccessType>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <MSFT:RWAccess>3</MSFT:RWAccess>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+                <MSFT:MinValue></MSFT:MinValue>
+                <MSFT:MaxValue></MSFT:MaxValue>
+                <MSFT:MaxLength></MSFT:MaxLength>
+                <Description>The device types used in Windows Mobile-based device are: Smartphone, Pocket PC, Pocket PC Phone Edition.</Description>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>OEM</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                </AccessType>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <MSFT:RWAccess>3</MSFT:RWAccess>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+                <MSFT:MinValue></MSFT:MinValue>
+                <MSFT:MaxValue></MSFT:MaxValue>
+                <MSFT:MaxLength></MSFT:MaxLength>
+                <Description>Name of OEM</Description>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>FwV</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                </AccessType>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <MSFT:RWAccess>3</MSFT:RWAccess>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+                <MSFT:MinValue></MSFT:MinValue>
+                <MSFT:MaxValue></MSFT:MaxValue>
+                <MSFT:MaxLength></MSFT:MaxLength>
+                <Description>Provide the version of OEM ROM region and Radio stack .
+version, separated by semicolon. The first is OEM ROM region version, the second is the
+radio stack version.</Description>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>SwV</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                </AccessType>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <MSFT:RWAccess>3</MSFT:RWAccess>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+                <MSFT:MinValue></MSFT:MinValue>
+                <MSFT:MaxValue></MSFT:MaxValue>
+                <MSFT:MaxLength></MSFT:MaxLength>
+                <Description>For windows mobile-based devices, SwV contains Windows CE version, Window Mobile (WM)device build number and QFE number. The format of SwV value is: ce major number.ce 
+
+minor number.WM device build number.WM deviceQFE number.</Description>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>HwV</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                </AccessType>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <MSFT:RWAccess>3</MSFT:RWAccess>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+                <MSFT:MinValue></MSFT:MinValue>
+                <MSFT:MaxValue></MSFT:MaxValue>
+                <MSFT:MaxLength></MSFT:MaxLength>
+                <Description></Description>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>LrgObj</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                </AccessType>
+                <DFFormat>
+                    <bool />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <MSFT:RWAccess>3</MSFT:RWAccess>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+                <MSFT:MinValue></MSFT:MinValue>
+                <MSFT:MaxValue></MSFT:MaxValue>
+                <MSFT:MaxLength></MSFT:MaxLength>
+                <Description>Large object isn't supported. The data for this node 
+
+is "false".</Description>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>URI</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                </AccessType>
+                <DFFormat>
+                    <node />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <MSFT:RWAccess>3</MSFT:RWAccess>
+                <MSFT:MinValue></MSFT:MinValue>
+                <MSFT:MaxValue></MSFT:MaxValue>
+                <MSFT:MaxLength></MSFT:MaxLength>
+                <Description></Description>
+            </DFProperties>
+            <Node>
+                <NodeName>MaxDepth</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                    </AccessType>
+                    <DFFormat>
+                        <chr />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description></Description>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>MaxTotLen</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                    </AccessType>
+                    <DFFormat>
+                        <chr />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description></Description>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>MaxSegLen</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                    </AccessType>
+                    <DFFormat>
+                        <chr />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description></Description>
+                </DFProperties>
+            </Node>
+        </Node>
+    </Node>
+</MgmtTree>

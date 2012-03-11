@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: E70 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>E70</Name>
+    <ExternalID>E70</ExternalID>
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description>Windows Mobile™ 5.0 Smartphone</Description>
+    <IconFile>./models/amoi/icons/amoi_e70.jpg</IconFile>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+    </TACs>
+  </Model>
+  
+  <!--  Model: F90 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>F90</Name>
+    <ExternalID>F90</ExternalID>
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/amoi/icons/amoi_f90.jpg</IconFile>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+    </TACs>
+  </Model>
+  
+</Models>
+</Setup>

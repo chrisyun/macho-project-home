@@ -1,0 +1,32 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        MMS Profiles 
+      ***********************************************************************************
+   -->
+  <!-- MMS Profile: MMS -->
+  <Profile>
+    <ID>Sudan_MMS</ID>
+    <ProfileName>Sudan MMS</ProfileName>
+    <Template>MMS Default Template</Template>
+    <Carrier>SudanTel</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile>Sudan MMS</ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>Sudan MMS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>MMSC Server</Name>
+         <Value>http://10.50.182.30:38090/was</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+</Profiles>
+</Setup>

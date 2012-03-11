@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>TCL</Name>
+      <ExternalID>TCL</ExternalID>
+      <Description>TCL</Description>
+      <Models filename="./models/tcl/models.xml"/>
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

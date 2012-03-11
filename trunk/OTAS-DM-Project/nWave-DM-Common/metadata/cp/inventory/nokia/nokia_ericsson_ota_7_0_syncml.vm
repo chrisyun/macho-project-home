@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Nokia OTA 7.0 Browser Configuration Compatiable Profile
+ -->
+<SyncSettings>
+  <Version>$!{profile.Version}</Version>
+  <HostAddr>$!{profile.HostAddr}</HostAddr>
+  <Port>$!{profile.Port}</Port>
+#foreach ( $RemoteDB in $profile.RemoteDBs ) 
+  <RemoteDB>
+    #foreach ( $ContentType in $RemoteDB.ContentTypes ) 
+    <CTType>$!{ContentType.CtType}</CTType>
+    #foreach ( $CtVersion in $ContentType.CtVersions ) 
+    <CTVer>$!{CtVersion}</CTVer>
+    #end
+    #end
+    <URI>$!{RemoteDB.Uri}</URI>
+    <Name>$!{RemoteDB.Name}</Name>
+    #if ( $RemoteDB.Auth )
+    <Auth>
+      <AuthLevel>$!{RemoteDB.Auth.AuthLevel}</AuthLevel>
+      <AuthScheme>$!{RemoteDB.Auth.AuthScheme}</AuthScheme>
+      <Username>$!{RemoteDB.Auth.Username}</Username>
+      <!-- Base64 coded password -->
+      <Cred>$!{RemoteDB.Auth.CredBase64}</Cred>
+    </Auth>
+    #end
+  </RemoteDB>
+#end
+  <Name>$!{profile.Name}</Name>
+#foreach ( $Authentication in $profile.Authentications ) 
+  <Auth>
+    <AuthLevel>$!{Authentication.AuthLevel}</AuthLevel>
+    <AuthScheme>$!{Authentication.AuthScheme}</AuthScheme>
+    <Username>$!{Authentication.Username}</Username>
+    <!-- Base64 coded password -->
+    <Cred>$!{Authentication.CredBase64}</Cred>
+  </Auth>
+#end
+#if ( $profile.ConnectoinReference )
+  <ConRef>
+    #if ( $profile.ConnectoinReference.ConType )
+    <!-- Values: 1 | 2 | 3 | 4 -->
+    <ConType>$!{profile.ConnectoinReference.ConType}</ConType>
+    #end
+    
+    #if ( $profile.ConnectoinReference.Bearer )
+    <!-- Values: 1 | 2 | ... | 24 -->
+    <Bearer>$!{profile.ConnectoinReference.Bearer}</Bearer>
+    #end
+    
+    #if ( $profile.ConnectoinReference.AddrType )
+    <!-- Values: 1 - IPV4 | 2 - IPV6 | 3 - E164 | 4 - ALPHA | 5 - APN -->
+    <AddrType>$!{profile.ConnectoinReference.AddrType}</AddrType>
+    #end
+    
+    #if ( $profile.ConnectoinReference.Addr )
+    <Addr>$!{profile.ConnectoinReference.Addr}</Addr>
+    #end
+    
+    #if ( $profile.ConnectoinReference.RefID )
+    <RefID>$!{profile.ConnectoinReference.RefID}</RefID>
+    #end
+  </ConRef>
+#end
+</SyncSettings>

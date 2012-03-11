@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE Script SYSTEM "../script_1_0.dtd" -->
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/command/test/test.replace.xml,v 1.7 2007/12/10 08:02:18 zhao Exp $
+  * $Revision: 1.7 $
+  * $Date: 2007/12/10 08:02:18 $
+-->
+
+<!-- ********** Test #3 - Replace ********** -->
+<Script>
+  <Replace>
+    <LeafNode>
+      <Target>./SCTSValue/1</Target>
+      <Data format="int">8000</Data>
+    </LeafNode>
+  </Replace>
+  <Replace>
+    <LeafNode>
+      <Target>./SCTSValue/2</Target>
+      <Data format="chr">replaced leaf node 2</Data>
+    </LeafNode>
+  </Replace>
+  <Replace>
+    <LeafNode>
+      <Target>./SCTSValue/3</Target>
+      <Data>replaced leaf node 3</Data>
+    </LeafNode>
+  </Replace>
+  <Replace>
+    <LeafNode>
+      <Target>./SCTSValue/2</Target>
+      <Data>replaced leaf node 2</Data>
+    </LeafNode>
+  </Replace>
+  <Replace>
+      <LeafNode>
+        <Target>./SCM/Inventory/Delivered/BareApp/InstallOpts</Target>
+        <Data format="chr" type="text/xml"><![CDATA[ <InstOpts>
+<StdOpt name="drive" value="c"/>
+<StdOpt name="lang" value="EN" />
+<StdOpt name="upgrade" value="yes"/>
+<StdOpt name="kill" value="yes"/>
+<StdSymOpt name="pkginfo" value="yes"/>
+<StdSymOpt name="optionals" value="yes"/>
+<StdSymOpt name="ocsp" value="yes"/>
+<StdSymOpt name="capabilities" value="yes"/>
+<StdSymOpt name="untrusted" value="yes"/>
+<StdSymOpt name="ignoreocspwarn" value="yes"/>
+<StdSymOpt name="ignorewarn" value="yes"/>
+<StdSymOpt name="fileoverwrite" value="yes"/>
+</InstOpts> ]]></Data>
+      </LeafNode>
+  </Replace>
+</Script>

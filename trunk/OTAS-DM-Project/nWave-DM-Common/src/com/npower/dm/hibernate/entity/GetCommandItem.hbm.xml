@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/GetCommandItem.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.GetCommandItem" table="NW_DM_GET_CMD_ITEM">
+        <composite-id name="id" class="com.npower.dm.hibernate.entity.GetCommandItemID">
+            <key-property name="getCmdId" type="long">
+                <column name="GET_CMD_ID" precision="16" scale="0" />
+            </key-property>
+            <key-property name="itemIndex" type="long">
+                <column name="ITEM_INDEX" precision="16" scale="0" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="nwDmDmCmd" class="com.npower.dm.hibernate.entity.DMCommand" update="false" insert="false" fetch="select">
+            <column name="GET_CMD_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="elt" type="string">
+            <column name="ELT" />
+        </property>
+    </class>
+</hibernate-mapping>

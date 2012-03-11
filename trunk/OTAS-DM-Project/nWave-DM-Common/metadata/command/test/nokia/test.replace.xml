@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE Script SYSTEM "../script_1_0.dtd" -->
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/command/test/nokia/test.replace.xml,v 1.1 2006/05/10 07:26:06 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2006/05/10 07:26:06 $
+-->
+
+<!-- ********** Test #3 - Replace ********** -->
+<Script>
+  <Replace>
+    <LeafNode>
+      <Target>./Email/INSG6/Msnd</Target>
+      <Data>smtp.otas.cn</Data>
+    </LeafNode>
+  </Replace>
+  <Replace>
+    <LeafNode>
+      <Target>./Email/INSG6/Mrcv</Target>
+      <Data>pop3.otas.cn</Data>
+    </LeafNode>
+  </Replace>
+</Script>
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/processor/test/test.2.results.xml,v 1.2 2006/05/12 15:56:46 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/05/12 15:56:46 $
+-->
+<java version="1.5.0_06" class="java.beans.XMLDecoder">
+
+	<object class="java.util.ArrayList">
+		<void method="add">
+
+			<object class="java.util.ArrayList">
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Add</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyPushEmail</string>
+								<string></string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Add</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyPushEmail/AAA</string>
+								<string>aaa</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+				<!-- TestCase: Return code 401 Not Unauthorized                                  -->
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Add</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./EmailXXX/MyPushEmail/BBB</string>
+								<string>bbb</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>401</int>
+						</void>
+					</object>
+				</void>
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Add</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyPushEmail/CCC</string>
+								<string>ccc</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+				<!-- TestCase: Return code 418 Already exists                                  -->
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Add</string>
+						</void>
+						<void property="nodes">
+							<void method="put">
+								<string>./Email/MyPushEmail/DDD</string>
+								<string>ddd</string>
+							</void>
+						</void>
+						<void property="statusCode">
+							<int>418</int>
+						</void>
+					</object>
+				</void>
+				<void method="add">
+					<object class="sync4j.framework.engine.dm.ManagementOperationResult">
+						<void property="command">
+							<string>Alert</string>
+						</void>
+						<void property="statusCode">
+							<int>200</int>
+						</void>
+					</object>
+				</void>
+			</object>
+
+		</void>
+	</object>
+</java>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/models/nokia/mappings.Other.s60.2nd.fp2.xml,v 1.2 2007/08/28 09:27:16 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2007/08/28 09:27:16 $
+-->
+<ProfileMetaData>
+
+    <ProfileMappings>
+    
+        <!-- Standard PROXY Template Mapping -->
+        <ProfileMapping>
+            <TemplateName>Proxy Default Template</TemplateName>
+            <RootNodePath>./AP/${NodeName}</RootNodePath>
+            <ShareRootNode>true</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>NAME</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>STARTPAGE</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/Startpg</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>PXADDR</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/PxAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>PXPHYSICAL PORTNBR</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/Port/${NodeName}/PortNbr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>PXAUTH-ID</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/PxAuthInf/${NodeName}/PxAuthID</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>PXAUTH-PW</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/PxAuthInf/${NodeName}/PxAuthPW</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>PXPHYSICAL DOMAIN</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/Domain/${NodeName}/DomainL</NodeRelativePath>
+                </AttributeMapping>
+                <!--
+                <AttributeMapping>
+                    <AttributeName>PROXY-ID</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/PxID</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/NoPxFor/${NodeName}/NoPxForL</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>TO-NAPID</AttributeName>
+                    <NodeRelativePath>Px/${NodeName}/ToNAPID/${NodeName}/ToNAPIDL</NodeRelativePath>
+                </AttributeMapping>
+                -->
+                
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Default MMS Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>MMS Default Template</TemplateName>
+            <RootNodePath>./MMS/MMSAcc</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <LinkedProfileCategoryName>Proxy</LinkedProfileCategoryName>
+                    <AttributeName>STARTPAGE</AttributeName>
+                    <NodeRelativePath>Con/DCon/MMSSAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>APLink</AttributeName>
+                    <NodeRelativePath>Con/DCon/MToNapID/Primary/MToNapIDL</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Default Email Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>Email Default Template</TemplateName>
+            <RootNodePath>./Email/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Username</AttributeName>
+                    <NodeRelativePath>UID</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Password</AttributeName>
+                    <NodeRelativePath>PW</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Email Address</AttributeName>
+                    <NodeRelativePath>UAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>User Display Name</AttributeName>
+                    <NodeRelativePath>UName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Receiving Server Address</AttributeName>
+                    <NodeRelativePath>Mrcv</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Sending Server Address</AttributeName>
+                    <NodeRelativePath>Msnd</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Mailbox Protocol</AttributeName>
+                    <NodeRelativePath>Mpro</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>APLink</AttributeName>
+                    <NodeRelativePath>ToNapID</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Default SyncDS Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>SyncDS Default Template</TemplateName>
+            <RootNodePath>./SyncML/DSAcc/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Server Address</AttributeName>
+                    <NodeRelativePath>Addr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Username</AttributeName>
+                    <NodeRelativePath>ClientUserName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Password</AttributeName>
+                    <NodeRelativePath>ClientPW</NodeRelativePath>
+                </AttributeMapping>
+                
+                <!-- Contacts DB -->
+                <AttributeMapping>
+                    <AttributeName>Contacts DB</AttributeName>
+                    <NodeRelativePath>DB/${NodeName:CardDB}/RDBURI</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Contacts DB ContentType</AttributeName>
+                    <NodeRelativePath>DB/${NodeName:CardDB}/CTType</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Local Contacts DB</AttributeName>
+                    <NodeRelativePath>DB/${NodeName:CardDB}/LDBURI</NodeRelativePath>
+                </AttributeMapping>
+                
+                <!-- Calendar DB -->
+                <AttributeMapping>
+                    <AttributeName>Calendar DB</AttributeName>
+                    <NodeRelativePath>DB/${NodeName:CalDB}/RDBURI</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Calendar DB ContentType</AttributeName>
+                    <NodeRelativePath>DB/${NodeName:CalDB}/CTType</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Local Calendar DB</AttributeName>
+                    <NodeRelativePath>DB/${NodeName:CalDB}/LDBURI</NodeRelativePath>
+                </AttributeMapping>
+                
+                <!-- Notes DB -->
+                <AttributeMapping>
+                    <AttributeName>Notes DB</AttributeName>
+                    <NodeRelativePath>DB/${NodeName:NotesDB}/RDBURI</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Notes DB ContentType</AttributeName>
+                    <NodeRelativePath>DB/${NodeName:NotesDB}/CTType</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Local Notes DB</AttributeName>
+                    <NodeRelativePath>DB/${NodeName:NotesDB}/LDBURI</NodeRelativePath>
+                </AttributeMapping>
+                
+                <AttributeMapping>
+                    <AttributeName>APLink</AttributeName>
+                    <NodeRelativePath>ToNapID</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+    </ProfileMappings>
+
+</ProfileMetaData>

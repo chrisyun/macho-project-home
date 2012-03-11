@@ -1,0 +1,59 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        NAP Profiles 
+      ***********************************************************************************
+   -->
+
+  <!--  
+      ***********************************************************************************
+        Proxy Profiles 
+      ***********************************************************************************
+   -->
+
+  <!--  
+      ***********************************************************************************
+        DM Profiles 
+      ***********************************************************************************
+   -->
+  <!-- DM Profile: OTAS DM -->
+  <Profile>
+    <ID>China.Mobile.DM.OTAS.DM.Service</ID>
+    <ProfileName>OTAS DM</ProfileName>
+    <Template>DM Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile>CMNET</NAPProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description>OTAS设备管理服务, 为手机提供功能诊断、软件自动安装、配置发送等服务功能.</Description>
+    <Attributes>
+      <Attribute>
+         <Name>Name</Name>
+         <Value>OTAS DM</Value>
+      </Attribute>
+      <Attribute>
+         <Name>ServerAddr</Name>
+         <Value>http://dm.otas.mobi:8080/otasdm/dm</Value>
+      </Attribute>
+      <Attribute>
+         <Name>ServerId</Name>
+         <Value>otasdm</Value>
+      </Attribute>
+      <Attribute>
+         <Name>ServerPW</Name>
+         <Value>otasdm</Value>
+      </Attribute>
+      <Attribute>
+         <Name>ClientId</Name>
+         <Value>otasdm</Value>
+      </Attribute>
+      <Attribute>
+         <Name>ClientPW</Name>
+         <Value>otasdm</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+</Profiles>
+</Setup>

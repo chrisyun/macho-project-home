@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/models/motorola/ota.templates.java.email.xml,v 1.1 2008/01/02 03:53:30 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2008/01/02 03:53:30 $
+-->
+<ProfileMetaData>
+
+    <CPTemplates>
+        <CPTemplate>
+          <ID>Email</ID>
+          <Name>Email</Name>
+          <Category>Email</Category>
+          <Description>Email template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/omacp/omacp.template.def.vm"/>
+        </CPTemplate>
+    </CPTemplates>
+
+</ProfileMetaData>

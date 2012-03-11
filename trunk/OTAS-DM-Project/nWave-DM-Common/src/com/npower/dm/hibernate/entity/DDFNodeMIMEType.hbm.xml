@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DDFNodeMIMEType.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DDFNodeMIMETypeEntity" table="NW_DM_DDF_NODE_MIME_TYPE">
+        <composite-id name="ID" class="com.npower.dm.hibernate.entity.DDFNodeMIMETypeID">
+            <key-property name="ddfNodeId" type="long">
+                <column name="DDF_NODE_ID" precision="16" scale="0" />
+            </key-property>
+            <key-property name="mimeType" type="string">
+                <column name="MIME_TYPE" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="ddfNode" class="com.npower.dm.hibernate.entity.DDFNodeEntity" update="false" insert="false" fetch="select">
+            <column name="DDF_NODE_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ProfileTemplate.hbm.xml,v 1.6 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.6 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ProfileTemplateEntity" table="NW_DM_PROFILE_TEMPLATE">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="TEMPLATE_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="profileCategory" class="com.npower.dm.hibernate.entity.ProfileCategoryEntity" fetch="select" lazy="false">
+            <column name="PROFILE_CATEGORY_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="NAME" not-null="true" unique="true" />
+        </property>
+        <property name="needsNap" type="boolean">
+            <column name="NEEDS_NAP" precision="1" scale="0" />
+        </property>
+        <property name="needsProxy" type="boolean">
+            <column name="NEEDS_PROXY" precision="1" scale="0" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+        <set name="profileMappings" inverse="true">
+            <key>
+                <column name="TEMPLATE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileMappingEntity" />
+        </set>
+        <set name="profileAttributes" inverse="true" order-by="ATTRIBUTE_INDEX asc" lazy="false">
+            <key>
+                <column name="TEMPLATE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileAttributeEntity" />
+        </set>
+        <set name="profileConfigs" inverse="true">
+            <key>
+                <column name="TEMPLATE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileConfigEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

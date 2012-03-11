@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/Subscriber.hbm.xml,v 1.7 2008/09/18 06:18:29 zhao Exp $
+  * $Revision: 1.7 $
+  * $Date: 2008/09/18 06:18:29 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.SubscriberEntity" table="NW_DM_SUBSCRIBER">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="SUBSCRIBER_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <version name="changeVersion" column="CHANGE_VERSION" type="long"/>
+        <many-to-one name="carrier" class="com.npower.dm.hibernate.entity.CarrierEntity" fetch="select">
+            <column name="CARRIER_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="newCarrier" class="com.npower.dm.hibernate.entity.CarrierEntity" fetch="select">
+            <column name="NEW_CARRIER_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="serviceProvider" class="com.npower.dm.hibernate.entity.ServiceProviderEntity" fetch="select">
+            <column name="SERVICE_PROVIDER_ID" precision="20" scale="0" not-null="false" />
+        </many-to-one>
+        <property name="externalId" type="string">
+            <column name="SUBSCRIBER_EXTERNAL_ID" length="32" not-null="true" unique="true" />
+        </property>
+        <property name="phoneNumber" type="string">
+            <column name="PHONE_NUMBER" length="32" not-null="true" unique="true" />
+        </property>
+        <property name="IMSI" type="string">
+            <column name="IMSI" length="32" />
+        </property>
+        <property name="firstname" type="string">
+            <column name="FIRSTNAME" length="32" not-null="false" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="LASTNAME" length="32" not-null="false" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="200" not-null="false" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="32" not-null="true" />
+        </property>
+        <property name="newPassword" type="string">
+            <column name="NEW_PASSWORD" length="32" />
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" length="32" />
+        </property>
+        <property name="SMSState" type="string">
+            <column name="SMS_STATE" length="32" not-null="true" />
+        </property>
+        <property name="bootstrapPinType" type="string">
+            <column name="BOOTSTRAP_PIN_TYPE" length="100" not-null="false" />
+        </property>
+        <property name="pin" type="string">
+            <column name="PIN" length="32" />
+        </property>
+        <property name="askPermissionOnTrigger" type="boolean">
+            <column name="ASK_PERMISSION_ON_TRIGGER" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="notificationTime" type="java.util.Date">
+            <column name="NOTIFICATION_TIME" length="7" />
+        </property>
+        <property name="noSMSRetries" type="long">
+            <column name="NO_SMS_RETRIES" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="SMSMessageId" type="string">
+            <column name="SMS_MESSAGE_ID" length="32" unique="true" />
+        </property>
+        <property name="msgSeqNo" type="long">
+            <column name="MSG_SEQ_NO" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="isActivated" type="boolean">
+            <column name="IS_ACTIVATED" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="CREATED_TIME" length="7" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="CREATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastRegistrationTime" type="java.util.Date">
+            <column name="LAST_REGISTRATION_TIME" length="7" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <!-- 
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+        -->
+        <set name="devices" inverse="true">
+            <key>
+                <column name="SUBSCRIBER_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DeviceEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

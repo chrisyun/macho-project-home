@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DMPkgSenderCMDIDs.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DMPkgSenderCMDIDs" table="NW_DM_DM_PKG_SENDER_CMD_IDS">
+        <composite-id name="id" class="com.npower.dm.hibernate.entity.DMPkgSenderCMDIDsID">
+            <key-property name="dmPkgSenderId" type="long">
+                <column name="DM_PKG_SENDER_ID" precision="16" scale="0" />
+            </key-property>
+            <key-property name="msgId" type="string">
+                <column name="MSG_ID" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="nwDmDmPkgSender" class="com.npower.dm.hibernate.entity.DMPackageSender" update="false" insert="false" fetch="select">
+            <column name="DM_PKG_SENDER_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="cmdIndex" type="long">
+            <column name="CMD_INDEX" precision="16" scale="0" not-null="true" />
+        </property>
+        <property name="cmdId" type="long">
+            <column name="CMD_ID" precision="16" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script>
+  <!-- Step #1 -->
+  <Sequence>
+    <Add>
+      <InteriorNode>
+        <Target>./SCM/Download/UCWeb</Target>
+      </InteriorNode>
+    </Add>
+    <Add>
+      <LeafNode>
+        <Target>./SCM/Download/UCWeb/Name</Target>
+        <Data format="chr">UCWeb</Data>
+      </LeafNode>
+    </Add>
+    <Add>
+      <LeafNode>
+        <Target>./SCM/Download/UCWeb/Version</Target>
+        <Data format="chr">5.1</Data>
+      </LeafNode>
+    </Add>
+  </Sequence>
+  
+  <!-- Step #2 -->
+  <Replace>
+    <LeafNode>
+      <Target>./SCM/Download/UCWeb/URI</Target>
+      <Data format="chr">http://www.otas.mobi:8080/download/ucweb-51-1-28-07110715.sisx</Data>
+    </LeafNode>
+  </Replace>
+  
+  <Replace>
+    <LeafNode>
+      <Target>./SCM/Download/UCWeb/InstallOpts</Target>
+      <Data format="chr" type="text/xml"><![CDATA[ <InstOpts>
+<StdOpt name="drive" value="!"/>
+<StdOpt name="lang" value="*" />
+<StdOpt name="upgrade" value="yes"/>
+<StdOpt name="kill" value="yes"/>
+<StdSymOpt name="pkginfo" value="yes"/>
+<StdSymOpt name="optionals" value="yes"/>
+<StdSymOpt name="ocsp" value="yes"/>
+<StdSymOpt name="capabilities" value="yes"/>
+<StdSymOpt name="untrusted" value="yes"/>
+<StdSymOpt name="ignoreocspwarn" value="yes"/>
+<StdSymOpt name="ignorewarn" value="yes"/>
+<StdSymOpt name="fileoverwrite" value="yes"/>
+</InstOpts> ]]></Data>
+    </LeafNode>
+  </Replace>
+  
+  <!-- Step #3 -->
+  <Exec>
+    <Item>
+      <Target>./SCM/Download/UCWeb/Operations/DownloadAndInstallAndActivate</Target>
+    </Item>
+  </Exec>
+  
+</Script>
+

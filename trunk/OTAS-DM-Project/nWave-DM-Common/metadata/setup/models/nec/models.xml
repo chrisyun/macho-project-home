@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: 705N -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>705N</Name>
+    <ExternalID>705N</ExternalID>
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/nec/icons/nec_705n.jpg</IconFile>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+    </TACs>
+  </Model>
+  
+</Models>
+</Setup>

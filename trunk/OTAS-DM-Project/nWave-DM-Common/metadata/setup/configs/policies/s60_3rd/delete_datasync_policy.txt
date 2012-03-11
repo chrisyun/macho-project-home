@@ -1,0 +1,6 @@
+<Package>
+	<Operation
+		action_id = "Remove"
+		target_id = "datasync_enforcement_policy_rule1">
+	</Operation>
+</Package>

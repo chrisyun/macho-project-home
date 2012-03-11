@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.template.SyncDS.install.xml,v 1.2 2007/09/18 10:18:11 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2007/09/18 10:18:11 $
+-->
+<ProfileMetaData>
+    <AttributeTypes>
+        <!-- Using by SyncDS Template -->
+    </AttributeTypes>
+
+    <ProfileTemplates>
+        <!-- Default SyncDS Template -->
+        <ProfileTemplate>
+            <CategoryName>SyncDS</CategoryName>
+            <Name>SyncDS Default Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>true</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Display Name</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <ValueUnique>true</ValueUnique>
+                </Attribute>
+                <Attribute>
+                    <Name>Server Address</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Username</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Password</Name>
+                    <TypeName>Password</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+
+        <!-- Contacts DB settings -->
+                <Attribute>
+                    <Name>Contacts DB</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>./card</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Contacts DB ContentType</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>text/x-vcard</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Local Contacts DB</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>C:\System\Data\Contacts.cdb</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+
+        <!-- Calendar DB settings -->
+                <Attribute>
+                    <Name>Calendar DB</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>./cal</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Calendar DB ContentType</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>text/x-vcalendar</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Local Calendar DB</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>C:\System\Data\Calendar</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+
+        <!-- Notes DB settings -->
+                <Attribute>
+                    <Name>Notes DB</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>./notes</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Notes DB ContentType</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>text/plain</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Local Notes DB</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>C:\System\Data\Notepad.dat</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+
+                <Attribute>
+                    <Name>APLink</Name>
+                    <TypeName>APLink</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+    </ProfileTemplates>
+</ProfileMetaData>

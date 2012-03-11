@@ -1,0 +1,30 @@
+<Package>
+	<Operation
+		action_id = "Replace"
+		target_id = "application_management_enforcement_policy_rule1">
+	<Data>
+		<![CDATA[
+<Rule
+	RuleId="application_management_enforcement_policy_rule1"
+	Effect="Permit">
+	<Target>
+		<Subjects>
+		<Subject>
+		<SubjectMatch
+			MatchId="urn:nokia:names:s60:corporate:1.0:function:TrustedSubjectMatch">
+			<AttributeValue
+			DataType="http://www.w3.org/2001/XMLSchema#string">
+				COMCOM
+			</AttributeValue>
+			<SubjectAttributeDesignator
+			AttributeId="trusted_subject"
+			DataType="http://www.w3.org/2001/XMLSchema#string"/>
+		</SubjectMatch>
+		</Subject>
+		</Subjects>					
+	</Target>
+</Rule>
+]]>
+	</Data>
+	</Operation>
+</Package>

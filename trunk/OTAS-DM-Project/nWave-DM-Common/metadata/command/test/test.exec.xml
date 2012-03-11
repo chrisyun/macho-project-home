@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE Script SYSTEM "../script_1_0.dtd" -->
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/command/test/test.exec.xml,v 1.2 2008/12/01 11:29:04 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2008/12/01 11:29:04 $
+-->
+
+<!-- ********** Test #1 - Exec ********** -->
+<Script>
+  <Exec>
+      <Item>
+          <Target>./SCTNode/DMv1</Target>
+      </Item>
+  </Exec>
+  <Exec>
+      <Item>
+          <Target>./SCTNode/DMv2</Target>
+          <Data>Parameter1</Data>
+      </Item>
+  </Exec>
+  <Exec>
+      <Item>
+          <Target>./SCTNode/FWv</Target>
+          <Data>Parameter2</Data>
+      </Item>
+  </Exec>
+  <Exec> 
+    <Item> 
+      <Target>./PolicyMgmt/Delivery/Sink</Target>
+      <!-- 两重 <![CDATA[ ]]> 嵌套 -->
+      <Data format="xml"> <![CDATA[
+<Package>
+<Operation
+action_id = "Add"
+target_id = "roles_mapping_policy"
+use_bearer_certificate = "true">
+<Data>
+<![CDATA[
+<Rule
+RuleId="roles_mapping_policy_rule1"
+Effect="Permit">
+<Target>
+<Subjects>
+<Subject>
+<SubjectMatch
+MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+<AttributeValue
+DataType="http://www.w3.org/2001/XMLSchema#string">
+COMCOM
+</AttributeValue>
+<ResourceAttributeDesignator
+AttributeId="trusted_subject"
+DataType="http://www.w3.org/2001/XMLSchema#string"/>
+</SubjectMatch>
+<SubjectMatch
+MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+<AttributeValue
+DataType="http://www.w3.org/2001/XMLSchema#string">
+trustedadmin
+</AttributeValue>
+<ResourceAttributeDesignator
+AttributeId="urn:nokia:names:s60:corporate:1.0:subject:role_id"
+DataType="http://www.w3.org/2001/XMLSchema#string"/>
+</SubjectMatch>
+</Subject>
+</Subjects>
+</Target>
+</Rule>
+</Data>
+]]&gt;
+</Operation>
+</Package>
+]]> </Data> 
+    </Item> 
+  </Exec> 
+</Script>
+
+

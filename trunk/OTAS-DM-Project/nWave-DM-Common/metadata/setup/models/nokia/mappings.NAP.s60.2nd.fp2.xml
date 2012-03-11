@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/models/nokia/mappings.NAP.s60.2nd.fp2.xml,v 1.1 2007/03/14 10:03:58 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2007/03/14 10:03:58 $
+-->
+<ProfileMetaData>
+
+    <ProfileMappings>
+    
+        <!-- Default NAP Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>NAP Default Template</TemplateName>
+            <RootNodePath>./AP/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>NAME</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/Name</NodeRelativePath>
+                </AttributeMapping>
+                
+                <AttributeMapping>
+                    <AttributeName>BEARER</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/Bearer/${NodeName}/BearerL</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Name>Bearer Direction</Name>
+                    <Value>Outgoing</Value>
+                    <NodeRelativePath>NAPDef/${NodeName}/Bearer/${NodeName}/Direction</NodeRelativePath>
+                </ValueMapping>
+
+                <AttributeMapping>
+                    <AttributeName>NAP-ADDRESS</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>NAP-ADDRTYPE</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAddrTy</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>DNS-ADDR</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/DNSAddr/${NodeName:DNS1}/DNSAddrL</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>AUTHNAME</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAuthInf/${NodeName}/AuthName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>AUTHSECRET</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPAuthInf/${NodeName}/AuthSecr</NodeRelativePath>
+                </AttributeMapping>
+
+                <!--
+                <AttributeMapping>
+                    <AttributeName>AUTHTYPE</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/LoginTy</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>LINKSPEED</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/LnkSpeed</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>CALLTYPE</AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/CBTy</NodeRelativePath>
+                </AttributeMapping>
+                -->
+                
+                <!-- Unused attribute ************************************************** -->
+                <!--
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/GPRSPDP</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NetworkMask</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/NAPID</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/PPPComp</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/UseCB</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/ModemInit</NodeRelativePath>
+                </AttributeMapping>
+                -->
+
+                <!--
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/IPAddrFromServer</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/DefGW</NodeRelativePath>
+                </AttributeMapping>
+                -->
+                <!--
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/IfNetworks</NodeRelativePath>
+                </AttributeMapping>
+                -->
+                <!--
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/CBNbr</NodeRelativePath>
+                </AttributeMapping>
+                -->
+                <!--
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/IAPService</NodeRelativePath>
+                </AttributeMapping>
+                -->
+                <!--
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/IPDNSAddrFromServer</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/UsePTxtLog</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/Networks/${NodeName}/ID</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName></AttributeName>
+                    <NodeRelativePath>NAPDef/${NodeName}/Networks/${NodeName}/Name</NodeRelativePath>
+                </AttributeMapping>
+                -->
+                
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+    </ProfileMappings>
+
+</ProfileMetaData>

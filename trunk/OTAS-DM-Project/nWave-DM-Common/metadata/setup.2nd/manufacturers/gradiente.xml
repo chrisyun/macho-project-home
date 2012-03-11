@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Gradiente</Name>
+<ExternalID>Gradiente</ExternalID>
+<Description>Gradiente</Description>
+<Models filename="./models/gradiente/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

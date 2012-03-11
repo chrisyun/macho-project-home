@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: UIQ 2.x platform -->
+<Models>
+
+  <!--  Model: P910 -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>P910</Name>
+    <ExternalID>P910</ExternalID>
+    <Description>UIQ Version 2.1</Description>
+    <IconFile>./models/sonyericsson/icons/p910.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P910i -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>P910i</Name>
+    <ExternalID>P910i</ExternalID>
+    <Description>UIQ Version 2.1</Description>
+    <IconFile>./models/sonyericsson/icons/p910i.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P910c -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>P910c</Name>
+    <ExternalID>P910c</ExternalID>
+    <Description>UIQ Version 2.1</Description>
+    <IconFile>./models/sonyericsson/icons/p910c.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P910a -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>P910a</Name>
+    <ExternalID>P910a</ExternalID>
+    <Description>UIQ Version 2.1</Description>
+    <IconFile>./models/sonyericsson/icons/p910a.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P900 -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>P900</Name>
+    <ExternalID>P900</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/p900.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P908 -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>P908</Name>
+    <ExternalID>P908</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/p908.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P800 -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>P800</Name>
+    <ExternalID>P800</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/p800.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2002, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P802 -->
+  <Model family="family_symbian_uiq_2.1">
+    <Name>P802</Name>
+    <ExternalID>P802</ExternalID>
+    <Description></Description>
+    <IconFile>./models/sonyericsson/icons/p802.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2002, September"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

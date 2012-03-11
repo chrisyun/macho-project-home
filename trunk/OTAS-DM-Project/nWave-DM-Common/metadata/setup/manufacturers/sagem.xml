@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Sagem</Name>
+<ExternalID>Sagem</ExternalID>
+<Description>Sagem</Description>
+<Models filename="./models/sagem/models.additional.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

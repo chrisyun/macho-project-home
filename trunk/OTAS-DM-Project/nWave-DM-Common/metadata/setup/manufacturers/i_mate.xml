@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>i-mate</Name>
+<ExternalID>i-mate</ExternalID>
+<Description>i-mate</Description>
+<Models filename="./models/i_mate/models.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

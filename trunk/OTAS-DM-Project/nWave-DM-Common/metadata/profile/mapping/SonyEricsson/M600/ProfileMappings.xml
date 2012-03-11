@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/profile/mapping/SonyEricsson/M600/ProfileMappings.xml,v 1.1 2007/01/16 10:23:33 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2007/01/16 10:23:33 $
+-->
+<ProfileMetaData>
+
+    <ProfileMappings>
+
+        <ProfileMapping>
+            <ModelName>M600</ModelName>
+            <ManufacturerExternalId>SonyEricsson</ManufacturerExternalId>
+            <TemplateName>Email Template Without NAP</TemplateName>
+            <RootNodePath>./Email/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <LinkedProfileCategoryName>NAP</LinkedProfileCategoryName>
+            <NodeMappings>
+                <ValueMapping>
+                    <Name>POP AAccept</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Incoming/POP3/AAccept</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP AProtocol</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Incoming/POP3/AProtocol</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP AppID</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Incoming/POP3/AppID</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Incoming/POP3/Name</NodeRelativePath>
+                </AttributeMapping>
+                <!--
+                <ValueMapping>
+                    <Name>POP PrefConRef</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Incoming/POP3/PrefConRef</NodeRelativePath>
+                </ValueMapping>
+                -->
+                <ValueMapping>
+                    <Name>POP ProviderID</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Incoming/POP3/ProviderID</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>Receiving Server Address</AttributeName>
+                    <NodeRelativePath>Incoming/POP3/AppAddr/${NodeName:AppAddr0}/Addr</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Name>POP AddrType</Name>
+                    <Value>2</Value>
+                    <NodeRelativePath>Incoming/POP3/AppAddr/${NodeName:AppAddr0}/AddrType</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP PortNbr</Name>
+                    <Value>110</Value>
+                    <NodeRelativePath>Incoming/POP3/AppAddr/${NodeName:AppAddr0}/PortNbr</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP Service</Name>
+                    <Value>1</Value>
+                    <NodeRelativePath>Incoming/POP3/AppAddr/${NodeName:AppAddr0}/Service</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>Username</AttributeName>
+                    <NodeRelativePath>Incoming/POP3/AppAuth/${NodeName:AppAuth0}/AAuthName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Password</AttributeName>
+                    <NodeRelativePath>Incoming/POP3/AppAuth/${NodeName:AppAuth0}/AAuthSecret</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Name>POP AAuthType</Name>
+                    <Value>1</Value>
+                    <NodeRelativePath>Incoming/POP3/AppAuth/${NodeName:AppAuth0}/AAuthType</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP Symbian AckRcpt</Name>
+                    <Value>false</Value>
+                    <NodeRelativePath>Incoming/POP3/Ext/Symbian/AckRcpt</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP Symbian AutoSend</Name>
+                    <Value>false</Value>
+                    <NodeRelativePath>Incoming/POP3/Ext/Symbian/AutoSend</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP Symbian DMode</Name>
+                    <Value>true</Value>
+                    <NodeRelativePath>Incoming/POP3/Ext/Symbian/DMode</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP Symbian DelDisc</Name>
+                    <Value>true</Value>
+                    <NodeRelativePath>Incoming/POP3/Ext/Symbian/DelDisc</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP Symbian MxMsgSz</Name>
+                    <Value>102400</Value>
+                    <NodeRelativePath>Incoming/POP3/Ext/Symbian/MxMsgSz</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP Symbian PopL</Name>
+                    <Value>-555819298</Value>
+                    <NodeRelativePath>Incoming/POP3/Ext/Symbian/PopL</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP Symbian SOpt</Name>
+                    <Value>1</Value>
+                    <NodeRelativePath>Incoming/POP3/Ext/Symbian/SOpt</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>POP Symbian SyncL</Name>
+                    <Value>-1</Value>
+                    <NodeRelativePath>Incoming/POP3/Ext/Symbian/SyncL</NodeRelativePath>
+                </ValueMapping>
+                
+                
+                
+                
+                <ValueMapping>
+                    <Name>SMTP AAccept</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Outgoing/SMTP/AAccept</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>SMTP AProtocol</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Outgoing/SMTP/AProtocol</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>SMTP AppID</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Outgoing/SMTP/AppID</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>Email Address</AttributeName>
+                    <NodeRelativePath>Outgoing/SMTP/EAddr</NodeRelativePath>
+                </AttributeMapping>
+                <!--
+                <ValueMapping>
+                    <Name>SMTP PrefConRef</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Outgoing/SMTP/PrefConRef</NodeRelativePath>
+                </ValueMapping>
+                -->
+                <ValueMapping>
+                    <Name>SMTP ProviderID</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Outgoing/SMTP/ProviderID</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>Email Address</AttributeName>
+                    <NodeRelativePath>Outgoing/SMTP/RAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Sending Server Address</AttributeName>
+                    <NodeRelativePath>Outgoing/SMTP/AppAddr/${NodeName:AppAddr0}/Addr</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Name>SMTP AppAddr AddrType</Name>
+                    <Value>2</Value>
+                    <NodeRelativePath>Outgoing/SMTP/AppAddr/${NodeName:AppAddr0}/AddrType</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>SMTP AppAddr PortNbr</Name>
+                    <Value>25</Value>
+                    <NodeRelativePath>Outgoing/SMTP/AppAddr/${NodeName:AppAddr0}/PortNbr</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>SMTP AppAddr Service</Name>
+                    <Value>1</Value>
+                    <NodeRelativePath>Outgoing/SMTP/AppAddr/${NodeName:AppAddr0}/Service</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>Username</AttributeName>
+                    <NodeRelativePath>Outgoing/SMTP/AppAuth/${NodeName:AppAuth0}/AAuthName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Password</AttributeName>
+                    <NodeRelativePath>Outgoing/SMTP/AppAuth/${NodeName:AppAuth0}/AAuthSecret</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Name>SMTP AppAuth AAuthType</Name>
+                    <Value>1</Value>
+                    <NodeRelativePath>Outgoing/SMTP/AppAuth/${NodeName:AppAuth0}/AAuthType</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>SMTP Symbian AddSig</Name>
+                    <Value>false</Value>
+                    <NodeRelativePath>Outgoing/SMTP/Ext/Symbian/AddSig</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>SMTP Symbian AddVC</Name>
+                    <Value>false</Value>
+                    <NodeRelativePath>Outgoing/SMTP/Ext/Symbian/AddVC</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>User Display Name</AttributeName>
+                    <NodeRelativePath>Outgoing/SMTP/Ext/Symbian/Alias</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Name>SMTP Symbian CCSelf</Name>
+                    <Value>1</Value>
+                    <NodeRelativePath>Outgoing/SMTP/Ext/Symbian/CCSelf</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>SMTP Symbian Enc</Name>
+                    <Value>2</Value>
+                    <NodeRelativePath>Outgoing/SMTP/Ext/Symbian/Enc</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>SMTP Symbian RcAddr</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Outgoing/SMTP/Ext/Symbian/RcAddr</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>SMTP Symbian Rcpt</Name>
+                    <Value>false</Value>
+                    <NodeRelativePath>Outgoing/SMTP/Ext/Symbian/Rcpt</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Name>SMTP Symbian SOpt</Name>
+                    <Value>1</Value>
+                    <NodeRelativePath>Outgoing/SMTP/Ext/Symbian/SOpt</NodeRelativePath>
+                </ValueMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+        
+    </ProfileMappings>
+
+</ProfileMetaData>

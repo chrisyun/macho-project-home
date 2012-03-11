@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Motorola P044 -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Motorola Java Platform P2K-P044                          -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_motorola_java_platform_p2k_p044</ExternalID>
+    <Name>Motorola Java Platform P2K P044</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF filename="ddf/motorola/P044_DDF_File.xml" />
+    </DDFs>
+    
+    <!-- OMA DM ProfileMappings Stage -->
+    <ProfileMappings>
+      <ProfileMapping filename="./models/motorola/mapping.basic.xml" />
+    </ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/motorola/ota.templates.java.ap.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.proxy.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.mms.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.syncml.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.dm.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.email.xml"/>
+        
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Motorola P2K"/>
+      <Specification category="general" name="developer.platform" value=""/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: V557p -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>V557p</Name>
+    <ExternalID>V557p</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v557.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V557 -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>V557</Name>
+    <ExternalID>V557</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v557.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V230 -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>V230</Name>
+    <ExternalID>V230</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v230.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V235 -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>V235</Name>
+    <ExternalID>V235</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v235.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V190 -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>V190</Name>
+    <ExternalID>V190</ExternalID>
+    <Description></Description>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V191 -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>V191</Name>
+    <ExternalID>V191</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v191.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V8 -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>V8</Name>
+    <ExternalID>V8</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_razr2_v8.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V8v -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>V8v</Name>
+    <ExternalID>V8v</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_razr2_v8.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V8 iTunes -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>V8 iTunes</Name>
+    <ExternalID>V8 iTunes</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_razr2_v8.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: RAZR V6 -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>RAZR V6</Name>
+    <ExternalID>RAZRV6</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_razr_v6.gif</IconFile>
+
+    <SupportedDownloadMethods>true</SupportedDownloadMethods>
+    <FirmwareVersionNode>./DevDetail/SwV</FirmwareVersionNode>
+    <FirmwareUpdateNode></FirmwareUpdateNode>
+    <FirmwareDownloadNode>./FwUpdate/Flash/Download</FirmwareDownloadNode>
+    <FirmwareDownloadAndUpdateNode>./FwUpdate/Flash/DownloadAndUpdate</FirmwareDownloadAndUpdateNode>
+    <FirmwareStatusNode>./FwUpdate/Flash/State</FirmwareStatusNode>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC>00440102</TAC>
+    </TACs>
+
+    <!-- Firmwares -->
+    <Firmwares>
+      <Firmware>
+        <FromVersion>R26117LD_U_98.60.00R_drm1001_lang0001</FromVersion>
+        <ToVersion>R26117LD_U_98.60.01R_drm1001_lang0039</ToVersion>
+        <Status>1007</Status>
+        <Filename>firmwares/motorola/RAZRV6/volans00_01_secure.up</Filename>
+      </Firmware>
+      <Firmware>
+        <FromVersion>R26117LD_U_98.60.01R_drm1001_lang0039</FromVersion>
+        <ToVersion>R26117LD_U_98.60.00R_drm1001_lang0001</ToVersion>
+        <Status>1007</Status>
+        <Filename>firmwares/motorola/RAZRV6/volans01_00_secure.up</Filename>
+      </Firmware>
+    </Firmwares>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: RAZR MAX V6 -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>RAZR MAX V6</Name>
+    <ExternalID>RAZRMAXV6</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/razrmaxv6.jpg</IconFile>
+
+    <SupportedDownloadMethods>true</SupportedDownloadMethods>
+    <FirmwareVersionNode>./DevDetail/SwV</FirmwareVersionNode>
+    <FirmwareUpdateNode></FirmwareUpdateNode>
+    <FirmwareDownloadNode>./FwUpdate/Flash/Download</FirmwareDownloadNode>
+    <FirmwareDownloadAndUpdateNode>./FwUpdate/Flash/DownloadAndUpdate</FirmwareDownloadAndUpdateNode>
+    <FirmwareStatusNode>./FwUpdate/Flash/State</FirmwareStatusNode>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, July"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: RAZR V3 -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>RAZR V3</Name>
+    <ExternalID>V3</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v3i.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: KRZR K3 -->
+  <Model family="family_motorola_java_platform_p2k_p044">
+    <Name>KRZR K3</Name>
+    <ExternalID>KRZRK3</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/k3.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

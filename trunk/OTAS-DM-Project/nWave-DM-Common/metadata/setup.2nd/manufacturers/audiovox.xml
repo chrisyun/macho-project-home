@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Audiovox</Name>
+<ExternalID>Audiovox</ExternalID>
+<Description>Audiovox</Description>
+<Models filename="./models/audiovox/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

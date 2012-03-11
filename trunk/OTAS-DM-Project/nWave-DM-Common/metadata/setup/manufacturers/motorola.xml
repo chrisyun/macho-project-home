@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>Motorola</Name>
+      <ExternalID>Motorola</ExternalID>
+      <Description>Motorola</Description>
+      <Models filename="./models/motorola/models.p2k.1st.c650.xml"/>
+      <Models filename="./models/motorola/models.p2k.1st.e398.xml"/>
+      <Models filename="./models/motorola/models.p2k.1st.v600.xml"/>
+      <Models filename="./models/motorola/models.p2k.2nd.l6.xml"/>
+      <Models filename="./models/motorola/models.p2k.2nd.l7.xml"/>
+      <Models filename="./models/motorola/models.p2k.3rd.xml"/>
+      <Models filename="./models/motorola/models.java.p044.xml"/>
+      <Models filename="./models/motorola/models.linux.ezx.1st.xml"/>
+      <Models filename="./models/motorola/models.linux.ezx.2nd.xml"/>
+      <Models filename="./models/motorola/models.linux.ezx.3rd.xml"/>
+      <Models filename="./models/motorola/models.uiq.2.1.xml"/>
+      <Models filename="./models/motorola/models.uiq.3.1.xml"/>
+      <Models filename="./models/motorola/models.microsoft.xml"/>
+      <Models filename="./models/motorola/models.s60.xml"/>
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

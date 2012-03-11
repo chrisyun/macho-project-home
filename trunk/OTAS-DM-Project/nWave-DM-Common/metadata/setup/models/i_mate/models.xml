@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: i-mate -->
+<Models>
+
+  <!--  Model: JAM -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>JAM</Name>
+    <ExternalID>JAM</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek S100, O2 XDA II mini and T-Mobile MDA Compact.</Description>
+    <IconFile>./models/i_mate/icons/jam.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: JAM Black -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>JAM Black</Name>
+    <ExternalID>JAM Black</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek S110, T-Mobile MDA Compact II.</Description>
+    <IconFile>./models/i_mate/icons/jam_black.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: JAMA -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>JAMA</Name>
+    <ExternalID>JAMA</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/jama.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: JAMA 101 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>JAMA 101</Name>
+    <ExternalID>JAMA 101</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/jama101.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: JAMA 201 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>JAMA 201</Name>
+    <ExternalID>JAMA 201</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/jama201.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: JAMin -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>JAMin</Name>
+    <ExternalID>JAMin</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek S200, O2 XDA Neo.</Description>
+    <IconFile>./models/i_mate/icons/jamin.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: JAQ -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>JAQ</Name>
+    <ExternalID>JAQ</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/jaq.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: JAQ3 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>JAQ3</Name>
+    <ExternalID>JAQ3</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/jaq3.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: JAQ4 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>JAQ4</Name>
+    <ExternalID>JAQ4</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/jaq4.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: JASJAM -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>JASJAM</Name>
+    <ExternalID>JASJAM</ExternalID>
+    <Description>Produced by HTC. Functionally identical to O2 XDA Trion and Qtek 9600.</Description>
+    <IconFile>./models/i_mate/icons/jasjam.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: JASJAR -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>JASJAR</Name>
+    <ExternalID>JASJAR</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 9000, O2 XDA Exec and T-Mobile MDA IV .</Description>
+    <IconFile>./models/i_mate/icons/jasjar.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: K-JAM -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>K-JAM</Name>
+    <ExternalID>K-JAM</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 9100, O2 XDA mini S, T-Mobile MDA Vario.</Description>
+    <IconFile>./models/i_mate/icons/k_jam.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: PDA2 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>PDA2</Name>
+    <ExternalID>PDA2</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/pda2.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: PDA2k -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>PDA2k</Name>
+    <ExternalID>PDA2k</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 9090, O2 XDA IIs, T-Mobile MDA III and Orange SPV M2000.</Description>
+    <IconFile>./models/i_mate/icons/pda2k.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: PDAL -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>PDAL</Name>
+    <ExternalID>PDAL</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/pdal.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Pocket PC -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>Pocket PC</Name>
+    <ExternalID>Pocket PC</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 2020, O2 XDA II, T-Mobile MDA II and Orange SPV M1000.</Description>
+    <IconFile>./models/i_mate/icons/pocket_pc.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Smartflip -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>Smartflip</Name>
+    <ExternalID>Smartflip</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/smartflip.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Smartphone -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>Smartphone</Name>
+    <ExternalID>Smartphone</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 7070 and Orange SPV E100.</Description>
+    <IconFile>./models/i_mate/icons/smartphone.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Smartphone2 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>Smartphone2</Name>
+    <ExternalID>Smartphone2</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 8080, O2 Xphone and Orange SPV E200.</Description>
+    <IconFile>./models/i_mate/icons/smartphone2.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Smartphone 2003 OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SP3 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>SP3</Name>
+    <ExternalID>SP3</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 8010 and Orange SPV C500.</Description>
+    <IconFile>./models/i_mate/icons/sp3.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SP3i -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>SP3i</Name>
+    <ExternalID>SP3i</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 8020, O2 Xphone II and T-Mobile SDA. USA version - 850/1800/1900</Description>
+    <IconFile>./models/i_mate/icons/sp3.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 3Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SP4m -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>SP4m</Name>
+    <ExternalID>SP4m</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/sp4m.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SP5 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>SP5</Name>
+    <ExternalID>SP5</ExternalID>
+    <Description>Produced by HTC. Functionally identical to Qtek 8310 and O2 XDA Orion.</Description>
+    <IconFile>./models/i_mate/icons/sp5.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SP5m -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>SP5m</Name>
+    <ExternalID>SP5m</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/sp5m.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SPJAS -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>SPJAS</Name>
+    <ExternalID>SPJAS</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/spjas.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SPL -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>SPL</Name>
+    <ExternalID>SPL</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/spl.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Smartphone"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, September"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Ultimate 5150 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Ultimate 5150</Name>
+    <ExternalID>Ultimate 5150</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/ultimate_5150.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Ultimate 6150 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Ultimate 6150</Name>
+    <ExternalID>Ultimate 6150</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/ultimate_6150.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Ultimate 7150 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Ultimate 7150</Name>
+    <ExternalID>Ultimate 7150</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/ultimate_7150.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Ultimate 8150 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Ultimate 8150</Name>
+    <ExternalID>Ultimate 8150</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/ultimate_8150.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Ultimate 8502 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Ultimate 8502</Name>
+    <ExternalID>Ultimate 8502</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/ultimate_8502.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Ultimate 9150 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Ultimate 9150</Name>
+    <ExternalID>Ultimate 9150</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/ultimate_9150.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: Ultimate 9502 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>Ultimate 9502</Name>
+    <ExternalID>Ultimate 9502</ExternalID>
+    <Description></Description>
+    <IconFile>./models/i_mate/icons/ultimate_9502.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

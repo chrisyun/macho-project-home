@@ -1,0 +1,41 @@
+<Package>
+	<Operation
+		action_id = "Add"
+		target_id = "roles_mapping_policy"
+		use_bearer_certificate = "true">
+	<Data>
+		<![CDATA[
+<Rule
+	RuleId="roles_mapping_policy_rule1"
+	Effect="Permit">
+	<Target>
+		<Subjects>
+			<Subject>
+			<SubjectMatch
+				MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+				<AttributeValue
+				DataType="http://www.w3.org/2001/XMLSchema#string">
+				COMCOM
+				</AttributeValue>
+				<ResourceAttributeDesignator
+				AttributeId="trusted_subject"
+				DataType="http://www.w3.org/2001/XMLSchema#string"/>
+			</SubjectMatch>
+			<SubjectMatch
+				MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+				<AttributeValue
+				DataType="http://www.w3.org/2001/XMLSchema#string">
+				trustedadmin
+				</AttributeValue>
+				<ResourceAttributeDesignator
+				AttributeId="urn:nokia:names:s60:corporate:1.0:subject:role_id"
+				DataType="http://www.w3.org/2001/XMLSchema#string"/>
+			</SubjectMatch>
+			</Subject>
+		</Subjects>
+	</Target>
+</Rule>
+		]]>
+		</Data>
+	</Operation>
+</Package>

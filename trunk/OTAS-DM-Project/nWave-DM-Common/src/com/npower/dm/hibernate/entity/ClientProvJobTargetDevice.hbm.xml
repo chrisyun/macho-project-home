@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ClientProvJobTargetDevice.hbm.xml,v 1.4 2008/07/29 07:17:40 zhao Exp $
+  * $Revision: 1.4 $
+  * $Date: 2008/07/29 07:17:40 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ClientProvJobTargetDeviceEntity" table="NW_CP_JOB_TARGET_DEVICE">
+        <id name="id" type="long">
+            <column name="ID" precision="20" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="job" class="com.npower.dm.hibernate.entity.ProvisionRequest" fetch="select">
+            <column name="PROV_REQ_ID" precision="20" scale="0" />
+        </many-to-one>
+        <property name="deviceId" type="string">
+            <column name="DEVICE_ID" />
+        </property>
+        <property name="phoneNumber" type="string">
+            <column name="PHONE_NUMBER" />
+        </property>
+        <property name="manufacturerExternalId" type="string">
+            <column name="MANUFACTURER_EXTERNAL_ID" />
+        </property>
+        <property name="modelExternalId" type="string">
+            <column name="MODEL_EXTERNAL_ID" />
+        </property>
+        <property name="carrierExternalId" type="string">
+            <column name="CARRIER_EXTERNAL_ID" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="64" not-null="true" />
+        </property>
+        <property name="numberOfEnqueueRetries" type="long">
+            <column name="NUMBER_OF_ENQUEUE_RETRIES" precision="4" scale="0" />
+        </property>
+        <property name="lastEnqueueRetriesTime" type="java.util.Date">
+            <column name="LAST_ENQUEUE_RETRIED_TIME" not-null="false" />
+        </property>
+        <property name="messageId" type="string">
+            <column name="MESSAGE_ID" />
+        </property>
+        <property name="messageType" type="string">
+            <column name="MESSAGE_TYPE" />
+        </property>
+        <property name="messageContent" type="string">
+            <column name="MESSAGE_CONTENT" />
+        </property>
+        <property name="messageRaw" type="blob">
+            <column name="MESSAGE_RAW" not-null="false" />
+        </property>
+        <property name="securityMethod" type="string">
+            <column name="SECURITY_METHOD" />
+        </property>
+        <property name="securityPin" type="string">
+            <column name="SECURITY_PIN" />
+        </property>
+        <property name="profileExternalId" type="string">
+            <column name="PROFILE_EXTERNAL_ID" />
+        </property>
+        <property name="parameters" type="blob">
+            <column name="PARAMETERS" />
+        </property>
+        <property name="finishedTime" type="java.util.Date">
+            <column name="FINISHED_TIME" length="7" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="CREATED_TIME" length="7" not-null="true" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="CREATED_BY" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" />
+        </property>
+        <set name="profiles" inverse="true">
+            <key>
+                <column name="TARGET_DEVICE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ClientProvJobProfile" />
+        </set>
+    </class>
+</hibernate-mapping>

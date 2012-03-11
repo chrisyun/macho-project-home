@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ProfileMetaData>
+    <ProfileMappings>
+        <ProfileMapping>
+            <TemplateName>NAP Default Template</TemplateName>
+            <RootNodePath>./Application/PXLOGICAL/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>NAME</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>NAP-ADDRESS</AttributeName>
+                    <NodeRelativePath>NAPDEF/${NodeName:gprs}/Addr</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Name>Bearer Type</Name>
+                    <Value>GPRS</Value>
+                    <NodeRelativePath>NAPDEF/${NodeName:gprs}/AddrType</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>AUTHNAME</AttributeName>
+                    <NodeRelativePath>NAPDEF/${NodeName:gprs}/UserName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>AUTHSECRET</AttributeName>
+                    <NodeRelativePath>NAPDEF/${NodeName:gprs}/PassWD</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>DNS-ADDR</AttributeName>
+                    <NodeRelativePath>NAPDEF/DNS/${NodeName}</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>false</CanAssignToDevice>
+        </ProfileMapping>
+
+        <ProfileMapping>
+            <TemplateName>Proxy Default Template</TemplateName>
+            <RootNodePath>./Application/PXLOGICAL/${NodeName}</RootNodePath>
+            <ShareRootNode>true</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>PXADDR</AttributeName>
+                    <NodeRelativePath>PXPHYSICAL/${NodeName}/Addr</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Name>PXADDRTYPE</Name>
+                    <Value>IPV4</Value>
+                    <NodeRelativePath>PXPHYSICAL/${NodeName}/AddrType</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>PXPHYSICAL SERVICE</AttributeName>
+                    <NodeRelativePath>PXPHYSICAL/${NodeName}/Service</NodeRelativePath>
+                    <ValueTranslations>
+	                    <ValueTranslation>
+	                    	<Value>CO-WSP</Value>
+	                    	<DeviceValue>1</DeviceValue>
+    	                </ValueTranslation>
+	                    <ValueTranslation>
+	                    	<Value>CL-WSP</Value>
+	                    	<DeviceValue>2</DeviceValue>
+    	                </ValueTranslation>
+	                    <ValueTranslation>
+	                    	<Value>CO-SEC-WSP</Value>
+	                    	<DeviceValue>3</DeviceValue>
+    	                </ValueTranslation>
+	                    <ValueTranslation>
+	                    	<Value>CL-SEC-WSP</Value>
+	                    	<DeviceValue>4</DeviceValue>
+    	                </ValueTranslation>
+	                    <ValueTranslation>
+	                    	<Value>OTA-HTTP-TO</Value>
+	                    	<DeviceValue>5</DeviceValue>
+    	                </ValueTranslation>
+	                    <ValueTranslation>
+	                    	<Value>OTA-HTTP-TLS-TO</Value>
+	                    	<DeviceValue>6</DeviceValue>
+    	                </ValueTranslation>
+                    </ValueTranslations>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>PXPHYSICAL PORTNBR</AttributeName>
+                    <NodeRelativePath>PXPHYSICAL/${NodeName}/PortNbr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>PXPHYSICAL DOMAIN</AttributeName>
+                    <NodeRelativePath>PXPHYSICAL/${NodeName}/Domain</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>STARTPAGE</AttributeName>
+                    <NodeRelativePath>HomePage</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <ProfileMapping>
+            <TemplateName>MMS Default Template</TemplateName>
+            <RootNodePath>./Application/MMS/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>STARTPAGE</AttributeName>
+                    <LinkedProfileCategoryName>Proxy</LinkedProfileCategoryName>
+                    <NodeRelativePath>URI</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>APName</AttributeName>
+                    <NodeRelativePath>To-Proxy</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <ProfileMapping>
+            <TemplateName>Email Default Template</TemplateName>
+            <RootNodePath>./Application/EMAIL</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>NAP-ADDRESS</AttributeName>
+                    <LinkedProfileCategoryName>NAP</LinkedProfileCategoryName>
+                    <NodeRelativePath>NAP-Addr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>NAP-ADDRTYPE</AttributeName>
+                    <LinkedProfileCategoryName>NAP</LinkedProfileCategoryName>
+                    <NodeRelativePath>NAP-AddrType</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>AUTHNAME</AttributeName>
+                    <LinkedProfileCategoryName>NAP</LinkedProfileCategoryName>
+                    <NodeRelativePath>NAP-UserName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>AUTHSECRET</AttributeName>
+                    <LinkedProfileCategoryName>NAP</LinkedProfileCategoryName>
+                    <NodeRelativePath>NAP-PassWD</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>DNS-ADDR</AttributeName>
+                    <LinkedProfileCategoryName>NAP</LinkedProfileCategoryName>
+                    <NodeRelativePath>DNS</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Username</AttributeName>
+                    <NodeRelativePath>UserName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Password</AttributeName>
+                    <NodeRelativePath>PassWD</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Email Address</AttributeName>
+                    <NodeRelativePath>ReplyAddr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Receiving Server Address</AttributeName>
+                    <NodeRelativePath>RecvHost</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Receiving Server Port</AttributeName>
+                    <NodeRelativePath>RecvPort</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Sending Server Address</AttributeName>
+                    <NodeRelativePath>SendHost</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Sending Server Port</AttributeName>
+                    <NodeRelativePath>SendPort</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Mailbox Protocol</AttributeName>
+                    <NodeRelativePath>Service</NodeRelativePath>
+                    <ValueTranslations>
+	                    <ValueTranslation>
+	                    	<Value>POP</Value>
+	                    	<DeviceValue>POP3</DeviceValue>
+    	                </ValueTranslation>
+	                    <ValueTranslation>
+	                    	<Value>IMAP</Value>
+	                    	<DeviceValue>IMAP4</DeviceValue>
+    	                </ValueTranslation>
+                    </ValueTranslations>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+    </ProfileMappings>
+</ProfileMetaData>

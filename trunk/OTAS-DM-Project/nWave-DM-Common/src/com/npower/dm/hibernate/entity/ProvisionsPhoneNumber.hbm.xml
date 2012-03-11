@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ProvisionsPhoneNumber.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ProvisionsPhoneNumber" table="NW_DM_PR_PHONE_NUMBER">
+        <id name="prPnId" type="long" unsaved-value="0">
+            <column name="PR_PN_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="nwDmProvReq" class="com.npower.dm.hibernate.entity.ProvisionRequest" fetch="select">
+            <column name="PR_ID" precision="16" scale="0" />
+        </many-to-one>
+        <property name="phoneNumber" type="string">
+            <column name="PHONE_NUMBER" length="30" not-null="true" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

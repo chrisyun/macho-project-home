@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ota-templates xmlns:xi="http://www.w3.org/2001/XInclude">
+  <import filename="test.2.import.1.xml"/>
+  <import filename="test.2.import.2.xml"/>
+</ota-templates>

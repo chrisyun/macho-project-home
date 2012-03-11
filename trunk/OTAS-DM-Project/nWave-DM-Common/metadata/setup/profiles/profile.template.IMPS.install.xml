@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.template.IMPS.install.xml,v 1.2 2007/09/18 10:18:11 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2007/09/18 10:18:11 $
+-->
+<ProfileMetaData>
+    <AttributeTypes>
+        <!-- Using by IMPS Template -->
+    </AttributeTypes>
+
+    <ProfileTemplates>
+        <!-- Default IMPS Template -->
+        <ProfileTemplate>
+            <CategoryName>IMPS</CategoryName>
+            <Name>IMPS Default Template</Name>
+            <NeedsNAP>true</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Display Name</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>IMPS Server</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>http://imps.service.com</DefaultValue>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Username</Name>
+                    <TypeName>String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Password</Name>
+                    <TypeName>Password</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Application ID</Name>
+                    <TypeName>String</TypeName>
+                    <DefaultValue>wA</DefaultValue>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>APLink</Name>
+                    <TypeName>APLink</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+    </ProfileTemplates>
+</ProfileMetaData>

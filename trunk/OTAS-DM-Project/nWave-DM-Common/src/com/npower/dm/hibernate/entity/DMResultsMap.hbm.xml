@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DMResultsMap.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DMResultsMap" table="NW_DM_DM_RESULTS_MAP">
+        <composite-id name="id" class="com.npower.dm.hibernate.entity.DMResultsMapID">
+            <key-property name="dmCmdResponseId" type="long">
+                <column name="DM_CMD_RESPONSE_ID" precision="16" scale="0" />
+            </key-property>
+            <key-property name="mapKey" type="string">
+                <column name="MAP_KEY" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="nwDmDmCmdResponse" class="com.npower.dm.hibernate.entity.DMCMDResponse" update="false" insert="false" fetch="select">
+            <column name="DM_CMD_RESPONSE_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="itemDataKind" type="string">
+            <column name="ITEM_DATA_KIND" length="20" />
+        </property>
+        <property name="updateId" type="string">
+            <column name="UPDATE_ID" />
+        </property>
+        <property name="rawData" type="clob">
+            <column name="RAW_DATA" />
+        </property>
+        <property name="binaryData" type="blob">
+            <column name="BINARY_DATA" />
+        </property>
+        <property name="MFormat" type="string">
+            <column name="M_FORMAT" />
+        </property>
+        <property name="MType" type="string">
+            <column name="M_TYPE" />
+        </property>
+    </class>
+</hibernate-mapping>

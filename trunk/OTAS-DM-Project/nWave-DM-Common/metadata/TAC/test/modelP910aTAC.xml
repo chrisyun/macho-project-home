@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Manufacturers>
+  <Manufacturer>
+    <Name>SonyEricsson</Name>
+    <ExternalID>SonyEricsson</ExternalID>
+    <Model>
+      <Name>P910a</Name>
+      <ExternalID>P910a</ExternalID>
+      <TACS>
+        <TAC>00011100</TAC>
+      </TACS>
+    </Model>
+  </Manufacturer>
+</Manufacturers>

@@ -1,0 +1,140 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        NAP Profiles 
+      ***********************************************************************************
+   -->
+  <!-- NAP Profile: CMWAP -->
+  <Profile>
+    <ID>ChinaMobile.wap.CMWAP</ID>
+    <ProfileName>移动梦网</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>移动梦网</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>cmwap</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- NAP Profile: CMWAP -->
+  <Profile>
+    <ProfileName>CMWAP</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>CMWAP</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>cmwap</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!--  
+      ***********************************************************************************
+        Proxy Profiles 
+      ***********************************************************************************
+   -->
+  <!-- Proxy Profile: CMWAP -->
+  <Profile>
+    <ProfileName>移动梦网</ProfileName>
+    <Template>Proxy Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile>移动梦网</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>移动梦网</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://wap.monternet.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDRTYPE</Name>
+         <Value>IPV4</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDR</Name>
+         <Value>10.0.0.172</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXPHYSICAL PORTNBR</Name>
+         <Value>8080</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Proxy Profile: CMWAP -->
+  <Profile>
+    <ProfileName>CMWAP</ProfileName>
+    <Template>Proxy Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile>CMWAP</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>CMWAP</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://wap.monternet.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDRTYPE</Name>
+         <Value>IPV4</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDR</Name>
+         <Value>10.0.0.172</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXPHYSICAL PORTNBR</Name>
+         <Value>8080</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+</Profiles>
+</Setup>

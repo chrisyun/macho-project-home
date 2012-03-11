@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Acer -->
+<Models>
+
+  <!--  Model: Pro80 -->
+  <Model>
+    <Name>Pro80</Name>
+    <ExternalID>Pro80</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/acer/icons/pro80.gif</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+
+</Models>
+</Setup>

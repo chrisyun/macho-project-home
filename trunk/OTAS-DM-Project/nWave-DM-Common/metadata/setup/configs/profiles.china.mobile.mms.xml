@@ -1,0 +1,187 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        NAP Profiles 
+      ***********************************************************************************
+   -->
+  <!-- NAP Profile: MMS -->
+  <Profile>
+    <ID>ChinaMobile.MMS.ZH</ID>
+    <ProfileName>彩信接入</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>彩信接入</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>cmwap</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- NAP Profile: MMS -->
+  <Profile>
+    <ProfileName>CMCC_MMS</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>CMCC_MMS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>cmwap</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!--  
+      ***********************************************************************************
+        Proxy Profiles 
+      ***********************************************************************************
+   -->
+  <!-- Proxy Profile: MMS -->
+  <Profile>
+    <ProfileName>彩信接入</ProfileName>
+    <Template>Proxy Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile>彩信接入</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>彩信接入</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://www.monternet.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDRTYPE</Name>
+         <Value>IPV4</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDR</Name>
+         <Value>10.0.0.172</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXPHYSICAL PORTNBR</Name>
+         <Value>8080</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Proxy Profile: MMS -->
+  <Profile>
+    <ProfileName>CMCC_MMS</ProfileName>
+    <Template>Proxy Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile>CMCC_MMS</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>CMCC_MMS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://www.monternet.com</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDRTYPE</Name>
+         <Value>IPV4</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDR</Name>
+         <Value>10.0.0.172</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXPHYSICAL PORTNBR</Name>
+         <Value>8080</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!--  
+      ***********************************************************************************
+        MMS Profiles 
+      ***********************************************************************************
+   -->
+  <!-- MMS Profile: MMS -->
+  <Profile>
+    <ProfileName>彩信接入</ProfileName>
+    <Template>MMS Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile>彩信接入</ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>彩信接入</Value>
+      </Attribute>
+      <Attribute>
+         <Name>MMSC Server</Name>
+         <Value>http://mmsc.monternet.com</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- MMS Profile: MMS -->
+  <Profile>
+    <ProfileName>CMCC_MMS</ProfileName>
+    <Template>MMS Default Template</Template>
+    <Carrier>ChinaMobile</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile>CMCC_MMS</ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>Display Name</Name>
+         <Value>CMCC_MMS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>MMSC Server</Name>
+         <Value>http://mmsc.monternet.com</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+</Profiles>
+</Setup>

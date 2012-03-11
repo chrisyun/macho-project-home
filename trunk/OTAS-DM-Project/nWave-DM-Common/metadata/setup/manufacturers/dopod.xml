@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Dopod</Name>
+<ExternalID>Dopod</ExternalID>
+<Description>Dopod</Description>
+<Models filename="./models/dopod/models.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

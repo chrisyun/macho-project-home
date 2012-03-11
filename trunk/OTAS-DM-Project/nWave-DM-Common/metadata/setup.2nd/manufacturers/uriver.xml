@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Uriver</Name>
+<ExternalID>Uriver</ExternalID>
+<Description>Uriver</Description>
+<Models filename="./models/uriver/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

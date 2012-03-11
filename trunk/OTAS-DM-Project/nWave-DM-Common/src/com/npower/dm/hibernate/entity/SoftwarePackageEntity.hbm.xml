@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/SoftwarePackageEntity.hbm.xml,v 1.11 2008/09/04 10:49:59 zhao Exp $
+  * $Revision: 1.11 $
+  * $Date: 2008/09/04 10:49:59 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.SoftwarePackageEntity" table="NW_DM_SOFTWARE_PACKAGE">
+        <id name="id" type="long">
+            <column name="PACKAGE_ID" precision="20" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="binary" class="com.npower.dm.hibernate.entity.DMBinary" fetch="select">
+            <column name="BLOB_ID" precision="20" scale="0" />
+        </many-to-one>
+        <many-to-one name="software" class="com.npower.dm.hibernate.entity.SoftwareEntity" fetch="select">
+            <column name="SOFTWARE_ID" precision="20" scale="0" not-null="true"/>
+        </many-to-one>
+        <property name="language" type="string">
+            <column name="LANGUAGE" length="64" />
+        </property>
+        <property name="mimeType" type="string">
+            <column name="MIME_TYPE" />
+        </property>
+        <property name="url" type="string">
+            <column name="URL" length="1024" />
+        </property>
+        <property name="blobFilename" type="string">
+            <column name="BLOB_FILENAME"/>
+        </property>
+        <property name="installationOptions" type="string">
+            <column name="INSTALLATION_OPTIONS" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" not-null="true"/>
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" />
+        </property>
+        <property name="publishedTime" type="java.util.Date">
+            <column name="PUBLICHED_TIME" length="7" not-null="true"/>
+        </property>
+        <property name="createdBy" type="string">
+            <column name="CREATED_BY" length="30" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="CREATED_TIME" length="7" not-null="true"/>
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" not-null="true"/>
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="6" scale="0" not-null="true" />
+        </property>
+        <set name="packageModels" inverse="true">
+            <key>
+                <column name="PACKAGE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.SoftwarePackageModelEntity" />
+        </set>
+        <set name="ratings" inverse="true" lazy="true">
+            <key>
+                <column name="PACKAGE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.VSoftwareTrackLogAll" />
+        </set>
+        <set name="ratingsDaily" inverse="true" lazy="true">
+            <key>
+                <column name="PACKAGE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.VSoftwareTrackLogDaily" />
+        </set>
+        <set name="ratingsWeekly" inverse="true" lazy="true">
+            <key>
+                <column name="PACKAGE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.VSoftwareTrackLogWeekly" />
+        </set>
+        <set name="ratingsMonthly" inverse="true" lazy="true">
+            <key>
+                <column name="PACKAGE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.VSoftwareTrackLogMonthly" />
+        </set>
+        <set name="ratingsYearly" inverse="true" lazy="true">
+            <key>
+                <column name="PACKAGE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.VSoftwareTrackLogYearly" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/models/nokia/mappings.TerminalSecurity.s60.3rd.xml,v 1.5 2008/12/12 08:42:31 zhao Exp $
+  * $Revision: 1.5 $
+  * $Date: 2008/12/12 08:42:31 $
+-->
+<ProfileMetaData>
+
+    <ProfileMappings>
+    
+        <!-- Lock Terminal Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>Lock Terminal Template</TemplateName>
+            <RootNodePath>./TerminalSecurity/DeviceLock</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>MaxAutoLockPeriod</AttributeName>
+                    <NodeRelativePath>MaxAutoLockPeriod</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>AutoLockPeriod</AttributeName>
+                    <NodeRelativePath>AutoLockPeriod</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockLevel</AttributeName>
+                    <NodeRelativePath>LockLevel</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCode</AttributeName>
+                    <NodeRelativePath>LockCode</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeMinLength</AttributeName>
+                    <NodeRelativePath>LockCodeMinLength</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeMaxLength</AttributeName>
+                    <NodeRelativePath>LockCodeMaxLength</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeRequireUpperAndLower</AttributeName>
+                    <NodeRelativePath>LockCodeRequireUpperAndLower</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeRequireCharsAndNumbers</AttributeName>
+                    <NodeRelativePath>LockCodeRequireCharsAndNumbers</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeMaxRepeatedCharacters</AttributeName>
+                    <NodeRelativePath>LockCodeMaxRepeatedCharacters</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeHistoryBuffer</AttributeName>
+                    <NodeRelativePath>LockCodeHistoryBuffer</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeExpiration</AttributeName>
+                    <NodeRelativePath>LockCodeExpiration</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeMinChangeTolerance</AttributeName>
+                    <NodeRelativePath>LockCodeMinChangeTolerance</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeMinChangeInterval</AttributeName>
+                    <NodeRelativePath>LockCodeMinChangeInterval</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeCheckSpecificStrings</AttributeName>
+                    <NodeRelativePath>LockCodeCheckSpecificStrings</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeDisallowSpecific</AttributeName>
+                    <NodeRelativePath>LockCodeDisallowSpecific</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeAllowSpecific</AttributeName>
+                    <NodeRelativePath>LockCodeAllowSpecific</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeMaxAttempts</AttributeName>
+                    <NodeRelativePath>LockCodeMaxAttempts</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockCodeConsecutiveNumbers</AttributeName>
+                    <NodeRelativePath>LockCodeConsecutiveNumbers</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Unlock Terminal Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>Unlock Terminal Template</TemplateName>
+            <RootNodePath>./TerminalSecurity/DeviceLock</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>MaxAutoLockPeriod</AttributeName>
+                    <NodeRelativePath>MaxAutoLockPeriod</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>AutoLockPeriod</AttributeName>
+                    <NodeRelativePath>AutoLockPeriod</NodeRelativePath>
+                </AttributeMapping>
+
+                <AttributeMapping>
+                    <AttributeName>LockLevel</AttributeName>
+                    <NodeRelativePath>LockLevel</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Wipe Data Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>Wipe Data Template</TemplateName>
+            <RootNodePath>./TerminalSecurity</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NeedToDiscovery>false</NeedToDiscovery>
+            <NodeMappings>
+                <ValueMapping>
+                    <Name>DeviceWipe</Name>
+                    <Value></Value>
+                    <NodeRelativePath>DeviceWipe</NodeRelativePath>
+                    <Command>Exec</Command>
+                </ValueMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Reboot Terminal Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>Reboot Terminal Template</TemplateName>
+            <RootNodePath>./TerminalSecurity</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NeedToDiscovery>false</NeedToDiscovery>
+            <NodeMappings>
+                <ValueMapping>
+                    <Name>Reboot</Name>
+                    <Value></Value>
+                    <NodeRelativePath>Reboot</NodeRelativePath>
+                    <Command>Exec</Command>
+                </ValueMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Get File System Mapping      -->
+        <ProfileMapping>
+            <TemplateName>Get File System Template</TemplateName>
+            <RootNodePath>./TerminalSecurity</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NeedToDiscovery>true</NeedToDiscovery>
+            <DiscoveryNodePaths>./TerminalSecurity/FileScan/Results</DiscoveryNodePaths>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Folder</AttributeName>
+                    <NodeRelativePath>FileScan/Execute</NodeRelativePath>
+                    <Command>Exec</Command>
+                    <ValueFormat>chr</ValueFormat>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Delete File Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>Delete File Template</TemplateName>
+            <RootNodePath>./TerminalSecurity</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NeedToDiscovery>false</NeedToDiscovery>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>FileOrFolder</AttributeName>
+                    <NodeRelativePath>FileDelete</NodeRelativePath>
+                    <Command>Exec</Command>
+                    <ValueFormat>chr</ValueFormat>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Start Application Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>Start Application Template</TemplateName>
+            <RootNodePath>./TerminalSecurity/LocalOperations</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NeedToDiscovery>false</NeedToDiscovery>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Application</AttributeName>
+                    <NodeRelativePath>Start</NodeRelativePath>
+                    <Command>Exec</Command>
+                    <ValueFormat>chr</ValueFormat>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Stop Application Template Mapping      -->
+        <ProfileMapping>
+            <TemplateName>Stop Application Template</TemplateName>
+            <RootNodePath>./TerminalSecurity/LocalOperations</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NeedToDiscovery>false</NeedToDiscovery>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Application</AttributeName>
+                    <NodeRelativePath>Stop</NodeRelativePath>
+                    <Command>Exec</Command>
+                    <ValueFormat>chr</ValueFormat>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+    </ProfileMappings>
+
+</ProfileMetaData>

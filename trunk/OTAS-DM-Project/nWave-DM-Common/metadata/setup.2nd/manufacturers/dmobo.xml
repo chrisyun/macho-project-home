@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Dmobo</Name>
+<ExternalID>Dmobo</ExternalID>
+<Description>Dmobo</Description>
+<Models filename="./models/dmobo/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

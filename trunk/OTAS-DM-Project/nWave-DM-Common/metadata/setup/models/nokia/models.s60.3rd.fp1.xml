@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: S60 3rd Edition  -->
+<Models>
+  <!--  Model: N82 NAM -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>N82</Name>
+    <ExternalID>N82</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n82.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-11-14"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N95-3 NAM -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>N95-3 NAM</Name>
+    <ExternalID>N95-3</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n95_3.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-09-18"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E51 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>E51</Name>
+    <ExternalID>E51</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_e51.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-09-18"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N81 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>N81</Name>
+    <ExternalID>N81</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n81.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-08-29"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N81 8GB -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>N81 8GB</Name>
+    <ExternalID>N81-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n81_8gb.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-08-29"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N95 8GB -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>N95 8GB</Name>
+    <ExternalID>N95_8GB-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n95_8gb_1.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-08-29"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6121 classic -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>6121 classic</Name>
+    <ExternalID>6121c</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_6121c.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-06-18"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6120 classic -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>6120 classic</Name>
+    <ExternalID>6120c</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_6120c.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC>35625501</TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-04-17"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5700 XpressMusic -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>5700 XpressMusic</Name>
+    <ExternalID>5700</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_5700.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-05-29"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6110 Navigator -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>6110 Navigator</Name>
+    <ExternalID>6110</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_6110_navigator.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-02-12"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E90 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>E90</Name>
+    <ExternalID>E90</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_e90.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-02-12"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N76 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>N76</Name>
+    <ExternalID>N76</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n76.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-01-08"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6290 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>6290</Name>
+    <ExternalID>6290</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_6290.jpg</IconFile>
+    
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006-11-28"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N95 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>N95</Name>
+    <ExternalID>N95</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_n95.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006-09-26"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N95-1 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>N95-1</Name>
+    <ExternalID>N95-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/n95-1.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006-09-26"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N76-1 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>N76-1</Name>
+    <ExternalID>N76-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/n76-1.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-01-08"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E90-1 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>E90-1</Name>
+    <ExternalID>E90-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/e90-1.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-02-12"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: E51-1 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>E51-1</Name>
+    <ExternalID>E51-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/e51-1.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-09-18"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N82-1 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>N82-1</Name>
+    <ExternalID>N82-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/e82-1.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007-11-14"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model:6124c -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>6124c</Name>
+    <ExternalID>6124c</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/6124c.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-03-3"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model:E71-1 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>E71-1</Name>
+    <ExternalID>E71-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/e71-1.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-06-16"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model:E66-1 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>E66-1</Name>
+    <ExternalID>E66-1</ExternalID>
+    <Description>S60 3rd Edition</Description>
+    <IconFile>./models/nokia/icons/e66-1.jpg</IconFile>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!--  Policy Management -->
+      <DDF filename="ddf/nokia/s60.3rd/PolicyMgmt_DDF.xml" />
+      <!--  Terminal Security -->
+      <DDF filename="ddf/nokia/s60.3rd/TerminalSecurity_DDF.xml" />
+      <!--  Remote Customize -->
+      <DDF filename="ddf/nokia/s60.3rd/Customization_DDF.xml" />
+    </DDFs>
+
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.PolicyMgmt.s60.3rd.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.TerminalSecurity.s60.3rd.xml"/>
+    </ProfileMappings>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-06-16"/>
+    </Specifications>
+  </Model>
+</Models>
+</Setup>

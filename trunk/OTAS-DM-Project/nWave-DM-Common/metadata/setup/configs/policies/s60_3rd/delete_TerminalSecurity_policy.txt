@@ -1,0 +1,16 @@
+<Package>
+	<Operation
+		action_id = "Replace"
+		target_id = "terminal_security_management_enforcement_policy_rule1">
+	<Data>
+		<![CDATA[
+<Rule
+	RuleId="customization_management_enforcement_policy_rule1"
+	Effect="Deny">
+	<Target>
+	</Target>
+</Rule>
+]]>
+	</Data>
+	</Operation>
+</Package>

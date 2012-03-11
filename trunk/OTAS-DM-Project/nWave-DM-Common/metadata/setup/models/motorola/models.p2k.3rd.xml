@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Motorola basic models -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Motorola P2K Platform                                    -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_motorola_p2k_3rd</ExternalID>
+    <Name>Motorola P2K Platform 2nd</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF filename="ddf/motorola/P044_DDF_File.xml" />
+    </DDFs>
+    
+    <!-- OMA DM ProfileMappings Stage -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/motorola/mapping.basic.xml" />
+    </ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/motorola/ota.templates.java.ap.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.proxy.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.mms.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.syncml.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.dm.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.email.xml"/>
+        
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Motorola P2K 3rd"/>
+      <Specification category="general" name="developer.platform" value=""/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: KRZR K1 -->
+  <Model family="family_motorola_p2k_3rd">
+    <Name>KRZR K1</Name>
+    <ExternalID>KRZRK1</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/krzrk1.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, July"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: KRZR K1m -->
+  <Model family="family_motorola_p2k_3rd">
+    <Name>KRZR K1m</Name>
+    <ExternalID>KRZRK1m</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/krzrk1.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, July"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: L71 -->
+  <Model family="family_motorola_p2k_3rd">
+    <Name>L71</Name>
+    <ExternalID>L71</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/l7i_1l.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: RIZR Z3 -->
+  <Model family="family_motorola_p2k_3rd">
+    <Name>RIZR Z3</Name>
+    <ExternalID>RIZRZ3</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/rizrz3.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, July"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SLVR L9 -->
+  <Model family="family_motorola_p2k_3rd">
+    <Name>SLVR L9</Name>
+    <ExternalID>SLVRL9</ExternalID>
+    <Description>Motorola SLVR L72 - Asian version</Description>
+    <IconFile>./models/motorola/icons/slvrl9.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: SLVR L72 -->
+  <Model family="family_motorola_p2k_3rd">
+    <Name>SLVR L72</Name>
+    <ExternalID>SLVRL72</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/slvrl72.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

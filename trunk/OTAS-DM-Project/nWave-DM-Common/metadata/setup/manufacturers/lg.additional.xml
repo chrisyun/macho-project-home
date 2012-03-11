@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>LG</Name>
+<ExternalID>LG</ExternalID>
+<Description>LG</Description>
+<Models filename="./models/lg/models.additional.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: MiTAC -->
+<Models>
+
+  <!--  Model: Mio8390 -->
+  <Model>
+    <Name>Mio8390</Name>
+    <ExternalID>Mio8390</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/mitac/icons/mio8390.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+
+</Models>
+</Setup>

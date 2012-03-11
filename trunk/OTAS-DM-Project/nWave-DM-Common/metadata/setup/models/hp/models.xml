@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: iPAQ hw6515 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>iPAQ hw6515</Name>
+    <ExternalID>iPAQ hw6515</ExternalID>
+    <Description></Description>
+    <IconFile>./models/hp/icons/hw6515.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC Phone Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 2Q"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ hw6900 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>iPAQ hw6900</Name>
+    <ExternalID>iPAQ hw6900</ExternalID>
+    <Description></Description>
+    <IconFile>./models/hp/icons/hp_ipaq_hw6900.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ hw6910 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>iPAQ hw6910</Name>
+    <ExternalID>iPAQ hw6910</ExternalID>
+    <Description></Description>
+    <IconFile>./models/hp/icons/hp_ipaq_hw6910.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ hw6915 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>iPAQ hw6915</Name>
+    <ExternalID>iPAQ hw6915</ExternalID>
+    <Description>- HP iPAQ hw6915 - Europe;\n- HP iPAQ hw6925 - Cingular;\n- HP iPAQ hw6945 - Brightpoint, Rogers;\n- HP iPAQ hw6965 - Asia, Australia </Description>
+    <IconFile>./models/hp/icons/hp_ipaq_hw6915.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, February"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ hx2190 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>iPAQ hx2190</Name>
+    <ExternalID>iPAQ hx2190</ExternalID>
+    <Description></Description>
+    <IconFile>./models/hp/icons/hp_ipaq_hx2190.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ hx2490 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>iPAQ hx2490</Name>
+    <ExternalID>iPAQ hx2490</ExternalID>
+    <Description></Description>
+    <IconFile>./models/hp/icons/hp_ipaq_hx2490.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ hx2790 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>iPAQ hx2790</Name>
+    <ExternalID>iPAQ hx2790</ExternalID>
+    <Description></Description>
+    <IconFile>./models/hp/icons/hp_ipaq_hx2790.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Premium Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ rw6815 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>iPAQ rw6815</Name>
+    <ExternalID>iPAQ rw6815</ExternalID>
+    <Description>Functionally identical to O2 XDA Atom</Description>
+    <IconFile>./models/hp/icons/hp_ipaq_rw6815.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, October"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ rw6828 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>iPAQ rw6828</Name>
+    <ExternalID>iPAQ rw6828</ExternalID>
+    <Description>Functionally identical to O2 XDA Atom.</Description>
+    <IconFile>./models/hp/icons/rw6828.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, 2Q"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ rx1950 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>iPAQ rx1950</Name>
+    <ExternalID>iPAQ rx1950</ExternalID>
+    <Description></Description>
+    <IconFile>./models/hp/icons/hp_ipaq_rx1950.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 Premium Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ rx5700 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>iPAQ rx5700</Name>
+    <ExternalID>iPAQ rx5700</ExternalID>
+    <Description></Description>
+    <IconFile>./models/hp/icons/hp_ipaq_rx5700.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ rx5900 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>iPAQ rx5900</Name>
+    <ExternalID>iPAQ rx5900</ExternalID>
+    <Description></Description>
+    <IconFile>./models/hp/icons/hp_ipaq_rx5900.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: iPAQ-500  -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>iPAQ-500</Name>
+    <ExternalID>iPAQ-500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/hp/icons/hp_ipaq_50_smartphone.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Standard Edition"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

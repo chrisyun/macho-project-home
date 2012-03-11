@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: S60 2nd Edition, Feature Pack 2 -->
+<Models>
+  <!-- Model: 6681 -->
+  <Model family="family_nokia_s60_2nd_fp2">
+    <Name>6681</Name>
+    <ExternalID>6681</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 2</Description>
+    <IconFile>./models/nokia/icons/nokia_6681.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC>35434900</TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005-01-14"/>
+    </Specifications>
+  </Model>
+
+  <!-- Model: 6680 -->
+  <Model family="family_nokia_s60_2nd_fp2">
+    <Name>6680</Name>
+    <ExternalID>6680</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 2</Description>
+    <IconFile>./models/nokia/icons/nokia_6680.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC>35706200</TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005-01-14"/>
+    </Specifications>
+  </Model>
+
+  <!-- Model: 6682 -->
+  <Model family="family_nokia_s60_2nd_fp2">
+    <Name>6682</Name>
+    <ExternalID>6682</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 2</Description>
+    <IconFile>./models/nokia/icons/nokia_6682.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005-01-14"/>
+    </Specifications>
+  </Model>
+
+  <!-- Model: 6630 -->
+  <Model family="family_nokia_s60_2nd_fp2">
+    <Name>6630</Name>
+    <ExternalID>6630</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 2</Description>
+    <IconFile>./models/nokia/icons/nokia_6630.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004-06-14"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

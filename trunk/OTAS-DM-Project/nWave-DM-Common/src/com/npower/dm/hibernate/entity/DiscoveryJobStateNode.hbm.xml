@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DiscoveryJobStateNode.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DiscoveryJobStateNode" table="NW_DM_DISC_JOB_ST_NODE">
+        <composite-id name="id" class="com.npower.dm.hibernate.entity.DiscoveryJobStateNodeID">
+            <key-property name="discoveryJobStateId" type="long">
+                <column name="DISCOVERY_JOB_STATE_ID" precision="16" scale="0" />
+            </key-property>
+            <key-property name="rootNode" type="string">
+                <column name="ROOT_NODE" length="500" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="nwDmJobState" class="com.npower.dm.hibernate.entity.JobState" update="false" insert="false" fetch="select">
+            <column name="DISCOVERY_JOB_STATE_ID" precision="16" scale="0" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

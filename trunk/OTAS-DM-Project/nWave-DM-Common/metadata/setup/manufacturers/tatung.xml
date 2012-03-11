@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>Tatung</Name>
+      <ExternalID>Tatung</ExternalID>
+      <Description>Tatung</Description>
+      <Models filename="./models/tatung/models.xml"/>
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

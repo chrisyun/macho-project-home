@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <NumberMappings>
+    <NumberMapping>
+      <NumberPattern>8{3}[0-9]([0-9]|[a-z]|[A-Z])</NumberPattern>
+      <QueueName>DefalutQueue</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>([0-9]|[a-z]|[A-Z])8{3}[0-9]</NumberPattern>
+      <QueueName>DefalutQueue</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>([0-9]|[a-z]|[A-Z])8{3}[0-9]([0-9]|[a-z]|[A-Z])</NumberPattern>
+      <QueueName>DefalutQueue</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>8{3}[0]</NumberPattern>
+      <QueueName>Q0</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>8{3}[1]</NumberPattern>
+      <QueueName>Q1</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>8{3}[2]</NumberPattern>
+      <QueueName>Q2</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>8{3}[3]</NumberPattern>
+      <QueueName>Q3</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>8{3}[4]</NumberPattern>
+      <QueueName>Q4</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>8{3}[5]</NumberPattern>
+      <QueueName>Q5</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>8{3}[6]</NumberPattern>
+      <QueueName>Q6</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>8{3}[7]</NumberPattern>
+      <QueueName>Q7</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>8{3}[8]</NumberPattern>
+      <QueueName>Q8</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>8{3}[9]</NumberPattern>
+      <QueueName>Q9</QueueName>
+    </NumberMapping>
+    <NumberMapping>
+      <NumberPattern>8{3}[^0-9]</NumberPattern>
+      <QueueName>DefalutQueue</QueueName>
+    </NumberMapping>
+  </NumberMappings>
+  
+  
+  
+  

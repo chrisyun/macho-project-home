@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: V3m (Metro PCS) -->
+<Models>
+
+  <!--  Model: RAZR V3 -->
+  <Model>
+    <Name>RAZR V3</Name>
+    <ExternalID>RAZR V3</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/v3m_(metro_pcs)/icons/razr v3.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+
+</Models>
+</Setup>

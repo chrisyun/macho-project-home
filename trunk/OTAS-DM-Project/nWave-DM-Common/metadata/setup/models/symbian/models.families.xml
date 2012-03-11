@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: UIQ 2.x platform -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Symbian UIQ 2.1                           -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_symbian_uiq_2.1</ExternalID>
+    <Name>Symbian UIQ 2.1</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+    </ProfileMappings>
+
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/symbian/ota.templates.uiq.2.1.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0"/>
+      <Specification category="general" name="developer.platform" value="UIQ 2.1"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Symbian UIQ 3.0                           -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_symbian_uiq_3.0</ExternalID>
+    <Name>Symbian UIQ 3.0</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF filename="ddf/sonyericsson/M600_DDF.xml" />
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+    </ProfileMappings>
+
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/symbian/ota.templates.uiq.3.0.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+      <Specification category="general" name="developer.platform" value="UIQ 3.0"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Symbian UIQ 3.1                           -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_symbian_uiq_3.1</ExternalID>
+    <Name>Symbian UIQ 3.1</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+    </ProfileMappings>
+    
+     <!-- OTA Templates -->
+    <CPTemplates filename="./models/symbian/ota.templates.uiq.3.1.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.2"/>
+      <Specification category="general" name="developer.platform" value="UIQ 3.1"/>
+    </Specifications>
+  </Family>
+
+</Models>
+</Setup>

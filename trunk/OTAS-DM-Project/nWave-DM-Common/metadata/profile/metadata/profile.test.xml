@@ -1,0 +1,574 @@
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/profile/metadata/profile.test.xml,v 1.8 2007/03/23 05:40:34 zhao Exp $
+  * $Revision: 1.8 $
+  * $Date: 2007/03/23 05:40:34 $
+-->
+<ProfileMetaData>
+
+    <!-- Profile Categories ****************************************************** -->
+
+    <ProfileCategories>
+        <ProfileCategory>
+            <Name>TEST.String</Name>
+            <Description>Test String Type</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>TEST.NAP</Name>
+            <Description>Network Access Point Settings</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>TEST.Proxy</Name>
+            <Description>Proxy Settings</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>TEST.Email</Name>
+            <Description>Email Account</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>TEST.MMS</Name>
+            <Description>MMS Settings</Description>
+        </ProfileCategory>
+
+    </ProfileCategories>
+    
+    <!-- Attribute Types ******************************************************* -->
+
+    <AttributeTypes>
+
+        <AttributeType>
+        	<Name>TEST String</Name>
+        	<Description>Basic Type</Description>
+        </AttributeType>
+
+        <AttributeType>
+        	<Name>TEST Bearer Link Speed</Name>
+        	<Description>Speed on the channel for CSD bearers</Description>
+        	<Values>
+        		<Value>2400</Value>
+        		<Value>4800</Value>
+            <Value>9600</Value>
+            <Value>14400</Value>
+        	</Values>
+        </AttributeType>
+
+        <AttributeType>
+        	<Name>TEST Bearer Call Type</Name>
+        	<Description>Data exchange protool for CSD bearers</Description>
+        	<Values>
+        		<Value>ANALOG-MODEM</Value>
+        		<Value>ISDN V.110</Value>
+            	<Value>ISDN V.120</Value>
+        	</Values>
+        </AttributeType>
+
+
+        <AttributeType>
+        	<Name>TEST Bearer Direction</Name>
+        	<Description>Direction for the network type</Description>
+        	<Values>
+        		<Value>Incoming</Value>
+        		<Value>Outgoing</Value>
+        	</Values>
+        </AttributeType>
+
+        <AttributeType>
+        	<Name>TEST NAP Address Type</Name>
+        	<Description>Format of the NAP address</Description>
+        	<Values>
+        		<Value>IPV4</Value>
+        		<Value>IPV6</Value>
+            <Value>E164</Value>
+            <Value>APN</Value>
+        	</Values>
+        </AttributeType>
+
+        <AttributeType>
+        	<Name>TEST Mailbox Protocol</Name>
+        	<Description>Mailbox protocol for Email</Description>
+        	<Values>
+        		<Value>POP</Value>
+        		<Value>IMAP</Value>
+        	</Values>
+        </AttributeType>
+
+        <AttributeType>
+        	<Name>TEST Proxy Service Type</Name>
+        	<Description>Service used over Proxy</Description>
+        	<Values>
+        		<Value>Wap</Value>
+        		<Value>Wap Connectionless</Value>
+        		<Value>Wap Secure</Value>
+        		<Value>Wap Secure Connectionless</Value>
+        		<Value>Http</Value>
+        		<Value>Http Secure</Value>
+        	</Values>
+        </AttributeType>
+
+    </AttributeTypes>
+
+    <!-- Profile Templates ******************************************************* -->
+    <ProfileTemplates>
+
+        <ProfileTemplate>
+            <CategoryName>TEST.NAP</CategoryName>
+            <Name>TEST.Profile Template#1</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>TEST Display Name</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>true</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST Bearer Direction</Name>
+                    <TypeName>TEST Bearer Direction</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <DefaultValue>Outgoing</DefaultValue>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST NAP Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST NAP Address Type</Name>
+                    <TypeName>TEST NAP Address Type</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <DefaultValue>APN</DefaultValue>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST DNS Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>true</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST Authentication Username</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST Authentication Password</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <ProfileTemplate>
+            <CategoryName>TEST.NAP</CategoryName>
+            <Name>TEST.CSD NAP Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>TEST Display Name</Name>
+                    <TypeName>TEST String</TypeName>
+                   <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST Bearer Direction</Name>
+                    <TypeName>TEST Bearer Direction</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <DefaultValue>Outgoing</DefaultValue>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST NAP Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST NAP Address Type</Name>
+                    <TypeName>TEST NAP Address Type</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <DefaultValue>E164</DefaultValue>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST Call Type</Name>
+                    <TypeName>TEST Bearer Call Type</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST Link Speed</Name>
+                    <TypeName>TEST Bearer Link Speed</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST DNS Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>true</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST Authentication Username</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>TEST Authentication Password</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <ProfileTemplate>
+            <CategoryName>TEST.Proxy</CategoryName>
+            <Name>Test.Proxy Template</Name>
+            <NeedsNAP>true</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Display Name</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Proxy Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Test Port Number</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Test Service</Name>
+                    <TypeName>TEST Proxy Service Type</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Test Domain</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>true</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Test Start Page</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>APLink</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+
+        <ProfileTemplate>
+            <CategoryName>TEST.Email</CategoryName>
+            <Name>TEST.Email Template</Name>
+            <NeedsNAP>true</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Display Name</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <ValueUnique>true</ValueUnique>
+                </Attribute>
+                <Attribute>
+                    <Name>Username</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Password</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Email Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Reply To Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>User Display Name</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Receiving Server Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Receiving Server Port</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Sending Server Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Sending Server Port</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Mailbox Protocol</Name>
+                    <TypeName>TEST Mailbox Protocol</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <DefaultValue>POP</DefaultValue>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>APLink</Name>
+                    <TypeName>APLink</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <ProfileTemplate>
+            <CategoryName>TEST.Email</CategoryName>
+            <Name>TEST.Email Template (no NAP)</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>false</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Display Name</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                    <ValueUnique>true</ValueUnique>
+                </Attribute>
+                <Attribute>
+                    <Name>Username</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Password</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>false</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Email Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Reply To Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>User Display Name</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>true</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Receiving Server Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Receiving Server Port</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Sending Server Address</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Sending Server Port</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Mailbox Protocol</Name>
+                    <TypeName>TEST Mailbox Protocol</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <DefaultValue>POP</DefaultValue>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+        <ProfileTemplate>
+            <CategoryName>TEST.MMS</CategoryName>
+            <Name>TEST.MMS Template</Name>
+            <NeedsNAP>false</NeedsNAP>
+            <NeedsProxy>true</NeedsProxy>
+            <Attributes>
+                <Attribute>
+                    <Name>Display Name</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>true</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>Start Page</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+                <Attribute>
+                    <Name>APLink</Name>
+                    <TypeName>TEST String</TypeName>
+                    <IsRequired>false</IsRequired>
+                    <IsUserAttribute>false</IsUserAttribute>
+                    <IsMultiValued>false</IsMultiValued>
+                    <DisplayValue>true</DisplayValue>
+                </Attribute>
+            </Attributes>
+        </ProfileTemplate>
+
+    </ProfileTemplates>
+
+
+</ProfileMetaData>

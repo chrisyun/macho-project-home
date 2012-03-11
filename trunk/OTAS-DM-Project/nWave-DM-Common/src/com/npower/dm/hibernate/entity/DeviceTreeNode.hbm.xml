@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/DeviceTreeNode.hbm.xml,v 1.9 2007/03/28 05:16:41 zhao Exp $
+  * $Revision: 1.9 $
+  * $Date: 2007/03/28 05:16:41 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.DeviceTreeNodeEntity" table="NW_DM_DTREE_NODE">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="DEVICE_TREE_NODE_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <property name="isLeafNode" type="boolean">
+            <column name="IS_LEAF_NODE" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NODE_NAME" />
+        </property>
+        <many-to-one name="parentNode" class="com.npower.dm.hibernate.entity.DeviceTreeNodeEntity" fetch="select">
+            <column name="PARENT_NODE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <property name="format" type="string">
+            <column name="M_FORMAT" />
+        </property>
+        <property name="type" type="string">
+            <column name="M_TYPE" />
+        </property>
+        <property name="MSize" type="string">
+            <column name="M_SIZE" length="20" />
+        </property>
+        <property name="MVersion" type="long">
+            <column name="M_VERSION" precision="6" scale="0" />
+        </property>
+        <property name="MTitle" type="string">
+            <column name="M_TITLE" />
+        </property>
+        <property name="MTStamp" type="string">
+            <column name="M_TSTAMP" length="20" />
+        </property>
+        <property name="MACL" type="string">
+            <column name="M_ACL" />
+        </property>
+        <property name="lastRead" type="java.util.Date">
+            <column name="LAST_READ" length="7" />
+        </property>
+        <property name="itemDataKind" type="string">
+            <column name="ITEM_DATA_KIND" length="20" />
+        </property>
+        <property name="updateId" type="string">
+            <column name="UPDATE_ID" />
+        </property>
+        <property name="rawData" type="text">
+            <column name="RAW_DATA" />
+        </property>
+        <property name="binaryData" type="blob">
+            <column name="BINARY_DATA" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+        <set name="children" inverse="true" order-by="NODE_NAME asc">
+            <key>
+                <column name="PARENT_NODE_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DeviceTreeNodeEntity" />
+        </set>
+        <set name="DeviceTrees" inverse="true">
+            <key>
+                <column name="ROOT_NODE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.DeviceTreeEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

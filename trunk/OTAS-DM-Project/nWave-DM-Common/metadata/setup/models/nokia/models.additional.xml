@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: NOKIA -->
+<Models>
+
+  <!--  Model: 1101 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>1101</Name>
+    <ExternalID>1101</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/1101.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005-06-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 2600 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>2600</Name>
+    <ExternalID>2600</ExternalID>
+    <Description>GSM 850 / GSM 1900 for North America</Description>
+    <IconFile>./models/nokia/icons/2600.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004-05-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 2630 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>2630</Name>
+    <ExternalID>2630</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/2630.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Nokia OS"/>
+      <Specification category="general" name="developer.platform" value="Series 40"/>
+      <Specification category="general" name="announced" value="03-May-07"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 2652 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>2652</Name>
+    <ExternalID>2652</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/2652.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005-09-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3128 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>3128</Name>
+    <ExternalID>3128</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3128.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004-11-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3330 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>3330</Name>
+    <ExternalID>3330</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3330.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2001-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3350 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>3350</Name>
+    <ExternalID>3350</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3350.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2001-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3410 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>3410</Name>
+    <ExternalID>3410</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3410.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Nokia OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="12-Mar-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3510 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>3510</Name>
+    <ExternalID>3510</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3510.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2002-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5210 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>5210</Name>
+    <ExternalID>5210</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/5210.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2002-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5500d -->
+  <!-- Remove unused model 
+  <Model family="family_oma_cp_1_1_default">
+    <Name>5500d</Name>
+    <ExternalID>5500d</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/5500d.jpg</IconFile>
+    
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <DDFs/>
+    
+    <ProfileMappings/>
+    
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+    
+    <TACs>
+    </TACs>
+    
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+   -->
+
+  <!--  Model: 5510 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>5510</Name>
+    <ExternalID>5510</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/5510.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2001-11-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6020b -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6020b</Name>
+    <ExternalID>6020b</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6020b.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004-11-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6021 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6021</Name>
+    <ExternalID>6021</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6021.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Nokia OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="01-Mar-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6170b -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6170b</Name>
+    <ExternalID>6170b</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6170b.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6180 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6180</Name>
+    <ExternalID>6180</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6180.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6200IM -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6200IM</Name>
+    <ExternalID>6200IM</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6200im.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6210 -->
+  <!-- Remove old model, conflict with Nokia 6120 Navigator
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6210</Name>
+    <ExternalID>6210</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6210.jpg</IconFile>
+    
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <DDFs/>
+    
+    <ProfileMappings/>
+    
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <TACs>
+    </TACs>
+    
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2000-01-01"/>
+    </Specifications>
+  </Model>
+  -->
+  
+  <!--  Model: 6250 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6250</Name>
+    <ExternalID>6250</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6250.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2000-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6310 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6310</Name>
+    <ExternalID>6310</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6310.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2001-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6310i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6310i</Name>
+    <ExternalID>6310i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6310i.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Nokia OS"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="12-Mar-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6340 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6340</Name>
+    <ExternalID>6340</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6340.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6500 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6500</Name>
+    <ExternalID>6500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6500.gif</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2002-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6510 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6510</Name>
+    <ExternalID>6510</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6510.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2002-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6670b -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6670b</Name>
+    <ExternalID>6670b</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6670b.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6708 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6708</Name>
+    <ExternalID>6708</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6708.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6820a -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6820a</Name>
+    <ExternalID>6820a</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6820a.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2003-11-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6822a -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6822a</Name>
+    <ExternalID>6822a</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6822a.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6822b -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>6822b</Name>
+    <ExternalID>6822b</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6822b.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7110 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>7110</Name>
+    <ExternalID>7110</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7110.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004-03-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7280 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>7280</Name>
+    <ExternalID>7280</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7280.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004-09-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7380 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>7380</Name>
+    <ExternalID>7380</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7380.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005-10-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7710 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>7710</Name>
+    <ExternalID>7710</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7710.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="02-Nov-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8310 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>8310</Name>
+    <ExternalID>8310</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/8310.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2001-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8855 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>8855</Name>
+    <ExternalID>8855</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/8855.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2002-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8910 -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>8910</Name>
+    <ExternalID>8910</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/8910.gif</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2002-05-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 9000i -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>9000i</Name>
+    <ExternalID>9000i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/9000i.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 9110i Communicator -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>9110i Communicator</Name>
+    <ExternalID>9110i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/9110i.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="1999-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 9210 Communicator -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>9210 Communicator</Name>
+    <ExternalID>9210</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/9210.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2000-01-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 9210i Communicator -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>9210i Communicator</Name>
+    <ExternalID>9210i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/9210i.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.nokia_ota.xml" />
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v6.0"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="12-Mar-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: N-Gage -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>N-Gage</Name>
+    <ExternalID>N-Gage</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/ngage.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v6.1"/>
+      <Specification category="general" name="developer.platform" value="Series 60 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="05-Feb-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: NgageQD -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>N-Gage QD</Name>
+    <ExternalID>N-Gage QD</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/ngageqd.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v6.1"/>
+      <Specification category="general" name="developer.platform" value="Series 60 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="14-Apr-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: ObservationCamera -->
+  <Model family="family_oma_cp_1_1_default">
+    <Name>ObservationCamera</Name>
+    <ExternalID>ObservationCamera</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/observationcamera.jpg</IconFile>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value=""/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+
+</Models>
+</Setup>

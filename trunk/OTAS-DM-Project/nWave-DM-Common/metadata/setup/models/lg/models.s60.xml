@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: KS10 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>KS10</Name>
+    <ExternalID>KS10</ExternalID>
+    <Description>Symbian OS v9 and S60 3rd Edition Feature Pack 1</Description>
+    <IconFile>./models/lg/icons/ks10.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, February"/>
+    </Specifications>
+  </Model>
+    
+  <!--  Model: KS10 JOY -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>KS10 JOY</Name>
+    <ExternalID>KS10 JOY</ExternalID>
+    <Description>Symbian OS v9 and S60 3rd Edition Feature Pack 1</Description>
+    <IconFile>./models/lg/icons/lg_joy.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+    
+</Models>
+</Setup>

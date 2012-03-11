@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ModelFamily.hbm.xml,v 1.1 2008/03/03 09:21:29 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2008/03/03 09:21:29 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ModelFamilyEntity" table="NW_DM_MODEL_FAMILY">
+        <id name="externalID" type="string">
+            <column name="FAMILY_EXT_ID" length="255" not-null="false" />
+            <generator class="assigned">
+            </generator>
+        </id>
+    </class>
+</hibernate-mapping>

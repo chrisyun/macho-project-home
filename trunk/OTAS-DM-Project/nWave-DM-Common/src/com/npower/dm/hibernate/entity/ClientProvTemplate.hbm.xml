@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ClientProvTemplate.hbm.xml,v 1.4 2007/11/12 05:17:36 zhao Exp $
+  * $Revision: 1.4 $
+  * $Date: 2007/11/12 05:17:36 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ClientProvTemplateEntity" table="NW_DM_CLIENT_PROV_TEMPLATE">
+        <id name="ID" type="java.lang.Long">
+            <column name="TEMPLATE_ID" precision="20" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <property name="externalID" type="java.lang.String">
+            <column name="EXTERNAL_ID" not-null="true" />
+        </property>
+        <many-to-one name="profileCategory" class="com.npower.dm.hibernate.entity.ProfileCategoryEntity" fetch="select">
+            <column name="CATEGORY_ID" precision="20" scale="0" />
+        </many-to-one>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" length="4000" />
+        </property>
+        <property name="content" type="java.lang.String">
+            <column name="CONTENT" not-null="true" />
+        </property>
+        <property name="encoder" type="java.lang.String">
+            <column name="ENCODER" not-null="true" />
+        </property>
+        <property name="lastUpdatedBy" type="java.lang.String">
+            <column name="LAST_UPDATED_BY" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="changeVersion" type="java.lang.Long">
+            <column name="CHANGE_VERSION" precision="20" scale="0" />
+        </property>
+        <set name="modelClientProvMaps" inverse="true">
+            <key>
+                <column name="TEMPLATE_ID" precision="20" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ModelClientProvMapEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

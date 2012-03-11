@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>VKMobile</Name>
+<ExternalID>VKMobile</ExternalID>
+<Description>VKMobile</Description>
+<Models filename="./models/vkmobile/models.additional.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

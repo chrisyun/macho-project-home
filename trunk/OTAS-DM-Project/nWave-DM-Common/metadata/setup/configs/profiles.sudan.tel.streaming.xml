@@ -1,0 +1,40 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        MTV Profiles 
+      ***********************************************************************************
+   -->
+  <!-- MTV Profile: MTV -->
+  <Profile>
+    <ID>Sudan_MTV</ID>
+    <ProfileName>Sudan MTV</ProfileName>
+    <Template>3GPP Streaming Template</Template>
+    <Carrier>SudanTel</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile>Sudan MTV</ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>Name</Name>
+         <Value>Sudan MTV</Value>
+      </Attribute>
+      <Attribute>
+         <Name>MAX-BANDWIDTH</Name>
+         <Value>128000</Value>
+      </Attribute>
+      <Attribute>
+         <Name>MIN-UDP-PORT</Name>
+         <Value>6970</Value>
+      </Attribute>
+      <Attribute>
+         <Name>MAX-UDP-PORT</Name>
+         <Value>32000</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+</Profiles>
+</Setup>

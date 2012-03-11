@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: S60 3rd FP2 Edition  -->
+<Models>
+  <!--  Model: 6220 classic -->
+  <Model family="family_nokia_s60_3rd_fp2">
+    <Name>6220 classic</Name>
+    <ExternalID>6220c-1</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6220.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-02-11"/>
+    </Specifications>
+  </Model>
+
+
+  <!--  Model: 6210 Navigator -->
+  <Model family="family_nokia_s60_3rd_fp2">
+    <Name>6210 Navigator</Name>
+    <ExternalID>6210</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6210-2.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-02-11"/>
+    </Specifications>
+  </Model>
+  
+  
+  <!--  Model: N96 -->
+  <Model family="family_nokia_s60_3rd_fp2">
+    <Name>N96</Name>
+    <ExternalID>N96-1</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/n96.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-02-11"/>
+    </Specifications>
+  </Model>
+  
+  
+  <!--  Model: N78 -->
+  <Model family="family_nokia_s60_3rd_fp2">
+    <Name>N78</Name>
+    <ExternalID>N78-1</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/n78.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-02-11"/>
+    </Specifications>
+  </Model>
+  
+  
+  <!--  Model: 6650 -->
+  <Model family="family_nokia_s60_3rd_fp2">
+    <Name>6650</Name>
+    <ExternalID>6650</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6650-2.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-03-03"/>
+    </Specifications>
+  </Model>
+  
+  
+  <!--  Model: 5320 XpressMusic -->
+  <Model family="family_nokia_s60_3rd_fp2">
+    <Name>5320 XpressMusic</Name>
+    <ExternalID>5320</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/5320.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-04-22"/>
+    </Specifications>
+  </Model>
+  
+  
+  <!--  Model: N85 -->
+  <Model family="family_nokia_s60_3rd_fp2">
+    <Name>N85</Name>
+    <ExternalID>N85-1</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/n85.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-08-26"/>
+    </Specifications>
+  </Model>
+  
+  
+  <!--  Model: N96-3 -->
+  <Model family="family_nokia_s60_3rd_fp2">
+    <Name>N96-3</Name>
+    <ExternalID>N96-3</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/n96-3.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-08-26"/>
+    </Specifications>
+  </Model>
+  
+  
+  <!--  Model: N79 -->
+  <Model family="family_nokia_s60_3rd_fp2">
+    <Name>N79</Name>
+    <ExternalID>N79</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/n79.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2008-08-26"/>
+    </Specifications>
+  </Model>
+</Models>
+</Setup>

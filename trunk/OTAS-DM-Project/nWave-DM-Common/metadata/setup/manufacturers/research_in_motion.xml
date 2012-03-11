@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>RIM</Name>
+<ExternalID>RIM</ExternalID>
+<Description>Research In Motion</Description>
+<Models filename="./models/research_in_motion/models.additional.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

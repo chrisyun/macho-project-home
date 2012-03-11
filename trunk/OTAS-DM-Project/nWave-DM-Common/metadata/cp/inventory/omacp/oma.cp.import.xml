@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ota-templates>
+  <manufacturer>
+    <id>Default</id>
+    <name>Generic Manufacturer</name>
+    <description>Generic manufacturer which compatiable with OMA ClientProv 1.1.</description>
+    <model>
+      <id>Default</id>
+      <name>Default</name>
+      <description>OMA ClientProv 1.1 Model</description>
+      <!-- NAP Template -->
+      <template>
+        <id>NAP Settings</id>
+        <name>NAP Settings</name>
+        <category>NAP</category>
+        <description>This template used to push NAP settings.</description>
+        <content filename="omacp/omacp.template.def.vm"></content>
+      </template>
+      <!-- Proxy Template -->
+      <template>
+        <id>Proxy Settings</id>
+        <name>Proxy Settings</name>
+        <category>Proxy</category>
+        <description>This template used to push Proxy settings.</description>
+        <content filename="omacp/omacp.template.def.vm"></content>
+      </template>
+      <!-- MMS Template -->
+      <template>
+        <id>MMS Settings</id>
+        <name>MMS Settings</name>
+        <category>MMS</category>
+        <description>This template used to push MMS settings.</description>
+        <content filename="omacp/omacp.template.def.vm"></content>
+      </template>
+      <!-- SyncDS Template -->
+      <template>
+        <id>SyncDS Settings</id>
+        <name>SyncDS Settings</name>
+        <category>SyncDS</category>
+        <description>This template used to push SyncDS settings.</description>
+        <content filename="omacp/omacp.template.def.vm"></content>
+      </template>
+      <!-- DM Template -->
+      <template>
+        <id>DM Settings</id>
+        <name>DM Settings</name>
+        <category>DM</category>
+        <description>This template used to push DM settings.</description>
+        <content filename="omacp/omacp.template.def.vm"></content>
+      </template>
+      <!-- Email Template -->
+      <template>
+        <id>Email Settings</id>
+        <name>Email Settings</name>
+        <category>Email</category>
+        <description>This template used to Email settings.</description>
+        <content filename="omacp/omacp.template.def.vm"></content>
+      </template>
+      <!-- IMPS Template -->
+      <template>
+        <id>IMPS Settings</id>
+        <name>IMPS Settings</name>
+        <category>IMPS</category>
+        <description>This template used to IMPS settings.</description>
+        <content filename="omacp/omacp.template.def.vm"></content>
+      </template>
+      <!-- POC Template -->
+      <template>
+        <id>POC Settings</id>
+        <name>POC Settings</name>
+        <category>POC</category>
+        <description>This template used to POC settings.</description>
+        <content filename="omacp/omacp.template.def.vm"></content>
+      </template>
+    </model>
+  </manufacturer>
+</ota-templates>

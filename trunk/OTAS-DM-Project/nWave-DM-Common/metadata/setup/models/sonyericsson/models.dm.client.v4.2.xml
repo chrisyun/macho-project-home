@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  
+    Models: DM Client Version 4.2 
+    Based on SonyEricsson dg_device_mgmnt(v4)_r7a.pdf
+-->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: SonyEricsson DM Client Ver 4.2                           -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_sonyericsson_dm_ver_4.2</ExternalID>
+    <Name>SonyEricsson DM Client Ver 4.2</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.2</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- OMA FOTA stage -->    
+    <SupportedDownloadMethods>true</SupportedDownloadMethods>
+    <FirmwareVersionNode>./DevDetail/SwV</FirmwareVersionNode>
+    <FirmwareUpdateNode>./Fw/OTASDL/Update</FirmwareUpdateNode>
+    <FirmwareDownloadNode>./Fw/OTASDL/Download</FirmwareDownloadNode>
+    <FirmwareDownloadAndUpdateNode>./Fw/OTASDL/DownloadAndUpdate</FirmwareDownloadAndUpdateNode>
+    <FirmwareStatusNode>./Fw/OTASDL/State</FirmwareStatusNode>
+
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF filename="ddf/sonyericsson/sonyericsson_ddf_4.2.xml" />
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <!-- 
+    <ProfileMappings>
+      <ProfileMapping filename="models/sonyericsson/mappings.dm.client.v3.0.xml"/>
+    </ProfileMappings>
+     -->
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/sonyericsson/ota.templates.dm.client.4.0.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="SonyEricsson OS"/>
+      <Specification category="general" name="developer.platform" value="DM Client Version 4.2"/>
+    </Specifications>
+  </Family>
+
+</Models>
+</Setup>

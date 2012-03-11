@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Miracle</Name>
+<ExternalID>Miracle</ExternalID>
+<Description>Miracle</Description>
+<Models filename="./models/miracle/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

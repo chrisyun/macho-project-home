@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Models>
+		<Model>
+      <Manufacturer>NOKIA</Manufacturer>
+      <ExternalID>6220c-1</ExternalID>
+      <Specifications>
+        <Specification category="general" name="2G network" value="GSM 850 / GSM 900 / GSM 1800 / GSM 1900"/>
+        <Specification category="general" name="3G network" value="HSDPA 2100 / HSDPA 900"/>
+        <Specification category="general" name="announced" value="2008, February"/>
+        <Specification category="general" name="status" value="Available.Released 2008,July"/>
+        <Specification category="size" name="dimensions" value="108 x 47 x 15 mm, 66 cc"/>
+        <Specification category="size" name="weight" value="90 g"/>
+        <Specification category="display" name="type" value="TFT, 16M colors"/>
+        <Specification category="display" name="size" value="240 x 320 pixels
+,2.2 inches
+- Downloadable wallpapers, screensavers"/>
+        <Specification category="ringtones" name="type" value="Polyphonic , MP3 , AAC"/>
+        <Specification category="ringtones" name="customization" value="Download"/>
+        <Specification category="ringtones" name="vibration" value="Yes"/>
+        <Specification category="memory" name="phonebook" value="Practically unlimited entries and fields, Photocall"/>
+        <Specification category="memory" name="call_records" value="Detailed, max 30 days"/>
+        <Specification category="memory" name="card_slot" value="microSD (TransFlash), up to 8GB 
+- 120 MB of user memory
+- 128 MB SDRAM memory
+- ARM 11 369 MHz processor "/>
+        <Specification category="data" name="gprs" value="Class 11"/>
+        <Specification category="data" name="hscsd" value="Yes, 43.2 kbps"/>
+        <Specification category="data" name="edge" value="Class 32, 296 / 177.6 kbits"/>
+        <Specification category="data" name="3g" value="HSDPA, 3.6 Mbps"/>
+        <Specification category="data" name="wlan" value="No"/>
+        <Specification category="data" name="bluetooth" value="Yes, v2.0 with A2DP"/>
+        <Specification category="data" name="infrared_port" value="No"/>
+        <Specification category="data" name="usb" value="Yes, v2.0 microUSB"/>
+        <Specification category="features" name="os" value="Symbian OS 9.3, S60 rel. 3.2"/>
+        <Specification category="features" name="messaging" value="SMS, MMS, Email, Instant Messaging"/>
+        <Specification category="features" name="browser" value="WAP 2.0/xHTML, HTML"/>
+        <Specification category="features" name="games" value="Yes + Downloadable"/>
+        <Specification category="features" name="colors" value="Black and Cyan, Purple"/>
+        <Specification category="features" name="camera" value="5 MP, 2592��1944 pixels, Carl Zeiss optics, autofocus, video(VGA 30fps), Xenon flash; secondary videocall camera 
+- Built-in GPS receiver
+- A-GPS function
+- Java MIDP 2.0
+- FM stereo radio with RDS
+- Push to talk
+- MP3/AAC/MPEG4 player
+- Office applications 
+- TV-out
+- Voice memo
+- T9
+- Built-in handsfree "/>
+        <Specification category="battery" name="info" value="Standard battery, Li-Ion 900 mAh (BP-5M)"/>
+        <Specification category="battery" name="stand_by" value="Up to 250 h"/>
+        <Specification category="battery" name="talk_time" value="Up to 3 h 30 min"/>
+      </Specifications>
+    </Model>
+    
+    		
+    <Model>
+      <Manufacturer>NOKIA</Manufacturer>
+      <ExternalID>6210</ExternalID>
+      <Specifications>
+        <Specification category="general" name="2G network" value="GSM 850 / GSM 900 / GSM 1800 / GSM 1900"/>
+        <Specification category="general" name="3G network" value="HSDPA 2100 / 900 , HSDPA 850 / 1900 - American version"/>
+        <Specification category="general" name="announced" value="2008, February"/>
+        <Specification category="general" name="status" value="Available.Released 2008,July"/>
+        <Specification category="size" name="dimensions" value="103 x 49 x 14.9 mm, 89 cc"/>
+        <Specification category="size" name="weight" value="117 g"/>
+        <Specification category="display" name="type" value="TFT , 16M colors"/>
+        <Specification category="display" name="size" value="240 x 320 pixels
+,2.4 inches
+- Downloadable themes"/>
+        <Specification category="ringtones" name="type" value="Polyphonic , MP3 , AAC"/>
+        <Specification category="ringtones" name="customization" value="Download"/>
+        <Specification category="ringtones" name="vibration" value="Yes"/>
+        <Specification category="memory" name="phonebook" value="Practically unlimited entries and fields, Photocall"/>
+        <Specification category="memory" name="call_records" value="Detailed, max 30 days"/>
+        <Specification category="memory" name="card_slot" value="microSD (TransFlash), up to 8GB, hotswap 
+- 120 MB of user memory
+- 64 MB SDRAM memory
+- ARM 11 369 MHz processor "/>
+        <Specification category="data" name="gprs" value="Class 32, 107 / 64.2 kbps"/>
+        <Specification category="data" name="hscsd" value="Yes"/>
+        <Specification category="data" name="edge" value="Class 32, 296 / 177.6 kbits"/>
+        <Specification category="data" name="3g" value="HSDPA, 3.6 Mbps"/>
+        <Specification category="data" name="wlan" value="No"/>
+        <Specification category="data" name="bluetooth" value="Yes, v2.0 with A2DP"/>
+        <Specification category="data" name="infrared_port" value="No"/>
+        <Specification category="data" name="usb" value="Yes, v2.0, miniUSB"/>
+        <Specification category="features" name="os" value="Symbian OS 9.3, Series 60 UI"/>
+        <Specification category="features" name="messaging" value="SMS, MMS, Email, Instant Messaging"/>
+        <Specification category="features" name="browser" value="WAP 2.0/xHTML, HTML"/>
+        <Specification category="features" name="games" value="Yes + Java downloadable"/>
+        <Specification category="features" name="colors" value="Black , Red"/>
+        <Specification category="features" name="camera" value="3.15 MP, autofocus, 2048x1536 pixels, video(VGA 15fps), flash; secondary videocall camera 
+- Built-in GPS receiver
+- A-GPS function
+- Accelerometer rotation
+- Digital compass
+- Java MIDP 2.0
+- MP3/AAC/MPEG4 player
+- Stereo FM radio with RDS
+- Office applications
+- T9
+- Voice command/memo
+- Push to talk 
+- PIM including calendar, to-do list and printing
+- Integrated handsfree "/>
+        <Specification category="battery" name="info" value="Standard battery, Li-Ion 950 mAh (BL-5F)"/>
+        <Specification category="battery" name="stand_by" value="Up to 220 h"/>
+        <Specification category="battery" name="talk_time" value="Up to 3 h 40 min"/>
+      </Specifications>
+    </Model>
+    
+    
+    <Model>
+      <Manufacturer>NOKIA</Manufacturer>
+      <ExternalID>N96-1</ExternalID>
+      <Specifications>
+        <Specification category="general" name="2G network" value="GSM 850 / GSM 900 / GSM 1800 / GSM 1900"/>
+        <Specification category="general" name="3G network" value="HSDPA 2100 / 900 , HSDPA 850 / 1900 - American version"/>
+        <Specification category="general" name="announced" value="2008, February"/>
+        <Specification category="general" name="status" value="Available.Released 2008,September"/>
+        <Specification category="size" name="dimensions" value="103 x 55 x 18 mm, 92 cc "/>
+        <Specification category="size" name="weight" value="125 g"/>
+        <Specification category="display" name="type" value="TFT , 16M colors"/>
+        <Specification category="display" name="size" value="240 x 320 pixels , 2.8 inches"/>
+        <Specification category="ringtones" name="type" value="Polyphonic (64 channels), Monophonic, True Tones, MP3"/>
+        <Specification category="ringtones" name="customization" value="Download"/>
+        <Specification category="ringtones" name="vibration" value="Yes"/>
+        <Specification category="memory" name="phonebook" value="Practically unlimited entries and fields, Photocall"/>
+        <Specification category="memory" name="call_records" value="Detailed, max 30 days"/>
+        <Specification category="memory" name="card_slot" value="microSD (TransFlash), up to 8GB
+- Accelerometer sensor for auto-rotate
+- 16 GB internal memory
+- 128MB RAM, 256MB storage memory
+- Dual ARM 9 264 MHz CPU"/>
+        <Specification category="data" name="gprs" value="Class 32, 107 / 64.2 kbps"/>
+        <Specification category="data" name="hscsd" value="Yes"/>
+        <Specification category="data" name="edge" value="Class 32, 296 kbps; DTM Class 11, 177 kbps"/>
+        <Specification category="data" name="3g" value="HSDPA, 3.6 Mbps"/>
+        <Specification category="data" name="wlan" value="Wi-Fi 802.11 b/g, UPnP technology"/>
+        <Specification category="data" name="bluetooth" value="Yes, v2.0 with A2DP"/>
+        <Specification category="data" name="infrared_port" value="No"/>
+        <Specification category="data" name="usb" value="Yes, v2.0 microUSB"/>
+        <Specification category="features" name="os" value="Symbian OS 9.3, S60 rel. 3.2"/>
+        <Specification category="features" name="messaging" value="SMS, MMS, Email, Instant Messaging"/>
+        <Specification category="features" name="browser" value="WAP 2.0/xHTML, HTML, RSS reader"/>
+        <Specification category="features" name="games" value="Downloadable"/>
+        <Specification category="features" name="colors" value="Black"/>
+        <Specification category="features" name="camera" value="5 MP, 2592x1944 pixels, Carl Zeiss optics, autofocus, video(VGA 30fps), flash; secondary VGA videocall camera 
+- Built-in GPS receiver
+- A-GPS function
+- DVB-H TV broadcast receiver
+- Dual slide design
+- Java MIDP 2.1
+- MP3/AAC/AAC+/eAAC+/WMA player
+- 3.5 mm audio output jack
+- TV out
+- Stereo FM Radio with RDS
+- Organizer
+- Office document viewer
+- T9
+- Push to talk 
+- Voice dial/memo
+- Built-in handsfree "/>
+        <Specification category="battery" name="info" value="Standard battery, Li-Ion 950 mAh (BL-5F)"/>
+        <Specification category="battery" name="stand_by" value="Up to 220 h"/>
+        <Specification category="battery" name="talk_time" value="Up to 3 h 40 min"/>
+      </Specifications>
+    </Model>    
+    
+    
+    <Model>
+      <Manufacturer>NOKIA</Manufacturer>
+      <ExternalID>N78-1</ExternalID>
+      <Specifications>
+        <Specification category="general" name="2G network" value="GSM 850 / GSM 900 / GSM 1800 / GSM 1900"/>
+        <Specification category="general" name="3G network" value="HSDPA 2100 / 900 , HSDPA 850 / 1900 - US version"/>
+        <Specification category="general" name="announced" value="2008, February"/>
+        <Specification category="general" name="status" value="Available.Released 2008,May"/>
+        <Specification category="size" name="dimensions" value="113 x 49 x 15.1 mm, 76.5 cc"/>
+        <Specification category="size" name="weight" value="101.8 g"/>
+        <Specification category="display" name="type" value="TFT , 16M colors"/>
+        <Specification category="display" name="size" value="240 x 320 pixels , 2.4 inches - Downloadable themes"/>
+        <Specification category="ringtones" name="type" value="Polyphonic (64 channels), MP3"/>
+        <Specification category="ringtones" name="customization" value="Download"/>
+        <Specification category="ringtones" name="vibration" value="Yes 
+- Stereo speakers "/>
+        <Specification category="memory" name="phonebook" value="Practically unlimited entries and fields, Photocall"/>
+        <Specification category="memory" name="call_records" value="Detailed, max 30 days"/>
+        <Specification category="memory" name="card_slot" value="microSD (TransFlash), hotswap 
+- 76 MB internal memory
+- 96 MB SDRAM memory
+- ARM 11 369 MHz processor "/>
+        <Specification category="data" name="gprs" value="Class 11, 118.4 kbits"/>
+        <Specification category="data" name="hscsd" value="Yes"/>
+        <Specification category="data" name="edge" value="Class 32, 296 / 177.6 kbits"/>
+        <Specification category="data" name="3g" value="HSDPA, 3.6 Mbps"/>
+        <Specification category="data" name="wlan" value="Wi-Fi 802.11 b/g, UPnP technology"/>
+        <Specification category="data" name="bluetooth" value="Yes, v2.0 with A2DP"/>
+        <Specification category="data" name="infrared_port" value="No"/>
+        <Specification category="data" name="usb" value="Yes, v2.0, miniUSB"/>
+        <Specification category="features" name="os" value="Symbian OS, S60 rel. 3.2"/>
+        <Specification category="features" name="messaging" value="SMS, MMS, Email, Instant Messaging"/>
+        <Specification category="features" name="browser" value="WAP 2.0/xHTML, HTML, RSS feeds"/>
+        <Specification category="features" name="games" value="Yes + Java downloadable"/>
+        <Specification category="features" name="colors" value="Black"/>
+        <Specification category="features" name="camera" value="3.15 MP, 2048x1536 pixels, autofocus, Carl Zeiss optics, video(VGA 15fps), flash; secondary CIF videocall camera 
+- Built-in GPS receiver
+- A-GPS support
+- Java MIDP 2.0
+- MP3/M4A/AAC/eAAC+/WMA player
+- Stereo FM radio with RDS
+- FM transmitter
+- 3.5 mm audio output jack
+- Push to Talk
+- Voice command/dial
+- PIM including calendar, to-do list and printing
+- Document viewer
+- T9
+- Photo/video editor
+- Integrated handsfree "/>
+        <Specification category="battery" name="info" value="Standard battery, Li-Ion 1200 mAh (BL-6F)"/>
+        <Specification category="battery" name="stand_by" value="Up to 320 h"/>
+        <Specification category="battery" name="talk_time" value="Up to 4 h 20 min"/>
+      </Specifications>
+    </Model> 
+    
+    
+    <Model>
+      <Manufacturer>NOKIA</Manufacturer>
+      <ExternalID>6650</ExternalID>
+      <Specifications>
+        <Specification category="general" name="2G network" value="GSM 850 / GSM 900 / GSM 1800 / GSM 1900"/>
+        <Specification category="general" name="3G network" value="HSDPA 850 / 2100"/>
+        <Specification category="general" name="announced" value="2008, March"/>
+        <Specification category="general" name="status" value="Available.Released 2008,June"/>
+        <Specification category="size" name="dimensions" value="99.7 x 47 x 16.2 mm"/>
+        <Specification category="size" name="weight" value="112 g"/>
+        <Specification category="display" name="type" value="TFT , 16M colors"/>
+        <Specification category="display" name="size" value="240 x 320 pixels , 2.2 inches
+- Second external TFT display, 256K colors (128 x 160 pixels)
+- Downloadable screensavers, wallpapers"/>
+        <Specification category="ringtones" name="type" value="Polyphonic (64 channels), MP3"/>
+        <Specification category="ringtones" name="customization" value="Download"/>
+        <Specification category="ringtones" name="vibration" value="Yes"/>
+        <Specification category="memory" name="phonebook" value="Practically unlimited entries and fields, Photocall"/>
+        <Specification category="memory" name="call_records" value="Detailed, max 30 days"/>
+        <Specification category="memory" name="card_slot" value="microSD (TransFlash) 
+- 30 MB internal memory"/>
+        <Specification category="data" name="gprs" value="Yes"/>
+        <Specification category="data" name="hscsd" value="Yes"/>
+        <Specification category="data" name="edge" value="Yes"/>
+        <Specification category="data" name="3g" value="HSDPA, 3.6 Mbps"/>
+        <Specification category="data" name="wlan" value="No"/>
+        <Specification category="data" name="bluetooth" value="Yes, v2.0 with A2DP"/>
+        <Specification category="data" name="infrared_port" value="No"/>
+        <Specification category="data" name="usb" value="Yes"/>
+        <Specification category="features" name="os" value="Symbian OS, Series 60 v3.2 UI"/>
+        <Specification category="features" name="messaging" value="SMS, MMS, Email, Instant Messaging"/>
+        <Specification category="features" name="browser" value="WAP 2.0/xHTML"/>
+        <Specification category="features" name="games" value="Yes + downloadable"/>
+        <Specification category="features" name="colors" value="Silver , Black"/>
+        <Specification category="features" name="camera" value="2 MP, 1600x1200 pixels, video, flash 
+- Built-in GPS receiver
+- A-GPS function
+- Java MIDP 2.0
+- Stereo FM radio 
+- MP3/AAC/M4A/eAAC+ player 
+- T9
+- Organiser
+- Voice dial/memo
+- Built-in handsfree "/>
+        <Specification category="battery" name="info" value="Standard battery, Li-Ion 1500 mAh (BP-4L)"/>
+        <Specification category="battery" name="stand_by" value="Up to 350 h"/>
+        <Specification category="battery" name="talk_time" value="Up to 6 h"/>
+      </Specifications>
+    </Model>
+    
+    
+    <Model>
+      <Manufacturer>NOKIA</Manufacturer>
+      <ExternalID>5320</ExternalID>
+      <Specifications>
+        <Specification category="general" name="2G network" value="GSM 850 / GSM 900 / GSM 1800 / GSM 1900"/>
+        <Specification category="general" name="3G network" value="HSDPA 2100 / 900 , HSDPA 850 / 1900 - American version"/>
+        <Specification category="general" name="announced" value="2008, April"/>
+        <Specification category="general" name="status" value="Available.Released 2008,July"/>
+        <Specification category="size" name="dimensions" value="108 x 46 x 15 mm, 67 cc "/>
+        <Specification category="size" name="weight" value="90 g"/>
+        <Specification category="display" name="type" value="TFT , 16M colors"/>
+        <Specification category="display" name="size" value="240 x 320 pixels , 2.0 inches
+- 8-way Navi key
+- Dedicated music and N-Gage gaming keys"/>
+        <Specification category="ringtones" name="type" value="Polyphonic (64 channels), MP3, AAC, 3D, True tones"/>
+        <Specification category="ringtones" name="customization" value="Download"/>
+        <Specification category="ringtones" name="vibration" value="Yes"/>
+        <Specification category="memory" name="phonebook" value="Practically unlimited entries and fields, Photocall"/>
+        <Specification category="memory" name="call_records" value="Detailed, max 30 days"/>
+        <Specification category="memory" name="card_slot" value="microSD (TransFlash), up to 8 GB; 512 MB or 1 GB microSD card included
+- 140 MB of user memory
+- ARM 11, 369 MHz CPU "/>
+        <Specification category="data" name="gprs" value="Class 32"/>
+        <Specification category="data" name="hscsd" value="Yes"/>
+        <Specification category="data" name="edge" value="Class 32"/>
+        <Specification category="data" name="3g" value="HSDPA, 3.6 Mbps"/>
+        <Specification category="data" name="wlan" value="No"/>
+        <Specification category="data" name="bluetooth" value="Yes, v2.0 with A2DP"/>
+        <Specification category="data" name="infrared_port" value="No"/>
+        <Specification category="data" name="usb" value="Yes, microUSB"/>
+        <Specification category="features" name="os" value="Symbian OS 9.3, S60 rel. 3.2"/>
+        <Specification category="features" name="messaging" value="SMS, MMS, Email, Push E-Mail, IM"/>
+        <Specification category="features" name="browser" value="WAP 2.0/xHTML, HTML"/>
+        <Specification category="features" name="games" value="Yes + Downloadable"/>
+        <Specification category="features" name="colors" value="Blue, Red"/>
+        <Specification category="features" name="camera" value="2 MP, 1600x1200 pixels, video(QVGA@15fps), flash, secondary videocall camera (384 x 320 pixels) 
+- Nokia Say and Play (voice control to music player)
+- Java MIDP 2.1
+- 3.5 mm audio output jack
+- FM stereo radio with RDS
+- MP3/MPEG4 player
+- Voice memo
+- Voice dial
+- Built-in handsfree
+- Calendar
+- Push to talk
+- Up to 24 h music time "/>
+        <Specification category="battery" name="info" value="Standard battery, Li-Ion 890 mAh (BL-5B)"/>
+        <Specification category="battery" name="stand_by" value="Up to 250 h"/>
+        <Specification category="battery" name="talk_time" value="Up to 3 h 30 min"/>
+      </Specifications>
+    </Model>
+    
+    
+    <Model>
+      <Manufacturer>NOKIA</Manufacturer>
+      <ExternalID>N85-1</ExternalID>
+      <Specifications>
+        <Specification category="general" name="2G network" value="GSM 850 / GSM 900 / GSM 1800 / GSM 1900"/>
+        <Specification category="general" name="3G network" value="HSDPA 1900 / 2100 / 900"/>
+        <Specification category="general" name="announced" value="2008, August"/>
+        <Specification category="general" name="status" value="Available.Released 2008,October"/>
+        <Specification category="size" name="dimensions" value="103 x 50 x 16 mm, 76 cc "/>
+        <Specification category="size" name="weight" value="128 g"/>
+        <Specification category="display" name="type" value="OLED, 16M colors"/>
+        <Specification category="display" name="240 x 320 pixels, 2.6 inches 
+- Accelerometer sensor for auto-rotate
+- Touch-sensitive Navi wheel "/>
+        <Specification category="ringtones" name="type" value="Polyphonic (64 channels), Monophonic, True Tones, MP3"/>
+        <Specification category="ringtones" name="customization" value="Download"/>
+        <Specification category="ringtones" name="vibration" value="Yes 
+- Stereo speakers "/>
+        <Specification category="memory" name="phonebook" value="Practically unlimited entries and fields, Photocall"/>
+        <Specification category="memory" name="call_records" value="Detailed, max 30 days"/>
+        <Specification category="memory" name="card_slot" value="microSD (TransFlash), up to 8GB 
+- 74 MB internal memory"/>
+        <Specification category="data" name="gprs" value="Class 32, 107 / 64.2 kbps"/>
+        <Specification category="data" name="hscsd" value="Yes, 43.2 kbps"/>
+        <Specification category="data" name="edge" value="Class 32, 296 kbps; DTM Class 11, 177 kbps"/>
+        <Specification category="data" name="3g" value="HSDPA, 3.6 Mbps"/>
+        <Specification category="data" name="wlan" value="Wi-Fi 802.11 b/g, UPnP technology"/>
+        <Specification category="data" name="bluetooth" value="Yes, v2.0 with A2DP"/>
+        <Specification category="data" name="infrared_port" value="No"/>
+        <Specification category="data" name="usb" value="Yes, v2.0 microUSB"/>
+        <Specification category="features" name="os" value="Symbian OS 9.3, S60 rel. 3.2"/>
+        <Specification category="features" name="messaging" value="SMS, MMS, Email, Instant Messaging"/>
+        <Specification category="features" name="browser" value="WAP 2.0/xHTML, HTML, RSS reader"/>
+        <Specification category="features" name="games" value="Downloadable"/>
+        <Specification category="features" name="colors" value="Copper"/>
+        <Specification category="features" name="camera" value="5 MP, 2592x1944 pixels, Carl Zeiss optics, autofocus, video(VGA 30fps), flash; secondary VGA videocall camera 
+- Built-in GPS receiver
+- A-GPS function
+- Dual slide design
+- Java MIDP 2.0
+- MP3/AAC/AAC+/eAAC+/WMA player
+- 3.5 mm audio output jack
+- TV out
+- Stereo FM radio with RDS
+- FM transmitter
+- Organizer
+- Office document viewer 
+- T9
+- Push to talk 
+- Voice dial/memo
+- Built-in handsfree "/>
+        <Specification category="battery" name="info" value="Standard battery, Li-Ion 1200 mAh (BL-5K )"/>
+        <Specification category="battery" name="stand_by" value="Up to 363 h"/>
+        <Specification category="battery" name="talk_time" value="Up to 6 h 50 min"/>
+      </Specifications>
+    </Model>
+    
+    
+    <Model>
+      <Manufacturer>NOKIA</Manufacturer>
+      <ExternalID>N96-3</ExternalID>
+      <Specifications>
+        <Specification category="general" name="2G network" value="GSM 850 / GSM 900 / GSM 1800 / GSM 1900"/>
+        <Specification category="general" name="3G network" value="HSDPA 2100 / 900 , HSDPA 850 / 1900 - American version"/>
+        <Specification category="general" name="announced" value="2008, February"/>
+        <Specification category="general" name="status" value="Available.Released 2008,September"/>
+        <Specification category="size" name="dimensions" value="103 x 55 x 18 mm, 92 cc "/>
+        <Specification category="size" name="weight" value="125 g"/>
+        <Specification category="display" name="type" value="TFT , 16M colors"/>
+        <Specification category="display" name="size" value="240 x 320 pixels , 2.8 inches"/>
+        <Specification category="ringtones" name="type" value="Polyphonic (64 channels), Monophonic, True Tones, MP3"/>
+        <Specification category="ringtones" name="customization" value="Download"/>
+        <Specification category="ringtones" name="vibration" value="Yes"/>
+        <Specification category="memory" name="phonebook" value="Practically unlimited entries and fields, Photocall"/>
+        <Specification category="memory" name="call_records" value="Detailed, max 30 days"/>
+        <Specification category="memory" name="card_slot" value="microSD (TransFlash), up to 8GB
+- Accelerometer sensor for auto-rotate
+- 16 GB internal memory
+- 128MB RAM, 256MB storage memory
+- Dual ARM 9 264 MHz CPU"/>
+        <Specification category="data" name="gprs" value="Class 32, 107 / 64.2 kbps"/>
+        <Specification category="data" name="hscsd" value="Yes"/>
+        <Specification category="data" name="edge" value="Class 32, 296 kbps; DTM Class 11, 177 kbps"/>
+        <Specification category="data" name="3g" value="HSDPA, 3.6 Mbps"/>
+        <Specification category="data" name="wlan" value="Wi-Fi 802.11 b/g, UPnP technology"/>
+        <Specification category="data" name="bluetooth" value="Yes, v2.0 with A2DP"/>
+        <Specification category="data" name="infrared_port" value="No"/>
+        <Specification category="data" name="usb" value="Yes, v2.0 microUSB"/>
+        <Specification category="features" name="os" value="Symbian OS 9.3, S60 rel. 3.2"/>
+        <Specification category="features" name="messaging" value="SMS, MMS, Email, Instant Messaging"/>
+        <Specification category="features" name="browser" value="WAP 2.0/xHTML, HTML, RSS reader"/>
+        <Specification category="features" name="games" value="Downloadable"/>
+        <Specification category="features" name="colors" value="Black"/>
+        <Specification category="features" name="camera" value="5 MP, 2592x1944 pixels, Carl Zeiss optics, autofocus, video(VGA 30fps), flash; secondary VGA videocall camera 
+- Built-in GPS receiver
+- A-GPS function
+- DVB-H TV broadcast receiver
+- Dual slide design
+- Java MIDP 2.1
+- MP3/AAC/AAC+/eAAC+/WMA player
+- 3.5 mm audio output jack
+- TV out
+- Stereo FM Radio with RDS
+- Organizer
+- Office document viewer
+- T9
+- Push to talk 
+- Voice dial/memo
+- Built-in handsfree "/>
+        <Specification category="battery" name="info" value="Standard battery, Li-Ion 950 mAh (BL-5F)"/>
+        <Specification category="battery" name="stand_by" value="Up to 220 h"/>
+        <Specification category="battery" name="talk_time" value="Up to 3 h 40 min"/>
+      </Specifications>
+    </Model>
+    
+    
+    <Model>
+      <Manufacturer>NOKIA</Manufacturer>
+      <ExternalID>N79</ExternalID>
+      <Specifications>
+        <Specification category="general" name="2G network" value="GSM 850 / GSM 900 / GSM 1800 / GSM 1900"/>
+        <Specification category="general" name="3G network" value="HSDPA 2100 / 900"/>
+        <Specification category="general" name="announced" value="2008, August"/>
+        <Specification category="general" name="status" value="Available.Released 2008,October"/>
+        <Specification category="size" name="dimensions" value="110 x 49 x 15 mm, 74 cc "/>
+        <Specification category="size" name="weight" value="97 g"/>
+        <Specification category="display" name="type" value="TFT , 16M colors"/>
+        <Specification category="display" name="size" value="240 x 320 pixels, 2.4 inches 
+- Downloadable themes
+- Touch-sensitive Navi wheel
+- Accelerometer sensor for auto-rotate"/>
+        <Specification category="ringtones" name="type" value="Polyphonic (64 channels), MP3"/>
+        <Specification category="ringtones" name="customization" value="Download"/>
+        <Specification category="ringtones" name="vibration" value="Yes 
+- Stereo speakers"/>
+        <Specification category="memory" name="phonebook" value="Practically unlimited entries and fields, Photocall"/>
+        <Specification category="memory" name="call_records" value="Detailed, max 30 days"/>
+        <Specification category="memory" name="card_slot" value="microSD (TransFlash), up to 8GB , hotswap , 
+- 50 MB internal memory"/>
+        <Specification category="data" name="gprs" value="Class 11, 107 kbits"/>
+        <Specification category="data" name="hscsd" value="Yes"/>
+        <Specification category="data" name="edge" value="Class 32, 296 / 177.6 kbits"/>
+        <Specification category="data" name="3g" value="HSDPA, 3.6 Mbps"/>
+        <Specification category="data" name="wlan" value="Wi-Fi 802.11 b/g, UPnP technology"/>
+        <Specification category="data" name="bluetooth" value="Yes, v2.0 with A2DP"/>
+        <Specification category="data" name="infrared_port" value="No"/>
+        <Specification category="data" name="usb" value="Yes, v2.0 microUSB"/>
+        <Specification category="features" name="os" value="Symbian OS 9.3, Series 60 v3.2 UI"/>
+        <Specification category="features" name="messaging" value="SMS, MMS, Email, Instant Messaging"/>
+        <Specification category="features" name="browser" value="WAP 2.0/xHTML, HTML, RSS feeds"/>
+        <Specification category="features" name="games" value="Yes + Java downloadable"/>
+        <Specification category="features" name="colors" value="Canvas white, Seal grey"/>
+        <Specification category="features" name="camera" value="5 MP, 2592x1944 pixels, Carl Zeiss optics, autofocus, video(VGA 30fps), flash; secondary VGA videocall camera 
+- Built-in GPS receiver
+- A-GPS support
+- Java MIDP 2.0
+- MP3/M4A/AAC/eAAC+/WMA player
+- Stereo FM radio with RDS
+- FM transmitter
+- TV out
+- 3.5 mm audio output jack
+- Push to Talk
+- Voice command/dial
+- PIM including calendar, to-do list and printing
+- Document viewer
+- T9
+- Photo/video editor
+- Integrated handsfree"/>
+        <Specification category="battery" name="info" value="Standard battery, Li-Ion 1200 mAh (BL-6F)"/>
+        <Specification category="battery" name="stand_by" value="Up to 372 h"/>
+        <Specification category="battery" name="talk_time" value="Up to 5 h 30 min"/>
+      </Specifications>
+    </Model>
+    
+  </Models>
+</Setup>

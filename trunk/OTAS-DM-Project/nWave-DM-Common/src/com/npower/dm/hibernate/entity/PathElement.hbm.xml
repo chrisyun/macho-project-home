@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/PathElement.hbm.xml,v 1.2 2006/12/26 03:15:19 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2006/12/26 03:15:19 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.PathElement" table="NW_DM_PATH_ELEMENT">
+        <id name="pathElementId" type="long" unsaved-value="0">
+            <column name="PATH_ELEMENT_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="nwDmUpdate" class="com.npower.dm.hibernate.entity.UpdateEntity" fetch="select">
+            <column name="UPDATE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="nwDmPrElement" class="com.npower.dm.hibernate.entity.Element4Provision" fetch="select">
+            <column name="PR_ELEMENT_ID" precision="16" scale="0" />
+        </many-to-one>
+        <property name="sequenceNumber" type="long">
+            <column name="SEQUENCE_NUMBER" precision="4" scale="0" not-null="true" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

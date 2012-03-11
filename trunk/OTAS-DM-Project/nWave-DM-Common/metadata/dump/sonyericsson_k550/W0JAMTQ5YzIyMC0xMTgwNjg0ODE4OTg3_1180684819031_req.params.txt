@@ -1,0 +1,13 @@
+**** Request Parameters: 
+**** Request Headers   : 
+content-length:515
+cache-control:no-cache
+connection:Keep-Alive, Keep-Alive
+accept-language:zs
+host:www.otas.mobi:8080
+x-wap-profile:"http://wap.sonyericsson.com/UAprof/K550cR201.xml"
+user-agent:SonyEricssonK550c/R1JD Release/Jan-23-2007 Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1
+accept-charset:utf-8, *
+pragma:no-cache
+content-type:application/vnd.syncml.dm+wbxml
+accept:application/vnd.syncml.dm+wbxml, */*

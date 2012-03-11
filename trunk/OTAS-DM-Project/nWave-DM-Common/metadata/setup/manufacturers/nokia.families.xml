@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>Nokia</Name>
+      <ExternalID>Nokia</ExternalID>
+      <Description>Nokia Mobile Platform Families</Description>
+      <Models filename="./models/nokia/models.families.xml"/>
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

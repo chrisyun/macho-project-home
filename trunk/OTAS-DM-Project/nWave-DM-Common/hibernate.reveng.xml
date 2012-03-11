@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table name="NW_DM_COUNTRY" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.CountryEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_CARRIER" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.CarrierEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_CONFIG_PROFILE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileConfigEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_IMAGE_CARRIERS" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.Image4Carrier">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PR_ELEMENT" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.Element4Provision">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_SUBSCRIBER" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.SubscriberEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_UPDATE_CARRIERS" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.Update4Carrier">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_TEMPLATE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileTemplateEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_ASSIGNMENT" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileAssignmentEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_VALUE_MAP" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileValueMap">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_IMAGE" schema="NWAVEDM" class="com.npower.dm.hibernate.Image">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_IMAGE_UPDATE_STATUS" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ImageUpdateStatusEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DEVICE_GROUP" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DeviceEntityGroup">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROV_REQ" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProvisionRequest">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DEVICE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DeviceEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DEVICE_PROV_REQ" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DeviceEntityProvisionRequest">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PATH_ELEMENT" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.PathElement">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_UPDATE" schema="NWAVEDM" class="com.npower.dm.hibernate.Update">
+		<primary-key>
+			<generator class="native"></generator>
+			<column name="UPDATE_ID" />
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_CATEGORY" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileCategoryEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_ATTRIBUTE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileAttributeEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_MAPPING" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileMappingEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_JOB_ASSIGNMENTS" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.JobAssignments">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_ASSIGN_VALUE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileAssignmentEntityValue">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_PARAMETER" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileParameterEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_ATTRIB_VALUE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileAttributeEntityValue">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_MODEL" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ModelEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_JOB_STATE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.JobState">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DEVICE_GROUP_DEVICE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DeviceEntity4DeviceGroup">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_UPDATE_WORKFLOW" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.UpdateWorkflow">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DEVICE_LOG" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DeviceEntityLog">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DISCOVERY_JOB_NODE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.Node4DiscoveryJob"></table>
+	<table name="NW_DM_PR_PHONE_NUMBER" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProvisionsPhoneNumber">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DTREE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DeviceEntityTree">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DM_JOB_ADAPTER" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.JobAdapter">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_SESSION_AUTH" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.SessionAuth">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DM_JOB_EXEC_CLIENT" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.JobExecClient">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_BLOB" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMBinary">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_FW_JOB_UPDATE_PATH" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.FirmwareJobUpdatePath">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_ATTRIB_TYPE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileAttributeEntityTypeEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_NODE_MAPPING" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileNodeMappingEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DDF_NODE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DDFNodeEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_MAPPING_NODE_NAME" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileMappingEntityNodeName">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_MODEL_PROFILE_MAP" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ModelEntityProfileMap">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PROFILE_VALUE_ITEM" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ProfileValueItem">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_MANUFACTURER" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ManufacturerEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_MODEL_DDF_TREE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ModelEntityDDFTree">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_MODEL_DM_BOOT_PROP" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMBootstrapProperty">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_MODEL_DM_PROP" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ModelEntityDMProperty"></table>
+	<table name="NW_DM_MODEL_TAC" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ModelEntityTAC">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DM_CMD_PKG" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMCommandPackage">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DISC_JOB_ST_NODE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DiscoveryJobStateNode">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_NODES_TO_DISCOVER" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.NodeToDiscover">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_STEPS" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.Steps">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DEVICE_LOG_ACTION" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DeviceEntityLogAction">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DTREE_NODE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DeviceEntityTreeNode">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DM_SESSION" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMSession">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_ATTRIB_TYPE_VALUES" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.AttributeTypeValueEntitys">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_ATTRIB_TRANSLATIONS" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.AttributeTranslations">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DDF_TREE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DDFTreeEntity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DDF_NODE_ACCESS_TYPE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DDFNodeEntityAccessType">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DDF_NODE_MIME_TYPE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DDFNodeEntityMIMEType">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DM_CMD" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMCommand">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DM_PKG_HANDLER" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMPackageHandler">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DM_PKG_SENDER" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMPackageSender">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DM_CMD_SESSION" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMCommandSession">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_PREV_PKG_RESP" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.PrevPkgResp">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_GET_CMD_ITEM" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.GetCommandItem">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_REPL_CMD_ITEM" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.ReplaceCommandItem">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DM_PKG_RESP_PROC" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMPkgRespProc">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DM_PKG_SENDER_CMD_IDS" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMPkgSenderCMDIDs">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="NW_DM_DM_CMD_RESPONSE" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMCMDResponse">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+<table name="NW_DM_DM_RESULTS_MAP" schema="NWAVEDM" class="com.npower.dm.hibernate.entity.DMResultsMap">
+	<primary-key>
+		<generator class="assigned"></generator>
+	</primary-key>
+</table>
+</hibernate-reverse-engineering>

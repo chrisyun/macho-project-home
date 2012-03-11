@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Hitachi</Name>
+<ExternalID>Hitachi</ExternalID>
+<Description>Hitachi</Description>
+<Models filename="./models/hitachi/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

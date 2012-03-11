@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+  SonyEricsson W810c Compatiable CP Template
+ -->
+<wap-provisioningdoc version="1.1">
+## PXLOGICAL
+#foreach ( $pxLogicalElement in $profile.PXLogicalElements ) 
+  <characteristic type="PXLOGICAL">
+  #foreach ( $parameter in $pxLogicalElement.parameters)
+    #foreach ( $value in $parameter.values)
+      <parm name="${parameter.name}" value="$!{value}"/>
+    #end
+  #end
+  ## PXAUTHINFO
+  #foreach ( $pxAuthInfo  in $pxLogicalElement.pxAuthInfos)
+    <characteristic type="PXAUTHINFO">
+    #foreach ( $parameter in $pxAuthInfo.parameters)
+      #foreach ( $value in $parameter.values)
+        <parm name="${parameter.name}" value="$!{value}"/>
+      #end
+    #end
+    </characteristic>
+  #end
+  ## PORT
+  #foreach ( $port  in $pxLogicalElement.ports)
+    <characteristic type="PORT">
+    #foreach ( $parameter in $port.parameters)
+      #foreach ( $value in $parameter.values)
+        <parm name="${parameter.name}" value="$!{value}"/>
+      #end
+    #end
+    </characteristic>
+  #end
+  ## PXPHYSICAL
+  #foreach ( $pxPhysical  in $pxLogicalElement.pxPhysicals)
+    <characteristic type="PXPHYSICAL">
+    #foreach ( $parameter in $pxPhysical.parameters)
+      #foreach ( $value in $parameter.values)
+        <parm name="${parameter.name}" value="$!{value}"/>
+      #end
+    #end
+    #foreach ( $port  in $pxPhysical.ports)
+      <characteristic type="PORT">
+      #foreach ( $parameter in $port.parameters)
+        #foreach ( $value in $parameter.values)
+          <parm name="${parameter.name}" value="$!{value}"/>
+        #end
+      #end
+      </characteristic>
+    #end
+    </characteristic>
+  #end
+  
+  </characteristic>
+#end
+
+
+## NAPDEF
+#foreach ( $napDefElement in $profile.napDefElements ) 
+  <characteristic type="NAPDEF">
+  #foreach ( $parameter in $napDefElement.parameters)
+    #foreach ( $value in $parameter.values)
+      <parm name="${parameter.name}" value="$!{value}"/>
+    #end
+  #end
+  ## NAPAUTHINFO
+  #foreach ( $napAuthInfo in $napDefElement.napAuthInfos)
+    <characteristic type="NAPAUTHINFO">
+    #foreach ( $parameter in $napAuthInfo.parameters)
+      #foreach ( $value in $parameter.values)
+        <parm name="${parameter.name}" value="$!{value}"/>
+      #end
+    #end
+    </characteristic>
+  #end
+  ## VALIDITY
+  #foreach ( $validity in $napDefElement.validities)
+    <characteristic type="VALIDITY">
+    #foreach ( $parameter in $validity.parameters)
+      #foreach ( $value in $parameter.values)
+        <parm name="${parameter.name}" value="$!{value}"/>
+      #end
+    #end
+    </characteristic>
+  #end
+  
+  </characteristic>
+#end
+
+
+## BOOTSTRAP
+#foreach ( $bootstrapElement in $profile.bootstrapElements ) 
+  <characteristic type="BOOTSTRAP">
+  #foreach ( $parameter in $bootstrapElement.parameters)
+    #foreach ( $value in $parameter.values)
+      <parm name="${parameter.name}" value="$!{value}"/>
+    #end
+  #end
+  </characteristic>
+#end
+
+
+## CLIENTIDENTITY
+#if ( $profile.clientIndetityElement ) 
+  <characteristic type="CLIENTIDENTITY">
+  #foreach ( $parameter in $profile.clientIndetityElement.parameters)
+    #foreach ( $value in $parameter.values)
+      <parm name="${parameter.name}" value="$!{value}"/>
+    #end
+  #end
+  </characteristic>
+#end
+
+
+## VENDORCONFIG
+#foreach ( $vendorConfigElement in $profile.vendorConfigElements ) 
+  <characteristic type="VENDORCONFIG">
+  #foreach ( $parameter in $vendorConfigElement.parameters)
+    #foreach ( $value in $parameter.values)
+      <parm name="${parameter.name}" value="$!{value}"/>
+    #end
+  #end
+  </characteristic>
+#end
+
+
+## Application
+#foreach ( $Application in $profile.ApplicationElements ) 
+  <characteristic type="APPLICATION">
+    #foreach ( $parameter in $Application.parameters)
+      #foreach ( $value in $parameter.values)
+      <parm name="${parameter.name}" value="$!{value}"/>
+      #end
+    #end
+    
+    ## AppAddress Elements
+    #foreach( $appAddr in $Application.appAddrElements)
+      <characteristic type="APPADDR">
+      #foreach ( $parameter in $appAddr.parameters)
+        #foreach ( $value in $parameter.values)
+        <parm name="${parameter.name}" value="$!{value}"/>
+        #end
+      #end
+      #foreach( $port in $appAddr.ports)
+        <characteristic type="PORT">
+        #foreach ( $parameter in $port.parameters)
+          #foreach ( $value in $parameter.values)
+          <parm name="${parameter.name}" value="$!{value}"/>
+          #end
+        #end
+        </characteristic>
+      #end
+      </characteristic>
+    #end
+    
+    ## AppAuth Elements
+    #foreach( $appAuth in $Application.appAuthElements)
+      <characteristic type="APPAUTH">
+      #foreach ( $parameter in $appAuth.parameters)
+        #foreach ( $value in $parameter.values)
+        <parm name="${parameter.name}" value="$!{value}"/>
+        #end
+      #end
+      </characteristic>
+    #end
+    
+    ## Resources Elements
+    #foreach( $resource in $Application.resourceElements)
+      <characteristic type="RESOURCE">
+      #foreach ( $parameter in $resource.parameters)
+        #foreach ( $value in $parameter.values)
+        <parm name="${parameter.name}" value="$!{value}"/>
+        #end
+      #end
+    </characteristic>
+    #end
+  </characteristic>
+#end
+
+
+## ACCESS
+#foreach ( $accessElement in $profile.accessElements ) 
+  <characteristic type="ACCESS">
+  #foreach ( $parameter in $accessElement.parameters)
+    #foreach ( $value in $parameter.values)
+      <parm name="${parameter.name}" value="$!{value}"/>
+    #end
+  #end
+  </characteristic>
+#end
+
+
+</wap-provisioningdoc>

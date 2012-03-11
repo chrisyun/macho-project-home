@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Nokia OTA 7.0 Browser Configuration Compatiable Profile
+ -->
+<CHARACTERISTIC-LIST>
+#foreach ( $Address in $profile.Addresses ) 
+  <CHARACTERISTIC TYPE="ADDRESS">
+    <!-- Values: GSM/CSD | GSM/SMS | GSM/USSD | IS-136/CSD | GPRS  -->
+    <PARM NAME="BEARER" VALUE="$!{Address.Bearer}"/>
+    
+    #if( $Address.PppAuthName )
+      <!-- Values: PAP | CHAP | MS_CHAP -->
+      <PARM NAME="PPP_AUTHTYPE" VALUE="$!{Address.PppAuthType}"/>
+
+      <PARM NAME="PPP_AUTHNAME" VALUE="$!{Address.PppAuthName}"/>
+      <PARM NAME="PPP_AUTHSECRET" VALUE="$!{Address.PppAuthSecret}"/>
+      <!-- Values: AUTOMATIC | MANUAL -->
+      <PARM NAME="PPP_LOGINTYPE" VALUE="AUTOMATIC"/>
+    #end
+
+    <PARM NAME="PROXY" VALUE="$!{Address.Proxy}"/>
+    <!-- Values: MSISDN_NO | IPV4 -->
+    <PARM NAME="PROXY_TYPE" VALUE="IPV4"/>
+    #if( $Address.ProxyAuthName )
+      <PARM NAME="PROXY_AUTHNAME" VALUE="$!{Address.ProxyAuthName}"/>
+      <PARM NAME="PROXY_AUTHSERCRET" VALUE="$!{Address.ProxyAuthSecret}"/>
+      <!-- Values: AUTOMATIC | MANUAL -->
+      <PARM NAME="PROXY_LOGINTYPE" VALUE="AUTOMATIC"/>
+    #end
+    
+    #if( $Address.Port )
+      <!-- Values: 9200 | 9201 | 9202 | 9203 -->
+      <PARM NAME="PORT" VALUE="$!{Address.Port}"/>
+    #end
+    
+    #if( $Address.CsdDialString )
+	  <PARM NAME="CSD_DIALSTRING" VALUE="$!{Address.CsdDialString}"/>
+      <!-- Values: ANALOGUE | ISDN -->
+      <PARM NAME="CSD_CALLTYPE" VALUE="ANALOGUE"/>
+      <!-- Values: AUTO | 9600 | 14400 | 19200 | 28800 | 38400 | 43200 | 57600 -->
+      <PARM NAME="CSD_CALLSPEED" VALUE="AUTO"/>
+    #end
+    
+    #if( $Address.IspName )
+      <PARM NAME="ISP_NAME" VALUE="$!{Address.IspName}"/>
+    #end
+    #if( $Address.SmsSMSCAddress )
+      <PARM NAME="SMS_SMSC_ADDRESS" VALUE="$!{Address.SmsSMSCAddress}"/>
+    #end
+    #if( $Address.UssdServiceCode )
+      <PARM NAME="USSD_SERVICE_CODE" VALUE="$!{Address.UssdServiceCode}"/>
+    #end
+    
+    <PARM NAME="GPRS_ACCESSPOINTNAME" VALUE="$!{Address.GprsAccessPointName}"/>
+    
+  </CHARACTERISTIC>
+#end
+  
+#if( $profile.Url )
+  <CHARACTERISTIC TYPE="URL" VALUE="$!{profile.Url}"/>
+#end
+  
+#if( $profile.Mmsurl )
+  <CHARACTERISTIC TYPE="MMSURL" VALUE="$!{profile.Mmsurl}"/>
+#end
+
+#if( $profile.Name )
+  <CHARACTERISTIC TYPE="NAME">
+    <PARM NAME="NAME" VALUE="$!{profile.Name}"/>
+  </CHARACTERISTIC>
+#end
+  
+#foreach ( $Bookmark in $profile.Bookmarks ) 
+  <CHARACTERISTIC TYPE="BOOKMARK">
+    <PARM NAME="NAME" VALUE="$!{Bookmark.Name}"/>
+    <PARM NAME="URL" VALUE="$!{Bookmark.Url}"/>
+  </CHARACTERISTIC>
+#end
+  
+#if( $profile.Id )
+  <CHARACTERISTIC TYPE="ID">
+    <PARM NAME="NAME" VALUE="$!{profile.Id}"/>
+  </CHARACTERISTIC>
+#end
+  
+</CHARACTERISTIC-LIST>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>NOKIA</Name>
+      <ExternalID>NOKIA</ExternalID>
+      <Description>Nokia</Description>
+      <Models filename="./models/nokia/models.s40.1st.xml"/>
+      <Models filename="./models/nokia/models.s40.2nd.xml"/>
+      <Models filename="./models/nokia/models.s40.3rd.xml"/>
+      <Models filename="./models/nokia/models.s40.5th.xml"/>
+      <Models filename="./models/nokia/models.s60.2nd.xml"/>
+      <Models filename="./models/nokia/models.s60.2nd.fp1.xml"/>
+      <Models filename="./models/nokia/models.s60.2nd.fp2.xml"/>
+      <Models filename="./models/nokia/models.s60.2nd.fp3.xml"/>
+      <Models filename="./models/nokia/models.s60.3rd.xml"/>
+      <Models filename="./models/nokia/models.s60.3rd.fp1.xml"/>
+      <Models filename="./models/nokia/models.s60.3rd.fp2.xml"/>
+      <Models filename="./models/nokia/models.s80.2nd.xml"/>
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

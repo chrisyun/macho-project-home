@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: Nokia S40 1st Edition Families -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Nokia S40 1st Edition                                    -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s40_1st</ExternalID>
+    <Name>Nokia S40 1st Edition</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.1st.omacp.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Nokia OS"/>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Nokia S40 2nd Edition                                    -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s40_2nd</ExternalID>
+    <Name>Nokia S40 2nd Edition</Name>
+    <Description></Description>
+    
+    <!-- OMA DM stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+    </ProfileMappings>
+
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.2nd.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Nokia OS"/>
+      <Specification category="general" name="developer.platform" value="Series 40 2nd Edition"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Series 40 3rd Edition                                    -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s40_3rd</ExternalID>
+    <Name>Nokia S40 3rd Edition</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.3rd.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Nokia OS"/>
+      <Specification category="general" name="developer.platform" value="Series 40 3rd Edition"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Series 40 5th Edition                                    -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s40_5th</ExternalID>
+    <Name>Nokia S40 5th Edition</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.2</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s40.5th.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Nokia OS"/>
+      <Specification category="general" name="developer.platform" value="Series 40 5th Edition"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: S80 2nd Edition                                          -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s80_2nd</ExternalID>
+    <Name>S80 2nd Edition</Name>
+    <Description></Description>
+    
+    <!-- OMA DM stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1.2</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs/>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s80.2nd.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value="Series 80 2nd Edition"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: S60 2nd Edition                                          -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s60_2nd</ExternalID>
+    <Name>S60 2nd Edition</Name>
+    <Description></Description>
+    
+    <!-- OMA DM stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF stage -->
+    <DDFs>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+    </ProfileMappings>
+
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s60.2nd.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value="Series 60 Developer Platform 2.0"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: S60 2nd Edition, Feature Pack 1                          -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s60_2nd_fp1</ExternalID>
+    <Name>S60 2nd Edition, Feature Pack 1</Name>
+    <Description></Description>
+    
+    <!-- OMA DM stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+
+    <!-- OMA CP stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+
+    <!-- Nokia OTA stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+
+    <!-- DDF stage -->
+    <DDFs>
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_Series_60_AP_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_MMS_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_EMAIL_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_DM_DS_DDF.xml" />
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.NAP.s60.2nd.fp2.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.Other.s60.2nd.fp2.xml"/>
+    </ProfileMappings>
+
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s60.2nd.fp1.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value="S60 2nd Edition, Feature Pack 1"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: S60 2nd Edition, Feature Pack 2                          -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s60_2nd_fp2</ExternalID>
+    <Name>S60 2nd Edition, Feature Pack 2</Name>
+    <Description></Description>
+    
+    <!-- OMA DM stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_Series_60_AP_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_MMS_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_EMAIL_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_DM_DS_DDF.xml" />
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.NAP.s60.2nd.fp2.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.Other.s60.2nd.fp2.xml"/>
+    </ProfileMappings>
+
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s60.2nd.fp2.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v8.0a"/>
+      <Specification category="general" name="developer.platform" value="S60 2nd Edition, Feature Pack 2"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: S60 2nd Edition, Feature Pack 3                          -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s60_2nd_fp3</ExternalID>
+    <Name>S60 2nd Edition, Feature Pack 3</Name>
+    <Description></Description>
+    
+    <!-- OMA DM stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA stage -->
+    <IsNokiaOtaEnabled>true</IsNokiaOtaEnabled>
+    <NokiaOtaVersion>7.0</NokiaOtaVersion>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_Series_60_AP_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_MMS_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_EMAIL_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.2nd/Nokia_DM_DS_DDF.xml" />
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.NAP.s60.2nd.fp2.xml"/>
+      <ProfileMapping filename="models/nokia/mappings.Other.s60.2nd.fp2.xml"/>
+    </ProfileMappings>
+
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s60.2nd.fp3.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v8.1a"/>
+      <Specification category="general" name="developer.platform" value="S60 2nd Edition, Feature Pack 3"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: S60 3nd Edition                                          -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s60_3rd</ExternalID>
+    <Name>S60 3rd Edition</Name>
+    <Description></Description>
+    
+    <!-- OMA DM stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1.2</OmaDmVersion>
+    
+    <!-- OMA CP stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- OMA FOTA stage -->    
+    <SupportedDownloadMethods>true</SupportedDownloadMethods>
+    <FirmwareVersionNode>./DevDetail/SwV</FirmwareVersionNode>
+    <FirmwareUpdateNode>./FUMO/OTASDL/Update</FirmwareUpdateNode>
+    <FirmwareDownloadNode>./FUMO/OTASDL/Download</FirmwareDownloadNode>
+    <FirmwareDownloadAndUpdateNode>./FUMO/OTASDL/DownloadAndUpdate</FirmwareDownloadAndUpdateNode>
+    <FirmwareStatusNode>./FUMO/OTASDL/State</FirmwareStatusNode>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <DDF filename="ddf/nokia/s60.3rd/N80_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.3rd/Email_DDF_1_1.xml" />
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.NAP.s60.2nd.fp2.xml" />
+      <ProfileMapping filename="models/nokia/mappings.Other.s60.2nd.fp2.xml"/>
+    </ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s60.3rd.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.1"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: S60 3nd FP1 Edition                                      -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s60_3rd_fp1</ExternalID>
+    <Name>S60 3rd fp1 Edition</Name>
+    <Description></Description>
+    
+    <!-- OMA DM stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1.2</OmaDmVersion>
+    
+    <!-- OMA CP stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- OMA FOTA stage -->    
+    <SupportedDownloadMethods>true</SupportedDownloadMethods>
+    <FirmwareVersionNode>./DevDetail/SwV</FirmwareVersionNode>
+    <FirmwareUpdateNode>./FUMO/OTASDL/Update</FirmwareUpdateNode>
+    <FirmwareDownloadNode>./FUMO/OTASDL/Download</FirmwareDownloadNode>
+    <FirmwareDownloadAndUpdateNode>./FUMO/OTASDL/DownloadAndUpdate</FirmwareDownloadAndUpdateNode>
+    <FirmwareStatusNode>./FUMO/OTASDL/State</FirmwareStatusNode>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!-- AP, MMS, SyncML, FUMO -->
+      <DDF filename="ddf/nokia/s60.3rd/N80_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.3rd/Email_DDF_1_1.xml" />
+      <!--  Application Management -->
+      <DDF filename="ddf/nokia/s60.3rd/AM_DDF.xml" />
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.NAP.s60.2nd.fp2.xml" />
+      <ProfileMapping filename="models/nokia/mappings.Other.s60.2nd.fp2.xml"/>
+    </ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s60.3rd.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.2"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition, Feature Pack 1"/>
+    </Specifications>
+  </Family>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: S60 3nd FP2 Edition                                      -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_nokia_s60_3rd_fp2</ExternalID>
+    <Name>S60 3rd fp2 Edition</Name>
+    <Description></Description>
+    
+    <!-- OMA DM stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.2</OmaDmVersion>
+    
+    <!-- OMA CP stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- OMA FOTA stage -->    
+    <SupportedDownloadMethods>true</SupportedDownloadMethods>
+    <FirmwareVersionNode>./DevDetail/SwV</FirmwareVersionNode>
+    <FirmwareUpdateNode>./FUMO/OTASDL/Update</FirmwareUpdateNode>
+    <FirmwareDownloadNode>./FUMO/OTASDL/Download</FirmwareDownloadNode>
+    <FirmwareDownloadAndUpdateNode>./FUMO/OTASDL/DownloadAndUpdate</FirmwareDownloadAndUpdateNode>
+    <FirmwareStatusNode>./FUMO/OTASDL/State</FirmwareStatusNode>
+    
+    <!-- DDF stage -->
+    <DDFs>
+      <!-- AP, MMS, SyncML, FUMO -->
+      <DDF filename="ddf/nokia/s60.3rd/N80_DDF.xml" />
+      <DDF filename="ddf/nokia/s60.3rd/Email_DDF_1_1.xml" />
+      <!--  Application Management -->
+      <DDF filename="ddf/nokia/s60.3rd/AM_DDF.xml" />
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/nokia/mappings.NAP.s60.2nd.fp2.xml" />
+      <ProfileMapping filename="models/nokia/mappings.Other.s60.2nd.fp2.xml"/>
+    </ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/nokia/ota.templates.s60.3rd.xml" />
+
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v9.3"/>
+      <Specification category="general" name="developer.platform" value="S60 3rd Edition, Feature Pack 2"/>
+    </Specifications>
+  </Family>
+</Models>
+</Setup>

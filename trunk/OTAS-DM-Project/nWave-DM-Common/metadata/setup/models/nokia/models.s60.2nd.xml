@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: S60 2nd Edition -->
+<Models>
+
+  <!--  Model: 6600 -->
+  <Model family="family_nokia_s60_2nd">
+    <Name>6600</Name>
+    <ExternalID>6600</ExternalID>
+    <Description>S60 2nd Edition</Description>
+    <IconFile>./models/nokia/icons/nokia_6600.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003-06-16"/>
+    </Specifications>
+  </Model>
+</Models>
+</Setup>

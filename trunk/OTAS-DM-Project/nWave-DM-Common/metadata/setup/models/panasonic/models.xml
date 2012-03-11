@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: X700 -->
+  <Model family="family_nokia_s60_2nd_fp1">
+    <Name>X700</Name>
+    <ExternalID>X700</ExternalID>
+    <Description>Symbian OS 7.0s, Series 60 v2.0 UI</Description>
+    <IconFile>./models/panasonic/icons/x700.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: X701 -->
+  <Model family="family_nokia_s60_2nd_fp1">
+    <Name>X701</Name>
+    <ExternalID>X701</ExternalID>
+    <Description>Panasonic X700 for Vodafone</Description>
+    <IconFile>./models/panasonic/icons/x701.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: X800 -->
+  <Model family="family_nokia_s60_2nd_fp1">
+    <Name>X800</Name>
+    <ExternalID>X800</ExternalID>
+    <Description>Symbian OS 7.0s, Series 60 v2.0 UI</Description>
+    <IconFile>./models/panasonic/icons/panasonic_x800.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+  
+</Models>

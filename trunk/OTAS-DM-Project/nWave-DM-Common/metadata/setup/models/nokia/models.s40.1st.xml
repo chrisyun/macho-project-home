@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: S40 1st Edition -->
+<Models>
+
+  <!--  Model: 2650 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>2650</Name>
+    <ExternalID>2650</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/2650.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="14-Jun-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3100 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3100</Name>
+    <ExternalID>3100</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3100.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="16-Jun-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3108 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3108</Name>
+    <ExternalID>3108</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3108.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="11-Nov-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3120 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3120</Name>
+    <ExternalID>3120</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3120.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="13-Apr-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3200 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3200</Name>
+    <ExternalID>3200</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3200.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="12-Sep-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3300 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3300</Name>
+    <ExternalID>3300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3300.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="11-Mar-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3510i -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3510i</Name>
+    <ExternalID>3510i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3510i.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="06-Sep-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3530 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3530</Name>
+    <ExternalID>3530</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3530.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="06-Sep-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3595 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3595</Name>
+    <ExternalID>3595</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3595.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="11-Feb-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3600 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3600</Name>
+    <ExternalID>3600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3600.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 60 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="17-Mar-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3620 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3620</Name>
+    <ExternalID>3620</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3620.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 60 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="09-Oct-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3650 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3650</Name>
+    <ExternalID>3650</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3650.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 60 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="06-Sep-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3660 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3660</Name>
+    <ExternalID>3660</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3660.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 60 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="09-Oct-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5100 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>5100</Name>
+    <ExternalID>5100</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/5100.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="04-Nov-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6010 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6010</Name>
+    <ExternalID>6010</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6010.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="11-Nov-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6100 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6100</Name>
+    <ExternalID>6100</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6100.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="06-Nov-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6200 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6200</Name>
+    <ExternalID>6200</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6200.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="18-Nov-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6610 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6610</Name>
+    <ExternalID>6610</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6610.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="16-Jun-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6610i -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6610i</Name>
+    <ExternalID>6610i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6610i.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="19-Apr-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6650 -->
+  <!-- Recommended: Same with Nokia 6650 S60 3rd fp2 mobile phone.
+  <Model family="family_nokia_s40_1st">
+    <Name>6650</Name>
+    <ExternalID>6650</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6650.jpg</IconFile>
+    
+    <TACs>
+    </TACs>
+    
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="26-Sep-02"/>
+    </Specifications>
+  </Model>
+  -->
+  
+  <!--  Model: 6651 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6651</Name>
+    <ExternalID>6651</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6651.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="20-Jun-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6800 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6800</Name>
+    <ExternalID>6800</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6800.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="04-Nov-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6810 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6810</Name>
+    <ExternalID>6810</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6810.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="27-Oct-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6820 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6820</Name>
+    <ExternalID>6820</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6820.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="27-Oct-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7200 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>7200</Name>
+    <ExternalID>7200</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7200.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="27-Oct-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7210 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>7210</Name>
+    <ExternalID>7210</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7210.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="12-Mar-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7250 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>7250</Name>
+    <ExternalID>7250</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7250.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="04-Nov-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7250i -->
+  <Model family="family_nokia_s40_1st">
+    <Name>7250i</Name>
+    <ExternalID>7250i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7250i.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="25-Mar-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7600 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>7600</Name>
+    <ExternalID>7600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7600.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="25-Sep-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7650 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>7650</Name>
+    <ExternalID>7650</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7650.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 60 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="19-Nov-01"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8910i -->
+  <Model family="family_nokia_s40_1st">
+    <Name>8910i</Name>
+    <ExternalID>8910i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/8910i.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 1.0"/>
+      <Specification category="general" name="announced" value="04-Nov-02"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 3220 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>3220</Name>
+    <ExternalID>3220</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/3220.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 2.0"/>
+      <Specification category="general" name="announced" value="31-May-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 5140 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>5140</Name>
+    <ExternalID>5140</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/5140.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 2.0"/>
+      <Specification category="general" name="announced" value="12-Nov-03"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6020 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6020</Name>
+    <ExternalID>6020</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6020.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 2.0"/>
+      <Specification category="general" name="announced" value="02-Nov-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6060 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6060</Name>
+    <ExternalID>6060</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6060.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 2.0"/>
+      <Specification category="general" name="announced" value="14-Jun-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6170 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6170</Name>
+    <ExternalID>6170</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6170.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 2.0"/>
+      <Specification category="general" name="announced" value="14-Jun-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6230i -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6230i</Name>
+    <ExternalID>6230i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6230i.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 2.0"/>
+      <Specification category="general" name="announced" value="01-Mar-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 6822 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>6822</Name>
+    <ExternalID>6822</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/6822.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 2.0"/>
+      <Specification category="general" name="announced" value="05-Jan-05"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7260 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>7260</Name>
+    <ExternalID>7260</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7260.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 2.0"/>
+      <Specification category="general" name="announced" value="10-Sep-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 7270 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>7270</Name>
+    <ExternalID>7270</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/7270.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 2.0"/>
+      <Specification category="general" name="announced" value="10-Sep-04"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: 8800 -->
+  <Model family="family_nokia_s40_1st">
+    <Name>8800</Name>
+    <ExternalID>8800</ExternalID>
+    <Description></Description>
+    <IconFile>./models/nokia/icons/8800.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="developer.platform" value="Series 40 Developer Platform 2.0"/>
+      <Specification category="general" name="announced" value="07-Apr-05"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

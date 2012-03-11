@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>OMA_CP</Name>
+      <ExternalID>OMA_CP</ExternalID>
+      <Description>OMA_CP Enabled Mobile Platform Families</Description>
+      <Models filename="./models/omacp/models.families.xml"/>
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

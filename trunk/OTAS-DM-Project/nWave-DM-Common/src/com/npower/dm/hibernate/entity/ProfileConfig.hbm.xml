@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ProfileConfig.hbm.xml,v 1.8 2008/01/12 02:47:45 zhao Exp $
+  * $Revision: 1.8 $
+  * $Date: 2008/01/12 02:47:45 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ProfileConfigEntity" table="NW_DM_CONFIG_PROFILE">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="PROFILE_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <!-- If this profile need NAP, this field will reference to a NAP Profile     -->
+        <many-to-one name="NAPProfileConfig" class="com.npower.dm.hibernate.entity.ProfileConfigEntity" fetch="select">
+            <column name="NAP_ID" precision="16" scale="0" />
+        </many-to-one>
+        <!--  If this profile need Proxy, this field will reference to a Proxy Profile  -->
+        <many-to-one name="proxyProfileConfig" class="com.npower.dm.hibernate.entity.ProfileConfigEntity" fetch="select">
+            <column name="PROXY_ID" precision="16" scale="0" />
+        </many-to-one>
+        <!-- Reference to a ProfileTemplate for this Profile  -->
+        <many-to-one name="profileTemplate" class="com.npower.dm.hibernate.entity.ProfileTemplateEntity" fetch="select">
+            <column name="TEMPLATE_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <!-- The owner of the ProfileConfig    -->
+        <many-to-one name="carrier" class="com.npower.dm.hibernate.entity.CarrierEntity" fetch="select">
+            <column name="CARRIER_ID" precision="16" scale="0" />
+        </many-to-one>
+        <property name="profileType" type="string">
+            <column name="PROFILE_TYPE" not-null="true" />
+        </property>
+        <!-- External ID of the Profile  -->
+        <property name="externalID" type="string">
+            <column name="EXTERNAL_ID" not-null="true" />
+        </property>
+        <!-- Name of the Profile  -->
+        <property name="name" type="string">
+            <column name="NAME" not-null="true" />
+        </property>
+        <property name="isUserProfile" type="boolean">
+            <column name="IS_USER_PROFILE" precision="1" scale="0" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" not-null="false" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+        <!--  Set of Assignments  -->
+        <set name="profileAssignments" inverse="true">
+            <key>
+                <column name="PROFILE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileAssignmentEntity" />
+        </set>
+        <!-- Profile values for the Template Attributes  -->
+        <set name="profileValueMaps" inverse="true" order-by="VALUE_INDEX asc">
+            <key>
+                <column name="PROFILE_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileValueMap" />
+        </set>
+        <!--  If the current Profile is a NAP, this field will reference these Profile which use the current NAP Profile. -->
+        <set name="profileConfigsReferencedAsNAP" inverse="true">
+            <key>
+                <column name="NAP_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileConfigEntity" />
+        </set>
+        <!-- If the current Profile is a Proxy, this field will reference these Profile which use the current Proxy Profile. -->
+        <set name="profileConfigsReferencedAsProxy" inverse="true">
+            <key>
+                <column name="PROXY_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileConfigEntity" />
+        </set>
+        <!-- If the ProfileConfig is type of NAP, this field will reference all of these carriers which use this Profile -->
+        <set name="carriers" inverse="true">
+            <key>
+                <column name="NAP_FOR_BOOTSTRAP_ID" precision="16" scale="0" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.CarrierEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

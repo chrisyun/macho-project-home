@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Manufacturers>
+	<Manufacturer>
+		<Name>NOKIA</Name>
+		<ExternalID>NOKIA</ExternalID>
+		<Model>
+			<Name>3230</Name>
+			<ExternalID>3230</ExternalID>
+			<TACs>
+				<TAC>11111100</TAC>
+				<TAC>22222200</TAC>
+				<TAC>33333300</TAC>
+			</TACs>
+		</Model>
+		<Model>
+			<Name>6670</Name>
+			<ExternalID>6670</ExternalID>
+			<TACs>
+				<TAC>44444400</TAC>
+				<TAC>55555500</TAC>
+			</TACs>
+		</Model>
+		<Model>
+			<Name>6260</Name>
+			<ExternalID>6260</ExternalID>
+			<TACs>
+				<TAC>66666600</TAC>
+			</TACs>
+		</Model>
+		<Model>
+			<Name>7610</Name>
+			<ExternalID>7610</ExternalID>
+			<TACs>
+				<TAC>77777700</TAC>
+				<TAC>88888800</TAC>
+				<TAC>99999900</TAC>
+				<TAC>00000000</TAC>
+			</TACs>
+		</Model>
+	</Manufacturer>
+
+
+	<Manufacturer>
+		<Name>Motorola</Name>
+		<ExternalID>Motorola</ExternalID>
+		<Model>
+			<Name>V270</Name>
+			<ExternalID>V270</ExternalID>
+			<TACs>
+				<TAC>11122200</TAC>
+				<TAC>11133300</TAC>
+			</TACs>
+		</Model>
+		<Model>
+			<Name>V280</Name>
+			<ExternalID>V280</ExternalID>
+			<TACs>
+				<TAC>11144400</TAC>
+			</TACs>
+		</Model>
+	</Manufacturer>
+
+
+	<Manufacturer>
+		<Name>SonyEricsson</Name>
+		<ExternalID>SonyEricsson</ExternalID>
+		<Model>
+			<Name>P910a</Name>
+			<ExternalID>P910a</ExternalID>
+			<TACs>
+				<TAC>00011100</TAC>
+			</TACs>
+		</Model>
+		<Model>
+			<Name>P900</Name>
+			<ExternalID>P900</ExternalID>
+			<TACs>
+				<TAC>00033300</TAC>
+			</TACs>
+		</Model>
+	</Manufacturer>
+
+
+</Manufacturers>
+

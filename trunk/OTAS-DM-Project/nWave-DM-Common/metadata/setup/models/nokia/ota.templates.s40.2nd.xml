@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/models/nokia/ota.templates.s40.2nd.xml,v 1.2 2007/12/17 05:17:56 zhao Exp $
+  * $Revision: 1.2 $
+  * $Date: 2007/12/17 05:17:56 $
+-->
+<ProfileMetaData>
+    <!-- 
+       Test with Nokia 2610, The terminal support: AP, Proxy, MMS and Email.
+       
+     -->
+    <CPTemplates>
+        <CPTemplate>
+          <ID>NAP</ID>
+          <Name>NAP</Name>
+          <Category>NAP</Category>
+          <Description>NAP template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/nokia/omacp.template.default.def.vm"/>
+        </CPTemplate>
+        <CPTemplate>
+          <ID>Proxy</ID>
+          <Name>Proxy</Name>
+          <Category>Proxy</Category>
+          <Description>Proxy template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/nokia/omacp.template.default.def.vm"/>
+        </CPTemplate>
+        <CPTemplate>
+          <ID>MMS</ID>
+          <Name>MMS</Name>
+          <Category>MMS</Category>
+          <Description>MMS template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/nokia/omacp.template.default.def.vm"/>
+        </CPTemplate>
+        <CPTemplate>
+          <ID>Email</ID>
+          <Name>Email</Name>
+          <Category>Email</Category>
+          <Description>Email template for Default phone</Description>
+          <Encoder>omacp</Encoder>
+          <Content filename="./models/nokia/omacp.template.default.def.vm"/>
+        </CPTemplate>
+    </CPTemplates>
+
+</ProfileMetaData>

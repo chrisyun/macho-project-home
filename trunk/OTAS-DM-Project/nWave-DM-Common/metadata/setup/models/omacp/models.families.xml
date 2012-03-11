@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Family: Default -->
+<Models>
+  <!--  ********************************************************************** -->
+  <!--  Model Family: OMA CP Enabler                                           -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_oma_cp_1_1_default</ExternalID>
+    <Name>OMA CP 1.1 Family</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/omacp/ota.templates.ap.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.proxy.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.mms.xml"/>
+    <!-- 
+    <CPTemplates filename="./models/omacp/ota.templates.syncml.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.dm.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.email.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.poc.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.imps.xml"/>
+     -->
+
+  </Family>
+
+</Models>

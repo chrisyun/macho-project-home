@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Samsung</Name>
+<ExternalID>Samsung</ExternalID>
+<Description>Samsung</Description>
+<Models filename="./models/samsung/models.additional.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

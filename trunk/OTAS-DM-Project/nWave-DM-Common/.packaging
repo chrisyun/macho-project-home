@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+<archive name="nwavecommon.jar" destination="" used="true" exploded="false">
+<folder prefix="" includes="**/*.class" excludes="" project="" projectLocation="classes" name="classes" location="classes" used="true"/>
+<file prefix="META-INF" project="" projectLocation="/src/META-INF/MANIFEST.MF" name="MANIFEST.MF" location="src/META-INF/MANIFEST.MF" used="false"/>
+<folder prefix="" includes="**/*.*" excludes="**/*.java" project="" projectLocation="src" name="src" location="src" used="true"/>
+<folder prefix="" includes="**/*.*" excludes="" project="" projectLocation="config" name="config" location="config" used="true"/>
+</archive>
+</configurations>

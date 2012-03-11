@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+ <!--  Carriers: Sudan -->
+ <Carriers>
+
+  <!--  Carrier: Sudan Telcom -->
+  <Carrier>
+    <Name>Sudan Tel</Name>
+    <ExternalID>SudanTel</ExternalID>
+    <Country>SD</Country>
+    <PhoneNumberPolicy>00249,002491[0-9]</PhoneNumberPolicy>
+    <SMSCProperties>
+com.npower.sms.sender.class=com.npower.sms.client.jms.JmsSmsSender
+com.npower.sms.sender.queue.outgoing.name=OTAS_SMS_SENDER_INQUEUE_SUDAN
+</SMSCProperties>
+    <AuthType>syncml:auth-basic</AuthType>
+    <NotificationType>wapPush</NotificationType>
+    <NotificationTimeout>3600</NotificationTimeout>
+    <NotificationMaxRetries>3</NotificationMaxRetries>
+    <!-- Ext ID of NAP Profile -->
+    <BootstrapNapProfile>SudanWap</BootstrapNapProfile>
+    <!-- Ext ID of DM Profile -->
+    <BootstrapDmProfile>Sudan.Tel.DM.OTAS.DM.Service</BootstrapDmProfile>
+    <BootstrapTimeout>3600</BootstrapTimeout>
+    <BootstrapMaxRetries>3</BootstrapMaxRetries>
+    <DefaultBootstrapPinType>USERPIN</DefaultBootstrapPinType>
+    <DefaultBootstrapUserPin>1234</DefaultBootstrapUserPin>    
+  </Carrier>
+ </Carriers>
+</Setup>

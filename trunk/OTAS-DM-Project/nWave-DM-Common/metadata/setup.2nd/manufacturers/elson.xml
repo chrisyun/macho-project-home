@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Elson</Name>
+<ExternalID>Elson</ExternalID>
+<Description>Elson</Description>
+<Models filename="./models/elson/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

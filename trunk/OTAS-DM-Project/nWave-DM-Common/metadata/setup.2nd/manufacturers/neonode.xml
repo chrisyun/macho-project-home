@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Neonode</Name>
+<ExternalID>Neonode</ExternalID>
+<Description>Neonode</Description>
+<Models filename="./models/neonode/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

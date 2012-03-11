@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/models/sonyericsson/mappings.dm.client.v3.0.xml,v 1.3 2008/12/01 11:29:04 zhao Exp $
+  * $Revision: 1.3 $
+  * $Date: 2008/12/01 11:29:04 $
+-->
+<ProfileMetaData>
+
+    <ProfileMappings>
+    
+        <!-- Default NAP Template Mapping      -->
+        <ProfileMapping>
+            <!-- ModelName>K810c</ModelName -->
+            <!-- ManufacturerExternalId>SonyEricsson</ManufacturerExternalId -->
+            <TemplateName>NAP Default Template</TemplateName>
+            <RootNodePath>./AP/NAP_PSD/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>NAME</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>NAP-ADDRESS</AttributeName>
+                    <NodeRelativePath>APN</NodeRelativePath>
+                </AttributeMapping>
+                <!--
+                <AttributeMapping>
+                    <AttributeName>AUTHNAME</AttributeName>
+                    <NodeRelativePath>AuthName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>AUTHSECRET</AttributeName>
+                    <NodeRelativePath>AuthSecret</NodeRelativePath>
+                </AttributeMapping>
+                -->
+                <ValueMapping>
+                    <Value>PAP</Value>
+                    <NodeRelativePath>AuthType</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Value>false</Value>
+                    <NodeRelativePath>AuthPrompt</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Value>false</Value>
+                    <NodeRelativePath>DataCompression</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Value>false</Value>
+                    <NodeRelativePath>HeaderCompression</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Value>false</Value>
+                    <NodeRelativePath>Locked</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Value>Automatic</Value>
+                    <NodeRelativePath>ServiceMode</NodeRelativePath>
+                </ValueMapping>
+                <!--
+                <AttributeMapping>
+                    <AttributeName>DNS-ADDR</AttributeName>
+                    <NodeRelativePath>DNS</NodeRelativePath>
+                </AttributeMapping>
+                -->
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Standard PROXY Template Mapping -->
+        <ProfileMapping>
+            <!-- ModelName>K810c</ModelName -->
+            <!-- ManufacturerExternalId>SonyEricsson</ManufacturerExternalId -->
+            <TemplateName>Proxy Default Template</TemplateName>
+            <RootNodePath>./AP/Proxy/ProxyAcc/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>NAME</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>PXPHYSICAL PORTNBR</AttributeName>
+                    <NodeRelativePath>PortNbr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>PXADDR</AttributeName>
+                    <NodeRelativePath>PxAddr</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Value>true</Value>
+                    <NodeRelativePath>UseProxy</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>STARTPAGE</AttributeName>
+                    <NodeRelativePath>HomePage/URL</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>NAME</AttributeName>
+                    <NodeRelativePath>HomePage/Title</NodeRelativePath>
+                </AttributeMapping>
+                <!--
+                <AttributeMapping>
+                    <AttributeName>PXAUTH-ID</AttributeName>
+                    <NodeRelativePath>PxAuthInfo/PxAuthId</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>PXAUTH-PW</AttributeName>
+                    <NodeRelativePath>PxAuthInfo/PxAuthPW</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>PXAUTH-TYPE</AttributeName>
+                    <NodeRelativePath>PxAuthInfo/PxAuthType</NodeRelativePath>
+                </AttributeMapping>
+                -->
+                <AttributeMapping>
+                    <AttributeName>TO-NAPID</AttributeName>
+                    <NodeRelativePath>NAPRef/PrefNAPRef</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Default MMS Template Mapping      -->
+        <ProfileMapping>
+            <!-- ModelName>K810c</ModelName -->
+            <!-- ManufacturerExternalId>SonyEricsson</ManufacturerExternalId -->
+            <TemplateName>MMS Default Template</TemplateName>
+            <RootNodePath>./Com.SonyEricsson/Settings/MMS/MMSProfile/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>MMSC Server</AttributeName>
+                    <NodeRelativePath>MMSC</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>APLink</AttributeName>
+                    <NodeRelativePath>ProxyRef</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>SelfLink</AttributeName>
+                    <NodeAbsolutePath>/Com.SonyEricsson/Settings/MMS/ActiveProfileRef</NodeAbsolutePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Default Email Template Mapping      -->
+        <ProfileMapping>
+            <!-- ModelName>K810c</ModelName -->
+            <!-- ManufacturerExternalId>SonyEricsson</ManufacturerExternalId -->
+            <TemplateName>Email Default Template</TemplateName>
+            <RootNodePath>./Com.SonyEricsson/Settings/Email/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Value>true</Value>
+                    <NodeRelativePath>Active</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>APLink</AttributeName>
+                    <NodeRelativePath>NAPRef</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Username</AttributeName>
+                    <NodeRelativePath>RecAccount/Mailbox</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Password</AttributeName>
+                    <NodeRelativePath>RecAccount/Password</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Receiving Server Port</AttributeName>
+                    <NodeRelativePath>RecAccount/PortNbr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Receiving Server Address</AttributeName>
+                    <NodeRelativePath>RecAccount/Server</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Mailbox Protocol</AttributeName>
+                    <!-- Need translate: POP -> pop3 -->
+                    <NodeRelativePath>RecAccount/ServerProtocol</NodeRelativePath>
+                    <ValueTranslations>
+	                    <ValueTranslation>
+	                    	<Value>POP</Value>
+	                    	<DeviceValue>pop3</DeviceValue>
+    	                </ValueTranslation>
+	                    <ValueTranslation>
+	                    	<Value>IMAP</Value>
+	                    	<DeviceValue>imap4</DeviceValue>
+    	                </ValueTranslation>
+    	              </ValueTranslations>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Use SSL Receiving Service</AttributeName>
+                    <NodeRelativePath>RecAccount/EnableTLS</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Value>0</Value>
+                    <NodeRelativePath>RecAccount/CheckMailsInterval</NodeRelativePath>
+                </ValueMapping>
+                <ValueMapping>
+                    <Value>headers</Value>
+                    <NodeRelativePath>RecAccount/AutomaticDownload</NodeRelativePath>
+                </ValueMapping>
+                <AttributeMapping>
+                    <AttributeName>Username</AttributeName>
+                    <NodeRelativePath>SMTPAccount/UserName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Password</AttributeName>
+                    <NodeRelativePath>SMTPAccount/Password</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Sending Server Address</AttributeName>
+                    <NodeRelativePath>SMTPAccount/Server</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Sending Server Port</AttributeName>
+                    <NodeRelativePath>SMTPAccount/PortNbr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Use SSL Sending Service</AttributeName>
+                    <NodeRelativePath>SMTPAccount/EnableTLS</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>SMTPAccount/Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Email Address</AttributeName>
+                    <NodeRelativePath>SMTPAccount/EmailAddr</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Default SyncDS Template Mapping      -->
+        <ProfileMapping>
+            <!-- ModelName>K810c</ModelName -->
+            <!-- ManufacturerExternalId>SonyEricsson</ManufacturerExternalId -->
+            <TemplateName>SyncDS Default Template</TemplateName>
+            <RootNodePath>./Com.SonyEricsson/Settings/Sync/DSAcc/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Display Name</AttributeName>
+                    <NodeRelativePath>Name</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Server Address</AttributeName>
+                    <NodeRelativePath>Addr</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Username</AttributeName>
+                    <NodeRelativePath>ClientName</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Password</AttributeName>
+                    <NodeRelativePath>ClientPW</NodeRelativePath>
+                </AttributeMapping>
+                
+                <!-- Contacts DB -->
+                <AttributeMapping>
+                    <AttributeName>Contacts DB</AttributeName>
+                    <NodeRelativePath>DB/PB/RDBURI</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Value>true</Value>
+                    <NodeRelativePath>DB/PB/Enabled</NodeRelativePath>
+                </ValueMapping>
+                
+                <!-- Calendar DB -->
+                <AttributeMapping>
+                    <AttributeName>Calendar DB</AttributeName>
+                    <NodeRelativePath>DB/Cal/RDBURI</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Value>true</Value>
+                    <NodeRelativePath>DB/Cal/Enabled</NodeRelativePath>
+                </ValueMapping>
+                
+                <!-- Notes DB -->
+                <AttributeMapping>
+                    <AttributeName>Notes DB</AttributeName>
+                    <NodeRelativePath>DB/Notes/RDBURI</NodeRelativePath>
+                </AttributeMapping>
+                <ValueMapping>
+                    <Value>true</Value>
+                    <NodeRelativePath>DB/Notes/Enabled</NodeRelativePath>
+                </ValueMapping>
+                
+                <AttributeMapping>
+                    <AttributeName>APLink</AttributeName>
+                    <NodeRelativePath>ProxyRef</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+        <!-- Default Bookmark Template Mapping      -->
+        <ProfileMapping>
+            <!-- ModelName>K810c</ModelName -->
+            <!-- ManufacturerExternalId>SonyEricsson</ManufacturerExternalId -->
+            <TemplateName>Bookmark Default Template</TemplateName>
+            <RootNodePath>./Com.SonyEricsson/Content/Browser/Bookmarks/${NodeName}</RootNodePath>
+            <ShareRootNode>false</ShareRootNode>
+            <NodeMappings>
+                <AttributeMapping>
+                    <AttributeName>Name</AttributeName>
+                    <NodeRelativePath>Title</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>URL</AttributeName>
+                    <NodeRelativePath>URL</NodeRelativePath>
+                </AttributeMapping>
+                <AttributeMapping>
+                    <AttributeName>Folder</AttributeName>
+                    <NodeRelativePath>Folder</NodeRelativePath>
+                </AttributeMapping>
+            </NodeMappings>
+            <CanAssignToDevice>true</CanAssignToDevice>
+        </ProfileMapping>
+
+    </ProfileMappings>
+
+</ProfileMetaData>

@@ -1,0 +1,162 @@
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/setup/profiles/profile.meta.install.xml,v 1.13 2008/12/12 10:33:35 zhao Exp $
+  * $Revision: 1.13 $
+  * $Date: 2008/12/12 10:33:35 $
+-->
+<ProfileMetaData>
+
+    <!-- Profile Categories ****************************************************** -->
+
+    <ProfileCategories>
+        <ProfileCategory>
+            <Name>NAP</Name>
+            <Description>Network Access Point Settings</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>Proxy</Name>
+            <Description>HTTP Proxy Settings</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>Bookmark</Name>
+            <Description>Browser Bookmark</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>Email</Name>
+            <Description>Email Account</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>MMS</Name>
+            <Description>Multimedia Messaging Service Settings</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>SyncDS</Name>
+            <Description>SyncDS Account Settings</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>DM</Name>
+            <Description>OMA DM Account Settings</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>PushMail</Name>
+            <Description>PushMail Settings</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>IMPS</Name>
+            <Description>Instant Messaging and Presence Service</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>POC</Name>
+            <Description>Push-To-Talk over Cellular</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>SIP</Name>
+            <Description>Session Initiation Protocol</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>Streaming</Name>
+            <Description>3GPP Streaming Application</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>MSM</Name>
+            <Description>Mobile Software Management</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>PolicyMgmt</Name>
+            <Description>Policy Management</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>TerminalSecurity</Name>
+            <Description>Terminal Security</Description>
+        </ProfileCategory>
+
+        <ProfileCategory>
+            <Name>LookAndFeel</Name>
+            <Description>Look and Feel</Description>
+        </ProfileCategory>
+    </ProfileCategories>
+    
+    <!-- Attribute Types ******************************************************* -->
+
+    <AttributeTypes>
+
+        <AttributeType>
+        	<Name>Bearer Link Speed</Name>
+        	<Description>Speed on the channel for CSD bearers</Description>
+        	<Values>
+        		<Value>2400</Value>
+        		<Value>4800</Value>
+            <Value>9600</Value>
+            <Value>14400</Value>
+        	</Values>
+        </AttributeType>
+
+        <AttributeType>
+        	<Name>Bearer Call Type</Name>
+        	<Description>Data exchange protool for CSD bearers</Description>
+        	<Values>
+        		<Value>ANALOG-MODEM</Value>
+        		<Value>ISDN V.110</Value>
+            	<Value>ISDN V.120</Value>
+        	</Values>
+        </AttributeType>
+
+
+        <AttributeType>
+        	<Name>Bearer Direction</Name>
+        	<Description>Direction for the network type</Description>
+        	<Values>
+        		<Value>Incoming</Value>
+        		<Value>Outgoing</Value>
+        	</Values>
+        </AttributeType>
+
+        <AttributeType>
+        	<Name>NAP Address Type</Name>
+        	<Description>Format of the NAP address</Description>
+        	<Values>
+        		<Value>IPV4</Value>
+        		<Value>IPV6</Value>
+                <Value>E164</Value>
+                <Value>APN</Value>
+        	</Values>
+        </AttributeType>
+
+        <AttributeType>
+        	<Name>Mailbox Protocol</Name>
+        	<Description>Mailbox protocol for Email</Description>
+        	<Values>
+        		<Value>POP</Value>
+        		<Value>IMAP</Value>
+        	</Values>
+        </AttributeType>
+
+        <AttributeType>
+        	<Name>Proxy Service Type</Name>
+        	<Description>Service used over Proxy</Description>
+        	<Values>
+        		<Value>Wap</Value>
+        		<Value>Wap Connectionless</Value>
+        		<Value>Wap Secure</Value>
+        		<Value>Wap Secure Connectionless</Value>
+        		<Value>Http</Value>
+        		<Value>Http Secure</Value>
+        	</Values>
+        </AttributeType>
+
+    </AttributeTypes>
+
+</ProfileMetaData>

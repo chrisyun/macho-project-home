@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Motorola Linux Platform -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Motorola Linux Platform                                  -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_motorola_linux_ezx_1st</ExternalID>
+    <Name>Motorola Linux EzX Platform 1st</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF/>
+    </DDFs>
+    
+    <!-- OMA DM Profile Mappings -->
+    <ProfileMappings/>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/motorola/ota.templates.linux.xml" />
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Linux EzX"/>
+      <Specification category="general" name="developer.platform" value="Linux EzX 1st"/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: A760 -->
+  <Model family="family_motorola_linux_ezx_1st">
+    <Name>A760</Name>
+    <ExternalID>A760</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a760.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2003"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: A728 -->
+  <Model family="family_motorola_linux_ezx_1st">
+    <Name>A728</Name>
+    <ExternalID>A728</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a728.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, July"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: A768 -->
+  <Model family="family_motorola_linux_ezx_1st">
+    <Name>A768</Name>
+    <ExternalID>A768</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/a768.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: A768i -->
+  <Model family="family_motorola_linux_ezx_1st">
+    <Name>A768i</Name>
+    <ExternalID>A768i</ExternalID>
+    <Description>Motorola A768 - the same, but dualband GSM 900/1800</Description>
+    <IconFile>./models/motorola/icons/a768.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

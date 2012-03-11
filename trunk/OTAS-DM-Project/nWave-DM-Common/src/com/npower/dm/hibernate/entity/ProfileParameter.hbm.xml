@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ProfileParameter.hbm.xml,v 1.4 2008/12/11 05:21:29 zhao Exp $
+  * $Revision: 1.4 $
+  * $Date: 2008/12/11 05:21:29 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ProfileParameterEntity" table="NW_DM_PROFILE_PARAMETER">
+        <id name="profileParameterId" type="long" unsaved-value="0">
+            <column name="PROFILE_PARAMETER_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <many-to-one name="profileAssignment" class="com.npower.dm.hibernate.entity.ProfileAssignmentEntity" fetch="select">
+            <column name="PROFILE_ASSIGNMENT_ID" precision="16" scale="0" />
+        </many-to-one>
+        <many-to-one name="ddfNode" class="com.npower.dm.hibernate.entity.DDFNodeEntity" fetch="select">
+            <column name="LEAF_DDF_NODE_ID" precision="16" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="profileAttribute" class="com.npower.dm.hibernate.entity.ProfileAttributeEntity" fetch="select">
+            <column name="ATTRIBUTE_ID" precision="16" scale="0" />
+        </many-to-one>
+        <property name="parameterType" type="string">
+            <column name="PARAMETER_TYPE" length="10" not-null="true" />
+        </property>
+        <property name="dmTreePath" type="string">
+            <column name="DM_TREE_PATH" not-null="true" />
+        </property>
+        <property name="paramIndex" type="long">
+            <column name="PARAM_INDEX" precision="16" scale="0" />
+        </property>
+        <property name="itemDataKind" type="string">
+            <column name="ITEM_DATA_KIND" length="20" />
+        </property>
+        <property name="updateId" type="string">
+            <column name="UPDATE_ID" />
+        </property>
+        <property name="rawData" type="clob">
+            <column name="RAW_DATA" />
+        </property>
+        <property name="binaryData" type="blob">
+            <column name="BINARY_DATA" />
+        </property>
+        <property name="MFormat" type="string">
+            <column name="M_FORMAT" />
+        </property>
+        <property name="MType" type="string">
+            <column name="M_TYPE" />
+        </property>
+        <property name="paramName" type="string">
+            <column name="PARAM_NAME" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

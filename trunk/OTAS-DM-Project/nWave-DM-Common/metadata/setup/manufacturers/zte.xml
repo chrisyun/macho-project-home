@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+ <Manufacturers>
+
+  <Manufacturer>
+   <Name>ZTE</Name>
+   <ExternalID>ZTE</ExternalID>
+   <Description>ZTE</Description>
+   <Models filename="./models/zte/models.additional.xml" />
+  </Manufacturer>
+
+ </Manufacturers>
+</Setup>

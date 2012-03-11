@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Toplux</Name>
+<ExternalID>Toplux</ExternalID>
+<Description>Toplux</Description>
+<Models filename="./models/toplux/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

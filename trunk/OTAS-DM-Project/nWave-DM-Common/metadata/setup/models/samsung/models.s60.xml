@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Models: Default -->
+<Models>
+
+  <!--  Model: SGH-i520 -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>SGH-i520</Name>
+    <ExternalID>i520</ExternalID>
+    <Description>Symbian OS v9.2, User Interface: S60 3rd Edition Feature Pack 1</Description>
+    <IconFile>./models/samsung/icons/samsung_sgh_i520.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs></TACs>
+  
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: SGH-i550v -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>SGH-i550v</Name>
+    <ExternalID>i550v</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/i550.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SGH-i560v -->
+  <Model family="family_nokia_s60_3rd_fp1">
+    <Name>SGH-i560v</Name>
+    <ExternalID>i560v</ExternalID>
+    <Description></Description>
+    <IconFile>./models/samsung/icons/i560.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+</Models>

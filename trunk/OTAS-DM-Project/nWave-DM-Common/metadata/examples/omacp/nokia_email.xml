@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!DOCTYPE wap-provisioningdoc PUBLIC "-//WAPFORUM//DTD PROV 1.0//EN" "http://www.wapforum.org/DTD/prov.dtd">
+<wap-provisioningdoc version="1.0">
+ <characteristic type="PXLOGICAL">
+  <parm name="PROXY-ID" value="PROXY1" />
+  <parm name="NAME" value="Proxy 1" />
+  <characteristic type="PORT">
+   <parm name="PORTNBR" value="8080" />
+  </characteristic>
+  <characteristic type="PXPHYSICAL">
+   <parm name="PXADDR" value="131.111.3.4" />
+   <parm name="PXADDRTYPE" value="IPV4" />
+   <parm name="TO-NAPID" value="Browsing_GPRS" />
+  </characteristic>
+ </characteristic>
+ <characteristic type="PXLOGICAL">
+  <parm name="PROXY-ID" value="PROXY2" />
+  <parm name="NAME" value="Proxy 2" />
+  <characteristic type="PORT">
+   <parm name="PORTNBR" value="8080" />
+  </characteristic>
+  <characteristic type="PXPHYSICAL">
+   <parm name="PXADDR" value="13.22.45.55" />
+   <parm name="PXADDRTYPE" value="IPV4" />
+   <parm name="TO-NAPID" value="Browsing_CSD" />
+  </characteristic>
+ </characteristic>
+ <characteristic type="NAPDEF">
+  <parm name="NAPID" value="Browsing_CSD" />
+  <parm name="BEARER" value="GSM-CSD" />
+  <parm name="NAME" value="Browsing CSD" />
+  <parm name="NAP-ADDRESS" value="+5555555555" />
+  <parm name="NAP-ADDRTYPE" value="E164" />
+  <parm name="CALLTYPE" value="ANALOG-MODEM" />
+  <parm name="LINKSPEED" value="9600" />
+  <characteristic type="NAPAUTHINFO">
+   <parm name="AUTHTYPE" value="PAP" />
+   <parm name="AUTHNAME" value="name2" />
+   <parm name="AUTHSECRET" value="password2" />
+  </characteristic>
+ </characteristic>
+ <characteristic type="NAPDEF">
+  <parm name="NAPID" value="Browsing_GPRS" />
+  <parm name="BEARER" value="GSM-GPRS" />
+  <parm name="NAME" value="Browsing GPRS" />
+  <parm name="NAP-ADDRESS" value="internet" />
+  <parm name="NAP-ADDRTYPE" value="APN" />
+  <characteristic type="NAPAUTHINFO">
+   <parm name="AUTHTYPE" value="PAP" />
+   <parm name="AUTHNAME" value="name" />
+   <parm name="AUTHSECRET" value="password" />
+  </characteristic>
+ </characteristic>
+
+ <characteristic type="APPLICATION">
+  <parm name="APPID" value="25" />
+  <parm name="PROVIDER-ID" value="MyMail" />
+  <parm name="TO-NAPID" value="Browsing_GPRS" />
+  <parm name="FROM" value="first.second@mymail.com" />
+  <characteristic type="APPADDR">
+   <parm name="ADDR" value="smtp.mail.com" />
+   <characteristic type="PORT">
+    <parm name="PORTNBR" value="25" />
+    <parm name="SERVICE" value="STARTTLS" />
+   </characteristic>
+  </characteristic>
+  <characteristic type="APPAUTH">
+   <parm name="AAUTHNAME" value="username" />
+   <parm name="AAUTHSECRET" value="password" />
+  </characteristic>
+ </characteristic>
+
+ <characteristic type="APPLICATION">
+  <parm name="APPID" value="110" />
+  <parm name="PROVIDER-ID" value="MyMail" />
+  <parm name="NAME" value="POP box" />
+  <parm name="TO-NAPID" value="Browsing_GPRS" />
+  <characteristic type="APPADDR">
+   <parm name="ADDR" value="pop.mail.com" />
+   <characteristic type="PORT">
+    <parm name="PORTNBR" value="110" />
+    <parm name="SERVICE" value="STARTTLS" />
+   </characteristic>
+  </characteristic>
+  <characteristic type="APPAUTH">
+   <parm name="AAUTHNAME" value="username" />
+   <parm name="AAUTHSECRET" value="password" />
+  </characteristic>
+ </characteristic>
+
+</wap-provisioningdoc>

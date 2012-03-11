@@ -1,0 +1,46 @@
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/command/script_1_0.dtd,v 1.4 2007/03/29 08:16:33 zhao Exp $
+  * $Revision: 1.4 $
+  * $Date: 2007/03/29 08:16:33 $
+-->
+
+<!ELEMENT Script (Get|Delete|Add|Replace|Exec|Sequence|Atomic|Display|Confirm|Input|SingleChoice|MultipleChoice)+ >
+<!ELEMENT Get (Target)+ >
+<!ELEMENT Delete (Target)+ >
+<!ELEMENT Target (#PCDATA) >
+
+<!ELEMENT Replace (LeafNode)+ >
+<!ELEMENT Add (LeafNode|InteriorNode)+ >
+
+<!ELEMENT Data (#PCDATA) >
+<!ELEMENT Charset (#PCDATA) >
+<!ELEMENT Format (#PCDATA) >
+<!ELEMENT TextFile (#PCDATA) >
+<!ELEMENT BinaryFile (#PCDATA) >
+
+<!ELEMENT Exec (Item) >
+<!ELEMENT Sequence ((Add | Replace | Delete | Atomic | Get)+)>
+<!ELEMENT Atomic ((Add | Replace | Delete | Sequence)+)>
+
+<!ELEMENT LeafNode (Target, (Data?, (Charset, TextFile)?, (Format?, BinaryFile)?)?) >
+<!ELEMENT Item (Target, Data*) >
+<!ELEMENT InteriorNode (Target) >
+
+<!ELEMENT Display (Text, MinDisplayTime, MaxDisplayTime) >
+<!ELEMENT Text (#PCDATA) >
+<!ELEMENT MinDisplayTime (#PCDATA) >
+<!ELEMENT MaxDisplayTime (#PCDATA) >
+
+<!ELEMENT Confirm (Text, MinDisplayTime, MaxDisplayTime) >
+
+<!ELEMENT Input (Text, MinDisplayTime, MaxDisplayTime, DefaultResponse, MaxLength, InputType, EchoType) >
+<!ELEMENT DefaultResponse (#PCDATA) >
+<!ELEMENT MaxLength (#PCDATA) >
+<!ELEMENT InputType (#PCDATA) >
+<!ELEMENT EchoType (#PCDATA) >
+
+<!ELEMENT SingleChoice (Text, Options, MaxDisplayTime, DefaultResponse, MaxLength) >
+<!ELEMENT Options (Option)+ >
+<!ELEMENT Option (#PCDATA) >
+
+<!ELEMENT MultipleChoice (Text, Options, MaxDisplayTime, DefaultResponse, MaxLength) >

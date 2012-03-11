@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: S60 2nd Edition, Feature Pack 1 -->
+<Models>
+
+  <!--  Model: 3230 -->
+  <Model family="family_nokia_s60_2nd_fp1">
+    <Name>3230</Name>
+    <ExternalID>3230</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 1</Description>
+    <IconFile>./models/nokia/icons/nokia_3230.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value="S60 2nd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="2004-11-02"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: 6670 -->
+  <Model family="family_nokia_s60_2nd_fp1">
+    <Name>6670</Name>
+    <ExternalID>6670</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 1</Description>
+    <IconFile>./models/nokia/icons/nokia_6670.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value="S60 2nd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="2004-09-28"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: 6260 -->
+  <Model family="family_nokia_s60_2nd_fp1">
+    <Name>6260</Name>
+    <ExternalID>6260</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 1</Description>
+    <IconFile>./models/nokia/icons/nokia_6260.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value="S60 2nd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="2004-06-14"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: 7610 -->
+  <Model family="family_nokia_s60_2nd_fp1">
+    <Name>7610</Name>
+    <ExternalID>7610</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 1</Description>
+    <IconFile>./models/nokia/icons/nokia_7610.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value="S60 2nd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="2004-05-18"/>
+    </Specifications>
+  </Model>
+  
+  <!--  Model: 6620 -->
+  <Model family="family_nokia_s60_2nd_fp1">
+    <Name>6620</Name>
+    <ExternalID>6620</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 1</Description>
+    <IconFile>./models/nokia/icons/nokia_6620.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Symbian OS v7.0s"/>
+      <Specification category="general" name="developer.platform" value="S60 2nd Edition, Feature Pack 1"/>
+      <Specification category="general" name="announced" value="2004-01-15"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

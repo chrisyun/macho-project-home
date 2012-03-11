@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>HTC</Name>
+<ExternalID>HTC</ExternalID>
+<Description>HTC</Description>
+<Models filename="./models/htc/models.xml"/>
+<Models filename="./models/htc/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

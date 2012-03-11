@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+
+<!--
+  * $Header: /home/master/nWave-DM-Common/build.xml,v 1.16 2008/11/03 10:51:30 zhao Exp $
+  * $Revision: 1.16 $
+  * $Date: 2008/11/03 10:51:30 $
+-->
+<project name="OTASCommon" default="bin" basedir=".">
+
+    <!-- import initial settings -->
+    <property environment="env"/>
+
+    <!--<property file="build.local.properties" />-->
+
+    <property name="project-name-text" value="OTASProject"/>
+
+    <!-- source directory -->
+    <property name="java.src.dir" value="${basedir}/src"/>
+    <property name="java.test.src.dir" value="${basedir}/test"/>
+    <property name="java.cfg.dir" value="${basedir}/config"/>
+	  <property name="libdir" value="${otas.dm.library.dir}"/>
+    
+    <!-- output directories -->
+    <property name="outputdir" value="${basedir}/output"/>
+    <property name="outlibdir" value="${outputdir}/lib"/>
+    
+    <property name="javadocdir" value="${outputdir}/javadoc"/>
+    <property name="classesdir" value="${outputdir}/classes"/>
+
+    <path id="otas.dm.common.build.classpath">
+      <pathelement location="${env.ANT_HOME}/lib/ant.jar"/>
+      <path refid="common.http.client.3.0.lib.classpath" />
+      <path refid="otas.sms.common.classpath" />
+      <path refid="otas.sms.client.classpath" />
+      <path refid="otas.dm.framework.classpath" />
+      <path refid="otas.setup.common.classpath" />
+      <path refid="Hibernate.3.lib.classpath" />
+      <path refid="Jakarta.Common.lib.classpath" />
+      <path refid="XOM.classpath"/>
+      <path refid="Velocity.1.4.lib.classpath"/>
+      <path refid="XMLUnit.1.0.lib.classpath"/>
+      <path refid="bean.shell.lib.classpath"/>
+      <path refid="JUnit.lib.classpath"/>
+      <path refid="j2ee.lib.classpath" />
+      <path refid="jstl.lib.classpath" />
+      <path refid="struts.lib.classpath" />
+    </path>
+
+	  <!-- Initialize the build directories -->
+    <target name="init" depends="make-release-stamp">
+        <mkdir dir="${outputdir}" />
+        <mkdir dir="${javadocdir}" />
+        <mkdir dir="${classesdir}" />
+        <mkdir dir="${otas.dm.builder.dir}/output/test" />
+    </target>
+
+    <!-- Make build properties -->
+	<target name="make-release-stamp">
+    <!--<buildnumber file="${java.src.dir}/otas-dm-common-buildnumber.properties"/>-->
+	  <echo file="${java.src.dir}/${otas.dm.common.properties.filename}">Version=${build.version}
+BuildDate=${package.builddate}
+BuildTime=${package.buildtime}
+BuildNumber=${build.number}
+	  </echo>
+    </target>
+
+	<!-- Copy necessary files to their respective directories -->
+    <target name="copy_files_to_output" depends="init,env">
+    	<!--
+        <copy todir="${classesdir}">
+            <fileset dir="${java.src.dir}">
+              <filename name="**/*.xml" />
+            </fileset>
+        </copy>
+        <copy todir="${classesdir}">
+            <fileset dir="${java.src.dir}">
+              <filename name="**/*.dtd" />
+            </fileset>
+        </copy>
+        <copy todir="${classesdir}">
+            <fileset dir="${java.src.dir}">
+              <filename name="**/*.properties" />
+            </fileset>
+        </copy>
+        <copy todir="${classesdir}">
+            <fileset dir="${java.cfg.dir}">
+              <filename name="**/*.xml" />
+            </fileset>
+        </copy>
+        <copy todir="${classesdir}">
+            <fileset dir="${java.cfg.dir}">
+              <filename name="**/*.dtd" />
+            </fileset>
+        </copy>
+        <copy todir="${classesdir}">
+            <fileset dir="${java.cfg.dir}">
+              <filename name="**/*.properties" />
+            </fileset>
+        </copy>
+        -->
+     </target>
+
+    <!-- Compiling -->
+    <target name="build" depends="init, copy_files_to_output">
+      <property name="classpath4echo" refid="otas.dm.common.build.classpath"/>
+      <echo message="Classpath: ${classpath4echo}"/>
+
+       <javac debug="on" deprecation="true"
+            destdir="${classesdir}"
+            includeAntRuntime="no"
+            source="1.5"
+            includes="**/*.java">
+	        <src path="${java.src.dir}"/>
+    	    <!-- Testcase source code -->
+	        <src path="${java.test.src.dir}"/>
+          <classpath>
+          	  <path refid="otas.dm.common.build.classpath" />
+          </classpath>
+        </javac>
+    </target>
+    
+    <!-- jarring framework library files -->
+    <target name="${otas-dm-common-jarfilename}" depends="init, build">
+      <delete file="${outputdir}/${otas-dm-common-jarfilename}"/>
+      <jar   jarfile="${outputdir}/${otas-dm-common-jarfilename}"
+             basedir="${classesdir}"
+             compress="false"
+             includes="**">
+        <exclude name="com/npower/dm/setup/**/*"/>
+        <fileset dir="${java.src.dir}">
+          <filename name="**/*.xml" />
+        </fileset>
+        <fileset dir="${java.src.dir}">
+          <filename name="**/*.dtd" />
+        </fileset>
+        <fileset dir="${java.src.dir}">
+          <filename name="**/*.properties" />
+        </fileset>
+        <fileset dir="${java.cfg.dir}">
+          <filename name="**/*.xml" />
+        </fileset>
+        <fileset dir="${java.cfg.dir}">
+          <filename name="**/*.dtd" />
+        </fileset>
+        <fileset dir="${java.cfg.dir}">
+          <filename name="**/*.properties" />
+        </fileset>
+      </jar>
+    </target>
+    
+  <!-- jarring dm setup library files -->
+  <target name="make-dm-setup" depends="init, build">
+    <jar   jarfile="${outputdir}//otas-dm-setup.jar"
+           basedir="${classesdir}"
+           compress="false"
+           includes="com/npower/dm/setup/**/*.class">
+      <exclude name="log4j.xml"/>
+      <exclude name="log4j.dtd"/>
+    </jar>
+  </target>
+
+    <!-- Testing -->
+    <target name="test" depends="build">
+       <junit printsummary="yes" haltonfailure="yes">
+          <classpath>
+              <pathelement location="${outputdir}/${otas-dm-common-jarfilename}"/>
+              <pathelement location="${oats.framework.jar}"/>
+              <pathelement location="${env.ANT_HOME}/lib/ant.jar"/>
+              <fileset dir="${libdir}">
+                <include name="**/*.jar"/>
+              </fileset>
+              <fileset dir="${otas.framework.output}">
+                <include name="**/*.jar"/>
+              </fileset>
+          </classpath>
+          <formatter type="plain"/>
+          <test name="com.npower.dm.AllTests" haltonfailure="no" 
+                todir="${otas.dm.builder.dir}/output/test" outfile="dm-common-result">
+            <formatter type="xml"/>
+          </test>
+       </junit>
+    </target>
+
+    <!-- =============================================== -->
+    <!-- Create JavaDoc for all classes                  -->
+    <!-- =============================================== -->
+    <target name="common-javadocs" depends="init">
+        <mkdir dir="${javadocdir}" />
+        <javadoc
+            sourcepath="${java.src.dir}"
+            packagenames="com.*"
+            destdir="${javadocdir}/all"
+            author="true"
+            version="true"
+            use="true"
+            package="true"
+            source="1.5"
+            Locale="en_US"
+            windowtitle="OTAS DM Common API"
+        	charset="UTF-8"
+        />
+    </target>
+    <!-- =============================================== -->
+    <!-- DOCS                                            -->
+    <!-- =============================================== -->
+    <target name="javadocs" depends="init, common-javadocs"/>
+
+    <!-- =============================================== -->
+    <!-- BIN                                             -->
+    <!-- =============================================== -->
+
+    <target name="bin" depends="init,
+                                ${otas-dm-common-jarfilename},make-dm-setup"
+    />
+    
+    <!-- =============================================== -->
+    <!-- ALL                                             -->
+    <!-- =============================================== -->
+
+    <target name="all" depends="bin,javadocs">
+    </target>
+    
+    <!-- =============================================== -->
+    <!-- CLEAN                                           -->
+    <!-- =============================================== -->
+
+    <target name="clean" depends="init">
+        <delete dir="${javadocdir}" />
+        <delete dir="${classesdir}" />
+        <delete dir="${outputdir}" />
+    </target>
+
+    <!-- =============================================== -->
+    <!-- ENV                                             -->
+    <!-- =============================================== -->
+
+    <target name="env" depends="init">
+      <echoproperties/>
+    </target>
+
+    <!--
+       ========================================================================
+         Help on usage. List available targets
+       ========================================================================
+    -->
+    <target name="usage" depends="init">
+
+        <echo message=""/>
+        <echo message="${project-name-text} build file"/>
+        <echo message="------------------------------------------------------"/>
+        <echo message=""/>
+        <echo message=" Available targets are :"/>
+        <echo message=""/>
+        <echo message=" usage       --> help on usage"/>
+        <echo message=" build       --> builds the project"/>
+        <echo message=" bin         --> generates binary files (default)"/>
+        <echo message=" clean       --> cleans up the build directory"/>
+        <echo message=" docs        --> generates the docs (javadoc, ...)"/>
+        <echo message=" env         --> Displays the current environment"/>
+        <echo message=" all         --> do it all at once (clean, dist, doc)"/>
+        <echo message=""/>
+
+    </target>
+</project>
+    

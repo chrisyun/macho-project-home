@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/ProfileCategory.hbm.xml,v 1.5 2007/05/18 03:15:55 zhao Exp $
+  * $Revision: 1.5 $
+  * $Date: 2007/05/18 03:15:55 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ProfileCategoryEntity" table="NW_DM_PROFILE_CATEGORY">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="CATEGORY_ID" precision="16" scale="0" />
+            <generator class="native"><param name="sequence">nwavedm_global_sequence</param></generator>
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" not-null="true" unique="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+        <set name="profileTemplates" inverse="true">
+            <key>
+                <column name="PROFILE_CATEGORY_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ProfileTemplateEntity" />
+        </set>
+        <set name="clientProvTemplates" inverse="true">
+            <key>
+                <column name="CATEGORY_ID" precision="20" scale="0" not-null="true"/>
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ClientProvTemplateEntity" />
+        </set>
+    </class>
+</hibernate-mapping>

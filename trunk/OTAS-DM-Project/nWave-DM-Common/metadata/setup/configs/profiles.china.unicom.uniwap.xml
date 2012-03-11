@@ -1,0 +1,140 @@
+<Setup>
+
+<Profiles>
+  <!--  
+      ***********************************************************************************
+        NAP Profiles 
+      ***********************************************************************************
+   -->
+  <!-- NAP Profile: UNIWAP -->
+  <Profile>
+    <ID>ChinaUnicom.wap.uniwap</ID>
+    <ProfileName>联通WAP</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>联通WAP</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>uniwap</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!-- NAP Profile: UNIWAP -->
+  <Profile>
+    <ProfileName>UNIWAP</ProfileName>
+    <Template>NAP Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile></NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>false</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>UNIWAP</Value>
+      </Attribute>
+      <Attribute>
+         <Name>BEARER</Name>
+         <Value>GSM-GPRS</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRTYPE</Name>
+         <Value>APN</Value>
+      </Attribute>
+      <Attribute>
+         <Name>NAP-ADDRESS</Name>
+         <Value>uniwap</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+  <!--  
+      ***********************************************************************************
+        Proxy Profiles 
+      ***********************************************************************************
+   -->
+  <!-- Proxy Profile: UNIWAP -->
+  <Profile>
+    <ProfileName>联通WAP</ProfileName>
+    <Template>Proxy Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>联通WAP</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>联通WAP</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://wap.uni-info.com.cn</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDRTYPE</Name>
+         <Value>IPV4</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDR</Name>
+         <Value>10.0.0.172</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXPHYSICAL PORTNBR</Name>
+         <Value>8080</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+
+  <!-- Proxy Profile: UNIWAP -->
+  <Profile>
+    <ProfileName>UNIWAP</ProfileName>
+    <Template>Proxy Default Template</Template>
+    <Carrier>ChinaUnicom</Carrier>
+    <NAPProfile>UNIWAP</NAPProfile>
+    <ProxyProfile></ProxyProfile>
+    <IsUserProfile>true</IsUserProfile>
+    <Description></Description>
+    <Attributes>
+      <Attribute>
+         <Name>NAME</Name>
+         <Value>UNIWAP</Value>
+      </Attribute>
+      <Attribute>
+         <Name>STARTPAGE</Name>
+         <Value>http://wap.uni-info.com.cn</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDRTYPE</Name>
+         <Value>IPV4</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXADDR</Name>
+         <Value>10.0.0.172</Value>
+      </Attribute>
+      <Attribute>
+         <Name>PXPHYSICAL PORTNBR</Name>
+         <Value>8080</Value>
+      </Attribute>
+    </Attributes>
+  </Profile>
+  
+</Profiles>
+</Setup>

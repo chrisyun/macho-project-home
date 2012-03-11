@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Setup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:element ref="Description"/>
+        <xs:element ref="Properties"/>
+        <xs:element ref="Console"/>
+        <xs:element ref="Tasks"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Console">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.Console"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Console">
+    <xs:attribute name="class" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="Tasks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Task"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Name" type="xs:string"/>
+  <xs:element name="Description" type="xs:string"/>
+  <xs:element name="Properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Property"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Property">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.Property"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Property">
+    <xs:attribute name="key" use="required" type="xs:NMTOKEN"/>
+    <xs:attribute name="value" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="Task">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="Description"/>
+          <xs:element ref="Name"/>
+          <xs:element ref="Task"/>
+        </xs:choice>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Properties"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.Task"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Task">
+    <xs:attribute name="class" type="xs:NMTOKEN"/>
+    <xs:attribute name="disable" type="xs:NMTOKEN"/>
+  </xs:attributeGroup>
+</xs:schema>

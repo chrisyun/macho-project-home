@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE Script SYSTEM "../script_1_0.dtd" -->
+<!--
+  * $Header: /home/master/nWave-DM-Common/metadata/processor/test/test.3.command.xml,v 1.1 2006/05/12 15:52:18 zhao Exp $
+  * $Revision: 1.1 $
+  * $Date: 2006/05/12 15:52:18 $
+-->
+
+<!-- ********** Test #2 - Add ********** -->
+<Script>
+  <Replace>
+    <LeafNode>
+      <Target>./Email/MyPushEmail/AAA</Target>
+      <Data>aaaaaa</Data>
+    </LeafNode>
+  </Replace>
+  <Replace>
+    <LeafNode>
+      <Target>./EmailXXX/MyPushEmail/BBB</Target>
+      <Data>bbbbbb</Data>
+    </LeafNode>
+  </Replace>
+  <Replace>
+    <LeafNode>
+      <Target>./Email/MyPushEmail/CCC</Target>
+      <Data>cccccc</Data>
+    </LeafNode>
+  </Replace>
+  <Replace>
+    <LeafNode>
+      <Target>./Email/MyPushEmail/DDD</Target>
+      <Data>dddddd</Data>
+    </LeafNode>
+  </Replace>
+</Script>
+
+
+
+
+
+
+
+
+
+
+

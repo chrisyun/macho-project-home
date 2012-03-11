@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: Motorola basic models -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model Family: Motorola P2K Platform                                    -->
+  <!--  ********************************************************************** -->
+  <Family>
+    <ExternalID>family_motorola_p2k_2nd_l7</ExternalID>
+    <Name>Motorola P2K Platform 2nd</Name>
+    <Description></Description>
+    
+    <!-- OMA DM Stage -->
+    <IsOmaDmEnabled>true</IsOmaDmEnabled>
+    <OmaDmVersion>1.1</OmaDmVersion>
+    
+    <!-- OMA CP Stage -->
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    
+    <!-- Nokia OTA Stage -->
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    
+    <!-- DDF Stage -->
+    <DDFs>
+      <DDF filename="ddf/motorola/P044_DDF_File.xml" />
+    </DDFs>
+    
+    <!-- OMA DM ProfileMappings Stage -->
+    <ProfileMappings>
+      <ProfileMapping filename="models/motorola/mapping.basic.xml" />
+    </ProfileMappings>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/motorola/ota.templates.java.ap.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.proxy.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.mms.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.syncml.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.dm.xml"/>
+    <CPTemplates filename="./models/motorola/ota.templates.java.email.xml"/>
+        
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Motorola P2K 2nd"/>
+      <Specification category="general" name="developer.platform" value=""/>
+    </Specifications>
+  </Family>
+
+  <!--  Model: PEBL U6 -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>PEBL U6</Name>
+    <ExternalID>PEBLU6</ExternalID>
+    <Description>Also known as Motorola PEBL V6</Description>
+    <IconFile>./models/motorola/icons/pepl_v6.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: PEBL V6 -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>PEBL V6</Name>
+    <ExternalID>PEBLV6</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/pepl_v6.gif</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SLVR L7 -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>SLVR L7</Name>
+    <ExternalID>SLVRL7</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/slvrl7.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SLVR L7e -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>SLVR L7e</Name>
+    <ExternalID>SLVRL7e</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/slvrl7.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: SLVR L7i -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>SLVR L7i</Name>
+    <ExternalID>SLVRL7i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/slvrl7.jpg</IconFile>
+
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V360 -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>V360</Name>
+    <ExternalID>V360</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v360.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V360v -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>V360v</Name>
+    <ExternalID>V360v</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v360.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: RAZR V3c -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>RAZR V3c</Name>
+    <ExternalID>V3c</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v3i.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: RAZR V3e -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>RAZR V3e</Name>
+    <ExternalID>V3e</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v3i.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: RAZR V3i -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>RAZR V3i</Name>
+    <ExternalID>V3i</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v3i.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: RAZR V3m -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>RAZR V3m</Name>
+    <ExternalID>V3m</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v3i.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: RAZR V3t -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>RAZR V3t</Name>
+    <ExternalID>V3t</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/motorola_v3i.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value=""/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: RAZR V3x -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>RAZR V3x</Name>
+    <ExternalID>V3x</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v3x.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: RAZR V3xx -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>RAZR V3xx</Name>
+    <ExternalID>V3xx</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v3xx.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006, July"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: V1150 -->
+  <Model family="family_motorola_p2k_2nd_l7">
+    <Name>V1150</Name>
+    <ExternalID>V1150</ExternalID>
+    <Description></Description>
+    <IconFile>./models/motorola/icons/v3x.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005, 1Q"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

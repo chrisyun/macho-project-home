@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+  <Manufacturers>
+    <Manufacturer>
+      <Name>Microsoft</Name>
+      <ExternalID>Microsoft</ExternalID>
+      <Description>Microsoft Mobile Families</Description>
+      <Models filename="./models/microsoft/models.families.xml"/>
+    </Manufacturer>
+  </Manufacturers>
+</Setup>

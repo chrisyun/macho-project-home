@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: IAC OKWAP -->
+<Models>
+
+  <!--  Model: KM65 -->
+  <Model>
+    <Name>KM65</Name>
+    <ExternalID>KM65</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>false</IsOmaCpEnabled>
+    <OmaCpVersion></OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <IconFile>./models/iac_okwap/icons/km65.jpg</IconFile>
+    <DDFs/>
+    <ProfileMappings/>
+    <TACs>
+    </TACs>
+  </Model>
+
+
+</Models>
+</Setup>

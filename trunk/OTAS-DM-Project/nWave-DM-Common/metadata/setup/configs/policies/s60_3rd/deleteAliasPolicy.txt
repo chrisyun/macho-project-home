@@ -1,0 +1,6 @@
+<Package>
+	<Operation
+		action_id = "Remove"
+		target_id = "auto_certificate-CAInfo-SerialNo-Fingerprint">
+	</Operation>
+</Package>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/config/log4j.xml,v 1.8 2006/11/05 08:27:42 zhao Exp $
+  * $Revision: 1.8 $
+  * $Date: 2006/11/05 08:27:42 $
+-->
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false" threshold="null">
+  <!--  Async Console
+  <appender name="otas-dm-async-console" class="org.apache.log4j.AsyncAppender">
+    <appender-ref ref="sync-console" />
+  </appender>
+  -->
+  <appender name="otas-dm-sync-console" class="org.apache.log4j.ConsoleAppender">
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d{ISO8601}:%6r:%p:%m%n"/>
+    </layout>
+  </appender>
+  <appender name="otas-dm-serverlog" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="${java.io.tmpdir}/server.log"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="10240000"/>
+    <param name="MaxBackupIndex" value="10"/>
+    <!--
+    <layout class="org.apache.log4j.xml.XMLLayout">
+      <param name="ConversionPattern" value="%d{ISO8601}:%r:%p:%m:%c:%t:%l%n"/>
+    </layout>
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d{ISO8601}:%r:%p:%m:%c:%t:%l%n"/>
+    </layout>
+    -->
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d{ISO8601}:%r:%p:%m%n"/>
+    </layout>
+  </appender>
+
+  <category name="com.npower" additivity="false">
+    <level value="trace"/>
+    <appender-ref ref="otas-dm-sync-console"/>
+    <appender-ref ref="otas-dm-serverlog"/>
+  </category>
+  <category name="org.hibernate" additivity="false">
+    <level value="info"/>
+    <appender-ref ref="otas-dm-sync-console"/>
+    <appender-ref ref="otas-dm-serverlog"/>
+  </category>
+  <category name="org.apache.commons.digester" additivity="false">
+    <level value="info"/>
+    <appender-ref ref="otas-dm-sync-console"/>
+    <appender-ref ref="otas-dm-serverlog"/>
+  </category>
+  
+  <root>
+    <level value="info"/>
+    <appender-ref ref="otas-dm-sync-console"/>
+  </root>
+</log4j:configuration>

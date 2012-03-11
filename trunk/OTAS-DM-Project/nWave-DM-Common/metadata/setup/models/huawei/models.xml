@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Models: HuaWei -->
+<Models>
+
+  <!--  ********************************************************************** -->
+  <!--  Model: U636 -->
+  <Model>
+    <Name>U636</Name>
+    <ExternalID>Default</ExternalID>
+    <IsOmaDmEnabled>false</IsOmaDmEnabled>
+    <OmaDmVersion></OmaDmVersion>
+    <IsOmaCpEnabled>true</IsOmaCpEnabled>
+    <OmaCpVersion>1.1</OmaCpVersion>
+    <IsNokiaOtaEnabled>false</IsNokiaOtaEnabled>
+    <NokiaOtaVersion></NokiaOtaVersion>
+    <Description></Description>
+    <DDFs>
+    </DDFs>
+    <ProfileMappings>
+    </ProfileMappings>
+    <TACs>
+      <TAC>35638500</TAC>
+    </TACs>
+    
+    <!-- OTA Templates -->
+    <CPTemplates filename="./models/omacp/ota.templates.ap.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.proxy.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.mms.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.syncml.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.dm.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.email.xml"/>
+    <!-- 
+    <CPTemplates filename="./models/omacp/ota.templates.poc.xml"/>
+    <CPTemplates filename="./models/omacp/ota.templates.imps.xml"/>
+     -->
+  </Model>
+</Models>

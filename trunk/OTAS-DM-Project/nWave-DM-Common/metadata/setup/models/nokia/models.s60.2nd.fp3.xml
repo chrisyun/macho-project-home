@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+
+<!--  Models: S60 2nd Edition, Feature Pack 3 -->
+<Models>
+  <!-- Model: N72 -->
+  <Model family="family_nokia_s60_2nd_fp3">
+    <Name>N72</Name>
+    <ExternalID>N72</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 3</Description>
+    <IconFile>./models/nokia/icons/nokia_n72.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC>35453301</TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2006-04-25"/>
+    </Specifications>
+  </Model>
+
+  <!-- Model: N70 -->
+  <Model family="family_nokia_s60_2nd_fp3">
+    <Name>N70</Name>
+    <ExternalID>N70</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 3</Description>
+    <IconFile>./models/nokia/icons/nokia_n70.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC></TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005-04-27"/>
+    </Specifications>
+  </Model>
+
+  <!-- Model: N90 -->
+  <Model family="family_nokia_s60_2nd_fp3">
+    <Name>N90</Name>
+    <ExternalID>N90</ExternalID>
+    <Description>S60 2nd Edition, Feature Pack 3</Description>
+    <IconFile>./models/nokia/icons/nokia_n90.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+      <TAC>35663400</TAC>
+    </TACs>
+    
+    <!-- Specifications -->
+    <Specifications>
+      <Specification category="general" name="announced" value="2005-04-27"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

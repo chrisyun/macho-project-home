@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>T-Mobile</Name>
+<ExternalID>T-Mobile</ExternalID>
+<Description>T-Mobile</Description>
+<Models filename="./models/t_mobile/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

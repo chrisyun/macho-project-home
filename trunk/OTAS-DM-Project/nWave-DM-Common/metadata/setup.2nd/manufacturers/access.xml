@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Access</Name>
+<ExternalID>Access</ExternalID>
+<Description>Access</Description>
+<Models filename="./models/access/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

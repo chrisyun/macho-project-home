@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<!--  Models: ETEN -->
+<Models>
+
+  <!--  Model: G500 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>G500</Name>
+    <ExternalID>G500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/g500.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: G500+ -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>G500+</Name>
+    <ExternalID>G500+</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/g500p.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, August"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: M500 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>M500</Name>
+    <ExternalID>M500</ExternalID>
+    <Description>Also known as TORQ P100</Description>
+    <IconFile>./models/eten/icons/m500.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 SE PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: glofiish M550 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>glofiish M550</Name>
+    <ExternalID>M550</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/m550.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, April"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: M600 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>M600</Name>
+    <ExternalID>M600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/m600.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2005, 4Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: M600+ -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>M600+</Name>
+    <ExternalID>M600+</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/m600p.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, June"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: glofiish M700 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>glofiish M700</Name>
+    <ExternalID>M700</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/m700.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, November"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: glofiish M800 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>glofiish M800</Name>
+    <ExternalID>M800</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/m800.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P300 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>P300</Name>
+    <ExternalID>P300</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/p300.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P300B -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>P300B</Name>
+    <ExternalID>P300B</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/p300b.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 2Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: P700 -->
+  <Model family="family_microsoft_windows_mobile_2003">
+    <Name>P700</Name>
+    <ExternalID>P700</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/p700.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 2003 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2004, 1Q"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: glofiish X500 -->
+  <Model family="family_microsoft_windows_mobile_5.0">
+    <Name>glofiish X500</Name>
+    <ExternalID>X500</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/x500.jpg</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 5.0 PocketPC"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2006, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: glofiish X500+ -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>glofiish X500+</Name>
+    <ExternalID>X500+</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/x500plus.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, May"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: glofiish X600 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>glofiish X600</Name>
+    <ExternalID>X600</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/x600.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, October"/>
+    </Specifications>
+  </Model>
+
+  <!--  Model: glofiish X800 -->
+  <Model family="family_microsoft_windows_mobile_6.0">
+    <Name>glofiish X800</Name>
+    <ExternalID>X800</ExternalID>
+    <Description></Description>
+    <IconFile>./models/eten/icons/x800.gif</IconFile>
+    
+    <!-- TACs -->
+    <TACs>
+    </TACs>
+    
+    <!-- Specifivations -->
+    <Specifications>
+      <Specification category="general" name="operating.system" value="Microsoft Windows Mobile 6.0 Professional"/>
+      <Specification category="general" name="developer.platform" value=""/>
+      <Specification category="general" name="announced" value="2007, March"/>
+    </Specifications>
+  </Model>
+
+</Models>
+</Setup>

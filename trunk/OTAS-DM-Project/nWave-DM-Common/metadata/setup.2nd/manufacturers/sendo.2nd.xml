@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+<Manufacturers>
+
+<Manufacturer>
+<Name>Sendo</Name>
+<ExternalID>Sendo</ExternalID>
+<Description>Sendo</Description>
+<Models filename="./models/sendo/models.2nd.xml"/>
+</Manufacturer>
+
+</Manufacturers>
+</Setup>

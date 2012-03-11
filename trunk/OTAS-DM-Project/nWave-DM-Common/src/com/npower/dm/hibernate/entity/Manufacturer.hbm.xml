@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+  * $Header: /home/master/nWave-DM-Common/src/com/npower/dm/hibernate/entity/Manufacturer.hbm.xml,v 1.5 2008/05/08 06:54:26 zhao Exp $
+  * $Revision: 1.5 $
+  * $Date: 2008/05/08 06:54:26 $
+-->
+<hibernate-mapping>
+    <class name="com.npower.dm.hibernate.entity.ManufacturerEntity" table="NW_DM_MANUFACTURER">
+        <id name="ID" type="long" unsaved-value="0">
+            <column name="MANUFACTURER_ID" precision="16" scale="0" />
+            <generator class="com.npower.dm.hibernate.entity.ManufacturerIdentifierGenerator">
+            </generator>
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" unique="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="4000" />
+        </property>
+        <property name="externalId" type="string">
+            <column name="MANUFACTURER_EXTERNAL_ID" length="30" not-null="true" unique="true" />
+        </property>
+        <property name="lastUpdatedBy" type="string">
+            <column name="LAST_UPDATED_BY" length="30" />
+        </property>
+        <property name="lastUpdatedTime" type="java.util.Date">
+            <column name="LAST_UPDATED_TIME" length="7" />
+        </property>
+        <property name="changeVersion" type="long">
+            <column name="CHANGE_VERSION" precision="16" scale="0" not-null="true" />
+        </property>
+        <set name="models" inverse="true">
+            <key>
+                <column name="MANUFACTURER_ID" precision="16" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.npower.dm.hibernate.entity.ModelEntity" />
+        </set>
+    </class>
+</hibernate-mapping>
