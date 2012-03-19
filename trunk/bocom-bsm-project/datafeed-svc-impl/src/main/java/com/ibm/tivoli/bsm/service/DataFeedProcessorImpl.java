@@ -33,7 +33,8 @@ public class DataFeedProcessorImpl implements DataFeedProcessor, BeanFactoryAwar
 
   private BeanFactory beanFactory;
 
-  private String beanNameOfRecordDAO = "recordDAO";
+  private String beanNameOfAppRawDataDAO = "appRawDataDAO";
+  private String beanNameOfTopNDataDAO = "topNDataDAO";
 
   /**
    * 
@@ -42,12 +43,26 @@ public class DataFeedProcessorImpl implements DataFeedProcessor, BeanFactoryAwar
     super();
   }
 
-  public String getBeanNameOfRecordDAO() {
-    return beanNameOfRecordDAO;
+  public String getBeanNameOfAppRawDataDAO() {
+    return beanNameOfAppRawDataDAO;
   }
 
-  public void setBeanNameOfRecordDAO(String beanNameOfRecordDAO) {
-    this.beanNameOfRecordDAO = beanNameOfRecordDAO;
+  public void setBeanNameOfAppRawDataDAO(String beanNameOfRecordDAO) {
+    this.beanNameOfAppRawDataDAO = beanNameOfRecordDAO;
+  }
+
+  /**
+   * @return the beanNameOfTopNDataDAO
+   */
+  public String getBeanNameOfTopNDataDAO() {
+    return beanNameOfTopNDataDAO;
+  }
+
+  /**
+   * @param beanNameOfTopNDataDAO the beanNameOfTopNDataDAO to set
+   */
+  public void setBeanNameOfTopNDataDAO(String beanNameOfTopNDataDAO) {
+    this.beanNameOfTopNDataDAO = beanNameOfTopNDataDAO;
   }
 
   /*
@@ -57,45 +72,61 @@ public class DataFeedProcessorImpl implements DataFeedProcessor, BeanFactoryAwar
    */
   public void process(Reader xmlIn) throws ServiceException {
     Digester digester = this.getDigester();
-    List<AppRawDataGroup> groups = new ArrayList<AppRawDataGroup>();
+    List<DataGroup> groups = new ArrayList<DataGroup>();
     digester.push(groups);
     CountLineReader reader = new CountLineReader(xmlIn);
-    JDBCAppRawDataRecordDAOImpl recordDAO = (JDBCAppRawDataRecordDAOImpl) this.beanFactory.getBean(this.beanNameOfRecordDAO);
+    JDBCAppRawDataRecordDAOImpl appRawDataDAO = (JDBCAppRawDataRecordDAOImpl) this.beanFactory.getBean(this.beanNameOfAppRawDataDAO);
+    JDBCTopNDataDAOImpl topNDAO = (JDBCTopNDataDAOImpl) this.beanFactory.getBean(this.beanNameOfTopNDataDAO);
     try {
       digester.parse(reader);
 
-      recordDAO.initialize();
-      recordDAO.beginTransaction();
-      for (AppRawDataGroup group : groups) {
-        for (AppRawDataRecord r : group.getRecords()) {
+      appRawDataDAO.initialize();
+      appRawDataDAO.beginTransaction();
+      
+      topNDAO.initialize();
+      topNDAO.beginTransaction();
+      for (DataGroup group : groups) {
+        // save app raw data
+        for (AppRawDataRecord r : group.getAppRawDataRecords()) {
           r.getTimestamp().setSeconds(0);
           // ´æÈëAPP_RAW_DATA±í
           // String finalMetricID =
           // r.getAppName()+"-"+r.getIndexType()+"-"+r.getMetricId();
           String finalMetricID = r.getMetricId();
           r.setMetricId(finalMetricID);
-          recordDAO.save(r);
+          appRawDataDAO.save(r);
+        }
+        // save top N data
+        for (TopNData r : group.getTopNDatas()) {
+          r.getTimestamp().setSeconds(0);
+          topNDAO.save(r);
         }
       }
-      recordDAO.commit();
+      appRawDataDAO.commit();
+      topNDAO.commit();
     } catch (DataFeedException e) {
-      recordDAO.rollback();
+      appRawDataDAO.rollback();
+      topNDAO.rollback();
       throw e;
     } catch (IOException e) {
-      recordDAO.rollback();
+      appRawDataDAO.rollback();
+      topNDAO.rollback();
       throw new ServiceException("Fail to read feeddata from xml at line#" + reader.getLineCount(), e);
     } catch (SAXException e) {
-      recordDAO.rollback();
+      appRawDataDAO.rollback();
+      topNDAO.rollback();
       if (e.getMessage().indexOf("Unparseable date") > 0) {
         throw new DataFeedException(10, e.getMessage(), e);
       } else {
         throw new ServiceException("Fail to read feeddata from xml at line#" + reader.getLineCount(), e);
       }
     } catch (Exception e) {
-      recordDAO.rollback();
+      appRawDataDAO.rollback();
+      topNDAO.rollback();
       throw new ServiceException("Fail to read feeddata from xml at line#" + reader.getLineCount(), e);
     } finally {
-      recordDAO.close();
+      appRawDataDAO.close();
+      topNDAO.close();
     }
 
   }
@@ -108,7 +139,7 @@ public class DataFeedProcessorImpl implements DataFeedProcessor, BeanFactoryAwar
     }
   }
 
-  public static class AppRawDataGroup {
+  public static class DataGroup {
     private Date timestamp = null;
     private String appName = null;
     private String flag = null;
@@ -116,13 +147,14 @@ public class DataFeedProcessorImpl implements DataFeedProcessor, BeanFactoryAwar
     private String indexType = null;
     private String type = null;
     private String monType = null;
-    private List<AppRawDataRecord> records = new ArrayList<AppRawDataRecord>();
+    private List<AppRawDataRecord> appRawDataRecords = new ArrayList<AppRawDataRecord>();
+    private List<TopNData> topNDatas = new ArrayList<TopNData>();
 
-    public AppRawDataGroup() {
+    public DataGroup() {
       super();
     }
 
-    public AppRawDataGroup(Date timestamp, String appName, String flag, String serverIP, String indexType) {
+    public DataGroup(Date timestamp, String appName, String flag, String serverIP, String indexType) {
       super();
       this.timestamp = timestamp;
       this.appName = appName;
@@ -187,15 +219,15 @@ public class DataFeedProcessorImpl implements DataFeedProcessor, BeanFactoryAwar
       this.indexType = indexType;
     }
 
-    public List<AppRawDataRecord> getRecords() {
-      return records;
+    public List<AppRawDataRecord> getAppRawDataRecords() {
+      return appRawDataRecords;
     }
 
-    public void setRecords(List<AppRawDataRecord> records) {
-      this.records = records;
+    public void setAppRawDataRecords(List<AppRawDataRecord> records) {
+      this.appRawDataRecords = records;
     }
 
-    public void addRecord(AppRawDataRecord r) throws ParseException {
+    public void addAppRawDataRecord(AppRawDataRecord r) throws ParseException {
       r.setTimestamp(this.timestamp);
       r.setAppName(this.appName);
       r.setIp(this.serverIP);
@@ -203,8 +235,30 @@ public class DataFeedProcessorImpl implements DataFeedProcessor, BeanFactoryAwar
       r.setMonType(this.monType);
       r.setIndexType(this.indexType);
 
-      this.records.add(r);
+      this.appRawDataRecords.add(r);
     }
+
+    /**
+     * @return the topNDatas
+     */
+    public List<TopNData> getTopNDatas() {
+      return topNDatas;
+    }
+
+    /**
+     * @param topNDatas the topNDatas to set
+     */
+    public void setTopNDatas(List<TopNData> topNDatas) {
+      this.topNDatas = topNDatas;
+    }
+    
+    public void addTopNDatas(TopNData r) throws ParseException {
+      r.setTimestamp(this.timestamp);
+      r.setIp(this.serverIP);
+
+      this.topNDatas.add(r);
+    }
+
   }
 
   private Digester getDigester() {
@@ -213,7 +267,7 @@ public class DataFeedProcessorImpl implements DataFeedProcessor, BeanFactoryAwar
     Digester digester = new Digester();
     digester.setValidating(false);
 
-    digester.addObjectCreate("*/APPROOT", AppRawDataGroup.class);
+    digester.addObjectCreate("*/APPROOT", DataGroup.class);
     digester.addSetNext("*/APPROOT/", "add");
 
     digester.addBeanPropertySetter("*/APPROOT/PUBLIC/DATE", "timestamp");
@@ -224,11 +278,23 @@ public class DataFeedProcessorImpl implements DataFeedProcessor, BeanFactoryAwar
     digester.addBeanPropertySetter("*/APPROOT/PUBLIC/TYPE", "type");
     digester.addBeanPropertySetter("*/APPROOT/PUBLIC/MONTYPE", "monType");
 
+    // AppRawData
     digester.addObjectCreate("*/APPROOT/PRIVATE/ROWSET/ROW", AppRawDataRecord.class);
     digester.addBeanPropertySetter("*/APPROOT/PRIVATE/ROWSET/ROW/NAME", "metricId");
     digester.addBeanPropertySetter("*/APPROOT/PRIVATE/ROWSET/ROW/INFO", "value");
+    digester.addSetNext("*/APPROOT/PRIVATE/ROWSET/ROW", "addAppRawDataRecord");
 
-    digester.addSetNext("*/APPROOT/PRIVATE/ROWSET/ROW", "addRecord");
+    // TopN
+    digester.addObjectCreate("*/APPROOT/PRIVATE/TopNSET/TopN", TopNData.class);
+    digester.addBeanPropertySetter("*/APPROOT/PRIVATE/TopNSET/TopN/NAME", "name");
+   
+    digester.addObjectCreate("*/APPROOT/PRIVATE/TopNSET/TopN/INFO/ROW", TopNRecord.class);
+    digester.addBeanPropertySetter("*/APPROOT/PRIVATE/TopNSET/TopN/INFO/ROW/SEQ", "rankSeq");
+    digester.addBeanPropertySetter("*/APPROOT/PRIVATE/TopNSET/TopN/INFO/ROW/NAME", "rankName");
+    digester.addBeanPropertySetter("*/APPROOT/PRIVATE/TopNSET/TopN/INFO/ROW/CODE", "rankCode");
+    digester.addBeanPropertySetter("*/APPROOT/PRIVATE/TopNSET/TopN/INFO/ROW/VALUE", "rankValue");
+    digester.addSetNext("*/APPROOT/PRIVATE/TopNSET/TopN/INFO/ROW", "addRecord");
+    digester.addSetNext("*/APPROOT/PRIVATE/TopNSET/TopN", "addTopNDatas");
     return digester;
   }
 
