@@ -136,15 +136,16 @@ public class AppRawDataRecord {
   public void setIndexType(String indexType) {
 	  this.indexType = indexType;
   }
-  
 
+  /* (non-Javadoc)
+   * @see java.lang.Object#toString()
+   */
+  @Override
   public String toString() {
-    //TODO YanYaWei Implements this method, "[metricId=xxx, appName=xxx, bizName=, ...]"
-    StringBuffer buf = new StringBuffer();
-    buf.append('[');
-    buf.append("metricDesc=");
-    buf.append((this.getMetricId() == null)?"":this.getMetricId());
-    return buf.toString();
+    return String.format(
+        "AppRawDataRecord [metricId=%s, timestamp=%s, ip=%s, type=%s, value=%s, indexType=%s, monType=%s]", metricId,
+        timestamp, ip, type, value, indexType, monType);
   }
+  
 
 }

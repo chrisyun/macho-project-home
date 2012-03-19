@@ -39,7 +39,7 @@ public class DataFeedProcessorTest extends TestCase {
     super.tearDown();
   }
 
-  public void testParseSuccess() throws Exception {
+  public void testParseAppRawDataSuccess() throws Exception {
     DataFeedProcessor processor = (DataFeedProcessor)factory.getBean("dataFeedProcessor", DataFeedProcessor.class);
 
     InputStream in = this.getClass().getResourceAsStream("/data/datafeed.1.xml");
@@ -62,4 +62,12 @@ public class DataFeedProcessorTest extends TestCase {
     String s = URLEncoder.encode("应用服务器CPU使用率", "UTF-8");
     assertEquals("%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8CPU%E4%BD%BF%E7%94%A8%E7%8E%87", s);
   }
+  
+  public void testParseTopNDataSuccess() throws Exception {
+    DataFeedProcessor processor = (DataFeedProcessor)factory.getBean("dataFeedProcessor", DataFeedProcessor.class);
+
+    InputStream in = this.getClass().getResourceAsStream("/data/datafeed.topN.xml");
+    processor.process(in);
+  }
+
 }

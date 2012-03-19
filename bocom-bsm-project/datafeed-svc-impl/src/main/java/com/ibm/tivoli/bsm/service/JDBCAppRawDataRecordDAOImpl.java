@@ -29,6 +29,12 @@ public class JDBCAppRawDataRecordDAOImpl extends BaseJDBCService implements Reco
   private String jdbcPassword = "icbchc";
   private String jdbcDriverClass = "oracle.jdbc.OracleDriver";
   private String charset = null;
+  private boolean autoCommit = false;
+  
+  /**
+   * 控制是否与ICBC v2011版本的数据库兼容, 主要指app_raw_data的结构
+   */
+  private boolean compatiableMode = true;
 
   private Map<String, String> translateMap = new HashMap<String, String>();
 
@@ -43,6 +49,34 @@ public class JDBCAppRawDataRecordDAOImpl extends BaseJDBCService implements Reco
    */
   public JDBCAppRawDataRecordDAOImpl() {
     super();
+  }
+
+  /**
+   * @return the compatiableMode
+   */
+  public boolean isCompatiableMode() {
+    return compatiableMode;
+  }
+
+  /**
+   * @param compatiableMode the compatiableMode to set
+   */
+  public void setCompatiableMode(boolean compatiableMode) {
+    this.compatiableMode = compatiableMode;
+  }
+
+  /**
+   * @return the autoCommit
+   */
+  public boolean isAutoCommit() {
+    return autoCommit;
+  }
+
+  /**
+   * @param autoCommit the autoCommit to set
+   */
+  public void setAutoCommit(boolean autoCommit) {
+    this.autoCommit = autoCommit;
   }
 
   public String getCharset() {
@@ -108,21 +142,22 @@ public class JDBCAppRawDataRecordDAOImpl extends BaseJDBCService implements Reco
   public void setTrimSecond(boolean trimSecond) {
     this.trimSecond = trimSecond;
   }
-
+  
   /* (non-Javadoc)
-   * @see com.ibm.tbsm.hc.datafeed.RecordDAO#save(com.ibm.tbsm.hc.datafeed.Record)
+   * @see com.ibm.tivoli.bsm.service.RecordDAO#save(java.lang.Object)
    */
   public void save(AppRawDataRecord record) throws ServiceException {
+    if (this.isCompatiableMode()) {
+       this.saveOldMode(record);
+    } else {
+      this.saveNewNodeMode(record);
+    }
+  }
+
+  private void saveNewNodeMode(AppRawDataRecord record) throws ServiceException {
     String sql = null;
     String type = "";
     String monType = "";
-/*
-    if (record.getType() != null && record.getType().trim().length() > 0) {
-      sql = "INSERT INTO app_raw_data(dateslot, timeslot,ip, metric_desc, value, type) values(?, ?, ?, ?, ?, ?)";
-    } else {
-      sql = "INSERT INTO app_raw_data(dateslot, timeslot,ip, metric_desc, value) values(?, ?, ?, ?, ?)";
-    }
-*/
     sql = "INSERT INTO app_raw_data(id, dateslot, timeslot,ip, metric_desc, value, type, montype) values( NEXTVAL FOR SEQ_APP_RAW_DID, ?, ?, ?, ?, ?, ?, ?)";
     if (record.getType() != null && record.getType().trim().length() > 0)
     	type = record.getType();
@@ -134,7 +169,7 @@ public class JDBCAppRawDataRecordDAOImpl extends BaseJDBCService implements Reco
            log.info(record.toString());
         }
         PreparedStatement st = this.connnection.prepareStatement(sql);
-        this.connnection.setAutoCommit(true);
+        this.connnection.setAutoCommit(this.autoCommit);
         
         // 转换metricID到中文名称
         String metricID = record.getMetricId();
@@ -153,10 +188,6 @@ public class JDBCAppRawDataRecordDAOImpl extends BaseJDBCService implements Reco
         st.setString(3, record.getIp());
         st.setString(4, record.getMetricId());
         st.setDouble(5, record.getValue());
-/*        if (record.getType() != null && record.getType().trim().length() > 0) {
-           st.setString(6, record.getType());
-        }
-*/
         st.setString(6, type);
         st.setString(7, monType);
         
@@ -166,10 +197,53 @@ public class JDBCAppRawDataRecordDAOImpl extends BaseJDBCService implements Reco
       throw new ServiceException("fail to insert data[" + record.toString() + "], cause: " + ex.getMessage(), ex);
     } finally {
     }
-
   }
 
+  private void saveOldMode(AppRawDataRecord record) throws ServiceException {
+    String sql = null;
+    String type = "";
+    String monType = "";
+    sql = "INSERT INTO app_raw_data(timeslot, code_ip, metric_id, value, kpi_type) values(?, ?, ?, ?, ?)";
+    if (record.getType() != null && record.getType().trim().length() > 0)
+      type = record.getType();
+    if (record.getMonType() != null && record.getMonType().trim().length() > 0)
+      monType = record.getMonType();
+
+    try {
+        if (log.isDebugEnabled()) {
+           log.info(record.toString());
+        }
+        PreparedStatement st = this.connnection.prepareStatement(sql);
+        this.connnection.setAutoCommit(this.autoCommit);
+        
+        // 转换metricID到中文名称
+        String metricID = record.getMetricId();
+        String metricName = this.translateMap.get(metricID);
+        if (metricName != null && metricName.trim().length() > 0) {
+          log.info("translate metricID from [" + metricID + "] to [" + metricName + "]");
+          record.setMetricId(metricName);
+        }
+
+        Date timestamp = record.getTimestamp();
+        if (this.trimSecond) {
+          timestamp.setSeconds(0);
+        }
+        st.setTimestamp(1, new Timestamp(timestamp.getTime()));
+        st.setString(2, record.getIp());
+        st.setString(3, record.getMetricId());
+        st.setDouble(4, record.getValue());
+        st.setString(5, record.getIndexType());
+        
+        int code = st.executeUpdate();
+        log.info("AppRawData [" + record.toString() + "] inserted.");
+    } catch (Exception ex) {
+      throw new ServiceException("fail to insert data[" + record.toString() + "], cause: " + ex.getMessage(), ex);
+    } finally {
+    }
+  }
+  
   public void beginTransaction() throws ServiceException {
+    
   }
 
   public void commit() throws ServiceException {

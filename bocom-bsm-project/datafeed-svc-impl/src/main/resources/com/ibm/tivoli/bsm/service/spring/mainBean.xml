@@ -41,10 +41,11 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 	</bean>
 
 	<bean id="dataFeedProcessor" class="com.ibm.tivoli.bsm.service.DataFeedProcessorImpl">
-		<property name="beanNameOfRecordDAO" value="recordDAO"></property>
+		<property name="beanNameOfAppRawDataDAO" value="appRawDataDAO"></property>
+    <property name="beanNameOfTopNDataDAO" value="topNDataDAO"></property>
 	</bean>
 
-	<bean id="recordDAO"
+	<bean id="appRawDataDAO"
 		class="com.ibm.tivoli.bsm.service.JDBCAppRawDataRecordDAOImpl"
 		scope="prototype">
 		<property name="dataSourceName" value="${datafeed.database.datasource.name}"></property>
@@ -53,7 +54,20 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 		<property name="jdbcUrl" value="${datafeed.database.jdbc.url}"></property>
 		<property name="jdbcUser" value="${datafeed.database.jdbc.username}"></property>
 		<property name="jdbcPassword" value="${datafeed.database.jdbc.password}"></property>
+    <property name="compatiableMode" value="${app.rawdata.compat.mode}"></property>
 	</bean>
+  
+  <bean id="topNDataDAO"
+    class="com.ibm.tivoli.bsm.service.JDBCTopNDataDAOImpl"
+    scope="prototype">
+    <property name="dataSourceName" value="${datafeed.database.datasource.name}"></property>
+    <!-- For JDBC Mode -->
+    <property name="jdbcDriverClass" value="${datafeed.database.jdbc.driver.class}"></property>
+    <property name="jdbcUrl" value="${datafeed.database.jdbc.url}"></property>
+    <property name="jdbcUser" value="${datafeed.database.jdbc.username}"></property>
+    <property name="jdbcPassword" value="${datafeed.database.jdbc.password}"></property>
+  </bean>
+  
   <jaxws:endpoint id="dataFeed" implementor="#dataFeedService" address="/dataFeed" serviceName="DataFeedService"/>
 
 </beans>
