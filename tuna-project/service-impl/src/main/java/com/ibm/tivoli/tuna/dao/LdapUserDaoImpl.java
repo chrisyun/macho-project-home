@@ -59,10 +59,14 @@ public class LdapUserDaoImpl implements ILdapUserDao {
     SearchControls cons = new SearchControls();
     cons.setReturningAttributes(new String[0]);       // Return no attrs
     cons.setSearchScope(SearchControls.OBJECT_SCOPE); // Search object only
+//    cons.setReturningObjFlag(true);
     
     try {
-      ctx = ldapTemplate.getContextSource().getReadOnlyContext();
+    	//出现作查询后在做认证，该ctx报错
+//      ctx = ldapTemplate.getContextSource().getReadOnlyContext();
       
+    	ctx = ldapTemplate.getContextSource().getReadWriteContext();
+    	
       byte[] bytes = (pwd != null)?String.valueOf(pwd).getBytes("iso8859-1"):new byte[0];
       NamingEnumeration answer = ctx.search(userDn, "(userpassword={0})", new Object[]{bytes}, cons);
       if(answer == null || !answer.hasMoreElements()){
