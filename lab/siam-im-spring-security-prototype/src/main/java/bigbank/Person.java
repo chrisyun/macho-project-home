@@ -8,13 +8,15 @@ package bigbank;
  *
  * @author Ben Alex
  */
-public class Account {
+public class Person {
     private long id = -1;
     private String holder;
     private double balance;
     private double overdraft = 100.00;
+    
+    private String orgNamePath = "/中国石油化工集团公司/西安分公司/营销部/精算科";
 
-    public Account(String holder) {
+    public Person(String holder) {
         this.holder = holder;
     }
 
@@ -50,7 +52,15 @@ public class Account {
         this.overdraft = overdraft;
     }
 
+    public String getOrgNamePath() {
+      return orgNamePath;
+    }
+
+    public void setOrgNamePath(String orgNamePath) {
+      this.orgNamePath = orgNamePath;
+    }
+
     public String toString() {
-        return "Account[id=" + id + ",balance=" + balance +",holder=" + holder + ", overdraft=" + overdraft + "]";
+        return "Person[id=" + id + ",balance=" + balance +",holder=" + holder + ", overdraft=" + overdraft + "]";
     }
 }

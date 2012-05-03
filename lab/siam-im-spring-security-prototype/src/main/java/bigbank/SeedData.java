@@ -8,10 +8,10 @@ public class SeedData implements InitializingBean{
 
     public void afterPropertiesSet() throws Exception {
         Assert.notNull(bankDao);
-        bankDao.createOrUpdateAccount(new Account("rod"));
-        bankDao.createOrUpdateAccount(new Account("dianne"));
-        bankDao.createOrUpdateAccount(new Account("scott"));
-        bankDao.createOrUpdateAccount(new Account("peter"));
+        bankDao.createOrUpdateAccount(new Person("rod"));
+        bankDao.createOrUpdateAccount(new Person("dianne"));
+        bankDao.createOrUpdateAccount(new Person("scott"));
+        bankDao.createOrUpdateAccount(new Person("peter"));
     }
 
     public void setBankDao(BankDao bankDao) {

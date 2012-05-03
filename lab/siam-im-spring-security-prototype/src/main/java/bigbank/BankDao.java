@@ -1,7 +1,7 @@
 package bigbank;
 
 public interface BankDao {
-    public Account readAccount(Long id);
-    public void createOrUpdateAccount(Account account);
-    public Account[] findAccounts();
+    public Person readAccount(Long id);
+    public void createOrUpdateAccount(Person account);
+    public Person[] findAccounts();
 }
