@@ -8,14 +8,14 @@ import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
-import bigbank.Account;
-import bigbank.BankService;
+import bigbank.Person;
+import bigbank.PersonService;
 
 public class PostAccounts implements Controller {
 
-    private BankService bankService;
+    private PersonService bankService;
 
-    public PostAccounts(BankService bankService) {
+    public PostAccounts(PersonService bankService) {
         Assert.notNull(bankService);
         this.bankService = bankService;
     }
@@ -29,7 +29,7 @@ public class PostAccounts implements Controller {
         // Actual business logic
         Long id = ServletRequestUtils.getRequiredLongParameter(request, "id");
         Double amount = ServletRequestUtils.getRequiredDoubleParameter(request, "amount");
-        Account a = bankService.readAccount(id);
+        Person a = bankService.readAccount(id);
         bankService.post(a, amount);
 
         return new ModelAndView("redirect:listAccounts.html");
