@@ -19,20 +19,31 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author zhaodonglu
  * 
  */
-public class LDAPLoginModuleTest extends TestCase {
+public class LDAPLoginModuleTester extends TestCase {
 
   private List<User> users = new ArrayList<User>();
 
   private ApplicationContext context = null;
-  private LDAPLoginModule loginModule = null;
+  private LoginModule loginModule = null;
   private PerformanceMonitor performanceMonitor = null;
+
+  private String loginModuleBeanName = null;
+
+  private LDAPLoginModuleTester() {
+    super();
+  }
+
+  public LDAPLoginModuleTester(String loginModuleBeanName) {
+    super(loginModuleBeanName);
+    this.loginModuleBeanName  = loginModuleBeanName;
+  }
 
   public class LDAPThread implements Runnable {
     private String name = null;
-    private LDAPLoginModule loginModule = null;
+    private LoginModule loginModule = null;
     private List<User> users = new ArrayList<User>();
 
-    public LDAPThread(String name, LDAPLoginModule loginModule, List<User> users) {
+    public LDAPThread(String name, LoginModule loginModule, List<User> users) {
       super();
       this.name = name;
       this.loginModule = loginModule;
@@ -93,9 +104,9 @@ public class LDAPLoginModuleTest extends TestCase {
   /**
    * @throws java.lang.Exception
    */
-  protected void setUp() throws Exception {
+  public void setUp() throws Exception {
     context = new ClassPathXmlApplicationContext("/applicationContext-config.xml");
-    loginModule = context.getBean("loginModule", LDAPLoginModule.class);
+    loginModule = context.getBean(loginModuleBeanName, LoginModule.class);
     performanceMonitor = context.getBean("performanceMonitor", PerformanceMonitor.class);
   }
 
@@ -135,9 +146,9 @@ public class LDAPLoginModuleTest extends TestCase {
 
   /**
    * Test method for
-   * {@link com.ibm.lbs.ldap.LDAPLoginModule#login(java.lang.String, byte[])}.
+   * {@link com.ibm.lbs.ldap.SpringLDAPComparationLoginModule#login(java.lang.String, byte[])}.
    */
-  public void testLogin() throws Exception {
+  public void testStressLogin() throws Exception {
     Thread m = new Thread(new MonitorThread(this.performanceMonitor));
     m.start();
 
@@ -153,9 +164,13 @@ public class LDAPLoginModuleTest extends TestCase {
       t.join();
     }
   }
+  
+  public void testOnceLogin() throws Exception {
+    this.loginModule.login("", "".getBytes());
+  }
 
   public static void main(String[] args) throws Exception {
-    LDAPLoginModuleTest test = new LDAPLoginModuleTest();
+    LDAPLoginModuleTester test = new LDAPLoginModuleTester();
     test.setUp();
     ApplicationContext context = test.getContext();
     SpringPropertiesHolder propertiesHolder = context.getBean("propertiesHolder", SpringPropertiesHolder.class);
@@ -178,7 +193,7 @@ public class LDAPLoginModuleTest extends TestCase {
     in.close();
 
     System.out.println(String.format("Starting ldap thread, total mock user: %s", users.size()));
-    test.testLogin();
+    test.testStressLogin();
   }
 
 }
