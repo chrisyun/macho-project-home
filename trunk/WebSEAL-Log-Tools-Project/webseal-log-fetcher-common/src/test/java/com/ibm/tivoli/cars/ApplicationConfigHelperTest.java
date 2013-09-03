@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -237,6 +238,23 @@ public class ApplicationConfigHelperTest extends TestCase {
 
     String line = "10.200.35.148 - skwaid [14/ÎåÔÂ/2011:22:57:54 +0800] \"GET /hrms/psp/ps/?cmd=start&languageCd=ZHS HTTP/1.1\" 304 0";
     LogParser parser = new LogParser();
+    WebSEALRequestLogEvent event = parser.parseWebSEALRequestLogEvent(line);
+    String resourceUrl = event.getResourceUrl();
+    ApplicationAndJunction appAndJunction = configHelper.getMatchedApplication(resourceUrl);
+    assertNotNull(appAndJunction);
+    assertNotSame("/", appAndJunction.getApplication().getJunctions().get(0));
+    Action action = configHelper.getMatchedAction(appAndJunction, resourceUrl);
+    assertNotNull(action);
+  }
+
+  public void testGetMatchedAction4TKFap() throws Exception {
+    ApplicationConfigHelper configHelper = new ApplicationConfigHelper(this.getClass().getResourceAsStream("/jmt.sgm.intranet.conf"), this.getClass()
+        .getResourceAsStream("/app.config.tk.testfap.xml"));
+    List<Application> apps = configHelper.getApplications();
+    assertEquals(20, apps.size());
+
+    String line = "10.50.21.221 - hanlin [14/Aug/2012:17:00:03 +0800] \"GET /tkbas3/business_financing/Pages/indexLDAP.jsp HTTP/1.1\" 200 1755";
+    LogParser parser = new LogParser(Locale.ENGLISH);
     WebSEALRequestLogEvent event = parser.parseWebSEALRequestLogEvent(line);
     String resourceUrl = event.getResourceUrl();
     ApplicationAndJunction appAndJunction = configHelper.getMatchedApplication(resourceUrl);

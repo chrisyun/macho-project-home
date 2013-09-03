@@ -9,6 +9,7 @@ import java.util.UUID;
 
 import junit.framework.TestCase;
 
+import com.ibm.tivoli.cars.entity.ApplicationConfigHelper;
 import com.ibm.tivoli.cars.handler.SoapEventHandlerImpl;
 import com.ibm.tivoli.cars.handler.W7XMLLogHandler;
 
@@ -78,6 +79,23 @@ public class WebSEALRequestLogProcessorTest extends TestCase {
     handler.setWebSEALInstaceId("webseal1");
 
     WebSEALRequestLogProcessor processor = new WebSEALRequestLogProcessor();
+    processor.setEventReader(new StringReader(lines));
+    processor.setEventHandler(handler);
+    processor.process();
+  }
+
+  public void testProcess4() throws Exception {
+    ApplicationConfigHelper configHelper = new ApplicationConfigHelper(this.getClass().getResourceAsStream("/jmt.sgm.intranet.conf"), this.getClass()
+        .getResourceAsStream("/app.config.tk.testfap.xml"));
+
+    String lines = "10.200.35.148 - skwaid [14/ÎåÔÂ/2011:22:57:26 +0800] \"GET /tkbas3/business_financing/Pages/indexLDAP.jsp HTTP/1.1\" 304 0\n";
+
+    W7XMLLogHandler handler = new W7XMLLogHandler();
+    handler.setWebSEALUrl("http://10.9.2.100");
+    handler.setWebSEALInstaceId("webseal1");
+
+    WebSEALRequestLogProcessor processor = new WebSEALRequestLogProcessor();
+    processor.setApplicationConfigHelper(configHelper);
     processor.setEventReader(new StringReader(lines));
     processor.setEventHandler(handler);
     processor.process();

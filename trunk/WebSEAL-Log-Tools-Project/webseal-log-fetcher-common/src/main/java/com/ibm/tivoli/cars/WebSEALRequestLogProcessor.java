@@ -6,6 +6,7 @@ package com.ibm.tivoli.cars;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -22,15 +23,14 @@ import com.ibm.tivoli.cars.handler.EventHandler;
 public class WebSEALRequestLogProcessor {
   private static Log log = LogFactory.getLog(WebSEALRequestLogProcessor.class);
 
-
   private Reader eventReader = new InputStreamReader(System.in);
 
   private EventHandler eventHandler = null;
 
   private ApplicationConfigHelper applicationConfigHelper = null;
 
-
   private LogParser logParser = new LogParser();
+
   /**
    * 
    */
@@ -53,7 +53,8 @@ public class WebSEALRequestLogProcessor {
   }
 
   /**
-   * @param applicationConfigHelper the applicationConfigHelper to set
+   * @param applicationConfigHelper
+   *          the applicationConfigHelper to set
    */
   public void setApplicationConfigHelper(ApplicationConfigHelper applicationConfigHelper) {
     this.applicationConfigHelper = applicationConfigHelper;
@@ -82,14 +83,16 @@ public class WebSEALRequestLogProcessor {
       try {
         WebSEALRequestLogEvent logEvent = logParser.parseWebSEALRequestLogEvent(line);
         if (logEvent != null) {
-          ApplicationAndJunction appAndJunction = this.applicationConfigHelper.getMatchedApplication(logEvent.getResourceUrl());
-          Action action = this.applicationConfigHelper.getMatchedAction(appAndJunction, logEvent.getResourceUrl());
-          if (action != null) {
-             log.debug("match pattern: app=[" + appAndJunction + "], line: " + line);
+          List<ApplicationAndJunction> appAndJunctions = this.applicationConfigHelper.getMatchedApplications(logEvent.getResourceUrl());
+          for (ApplicationAndJunction appAndJunction : appAndJunctions) {
+            Action action = this.applicationConfigHelper.getMatchedAction(appAndJunction, logEvent.getResourceUrl());
+            if (action != null) {
+              log.debug("match pattern: app=[" + appAndJunction + "], line: " + line);
+            }
+            logEvent.setApplication((appAndJunction != null) ? appAndJunction.getApplication() : null);
+            logEvent.setAction(action);
+            this.eventHandler.handle(line, logEvent);
           }
-          logEvent.setApplication((appAndJunction != null)?appAndJunction.getApplication():null);
-          logEvent.setAction(action);
-          this.eventHandler.handle(line, logEvent);
         }
       } catch (Throwable e) {
         log.error("error to upload event: [" + line + "], cause: " + e.getMessage(), e);
