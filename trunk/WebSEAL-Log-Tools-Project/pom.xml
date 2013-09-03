@@ -11,12 +11,14 @@
 		<module>webseal-log-fetcher-assembly</module>
 		<module>webseal-log-report-runtime</module>
 		<module>webseal-log-report-template</module>
+		<module>webseal-log-w7-util</module>
 	</modules>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
 				<configuration>
 					<source>1.5</source>
 					<target>1.5</target>
