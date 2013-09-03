@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.6.2.r262_v20110209 Build &lt;2.6.2.v20110214-1523></property>
+    <property name="units">in</property>
+    <property name="theme">main.Blue</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">../main.unauth.rptlibrary</property>
+            <property name="namespace">main</property>
+        </structure>
+    </list-property>
+    <parameters>
+        <scalar-parameter name="Year" id="8" extends="main.Year"/>
+        <scalar-parameter name="Month" id="9" extends="main.Month"/>
+        <scalar-parameter name="DAY_OF_MONTH" id="13" extends="main.DAY_OF_MONTH"/>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="CARS_EVENT_DB" id="7"
+ extends="main.CARS_EVENT_DB"/>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="DS_V_APP_REQUEST_HOUR" id="190"
+ extends="main.DS_V_APP_REQUEST_HOUR"/>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="DS_V_APP_REQUEST_HOUR_BY_APP" id="191"
+ extends="main.DS_V_APP_REQUEST_HOUR_BY_APP"/>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="DS_V_APP_REQUEST_HOUR_BY_WEBSEAL" id="192"
+ extends="main.DS_V_APP_REQUEST_HOUR_BY_WEBSEAL"/>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="DS_V_APP_REQUEST_HOUR_BY_NETWORK" id="282"
+ extends="main.DS_V_APP_REQUEST_HOUR_BY_NETWORK"/>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="185">
+            <property name="fontSize">14pt</property>
+            <property name="textAlign">center</property>
+            <property name="pageBreakBefore">always</property>
+            <text-property name="text">Application Unauth Summary By Application and WebSEAL</text-property>
+        </label>
+        <table id="88">
+            <property name="dataSet">DS_V_APP_REQUEST_HOUR</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">YEAR</property>
+                    <text-property name="displayName">YEAR</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["YEAR"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">MONTH</property>
+                    <text-property name="displayName">MONTH</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["MONTH"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">DAY</property>
+                    <text-property name="displayName">DAY</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["DAY"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">HOUR</property>
+                    <text-property name="displayName">HOUR</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["HOUR"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">APPLICATION</property>
+                    <text-property name="displayName">APPLICATION</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["APPLICATION"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">WEBSEAL</property>
+                    <text-property name="displayName">WEBSEAL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["WEBSEAL"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">TOTAL</property>
+                    <text-property name="displayName">TOTAL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["TOTAL"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Aggregation</property>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>NewTableGroup1</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">row["TOTAL"]</expression>
+                        </structure>
+                    </list-property>
+                </structure>
+                <structure>
+                    <property name="name">Column Binding</property>
+                    <expression name="expression" type="javascript">row["Aggregation"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Aggregation_1</property>
+                    <property name="dataType">integer</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>NewTableGroup2</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">row["TOTAL"]</expression>
+                        </structure>
+                    </list-property>
+                </structure>
+                <structure>
+                    <property name="name">Column Binding_1</property>
+                    <expression name="expression" type="javascript">row["Aggregation_1"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+            </list-property>
+            <column id="117"/>
+            <column id="118"/>
+            <column id="119"/>
+            <column id="210"/>
+            <column id="120"/>
+            <column id="121"/>
+            <header>
+                <row id="89">
+                    <cell id="90">
+                        <label id="91">
+                            <text-property name="text">YEAR</text-property>
+                        </label>
+                    </cell>
+                    <cell id="92">
+                        <label id="93">
+                            <text-property name="text">MONTH</text-property>
+                        </label>
+                    </cell>
+                    <cell id="94">
+                        <label id="95">
+                            <text-property name="text">DAY</text-property>
+                        </label>
+                    </cell>
+                    <cell id="207">
+                        <label id="211">
+                            <text-property name="text">HOUR</text-property>
+                        </label>
+                    </cell>
+                    <cell id="96">
+                        <label id="97">
+                            <text-property name="text">APPLICATION</text-property>
+                        </label>
+                    </cell>
+                    <cell id="98">
+                        <label id="99">
+                            <property name="textAlign">right</property>
+                            <text-property name="text">TOTAL</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <group id="247">
+                <property name="groupName">NewTableGroup1</property>
+                <expression name="keyExpr" type="javascript">row["HOUR"]</expression>
+                <structure name="toc">
+                    <expression name="expressionValue" type="javascript">row["HOUR"]</expression>
+                </structure>
+                <property name="hideDetail">false</property>
+                <header>
+                    <row id="248">
+                        <cell id="249">
+                            <data id="102">
+                                <property name="textAlign">center</property>
+                                <property name="whiteSpace">nowrap</property>
+                                <property name="resultSetColumn">YEAR</property>
+                            </data>
+                        </cell>
+                        <cell id="250">
+                            <data id="104">
+                                <property name="textAlign">center</property>
+                                <property name="whiteSpace">nowrap</property>
+                                <property name="resultSetColumn">MONTH</property>
+                            </data>
+                        </cell>
+                        <cell id="251">
+                            <data id="106">
+                                <property name="textAlign">center</property>
+                                <property name="whiteSpace">nowrap</property>
+                                <property name="resultSetColumn">DAY</property>
+                            </data>
+                        </cell>
+                        <cell id="252">
+                            <data id="262">
+                                <property name="textAlign">center</property>
+                                <property name="resultSetColumn">HOUR</property>
+                            </data>
+                        </cell>
+                        <cell id="253"/>
+                        <cell id="254">
+                            <data id="263">
+                                <structure name="numberFormat">
+                                    <property name="category">Fixed</property>
+                                    <property name="pattern">#,##0{RoundingMode=HALF_UP}</property>
+                                </structure>
+                                <property name="textAlign">right</property>
+                                <property name="resultSetColumn">Column Binding</property>
+                            </data>
+                        </cell>
+                    </row>
+                </header>
+                <footer>
+                    <row id="255">
+                        <cell id="256"/>
+                        <cell id="257"/>
+                        <cell id="258"/>
+                        <cell id="259"/>
+                        <cell id="260"/>
+                        <cell id="261"/>
+                    </row>
+                </footer>
+            </group>
+            <group id="264">
+                <property name="groupName">NewTableGroup2</property>
+                <expression name="keyExpr" type="javascript">row["APPLICATION"]</expression>
+                <structure name="toc">
+                    <expression name="expressionValue" type="javascript">row["APPLICATION"]</expression>
+                </structure>
+                <property name="hideDetail">false</property>
+                <header>
+                    <row id="265">
+                        <cell id="266"/>
+                        <cell id="267"/>
+                        <cell id="268"/>
+                        <cell id="269"/>
+                        <cell id="270">
+                            <data id="279">
+                                <property name="textAlign">center</property>
+                                <property name="resultSetColumn">APPLICATION</property>
+                            </data>
+                        </cell>
+                        <cell id="271">
+                            <data id="280">
+                                <structure name="numberFormat">
+                                    <property name="category">Fixed</property>
+                                    <property name="pattern">#,##0{RoundingMode=HALF_UP}</property>
+                                </structure>
+                                <property name="textAlign">right</property>
+                                <property name="resultSetColumn">Column Binding_1</property>
+                            </data>
+                        </cell>
+                    </row>
+                </header>
+                <footer>
+                    <row id="272">
+                        <cell id="273"/>
+                        <cell id="274"/>
+                        <cell id="275"/>
+                        <cell id="276"/>
+                        <cell id="277"/>
+                        <cell id="278"/>
+                    </row>
+                </footer>
+            </group>
+            <detail>
+                <row id="100">
+                    <cell id="101"/>
+                    <cell id="103"/>
+                    <cell id="105"/>
+                    <cell id="208"/>
+                    <cell id="107"/>
+                    <cell id="109">
+                        <data id="110">
+                            <structure name="numberFormat">
+                                <property name="category">Fixed</property>
+                                <property name="pattern">#,##0{RoundingMode=HALF_UP}</property>
+                            </structure>
+                            <property name="textAlign">right</property>
+                            <property name="whiteSpace">nowrap</property>
+                            <property name="resultSetColumn">TOTAL</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="111">
+                    <cell id="112"/>
+                    <cell id="113"/>
+                    <cell id="114"/>
+                    <cell id="209"/>
+                    <cell id="115"/>
+                    <cell id="116"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>
