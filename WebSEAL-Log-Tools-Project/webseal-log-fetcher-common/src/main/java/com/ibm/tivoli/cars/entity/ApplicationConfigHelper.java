@@ -89,6 +89,7 @@ public class ApplicationConfigHelper {
     loadConfig(jmtConfig, applicationConfig);
   }
 
+  /*
   public ApplicationAndJunction getMatchedApplication(String requestUrl) {
     if (requestUrl == null) {
       return null;
@@ -120,6 +121,50 @@ public class ApplicationConfigHelper {
       }
     }
     return null;
+  }
+  */
+  
+  public ApplicationAndJunction getMatchedApplication(String requestUrl) {
+    List<ApplicationAndJunction> result = findFromApplicationsJunctions(requestUrl);
+    if (result != null && result.size() > 0) {
+       return result.get(0);
+    }
+    return null;
+  }
+  public List<ApplicationAndJunction> getMatchedApplications(String requestUrl) {
+    if (requestUrl == null) {
+      return new ArrayList<ApplicationAndJunction>();
+    }
+    // 直接查询Junction
+    List<ApplicationAndJunction> result = findFromApplicationsJunctions(requestUrl);
+    if (result == null) {
+      // 查询JMT
+      for (String junction : jmt.keySet()) {
+        Pattern pattern = jmt.get(junction);
+        Matcher m = pattern.matcher(requestUrl);
+        if (m.matches()) {
+          List<ApplicationAndJunction> resultNew = findFromApplicationsJunctions(junction + requestUrl);
+          if (result != null) {
+            result.addAll(resultNew);
+            break;
+          }
+        }
+      }
+    }
+    return result;
+  }
+
+
+  private List<ApplicationAndJunction> findFromApplicationsJunctions(String requestUrl) {
+    List<ApplicationAndJunction> result = new ArrayList<ApplicationAndJunction>();
+    for (Application app : applications) {
+      for (String junction : app.getJunctions()) {
+        if (requestUrl.equals(junction) || requestUrl.startsWith(junction + "/") || junction.equals("/") && requestUrl.startsWith(junction)) {
+          result.add(new ApplicationAndJunction(app, junction));
+        }
+      }
+    }
+    return result;
   }
 
   public Action getMatchedAction(ApplicationAndJunction appAndJunction, String requestUrl) {

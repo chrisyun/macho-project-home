@@ -29,6 +29,8 @@ public class W7XMLLogHandler implements EventHandler, PropertiesAware {
 
   private boolean ignoreUnauth = false;
 
+  private static DateFormat LOG_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.ENGLISH);
+  private static DateFormat LOG_TIMEZONE_FORMAT = new SimpleDateFormat("Z", Locale.ENGLISH);
   /**
    * 
    */
@@ -92,7 +94,7 @@ public class W7XMLLogHandler implements EventHandler, PropertiesAware {
    * <pre>
    * Sample: 
    * <event>
-   *   <when>${logEvent.timstamp} as format[YYYY-MM-ddTHH:mm:ss:s ��.hh:mm]</when>
+   *   <when>${logEvent.timstamp} as format[YYYY-MM-ddTHH:mm:ss:s+hh:mm]</when>
    *   <what verb="${logEvent.action.name}" noun="${logEvent.application.name}" success="Success"/>
    *   <onwhat type="${logEvent.httpProtocol}" path="${logEvent.httpMethod}" name="${logEvent.resourceUrl}"/>
    *   <who logonname="${logEvent.uid}" realname="${logEvent.uid}"/>
@@ -149,11 +151,11 @@ public class W7XMLLogHandler implements EventHandler, PropertiesAware {
 
     StringBuffer bf = new StringBuffer();
 
-    DateFormat LOG_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.ENGLISH);
 
-    // for(int i=1;i<=1000;i++){
     bf.append("<event>\n");
-    bf.append("<when>" + LOG_DATE_FORMAT.format(timestamp) + "</when>\n");
+    String tz = LOG_TIMEZONE_FORMAT.format(timestamp);
+    tz = String.format("%s:%s", tz.substring(0, 3), tz.substring(3));
+    bf.append("<when>" + LOG_DATE_FORMAT.format(timestamp) + tz + "</when>\n");
 
     bf.append("<what verb=\"" + action.getName() + "\" noun=\"" + application.getName() + "\" success=\"Success\"/>\n");
 
@@ -170,7 +172,6 @@ public class W7XMLLogHandler implements EventHandler, PropertiesAware {
     bf.append("<info>httpcode: " + httpCode + "</info>\n");
 
     bf.append("</event>\n");
-    // }
     return bf;
 
   }
