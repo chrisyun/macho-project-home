@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,7 +12,7 @@
     java.util.Date now = new java.util.Date();
     int year = now.getYear() + 1900;
     int month = now.getMonth() + 1;
-    int day = now.getDate() + 1;
+    int day = now.getDate() - 1;
     
     java.util.Date yestoday = new java.util.Date(now.getTime() - 24 * 3600 * 1000);
     java.util.Date tommorow = new java.util.Date(now.getTime() + 24 * 3600 * 1000);
@@ -54,6 +54,9 @@
                              "VOTING(党建直选)",
                              "VAS(Vitas QIP subsys)",
                              "BPMA(EIT)",
+                             "BPMA(bup土建)",
+                             "BPMA(crdn)",
+                             "BPMA(PQS)",
                              "BDW(品牌差异化)",
                              "SGMBRMWeb会议预定系统",
                              "EAM（刀具管理系统）",
@@ -84,26 +87,26 @@
                              "RDS258",
                              "EBMS",
                              "HRMS",
-                             "JQ_PATAC_Mail",
-                             "DY_Mail",
-                             "SY_Mail"
+                             "JQ PATAC webmail",
+                             "DY webmail",
+                             "SY webmail"
                              ];
 
             
         // Accordion
         $("#accordion").accordion({ header: "h3" });
 
-        $( "#year4monthlyReport, #year4dailylyReport, #year4hourlyReport" ).autocomplete({
+        $( "#year4monthlyReport, #year4dailylyReport, #year4hourlyReport, #year4monthlyReportUnauth, #year4dailylyReportUnauth, #year4hourlyReportUnauth" ).autocomplete({
           source: availableYear,
           autoFocus: true
         });
         
-        $( "#month4dailylyReport, #month4hourlyReport" ).autocomplete({
+        $( "#month4dailylyReport, #month4hourlyReport, #month4dailylyReportUnauth, #month4hourlyReportUnauth" ).autocomplete({
           source: availableMonth,
           autoFocus: true
         });
 
-        $( "#application4detail" ).autocomplete({
+        $( "#application4detail, #application4detailUnauth" ).autocomplete({
             source: availiableApp,
             autoFocus: true
           });
@@ -116,6 +119,21 @@
           numberOfMonths: 3,
           onSelect: function( selectedDate ) {
             var option = this.id == "from" ? "minDate" : "maxDate",
+              instance = $( this ).data( "datepicker" ),
+              date = $.datepicker.parseDate(
+                instance.settings.dateFormat ||
+                $.datepicker._defaults.dateFormat,
+                selectedDate, instance.settings );
+            dates.not( this ).datepicker( "option", option, date );
+          }
+        });
+        
+        var dates = $( "#fromUnauth, #toUnauth" ).datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 3,
+          onSelect: function( selectedDate ) {
+            var option = this.id == "fromUnauth" ? "minDate" : "maxDate",
               instance = $( this ).data( "datepicker" ),
               date = $.datepicker.parseDate(
                 instance.settings.dateFormat ||
@@ -153,7 +171,7 @@
           <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
             <input type="hidden" name="__report" value=""/>
             <input type="hidden" name="__title" value="SGM UIM Report Service"/>
-            <ul id="icons">_
+            <ul id="icons">
               <li><button onclick="this.form.__report.value='app_login/year_report_by_net.rptdesign';this.form.submit();"/>By Network</button></li>
               <li><button onclick="this.form.__report.value='app_login/year_report_by_app.rptdesign';this.form.submit();"/>By Application</button></li>
               <li><button onclick="this.form.__report.value='app_login/year_report_by_webseal.rptdesign';this.form.submit();"/>By WebSEAL</button></li>
@@ -230,6 +248,92 @@
           </form>
         </div>
       </div>
+
+
+      <div>
+        <h3><a href="#">Application Unauth Yearly Report</a></h3>
+        <div>
+          <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
+            <input type="hidden" name="__report" value=""/>
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
+            <ul id="icons">
+              <li><button onclick="this.form.__report.value='app_unauth/year_report_by_net.rptdesign';this.form.submit();"/>By Network</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/year_report_by_app.rptdesign';this.form.submit();"/>By Application</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/year_report_by_webseal.rptdesign';this.form.submit();"/>By WebSEAL</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/year_report.rptdesign';this.form.submit();"/>Detail</button></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div>
+        <h3><a href="#">Application Unauth Monthly Report</a></h3>
+        <div>
+          <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
+            <input type="hidden" name="__report" value=""/>
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
+            <label for="tags">Year: </label><input id="year4monthlyReportUnauth" type="text" name="Year" value="<%=year%>"/>
+            <ul id="icons">
+              <li><button onclick="this.form.__report.value='app_unauth/month_report_by_net.rptdesign';this.form.submit();"/>By Network</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/month_report_by_app.rptdesign';this.form.submit();"/>By Application</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/month_report_by_webseal.rptdesign';this.form.submit();"/>By WebSEAL</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/month_report.rptdesign';this.form.submit();"/>Detail</button></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div>
+        <h3><a href="#">Application Unauth Daily Report</a></h3>
+        <div>
+          <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
+            <input type="hidden" name="__report" value=""/>
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
+            <label for="year4dailylyReport">Year: </label><input id="year4dailylyReportUnauth" type="text" name="Year" value="<%=year%>"/>&nbsp;&nbsp;
+            <label for="month4dailylyReport">Month: </label><input id="month4dailylyReportUnauth" type="text" name="Month" value="<%=month%>"/>
+            <ul id="icons">
+              <li><button onclick="this.form.__report.value='app_unauth/day_of_month_report_by_net.rptdesign';this.form.submit();"/>By Network</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/day_of_month_report_by_app.rptdesign';this.form.submit();"/>By Application</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/day_of_month_report_by_webseal.rptdesign';this.form.submit();"/>By WebSEAL</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/day_of_month_report.rptdesign';this.form.submit();"/>Detail</button></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div>
+        <h3><a href="#">Application Unauth Hourly Report</a></h3>
+        <div>
+          <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
+            <input type="hidden" name="__report" value=""/>
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
+            <label for="year4hourlyReport">Year: </label><input id="year4hourlyReportUnauth" type="text" name="Year" value="<%=year%>"/>&nbsp;&nbsp;
+            <label for="month4hourlyReport">Day: </label><input id="month4hourlyReportUnauth" type="text" name="Month" value="<%=month%>"/>&nbsp;&nbsp;
+            <label for="hour4hourlyReport">Day: </label><input id="hour4hourlyReportUnauth" type="text" name="DAY_OF_MONTH" value="<%=day%>"/>
+            <ul id="icons">
+              <li><button onclick="this.form.__report.value='app_unauth/hour_report_by_net.rptdesign';this.form.submit();"/>By Network</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/hour_report_by_app.rptdesign';this.form.submit();"/>By Application</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/hour_report_by_webseal.rptdesign';this.form.submit();"/>By WebSEAL</button></li>
+              <li><button onclick="this.form.__report.value='app_unauth/hour_report.rptdesign';this.form.submit();"/>Detail</button></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div>
+        <h3><a href="#">Application Unauth Detail Report</a></h3>
+        <div>
+          <form method="get" target="_blank" action="frameset?__format=html&__overwrite=true&__locale=en_US&__svg=false&__designer=false&__pageoverflow=0&__masterpage=true">
+            <input type="hidden" name="__report" value=""/>
+            <input type="hidden" name="__title" value="SGM UIM Report Service"/>
+            <label for="application4detail">Application: </label><input id="application4detailUnauth" type="text" name="Application" value="%"/><br/>
+            <label for="uid4detail">Username: &nbsp;&nbsp;</label><input id="uid4detailUnauth" type="text" name="UserID" value="%"/><br/>
+            <label for="from">Start Date: </label>
+            <input type="text" id="fromUnauth" name="StartTime" value="<%=yestoday.getMonth() +1%>/<%=yestoday.getDate() + 1%>/<%=yestoday.getYear() + 1900%>"/>
+            <label for="to">End Date: </label>
+            <input type="text" id="toUnauth" name="EndTime" value="<%=tommorow.getMonth() +1%>/<%=tommorow.getDate() + 1%>/<%=tommorow.getYear() + 1900%>"/>
+            <br/><br/>
+            <button onclick="this.form.__report.value='app_unauth/app_login_detail_report.rptdesign';this.form.submit();"/>View Report</button>
+          </form>
+        </div>
+      </div>
+
       <div>
         <h3><a href="#">User Last Login Time Detail Report</a></h3>
         <div>
