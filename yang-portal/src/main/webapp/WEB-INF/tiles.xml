@@ -6,5 +6,6 @@
   <definition name="home" template="/WEB-INF/layouts/classic.jsp">
     <put-attribute name="title" value="兔兔查_手机上网导航" />
     <put-attribute name="html_headers" value="/WEB-INF/layouts/html_headers.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
   </definition>
 </tiles-definitions>
