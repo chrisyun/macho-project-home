@@ -1,0 +1,21 @@
+#calheader{height: 60px;line-height: 60px;background: url(../images/calendar.gif) 0 -785px repeat-x;text-align: center;font-size: 16px;font-weight: bold;}
+#calheader select{height: 24px;font-size: 16px;}
+#calheader #lastmonth,#calheader #nextmonth{width: 10px;height: 13px;background: url(../images/calendar.gif) 0 -750px no-repeat;border: none;cursor: pointer;}
+#calheader #nextmonth{background: url(../images/calendar.gif) 0 -767px no-repeat;}
+#calweek{height: 28px;line-height: 28px;}
+#calweek ul li{float: left;width: 14%;text-align: center;border: 1px solid #d6d7da;border-right: none;background-color: #f3f9f9;color: #bbc3c5;font-weight: bold;font-size: 14px;}
+#calweek ul li.lastli{border-right: 1px solid #d6d7da;width: 14%;}
+#calendar ul li{float: left;width: 14%;border: 1px solid #d6d7da;border-right: none;border-top: none;height: 66px;text-align: center;}
+#calendar ul li.borderr{border-right: 1px solid #d6d7da;width: 14%;}
+#calendar ul li strong{display: block;font-size: 24px;color:#286db2;padding:12px 0 3px 0;font-family: verdana;}
+#calendar ul li strong.red{color: #d13939;}
+#calendar ul li span{color:#999;font-size: 12px;display: block;height: 18px;line-height: 18px;overflow: hidden;}
+#calendar ul li span em{font-style: normal;font-weight: bold;}
+#calendar ul li.gray strong{color: #a1a1a1;}
+#calendar ul li.today{background: url(../images/calendar.gif) 0 -600px no-repeat;background-color: #b9f5ff;}
+#calendar ul li.today strong{color:#286db2;}
+#calendar ul li.holiday{background: url(../images/calendar.gif) 0 -150px no-repeat;}
+#calendar ul li.work{background:url(../images/calendar.gif) 0 0 no-repeat;}
+#calendar ul li.work strong{color: #286db2;}
+#calendar ul li.holiday2{background:url(../images/calendar.gif) 0 -450px no-repeat;}
+#calendar ul li.work2{background:url(../images/calendar.gif) 0 -300px no-repeat;}

@@ -99,6 +99,9 @@ body {
 			</ul>
 		</div>
 	</div>
+  <!-- 手机游戏 -->
+  <my:showArea pageId="1" areaId="200" template="mobilegames"/>
+  
 	<div id="con_wz">
 		<div class="banner" style="background: #FFF; height: 60px; overflow: hidden;">
 			<!-- 广告位：兔兔查图片1-->
@@ -113,6 +116,12 @@ body {
 			</script>
 		</div>
 	</div>
+
+  <!-- 手机应用 -->
+  <my:showArea pageId="1" areaId="300" template="mobileapps"/>
+
+  <!-- 视频 -->
+  <my:showArea pageId="1" areaId="400" template="videos"/>
 
   <!-- 网站应用 -->
   <my:showArea pageId="1" areaId="100" template="webapps"/>

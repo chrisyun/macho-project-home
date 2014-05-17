@@ -1,0 +1,203 @@
+
+#ew_main ul,#ew_main li,#ew_main div,#ew_main p,#ew_main header,#ew_main footer,#ew_main h1,#ew_main h2,#ew_main h3,#ew_main h4,#ew_main h5,#ew_main h6,#ew_main span,#ew_main i,#ew_main b,#ew_main em,#ew_main li,#ew_main dl,#ew_main dt,#ew_main dd,#ew_main input,#ew_main select,#ew_main form,#ew_main button{ margin:0; padding:0}
+
+#ew_main {font-family:"微软雅黑",helvetica,arial;color:#000;-webkit-user-select:none;-webkit-text-size-adjust:none;font-size:16px}
+#ew_main h1,#ew_main h2,#ew_main h3,#ew_main h4{font-weight:500;font-size:15px;color:#555}
+#ew_main i,#ew_main em,#ew_main b{font-style:normal;font-weight:500}
+#ew_main img{border:0 none}
+#ew_main ul,#ew_main li{list-style:none}
+#ew_main a{text-decoration:none;color:#384f5b;display:inline-block}
+#ew_main a:visited{color:#384f5b}
+
+#ew_main .pb_imgbg{background:url(http://www.enwang.com/static/img/bg_f3772ea6.jpg) repeat}
+#ew_main .pb_center,#ew_main .pb_block{width:96%;margin:8px auto}
+#ew_main .pb_block{background:#fff;border-radius:4px;border:1px solid #e1e7eb}
+#ew_main .pb_table{width:100%;display:table;table-layout:fixed}
+#ew_main .pb_td{display:table-cell;overflow:hidden}
+#ew_main .my_idxbg,#ew_main .common_zixun_yy1 li,#ew_main .ui-quickdelete-button,#ew_main .lr_com_ul a,#ew_main .lr_com_ul span,#ew_main .changyong span,#ew_main .fenlei_p span,#ew_main .mf_o1 a,#ew_main .gx_common_bj,#ew_main #right_btn,#ew_main .sbutton,#ew_main .gx_rp_ch,#ew_main .fuceng span,#ew_main .fuceng a,#ew_main .fujin_ul a{background-image:url(http://www.enwang.com/static/img/group_logo.jpg);background-repeat:no-repeat;background-size:100px auto;-webkit-background-size:100px auto}
+#ew_main .common_block{background:#fff;border-radius:4px;width:96%;margin:8px auto;border:1px solid #e1e7eb}
+#ew_main .common_header{height:36px;line-height:36px;border-bottom:1px solid #e7ecef;overflow:hidden}
+#ew_main .common_header h2,#ew_main .common_header h3{padding-left:36px;float:left;background:url(http://www.enwang.com/static/img/default_562127b4.png) no-repeat;background-position-x:10px;background-size:20px auto;-webkit-background-size:20px auto}
+#ew_main .common_header .common_header_right_a,#ew_main .app_header a{float:right;color:#0053a5;padding:0 10px;font-size:14px}
+#ew_main .common_more{height:30px;line-height:30px;margin-top:10px;padding:1px;background:#fff;border-top:1px solid #f4ede7;text-align:center;border-radius:0 0 4px 4px}
+#ew_main .common_more a{display:inline-block;width:100%;background:#DCE7F2;}
+#ew_main .common_list_3,#ew_main .common_list_4,#ew_main .common_list_5{width:100%;overflow:hidden}
+#ew_main .common_list_3 li,#ew_main .common_list_4 li,#ew_main .common_list_5 li{float:left;height:40px;line-height:40px;text-align:center}
+#ew_main .common_list_3 a,#ew_main .common_list_4 a,#ew_main .common_list_5 a{border-right:1px solid #dfdfe0;width:100%;height:20px;line-height:20px}
+#ew_main .common_list_3 li:nth-child(3n) a,#ew_main .common_list_4 li:nth-child(4n) a,#ew_main .common_list_5 li:nth-child(5n) a{border-right:0 none}
+#ew_main .common_list_3 li{width:33.3333334%}
+#ew_main .common_list_4 li{width:25%}
+#ew_main .common_list_5 li{width:20%}
+#ew_main .common_line{width:93%;margin:0 auto}
+#ew_main .common_line li{overflow:hidden;height:34px;line-height:34px}
+#ew_main .common_line a{width:100%}
+#ew_main .common_line span{float:left;display:inline-block;max-width:86%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#ew_main .common_line em{float:right;font-style:normal;font-size:12px;color:#a2a2a2}
+#ew_main .common_img{width:286px;overflow:hidden;height:86px;font-size:0}
+#ew_main .common_img a{position:relative}
+#ew_main .common_img span{width:100%;height:24px;line-height:24px;position:absolute;left:0;bottom:0;color:#fff;font-size:15px;text-align:center;background-color:rgba(0,#ew_main 0,#ew_main 0,#ew_main 0.3);text-overflow:ellipsis;white-space:nowrap}
+#ew_main .common_img_l1{float:left}
+#ew_main .common_img_l1 dl{left:6px;bottom:8px}
+#ew_main .common_img_l2{float:right}
+#ew_main .common_img_l2 dl{right:6px;top:8px}
+#ew_main .common_img_l2 dd{text-align:right}
+#ew_main .common_dot{text-align:center;-webkit-tap-highlight-color:rgba(0,#ew_main 0,#ew_main 0,#ew_main 0)}
+#ew_main .common_dot li{display:inline-block;width:6px;height:6px;background:#c0c0c0;border-radius:6px;margin:0 4px;font-size:0;overflow:hidden}
+#ew_main .common_dot .common_dot_cur{background:#0da016}
+#ew_main .common_bner{width:96%;margin:0 auto;font-size:0;display:block}
+.common_ad{width:96%;height:32px;font-weight:700;line-height:32px;text-align:center;font-size:14px;margin:8px auto;display:block;border:2px solid #eedec6;border-radius:4px;background:#f6eee0;color:#d8705f}
+#ew_main .common_ad:visited{color:#d8705f}
+#ew_main .common_ad_sp{margin-bottom:-6px;border:0;border-radius:0;margin-top:4px;font-size:15px}
+#ew_main .common_nav{overflow:hidden;width:100%;display:-webkit-box}
+#ew_main .common_nav li{height:36px;line-height:36px;-webkit-box-flex:1;text-align:center;border-bottom:1px solid #e7ecef}
+#ew_main .common_nav a{display:inline-block;width:100%}
+#ew_main .common_nav h4{line-height:24px;height:24px;display:inline-block;width:100%;border-right:1px solid #e7ecef}
+#ew_main .common_nav #ew_main .common_nav_cur{background:url(http://www.enwang.com/static/img/default_562127b4.png) center 34px no-repeat;border-bottom:0 none;border-right:1px solid #e7ecef}
+#ew_main .common_nav_cur h4{color:#07780c}
+#ew_main .common_nav li#ew_main .common_nav_cur:nth-child(n+2){border-left:1px solid #e7ecef}
+#ew_main .common_nav li#ew_main .common_nav_cur:last-child{border-right:0 none}
+#ew_main .common_zixun_con_div{margin:12px auto 8px auto;width:286px;height:150px}
+#ew_main .common_zixun_con_div a{position:relative;width:100%;height:100%;font-size:0}
+#ew_main .common_zixun_con_div span{width:100%;height:24px;line-height:24px;position:absolute;left:0;bottom:0;color:#fff;font-size:18px;text-align:center;background-color:rgba(0,#ew_main 0,#ew_main 0,#ew_main 0.3);text-overflow:ellipsis;white-space:nowrap}
+#ew_main .common_zixun_yy1 li{padding-left:24px;background-position:-80px -490px}
+#ew_main .common_tab_con_wp{width:100%;overflow:hidden}
+#ew_main .common_tab_con{width:400%;overflow:hidden}
+#ew_main .common_tab_con ul{float:left;width:25%}
+#ew_main .common_title{width:100%;height:24px;line-height:24px;position:absolute;left:0;bottom:0;color:#fff;font-size:18px;text-align:center;background-color:rgba(0,#ew_main 0,#ew_main 0,#ew_main 0.3);text-overflow:ellipsis;white-space:nowrap}
+#ew_main{background:url(http://www.enwang.com/static/img/bg1_f3772ea6.jpg) repeat;width:100%;min-width:320px}
+#ew_main #con_rj,#ew_main #con_rd,#ew_main #con_xs{display:none;min-height:200px;font-size:14px}
+#ew_main #con_xs,#ew_main #con_rd{font-size:15px}
+#ew_main #con_rj h3,#ew_main #con_rd h3,#ew_main #con_xs h3{background:0;padding-left:16px}
+#ew_main .app_tip{padding:30px 20px}
+#ew_main .nav{height:36px;line-height:36px;display:-webkit-box;margin-top:8px;border-top:1px solid #fff;border-bottom:1px solid #819dc2}
+#ew_main .nav h2{-webkit-box-flex:1;font-size:15px;border-right:1px solid #819dc2;-webkit-box-shadow:1px 0 0 0 #fff inset,#ew_main -1px 0 0 0 #fff inset;color:#5e83a4;text-align:center;background:#dce7f2}
+#ew_main .nav h2:last-child{border-right:0}
+#ew_main .nav .nav_cur{background:#b1c6e2;color:#fff;-webkit-box-shadow:none}
+#ew_main .nav span{position:relative}
+#ew_main .nav i{display:block;line-height:0;position:absolute;right:-12px;top:-4px;background:#fff;padding:2px;border-radius:8px;-webkit-border-radius:8px;font-size:0}
+#ew_main .nav b{display:block;width:6px;height:6px;background:#f62700;border-radius:6px;-webkit-border-radius:4px}
+#ew_main #con_rj h3,#ew_main #con_xs h3{background:0;padding-left:16px}
+#ew_main .app_img{width:100%;overflow:hidden}
+#ew_main .app_img li{width:25%;float:left;text-align:center}
+#ew_main .app_img a{padding:8px 0 6px 0;display:block}
+#ew_main .app_img li:nth-child(4n){border-right:0}
+#ew_main .app_img img{border-radius:8px}
+#ew_main .app_img span{font-size:13px;display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#ew_main .app_img_line a{border-right:1px solid #e7ecef}
+#ew_main .app_img_line li:nth-child(4n) a{border-right:0 none}
+#ew_main .app_img_line li{border-bottom:1px solid #e7ecef}
+#ew_main .app_img_line li:nth-last-child(-n+4){border-bottom:0 none}
+#ew_main .app_zxsl .common_tab_con_wp{margin-top:4px}
+#ew_main .app_nav_dot{margin-bottom:8px}
+#ew_main .app_fenlei{height:40px;line-height:40px;overflow:hidden}
+#ew_main .app_fenlei .app_fenlei_c{display:inline-block;width:16%;text-align:center;color:#0053a5;border-right:1px solid #dfdfe0;height:18px;line-height:18px}
+#ew_main .app_fenlei .app_fenlei_b{color:#000}
+#ew_main .app_fenlei_span{display:inline-block;width:82%;margin-left:2px}
+#ew_main .app_fenlei_span a{display:inline-block;width:33.33%;max-width:33.33%;overflow:hidden;text-overflow:clip;white-space:nowrap;text-align:center}
+#ew_main .app_paihang .common_header{display:-webkit-box}
+#con_rj .app_paihang h3{padding:0;text-align:center;width:50%;float:none}
+#ew_main .app_paihang_div{display:-webkit-box}
+#ew_main .app_paihang_div ul{width:50%}
+#ew_main .app_paihang_div li{height:32px;line-height:32px}
+#ew_main .app_paihang_div a{width:100%}
+#ew_main .app_paihang_div span{color:#f9966a;display:inline-block;margin:0 14px}
+#ew_main .app_paihang_div ul:first-child li{border-right:1px dashed #e2e8ec}
+#ew_main .app_paihang_div li:first-child{padding-top:6px}
+#ew_main .app_paihang_div li:last-child{padding-bottom:6px}
+#ew_main .app_yytj h3{background-position-y:-273px}
+#ew_main .app_xwyd h3,#ew_main .hot_rdzx h3{background-position-y:-30px}
+#ew_main .app_lttx h3{background-position-y:-300px}
+#ew_main .app_yytx h3,#ew_main .app_yyyl h3{background-position-y:-330px}
+#ew_main .app_shsy h3{background-position-y:-360px}
+#ew_main .app_wlsq h3,#ew_main .hot_mryx h3{background-position-y:-390px}
+#ew_main .app_yx h3{background-position-y:-420px}
+#ew_main .app_xtaq h3{background-position-y:-540px}
+#ew_main .tbv_nav{padding:10px 0;border-bottom:1px solid #d5dce1;-webkit-box-shadow:0 2px 2px #e5e5e5;-webkit-tap-highlight-color:rgba(0,#ew_main 0,#ew_main 0,#ew_main 0)}
+#ew_main .tbv_nav ul{display:table;width:100%;table-layout:fixed}
+#ew_main .tbv_nav li{display:table-cell;text-align:center;height:auto;line-height:1}
+#ew_main .tbv_nav .tbv_cur span{display:inline-block;background:#007d08;color:#fff;padding:4px 8px;margin:-6px 0;border-radius:3px}
+#ew_main .tbv_nav .tbv_sp{width:1px;background-color:#c6cbce}
+#ew_main .tbv_filter{height:34px;line-height:34px;padding:0 8px 0 42px;position:relative}
+#ew_main .tbv_filter h4{position:absolute;color:#9a9b9b;left:8px}
+#ew_main .tbv_filter div{height:34px;position:relative;overflow:hidden}
+#ew_main .tbv_filter ul{position:absolute;white-space:nowrap}
+#ew_main .tbv_filter li{display:inline-block;padding:0 5px;margin:0 6px 0 0}
+#ew_main .tbv_list{overflow:hidden}
+#ew_main .tbv_list ul{display:table;width:100%}
+#ew_main .tbv_list li{display:table-cell;height:140px}
+#ew_main .tbv_list li a{display:block;width:80px;height:110px;margin:15px auto 0 auto;position:relative}
+#ew_main .tbv_list li em{display:block;height:24px;width:76px;padding:0 4px 0 0;position:absolute;bottom:0;left:0;background:-webkit-gradient(linear,#ew_main 100% 0,#ew_main 100% 100%,#ew_main from(transparent),#ew_main to(rgba(0,#ew_main 0,#ew_main 0,#ew_main 0.7)),#ew_main color-stop(0.2,#ew_main rgba(255,#ew_main 255,#ew_main 255,#ew_main 0.2)));color:#fff;text-shadow:1px 1px 1px #000;font-size:12px;font-style:normal;line-height:24px;text-align:right}
+#ew_main .tbv_list li p{height:30px;line-height:30px;text-align:center;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:80px;margin:0 auto}
+#ew_main .tbv_tab{overflow:hidden}
+#ew_main .tbv_tabb{width:200%}
+#ew_main .tbv_tabb .tbv_list{float:left;width:50%}
+#ew_main .tbv_toplist{width:100%;float:none!important}
+ 
+#ew_main .changyong ul{width:100%;overflow:hidden}
+#ew_main .changyong li{width:25%;float:left;height:40px;line-height:40px;font-size:15px;border-top:1px solid #e7ecef}
+#ew_main .changyong a,#ew_main .changyong i{display:block;border-right:1px solid #e7ecef;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;height:100%}
+#ew_main .changyong span{width:16px;height:16px;display:inline-block;margin:0 6px 0 14%;position:relative;top:-2px;vertical-align:middle;-webkit-background-size:80px auto;background-size:80px auto}
+#ew_main .changyong li:nth-child(4n) a,#ew_main .changyong li:nth-child(4n) i{border-right:0 none}
+#ew_main .changyong li:nth-child(-n+3){border-top:0 none}
+#ew_main .changyong .cy_baidu{background-position:0 -168px}
+#ew_main .changyong .cy_sina{background-position:0 -184px}
+#ew_main .changyong .cy_qq{background-position:0 -200px}
+#ew_main .changyong .cy_163{background-position:0 -216px}
+#ew_main .changyong .cy_sohu{background-position:0 -232px}
+#ew_main .changyong .cy_taobao{background-position:0 -248px}
+#ew_main .changyong .cy_3g{background-position:0 -264px}
+
+#ew_main .changyong .cy_ifeng{background-position:0 -296px}
+#ew_main .changyong .cy_youku{background-position:0 -280px}
+#ew_main .changyong .cy_autohome{background-position:0 -312px}
+#ew_main .changyong .cy_common{background-position:0 -328px}
+#ew_main .changyong .cy_dangdang{background-position:0 -360px}
+#ew_main .changyong .cy_xiaoshuo{background-position:0 -376px}
+#ew_main .changyong .cy_shipin{background-position:0 -392px}
+#ew_main .changyong .cy_caipiao{background-position:0 -408px}
+#ew_main .changyong .cy_add{background-position:0 -344px}
+
+#ew_main .changyong .cy_junshi{background-position:0 -120px}
+#ew_main .changyong .cy_yangsheng{background-position:0 -104px}
+#ew_main .changyong .cy_love{background-position:0 -136px}
+#ew_main .changyong .cy_chongwu{background-position:0 -152px}
+#ew_main .changyong .cy_quce{background-position:0 -424px}
+#ew_main .changyong .cy_meizi{background-position:0 -344px}
+
+
+#ew_main .fenlei_p{height:40px;line-height:40px;overflow:hidden}
+#ew_main .fenlei_i{ display:inline-block; float:left;font-style:normal; width:81%; overflow:hidden}
+#ew_main .fenlei_i a{width:23%;text-align:center;overflow:hidden;text-overflow:clip;white-space:nowrap;font-size:16px;}
+#ew_main .fenlei_p .fenlei_a{ float:left;padding:10px 8px 0 10px;width:2.2em;text-align:center;color:#0053a5;border-right:1px solid #dfdfe0;height:20px;line-height:20px}
+#ew_main .fenlei_p span{float:right;margin-right:6px;display:inline-block;height:100%;width:20px;background-position:0 -88px}
+#ew_main .fenlei_p .fenlei_zk{background-image:url(http://www.enwang.com/static/img/group_28888307.png),#ew_main url(http://www.enwang.com/static/img/group_28888307.png);background-position:0 -124px,#ew_main 0 -154px}
+#ew_main .fenlei_ul{border-top:1px solid #ececec;background:#f4f4f4;margin-top:-1px}
+#ew_main .fenlei_ul li{text-align:center;border-bottom:1px solid #dfdfe0}
+#ew_main .fenlei_ul a{font-size:14px}
+#ew_main .fenlei em{display:block;width:100%;border-top:1px solid #ececec;text-indent:1em;background:#f4f4f4;border-bottom:1px solid #dfdfe0;height:36px;line-height:36px;font-size:15px;font-style:normal}
+#ew_main .yule,#ew_main .xinwen,#ew_main .gouwu{padding-bottom:10px}
+#ew_main .fenlei_line{width:94%;height:0;overflow:hidden;margin:0 auto;border-top:1px solid #e7ecef}
+#ew_main .fenlei_ao{margin-left:12px}
+#ew_main .xinwen h3{background-position-y:-30px}
+#ew_main .xinwen_spc{overflow:hidden;margin-top:4px}
+#ew_main .xinwen_spc div{width:400%;overflow:hidden}
+#ew_main .xinwen_spc a{width:25%;float:left;display:block;-webkit-backface-visibility:hidden}
+#ew_main .xinwen_spc dl{margin-left:20px}
+#ew_main .xinwen_spc dt{color:#a93400;font-size:18px;height:36px;line-height:36px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#ew_main .xinwen_spc dd{color:#8a9195;font-size:14px;overflow:hidden}
+ 
+#ew_main .yule h3{background-position-y:-59px}
+#ew_main .yule_img{margin:12px auto 10px auto}
+#ew_main .gouwu h3{background-position-y:-91px}
+ 
+ 
+#ew_main .logo{display:block;width:100%; height:50px;background-repeat:no-repeat;-webkit-background-size:100% 50px;} 
+#ew_main .search{width:93%;margin:4px auto 0 auto;position:relative}
+#ew_main .search_wp{border:1px solid #545452;border-radius:2px;display:-webkit-box;background:#fff}
+#ew_main .secrch_input_wp{-webkit-box-flex:1;overflow:hidden;position:relative}
+#ew_main .search_input{height:20px;margin:6px 40px 6px 6px;display:block;-webkit-box-sizing:border-box;border-radius:0;background-color:transparent;-webkit-tap-highlight-color:rgba(255,0,0,0);-webkit-appearance:none;border:0;outline:0;font-size:14px;width:86%}
+#ew_main .secrch_input_wp label{display:block;position:absolute;left:6px;height:20px;top:6px;z-index:0;line-height:20px;font-size:13px;max-width:86%;overflow:hidden;color:#000;-webkit-tap-highlight-color:rgba(255,0,0,0)}
+#ew_main .search_bt_wp{height:32px;width:64px;position:relative;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#f7f6f6),color-stop(28%,#f7f6f6),color-stop(100%,#dfdfdf));background-color:#ececec;border-left:1px solid #888}
+#ew_main .search_bt{border-radius:0;border:0;text-align:center;width:64px;height:100%;display:block;background:transparent}
+#ew_main .search_bt span{height:28px;line-height:28px;font-size:14px;display:inline-block}
+ 
