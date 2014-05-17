@@ -3,9 +3,13 @@
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
-  <definition name="home" template="/WEB-INF/layouts/classic.jsp">
+  <definition name="home" template="/WEB-INF/layouts/home/home.jsp">
     <put-attribute name="title" value="兔兔查_手机上网导航" />
-    <put-attribute name="html_headers" value="/WEB-INF/layouts/html_headers.jsp" />
-    <put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+    <put-attribute name="html_headers" value="/WEB-INF/layouts/home/html_headers.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/layouts/home/footer.jsp" />
+  </definition>
+
+  <definition name="game/view" template="/WEB-INF/layouts/game/view.jsp">
+    <put-attribute name="title" value="兔兔查_手机上网导航" />
   </definition>
 </tiles-definitions>

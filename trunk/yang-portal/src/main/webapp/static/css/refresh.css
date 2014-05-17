@@ -1,0 +1,125 @@
+/** Pull up styles */
+.ui-refresh {
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	padding: 5px 10px;
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+	color: #888;
+	text-align: center;
+}
+
+.ui-refresh .ui-refresh-pullup-icon  {
+	margin-top: 8px;
+	width: 25px; height: 25px;
+	background: url("data:image/png;base64,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") 0 0 no-repeat;
+	-webkit-background-size: 25px 50px; 
+	background-size: 25px 50px;
+   display: inline-block;
+}
+
+.ui-refresh .ui-refresh-pullup-label {
+    vertical-align: top;
+    color: #2E435D;
+}
+
+.ui-refresh .ui-refresh-pullup-icon  {
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 400ms;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transform: rotate(180deg);
+}
+
+.ui-refresh.ui-refresh-flip .ui-refresh-pullup-icon {
+	-webkit-transform: rotate(0deg) translateZ(0);
+}
+
+.ui-refresh-loading .ui-refresh-pullup-icon {
+	background-position: 0 100%;
+	-webkit-transform: rotate(0deg);
+	-webkit-transition-duration: 0ms;
+
+	-webkit-animation-name: ui-refresh-loading-anim;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes ui-refresh-loading-anim {
+	from {
+        -webkit-transform: rotate(0deg);
+    }
+    8.32% {
+        -webkit-transform: rotate(0deg);
+    }
+    8.33% {
+        -webkit-transform: rotate(30deg);
+    }
+    16.65% {
+        -webkit-transform: rotate(30deg);
+    }
+    16.66% {
+        -webkit-transform: rotate(60deg);
+    }
+    24.99% {
+        -webkit-transform: rotate(60deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+    33.32% {
+        -webkit-transform: rotate(90deg);
+    }
+    33.33% {
+        -webkit-transform: rotate(120deg);
+    }
+    41.65% {
+        -webkit-transform: rotate(120deg);
+    }
+    41.66% {
+        -webkit-transform: rotate(150deg);
+    }
+    49.99% {
+        -webkit-transform: rotate(150deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    58.32% {
+        -webkit-transform: rotate(180deg);
+    }
+    58.33% {
+        -webkit-transform: rotate(210deg);
+    }
+    66.65% {
+        -webkit-transform: rotate(210deg);
+    }
+    66.66% {
+        -webkit-transform: rotate(240deg);
+    }
+    74.99% {
+        -webkit-transform: rotate(240deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+    }
+    83.32% {
+        -webkit-transform: rotate(270deg);
+    }
+    83.33% {
+        -webkit-transform: rotate(300deg);
+    }
+    91.65% {
+        -webkit-transform: rotate(300deg);
+    }
+    91.66% {
+        -webkit-transform: rotate(330deg);
+    }
+    99.99% {
+        -webkit-transform: rotate(330deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}

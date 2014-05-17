@@ -20,6 +20,7 @@ import com.tutucha.event.Target;
 import com.tutucha.event.TargetType;
 import com.tutucha.event.UserIdentity;
 import com.tutucha.event.UserIdentityType;
+import com.tutucha.model.entity.Game;
 import com.tutucha.model.entity.Navigation;
 import com.tutucha.model.service.DataService;
 
@@ -80,12 +81,12 @@ public class NavigationController implements Filter {
     event.getUserIdentities().add(new UserIdentity(UserIdentityType.USER_AGENT, request.getHeader("User-Agent")));
     event.getUserIdentities().add(new UserIdentity(UserIdentityType.COOKIE, cookieUserId));
 
+    EventListener eventListener = (EventListener) this.fConfig.getServletContext().getAttribute("eventListener");
     String op = request.getParameter("op");
     if ("navshow".equals(op)) {
       String navigationId = request.getParameter("id");
       if (StringUtils.isNotEmpty(navigationId)) {
         DataService dataService = (DataService) this.fConfig.getServletContext().getAttribute("dataService");
-        EventListener eventListener = (EventListener) this.fConfig.getServletContext().getAttribute("eventListener");
         Navigation navigation = dataService.getNavigationById(navigationId);
         if (navigation != null) {
           Target target = new Target();
@@ -100,6 +101,23 @@ public class NavigationController implements Filter {
       }
       response.sendError(HttpServletResponse.SC_NOT_FOUND);
       return;
+    } else if ("mobile.game.show".equals(op)) {
+      String navigationId = request.getParameter("id");
+      if (StringUtils.isNotEmpty(navigationId)) {
+        DataService dataService = (DataService) this.fConfig.getServletContext().getAttribute("dataService");
+        Game game = dataService.getGameById(navigationId);
+        if (game != null) {
+          Target target = new Target();
+          target.setNavigationId(navigationId);
+          target.setType(TargetType.ExternalHttpRedirect);
+          target.setUrl(game.getUrl());
+          eventListener.fire(event);
+          
+          request.setAttribute("game", game);
+          request.getRequestDispatcher("/game/view.tiles").forward(request, response);;
+          return;
+        }
+      }
     }
     chain.doFilter(request, response);
   }
