@@ -9,7 +9,11 @@
     <put-attribute name="footer" value="/WEB-INF/layouts/home/footer.jsp" />
   </definition>
 
-  <definition name="game/view" template="/WEB-INF/layouts/game/view.jsp">
+  <definition name="game/home" template="/WEB-INF/layouts/game/home.jsp">
+    <put-attribute name="title" value="兔兔查_手机上网导航" />
+  </definition>
+
+  <definition name="game/view" template="/WEB-INF/layouts/game/viewh5.jsp">
     <put-attribute name="title" value="兔兔查_手机上网导航" />
   </definition>
 </tiles-definitions>

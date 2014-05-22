@@ -3,6 +3,8 @@ package com.tutucha.event;
 public class Target {
 
   private TargetType type = null;
+  
+  private String channelId = null;
 
   private String pageId = null;
 
@@ -14,6 +16,14 @@ public class Target {
 
   public Target() {
     super();
+  }
+
+  public String getChannelId() {
+    return channelId;
+  }
+
+  public void setChannelId(String channelId) {
+    this.channelId = channelId;
   }
 
   public TargetType getType() {

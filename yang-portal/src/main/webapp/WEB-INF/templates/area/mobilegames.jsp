@@ -14,7 +14,7 @@
     </c:forEach>
     </ul>
     <p class="common_more">
-      <a style="color: #fff; background: #0290FF" href="?op=showcategory&categoryId=259">点击获取更多好玩的游戏</a>
+      <a style="color: #fff; background: #0290FF" href="<c:url value="/game/home.tiles"/>">点击获取更多好玩的游戏</a>
     </p>
   </div>
 </div>
