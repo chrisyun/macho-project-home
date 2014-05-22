@@ -5,26 +5,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>恩网_手机上网导航</title>
-<meta name="viewport" content="width=device-width,user-scalable=0">
-<meta content="telephone=no" name="format-detection">
-<link rel="stylesheet" type="text/css" href="./static/css/index_css_a8da6ae5.css?v=3" />
-<script src="./static/js/goloo.js"></script>
-<script type="text/javascript">
-	//var supporttouch = "ontouchend" in document;
-	//!supporttouch && (window.location.href = 'http://m.baidu.com/s?from=1008376a');
-</script>
-<style>
-body {
-	margin: auto;
-	width: 320px;
-	margin: 0;
-	padding: 0;
-}
-</style>
+<tiles:insertAttribute name="html_headers"/>
+<title><tiles:insertAttribute name="title"/></title>
 </head>
-
 <body class="skin_default">
   <section id="ew_main" class="pb_imgbg">
     <header class="m_header">

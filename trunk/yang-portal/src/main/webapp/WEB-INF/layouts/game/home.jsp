@@ -6,50 +6,12 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="my"%>
 <html manifest="util/application.appcache">
 <head>
-<meta content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0" name="viewport">
-<meta charset="utf-8">
-
-<base href='<c:url value="/"/>' />
-<link href="/icon.png" rel="apple-touch-icon-precomposed">
-<link href="/favicon.png" type="image/png" rel="icon">
-<link rel="Stylesheet" type="text/css" href="resources/style/himarketwap/cssAnimation.css?ver=1.3.0">
-<link rel="Stylesheet" type="text/css" href="resources/style/himarketwap/list.css?ver=1.3.0">
-<link rel="Stylesheet" type="text/css" href="resources/style/himarketwap/load.css?ver=1.3.0">
-<title>安卓市场Wap</title>
-
-<!-- 基本类库 -->
-
-
-<script src="resources/jslib/zepto-min.js" type="text/javascript"></script>
-<script src="resources/jslib/underscore-min.js" type="text/javascript"></script>
-<script src="resources/jslib/backbone-min.js" type="text/javascript"></script>
-<script src="resources/jslib/require-min.js?v=1.0" type="text/javascript"></script>
-<script src="resources/jslib/iscroll.js" type="text/javascript"></script>
-<!-- 默认中文语言包 -->
-<script src="resources/lang/zh-cn.js?ver=1.3.0" type="text/javascript"></script>
-
-<!-- 动态加载JS配置 -->
-<script src="resources/util/CommonUtil.js?ver=1.3.0" type="text/javascript"></script>
-<script src="resources/util/ClassUtil.js" type="text/javascript"></script>
-<script src="resources/util/RequireConfig.js?ver=1.3.1" type="text/javascript"></script>
-
-<script type="text/javascript">
-	//加载首页的数据   
-	$(function() {
-		// 设置主域名TODO
-		document.domain = "hiapk.com";
-		$.upVersionTip();
-		requirejs.config({
-			baseUrl : ""
-		});
-		defineJS();
-	});
-</script>
+<tiles:insertAttribute name="html_headers" />
+<title><tiles:insertAttribute name="title" /></title>
+<link rel="stylesheet" type="text/css" href="./resources/template/himarketwap/ui/funheader.css?1400599352000">
 </head>
 
 <body>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="./resources/template/himarketwap/ui/funheader.css?1400599352000">
   <header id="header">
 
     <div id="top_banner">
@@ -608,22 +570,8 @@
                 </div>
                 <div id="gameRankContainer" class="listcontainer"></div>
               </section>
-              <footer class="footer">
-                <div class="footer_content">
-                  <div class="versionLink">
-                    < <a href="http://apk.hiapk.com/?forweb=1">网页版</a>| <a class="on">流畅版</a>>
-                  </div>
-                  <div style="margin-top: 5px;" class="wapDetail">
-
-                    <div class="icp" style="padding-left: 0px; text-align: center;">闽ICP备09004645</div>
-                  </div>
-                  <div style="width: 215px; margin: 5px auto;" class="text_center">
-                    <span style="display: block; float: left">福建博瑞网络科技有限公司</span><img width="40" style="margin-top: -5px; float: left;" alt=""
-                      src="./resources/img/himarketwap/icon/nava.png">
-                    <div class="z"></div>
-                  </div>
-                </div>
-              </footer>
+              <!-- Footer -->
+              <tiles:insertAttribute name="footer" />
             </div>
             <div class="myScrollBarV" style="pointer-events: none; transition-property: opacity; overflow: hidden; opacity: 0;">
               <div

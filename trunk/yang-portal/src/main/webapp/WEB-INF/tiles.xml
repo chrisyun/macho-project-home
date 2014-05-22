@@ -4,16 +4,20 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
   <definition name="home" template="/WEB-INF/layouts/home/home.jsp">
-    <put-attribute name="title" value="兔兔查_手机上网导航" />
+    <put-attribute name="title" value="恩网_手机上网导航" />
     <put-attribute name="html_headers" value="/WEB-INF/layouts/home/html_headers.jsp" />
     <put-attribute name="footer" value="/WEB-INF/layouts/home/footer.jsp" />
   </definition>
 
   <definition name="game/home" template="/WEB-INF/layouts/game/home.jsp">
-    <put-attribute name="title" value="兔兔查_手机上网导航" />
+    <put-attribute name="title" value="恩网_手机上网导航" />
+    <put-attribute name="html_headers" value="/WEB-INF/layouts/game/html_headers.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/layouts/game/footer.jsp" />
   </definition>
 
-  <definition name="game/view" template="/WEB-INF/layouts/game/viewh5.jsp">
-    <put-attribute name="title" value="兔兔查_手机上网导航" />
+  <definition name="game/view" template="/WEB-INF/layouts/game/view.jsp">
+    <put-attribute name="title" value="恩网_手机上网导航" />
+    <put-attribute name="html_headers" value="/WEB-INF/layouts/game/html_headers.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/layouts/game/footer.jsp" />
   </definition>
 </tiles-definitions>
