@@ -265,8 +265,11 @@ public class SimpleDataServiceImpl implements DataService {
     g.setSize(6900);
     g.setStatus("公测");
     g.setVersion("1.0.0.1");
-    g.getScreenshots().add("http://image.game.uc.cn/2013/11/4/9503764.jpg");
-    g.getScreenshots().add("/up.union.com/upload/20140227/yGVU4ovV91.");
+    g.getScreenshots().add("http://cdn.image.market.hiapk.com/data/upload/2014/05_19/18/20140519065058_1671.jpg");
+    g.getScreenshots().add("http://cdn.image.market.hiapk.com/data/upload/2014/05_19/18/20140519065107_6468.jpg");
+    g.getScreenshots().add("http://cdn.image.market.hiapk.com/data/upload/2014/05_19/18/20140519065110_6272.jpg");
+    g.getScreenshots().add("http://cdn.image.market.hiapk.com/data/upload/2014/05_19/18/20140519065116_4413.jpg");
+    g.getScreenshots().add("http://cdn.image.market.hiapk.com/data/upload/2014/05_19/18/20140519065134_7641.jpg");
     g.setDescription("《英雄国度》是2012最值得期待的回合制手机网游！一个没有万人胡扯战斗、不鼓吹非XX专属网游，却专心为玩家提供自由、快乐的崭新国度。在这个国度里，你将拥有一座属于自己的城市，这座城市将记录你英雄一生的辉煌。");
     return g;
   }

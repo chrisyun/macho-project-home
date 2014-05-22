@@ -1,6 +1,7 @@
 package com.tutucha.model.entity;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Software extends Navigation {
@@ -18,13 +19,27 @@ public class Software extends Navigation {
    * 例如：公测等
    */
   private String status = null;
+  
+  private long totalDownload = System.currentTimeMillis() % 1000000;
 
+  private Date releaseTime = new Date();
+  
+  private String lang = "中文";
+  
   public Software() {
     super();
   }
 
   public Software(String id, String label, String url, String icon, String categoryId) {
     super(id, label, url, icon, categoryId);
+  }
+
+  public String getLang() {
+    return lang;
+  }
+
+  public void setLang(String lang) {
+    this.lang = lang;
   }
 
   public Vendor getVendor() {
@@ -81,6 +96,22 @@ public class Software extends Navigation {
 
   public void setStatus(String status) {
     this.status = status;
+  }
+
+  public long getTotalDownload() {
+    return totalDownload;
+  }
+
+  public void setTotalDownload(long totalDownload) {
+    this.totalDownload = totalDownload;
+  }
+
+  public Date getReleaseTime() {
+    return releaseTime;
+  }
+
+  public void setReleaseTime(Date releaseTime) {
+    this.releaseTime = releaseTime;
   }
 
 }
