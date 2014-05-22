@@ -5,6 +5,7 @@ public enum UserIdentityType {
   COOKIE,
   USER_AGENT,
   AUTHENTICATIED,
-  IMEI;
+  IMEI,
+  GEOGRAPHICS;
 
 }
